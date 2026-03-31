@@ -1,0 +1,35 @@
+---
+// src/layouts/DocsLayout.astro
+// Layout for rules pages and faction pages — includes the sidebar.
+
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  activePage?: 'rules' | 'factions';
+  sidebarType?: 'rules' | 'factions';
+}
+
+const {
+  title,
+  description,
+  activePage = 'rules',
+  sidebarType = 'rules',
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  activePage={activePage}
+  showSidebar={true}
+  sidebarType={sidebarType}
+  currentPath={currentPath}
+>
+  <div class="rules-content animate-in">
+    <slot />
+  </div>
+</BaseLayout>

@@ -1,0 +1,66 @@
+---
+// src/pages/factions/index.astro
+import DocsLayout from '../../layouts/DocsLayout.astro';
+import { FACTIONS, getFactionsByAlliance } from '../../data/factions.ts';
+
+const factionsByAlliance = getFactionsByAlliance();
+
+const allianceColors: Record<string, string> = {
+  imperium: '#c9a84c',
+  chaos:    '#9b2020',
+  aeldari:  '#3a7bd5',
+  xenos:    '#2e8b57',
+  devourer: '#7b3fa0',
+};
+---
+
+<DocsLayout
+  title="Factions"
+  description="All Alt-Hammer 40,000 factions — Army Rules, Detachment Traits, Wargear Upgrades, and Unit Profiles."
+  activePage="factions"
+  sidebarType="factions"
+>
+  <div class="page-header">
+    <p class="breadcrumb">Alt-Hammer 40,000</p>
+    <h1>Factions</h1>
+    <p class="subtitle">
+      Select a faction to view its Army Rules, Detachment Traits, Wargear Upgrades,
+      and full Unit Profiles.
+    </p>
+  </div>
+
+  {factionsByAlliance.map(({ alliance, factions }) => (
+    <div style="margin-bottom: 48px;">
+      <div class="alliance-header"
+           style={`--alliance-color: ${allianceColors[alliance.id] ?? 'var(--color-gold)'};`}>
+        <span class="alliance-label">{alliance.label}</span>
+        <div class="alliance-rule"></div>
+      </div>
+
+      <div class="faction-grid">
+        {factions.map((faction) => (
+          <a
+            href={faction.status === 'active' ? `/factions/${faction.id}` : '#'}
+            class={`faction-card ${faction.status === 'coming-soon' ? 'coming-soon' : ''}`}
+            style={`--alliance-color: ${allianceColors[faction.alliance] ?? 'var(--color-gold-dim)'};`}
+          >
+            <span class="faction-card-name">{faction.name}</span>
+            {faction.description && (
+              <span class="faction-card-desc">{faction.description}</span>
+            )}
+            {faction.status === 'coming-soon' && (
+              <span class="badge badge-wip" style="margin-top: 8px; display: inline-block;">
+                Coming Soon
+              </span>
+            )}
+            {faction.status === 'active' && (
+              <span class="badge badge-complete" style="margin-top: 8px; display: inline-block;">
+                Available
+              </span>
+            )}
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+</DocsLayout>

@@ -1,0 +1,126 @@
+---
+// src/pages/rules/stratagems.astro
+import DocsLayout from '../../layouts/DocsLayout.astro';
+
+// Stratagem data — add new stratagems here
+const stratagems = [
+  {
+    name: 'New Orders',
+    when: 'During Step 3 of your Command Phase',
+    cost: '1 CP',
+    effect: 'Select 1 Secondary Mission Objective you currently have, discard it, and roll 2D6 to generate a new Secondary Mission Objective. This Stratagem can only be used once per Battle Round by each player.',
+    restriction: null,
+  },
+  {
+    name: 'Re-Roll',
+    when: 'At any time during the Battle Round when a D6 roll needs to be made',
+    cost: '1 CP per D6',
+    effect: 'Re-roll the results of that D6 roll. A maximum of 1 D6 can be re-rolled for each Command Point spent. This Stratagem can only be used once per Battle Round by each player.',
+    restriction: null,
+  },
+  {
+    name: 'Strategic Activation',
+    when: 'Right after the opposing player Activates a unit',
+    cost: '2 CP (Battleline) / 3 CP (Other)',
+    effect: 'Select 1 friendly unit that has not yet been Activated this Battle Round. That unit is Activated immediately. If the Activated unit makes a combat action (Shoot, Fight, or Charge and Fight), those attacks must be directed towards the opposing player\'s Activated unit. The Activated unit reduces its Activation Points by 1 when it is Activated normally this round.',
+    restriction: 'Once per Battle Round per player.',
+  },
+  {
+    name: 'Insane Bravery',
+    when: 'During Step 1 of your Command Phase',
+    cost: '2 CP (Battleline) / 3 CP (Other)',
+    effect: 'Select a unit that failed its Rally Check and is still Battle Shocked. That unit is no longer Battle Shocked and increases its Leadership characteristic by 2 until the end of your next Command Phase.',
+    restriction: null,
+  },
+  {
+    name: 'Moment of Glory',
+    when: 'When you Activate a Leader unit',
+    cost: '1 CP per effect',
+    effect: 'The Leader and the unit it is leading gain 1 of the following effects until the end of your next Command Phase: +1" Movement, +2 Initiative, +1 Attacks, +1 Weapon Skill, or +2 Leadership. This Stratagem can only be used once per Battle Round by each player.',
+    restriction: null,
+  },
+  {
+    name: 'Grenades!',
+    when: 'When you use the Shoot Action with a unit equipped with Grenade weapons',
+    cost: '2 CP (Battleline) / 3 CP (Other)',
+    effect: 'Double the number of models that can make Ranged attacks with Grenade weapons this Activation.',
+    restriction: null,
+  },
+  {
+    name: 'Rapid Ingress',
+    when: 'During the first Battle Round, when it is your turn to Activate a unit',
+    cost: '1 CP (Battleline) / 2 CP (Other)',
+    effect: 'Select 1 unit currently in Strategic Reserves. That unit can Enter the Battlefield from Strategic Reserves immediately.',
+    restriction: null,
+  },
+];
+---
+
+<DocsLayout
+  title="Command Points & Stratagems"
+  description="Alt-Hammer 40,000 Command Points and Stratagems — earning CP, spending CP, and all core stratagems."
+  activePage="rules"
+  sidebarType="rules"
+>
+  <div class="page-header">
+    <p class="breadcrumb"><a href="/rules/core-rules">Rules</a></p>
+    <h1>Command Points &amp; Stratagems</h1>
+    <p class="subtitle">
+      Players earn Command Points during their battles, which are spent on Stratagems
+      to gain situational advantages.
+    </p>
+  </div>
+
+  <section id="gaining-command-points">
+    <h2>Gaining Command Points</h2>
+    <p>Command Points are gained during Step 2 of the Command Phase. Each player gains:</p>
+    <ul>
+      <li><strong>1 Command Point</strong> as a minimum.</li>
+      <li><strong>+1 Command Point</strong> for each <span class="keyword">Leader</span> unit currently on the battlefield (including those embarked in a Transport).</li>
+      <li><strong>+2 Command Points</strong> if your Warlord is positioned on a Primary Objective Marker that you control in No Man's Land or the enemy's Deployment Zone.</li>
+    </ul>
+  </section>
+
+  <section id="spending-command-points">
+    <h2>Spending Command Points</h2>
+    <p>
+      Each Stratagem identifies the number of Command Points required to use it. Some
+      Stratagems that affect unit Activations have different costs based on the unit type
+      — <span class="keyword">Battleline</span> units typically cost fewer CP.
+    </p>
+  </section>
+
+  <section id="stratagems-list">
+    <h2>Core Stratagems</h2>
+    <p>
+      The following Stratagems are available to all players. Additional faction-specific
+      Stratagems may appear in future faction releases.
+    </p>
+
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
+      {stratagems.map((s) => (
+        <div class="stratagem-card">
+          <div class="stratagem-header">
+            <h4 class="stratagem-name">{s.name}</h4>
+            <span class="stratagem-cost">{s.cost}</span>
+          </div>
+          <div class="stratagem-field">
+            <span class="stratagem-field-label">When:</span>
+            <span style="color:var(--color-text-secondary);">{s.when}</span>
+          </div>
+          <div class="stratagem-field">
+            <span class="stratagem-field-label">Effect:</span>
+            <span style="color:var(--color-text-secondary);">{s.effect}</span>
+          </div>
+          {s.restriction && (
+            <div class="stratagem-field">
+              <span class="stratagem-field-label">Restriction:</span>
+              <span style="color:var(--color-text-muted);font-size:0.875rem;">{s.restriction}</span>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+
+</DocsLayout>

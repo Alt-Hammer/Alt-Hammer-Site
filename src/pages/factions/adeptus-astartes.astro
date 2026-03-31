@@ -1,0 +1,323 @@
+---
+// src/pages/factions/adeptus-astartes.astro
+// TEMPLATE FACTION PAGE — Adeptus Astartes
+//
+// HOW TO ADD A NEW FACTION:
+// 1. Duplicate this file and rename it to your-faction-id.astro
+// 2. Update the frontmatter variables (factionId, title, etc.)
+// 3. Fill in the content sections below
+// 4. Update src/data/factions.ts to change status from 'coming-soon' to 'active'
+//
+// Each major section corresponds directly to your Faction Index document.
+
+import DocsLayout from '../../layouts/DocsLayout.astro';
+
+const factionId   = 'adeptus-astartes';
+const factionName = 'Adeptus Astartes';
+const alliance    = 'The Imperium';
+const accentColor = '#c9a84c';
+---
+
+<DocsLayout
+  title={factionName}
+  description={`${factionName} faction rules, unit profiles, detachment traits, and wargear for Alt-Hammer 40,000.`}
+  activePage="factions"
+  sidebarType="factions"
+>
+
+  <!-- ── Page Header ─────────────────────────────────────────────────── -->
+  <div class="page-header">
+    <p class="breadcrumb">
+      <a href="/factions">Factions</a> · The Imperium
+    </p>
+    <h1>{factionName}</h1>
+    <p class="subtitle">
+      The Angels of Death. Genetically engineered super-soldiers who stand
+      as humanity's finest and most terrifying warriors.
+    </p>
+    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+      <span class="badge badge-complete">Active</span>
+      <span style="font-family: var(--font-mono); font-size: 0.7rem;
+                   color: var(--color-text-muted); letter-spacing: 0.12em;
+                   text-transform: uppercase; padding: 2px 0; align-self: center;">
+        v1.0
+      </span>
+    </div>
+  </div>
+
+  <!-- ── Page Nav ─────────────────────────────────────────────────────── -->
+  <nav style="background: var(--color-surface-1); border: 1px solid var(--color-border);
+              padding: 12px 16px; margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 4px;">
+    <a href="#army-rules"       style="font-family:var(--font-display);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border:1px solid var(--color-border-mid);color:var(--color-text-secondary);">Army Rules</a>
+    <a href="#detachment-traits" style="font-family:var(--font-display);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border:1px solid var(--color-border-mid);color:var(--color-text-secondary);">Detachment Traits</a>
+    <a href="#wargear-upgrades" style="font-family:var(--font-display);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border:1px solid var(--color-border-mid);color:var(--color-text-secondary);">Wargear</a>
+    <a href="#units"            style="font-family:var(--font-display);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border:1px solid var(--color-border-mid);color:var(--color-text-secondary);">Units</a>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION 1: ARMY RULES                                             -->
+  <!-- Paste your faction's Army Rules text here.                        -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="army-rules">
+    <h2>Army Rules</h2>
+
+    <h3>And They Shall Know No Fear</h3>
+    <p>
+      <strong class="keyword">Adeptus Astartes</strong> models ignore any and all modifiers
+      to their Leadership characteristics when making Battle Shock tests; Leadership values
+      are never modified for any reason, including enemy unit abilities that would otherwise
+      have such an effect.
+    </p>
+    <p>
+      Further, units automatically Rally at the start of the next Command Phase after being
+      Battle Shocked in the prior Battle Round.
+    </p>
+
+    <div class="rule-summary">
+      <strong>Summary</strong>
+      <ul>
+        <li>Leadership characteristics are never modified for Battle Shock tests.</li>
+        <li>Units automatically Rally from Battle Shock at the start of the next Command Phase.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION 2: DETACHMENT TRAITS                                      -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="detachment-traits">
+    <h2>Detachment Traits</h2>
+
+    <p>
+      Adeptus Astartes detachments are made up of Detachment Traits that reflect
+      the combat doctrine preferences of their Chapter. Your Adeptus Astartes
+      detachment has <strong>2 Detachment Trait Points</strong> that you may allocate
+      when constructing your army list by selecting Detachment Traits from the
+      following options.
+    </p>
+
+    <h3>Chapter Identity Traits</h3>
+    <p>
+      Your army may select <strong>up to 1</strong> of these Detachment Traits.
+      Each costs 1 Detachment Point.
+    </p>
+
+    <h4>Adepts of the Codex Astartes — 1 Detachment Point</h4>
+    <p>
+      At the start of your Command Phase, select one of the following Combat Doctrines.
+      Until the start of your next Command Phase that doctrine is active and applies to
+      all <span class="keyword">Adeptus Astartes Infantry</span> units.
+      Each doctrine can only be selected once per battle.
+    </p>
+    <ul>
+      <li><strong>Devastator Doctrine:</strong> Units increase their Ballistic Skill by 1 when they <span class="keyword">Remain Stationary</span>.</li>
+      <li><strong>Tactical Doctrine:</strong> Units gain the <span class="keyword">Unyielding</span> ability.</li>
+      <li><strong>Assault Doctrine:</strong> Units gain the <span class="keyword">Relentless</span> keyword.</li>
+    </ul>
+
+    <h4>Souls of Iron — 1 Detachment Point</h4>
+    <ul>
+      <li><span class="keyword">Adeptus Astartes Infantry</span> models ignore the effects of the <span class="keyword">Heavy</span> keyword when making attacks.</li>
+      <li><span class="keyword">Adeptus Astartes</span> units gain the <span class="keyword">Lethal Hits</span> ability when making attacks against enemy <span class="keyword">Vehicle</span> units.</li>
+      <li><span class="keyword">Adeptus Astartes</span> units gain the <span class="keyword">Feel No Pain 5+</span> ability against Ranged attacks.</li>
+    </ul>
+
+    <h4>Blood Lust — 1 Detachment Point</h4>
+    <ul>
+      <li><span class="keyword">Adeptus Astartes Infantry</span> units gain the <span class="keyword">Relentless</span> ability.</li>
+      <li>Units add 1" to movement distance when Advancing and when using <span class="keyword">Charge and Fight</span>.</li>
+      <li>Units must always move towards the closest enemy when Advancing, and must target the closest enemy unit with <span class="keyword">Charge and Fight</span>.</li>
+      <li>Units gain the <span class="keyword">Devastating Wounds</span> ability when making melee attacks as part of a <span class="keyword">Charge and Fight</span> action.</li>
+    </ul>
+
+    <!-- ADD MORE DETACHMENT TRAITS HERE following the same pattern -->
+
+    <h3>Chapter Company Traits</h3>
+    <p>Your army may select <strong>up to 1</strong> of these Detachment Traits. Each costs 1 Detachment Point.</p>
+
+    <h4>1st Company Veterans Strike Force — 1 Detachment Point</h4>
+    <ul>
+      <li>The <strong>1st Company Veterans</strong> unit gains the <span class="keyword">Battleline</span> keyword.</li>
+      <li>The <strong>Intercessors</strong> unit loses the <span class="keyword">Battleline</span> keyword.</li>
+    </ul>
+
+    <h4>9th Company Fire Support Strike Force — 1 Detachment Point</h4>
+    <ul>
+      <li>The <strong>Devastator Squad</strong> unit gains the <span class="keyword">Battleline</span> keyword.</li>
+      <li>The <strong>Intercessors</strong> unit loses the <span class="keyword">Battleline</span> keyword.</li>
+    </ul>
+
+    <h4>10th Company Vanguard Strike Force — 1 Detachment Point</h4>
+    <ul>
+      <li>The <strong>Scouts</strong> unit gains the <span class="keyword">Battleline</span> keyword.</li>
+      <li>The <strong>Intercessors</strong> unit loses the <span class="keyword">Battleline</span> keyword.</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION 3: WARGEAR UPGRADES                                       -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="wargear-upgrades">
+    <h2>Wargear Upgrades</h2>
+
+    <h3>Armour Upgrades</h3>
+    <p>
+      Many Adeptus Astartes units may be upgraded with different armour patterns.
+      Units that are eligible to upgrade their armour will list the available options
+      under their Wargear Options.
+    </p>
+
+    <!-- Example armour upgrade block -->
+    <h4>Terminator Armour — 40 Points per model</h4>
+    <ul>
+      <li>Increase Strength characteristic by 1</li>
+      <li>Increase Toughness characteristic by 2</li>
+      <li>Increase Wounds characteristic by 2</li>
+      <li>Reduce Movement characteristic by 1"</li>
+      <li>Reduce Initiative characteristic by 1</li>
+      <li>Increase Armour Save characteristic to 2+</li>
+      <li>Ignore the effects of the <span class="keyword">Heavy</span> keyword when making Attacks</li>
+      <li>Add the <span class="keyword">Invulnerable Save 5+</span> ability</li>
+      <li>Add the <span class="keyword">Deep Strike</span> ability</li>
+      <li>Models count as 2 models for the purposes of the <span class="keyword">Transport [X]</span> ability</li>
+    </ul>
+
+    <!-- ADD MORE WARGEAR ENTRIES FOLLOWING THE SAME PATTERN -->
+    <p style="color: var(--color-text-muted); font-style: italic; font-size: 0.9rem;">
+      Additional wargear entries — see the Faction Index document. Paste each upgrade here
+      following the same &lt;h4&gt; + &lt;ul&gt; pattern above.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION 4: UNIT PROFILES                                          -->
+  <!-- Each unit uses the .datasheet component pattern below.            -->
+  <!-- Stats are drawn from your xlsx data tables.                       -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="units">
+    <h2>Units</h2>
+
+    <!-- ── CHARACTERS ─────────────────────────────────────────────── -->
+    <h3 id="units-characters">Characters</h3>
+
+    <!-- ── Captain ── -->
+    <div class="datasheet" id="unit-captain">
+      <div class="datasheet-header">
+        <h4 class="datasheet-name">Captain</h4>
+        <span class="datasheet-category">Character · Leader</span>
+        <span class="datasheet-points">130 pts</span>
+      </div>
+
+      <!-- Stat row — values from xlsx Adeptus Astartes sheet -->
+      <div class="stat-row">
+        <div class="stat-cell"><span class="stat-label">M</span><span class="stat-value">6"</span></div>
+        <div class="stat-cell"><span class="stat-label">WS</span><span class="stat-value">7</span></div>
+        <div class="stat-cell"><span class="stat-label">BS</span><span class="stat-value">7</span></div>
+        <div class="stat-cell"><span class="stat-label">I</span><span class="stat-value">6</span></div>
+        <div class="stat-cell"><span class="stat-label">A</span><span class="stat-value">6</span></div>
+        <div class="stat-cell"><span class="stat-label">S</span><span class="stat-value">4</span></div>
+        <div class="stat-cell"><span class="stat-label">T</span><span class="stat-value">4</span></div>
+        <div class="stat-cell"><span class="stat-label">W</span><span class="stat-value">6</span></div>
+        <div class="stat-cell"><span class="stat-label">SV</span><span class="stat-value">3+</span></div>
+        <div class="stat-cell"><span class="stat-label">LD</span><span class="stat-value">3+</span></div>
+        <div class="stat-cell"><span class="stat-label">OC</span><span class="stat-value">—</span></div>
+      </div>
+
+      <div class="datasheet-body">
+
+        <h5 style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;
+                   letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-dim);
+                   margin-bottom:8px;">Unit Composition</h5>
+        <p style="margin-bottom:16px;">1 Captain</p>
+
+        <h5 style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;
+                   letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-dim);
+                   margin-bottom:8px;">Standard Wargear</h5>
+        <ul style="margin-bottom:16px;">
+          <li>Tacticus Armour</li>
+          <li>1 Bolt Pistol (2pts)</li>
+        </ul>
+
+        <h5 style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;
+                   letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-dim);
+                   margin-bottom:8px;">Keywords</h5>
+        <p style="margin-bottom:16px; font-family:var(--font-mono); font-size:0.8rem;
+                  color:var(--color-text-muted);">
+          Imperium · Adeptus Astartes · Infantry · Character · Leader · Tacticus
+        </p>
+
+        <h5 style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;
+                   letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-dim);
+                   margin-bottom:8px;">Special Abilities</h5>
+        <p><strong>Deeds of Legend:</strong> When this model is leading a unit, models
+        in that unit score Critical Hits on a 5+ instead of a 6+.</p>
+        <p><strong>Oath of Moment:</strong> Once per battle, during your Command Phase,
+        select 1 enemy unit. Friendly Adeptus Astartes units add 1 to Hit rolls and 1 to
+        Wound rolls against that unit until the end of the Battle Round.</p>
+        <p><strong>Company Command:</strong> If you have 1 or more Captain units in your
+        army, 1 must be your Warlord, unless your army also includes an Epic Hero unit with
+        the <span class="keyword">Leader</span> ability.</p>
+
+        <h5 style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;
+                   letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-dim);
+                   margin-top:16px;margin-bottom:8px;">Leader</h5>
+        <p>This unit can lead: <strong>1st Company Veterans</strong>, <strong>Honour Guard</strong></p>
+
+        <h5 style="font-family:var(--font-display);font-size:0.7rem;font-weight:700;
+                   letter-spacing:0.18em;text-transform:uppercase;color:var(--color-gold-dim);
+                   margin-top:16px;margin-bottom:8px;">Force Organization</h5>
+        <p>Max 1 Captain in games of 2,000 points or less. Max 2 in games over 2,000 points.</p>
+
+      </div>
+    </div>
+    <!-- END Captain datasheet -->
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         PASTE ADDITIONAL UNIT DATASHEETS HERE
+         Copy the .datasheet block above and fill in each unit's stats
+         and rules from your Faction Index document.
+         ───────────────────────────────────────────────────────────────── -->
+
+    <div style="background:var(--color-surface-1); border:1px dashed var(--color-border);
+                padding:24px; text-align:center; color:var(--color-text-muted);
+                font-family:var(--font-mono); font-size:0.8rem; letter-spacing:0.1em;">
+      ADDITIONAL UNIT PROFILES — PASTE YOUR DATASHEETS ABOVE THIS BLOCK
+      <br/><br/>
+      Each unit follows the same pattern as the Captain card above.
+      Stats come from your xlsx data tables.
+    </div>
+
+    <!-- ── BATTLELINE ──────────────────────────────────────────────── -->
+    <h3 id="units-battleline" style="margin-top: 48px;">Battleline</h3>
+
+    <!-- Intercessors placeholder -->
+    <div class="datasheet" id="unit-intercessors">
+      <div class="datasheet-header">
+        <h4 class="datasheet-name">Intercessors</h4>
+        <span class="datasheet-category">Battleline · Infantry</span>
+        <span class="datasheet-points">20 pts/model</span>
+      </div>
+      <div class="stat-row">
+        <div class="stat-cell"><span class="stat-label">M</span><span class="stat-value">6"</span></div>
+        <div class="stat-cell"><span class="stat-label">WS</span><span class="stat-value">5</span></div>
+        <div class="stat-cell"><span class="stat-label">BS</span><span class="stat-value">5</span></div>
+        <div class="stat-cell"><span class="stat-label">I</span><span class="stat-value">4</span></div>
+        <div class="stat-cell"><span class="stat-label">A</span><span class="stat-value">3</span></div>
+        <div class="stat-cell"><span class="stat-label">S</span><span class="stat-value">4</span></div>
+        <div class="stat-cell"><span class="stat-label">T</span><span class="stat-value">4</span></div>
+        <div class="stat-cell"><span class="stat-label">W</span><span class="stat-value">4</span></div>
+        <div class="stat-cell"><span class="stat-label">SV</span><span class="stat-value">3+</span></div>
+        <div class="stat-cell"><span class="stat-label">LD</span><span class="stat-value">5+</span></div>
+        <div class="stat-cell"><span class="stat-label">OC</span><span class="stat-value">—</span></div>
+      </div>
+      <div class="datasheet-body">
+        <p style="color:var(--color-text-muted);font-style:italic;font-size:0.9rem;">
+          Unit composition: 3–5 Intercessors. Wargear options and abilities to be added.
+          See Faction Index document.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</DocsLayout>

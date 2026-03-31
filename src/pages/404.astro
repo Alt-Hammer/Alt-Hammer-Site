@@ -1,0 +1,22 @@
+---
+// src/pages/404.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found">
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;
+              min-height:60vh;text-align:center;padding:40px 20px;">
+    <div style="font-family:var(--font-mono);font-size:5rem;font-weight:700;
+                color:var(--color-gold-dim);opacity:0.3;line-height:1;margin-bottom:24px;">
+      404
+    </div>
+    <h1 style="font-size:1.8rem;margin-bottom:12px;">Page Not Found</h1>
+    <p style="color:var(--color-text-muted);max-width:40ch;margin-bottom:32px;">
+      The page you're looking for has been lost to the warp, or perhaps never existed.
+    </p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+      <a href="/" class="btn btn-primary">Return to Home</a>
+      <a href="/rules/core-rules" class="btn btn-ghost">Core Rules</a>
+    </div>
+  </div>
+</BaseLayout>

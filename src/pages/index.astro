@@ -1,0 +1,159 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FACTIONS, ALLIANCES, getFactionsByAlliance } from '../data/factions.ts';
+
+const factionsByAlliance = getFactionsByAlliance();
+
+const allianceColors: Record<string, string> = {
+  imperium: '#c9a84c',
+  chaos:    '#9b2020',
+  aeldari:  '#3a7bd5',
+  xenos:    '#2e8b57',
+  devourer: '#7b3fa0',
+};
+---
+
+<BaseLayout activePage="home">
+
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow animate-in">Community Rules Reference</p>
+      <h1 class="hero-title animate-in animate-in-delay-1">
+        <span class="title-main">Alt-Hammer</span>
+        <span class="title-sub">40,000 · 1st Edition</span>
+      </h1>
+      <p class="hero-tagline animate-in animate-in-delay-2">
+        An alternating-activations game system built on the bones of
+        Warhammer 40,000. Faster. More tactical. Fully community-driven.
+      </p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;"
+           class="animate-in animate-in-delay-3">
+        <a href="/rules/core-rules" class="btn btn-primary">Read Core Rules</a>
+        <a href="/factions" class="btn btn-ghost">Browse Factions</a>
+      </div>
+
+      <div class="divider-tactical animate-in animate-in-delay-4">
+        Field Manual · 1st Edition · Community Build
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Feature Cards ────────────────────────────────────────────────── -->
+  <div class="card-grid">
+
+    <a href="/rules/core-rules" class="feature-card animate-in animate-in-delay-1"
+       style="--card-accent: var(--color-gold);">
+      <span class="feature-card-icon">⚔</span>
+      <div class="feature-card-title">Core Rules</div>
+      <p class="feature-card-desc">
+        Battle round structure, activations, attack sequences, terrain, 
+        psychic powers, and all universal keywords and abilities.
+      </p>
+    </a>
+
+    <a href="/rules/keywords" class="feature-card animate-in animate-in-delay-2"
+       style="--card-accent: #3a7bd5;">
+      <span class="feature-card-icon">◈</span>
+      <div class="feature-card-title">Keywords & Abilities</div>
+      <p class="feature-card-desc">
+        Every universal keyword and wargear ability — from Devastating
+        Wounds to Twin-Linked — explained and cross-linked.
+      </p>
+    </a>
+
+    <a href="/factions" class="feature-card animate-in animate-in-delay-3"
+       style="--card-accent: #7b3fa0;">
+      <span class="feature-card-icon">◉</span>
+      <div class="feature-card-title">Factions</div>
+      <p class="feature-card-desc">
+        Army rules, detachment traits, wargear upgrades, and fully
+        detailed unit profiles for all {FACTIONS.filter(f => f.status === 'active').length} active factions.
+      </p>
+    </a>
+
+    <a href="/rules/missions" class="feature-card animate-in animate-in-delay-4"
+       style="--card-accent: #2e8b57;">
+      <span class="feature-card-icon">◎</span>
+      <div class="feature-card-title">Missions</div>
+      <p class="feature-card-desc">
+        Deployment zones, primary objectives, secondary mission objectives,
+        and optional mission rules for every game size.
+      </p>
+    </a>
+
+    <a href="/rules/stratagems" class="feature-card animate-in animate-in-delay-5"
+       style="--card-accent: #8b2020;">
+      <span class="feature-card-icon">▶</span>
+      <div class="feature-card-title">Stratagems</div>
+      <p class="feature-card-desc">
+        Core stratagems and faction-specific tactical plays, with
+        Command Point costs and timing clearly presented.
+      </p>
+    </a>
+
+    <a href="/list-builder" class="feature-card animate-in animate-in-delay-5"
+       style="--card-accent: #3a7bd5; opacity: 0.7;">
+      <span class="feature-card-icon">☰</span>
+      <div class="feature-card-title">
+        List Builder
+        <span class="badge badge-wip" style="margin-left:8px; vertical-align:middle;">
+          Soon
+        </span>
+      </div>
+      <p class="feature-card-desc">
+        Build and validate army lists with automatic force organization
+        enforcement, wargear constraints, and shareable list links.
+      </p>
+    </a>
+
+  </div>
+
+  <!-- ── Factions section ──────────────────────────────────────────────── -->
+  <div style="padding: 0 24px 64px; max-width: 1100px; margin: 0 auto;">
+
+    <div style="margin-bottom: 40px;">
+      <h2 style="display:inline; font-size: 1.6rem;">Factions</h2>
+      <span style="margin-left: 16px; font-family: var(--font-mono); font-size: 0.7rem;
+                   color: var(--color-text-muted); letter-spacing: 0.15em; text-transform: uppercase;">
+        {FACTIONS.filter(f => f.status === 'active').length} active
+        · {FACTIONS.filter(f => f.status === 'coming-soon').length} coming soon
+      </span>
+    </div>
+
+    {factionsByAlliance.map(({ alliance, factions }) => (
+      <div>
+        <div class="alliance-header"
+             style={`--alliance-color: ${allianceColors[alliance.id] ?? 'var(--color-gold)'};`}>
+          <span class="alliance-label">{alliance.label}</span>
+          <div class="alliance-rule"></div>
+        </div>
+
+        <div class="faction-grid" style="margin-bottom: 8px;">
+          {factions.map((faction) => (
+            <a
+              href={faction.status === 'active' ? `/factions/${faction.id}` : '#'}
+              class={`faction-card ${faction.status === 'coming-soon' ? 'coming-soon' : ''}`}
+              style={`--alliance-color: ${allianceColors[faction.alliance] ?? 'var(--color-gold-dim)'};`}
+            >
+              <span class="faction-card-name">{faction.name}</span>
+              {faction.description && (
+                <span class="faction-card-desc">{faction.description}</span>
+              )}
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+</BaseLayout>
+
+<style>
+  /* Homepage-specific overrides */
+  .main-content {
+    padding: 0;
+    max-width: 100%;
+  }
+</style>

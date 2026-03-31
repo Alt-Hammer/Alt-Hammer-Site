@@ -1,0 +1,31 @@
+---
+// src/pages/list-builder.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="List Builder"
+  activePage="list-builder"
+>
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;
+              min-height:60vh;text-align:center;padding:40px 20px;">
+    <div style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.3em;
+                text-transform:uppercase;color:var(--color-gold-dim);margin-bottom:20px;">
+      Coming Soon
+    </div>
+    <h1 style="font-size:2rem;margin-bottom:12px;">List Builder</h1>
+    <p style="color:var(--color-text-muted);max-width:50ch;margin-bottom:8px;line-height:1.6;">
+      The Alt-Hammer army list builder is under development. It will allow you to
+      construct and validate army lists with automatic Force Organization enforcement,
+      wargear constraints, and shareable list links.
+    </p>
+    <p style="color:var(--color-text-muted);max-width:50ch;margin-bottom:32px;font-size:0.9rem;">
+      In the meantime, see the <a href="/rules/core-rules#force-organization">Force Organization rules</a>
+      and use the <a href="/factions">Faction pages</a> for unit reference.
+    </p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+      <a href="/factions" class="btn btn-primary">Browse Factions</a>
+      <a href="/rules/core-rules" class="btn btn-ghost">Core Rules</a>
+    </div>
+  </div>
+</BaseLayout>

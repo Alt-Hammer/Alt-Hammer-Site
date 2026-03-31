@@ -1,0 +1,386 @@
+---
+// src/pages/rules/core-rules.astro
+import DocsLayout from '../../layouts/DocsLayout.astro';
+---
+
+<DocsLayout
+  title="Core Rules"
+  description="Alt-Hammer 40,000 Core Rules — battle round structure, activations, attack sequences, and all fundamental gameplay rules."
+  activePage="rules"
+  sidebarType="rules"
+>
+
+  <div class="page-header">
+    <p class="breadcrumb">Rules</p>
+    <h1>Core Rules</h1>
+    <p class="subtitle">
+      The complete core gameplay rules for Alt-Hammer 40,000 —
+      an alternating-activations system built on the Warhammer 40,000 framework.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+      Alt-Hammer is a ruleset designed to provide an alternative style of Warhammer 40,000
+      gameplay using alternating unit activations. The intent is to bring Warhammer 40,000's
+      intricate rules designs into more tactical gameplay where each player alternates between
+      individual unit activations, effectively completing their turns — and full battle rounds —
+      simultaneously.
+    </p>
+    <p>This document covers:</p>
+    <ul>
+      <li><strong>Preparing Your Game</strong> — force organization, minimum army requirements, and pre-game steps.</li>
+      <li><strong>Battle Round Structure</strong> — the 3-phase structure of each battle round.</li>
+      <li><strong>Activations & Activation Points</strong> — how unit activations and their sequencing work.</li>
+      <li><strong>Attacks</strong> — ranged and melee combat resolution.</li>
+      <li><strong>Battle Shock</strong> — the morale system.</li>
+      <li><strong>Strategic Reserves</strong> — off-board deployment rules.</li>
+      <li><strong>Primary Mission Objectives</strong> — placing, controlling, and scoring objectives.</li>
+      <li><strong>Optional Features</strong> — Mission Rules, Secondary Objectives, and Command Points & Stratagems.</li>
+    </ul>
+
+    <h3 id="design-philosophy">Design Philosophy</h3>
+    <p>Alt-Hammer has been designed with these core philosophies in mind:</p>
+    <ul>
+      <li><strong>Re-rolls are virtually eliminated</strong> — with one exception (an optional Stratagem), there is no rule in Alt-Hammer that allows re-rolling a D6.</li>
+      <li><strong>Additive Points</strong> — Alt-Hammer uses Points exclusively to determine battle sizes, and every model and piece of wargear has an additive cost.</li>
+      <li><strong>High impact attacks against optimal targets</strong> — lethality is optimised for intended targets and quickly loses efficiency against sub-optimal ones.</li>
+      <li><strong>Universal special rules</strong> — outside of Faction Rules and Character abilities, virtually all special rules are universal keywords. Once you know them, you know most of the game.</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="preparing-your-game">
+    <h2>Preparing Your Game</h2>
+
+    <h3 id="force-organization">Force Organization</h3>
+    <p>
+      The army you play in an Alt-Hammer game is comprised of Units. There is no limitation
+      on the total number of Units your force can include, however the following rules apply:
+    </p>
+    <ol>
+      <li>Your army must include at least 1 <span class="keyword">Leader</span> unit.</li>
+      <li>1 <span class="keyword">Leader</span> unit must be designated as your <strong>Warlord</strong>.</li>
+      <li>
+        You can include a maximum of <strong>2 of the same unit</strong> for every 1,000 points, unless:
+        <ul>
+          <li>The unit has the <span class="keyword">Battleline</span> keyword — up to 2 per 500 points.</li>
+          <li>The unit has the <span class="keyword">Character</span> or <span class="keyword">Titanic</span> keywords — up to 1 per 1,000 points.</li>
+          <li>The unit has the <span class="keyword">Transport [X]</span> ability — 1 per <span class="keyword">Infantry</span> unit in your army.</li>
+          <li>The unit has unit-specific force organization conditions on its Unit Profile.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3 id="pregame-setup">Pregame Setup</h3>
+    <p>
+      Alt-Hammer games begin by determining the mission using the
+      <a href="/rules/missions">Generating a Mission</a> section, or by another method agreed
+      upon by the players.
+    </p>
+    <p>
+      <strong>Determine Player Initiative for Battle Round 1:</strong> Each player rolls a D6.
+      The player with the highest roll takes the Initiative for the first Battle Round.
+      The Initiative player completes the first unit Activation in Battle Round 1,
+      sets the order for any pre-battle rules (e.g. <span class="keyword">Scout [X]"</span> moves),
+      and leads the Command Phase order.
+    </p>
+
+    <div class="rule-summary">
+      <strong>Initiative grants:</strong>
+      <ul>
+        <li>First unit Activation in Battle Round 1</li>
+        <li>First resolution of pre-battle abilities</li>
+        <li>First resolution of the Command Phase</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="the-battle-round">
+    <h2>The Battle Round</h2>
+    <p>Alt-Hammer battles last for <strong>5 Battle Rounds</strong>. Each Battle Round has 3 phases:</p>
+
+    <h3 id="command-phase">Phase 1: Command Phase</h3>
+    <p>
+      Each player resolves the following in order, following the turn order determined by
+      the most recent Initiative Determination Phase:
+    </p>
+    <ol>
+      <li><strong>Complete Rally Checks</strong> for units that became Battle Shocked in the prior Battle Round. (Skip in Battle Round 1.)</li>
+      <li><strong>Acquire new Command Points.</strong> Some units may grant additional Command Points.</li>
+      <li><strong>Generate Secondary Mission Objectives</strong> if using Secondary Objectives.</li>
+      <li><strong>Resolve Command Phase abilities</strong> — Faction Army Rules, Character abilities, etc.</li>
+      <li><strong>Tally Primary and Secondary Points</strong> from the prior Battle Round. (Skip in Battle Round 1.)</li>
+    </ol>
+
+    <h3 id="activation-phase">Phase 2: Activation Phase</h3>
+    <p>
+      Players alternate activating units in their army. When a unit is Activated, it must
+      expend up to the maximum number of Activation Points available on eligible Actions.
+    </p>
+    <p>
+      The Activation Phase ends when each player has completed all Activations and Bonus
+      Activations available this Battle Round.
+    </p>
+
+    <h3 id="determine-initiative">Phase 3: Determine Initiative</h3>
+    <p>
+      Each player rolls a D6. The player with the highest roll takes the Initiative in the
+      next Battle Round.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="actions-activation-points">
+    <h2>Actions &amp; Activation Points</h2>
+    <p>
+      When a unit is Activated, it receives Activation Points (typically 3 for most units)
+      which are spent on the following Core Actions. Each Action's AP cost and eligibility
+      criteria are detailed in the full rules document.
+    </p>
+
+    <h3 id="core-actions">Core Actions</h3>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Action</th>
+            <th>AP Cost</th>
+            <th style="text-align:left;">Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-header">Remain Stationary</td>
+            <td>0</td>
+            <td style="text-align:left;font-family:var(--font-body);">Unit does not move this activation. Some abilities trigger off this state.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Move</td>
+            <td>1</td>
+            <td style="text-align:left;font-family:var(--font-body);">Move unit up to its Movement characteristic. Can include an Advance.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Fall Back</td>
+            <td>1</td>
+            <td style="text-align:left;font-family:var(--font-body);">Move unit out of base-to-base contact with enemy models.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Shoot</td>
+            <td>1</td>
+            <td style="text-align:left;font-family:var(--font-body);">Make ranged attacks with unit's ranged weapons.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Charge and Fight</td>
+            <td>2</td>
+            <td style="text-align:left;font-family:var(--font-body);">Move into base contact with enemy, then fight in melee.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Fight</td>
+            <td>1</td>
+            <td style="text-align:left;font-family:var(--font-body);">Fight in melee if already in base-to-base contact with enemy models.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Mission Task</td>
+            <td>1</td>
+            <td style="text-align:left;font-family:var(--font-body);">Interact with a Primary Objective Marker or other mission objective.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Enter Strategic Reserve</td>
+            <td>2</td>
+            <td style="text-align:left;font-family:var(--font-body);">Remove unit from battlefield and place into Strategic Reserves.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Enter from Strategic Reserve</td>
+            <td>2</td>
+            <td style="text-align:left;font-family:var(--font-body);">Deploy unit from Strategic Reserves onto the battlefield.</td>
+          </tr>
+          <tr>
+            <td class="row-header">Hold Fast</td>
+            <td>2</td>
+            <td style="text-align:left;font-family:var(--font-body);">Unit cannot complete a Bonus Activation this round. Grants defensive benefits.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 id="bonus-activations">Bonus Activations</h3>
+    <p>
+      If a player finishes activating all of their units before the other player, they may
+      select previously activated <span class="keyword">Battleline</span> units for a Bonus Activation.
+      A Bonus Activation grants the selected unit <strong>1 Activation Point</strong>, which may be
+      spent on: Shoot, Move (no Advance), Charge and Fight, or Fight.
+    </p>
+    <p>
+      A unit can only be selected for a Bonus Activation once, and each Bonus Activation type
+      can only be used once per Battle Round. A player can receive a maximum of 4 Bonus
+      Activations total per Battle Round.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="making-attacks">
+    <h2>Making Attacks</h2>
+
+    <h3 id="attack-sequence">General Attack Sequence</h3>
+    <ol>
+      <li><strong>Roll to Hit</strong> — using the Hit Roll Table. Compare the attacking model's WS or BS against the target's WS or BS to determine the roll needed.</li>
+      <li><strong>Roll to Wound</strong> — using the Wound Roll Table. Compare the attack's Strength against the target's Toughness.</li>
+      <li><strong>Armour Save</strong> — the target makes an Armour Save, modified by the weapon's Armour Piercing (AP) value.</li>
+      <li><strong>Apply Damage</strong> — if the save fails, apply the weapon's Damage characteristic to the target model.</li>
+    </ol>
+
+    <h3 id="armour-saves">Armour Saves</h3>
+    <p>
+      Every model has an Armour Save characteristic (2+ to 7+). Roll 1D6, subtract the
+      weapon's AP value. If the result equals or exceeds the model's Save characteristic,
+      the wound is saved. A roll of 1 <em>always</em> fails. Any effective Save of 7+ or worse
+      is an automatic failure — no roll required.
+    </p>
+
+    <h3 id="mortal-wounds">Mortal Wounds</h3>
+    <p>
+      Models suffering Mortal Wounds cannot make Armour Saves or use
+      <span class="keyword">Invulnerable Save</span> abilities against them.
+      However, Mortal Wounds can be mitigated by the
+      <span class="keyword">Feel No Pain [X]+</span> ability.
+    </p>
+
+    <!-- ── Hit Roll Table ────────────────────────────────────────── -->
+    <h3 id="hit-roll-table">Hit Roll Table</h3>
+    <p>
+      Compare the <strong>attacker's WS/BS</strong> (rows) against the
+      <strong>target's WS/BS</strong> (columns) to find the D6 roll required for a hit.
+      <strong>Auto</strong> = automatic Critical Hit. <strong>X</strong> = cannot target.
+    </p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th colspan="2" style="text-align:left; border-right: 2px solid var(--color-border-mid);">Attacker WS/BS</th>
+            {[1,2,3,4,5,6,7,8,9,10].map(n => <th>Target {n}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            [1,  ['5+','5+','6+','6+','x','x','x','x','x','x']],
+            [2,  ['4+','4+','5+','5+','6+','6+','x','x','x','x']],
+            [3,  ['2+','3+','4+','5+','5+','6+','6+','x','x','x']],
+            [4,  ['2+','2+','3+','4+','4+','5+','5+','6+','x','x']],
+            [5,  ['auto','2+','2+','3+','3+','4+','4+','5+','6+','x']],
+            [6,  ['auto','auto','2+','2+','3+','3+','3+','4+','4+','5+']],
+            [7,  ['auto','auto','auto','2+','2+','3+','3+','3+','4+','4+']],
+            [8,  ['auto','auto','auto','auto','2+','2+','3+','3+','3+','4+']],
+            [9,  ['auto','auto','auto','auto','auto','2+','2+','3+','3+','3+']],
+            [10, ['auto','auto','auto','auto','auto','auto','2+','2+','3+','3+']],
+          ].map(([skill, values]) => (
+            <tr>
+              <td class="row-header" style="padding-left:16px;">{skill}</td>
+              <td style="border-right: 2px solid var(--color-border-mid);"></td>
+              {(values as string[]).map(v => (
+                <td class={v === 'auto' ? 'auto' : v === 'x' ? 'impossible' : ''}>{v}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Wound Roll Table (abbreviated) ───────────────────────── -->
+    <h3 id="wound-roll-table">Wound Roll Table</h3>
+    <p>
+      Compare the <strong>attack's Strength</strong> (rows) against the
+      <strong>target's Toughness</strong> (columns).
+      <strong>Auto</strong> = automatic wound + target immediately destroyed (no Armour Save).
+      <strong>X</strong> = cannot wound.
+    </p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th colspan="2" style="text-align:left; border-right: 2px solid var(--color-border-mid);">Strength</th>
+            {[1,2,3,4,5,6,7,8,9,10,11,12,13].map(n => <th>T{n}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            [1,  ['4+','6+','x','x','x','x','x','x','x','x','x','x','x']],
+            [2,  ['2+','4+','5+','6+','x','x','x','x','x','x','x','x','x']],
+            [3,  ['auto','3+','4+','5+','6+','6+','x','x','x','x','x','x','x']],
+            [4,  ['auto','2+','3+','4+','5+','6+','6+','6+','x','x','x','x','x']],
+            [5,  ['auto','2+','3+','3+','4+','5+','5+','6+','6+','6+','x','x','x']],
+            [6,  ['auto','auto','2+','3+','3+','4+','5+','5+','6+','6+','x','x','x']],
+            [7,  ['auto','auto','2+','3+','3+','3+','4+','5+','5+','6+','6+','x','x']],
+            [8,  ['auto','auto','2+','2+','3+','3+','3+','4+','5+','5+','6+','6+','x']],
+            [9,  ['auto','auto','auto','2+','3+','3+','3+','3+','4+','5+','5+','6+','6+']],
+            [10, ['auto','auto','auto','2+','2+','3+','3+','3+','3+','4+','5+','5+','6+']],
+          ].map(([str, values]) => (
+            <tr>
+              <td class="row-header" style="padding-left:16px;">{str}</td>
+              <td style="border-right: 2px solid var(--color-border-mid);"></td>
+              {(values as string[]).map(v => (
+                <td class={v === 'auto' ? 'auto' : v === 'x' ? 'impossible' : ''}>{v}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p style="color:var(--color-text-muted);font-size:0.85rem;">
+      * Full Wound Roll Table extends to Strength 30 / Toughness 13.
+      See the printed Faction Data Tables for the complete version.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section id="shooting-attacks">
+    <h2>Shooting Attacks</h2>
+    <p>
+      When a unit uses the Shoot Action, it makes Ranged attacks.
+      Full shooting rules — including line of sight, measuring range, target restrictions,
+      and all weapon ability interactions — are detailed in this section.
+    </p>
+    <p style="color:var(--color-text-muted);font-style:italic;">
+      [ Paste the Shooting Attacks rules from your Core Rules document here. ]
+    </p>
+  </section>
+
+  <section id="melee-attacks">
+    <h2>Melee Attacks</h2>
+    <p style="color:var(--color-text-muted);font-style:italic;">
+      [ Paste the Melee Attacks rules from your Core Rules document here. ]
+    </p>
+  </section>
+
+  <section id="psychic-attacks">
+    <h2>Psychic Attacks, Abilities &amp; Psykers</h2>
+    <p style="color:var(--color-text-muted);font-style:italic;">
+      [ Paste the Psychic rules from your Core Rules document here. ]
+    </p>
+  </section>
+
+  <section id="battle-shock">
+    <h2>Battle Shock</h2>
+    <p style="color:var(--color-text-muted);font-style:italic;">
+      [ Paste the Battle Shock rules from your Core Rules document here. ]
+    </p>
+  </section>
+
+  <section id="rally-checks">
+    <h2>Rally Checks</h2>
+    <p style="color:var(--color-text-muted);font-style:italic;">
+      [ Paste the Rally Check rules from your Core Rules document here. ]
+    </p>
+  </section>
+
+  <section id="strategic-reserves">
+    <h2>Strategic Reserves</h2>
+    <p style="color:var(--color-text-muted);font-style:italic;">
+      [ Paste the Strategic Reserves rules from your Core Rules document here. ]
+    </p>
+  </section>
+
+</DocsLayout>

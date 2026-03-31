@@ -1,0 +1,182 @@
+---
+// src/layouts/BaseLayout.astro
+// The root shell for every page on the site.
+// Props:
+//   title         — page <title> suffix
+//   description   — meta description
+//   activePage    — 'home' | 'rules' | 'factions' | 'list-builder'
+//   showSidebar   — whether to render the left nav (default true)
+//   sidebarType   — 'rules' | 'factions' (selects which nav to show)
+
+import { FACTIONS, ALLIANCES, getFactionsByAlliance } from '../data/factions.ts';
+import { RULES_SECTIONS } from '../data/rules-nav.ts';
+
+interface Props {
+  title?: string;
+  description?: string;
+  activePage?: 'home' | 'rules' | 'factions' | 'list-builder';
+  showSidebar?: boolean;
+  sidebarType?: 'rules' | 'factions';
+  currentPath?: string;
+}
+
+const {
+  title = '',
+  description = 'Alt-Hammer 40,000 — Community rules reference for the alternating-activations Warhammer 40,000 game system.',
+  activePage = 'home',
+  showSidebar = false,
+  sidebarType = 'factions',
+  currentPath = '',
+} = Astro.props;
+
+const factionsByAlliance = getFactionsByAlliance();
+
+const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={description} />
+  <meta name="theme-color" content="#0a0b0d" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+
+  <!-- ── Top Header ──────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <a href="/" class="header-logo">
+      <span>Alt-Hammer</span>
+      <span class="logo-edition">40,000<br/>1st Edition</span>
+    </a>
+
+    <nav class="header-nav">
+      <a href="/rules/core-rules" class={activePage === 'rules' ? 'active' : ''}>
+        Core Rules
+      </a>
+      <a href="/factions" class={activePage === 'factions' ? 'active' : ''}>
+        Factions
+      </a>
+      <a href="/list-builder" class={activePage === 'list-builder' ? 'active' : ''}>
+        List Builder
+      </a>
+    </nav>
+
+    <span class="header-status">v1.0 · 1st Ed.</span>
+  </header>
+
+  <!-- ── Body Layout ─────────────────────────────────────────────────── -->
+  <div class="layout-wrapper">
+
+    {showSidebar && (
+      <aside class="sidebar" id="sidebar">
+
+        {sidebarType === 'factions' && (
+          <div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-header">Navigation</div>
+              <a href="/" class={`sidebar-nav-item ${currentPath === '/' ? 'active' : ''}`}>
+                Home
+              </a>
+              <a href="/factions" class={`sidebar-nav-item ${currentPath === '/factions' ? 'active' : ''}`}>
+                All Factions
+              </a>
+            </div>
+
+            <div class="sidebar-section">
+              <div class="sidebar-section-header">Rules</div>
+              {RULES_SECTIONS.map((section) => (
+                <a
+                  href={section.href}
+                  class={`sidebar-nav-item ${currentPath.startsWith(section.href) ? 'active' : ''}`}
+                >
+                  {section.label}
+                </a>
+              ))}
+            </div>
+
+            <div class="sidebar-section">
+              <div class="sidebar-section-header">Factions</div>
+              {factionsByAlliance.map(({ alliance, factions }) => (
+                <div>
+                  <div
+                    class="sidebar-alliance"
+                    style={`color: ${alliance.accentColor};`}
+                  >
+                    {alliance.label}
+                  </div>
+                  {factions.map((faction) => (
+                    <a
+                      href={faction.status === 'active' ? `/factions/${faction.id}` : '#'}
+                      class={`sidebar-nav-item ${faction.status === 'coming-soon' ? 'coming-soon' : ''} ${currentPath === `/factions/${faction.id}` ? 'active' : ''}`}
+                    >
+                      {faction.name}
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {sidebarType === 'rules' && (
+          <div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-header">Core Rules</div>
+              {RULES_SECTIONS.map((section) => (
+                <div>
+                  <a
+                    href={section.href}
+                    class={`sidebar-nav-item ${currentPath === section.href ? 'active' : ''}`}
+                  >
+                    {section.label}
+                  </a>
+                  {currentPath === section.href && section.items.length > 0 && (
+                    <div class="sidebar-nav-sub">
+                      {section.items.map((item) => (
+                        <a
+                          href={item.anchor ? `${section.href}${item.anchor}` : item.href ?? '#'}
+                          class="sidebar-nav-item"
+                        >
+                          {item.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+      </aside>
+    )}
+
+    <!-- ── Page Content ─────────────────────────────────────────────── -->
+    <main class="main-content" id="main">
+      <slot />
+    </main>
+
+  </div>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>
+      Alt-Hammer 40,000 is a fan-made, community rules system and is not affiliated with or endorsed by Games Workshop.
+      Warhammer 40,000 is a trademark of Games Workshop Ltd.
+    </p>
+    <p style="margin-top: 8px;">
+      <a href="/rules/core-rules">Core Rules</a> ·
+      <a href="/factions">Factions</a> ·
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
