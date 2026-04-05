@@ -2,12 +2,12 @@
   "name": "alt-hammer-site",
   "type": "module",
   "version": "1.0.0",
-  "scripts": {
+ "scripts": {
   "dev": "tinacms dev -c \"astro dev\"",
-  "build": "tinacms build && astro build",
+  "build": "astro build",
   "preview": "astro preview",
-    "astro": "astro"
-  },
+  "astro": "astro"
+},
   "dependencies": {
     "astro": "^4.16.0",
     "tinacms": "^3.7.1"
