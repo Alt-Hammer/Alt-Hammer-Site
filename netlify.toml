@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  TINA_PUBLIC_IS_LOCAL = "true"
 
 [[redirects]]
   from = "/*"
