@@ -1,8 +1,11 @@
 import { defineConfig } from "tinacms";
 
 const branch =
-  process.env.GITHUB_BRANCH ||
+  process.env.TINA_BRANCH ||
+  process.env.BRANCH ||
   process.env.HEAD ||
+  process.env.GITHUB_BRANCH ||
+  process.env.GIT_BRANCH ||
   "main";
 
 export default defineConfig({
