@@ -8,6 +8,8 @@ const branch =
   process.env.GIT_BRANCH ||
   "main";
 
+console.log("[Tina Config] Resolved branch:", branch, "| TINA_BRANCH:", process.env.TINA_BRANCH, "| BRANCH:", process.env.BRANCH);
+
 export default defineConfig({
   branch,
   clientId: process.env.TINA_PUBLIC_CLIENT_ID,
