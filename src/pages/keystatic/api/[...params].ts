@@ -1,0 +1,1 @@
+export { makeHandler } from "@keystatic/astro/api";
