@@ -1,1 +1,1 @@
-export { all as ALL } from '@keystatic/astro/api';
+export { makeHandler } from '@keystatic/astro/api';
