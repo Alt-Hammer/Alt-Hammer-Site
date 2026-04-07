@@ -6,16 +6,6 @@
   NODE_VERSION = "20"
 
 [[redirects]]
-  from = "/keystatic"
-  to = "/.netlify/functions/keystatic"
-  status = 200
-
-[[redirects]]
-  from = "/keystatic/*"
-  to = "/.netlify/functions/keystatic"
-  status = 200
-
-[[redirects]]
   from = "/*"
   to = "/404"
   status = 404
