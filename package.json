@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^6.6.5",
+    "@astrojs/react": "^5.0.3",
     "@keystatic/astro": "^5.0.6",
     "@keystatic/core": "^0.5.50",
-    "astro": "^5.18.1"
+    "astro": "^5.18.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@types/node": "^25.5.2"
