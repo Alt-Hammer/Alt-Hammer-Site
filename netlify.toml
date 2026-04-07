@@ -3,7 +3,15 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "22"
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-astro"
+
+[[redirects]]
+  from = "/keystatic/*"
+  to = "/.netlify/functions/keystatic"
+  status = 200
 
 [[redirects]]
   from = "/*"
