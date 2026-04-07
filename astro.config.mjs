@@ -4,7 +4,7 @@ import netlify from '@astrojs/netlify';
 
 export default defineConfig({
   site: 'https://alt-hammer.netlify.app',
-  output: 'hybrid',
+  output: 'server',
   integrations: [keystatic()],
   adapter: netlify(),
 });
