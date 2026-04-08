@@ -1,0 +1,2141 @@
+{
+  "faction": "Chaos Undivided",
+  "slug": "chaos-undivided",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Daemon Prince",
+      "category": "Character",
+      "stats": {
+        "M": "8\"",
+        "WS": 8,
+        "BS": 7,
+        "I": 6,
+        "A": 6,
+        "S": 7,
+        "T": 8,
+        "W": 8,
+        "SV": "3+",
+        "LD": "3+",
+        "basePoints": 200,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Monster",
+        "Character",
+        "Leader",
+        "Invulnerable Save 4+"
+      ]
+    },
+    {
+      "name": "Lord",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 7,
+        "BS": 7,
+        "I": 6,
+        "A": 6,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "3+",
+        "LD": "3+",
+        "basePoints": 130,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Champion",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 5,
+        "A": 5,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Sorcerer",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Psyker",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Dark Apostle",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Cultist Demagogue",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 4,
+        "SV": "6+",
+        "LD": "7+",
+        "basePoints": 2,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Warpsmith",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Character",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Hellstalker",
+      "category": "Character",
+      "stats": {
+        "M": "10\"",
+        "WS": "-",
+        "BS": "-",
+        "I": "-",
+        "A": "-",
+        "S": 6,
+        "T": 6,
+        "W": 8,
+        "SV": "3+",
+        "LD": "-",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Mounted",
+        "Character",
+        "Tacticus",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Questor Traitoris Lord",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": "-",
+        "A": "-",
+        "S": "-",
+        "T": "-",
+        "W": "-",
+        "SV": "-",
+        "LD": "-",
+        "basePoints": 60,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Questor Traitoris",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Cultists",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 2,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "6+",
+        "LD": "7+",
+        "basePoints": 2,
+        "squadSizes": "5 to 30"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Infantry",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Cultists - Torment",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 4,
+        "SV": "6+",
+        "LD": "7+",
+        "basePoints": 2,
+        "squadSizes": "5 to 30"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Infantry",
+        "Fearless",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Legionnaries",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Chosen",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 30,
+        "squadSizes": "1 to 5"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Bodyguard",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Havocs",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 3,
+        "A": 3,
+        "S": 4,
+        "T": 5,
+        "W": 5,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 30,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Havoc"
+      ]
+    },
+    {
+      "name": "Raptors",
+      "category": "Infantry",
+      "stats": {
+        "M": "12\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 30,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Raptor",
+        "Jump Pack",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Obliterators",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 2,
+        "A": 4,
+        "S": 7,
+        "T": 7,
+        "W": 6,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Possessed",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 35,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry",
+        "Scout 6\"",
+        "Relentless",
+        "Unyielding",
+        "Fearless",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Spawn",
+      "category": "Beasts",
+      "stats": {
+        "M": "7\"",
+        "WS": 3,
+        "BS": 2,
+        "I": 4,
+        "A": 5,
+        "S": 4,
+        "T": 3,
+        "W": 6,
+        "SV": "4+",
+        "LD": "10+",
+        "basePoints": 30,
+        "squadSizes": "1 to 4"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Beast",
+        "Deep Strike",
+        "Fearless",
+        "Invulnerable Save 4+",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Venomcrawler",
+      "category": "Monsters",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 5,
+        "A": 6,
+        "S": 5,
+        "T": 7,
+        "W": 10,
+        "SV": "4+",
+        "LD": "10+",
+        "basePoints": 80,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Monster",
+        "Demon Engine",
+        "Fearless",
+        "Feel No Pain 5+",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Fiend",
+      "category": "Monsters",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 3,
+        "A": 4,
+        "S": 7,
+        "T": 10,
+        "W": 13,
+        "SV": "2+",
+        "LD": "10+",
+        "basePoints": 140,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Monster",
+        "Demon Engine",
+        "Fearless",
+        "Feel No Pain 5+",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Defiler",
+      "category": "Monsters",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 9,
+        "S": 9,
+        "T": 12,
+        "W": 20,
+        "SV": "2+",
+        "LD": "10+",
+        "basePoints": 220,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Monster",
+        "Demon Engine",
+        "Fearless",
+        "Feel No Pain 5+",
+        "Deadly Demise D6+2"
+      ]
+    },
+    {
+      "name": "War Dogs",
+      "category": "Walkers",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 7,
+        "T": 9,
+        "W": 10,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 120,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Chaos",
+        "Questor Traitoris",
+        "Vehicle",
+        "Walker",
+        "Scout 6\"",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Hellbrute",
+      "category": "Walkers",
+      "stats": {
+        "M": "8\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 7,
+        "T": 11,
+        "W": 14,
+        "SV": "2+",
+        "LD": "4+",
+        "basePoints": 135,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Heretic Astartes",
+        "Vehicle",
+        "Walker",
+        "Fearless",
+        "Feel No Pain 6+",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Despoiler",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 3,
+        "A": 4,
+        "S": 9,
+        "T": 12,
+        "W": 18,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 200,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Questor Traitoris",
+        "Vehicle",
+        "Walker",
+        "Titanic",
+        "Deadly Demise 2D6"
+      ]
+    },
+    {
+      "name": "Tyrant",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 2,
+        "A": 2,
+        "S": 11,
+        "T": 13,
+        "W": 20,
+        "SV": "2+",
+        "LD": "4+",
+        "basePoints": 300,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Questor Traitoris",
+        "Vehicle",
+        "Walker",
+        "Titanic",
+        "Deadly Demise 2D6+1"
+      ]
+    },
+    {
+      "name": "Predator",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Vindicator",
+      "category": "Vehicles",
+      "stats": {
+        "M": "10\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 11,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Whirlwind",
+      "category": "Vehicles",
+      "stats": {
+        "M": "10\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Land Raider",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 6,
+        "S": 9,
+        "T": 12,
+        "W": 20,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 250,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Vehicle",
+        "Transport 12",
+        "Deadly Demise D6+1"
+      ]
+    },
+    {
+      "name": "Rhino",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 1,
+        "A": 3,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Vehicle",
+        "Transport 6",
+        "Firing Deck 2",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Drop Pod",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "0\"",
+        "WS": "-",
+        "BS": 5,
+        "I": "-",
+        "A": "-",
+        "S": "-",
+        "T": 10,
+        "W": 6,
+        "SV": "3+",
+        "LD": "-",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Vehicle",
+        "Transport 10",
+        "Deep Strike",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Cultists",
+      "category": "Fortifications",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 2,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "6+",
+        "LD": "7+",
+        "basePoints": 2,
+        "squadSizes": "5 to 30"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Infantry",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Legionnaries",
+      "category": "Fortifications",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Heretic Astartes",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Bezerkers",
+      "category": "Fortifications",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 8"
+      },
+      "keywords": [
+        "Chaos",
+        "Khorne",
+        "Heretic Astartes",
+        "Infantry",
+        "Relentless"
+      ]
+    },
+    {
+      "name": "Unbroken",
+      "category": "Fortifications",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 2,
+        "A": 3,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 24,
+        "squadSizes": "3 to 7"
+      },
+      "keywords": [
+        "Chaos",
+        "Nurgle",
+        "Heretic Astartes",
+        "Infantry",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Tormentors",
+      "category": "Fortifications",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 6"
+      },
+      "keywords": [
+        "Chaos",
+        "Slaanesh",
+        "Heretic Astartes",
+        "Infantry",
+        "Relentless",
+        "Unyielding"
+      ]
+    },
+    {
+      "name": "Rubricae",
+      "category": "Fortifications",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 2,
+        "A": 2,
+        "S": 4,
+        "T": 4,
+        "W": 2,
+        "SV": "3+",
+        "LD": "2+",
+        "basePoints": 18,
+        "squadSizes": "3 to 9"
+      },
+      "keywords": [
+        "Chaos",
+        "Tzeentch",
+        "Heretic Astartes",
+        "Infantry",
+        "Unyielding",
+        "Fearless"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": "Weapon Availability Limitations for Armour and Wargear"
+    },
+    {
+      "name": "Bolt Pistol",
+      "points": 2,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
+    },
+    {
+      "name": "Bolter",
+      "points": 5,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Heavy Bolter",
+      "points": 15,
+      "range": "36\"",
+      "attacks": "3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Sustained Hits 1"
+      ],
+      "availability": "Tacticus, Havoc"
+    },
+    {
+      "name": "Shotgun",
+      "points": 5,
+      "range": "4\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "4",
+      "keywords": [
+        "Assault",
+        "Anti-INFANTRY 5+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus"
+    },
+    {
+      "name": "Autogun",
+      "points": 2,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heavy Autogun",
+      "points": 7,
+      "range": "30\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autocannon",
+      "points": 10,
+      "range": "48\"",
+      "attacks": "2",
+      "strength": 7,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Exterminator Autocannon",
+      "points": 65,
+      "range": "48\"",
+      "attacks": "4",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 2",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Assault Cannon",
+      "points": 15,
+      "range": "24\"",
+      "attacks": "8",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Heavy Assault Cannon",
+      "points": 65,
+      "range": "24\"",
+      "attacks": "16",
+      "strength": 6,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Flamer",
+      "points": 8,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
+    },
+    {
+      "name": "Heavy Flamer",
+      "points": 15,
+      "range": "9\"",
+      "attacks": "D6+4",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Inferno Cannon",
+      "points": 30,
+      "range": "12\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Melta Pistol",
+      "points": 5,
+      "range": "6\"",
+      "attacks": "1",
+      "strength": 7,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Pistol",
+        "Melta 2"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
+    },
+    {
+      "name": "Multi-melta",
+      "points": 25,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Melta Cannon",
+      "points": 50,
+      "range": "24\"",
+      "attacks": "D3+1",
+      "strength": 10,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Melta 4"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Magma Cutter - Ranged",
+      "points": 10,
+      "range": "9\"",
+      "attacks": "D3",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Pistol - Normal",
+      "points": 5,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Plasma Pistol - Supercharged",
+      "points": null,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 6,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Pistol",
+        "Hazardous 2"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Plasma Gun - Normal",
+      "points": 8,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
+    },
+    {
+      "name": "Plasma Cannon - Normal",
+      "points": 20,
+      "range": "30\"",
+      "attacks": "D3+1",
+      "strength": 6,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Plasma Cannon - Supercharged",
+      "points": null,
+      "range": "30\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Blast 1\"",
+        "Hazardous D3+1"
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Macro Plasma Cannon - Supercharged",
+      "points": null,
+      "range": "36\"",
+      "attacks": "D3+1",
+      "strength": 11,
+      "ap": -4,
+      "damage": "4",
+      "keywords": [
+        "Ordnance",
+        "Blast 3\"",
+        "Hazardous D3+2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Executor - Normal",
+      "points": 90,
+      "range": "36\"",
+      "attacks": "D6+3",
+      "strength": 9,
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Executor - Supercharged",
+      "points": null,
+      "range": "36\"",
+      "attacks": "D3+1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "4",
+      "keywords": [
+        "Ordnance",
+        "Blast 2\"",
+        "Hazardous 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Decimator - Normal",
+      "points": 120,
+      "range": "48\"",
+      "attacks": "2D6+3",
+      "strength": 9,
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Lascannon",
+      "points": 35,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D6+2",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Havoc Launcher",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "D6+2",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Blast 2\"",
+        "Anti-INFANTRY 4+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Frag",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Havoc"
+    },
+    {
+      "name": "Missile Launcher - Krak",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Havoc"
+    },
+    {
+      "name": "Grenade Launcher - Frag",
+      "points": 10,
+      "range": "24\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Light Cannon - HE",
+      "points": 30,
+      "range": "48\"",
+      "attacks": "D6+3",
+      "strength": 4,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Light Cannon - AP",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "D6+1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Battle Cannon - HE",
+      "points": 50,
+      "range": "48\"",
+      "attacks": "D6+3",
+      "strength": 5,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Battle Cannon - AP",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 11,
+      "ap": -2,
+      "damage": "D6+1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Demolisher Cannon",
+      "points": 75,
+      "range": "24\"",
+      "attacks": "D6+2",
+      "strength": 9,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Blast 3\"",
+        "Anti-FORTIFICATION 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Conflagration Cannon",
+      "points": 60,
+      "range": "18\"",
+      "attacks": "2D6+6",
+      "strength": 7,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Vulcan Mega Bolter",
+      "points": 80,
+      "range": "36\"",
+      "attacks": "20",
+      "strength": 6,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Avenger Gatling Cannon",
+      "points": 80,
+      "range": "30\"",
+      "attacks": "20",
+      "strength": 6,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Magma Cannon",
+      "points": 110,
+      "range": "24\"",
+      "attacks": "D6+1",
+      "strength": 12,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Assault",
+        "Melta 6"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Laser Destroyer",
+      "points": 100,
+      "range": "72\"",
+      "attacks": "1",
+      "strength": 24,
+      "ap": -4,
+      "damage": "12",
+      "keywords": [
+        "Ordnance",
+        "Beam 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Volcano Cannon",
+      "points": 200,
+      "range": "96\"",
+      "attacks": "1",
+      "strength": 30,
+      "ap": -5,
+      "damage": "2D6+12",
+      "keywords": [
+        "Ordnance",
+        "Anti-VEHICLE 4+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Bastion - Frag",
+      "points": 40,
+      "range": "48\"",
+      "attacks": "D6+3",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Storm Eagle Rocket",
+      "points": 150,
+      "range": "24\"-240\"",
+      "attacks": "3D6",
+      "strength": 15,
+      "ap": -3,
+      "damage": "8",
+      "keywords": [
+        "One Shot",
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 12\"",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Thundercoil Harpoon - Ranged",
+      "points": 65,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 13,
+      "ap": -3,
+      "damage": "8",
+      "keywords": [
+        "Anti-VEHICLE 4+",
+        "Anti-MONSTER 4+",
+        "Devastating Wounds",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Hydra Flak Autocannon",
+      "points": 70,
+      "range": "90\"",
+      "attacks": "6",
+      "strength": 7,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Ordnance",
+        "Anti-Air",
+        "Sustained Hits 1",
+        "Anti-AIRCRAFT 3+",
+        "Anti-FLY 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Improvised Melee Weapon",
+      "points": 1,
+      "range": "-",
+      "attacks": "A+1",
+      "strength": "S",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Combat Knife",
+      "points": 3,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Precision"
+      ],
+      "availability": "Tacticus, Bike"
+    },
+    {
+      "name": "Chainblade",
+      "points": 5,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Power Sword",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Power Maul",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Power Fist",
+      "points": 15,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Power Scourge",
+      "points": 20,
+      "range": "-",
+      "attacks": "A+3",
+      "strength": "S +1",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Harpoon"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Chainglaive",
+      "points": 12,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Lance"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Chainfist",
+      "points": 20,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": -4,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Anti-VEHICLE 3+",
+        "Anti-MONSTER 4+"
+      ],
+      "availability": "Terminator"
+    },
+    {
+      "name": "Lightning Claw",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +1",
+      "strength": "S +2",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Daemonhammer - Sweep",
+      "points": 20,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S +2",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Daemonhammer - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +5",
+      "ap": "-1",
+      "damage": "4",
+      "keywords": [
+        "Heavy",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Rending Claws",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Terminator"
+    },
+    {
+      "name": "Crusher Claws",
+      "points": 25,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S+5",
+      "ap": -3,
+      "damage": "4",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-FORTIFICATION 2+",
+        "Anti-VEHICLE 4+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Terminator"
+    },
+    {
+      "name": "Scything Talons - Flury",
+      "points": 5,
+      "range": "-",
+      "attacks": "A+3",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": "Tacticus, Raptor"
+    },
+    {
+      "name": "Scything Talons - Stab",
+      "points": null,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": "S+2",
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": "Tacticus, Raptor"
+    },
+    {
+      "name": "Scything Wings",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ruinblade - Melee - Sweep",
+      "points": 25,
+      "range": "",
+      "attacks": "A+1",
+      "strength": "S +2",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Lethal Hits",
+        "Anti-PSYKER 4+"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Ruinblade - Melee - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +5",
+      "ap": -4,
+      "damage": "S +D6",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Force Weapon",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Anti-PSYKER 3+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Servo Scourges",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Harpoon"
+      ],
+      "availability": "Tacticus, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Warpforge Axe",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Anti-VEHICLE 3+"
+      ],
+      "availability": "Tacticus, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Dreadnought Chainblade - Sweep",
+      "points": 20,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Chainblade - Strike",
+      "points": null,
+      "range": "",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": -2,
+      "damage": "D3+3",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Power Claw - Sweep",
+      "points": 25,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S +1",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Power Claw - Crush",
+      "points": null,
+      "range": "",
+      "attacks": "1",
+      "strength": "S +5",
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Crusher Drill",
+      "points": 25,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +7",
+      "ap": -5,
+      "damage": "D6+3",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Magma Cutter - Melee",
+      "points": 10,
+      "range": "-",
+      "attacks": "D3",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Extra Attacks",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Toxinjector",
+      "points": 10,
+      "range": "-",
+      "attacks": "D3+1",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Poison D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Infernal Gaze - Focused Witchfire",
+      "points": null,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -4,
+      "damage": "5",
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Infernal Gaze - Witchfire",
+      "points": null,
+      "range": "8\"",
+      "attacks": "D6+4",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Anti-PSYKER 4+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Frag Grenades",
+      "points": 3,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Krak Grenades",
+      "points": 5,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Melta Bombs",
+      "points": 10,
+      "range": "S\"",
+      "attacks": "1",
+      "strength": 11,
+      "ap": -4,
+      "damage": "D6+3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Smoke Grenades",
+      "points": 4,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Carrion Bombs",
+      "points": 5,
+      "range": "S+3\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 2\"",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Anti-MONSTER 5+",
+        "Poison 1"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    }
+  ]
+}

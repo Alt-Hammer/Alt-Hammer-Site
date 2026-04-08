@@ -1,0 +1,1793 @@
+{
+  "faction": "Adeptus Astartes",
+  "slug": "adeptus-astartes",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Captain",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 7,
+        "BS": 7,
+        "I": 6,
+        "A": 6,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "3+",
+        "LD": "3+",
+        "basePoints": 130,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Lieutenant",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 5,
+        "A": 5,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Chaplain",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 90,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Librarian",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Psyker",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Apothecary",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Judiciar",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 7,
+        "A": 5,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Techmarine",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Character",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Intercessors",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "1st Company Veterans",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 30,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Honour Guard",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 30,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Bodyguard",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Devastators",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Tacticus"
+      ]
+    },
+    {
+      "name": "Scouts",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 12,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Infiltrators",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Centurions",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 2,
+        "A": 4,
+        "S": 7,
+        "T": 7,
+        "W": 6,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Infantry",
+        "Saturnine"
+      ]
+    },
+    {
+      "name": "Rhino",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 1,
+        "A": 3,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Transport 6",
+        "Firing Deck 2",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Razorback",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 1,
+        "A": 3,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Transport 4",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Impulsor",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 1,
+        "A": 3,
+        "S": 6,
+        "T": 9,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Transport 6",
+        "Firing Deck 6",
+        "Hover",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Drop Pod",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "0\"",
+        "WS": "-",
+        "BS": 5,
+        "I": "-",
+        "A": "-",
+        "S": "-",
+        "T": 10,
+        "W": 6,
+        "SV": "3+",
+        "LD": "-",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Transport 10",
+        "Deep Strike",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Invictor Warsuit",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 6,
+        "T": 8,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 90,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Walker",
+        "Scout 8\"",
+        "Deadly Demise 1"
+      ]
+    },
+    {
+      "name": "Contemptor Deadnought",
+      "category": "Walkers",
+      "stats": {
+        "M": "8\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 3,
+        "S": 6,
+        "T": 9,
+        "W": 12,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Walker",
+        "Deadly Demise 1"
+      ]
+    },
+    {
+      "name": "Redemptor Dreadnought",
+      "category": "Walkers",
+      "stats": {
+        "M": "8\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 7,
+        "T": 11,
+        "W": 14,
+        "SV": "2+",
+        "LD": "4+",
+        "basePoints": 135,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Walker",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Firestrike Platform",
+      "category": "Vehicles",
+      "stats": {
+        "M": "3\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 2,
+        "A": 3,
+        "S": 4,
+        "T": 5,
+        "W": 7,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 50,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Hover"
+      ]
+    },
+    {
+      "name": "Invader ATV",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 4,
+        "A": 5,
+        "S": 4,
+        "T": 6,
+        "W": 7,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 60,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Deadly Demise 1"
+      ]
+    },
+    {
+      "name": "Storm Speeder",
+      "category": "Vehicles",
+      "stats": {
+        "M": "14\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 2,
+        "A": 3,
+        "S": 5,
+        "T": 9,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 85,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Fly",
+        "Hover",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Predator",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Gladiator",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 11,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Hover",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Land Raider",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 6,
+        "S": 9,
+        "T": 12,
+        "W": 20,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 250,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Transport 12",
+        "Deadly Demise D6"
+      ]
+    },
+    {
+      "name": "Repulsor",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 6,
+        "S": 9,
+        "T": 11,
+        "W": 18,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 250,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Transport 12",
+        "Hover",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Vindicator",
+      "category": "Vehicles",
+      "stats": {
+        "M": "10\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 11,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Whirlwind",
+      "category": "Vehicles",
+      "stats": {
+        "M": "10\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Hammerfall Bunker",
+      "category": "Fortifications",
+      "stats": {
+        "M": "0\"",
+        "WS": "-",
+        "BS": 5,
+        "I": "-",
+        "A": "-",
+        "S": "-",
+        "T": 11,
+        "W": 15,
+        "SV": "2+",
+        "LD": "-",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Fortification",
+        "Transport 4",
+        "Deep Strike",
+        "Deadly Demise D3+1"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": "Weapon Availability for Armour and Wargear"
+    },
+    {
+      "name": "Bolt Pistol",
+      "points": 2,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Gravis, Phobos, Scouts, Jump Pack, Bike"
+    },
+    {
+      "name": "Heavy Bolt Pistol",
+      "points": 3,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Gravis, Phobos, Jump Pack, Bike"
+    },
+    {
+      "name": "Absolvor Bolt Pistol",
+      "points": 5,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 5,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Pistol"
+      ],
+      "availability": "Tacticus, Gravis, Phobos, Jump Pack, Bike"
+    },
+    {
+      "name": "Bolter",
+      "points": 5,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus, Phobos, Scouts, Jump Pack"
+    },
+    {
+      "name": "Assault Bolter",
+      "points": 8,
+      "range": "12\"",
+      "attacks": "3",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Sustained Hits 1"
+      ],
+      "availability": "Gravis"
+    },
+    {
+      "name": "Storm Bolter",
+      "points": 8,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 2",
+        "Sustained Hits 1"
+      ],
+      "availability": "Tacticus, Terminator"
+    },
+    {
+      "name": "Bolt Rifle",
+      "points": 5,
+      "range": "30\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus"
+    },
+    {
+      "name": "Heavy Bolt Rifle",
+      "points": 8,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1",
+        "Heavy"
+      ],
+      "availability": "Tacticus, Gravis"
+    },
+    {
+      "name": "Boltstorm Gauntlet - Shooting",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "3",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Pistol",
+        "Assault"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
+      "name": "Hurricane Bolter Array",
+      "points": 30,
+      "range": "24\"",
+      "attacks": "6",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 6",
+        "Ignores Cover"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Shotgun",
+      "points": 5,
+      "range": "4\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "4",
+      "keywords": [
+        "Assault",
+        "Anti-INFANTRY 5+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+    },
+    {
+      "name": "Heavy Autogun",
+      "points": 7,
+      "range": "30\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Rapid Fire 2"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Autocannon",
+      "points": 10,
+      "range": "48\"",
+      "attacks": "2",
+      "strength": 7,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus"
+    },
+    {
+      "name": "Exterminator Autocannon",
+      "points": 65,
+      "range": "48\"",
+      "attacks": "4",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 2",
+        "Sustained Hits 2"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Assault Cannon",
+      "points": 15,
+      "range": "24\"",
+      "attacks": "8",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Terminator"
+    },
+    {
+      "name": "Heavy Assault Cannon",
+      "points": 65,
+      "range": "24\"",
+      "attacks": "16",
+      "strength": 6,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Flamestorm Gauntlet - Shooting",
+      "points": 10,
+      "range": "9\"",
+      "attacks": "D6+1",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
+      "name": "Flamer",
+      "points": 8,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Jump Pack"
+    },
+    {
+      "name": "Heavy Flamer",
+      "points": 15,
+      "range": "9\"",
+      "attacks": "D6+4",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Gravis, Terminator"
+    },
+    {
+      "name": "Inferno Cannon",
+      "points": 30,
+      "range": "12\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Melta Pistol",
+      "points": 5,
+      "range": "6\"",
+      "attacks": "1",
+      "strength": 7,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Pistol",
+        "Melta 2"
+      ],
+      "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+    },
+    {
+      "name": "Melta Rifle",
+      "points": 15,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Melta 2"
+      ],
+      "availability": "Tacticus, Gravis"
+    },
+    {
+      "name": "Multi-melta",
+      "points": 25,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": "Tacticus, Gravis"
+    },
+    {
+      "name": "Melta Cannon",
+      "points": 50,
+      "range": "24\"",
+      "attacks": "D3+1",
+      "strength": 10,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Melta 4"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Plasma Pistol - Normal",
+      "points": 5,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+    },
+    {
+      "name": "Plasma Carbine - Normal",
+      "points": 8,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault"
+      ],
+      "availability": "Gravis"
+    },
+    {
+      "name": "Plasma Carbine - Supercharged",
+      "points": null,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Assault",
+        "Hazardous 2"
+      ],
+      "availability": "Gravis"
+    },
+    {
+      "name": "Plasma Gun - Normal",
+      "points": 8,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus, Jump Pack, Bike"
+    },
+    {
+      "name": "Plasma Gun - Supercharged",
+      "points": null,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 1",
+        "Hazardous 2"
+      ],
+      "availability": "Tacticus, Jump Pack, Bike"
+    },
+    {
+      "name": "Plasma Cannon - Normal",
+      "points": 20,
+      "range": "30\"",
+      "attacks": "D3+1",
+      "strength": 6,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Gravis, Terminator"
+    },
+    {
+      "name": "Plasma Cannon - Supercharged",
+      "points": null,
+      "range": "30\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Blast 1\"",
+        "Hazardous D3+1"
+      ],
+      "availability": "Tacticus, Gravis, Terminator"
+    },
+    {
+      "name": "Macro Plasma Cannon - Normal",
+      "points": 70,
+      "range": "36\"",
+      "attacks": "D6+3",
+      "strength": 8,
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Macro Plasma Cannon - Supercharged",
+      "points": null,
+      "range": "36\"",
+      "attacks": "D3+1",
+      "strength": 11,
+      "ap": -4,
+      "damage": "4",
+      "keywords": [
+        "Ordnance",
+        "Blast 1\"",
+        "Hazardous D3+2"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Lasfusil",
+      "points": 20,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Phobos"
+    },
+    {
+      "name": "Lascannon",
+      "points": 35,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D6+2",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Gravis"
+    },
+    {
+      "name": "Laser Destroyer",
+      "points": 100,
+      "range": "72\"",
+      "attacks": "1",
+      "strength": 24,
+      "ap": -4,
+      "damage": "12",
+      "keywords": [
+        "Ordnance",
+        "Beam 1"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Rocket Pod",
+      "points": 35,
+      "range": "48\"",
+      "attacks": "2D6",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Blast 2\"",
+        "Anti-INFANTRY 4+"
+      ],
+      "availability": "Tacticus"
+    },
+    {
+      "name": "Missile Launcher - Frag",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Scout"
+    },
+    {
+      "name": "Missile Launcher - Krak",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Scout"
+    },
+    {
+      "name": "Cyclone Missile Launcher - Frag",
+      "points": 25,
+      "range": "48\"",
+      "attacks": "D6+3",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Terminator"
+    },
+    {
+      "name": "Cyclone Missile Launcher - Krak",
+      "points": null,
+      "range": "48\"",
+      "attacks": "2",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Terminator"
+    },
+    {
+      "name": "Whirlwind Vengeance Launcher",
+      "points": 90,
+      "range": "18\"-72\"",
+      "attacks": "3D6",
+      "strength": 8,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 6\"",
+        "Anti-Air 4+"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Hunter-killer Missile",
+      "points": 20,
+      "range": "72\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "One Shot",
+        "Indirect Fire",
+        "Heavy",
+        "Anti-Air 4+",
+        "Ignores Cover"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Grenade Launcher - Frag",
+      "points": 10,
+      "range": "24\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Jump Pack, Bike"
+    },
+    {
+      "name": "Grenade Launcher - Krak",
+      "points": null,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Assault",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Jump Pack, Bike"
+    },
+    {
+      "name": "Demolisher Cannon",
+      "points": 75,
+      "range": "24\"",
+      "attacks": "D6+2",
+      "strength": 9,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Blast 3\"",
+        "Anti-FORTIFICATION 2+"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Combat Knife",
+      "points": 3,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Precision"
+      ],
+      "availability": "Tacticus, Phobos, Scout"
+    },
+    {
+      "name": "Chainsword",
+      "points": 5,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Power Sword",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Terminator, Jump Pack, Bike"
+    },
+    {
+      "name": "Power Fist",
+      "points": 15,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
+    },
+    {
+      "name": "Chainfist",
+      "points": 20,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": -4,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Anti-VEHICLE 3+",
+        "Anti-MONSTER 4+"
+      ],
+      "availability": "Terminator"
+    },
+    {
+      "name": "Thunder Hammer - Sweep",
+      "points": 20,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S +2",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
+    },
+    {
+      "name": "Thunder Hammer - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +5",
+      "ap": "-1",
+      "damage": "4",
+      "keywords": [
+        "Heavy",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
+    },
+    {
+      "name": "Boltstorm Gauntlet - Melee",
+      "points": "-",
+      "range": "-",
+      "attacks": "A -1",
+      "strength": "S +2",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
+      "name": "Flamestorm Gauntlet - Melee",
+      "points": "-",
+      "range": "-",
+      "attacks": "A -1",
+      "strength": "S +2",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
+      "name": "Lightning Claw",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +1",
+      "strength": "S +2",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": "Tacticus, Terminator"
+    },
+    {
+      "name": "Executioner Relic Blade",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +1",
+      "strength": "S +2",
+      "ap": "-3",
+      "damage": "3",
+      "keywords": [
+        "Precision"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Terminator"
+    },
+    {
+      "name": "Crozius Arcanum",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Terminator, Jump Pack, Bike"
+    },
+    {
+      "name": "Force Weapon",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Anti-PSYKER 3+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Terminator, Jump Pack, Bike"
+    },
+    {
+      "name": "Chirurgeon's Tools",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Anti-INFANTRY 2+"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Terminator, Jump Pack, Bike"
+    },
+    {
+      "name": "Servo Arm",
+      "points": 15,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks",
+        "Heavy",
+        "Anti-VEHICLE 4+"
+      ],
+      "availability": "Tacticus, Gravis, Terminator, Bike"
+    },
+    {
+      "name": "Omnissiah's Axe",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Anti-VEHICLE 3+"
+      ],
+      "availability": "Tacticus, Gravis, Terminator, Bike"
+    },
+    {
+      "name": "Dreadnought Power Fist - Sweep",
+      "points": 25,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Power Fist - Crush",
+      "points": null,
+      "range": "",
+      "attacks": "A",
+      "strength": "S +5",
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Power Talons - Sweep",
+      "points": 30,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dreadnought Power Talons - Crush",
+      "points": null,
+      "range": "",
+      "attacks": "A",
+      "strength": "S +4",
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smite - Focused Witchfire",
+      "points": null,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -4,
+      "damage": "5",
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ],
+      "availability": "All"
+    },
+    {
+      "name": "Smite - Witchfire",
+      "points": null,
+      "range": "8\"",
+      "attacks": "D6+4",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Anti-PSYKER 4+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": "All"
+    },
+    {
+      "name": "Frag Grenades",
+      "points": 3,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Krak Grenades",
+      "points": 5,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Melta Bombs",
+      "points": 10,
+      "range": "S\"",
+      "attacks": "1",
+      "strength": 11,
+      "ap": -4,
+      "damage": "D6+3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Smoke Grenades",
+      "points": 4,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    }
+  ]
+}

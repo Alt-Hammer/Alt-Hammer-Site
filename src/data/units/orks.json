@@ -1,0 +1,1796 @@
+{
+  "faction": "Orks",
+  "slug": "orks",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Warboss",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 3,
+        "I": 4,
+        "A": 5,
+        "S": 6,
+        "T": 6,
+        "W": 7,
+        "SV": "6+",
+        "LD": "4+",
+        "basePoints": 140,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Mekboy",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "6+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Weirdboy",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 4,
+        "SV": "6+",
+        "LD": "5+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Painboy",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 4,
+        "SV": "6+",
+        "LD": "5+",
+        "basePoints": 75,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Boys - Boy",
+      "category": "Battleline",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 2,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "9+",
+        "basePoints": 6,
+        "squadSizes": "5 to 30"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Boys - Nob",
+      "category": "Battleline",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "6+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Gretchin",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 3,
+        "A": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1,
+        "SV": "6+",
+        "LD": "10+",
+        "basePoints": 1,
+        "squadSizes": "5 to 20"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Small Profile"
+      ]
+    },
+    {
+      "name": "Nobz",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "6+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "1 to 5"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Beast Snaggas - Boy",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "8+",
+        "basePoints": 6,
+        "squadSizes": "9"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Scouts 6\"",
+        "Beast Snaggas"
+      ]
+    },
+    {
+      "name": "Beast Snaggas - Nob",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "6+",
+        "LD": "6+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Scouts 6\"",
+        "Beast Snaggas"
+      ]
+    },
+    {
+      "name": "Burna Boyz",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "8+",
+        "basePoints": 6,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Tankbustaz",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "8+",
+        "basePoints": 6,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Flash Gits",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "8+",
+        "basePoints": 8,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Kommandos - Boy",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "8+",
+        "basePoints": 8,
+        "squadSizes": "2 to 9"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Scouts 5\"",
+        "Infiltrators"
+      ]
+    },
+    {
+      "name": "Kommandos - Nob",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 3,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "6+",
+        "LD": "6+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Scouts 5\"",
+        "Infiltrators"
+      ]
+    },
+    {
+      "name": "Stormboyz - Boy",
+      "category": "Infantry",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 3,
+        "S": 3,
+        "T": 4,
+        "W": 2,
+        "SV": "6+",
+        "LD": "8+",
+        "basePoints": 10,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Jump Pack",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Stormboyz - Nob",
+      "category": "Infantry",
+      "stats": {
+        "M": "12\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 4,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "6+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Jump Pack",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Squighog Riderz - Boy",
+      "category": "Mounted",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "5+",
+        "LD": "8+",
+        "basePoints": 35,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Mounted",
+        "Scouts 6\"",
+        "Beast Snaggas"
+      ]
+    },
+    {
+      "name": "Squighog Riderz - Nob on Smashasquig",
+      "category": "Mounted",
+      "stats": {
+        "M": "10\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 4,
+        "A": 5,
+        "S": 5,
+        "T": 6,
+        "W": 5,
+        "SV": "5+",
+        "LD": "6+",
+        "basePoints": 60,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Mounted",
+        "Scouts 6\"",
+        "Beast Snaggas"
+      ]
+    },
+    {
+      "name": "Bikerz - Boy",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 4,
+        "A": 2,
+        "S": 4,
+        "T": 5,
+        "W": 4,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 25,
+        "squadSizes": "2 to 5"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Mounted"
+      ]
+    },
+    {
+      "name": "Bikerz - Nob",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 5,
+        "BS": 2,
+        "I": 5,
+        "A": 4,
+        "S": 5,
+        "T": 6,
+        "W": 5,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 40,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Mounted"
+      ]
+    },
+    {
+      "name": "Warboss' Wartrike",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 6,
+        "BS": 3,
+        "I": 6,
+        "A": 7,
+        "S": 7,
+        "T": 8,
+        "W": 12,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Infantry",
+        "Character",
+        "Mounted"
+      ]
+    },
+    {
+      "name": "Beast Snaggas Boss' Squigosaur",
+      "category": "Mounted",
+      "stats": {
+        "M": "10\"",
+        "WS": 6,
+        "BS": 3,
+        "I": 6,
+        "A": 7,
+        "S": 7,
+        "T": 8,
+        "W": 12,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Monster",
+        "Character",
+        "Mounted",
+        "Scouts 6\"",
+        "Beast Snaggas"
+      ]
+    },
+    {
+      "name": "Trukk",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 4,
+        "S": 6,
+        "T": 8,
+        "W": 10,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 50,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Transport 12",
+        "Firing Deck 12"
+      ]
+    },
+    {
+      "name": "Killa Kans",
+      "category": "Walkers",
+      "stats": {
+        "M": "7\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 2,
+        "S": 4,
+        "T": 6,
+        "W": 6,
+        "SV": "3+",
+        "LD": "8+",
+        "basePoints": 50,
+        "squadSizes": "1 to 4"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Walker",
+        "Deadly Demise 1"
+      ]
+    },
+    {
+      "name": "Deff Dred",
+      "category": "Walkers",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 4,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 11,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Walker",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Gorkanot / Morkanot",
+      "category": "Walkers",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 3,
+        "A": 7,
+        "S": 8,
+        "T": 12,
+        "W": 16,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 200,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Walker",
+        "Transport 12",
+        "Deadly Demise D6"
+      ]
+    },
+    {
+      "name": "Stompa",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 10,
+        "S": 10,
+        "T": 13,
+        "W": 25,
+        "SV": "2+",
+        "LD": "3+",
+        "basePoints": 350,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Titanic",
+        "Vehicle",
+        "Walker",
+        "Deadly Demise D6+1"
+      ]
+    },
+    {
+      "name": "Deffkoptas",
+      "category": "Vehicles",
+      "stats": {
+        "M": "18\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 4,
+        "A": 3,
+        "S": 6,
+        "T": 6,
+        "W": 4,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 78,
+        "squadSizes": "1 to 4"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Fly",
+        "Deep Strike",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Mek Gunz",
+      "category": "Vehicles",
+      "stats": {
+        "M": "2\"",
+        "WS": 1,
+        "BS": 3,
+        "I": 2,
+        "A": 2,
+        "S": 2,
+        "T": 5,
+        "W": 5,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 30,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Rukkatrukk Squigbuggy",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 4,
+        "S": 6,
+        "T": 7,
+        "W": 7,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Boomdakka Snazzwagon",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 4,
+        "S": 6,
+        "T": 7,
+        "W": 7,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Shokkjump Dragsta",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 4,
+        "S": 6,
+        "T": 7,
+        "W": 7,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Phase Shift"
+      ]
+    },
+    {
+      "name": "Kustom Boosta-Blasta",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 4,
+        "S": 6,
+        "T": 7,
+        "W": 7,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Megatrakk Scrapjet",
+      "category": "Vehicles",
+      "stats": {
+        "M": "14\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 4,
+        "S": 6,
+        "T": 7,
+        "W": 7,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 95,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Battlewagon",
+      "category": "Vehicles",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 6,
+        "S": 9,
+        "T": 12,
+        "W": 18,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 180,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Vehicle",
+        "Transport 24",
+        "Firing Deck 24",
+        "Deadly Demise D6+1"
+      ]
+    },
+    {
+      "name": "Hunta Rig",
+      "category": "Vehicles",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 2,
+        "I": 2,
+        "A": 6,
+        "S": 9,
+        "T": 10,
+        "W": 16,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 140,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Orks",
+        "Beast Snaggas",
+        "Vehicle",
+        "Monster",
+        "Transport 24",
+        "Firing Deck 24",
+        "Feel No Pain 5+",
+        "Deadly Demise D6+1"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Grot Blasta",
+      "points": 1,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Precision"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Slugga",
+      "points": 1,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shoota",
+      "points": 2,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 1",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Kommando Shoota",
+      "points": 6,
+      "range": "18\"",
+      "attacks": "4",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 4",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Big Shoota",
+      "points": 5,
+      "range": "24\"",
+      "attacks": "4",
+      "strength": 5,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Rapid Fire 2",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shokk Shoota",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -2,
+      "damage": "D3+3",
+      "keywords": [
+        "Assault",
+        "Precision"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Rivet Shoota",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "8",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 4",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Mek Speshul",
+      "points": 25,
+      "range": "24\"",
+      "attacks": "12",
+      "strength": 5,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 6",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Kannon - Busta Shell",
+      "points": null,
+      "range": "36\"",
+      "attacks": "D3",
+      "strength": 11,
+      "ap": -2,
+      "damage": "5",
+      "keywords": [
+        "Blast 1\"",
+        "Anti-VEHICLE 4+",
+        "Anti-FORTIFICATION 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Killkannon",
+      "points": 50,
+      "range": "48\"",
+      "attacks": "D6+1",
+      "strength": 9,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Deff Kannon",
+      "points": 75,
+      "range": "60\"",
+      "attacks": "3D6+3",
+      "strength": 11,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Blast 6\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shokk Attakka",
+      "points": 50,
+      "range": "18\"",
+      "attacks": "D3+3",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6+3",
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Sustained Hits 1",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Zzappa",
+      "points": 50,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": "2D6+6",
+      "ap": -5,
+      "damage": "2D6+3",
+      "keywords": [
+        "Ordnance",
+        "Hazardous 3",
+        "Beam D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Mega Zzappa",
+      "points": 80,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": "3D6+6",
+      "ap": -5,
+      "damage": "3D6+4",
+      "keywords": [
+        "Ordnance",
+        "Hazardous D3+2",
+        "Beam D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Thumpa",
+      "points": 5,
+      "range": "24\"",
+      "attacks": "2 D6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Burna Slugga",
+      "points": 5,
+      "range": "9\"",
+      "attacks": "D6+1",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Burna",
+      "points": 5,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Skorcha",
+      "points": 25,
+      "range": "12\"",
+      "attacks": "D6+4",
+      "strength": 6,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Rokkit Slugga",
+      "points": 8,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Rokkit Launcha",
+      "points": 25,
+      "range": "24\"",
+      "attacks": "4",
+      "strength": 9,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Assault",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wing Rokkits",
+      "points": 15,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Kustom Mega-blasta",
+      "points": 25,
+      "range": "24\"",
+      "attacks": "D3+2",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Blast 2\"",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Kustom Mega-kannon",
+      "points": 40,
+      "range": "36\"",
+      "attacks": "D6+3",
+      "strength": 11,
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Blast 4\"",
+        "Hazardous 5"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bombsquig Launcha",
+      "points": 25,
+      "range": "12\"-48\"",
+      "attacks": "D6+3",
+      "strength": 5,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Indirect Fire",
+        "Blast 3\"",
+        "Sustained Hits 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Big Lobba",
+      "points": 30,
+      "range": "12\"-48\"",
+      "attacks": "D6+6",
+      "strength": 7,
+      "ap": 0,
+      "damage": "3",
+      "keywords": [
+        "Indirect Fire",
+        "Blast 4\"",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smasha Gun",
+      "points": 50,
+      "range": "48\"",
+      "attacks": "D3+1",
+      "strength": 13,
+      "ap": -2,
+      "damage": "D6+3",
+      "keywords": [
+        "Ordnance",
+        "Blast 2\"",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Trakta Blasta",
+      "points": 40,
+      "range": "48\"",
+      "attacks": "D3",
+      "strength": 7,
+      "ap": -4,
+      "damage": "D3+1",
+      "keywords": [
+        "Ordnance",
+        "Anti Air 4+",
+        "Anti-FLY 4+",
+        "Devastating Wounds",
+        "Hazardous 2",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bubblechukka - 1-2: big bubble",
+      "points": 55,
+      "range": "12\"-72\"",
+      "attacks": "D6+6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 5\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bubblechukka - 3-4: wobbly bubble",
+      "points": null,
+      "range": "12\"-72\"",
+      "attacks": "D6",
+      "strength": 6,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bubblechukka - 6: stinky bubble",
+      "points": null,
+      "range": "12\"-72\"",
+      "attacks": "D6+6",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 5\"",
+        "Anti-INFANTRY 5+",
+        "Poison 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Snagga Stik - Shooting",
+      "points": 8,
+      "range": "9\"",
+      "attacks": "1",
+      "strength": "S +3",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Anti-MONSTER 3+",
+        "Anti-VEHICLE 5+",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Big Snagga - Shooting",
+      "points": 30,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": "S x3",
+      "ap": -3,
+      "damage": "5",
+      "keywords": [
+        "Assault",
+        "Anti-MONSTER 2+",
+        "Anti-VEHICLE 5+",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wurrtowa",
+      "points": 25,
+      "range": "18\"",
+      "attacks": "D6",
+      "strength": 9,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Anti-PSYKER 3+",
+        "Devastating Wounds",
+        "Hazardous D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Choppa",
+      "points": 2,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Big Choppa",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "3",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Uge Choppa",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": -3,
+      "damage": "4",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Killa Klaw - Slash",
+      "points": 20,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -3,
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Killa Klaw - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +5",
+      "ap": -2,
+      "damage": "D3+3",
+      "keywords": [
+        "Heavy",
+        "Anti-VEHICLE 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smasha Hammer",
+      "points": 20,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +5",
+      "ap": -2,
+      "damage": "D6+3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Weirdboy Staff",
+      "points": 12,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Sustained Hits 1",
+        "Anti-PSYKER 3+",
+        "Devastating Wounds",
+        "Hazardous D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Urty Srynge",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Anti-INFANTRY 3+",
+        "Poison 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Spinnin' Rotas",
+      "points": "-",
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Spikey Bits",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Buzz Saw",
+      "points": 20,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Buzz Drill",
+      "points": 20,
+      "range": "-",
+      "attacks": "A+5",
+      "strength": "S+1",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Deff Rolla",
+      "points": 30,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S +5",
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Extra Attacks",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wrekkin Ball",
+      "points": 30,
+      "range": "-",
+      "attacks": "A -3",
+      "strength": "S +6",
+      "ap": -2,
+      "damage": "D6+3",
+      "keywords": [
+        "Extra Attacks",
+        "Anti-VEHICLE 3+",
+        "Anti-FORTIFICATION 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Snagga Stik - Melee",
+      "points": 8,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +3",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Lance",
+        "Anti-MONSTER 3+",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Big Snagga - Melee",
+      "points": 20,
+      "range": "",
+      "attacks": "1",
+      "strength": "S +6",
+      "ap": -3,
+      "damage": "5",
+      "keywords": [
+        "Lance",
+        "Anti-MONSTER 2+",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Attack Squig",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Squighog",
+      "points": "-",
+      "range": "-",
+      "attacks": "A",
+      "strength": 5,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smashasquig",
+      "points": "-",
+      "range": "-",
+      "attacks": "A",
+      "strength": 9,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Squigosaur",
+      "points": "-",
+      "range": "-",
+      "attacks": "A",
+      "strength": 6,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Tramplasquig",
+      "points": "-",
+      "range": "-",
+      "attacks": "A",
+      "strength": 10,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eadbanga",
+      "points": "-",
+      "range": "12\"",
+      "attacks": "D6",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Anti-PSYKER 3+",
+        "Devastating Wounds",
+        "Hazardous D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eyez of Mork",
+      "points": "-",
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -4,
+      "damage": "5",
+      "keywords": [
+        "Beam 3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds",
+        "Hazardous 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eyez of Gork",
+      "points": "-",
+      "range": "8\"",
+      "attacks": "D6+4",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Anti-PSYKER 4+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Stik Bombs / Firebombs",
+      "points": 1,
+      "range": "S+3\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Tankbusta Stiks",
+      "points": 3,
+      "range": "S\"",
+      "attacks": "D3",
+      "strength": 10,
+      "ap": -2,
+      "damage": "D6",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bombsquig",
+      "points": 5,
+      "range": "12\"",
+      "attacks": "D6+3",
+      "strength": 5,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "One Shot",
+        "Blast 3\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smoke Stik",
+      "points": 1,
+      "range": "S+3\"",
+      "attacks": "-",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 2\""
+      ],
+      "availability": ""
+    }
+  ]
+}

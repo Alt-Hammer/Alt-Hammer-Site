@@ -1,0 +1,1326 @@
+{
+  "faction": "Adeptus Ministorum",
+  "slug": "adeptus-ministorum",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Canoness",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 6,
+        "A": 5,
+        "S": 3,
+        "T": 3,
+        "W": 4,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 75,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Palatine",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 60,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Dogmata",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 45,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Dialogus",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 45,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Imagifier",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": 45,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Hospitaler",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 45,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Overseer of Redemption",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 30,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Ministorum Priest",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "5+",
+        "LD": "5+",
+        "basePoints": 15,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Battle Sisters",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 2,
+        "S": 3,
+        "T": 3,
+        "W": 2,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 9,
+        "squadSizes": "5 to 15"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Novitiates - Sister Superior",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 2,
+        "S": 3,
+        "T": 3,
+        "W": 2,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 10,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Scouts 6\""
+      ]
+    },
+    {
+      "name": "Novitiates",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "6+",
+        "basePoints": 5,
+        "squadSizes": "4 to 19"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Scouts 6\""
+      ]
+    },
+    {
+      "name": "Frateris Militia",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 2,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "10+",
+        "basePoints": 2,
+        "squadSizes": "5 to 50"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Ministorum Sanctifiers Retinue",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "7+",
+        "basePoints": 4,
+        "squadSizes": "5 to 20"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Infantry",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Dominions",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 2,
+        "S": 3,
+        "T": 3,
+        "W": 2,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 11,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Infiltrators",
+        "Scouts 6\""
+      ]
+    },
+    {
+      "name": "Celestians",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 13,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Seraphim",
+      "category": "Infantry",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 4,
+        "A": 2,
+        "S": 3,
+        "T": 3,
+        "W": 2,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 18,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Jump Pack"
+      ]
+    },
+    {
+      "name": "Repentia",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "7+",
+        "LD": "6+",
+        "basePoints": 6,
+        "squadSizes": "4 to 19"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Arco-flagellants",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 6,
+        "A": 6,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "7+",
+        "LD": "6+",
+        "basePoints": 15,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": []
+    },
+    {
+      "name": "Penitent Engines",
+      "category": "Walkers",
+      "stats": {
+        "M": "9\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 5,
+        "A": 5,
+        "S": 6,
+        "T": 6,
+        "W": 5,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 45,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Vehicle",
+        "Walker",
+        "Fearless",
+        "Feel No Pain 5+",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Castigator",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 90,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Exorcist",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 90,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Vehicle",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Cathedrum Minoris",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 1,
+        "A": 12,
+        "S": 10,
+        "T": 13,
+        "W": 25,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 300,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Titanic",
+        "Vehicle",
+        "Transport 25",
+        "Deep Strike",
+        "Deadly Demise 2D6"
+      ]
+    },
+    {
+      "name": "Rhino",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 4,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Vehicle",
+        "Transport 10",
+        "Firing Deck 4",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Immolator",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 4,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Vehicle",
+        "Transport 6",
+        "Deadly Demise D6"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bolt Pistol",
+      "points": 2,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bolter",
+      "points": 3,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Storm Bolter",
+      "points": 6,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 2",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heavy Bolter",
+      "points": 10,
+      "range": "36\"",
+      "attacks": "3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Condemnor Bolter",
+      "points": 8,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "D3+1",
+      "keywords": [
+        "Precision",
+        "Rapid Fire 1",
+        "Anti-PYSKER 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autopistol",
+      "points": 1,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autogun",
+      "points": 2,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Exterminator Autocannon",
+      "points": 70,
+      "range": "48\"",
+      "attacks": "4",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 2",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shotgun",
+      "points": 6,
+      "range": "4\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "4",
+      "keywords": [
+        "Assault",
+        "Anti-INFANTRY 5+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Flamer",
+      "points": 8,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heavy Flamer",
+      "points": 12,
+      "range": "9\"",
+      "attacks": "D6+4",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Zealot's Vindictor - Shooting",
+      "points": 12,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Melta Pistol",
+      "points": 5,
+      "range": "6\"",
+      "attacks": "1",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Pistol",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Meltagun",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Assault",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Multi-melta",
+      "points": 22,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Melta Cannon",
+      "points": 55,
+      "range": "24\"",
+      "attacks": "D3+1",
+      "strength": 10,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Assault",
+        "Melta 4"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Pistol - Normal",
+      "points": 6,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Pistol - Supercharged",
+      "points": null,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 6,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Pistol",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Gun - Normal",
+      "points": 12,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Gun - Supercharged",
+      "points": null,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 1",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Grenade Launcher - Frag",
+      "points": 8,
+      "range": "24\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Frag",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Krak",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Exorcist Missile Symphony - Profundus",
+      "points": 60,
+      "range": "12\"-48\"",
+      "attacks": "D6",
+      "strength": 11,
+      "ap": -2,
+      "damage": "5",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Exorcist Missile Symphony - Altus",
+      "points": null,
+      "range": "12\"-48\"",
+      "attacks": "2D6+6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 4\"",
+        "Sustained Hits 4"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Battle Cannon - HE",
+      "points": 55,
+      "range": "48\"",
+      "attacks": "D6+3",
+      "strength": 5,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Battle Cannon - AP",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 11,
+      "ap": -2,
+      "damage": "D6+1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Improvized Melee Relic",
+      "points": 1,
+      "range": "-",
+      "attacks": "A+1",
+      "strength": "S",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Chainsword",
+      "points": 2,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Power Sword",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Power Mace",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Power Spear",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Power Halberd - Sweep",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Power Halberd - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Novitiate Blade",
+      "points": 2,
+      "range": "-",
+      "attacks": "A +1",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Neural Whips",
+      "points": 8,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Penitent Eviscerator - Sweep",
+      "points": 12,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Penitent Eviscerator - Evisceration",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Heavy",
+        "Anti-INFANTRY 3+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Arco-flails",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Penitent Flail",
+      "points": 20,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Penitent Buzz Saw",
+      "points": 20,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +6",
+      "ap": -3,
+      "damage": "4",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Paragon War Blade",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": "-3",
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Paragon War Mace - Sweep",
+      "points": 20,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Paragon War Mace - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -3",
+      "strength": "S x3",
+      "ap": -2,
+      "damage": "5",
+      "keywords": [
+        "Heavy",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Null Rod",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S + 2",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Precision",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Chirurgeon's Tools",
+      "points": 4,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Anti-INFANTRY 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Zealot's Vindictor - Melee - Sweep",
+      "points": 12,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Zealot's Vindictor - Melee - Evisceration",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Heavy",
+        "Anti-INFANTRY 3+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Frag Grenades",
+      "points": 2,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Krak Grenades",
+      "points": 4,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smoke Grenades",
+      "points": 3,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": ""
+    }
+  ]
+}

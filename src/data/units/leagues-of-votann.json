@@ -1,0 +1,543 @@
+{
+  "faction": "Leagues of Votann",
+  "slug": "leagues-of-votann",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Kâhl",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 5,
+        "A": 4,
+        "S": 2,
+        "T": 3,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Grimnyr",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 2,
+        "T": 3,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Einhyr Champion",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 5,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Brôkhyr Iron-master",
+      "category": "Character",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 3,
+        "A": 3,
+        "S": 2,
+        "T": 3,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Character"
+      ]
+    },
+    {
+      "name": "Hearthkyn Warriors",
+      "category": "Battleline",
+      "stats": {
+        "M": "5\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 3,
+        "W": 2,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": null,
+        "squadSizes": "5 to 15"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Hernkyn Yaegirs",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": null,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Infiltrators",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Cthonian Beserks",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 3,
+        "I": 4,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "5+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "3 to 15"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Relentless",
+        "Fearless",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Brôkhyr Thunderkyn",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 2,
+        "A": 2,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": null,
+        "squadSizes": "2 to 6"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Einhyr Hearthguard",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "2+",
+        "LD": "6+",
+        "basePoints": null,
+        "squadSizes": "2 to 5"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Bodyguard",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Cthonian Earthshakers",
+      "category": "Infantry",
+      "stats": {
+        "M": "3\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 5,
+        "S": 2,
+        "T": 5,
+        "W": 8,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": null,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Artillery"
+      ]
+    },
+    {
+      "name": "Ironkin Steeljacks",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 3,
+        "A": 2,
+        "S": 5,
+        "T": 5,
+        "W": 4,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "2 to 6"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Hernkyn Pioneers",
+      "category": "Mounted",
+      "stats": {
+        "M": "14\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 2,
+        "S": 3,
+        "T": 5,
+        "W": 4,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": null,
+        "squadSizes": "2 to 6"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Infantry",
+        "Mounted",
+        "Scout 8\"",
+        "Hover"
+      ]
+    },
+    {
+      "name": "Hekaton Land Fortress",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": "5+",
+        "BS": "4+",
+        "I": 2,
+        "A": 6,
+        "S": 6,
+        "T": 12,
+        "W": 20,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Vehicle",
+        "Transport 25"
+      ]
+    },
+    {
+      "name": "Kapricus",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "14\"",
+        "WS": "5+",
+        "BS": "4+",
+        "I": 3,
+        "A": 3,
+        "S": 5,
+        "T": 7,
+        "W": 9,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Vehicle",
+        "Scout 8\"",
+        "Hover",
+        "Transport 6",
+        "Firing Deck 6"
+      ]
+    },
+    {
+      "name": "Sagitaur",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": "5+",
+        "BS": "4+",
+        "I": 3,
+        "A": 4,
+        "S": 6,
+        "T": 8,
+        "W": 11,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Leagues of Votann",
+        "Vehicle",
+        "Scout 8\"",
+        "Transport 6"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autoch Revolver",
+      "points": null,
+      "range": "9\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Autoch Pistol",
+      "points": null,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Autoch Bolter",
+      "points": null,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autoch Shotgun",
+      "points": null,
+      "range": "4\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "4",
+      "keywords": [
+        "Assault",
+        "Anti-INFANTRY 5+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autoch Sniper Rifle",
+      "points": null,
+      "range": "60\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2D3",
+      "keywords": [
+        "Precision",
+        "Heavy",
+        "Anti-INFANTRY 4+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Autoch Cannon",
+      "points": null,
+      "range": "36\"",
+      "attacks": "3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ion Pistol",
+      "points": null,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ion Blaster",
+      "points": null,
+      "range": "24\"",
+      "attacks": "3",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "HYLas Rifle",
+      "points": null,
+      "range": "30\"",
+      "attacks": "2",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Mining Explosives",
+      "points": 2,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Demolition Charge",
+      "points": 8,
+      "range": "1\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -2,
+      "damage": "8",
+      "keywords": [
+        "One Shot",
+        "Anti-VEHICLE 3+",
+        "Anti-FORTIFICATION 2+",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    }
+  ]
+}

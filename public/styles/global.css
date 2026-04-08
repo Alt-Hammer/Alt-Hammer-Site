@@ -4,7 +4,7 @@
    accents. Heavily textured. Industrial type. No rounded corners.
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap');
 
 /* --------------------------------------------------------------------------
    CSS Custom Properties — Design Tokens
@@ -44,7 +44,7 @@
 
   /* Typography */
   --font-display:  'Rajdhani', sans-serif;           /* headers, nav */
-  --font-body:     'Barlow Condensed', sans-serif;   /* body text, rules */
+  --font-body:     'Barlow', sans-serif;   /* body text, rules */
   --font-mono:     'Share Tech Mono', monospace;     /* stats, tables, values */
 
   /* Sizing */

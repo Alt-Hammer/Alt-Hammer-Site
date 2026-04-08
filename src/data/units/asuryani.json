@@ -1,0 +1,1679 @@
+{
+  "faction": "Asuryani",
+  "slug": "asuryani",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Unit Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Autarch",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 7,
+        "BS": 6,
+        "I": 8,
+        "A": 5,
+        "S": 2,
+        "T": 2,
+        "W": 7,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 130,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Farseer",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 6,
+        "A": 4,
+        "S": 2,
+        "T": 2,
+        "W": 5,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Character",
+        "Psyker",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Avatar of Khaine",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 9,
+        "BS": 5,
+        "I": 7,
+        "A": 6,
+        "S": 10,
+        "T": 11,
+        "W": 14,
+        "SV": "2+",
+        "LD": "2+",
+        "basePoints": 350,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Monster",
+        "Character",
+        "Fearless",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Guardians",
+      "category": "Battleline",
+      "stats": {
+        "M": "7\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 4,
+        "squadSizes": "5 to 20"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Guardians Heavy Weapon Platform",
+      "category": "Battleline",
+      "stats": {
+        "M": "7\"",
+        "WS": 1,
+        "BS": 3,
+        "I": 1,
+        "A": 1,
+        "S": 2,
+        "T": 4,
+        "W": 3,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 10,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry"
+      ]
+    },
+    {
+      "name": "Rangers",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 3,
+        "BS": 6,
+        "I": 4,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 20,
+        "squadSizes": "2 to 5"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Infiltrators",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Dire Avengers",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 15,
+        "squadSizes": "4 to 9"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Unyielding",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Dire Avengers - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 5,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Unyielding",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Dark Reapers",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 3,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "2 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors"
+      ]
+    },
+    {
+      "name": "Dark Reapers - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 3,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 5,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors"
+      ]
+    },
+    {
+      "name": "Fire Dragons",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "2 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors"
+      ]
+    },
+    {
+      "name": "Fire Dragons - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors"
+      ]
+    },
+    {
+      "name": "Howling Banshees",
+      "category": "Infantry",
+      "stats": {
+        "M": "8\"",
+        "WS": 6,
+        "BS": 4,
+        "I": 7,
+        "A": 4,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "5+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "4 to 9"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Relentless",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Howling Banshees - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "8\"",
+        "WS": 7,
+        "BS": 4,
+        "I": 8,
+        "A": 5,
+        "S": 2,
+        "T": 2,
+        "W": 5,
+        "SV": "5+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Relentless",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Striking Scorpions",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 6,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 25,
+        "squadSizes": "4 to 9"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Infiltrators",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Striking Scorpions - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 7,
+        "A": 5,
+        "S": 3,
+        "T": 3,
+        "W": 5,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 35,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Infiltrators",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Swooping Hawks",
+      "category": "Infantry",
+      "stats": {
+        "M": "14\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 3,
+        "W": 3,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "2 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Jump Pack"
+      ]
+    },
+    {
+      "name": "Swooping Hawks - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "14\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 5,
+        "A": 4,
+        "S": 2,
+        "T": 3,
+        "W": 4,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Jump Pack"
+      ]
+    },
+    {
+      "name": "Warp Spiders",
+      "category": "Infantry",
+      "stats": {
+        "M": "10\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 15,
+        "squadSizes": "2 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Deep Strike",
+        "Phase Shift",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Warp Spiders - Exarch",
+      "category": "Infantry",
+      "stats": {
+        "M": "10\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 3,
+        "T": 3,
+        "W": 4,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Deep Strike",
+        "Phase Shift",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Warlocks",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 4,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "1 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Psyker",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Wraithguard",
+      "category": "Infantry",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 3,
+        "S": 5,
+        "T": 5,
+        "W": 5,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 30,
+        "squadSizes": "2 to 6"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Wraith Construct"
+      ]
+    },
+    {
+      "name": "Shroudrunners",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 6,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 4,
+        "W": 4,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 45,
+        "squadSizes": "2 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Mounted",
+        "Fly",
+        "Infiltrators",
+        "Scout 8\""
+      ]
+    },
+    {
+      "name": "Windriders",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 1,
+        "S": 2,
+        "T": 4,
+        "W": 2,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 25,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Mounted",
+        "Fly"
+      ]
+    },
+    {
+      "name": "Shining Spears",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 6,
+        "A": 3,
+        "S": 2,
+        "T": 4,
+        "W": 3,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 40,
+        "squadSizes": "2 to 4"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Mounted",
+        "Fly",
+        "Aspect Warriors",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Shining Spears - Exarch",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 6,
+        "BS": 4,
+        "I": 6,
+        "A": 4,
+        "S": 2,
+        "T": 4,
+        "W": 4,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 45,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Mounted",
+        "Fly",
+        "Aspect Warriors",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Wave Serpent",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "14\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 5,
+        "S": 5,
+        "T": 9,
+        "W": 13,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 120,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Fly",
+        "Deep Strike",
+        "Transport 12"
+      ]
+    },
+    {
+      "name": "War Walkers",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 5,
+        "T": 5,
+        "W": 6,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 40,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Walker",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Wraithlord",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 5,
+        "A": 4,
+        "S": 8,
+        "T": 8,
+        "W": 13,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Walker",
+        "Wraith Construct"
+      ]
+    },
+    {
+      "name": "Wraithknight",
+      "category": "Walkers",
+      "stats": {
+        "M": "14\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 5,
+        "A": 8,
+        "S": 10,
+        "T": 12,
+        "W": 25,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 300,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Walker",
+        "Titanic",
+        "Wraith Construct"
+      ]
+    },
+    {
+      "name": "Artillery Platform",
+      "category": "Vehicles",
+      "stats": {
+        "M": "4\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 2,
+        "S": 2,
+        "T": 5,
+        "W": 8,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 35,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Hover"
+      ]
+    },
+    {
+      "name": "Vypers",
+      "category": "Vehicles",
+      "stats": {
+        "M": "16\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 4,
+        "T": 7,
+        "W": 10,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 60,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Fly",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Falcon",
+      "category": "Vehicles",
+      "stats": {
+        "M": "14\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 5,
+        "S": 5,
+        "T": 9,
+        "W": 13,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 120,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Fly",
+        "Deep Strike",
+        "Transport 6"
+      ]
+    },
+    {
+      "name": "Luminarch",
+      "category": "Vehicles",
+      "stats": {
+        "M": "14\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 5,
+        "S": 5,
+        "T": 9,
+        "W": 13,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 120,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Vehicle",
+        "Fly",
+        "Deep Strike"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shuriken Pistol",
+      "points": 2,
+      "range": "9\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Anti-INFANTRY 5+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shuriken Catapult",
+      "points": 4,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Rapid Fire 1",
+        "Anti-INFANTRY 5+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shuriken Long Rifle",
+      "points": 10,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 2,
+      "ap": -2,
+      "damage": "D3+2",
+      "keywords": [
+        "Precision",
+        "Heavy",
+        "Anti-INFANTRY 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shuriken Cannon",
+      "points": 20,
+      "range": "36\"",
+      "attacks": "4",
+      "strength": 4,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Rapid Fire 2",
+        "Anti-INFANTRY 5+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Sun Pistol",
+      "points": 15,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 7,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Sun Cannon - Sunburst",
+      "points": 130,
+      "range": "24\"",
+      "attacks": "16",
+      "strength": 4,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Sun Cannon - Starshot",
+      "points": null,
+      "range": "96\"",
+      "attacks": "1",
+      "strength": 30,
+      "ap": -4,
+      "damage": "D6+12",
+      "keywords": [
+        "Ordnance",
+        "Anti-VEHICLE 3+",
+        "Anti-MONSTER 3+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Pulse Laser",
+      "points": 45,
+      "range": "60\"",
+      "attacks": "2",
+      "strength": 10,
+      "ap": -2,
+      "damage": "D3+3",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Scatter Laser",
+      "points": 10,
+      "range": "36\"",
+      "attacks": "8",
+      "strength": 4,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Mandiblasters - Shooting",
+      "points": 4,
+      "range": "3\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Anti-INFANTRY 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Death Weavers",
+      "points": 10,
+      "range": "9\"",
+      "attacks": "D6+1",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Death Spinners",
+      "points": 8,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Spinneret Rifle",
+      "points": 15,
+      "range": "18\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Laser Lance - Shooting",
+      "points": 8,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Rapid Fire 1",
+        "Anti-INFANTRY 5+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Lance - Shooting",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "3",
+      "strength": 7,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon Pistol",
+      "points": 6,
+      "range": "6\"",
+      "attacks": "1",
+      "strength": 7,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Pistol",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon Rifle - Shooting",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Assault",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon's Breath - Shooting",
+      "points": 8,
+      "range": "9\"",
+      "attacks": "D6+4",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon Pike",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Lasblaster",
+      "points": 6,
+      "range": "12\"",
+      "attacks": "3",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Hawk's Talon",
+      "points": 12,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -3,
+      "damage": "D3+2",
+      "keywords": [
+        "Precision",
+        "Heavy",
+        "Anti-INFANTRY 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Reaper Launcher - Sunburst",
+      "points": 20,
+      "range": "6\" - 36\"",
+      "attacks": "D6+6",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 4\"",
+        "Anti-INFANTRY 4+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Reaper Launcher - Starshot",
+      "points": null,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 13,
+      "ap": -2,
+      "damage": "5",
+      "keywords": [
+        "Ordnance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Sunburst",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Starshot",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithcannon",
+      "points": 20,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 8,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Anti-PSYKER 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heavy Wraithcannon",
+      "points": 55,
+      "range": "36\"",
+      "attacks": "2",
+      "strength": 16,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Anti-PSYKER 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "D-Scythe",
+      "points": 20,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 5,
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Prism Cannon - Dispersion",
+      "points": 90,
+      "range": "48\"",
+      "attacks": "4D6",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Prism Cannon - Focused",
+      "points": null,
+      "range": "96\"",
+      "attacks": "1",
+      "strength": 20,
+      "ap": -4,
+      "damage": "D6+12",
+      "keywords": [
+        "Ordnance",
+        "Beam D3",
+        "Anti-VEHICLE 3+",
+        "Anti-MONSTER 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Vibro Cannon",
+      "points": 60,
+      "range": "36\"",
+      "attacks": "D3+3",
+      "strength": 9,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 3\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Doomweaver",
+      "points": 75,
+      "range": "18\"-60\"",
+      "attacks": "2D6+6",
+      "strength": 10,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 4\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Guardian Blade",
+      "points": 2,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Chainsword",
+      "points": 5,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Power Blades",
+      "points": 5,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Axe",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Glaive",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Lance - Melee",
+      "points": 10,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": 7,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithsword",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits",
+        "Anti-PSYKER 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithglaive",
+      "points": 15,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +5",
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Anti-PSYKER 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithspear - Sweep",
+      "points": 15,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Anti-PSYKER 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithspear - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S x3",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Lance",
+        "Lethal Hits",
+        "Anti-PSYKER 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithaxe - Sweep",
+      "points": 18,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Anti-PSYKER 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Wraithaxe - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -3",
+      "strength": "S x3",
+      "ap": -3,
+      "damage": "4",
+      "keywords": [
+        "Heavy",
+        "Anti-PSYKER 3+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon Rifle - Melee",
+      "points": 10,
+      "range": "-",
+      "attacks": "1",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon's Breath - Melee",
+      "points": 6,
+      "range": "-",
+      "attacks": "D3+2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Mandiblasters - Melee",
+      "points": 4,
+      "range": "-",
+      "attacks": "2",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Anti-INFANTRY 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smite - Focused Witchfire",
+      "points": "-",
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -4,
+      "damage": "5",
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smite - Witchfire",
+      "points": "-",
+      "range": "8\"",
+      "attacks": "D6+4",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Anti-PSYKER 4+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eldrich Storm",
+      "points": "-",
+      "range": "18\"",
+      "attacks": "3",
+      "strength": "4",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Indirect Fire",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Sunburst Grenades",
+      "points": 1,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Starshot Grenades",
+      "points": 2,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Haywire Grenades",
+      "points": 5,
+      "range": "1\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Anti-VEHICLE 4+",
+        "Ignores Cover",
+        "Haywire"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Grenades",
+      "points": 5,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 7,
+      "ap": -3,
+      "damage": "D3+1",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smoke Grenades",
+      "points": 2,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": ""
+    }
+  ]
+}
