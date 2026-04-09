@@ -27,6 +27,33 @@ from docx import Document
 from docx.oxml.ns import qn
 
 
+# ── Character sanitization ────────────────────────────────────────────────────
+
+def sanitize_text(text: str) -> str:
+    """
+    Replace special Unicode characters with ASCII equivalents for MDX compatibility.
+    """
+    replacements = {
+        '–': '-',     # en dash
+        '—': '-',     # em dash
+        ''': "'",     # left single quote
+        ''': "'",     # right single quote
+        '"': '"',     # left double quote
+        '"': '"',     # right double quote
+        '…': '...',   # ellipsis
+        '•': '*',     # bullet
+        '°': ' degrees', # degree symbol
+        '™': '(TM)',  # trademark
+        '®': '(R)',   # registered
+        '©': '(C)',   # copyright
+    }
+    
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    
+    return text
+
+
 # ── Slug helpers ──────────────────────────────────────────────────────────────
 
 def slugify(text: str) -> str:
@@ -109,6 +136,9 @@ def runs_to_markdown(paragraph) -> str:
         if not text:
             continue
 
+        # Sanitize special characters for MDX compatibility
+        text = sanitize_text(text)
+
         if is_keyword_run(run):
             slug = slugify(text)
             parts.append(
@@ -188,11 +218,10 @@ def paragraph_to_markdown(paragraph, list_counter: dict) -> str:
 
     heading_level = get_heading_level(paragraph)
     if heading_level is not None:
-        anchor = heading_to_anchor(paragraph.text)
         prefix = '#' * heading_level
         # Reset list counters on any heading
         list_counter.clear()
-        return f'\n{prefix} {text} {{#{anchor}}}\n'
+        return f'\n{prefix} {text}\n'
 
     if is_list_paragraph(paragraph):
         level = get_list_level(paragraph)

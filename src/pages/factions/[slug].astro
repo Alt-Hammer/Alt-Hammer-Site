@@ -1,0 +1,111 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+import { ALLIANCES } from '../../data/alliances.ts';
+
+export async function getStaticPaths() {
+  const factionPages = await Astro.glob('../../content/factions/*.mdx');
+  return factionPages.map((entry) => ({
+    params: {
+      slug: entry.frontmatter?.slug,
+    },
+  }));
+}
+
+const slug = Astro.params.slug;
+const factionPages = await Astro.glob('../../content/factions/*.mdx');
+const factionEntry = factionPages.find((entry) => entry.frontmatter?.slug === slug);
+if (!factionEntry) {
+  throw new Error(`Faction not found: ${slug}`);
+}
+
+const faction = factionEntry.frontmatter;
+const unitFiles = await Astro.glob('../../data/units/*.json');
+const unitFile = unitFiles.find((entry) => {
+  const filePath = entry.file ?? entry.url ?? '';
+  return filePath.endsWith(`${slug}.json`);
+});
+const unitData = unitFile?.default ?? null;
+const units = Array.isArray(unitData?.units) ? unitData.units : [];
+const unitsByCategory = new Map<string, Array<any>>();
+for (const unit of units) {
+  const category = unit.category || 'Other';
+  if (!unitsByCategory.has(category)) {
+    unitsByCategory.set(category, []);
+  }
+  unitsByCategory.get(category)?.push(unit);
+}
+
+const allianceMeta = ALLIANCES.find((item) => item.id === faction.alliance) ?? {
+  id: faction.alliance,
+  label: faction.alliance,
+  accentColor: 'var(--color-gold)',
+};
+
+const pageTitle = faction.title;
+const pageDescription = faction.description || `${faction.title} faction rules and unit profiles for Alt-Hammer 40,000.`;
+---
+
+<DocsLayout
+  title={pageTitle}
+  description={pageDescription}
+  activePage="factions"
+  sidebarType="factions"
+>
+  <div class="page-header">
+    <p class="breadcrumb">
+      <a href="/factions">Factions</a> · {allianceMeta.label}
+    </p>
+    <h1>{pageTitle}</h1>
+    {faction.description && <p class="subtitle">{faction.description}</p>}
+    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+      <span class="badge {faction.status === 'coming-soon' ? 'badge-wip' : 'badge-complete'}">
+        {faction.status === 'coming-soon' ? 'Coming Soon' : 'Active'}
+      </span>
+    </div>
+  </div>
+
+  <factionEntry.Content />
+
+  <section id="unit-profiles" style="margin-top: 48px;">
+    <h2>Unit Profiles</h2>
+    {units.length === 0 ? (
+      <p style="color: var(--color-text-muted);">
+        Unit profile data is not available for this faction yet.
+      </p>
+    ) : (
+      Array.from(unitsByCategory.entries()).map(([category, categoryUnits]) => (
+        <div style="margin-bottom: 40px;">
+          <h3>{category}</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 16px;">
+            {categoryUnits.map((unit) => (
+              <article class="datasheet" style="padding: 18px; background: var(--color-surface-1); border: 1px solid var(--color-border);">
+                <div class="datasheet-header">
+                  <div>
+                    <h4 class="datasheet-name">{unit.name}</h4>
+                    <span class="datasheet-category">{unit.category}</span>
+                  </div>
+                  <span class="datasheet-points">{unit.stats?.basePoints ?? '—'} pts</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 16px;">
+                  {['M','WS','BS','I','A','S','T','W','SV','LD'].map((stat) => (
+                    <div style="border: 1px solid var(--color-border); padding: 10px; text-align: center;">
+                      <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-text-muted);">{stat}</div>
+                      <div style="font-size: 1rem; font-weight: 700;">{unit.stats?.[stat] ?? '—'}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {unit.keywords && unit.keywords.length > 0 && (
+                  <div style="margin-top: 16px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.5;">
+                    {unit.keywords.join(' · ')}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+      ))
+    )}
+  </section>
+</DocsLayout>

@@ -1,0 +1,1325 @@
+{
+  "faction": "Adeptus Mechanicus",
+  "slug": "adeptus-mechanicus",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Techpriest Dominus",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 6,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 100,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Character",
+        "Techpriest",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Techpriest Manipulus",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 5,
+        "BS": 6,
+        "I": 5,
+        "A": 4,
+        "S": 5,
+        "T": 5,
+        "W": 7,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Character",
+        "Techpriest",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Techpriest Enginseer",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 3,
+        "S": 2,
+        "T": 3,
+        "W": 2,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 75,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Character",
+        "Techpriest",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Skitarii Marshall",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 5,
+        "I": 4,
+        "A": 4,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 45,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Character",
+        "Skitarii",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Technoarchaologist",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 3,
+        "S": 2,
+        "T": 3,
+        "W": 2,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 50,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Cybernetica Datasmith",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 3,
+        "S": 2,
+        "T": 3,
+        "W": 2,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 50,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Character",
+        "Leader"
+      ]
+    },
+    {
+      "name": "Skitarii",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 4,
+        "squadSizes": "5 to 20"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Skitarii"
+      ]
+    },
+    {
+      "name": "Servitors",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 2,
+        "BS": 2,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 3,
+        "W": 2,
+        "SV": "4+",
+        "LD": "9+",
+        "basePoints": 6,
+        "squadSizes": "2 to 10"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Servitor",
+        "Bodyguard",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Sicarians",
+      "category": "Infantry",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 10,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Skitarii",
+        "Infiltrators",
+        "Scout 6\""
+      ]
+    },
+    {
+      "name": "Pteraxii",
+      "category": "Infantry",
+      "stats": {
+        "M": "12\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 10,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Skitarii",
+        "Fly",
+        "Deep Strike"
+      ]
+    },
+    {
+      "name": "Skatros",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 2,
+        "BS": 6,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 3,
+        "W": 3,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 15,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Skitarii",
+        "Infiltrators",
+        "Stealth"
+      ]
+    },
+    {
+      "name": "Electropriests",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "7+",
+        "LD": "5+",
+        "basePoints": 10,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Skitarii Dragoons",
+      "category": "Mounted",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 6,
+        "A": 3,
+        "S": 2,
+        "T": 4,
+        "W": 3,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 25,
+        "squadSizes": "3 to 6"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Infantry",
+        "Mounted",
+        "Skitarii"
+      ]
+    },
+    {
+      "name": "Skitarii Ironstriders",
+      "category": "Walkers",
+      "stats": {
+        "M": "9\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 3,
+        "S": 5,
+        "T": 7,
+        "W": 7,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 60,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": []
+    },
+    {
+      "name": "Kastellan Robots",
+      "category": "Walkers",
+      "stats": {
+        "M": "7\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 6,
+        "T": 8,
+        "W": 8,
+        "SV": "2+",
+        "LD": "8+",
+        "basePoints": 95,
+        "squadSizes": "1 to 4"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Vehicle",
+        "Walker",
+        "Fearless",
+        "Unyielding",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Onager Dunecrawler",
+      "category": "Walkers",
+      "stats": {
+        "M": "10\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 6,
+        "S": 5,
+        "T": 9,
+        "W": 13,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Vehicle",
+        "Walker",
+        "Skitarii",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Kataphron Servitors",
+      "category": "Vehicles",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 2,
+        "I": 2,
+        "A": 1,
+        "S": 5,
+        "T": 6,
+        "W": 5,
+        "SV": "3+",
+        "LD": "9+",
+        "basePoints": 20,
+        "squadSizes": "2 to 6"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Vehicle",
+        "Servitor",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Skorpius Battle Tank",
+      "category": "Vehicles",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 1,
+        "A": 6,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 115,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Vehicle",
+        "Skitarii",
+        "Hover",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Skorpius Assault Transport",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "12\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 1,
+        "A": 6,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Vehicle",
+        "Skitarii",
+        "Hover",
+        "Transport 12",
+        "Deadly Demise D3+1"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Galvanic Pistol",
+      "points": 2,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Galvanic Carbine",
+      "points": 4,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": 4,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Assault"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Galvanic Rifle",
+      "points": 4,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Radium Pistol",
+      "points": 2,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Rapid Fire 1",
+        "Anti-INFANTRY 4+",
+        "Poison 1",
+        "Hazardous 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Radium Carbine",
+      "points": 3,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Anti-INFANTRY 4+",
+        "Poison 1",
+        "Hazardous 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Radium Jezzail",
+      "points": 10,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 6,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Assault",
+        "Precision",
+        "Anti-INFANTRY 4+",
+        "Poison D3",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Arc Pistol",
+      "points": 5,
+      "range": "12\"",
+      "attacks": "D3",
+      "strength": 10,
+      "ap": -3,
+      "damage": "D6",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Arc Destructor",
+      "points": 25,
+      "range": "18\"",
+      "attacks": "D3+2",
+      "strength": 10,
+      "ap": -3,
+      "damage": "D6+1",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Flechette Blaster",
+      "points": 4,
+      "range": "18\"",
+      "attacks": "5",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phosphor Blast Pistol",
+      "points": 4,
+      "range": "9\"",
+      "attacks": "D3+1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Pistol",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phosphor Serpenta",
+      "points": 8,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Pistol",
+        "Precision",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phosphor Blast Carbine",
+      "points": 10,
+      "range": "18\"",
+      "attacks": "D3+1",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phosphor Blaster",
+      "points": 15,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 2",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heavy Phosphor Blaster",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Sustained Hits 1",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phosphor Cannon",
+      "points": 45,
+      "range": "36\"",
+      "attacks": "6",
+      "strength": 7,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Sustained Hits 2",
+        "Ingores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phosphor Combustor",
+      "points": 12,
+      "range": "12\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Cognis Autocarbine",
+      "points": 3,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Cognis Autocannon",
+      "points": 20,
+      "range": "60\"",
+      "attacks": "2",
+      "strength": 7,
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Cognis Lascannon",
+      "points": 25,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D6+2",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Caliver - Standard",
+      "points": 12,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": 4,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Caliver - Overcharged",
+      "points": null,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 1",
+        "Hazardous 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Culverin- Overcharged",
+      "points": null,
+      "range": "30\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Blast 1\"",
+        "Hazardous D3+1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Pistol - Dispersion",
+      "points": 15,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Pistol - Focused",
+      "points": null,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Ordnance",
+        "Beam 1",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Ray - Focused",
+      "points": null,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": 11,
+      "ap": -3,
+      "damage": "D6+2",
+      "keywords": [
+        "Ordnance",
+        "Beam 1",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Beamer - Dispersion",
+      "points": 55,
+      "range": "12\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Beamer - Focused",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D6+3",
+      "keywords": [
+        "Ordnance",
+        "Beam 1",
+        "Melta 4"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Meltagun",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Multi-melta",
+      "points": 20,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 9,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Cannon - Normal",
+      "points": 20,
+      "range": "30\"",
+      "attacks": "D3+1",
+      "strength": 6,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Cannon - Supercharged",
+      "points": null,
+      "range": "30\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Blast 1\"",
+        "Hazardous D3+1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heavy Bolter",
+      "points": 12,
+      "range": "36\"",
+      "attacks": "3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Transuranic Arquebus",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Precision",
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Transonic Cannon",
+      "points": 15,
+      "range": "24\"",
+      "attacks": "D6+3",
+      "strength": 2,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Magnarail Lance",
+      "points": 25,
+      "range": "72\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -5,
+      "damage": "8",
+      "keywords": [
+        "Ordnance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrostatc Gauntlets - Shooting",
+      "points": 6,
+      "range": "6\"",
+      "attacks": "D6+2",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Frag",
+      "points": 15,
+      "range": "48\"",
+      "attacks": "D6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher - Krak",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 10,
+      "ap": -2,
+      "damage": "4",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Daedalus Missile Launcher - Cohort Breaker",
+      "points": 40,
+      "range": "18\"-72\"",
+      "attacks": "D6+3",
+      "strength": 3,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Indirect Fire",
+        "Blast 2\"",
+        "Anti Air 4+",
+        "Anti-FLY 2+",
+        "Anti-INFANTRY 4+",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Torsion Cannon",
+      "points": 25,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": 5,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Grav Cannon",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": "7",
+      "ap": "-1",
+      "damage": "4",
+      "keywords": [
+        "Anti-VEHICLE 4+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Belleros Cannon",
+      "points": 60,
+      "range": "18\"-72\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 1\"",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ferrumite Cannon - Phosphor Shell",
+      "points": 60,
+      "range": "48\"",
+      "attacks": "2D6+3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Blast 3\"",
+        "Anti-INFANTRY 3+",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ferrumite Cannon - Solid Shell",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 11,
+      "ap": -3,
+      "damage": "D6+1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Neutron Laser",
+      "points": 85,
+      "range": "72\"",
+      "attacks": "1",
+      "strength": 24,
+      "ap": -4,
+      "damage": "D6+10",
+      "keywords": [
+        "Ordnance",
+        "Beam 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Omnissiah's Axe",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Anti-VEHICLE 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Manipulator Arm(s)",
+      "points": 4,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Servo Arm",
+      "points": 10,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks",
+        "Heavy",
+        "Anti-VEHICLE 4+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Power Sword",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Power Mace",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Power Fist",
+      "points": 15,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +3",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Taser Goad",
+      "points": 10,
+      "range": "-",
+      "attacks": "A+1",
+      "strength": "S +1",
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Lance",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Taser Lance",
+      "points": 15,
+      "range": "-",
+      "attacks": "A+2",
+      "strength": "S +2",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Lance",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Transonic Blades",
+      "points": 15,
+      "range": "-",
+      "attacks": "A x2",
+      "strength": "S",
+      "ap": -2,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Chordclaw",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrostatc Gauntlets - Melee",
+      "points": 6,
+      "range": "-",
+      "attacks": "A+2",
+      "strength": "S +2",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 2",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electroleech Stave - Flurry",
+      "points": 8,
+      "range": "-",
+      "attacks": "A +3",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Electroleech Stave - Strike",
+      "points": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": -3,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Iron Claws",
+      "points": "-",
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    }
+  ]
+}

@@ -8,7 +8,7 @@
 //   showSidebar   — whether to render the left nav (default true)
 //   sidebarType   — 'rules' | 'factions' (selects which nav to show)
 
-import { FACTIONS, ALLIANCES, getFactionsByAlliance } from '../data/factions.ts';
+import { ALLIANCES } from '../data/alliances.ts';
 import { RULES_SECTIONS } from '../data/rules-nav.ts';
 
 interface Props {
@@ -20,6 +20,14 @@ interface Props {
   currentPath?: string;
 }
 
+interface FactionFrontmatter {
+  slug: string;
+  title: string;
+  alliance: string;
+  status: 'active' | 'coming-soon';
+  description?: string;
+}
+
 const {
   title = '',
   description = 'Alt-Hammer 40,000 — Community rules reference for the alternating-activations Warhammer 40,000 game system.',
@@ -29,8 +37,19 @@ const {
   currentPath = '',
 } = Astro.props;
 
-const factionsByAlliance = getFactionsByAlliance();
+const factionPages = await Astro.glob('../content/factions/*.mdx');
+const FACTIONS = factionPages
+  .map((entry) => entry.frontmatter as FactionFrontmatter)
+  .filter((frontmatter) => frontmatter?.slug);
 
+function getFactionsByAlliance() {
+  return ALLIANCES.map((alliance) => ({
+    alliance,
+    factions: FACTIONS.filter((faction) => faction.alliance === alliance.id),
+  })).filter((group) => group.factions.length > 0);
+}
+
+const factionsByAlliance = getFactionsByAlliance();
 const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000';
 ---
 
@@ -113,10 +132,10 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
                   </div>
                   {factions.map((faction) => (
                     <a
-                      href={faction.status === 'active' ? `/factions/${faction.id}` : '#'}
-                      class={`sidebar-nav-item ${faction.status === 'coming-soon' ? 'coming-soon' : ''} ${currentPath === `/factions/${faction.id}` ? 'active' : ''}`}
+                      href={faction.status === 'active' ? `/factions/${faction.slug}` : '#'}
+                      class={`sidebar-nav-item ${faction.status === 'coming-soon' ? 'coming-soon' : ''} ${currentPath === `/factions/${faction.slug}` ? 'active' : ''}`}
                     >
-                      {faction.name}
+                      {faction.title}
                     </a>
                   ))}
                 </div>

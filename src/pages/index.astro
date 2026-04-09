@@ -1,9 +1,26 @@
 ---
 // src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { FACTIONS, ALLIANCES, getFactionsByAlliance } from '../data/factions.ts';
+import { ALLIANCES } from '../data/alliances.ts';
 
-const factionsByAlliance = getFactionsByAlliance();
+interface FactionFrontmatter {
+  title: string;
+  slug: string;
+  alliance: string;
+  status: 'active' | 'coming-soon';
+  description?: string;
+}
+
+const factionPages = await Astro.glob('../content/factions/*.mdx');
+const FACTIONS = factionPages
+  .map((entry) => entry.frontmatter as FactionFrontmatter)
+  .filter((frontmatter) => frontmatter?.slug)
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+const factionsByAlliance = ALLIANCES.map((alliance) => ({
+  alliance,
+  factions: FACTIONS.filter((faction) => faction.alliance === alliance.id),
+})).filter((group) => group.factions.length > 0);
 
 const allianceColors: Record<string, string> = {
   imperium: '#c9a84c',
@@ -69,7 +86,7 @@ const allianceColors: Record<string, string> = {
       <div class="feature-card-title">Factions</div>
       <p class="feature-card-desc">
         Army rules, detachment traits, wargear upgrades, and fully
-        detailed unit profiles for all {FACTIONS.filter(f => f.status === 'active').length} active factions.
+        detailed unit profiles for all {FACTIONS.filter((f) => f.status === 'active').length} active factions.
       </p>
     </a>
 
@@ -133,11 +150,11 @@ const allianceColors: Record<string, string> = {
         <div class="faction-grid" style="margin-bottom: 8px;">
           {factions.map((faction) => (
             <a
-              href={faction.status === 'active' ? `/factions/${faction.id}` : '#'}
+              href={faction.status === 'active' ? `/factions/${faction.slug}` : '#'}
               class={`faction-card ${faction.status === 'coming-soon' ? 'coming-soon' : ''}`}
               style={`--alliance-color: ${allianceColors[faction.alliance] ?? 'var(--color-gold-dim)'};`}
             >
-              <span class="faction-card-name">{faction.name}</span>
+              <span class="faction-card-name">{faction.title}</span>
               {faction.description && (
                 <span class="faction-card-desc">{faction.description}</span>
               )}

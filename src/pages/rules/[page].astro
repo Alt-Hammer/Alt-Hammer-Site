@@ -1,0 +1,57 @@
+---
+// Dynamic rules page for generated MDX content in src/content/rules
+import DocsLayout from '../../layouts/DocsLayout.astro';
+import { RULES_SECTIONS } from '../../data/rules-nav.ts';
+
+export async function getStaticPaths() {
+  const rulePages = await Astro.glob('../../content/rules/*.mdx');
+  const sections = Array.from(
+    new Set(
+      rulePages
+        .map((entry) => entry.frontmatter?.section)
+        .filter((section) => typeof section === 'string')
+    )
+  );
+
+  return sections.map((section) => ({
+    params: { page: section },
+  }));
+}
+
+const page = Astro.params.page;
+const section = RULES_SECTIONS.find((item) => item.href === `/rules/${page}`);
+if (!section) {
+  throw new Error(`Unknown rules page: ${page}`);
+}
+
+const rulePages = await Astro.glob('../../content/rules/*.mdx');
+const pages = rulePages
+  .filter((entry) => entry.frontmatter?.section === page)
+  .sort((a, b) => (a.frontmatter?.slug || '').localeCompare(b.frontmatter?.slug || '')); 
+
+if (pages.length === 0) {
+  throw new Error(`No rule content found for ${page}`);
+}
+
+const pageTitle = section.label;
+const pageDescription = pages[0]?.frontmatter?.description ?? `${section.label} for Alt-Hammer 40,000.`;
+---
+
+<DocsLayout
+  title={pageTitle}
+  description={pageDescription}
+  activePage="rules"
+  sidebarType="rules"
+>
+  <div class="page-header">
+    <p class="breadcrumb">Rules</p>
+    <h1>{pageTitle}</h1>
+    <p class="subtitle">
+      {pageDescription}
+    </p>
+  </div>
+
+  {pages.map((entry) => (
+    <entry.Content />
+  ))}
+</DocsLayout>

@@ -1,0 +1,1380 @@
+{
+  "faction": "Tyranids",
+  "slug": "tyranids",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Squad Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Hive Tyrant",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 7,
+        "BS": 5,
+        "I": 5,
+        "A": 7,
+        "S": 8,
+        "T": 8,
+        "W": 14,
+        "SV": "3+",
+        "LD": "2+",
+        "basePoints": 180,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Character",
+        "Synapse 9\"",
+        "Psyker",
+        "Fearless",
+        "Feel No Pain 5+",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Tyranid Prime",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 5,
+        "S": 4,
+        "T": 4,
+        "W": 5,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 90,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Character",
+        "Synapse 6\"",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Neurotyrant",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 3,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 6,
+        "SV": "4+",
+        "LD": "2+",
+        "basePoints": 120,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Character",
+        "Synapse 18\"",
+        "Psyker",
+        "Fearless",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Broodlord",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 7,
+        "BS": 6,
+        "I": 7,
+        "A": 6,
+        "S": 5,
+        "T": 5,
+        "W": 5,
+        "SV": "3+",
+        "LD": "2+",
+        "basePoints": 135,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Character",
+        "Infiltrators",
+        "Scout 7\"",
+        "Psyker",
+        "Fearless",
+        "Feel No Pain 5+",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Parasite of Mortrex",
+      "category": "Character",
+      "stats": {
+        "M": "12\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 6,
+        "A": 6,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Fly",
+        "Deep Strike",
+        "Infiltrators",
+        "Invulnerable Save 5+",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Tervigon",
+      "category": "Character",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 3,
+        "A": 6,
+        "S": 7,
+        "T": 12,
+        "W": 18,
+        "SV": "2+",
+        "LD": "6+",
+        "basePoints": 175,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Character",
+        "Transport 10",
+        "Feel No Pain 5+",
+        "Deadly Demise D6"
+      ]
+    },
+    {
+      "name": "Norn Emissary",
+      "category": "Character",
+      "stats": {
+        "M": "10\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 8,
+        "S": 10,
+        "T": 11,
+        "W": 18,
+        "SV": "2+",
+        "LD": "6+",
+        "basePoints": 230,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Character",
+        "Invulnerable Save 5+",
+        "Feel No Pain 5+",
+        "Deadly Demise D6+1"
+      ]
+    },
+    {
+      "name": "Termagaunts",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "10+",
+        "basePoints": 3,
+        "squadSizes": "10 to 30"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast"
+      ]
+    },
+    {
+      "name": "Hormagaunts",
+      "category": "Battleline",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "10+",
+        "basePoints": 3,
+        "squadSizes": "10 to 30"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast"
+      ]
+    },
+    {
+      "name": "Warriors",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 20,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Synapse 3\""
+      ]
+    },
+    {
+      "name": "Gargoyles",
+      "category": "Battleline",
+      "stats": {
+        "M": "14\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "6+",
+        "LD": "10+",
+        "basePoints": 6,
+        "squadSizes": "10 to 30"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Fly"
+      ]
+    },
+    {
+      "name": "Barbgaunts",
+      "category": "Battleline",
+      "stats": {
+        "M": "5\"",
+        "WS": 1,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 3,
+        "W": 3,
+        "SV": "5+",
+        "LD": "10+",
+        "basePoints": 10,
+        "squadSizes": "3 to 6"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast"
+      ]
+    },
+    {
+      "name": "Von Ryan's Leapers",
+      "category": "Battleline",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 4,
+        "S": 4,
+        "T": 3,
+        "W": 3,
+        "SV": "5+",
+        "LD": "10+",
+        "basePoints": 14,
+        "squadSizes": "3 to 6"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Scout 7\""
+      ]
+    },
+    {
+      "name": "Genestealers",
+      "category": "Battleline",
+      "stats": {
+        "M": "7\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 6,
+        "A": 4,
+        "S": 4,
+        "T": 3,
+        "W": 2,
+        "SV": "5+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Infiltrators",
+        "Fearless",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Zoanthropes",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 4,
+        "I": 2,
+        "A": 2,
+        "S": 2,
+        "T": 4,
+        "W": 3,
+        "SV": "4+",
+        "LD": "5+",
+        "basePoints": 40,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Synapse 6\"",
+        "Psyker",
+        "Hover",
+        "Invulnerable Save 4+"
+      ]
+    },
+    {
+      "name": "Venomthropes",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 4,
+        "I": 2,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 3,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 30,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Hover"
+      ]
+    },
+    {
+      "name": "Biovores",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 4,
+        "S": 4,
+        "T": 5,
+        "W": 7,
+        "SV": "3+",
+        "LD": "10+",
+        "basePoints": 40,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast"
+      ]
+    },
+    {
+      "name": "Lictor",
+      "category": "Battleline",
+      "stats": {
+        "M": "7\"",
+        "WS": 6,
+        "BS": 3,
+        "I": 6,
+        "A": 4,
+        "S": 5,
+        "T": 5,
+        "W": 5,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 60,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Deep Strike",
+        "Infiltrators",
+        "Scout 7\"",
+        "Stealth"
+      ]
+    },
+    {
+      "name": "Neurolictor",
+      "category": "Battleline",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 6,
+        "A": 4,
+        "S": 4,
+        "T": 4,
+        "W": 4,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 95,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Synapse 3\"",
+        "Psyker",
+        "Deep Strike",
+        "Infiltrators",
+        "Scout 7\"",
+        "Stealth",
+        "Invulnerable Save 5+"
+      ]
+    },
+    {
+      "name": "Neurogaunts",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 2,
+        "BS": 2,
+        "I": 1,
+        "A": 1,
+        "S": 1,
+        "T": 1,
+        "W": 3,
+        "SV": "5+",
+        "LD": "10+",
+        "basePoints": 3,
+        "squadSizes": "2 to 10"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Guardians",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 3,
+        "S": 5,
+        "T": 5,
+        "W": 5,
+        "SV": "3+",
+        "LD": "10+",
+        "basePoints": 50,
+        "squadSizes": "1 to 3"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Bodyguard"
+      ]
+    },
+    {
+      "name": "Spores",
+      "category": "Battleline",
+      "stats": {
+        "M": "4\"",
+        "WS": "-",
+        "BS": "-",
+        "I": "-",
+        "A": "-",
+        "S": "-",
+        "T": 1,
+        "W": 1,
+        "SV": "8+",
+        "LD": "2+",
+        "basePoints": 8,
+        "squadSizes": "3 to 6"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Hover",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Ripper Swarms",
+      "category": "Swarms",
+      "stats": {
+        "M": "7\"",
+        "WS": 2,
+        "BS": 1,
+        "I": 4,
+        "A": 5,
+        "S": 1,
+        "T": 1,
+        "W": 5,
+        "SV": "7+",
+        "LD": "10+",
+        "basePoints": 6,
+        "squadSizes": "3 to 12"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Swarm",
+        "Small Profile",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Carnifexes",
+      "category": "Monsters",
+      "stats": {
+        "M": "8\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 6,
+        "S": 9,
+        "T": 10,
+        "W": 8,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 90,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Feel No Pain 5+",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Exocrine",
+      "category": "Monsters",
+      "stats": {
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 2,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 13,
+        "SV": "2+",
+        "LD": "6+",
+        "basePoints": 120,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Feel No Pain 5+",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Tyrannofex",
+      "category": "Monsters",
+      "stats": {
+        "M": "8\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 6,
+        "S": 7,
+        "T": 12,
+        "W": 18,
+        "SV": "2+",
+        "LD": "6+",
+        "basePoints": 200,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Feel No Pain 5+",
+        "Deadly Demise D6"
+      ]
+    },
+    {
+      "name": "Trygon",
+      "category": "Monsters",
+      "stats": {
+        "M": "14\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 6,
+        "A": 10,
+        "S": 7,
+        "T": 9,
+        "W": 12,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 130,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Deep Strike",
+        "Feel No Pain 5+",
+        "Deadly Demise D3+1"
+      ]
+    },
+    {
+      "name": "Psychophages",
+      "category": "Monsters",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 5,
+        "A": 6,
+        "S": 5,
+        "T": 6,
+        "W": 8,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 70,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Feel No Pain 6+",
+        "Deadly Demise 1"
+      ]
+    },
+    {
+      "name": "Toxicrene",
+      "category": "Monsters",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 6,
+        "S": 7,
+        "T": 9,
+        "W": 12,
+        "SV": "2+",
+        "LD": "6+",
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Feel No Pain 5+",
+        "Deadly Demise D3"
+      ]
+    },
+    {
+      "name": "Maleceptor",
+      "category": "Monsters",
+      "stats": {
+        "M": "10\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 6,
+        "S": 7,
+        "T": 9,
+        "W": 12,
+        "SV": "2+",
+        "LD": "4+",
+        "basePoints": 125,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Synapse 6\"",
+        "Psyker",
+        "Feel No Pain 5+",
+        "Deadly Demise D6+2"
+      ]
+    },
+    {
+      "name": "Tyrannocyte",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "10\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 2,
+        "A": 10,
+        "S": 7,
+        "T": 10,
+        "W": 14,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 130,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Hover",
+        "Deep Strike",
+        "Feel No Pain 5+"
+      ]
+    },
+    {
+      "name": "Harpy",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "10\" - 20\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 6,
+        "S": 10,
+        "T": 10,
+        "W": 14,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Aircraft",
+        "Deep Strike",
+        "Feel No Pain 5+",
+        "Deadly Demise D6"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Lash Whips - Shooting",
+      "points": 10,
+      "range": "6\"",
+      "attacks": "A",
+      "strength": "S-2",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Lethal Hits",
+        "Ensnare"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Spinefists / Spinebanks",
+      "points": 5,
+      "range": "9\"",
+      "attacks": "A",
+      "strength": "S",
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Fleshborer",
+      "points": 3,
+      "range": "18\"",
+      "attacks": "A",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Rapid Fire 1",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Devourer",
+      "points": 6,
+      "range": "18\"",
+      "attacks": "A+3",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shardlauncher",
+      "points": 12,
+      "range": "8\"-24\"",
+      "attacks": "A+D6",
+      "strength": "S+2",
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Indirect Fire",
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Strangleweb",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "D6",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover",
+        "Anti-INFANTRY 2+",
+        "Ensnare"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Spike Rifle",
+      "points": 8,
+      "range": "36\"",
+      "attacks": "A",
+      "strength": "S+1",
+      "ap": -2,
+      "damage": "S",
+      "keywords": [
+        "Heavy",
+        "Precision",
+        "Anti-INFANTRY 3+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Deathspitter",
+      "points": 15,
+      "range": "24\"",
+      "attacks": "A",
+      "strength": "S",
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Rapid Fire 2",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Barbed Strangler",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "D6+6",
+      "strength": "S",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Blast 3\"",
+        "Lethal Hits",
+        "Ignores Cover",
+        "Ensnare"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Barblauncher",
+      "points": 20,
+      "range": "8\"-24\"",
+      "attacks": "D6+3",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Pyreburster",
+      "points": 30,
+      "range": "12\"",
+      "attacks": "D6+6",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Spore Launcher",
+      "points": 15,
+      "range": "18\"-72\"",
+      "attacks": "-",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Bio-plasmic Cannon - Dispersed",
+      "points": 65,
+      "range": "18\"-72\"",
+      "attacks": "D6+3",
+      "strength": 5,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 4\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bio-plasmic Cannon - Concentrated",
+      "points": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": 18,
+      "ap": -4,
+      "damage": "10",
+      "keywords": [
+        "Ordnance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Rupture Cannon - Dispersed",
+      "points": 60,
+      "range": "60\"",
+      "attacks": "2D6+6",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Rupture Cannon - Concentrated",
+      "points": null,
+      "range": "60\"",
+      "attacks": "1",
+      "strength": 20,
+      "ap": -3,
+      "damage": "D6+8",
+      "keywords": [
+        "Ordnance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Fleshborer Hive",
+      "points": 50,
+      "range": "24\"",
+      "attacks": "20",
+      "strength": 3,
+      "ap": 0,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 2",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Acid Sprayer",
+      "points": 45,
+      "range": "12\"",
+      "attacks": "2D6+3",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Acid Maw - Shooting",
+      "points": 15,
+      "range": "9\"",
+      "attacks": "D6+3",
+      "strength": "S",
+      "ap": -4,
+      "damage": "1",
+      "keywords": [
+        "Anti-INFANTRY 4+",
+        "Poison D3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Toxinjector Harpoon - Shooting",
+      "points": 35,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D6+1",
+      "keywords": [
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Harupsex Maw - Shooting",
+      "points": 25,
+      "range": "9\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -3,
+      "damage": "4",
+      "keywords": [
+        "Precision",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Scything Talons - Flury",
+      "points": 5,
+      "range": "-",
+      "attacks": "A+3",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Scything Talons - Stab",
+      "points": null,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": "S+2",
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Scything Wings",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Rending Claws",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Crusher Claws",
+      "points": 25,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S+5",
+      "ap": -3,
+      "damage": "4",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-FORTIFICATION 2+",
+        "Anti-VEHICLE 4+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bone Reaper",
+      "points": 15,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S+2",
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Acid Maw - Melee",
+      "points": 15,
+      "range": "-",
+      "attacks": "D6",
+      "strength": "S",
+      "ap": -4,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Toxinjector Harpoons - Melee",
+      "points": 35,
+      "range": "-",
+      "attacks": "2",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D6+1",
+      "keywords": [
+        "Extra Attacks",
+        "Harpoon",
+        "Poison 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Haruspex Maw - Melee",
+      "points": 25,
+      "range": "-",
+      "attacks": "Ax3",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Warp Blast - Focused Witchfire",
+      "points": "-",
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -4,
+      "damage": "5",
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Warp Blast - Witchfire",
+      "points": "-",
+      "range": "8\"",
+      "attacks": "D6+4",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Anti-PSYKER 4+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Neuro-piercer",
+      "points": "-",
+      "range": "3\"",
+      "attacks": "D3",
+      "strength": "4",
+      "ap": -1,
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Pistol",
+        "Anti-PSYKER 3+",
+        "Anti-CHARACTER 3+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Psychoblast",
+      "points": "-",
+      "range": "24\"",
+      "attacks": "2D6+6",
+      "strength": "4",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Ordnance",
+        "Blast 2\"",
+        "Sustained Hits 3",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Fragmentation Spore",
+      "points": 4,
+      "range": "6\"",
+      "attacks": "D6+3",
+      "strength": 3,
+      "ap": 0,
+      "damage": "1",
+      "keywords": [
+        "Torrent",
+        "Blast 1\"",
+        "Ignores Covers"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Bio-acid Spore",
+      "points": 6,
+      "range": "6\"",
+      "attacks": "D3",
+      "strength": 2,
+      "ap": -1,
+      "damage": "2",
+      "keywords": [
+        "Torrent",
+        "Anti-INFANTRY 4+",
+        "Ignores Cover",
+        "Poison 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Mucolid Spore",
+      "points": 12,
+      "range": "9\"",
+      "attacks": "D6+3",
+      "strength": 5,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "One Shot",
+        "Blast 2\"",
+        "Torrent",
+        "Anti-INFANTRY 4+",
+        "Ignores Cover",
+        "Poison 2"
+      ],
+      "availability": ""
+    }
+  ]
+}

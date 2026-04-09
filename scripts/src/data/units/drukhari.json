@@ -1,0 +1,946 @@
+{
+  "faction": "Drukhari",
+  "slug": "drukhari",
+  "units": [
+    {
+      "name": "Name",
+      "category": "Unknown",
+      "stats": {
+        "M": "Movement",
+        "WS": "Weapon Skill",
+        "BS": "Ballistic Skill",
+        "I": "Initiative",
+        "A": "Attacks",
+        "S": "Strength",
+        "T": "Toughness",
+        "W": "Wounds",
+        "SV": "Save",
+        "LD": "Leadership",
+        "basePoints": "Base Points per Model",
+        "squadSizes": "Unit Sizes"
+      },
+      "keywords": [
+        "Keywords"
+      ]
+    },
+    {
+      "name": "Archon",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 7,
+        "BS": 7,
+        "I": 6,
+        "A": 5,
+        "S": 2,
+        "T": 2,
+        "W": 5,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Succubus",
+      "category": "Character",
+      "stats": {
+        "M": "8\"",
+        "WS": 8,
+        "BS": 5,
+        "I": 8,
+        "A": 5,
+        "S": 2,
+        "T": 2,
+        "W": 5,
+        "SV": "7+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Wych Cult"
+      ]
+    },
+    {
+      "name": "Haemonculus",
+      "category": "Character",
+      "stats": {
+        "M": "6\"",
+        "WS": 5,
+        "BS": 6,
+        "I": 4,
+        "A": 3,
+        "S": 2,
+        "T": 2,
+        "W": 6,
+        "SV": "5+",
+        "LD": "4+",
+        "basePoints": 80,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Haemonculus Coven"
+      ]
+    },
+    {
+      "name": "Kabalite Warriors",
+      "category": "Battleline",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 8,
+        "squadSizes": "5 to 15"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Battleline",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Wyches",
+      "category": "Battleline",
+      "stats": {
+        "M": "8\"",
+        "WS": 5,
+        "BS": 3,
+        "I": 7,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "7+",
+        "LD": "7+",
+        "basePoints": 7,
+        "squadSizes": "5 to 15"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Battleline",
+        "Wych Cult"
+      ]
+    },
+    {
+      "name": "Wracks",
+      "category": "Battleline",
+      "stats": {
+        "M": "6\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 4,
+        "A": 2,
+        "S": 3,
+        "T": 3,
+        "W": 2,
+        "SV": "6+",
+        "LD": "5+",
+        "basePoints": 8,
+        "squadSizes": "5 to 15"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Battleline",
+        "Haemonculus Covens",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Incubi",
+      "category": "Infantry",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 4,
+        "I": 5,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 12,
+        "squadSizes": "2 to 5"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Bodyguard",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Mandrakes",
+      "category": "Infantry",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "7+",
+        "LD": "6+",
+        "basePoints": 10,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Phase Shift",
+        "Infiltrators",
+        "Scout 7\"",
+        "Invulnerable Save 6+"
+      ]
+    },
+    {
+      "name": "Scourges",
+      "category": "Infantry",
+      "stats": {
+        "M": "12\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": 10,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Jump Pack",
+        "Deep Strike",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Hellions",
+      "category": "Mounted",
+      "stats": {
+        "M": "14\"",
+        "WS": 5,
+        "BS": 3,
+        "I": 7,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "7+",
+        "basePoints": 13,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Mounted",
+        "Fly",
+        "Wych Cult"
+      ]
+    },
+    {
+      "name": "Reavers",
+      "category": "Mounted",
+      "stats": {
+        "M": "16\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 5,
+        "A": 2,
+        "S": 2,
+        "T": 3,
+        "W": 2,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 15,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Infantry",
+        "Mounted",
+        "Fly",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Raider",
+      "category": "Dedicated Transports",
+      "stats": {
+        "M": "16\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 3,
+        "S": 5,
+        "T": 7,
+        "W": 13,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 75,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Vehicle",
+        "Fly",
+        "Transport 12",
+        "Firing Deck 12",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Talos",
+      "category": "Monsters",
+      "stats": {
+        "M": "6\"",
+        "WS": 6,
+        "BS": 3,
+        "I": 4,
+        "A": 6,
+        "S": 6,
+        "T": 7,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 95,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Monster",
+        "Haemonculus Covens",
+        "Fearless"
+      ]
+    },
+    {
+      "name": "Ravager",
+      "category": "Vehicles",
+      "stats": {
+        "M": "16\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 3,
+        "S": 5,
+        "T": 8,
+        "W": 13,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Vehicle",
+        "Fly",
+        "Kabal"
+      ]
+    },
+    {
+      "name": "Tantalus",
+      "category": "Vehicles",
+      "stats": {
+        "M": "14\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 3,
+        "S": 6,
+        "T": 10,
+        "W": 20,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 180,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Drukhari",
+        "Vehicle",
+        "Fly",
+        "Transport 25",
+        "Firing Deck 25",
+        "Kabal"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Name",
+      "points": "Points Cost",
+      "range": "Range",
+      "attacks": "Attacks",
+      "strength": "Strength",
+      "ap": "Armour Piercing",
+      "damage": "Damage",
+      "keywords": [
+        "Keywords"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Splinter Pistol",
+      "points": 2,
+      "range": "9\"",
+      "attacks": "2",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Splinter Pod",
+      "points": 5,
+      "range": "9\"",
+      "attacks": "3",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Splinter Carbine",
+      "points": 4,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Splinter Rifle",
+      "points": 4,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Rapid Fire 2",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Blaster Pistol",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "3",
+      "strength": 6,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Blaster Carbine",
+      "points": 15,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": 6,
+      "ap": -2,
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Haywire Blaster",
+      "points": 10,
+      "range": "12\"",
+      "attacks": "D6",
+      "strength": 8,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-VEHICLE 4+",
+        "Haywire"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Stinger Pistol",
+      "points": 5,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 5,
+      "ap": -3,
+      "damage": "D3+1",
+      "keywords": [
+        "Pistol",
+        "Precision",
+        "Anti-INFANTRY 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shredder",
+      "points": 15,
+      "range": "18\"",
+      "attacks": "8",
+      "strength": 3,
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heat Lance",
+      "points": 20,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": 10,
+      "ap": -4,
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dark Lance",
+      "points": 20,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": 12,
+      "ap": -3,
+      "damage": "D3+3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Khaidespear",
+      "points": 20,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": 8,
+      "ap": -2,
+      "damage": "D3+1",
+      "keywords": [
+        "Heavy",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Baleblast",
+      "points": 10,
+      "range": "9\"",
+      "attacks": "D6+3",
+      "strength": 3,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Torrent",
+        "Ignores Cover",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Liquifier",
+      "points": 20,
+      "range": "9\"",
+      "attacks": "D6+3",
+      "strength": 4,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Torrent",
+        "Ignores Cover",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ossefactor",
+      "points": 5,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": 5,
+      "ap": -3,
+      "damage": "D3+1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Huskblade",
+      "points": 15,
+      "range": "-",
+      "attacks": "A+2",
+      "strength": "S +1",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Hekatarii Blade",
+      "points": 15,
+      "range": "-",
+      "attacks": "A+2",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Electrovoid Blade",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-3",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrovoid Gauntlet",
+      "points": 5,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": "S x2",
+      "ap": "-2",
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrovoid Klaive",
+      "points": 8,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits",
+        "Lance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Great Klaive",
+      "points": 10,
+      "range": "-",
+      "attacks": "A-1",
+      "strength": "S x2",
+      "ap": "-2",
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Lethal Hits",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Demi Klaives",
+      "points": 8,
+      "range": "-",
+      "attacks": "Ax2",
+      "strength": "S",
+      "ap": -2,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Stunclaw",
+      "points": 10,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Precision",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shardnet and Impaler",
+      "points": 10,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Glimmersteel Blade",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S+1",
+      "ap": "-4",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits",
+        "Anti-INFANTRY 3+",
+        "Anti-BEAST 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Masochir Blade",
+      "points": 8,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Agoniser",
+      "points": 5,
+      "range": "-",
+      "attacks": "Ax2",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Anti-INFANTRY 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Chain Flails",
+      "points": 8,
+      "range": "-",
+      "attacks": "A+3",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Macro-Scalpel",
+      "points": 10,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": -3,
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Viviscector's Array",
+      "points": 5,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ichor Injectors",
+      "points": 5,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": 2,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Anti-INFANTRY 3+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Scything Blades",
+      "points": "5 / 10",
+      "range": "-",
+      "attacks": "D3",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "1 / 2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Impaler Ram",
+      "points": 10,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S x2",
+      "ap": "-2",
+      "damage": "D3+1",
+      "keywords": [
+        "Devastating Wounds",
+        "Hazardous D3+1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Haywire Grenades",
+      "points": 5,
+      "range": "1\"",
+      "attacks": "D3",
+      "strength": 8,
+      "ap": -1,
+      "damage": "1",
+      "keywords": [
+        "Anti-VEHICLE 4+",
+        "Ignores Cover",
+        "Haywire"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Grenades",
+      "points": 5,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": 7,
+      "ap": -3,
+      "damage": "D3+1",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Tanglefoot Grenades",
+      "points": 3,
+      "range": "S+3\"",
+      "attacks": "D3+1",
+      "strength": 2,
+      "ap": 0,
+      "damage": "0",
+      "keywords": [
+        "Ensnare",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smoke Grenades",
+      "points": 2,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": ""
+    }
+  ]
+}

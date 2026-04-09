@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { RULES_SECTIONS } from '../../data/rules-nav.ts';
+
+const sectionCards = RULES_SECTIONS;
+---
+
+<BaseLayout
+  title="Rules"
+  description="Alt-Hammer 40,000 rules sections — core rules, keywords, terrain, missions, and stratagems."
+  activePage="rules"
+  showSidebar={true}
+  sidebarType="rules"
+>
+  <div class="page-header">
+    <p class="breadcrumb">Rules</p>
+    <h1>Rules</h1>
+    <p class="subtitle">
+      Browse Alt-Hammer 40,000 rule sections generated from the content pipeline.
+    </p>
+  </div>
+
+  <div class="card-grid">
+    {sectionCards.map((section) => (
+      <a href={section.href} class="feature-card animate-in" style="--card-accent: var(--color-gold);">
+        <div class="feature-card-title">{section.label}</div>
+        <p class="feature-card-desc">
+          {section.items.length > 0
+            ? section.items[0].label
+            : `Read the ${section.label} section.`}
+        </p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>
