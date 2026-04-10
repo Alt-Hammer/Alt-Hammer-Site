@@ -1,24 +1,25 @@
 ---
 import DocsLayout from '../../layouts/DocsLayout.astro';
 import { ALLIANCES } from '../../data/alliances.ts';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const factionPages = await Astro.glob('../../content/factions/*.mdx');
+  const factionPages = await getCollection('factions');
   return factionPages.map((entry) => ({
-    params: {
-      slug: entry.frontmatter?.slug,
-    },
+    params: { slug: entry.id.replace(/\.mdx$/, '') },
   }));
 }
 
 const slug = Astro.params.slug;
-const factionPages = await Astro.glob('../../content/factions/*.mdx');
-const factionEntry = factionPages.find((entry) => entry.frontmatter?.slug === slug);
+const factionPages = await getCollection('factions');
+const factionEntry = factionPages.find((entry) => entry.id.replace(/\.mdx$/, '') === slug);
 if (!factionEntry) {
   throw new Error(`Faction not found: ${slug}`);
 }
 
-const faction = factionEntry.frontmatter;
+const { Content: FactionContent } = await factionEntry.render();
+const faction = factionEntry.data;
+
 const unitFiles = await Astro.glob('../../data/units/*.json');
 const unitFile = unitFiles.find((entry) => {
   const filePath = entry.file ?? entry.url ?? '';
@@ -64,7 +65,7 @@ const pageDescription = faction.description || `${faction.title} faction rules a
     </div>
   </div>
 
-  <factionEntry.Content />
+  <FactionContent />
 
   <section id="unit-profiles" style="margin-top: 48px;">
     <h2>Unit Profiles</h2>

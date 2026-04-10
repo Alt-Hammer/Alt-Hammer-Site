@@ -107,11 +107,18 @@ def convert_rules(docx_path: str, output_dir: str):
             continue
 
         # Build frontmatter
+        SECTION_MAP = {
+            'keywords-abilities': 'keywords',
+            'command-points-stratagems': 'stratagems',
+            'generating-a-mission': 'missions',
+        }
+        section_value = SECTION_MAP.get(slug, 'core-rules')
+
         frontmatter = {
             'title': title,
             'slug': slug,
             'description': f"Alt-Hammer 40,000 Core Rules — {title}",
-            'section': 'core-rules',
+            'section': section_value,
             'subsections': section['subsections'],
         }
 

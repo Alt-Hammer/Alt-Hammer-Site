@@ -105,7 +105,7 @@ def is_keyword_run(run) -> bool:
     style = get_run_style_name(run)
     if style is None:
         return False
-    return style.lower() in ('keyword', 'keyword1', 'keywords')
+    return style.lower() in ('keyword', 'keyword1', 'keywords', 'keywordchar', 'keyword char')
 
 
 def is_action_run(run) -> bool:
@@ -113,7 +113,7 @@ def is_action_run(run) -> bool:
     style = get_run_style_name(run)
     if style is None:
         return False
-    return style.lower() in ('action', 'action1', 'actions')
+    return style.lower() in ('action', 'action1', 'actions', 'actionchar', 'action char')
 
 
 # ── Paragraph → Markdown conversion ──────────────────────────────────────────
@@ -125,35 +125,63 @@ def runs_to_markdown(paragraph) -> str:
       - Action style  → <span class="keyword" data-term="slug" data-type="action">text</span>
       - Bold          → **text**
       - Italic        → *text*
-      - Underline     → (stripped — underline is part of Action style, handled above)
-    
-    Consecutive runs of the same style are merged before output.
+
+    Consecutive runs of the same character style are merged before emitting spans.
+    This prevents Word's habit of splitting a single styled word across multiple runs
+    (e.g. "M"+"ove", "Vehicles"+"s", "Anti-"+"Air") from producing broken spans.
     """
-    parts = []
-    
+    # ── Step 1: classify every run ───────────────────────────────────────────
+    classified = []
     for run in paragraph.runs:
         text = run.text
         if not text:
             continue
-
-        # Sanitize special characters for MDX compatibility
         text = sanitize_text(text)
 
         if is_keyword_run(run):
-            slug = slugify(text)
+            classified.append(['keyword', text])
+        elif is_action_run(run):
+            classified.append(['action', text])
+        elif run.bold and run.italic:
+            classified.append(['bold-italic', text])
+        elif run.bold:
+            classified.append(['bold', text])
+        elif run.italic:
+            classified.append(['italic', text])
+        else:
+            classified.append(['plain', text])
+
+    # ── Step 2: merge consecutive runs of the same type ─────────────────────
+    merged = []
+    for item in classified:
+        if merged and merged[-1][0] == item[0]:
+            merged[-1][1] += item[1]
+        else:
+            merged.append([item[0], item[1]])
+
+    # ── Step 3: emit markdown ────────────────────────────────────────────────
+    parts = []
+    for run_type, text in merged:
+        # Whitespace-only keyword/action spans: emit as plain text
+        if run_type in ('keyword', 'action') and not text.strip():
+            parts.append(text)
+            continue
+
+        if run_type == 'keyword':
+            slug = slugify(text.strip())
             parts.append(
                 f'<span class="keyword" data-term="{slug}" data-type="keyword">{text}</span>'
             )
-        elif is_action_run(run):
-            slug = slugify(text)
+        elif run_type == 'action':
+            slug = slugify(text.strip())
             parts.append(
                 f'<span class="keyword" data-term="{slug}" data-type="action">{text}</span>'
             )
-        elif run.bold and run.italic:
+        elif run_type == 'bold-italic':
             parts.append(f'***{text}***')
-        elif run.bold:
+        elif run_type == 'bold':
             parts.append(f'**{text}**')
-        elif run.italic:
+        elif run_type == 'italic':
             parts.append(f'*{text}*')
         else:
             parts.append(text)

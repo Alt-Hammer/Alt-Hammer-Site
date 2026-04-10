@@ -1,18 +1,17 @@
 ---
-// Dynamic rules page for generated MDX content in src/content/rules
 import DocsLayout from '../../layouts/DocsLayout.astro';
 import { RULES_SECTIONS } from '../../data/rules-nav.ts';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const rulePages = await Astro.glob('../../content/rules/*.mdx');
+  const rulePages = await getCollection('rules');
   const sections = Array.from(
     new Set(
       rulePages
-        .map((entry) => entry.frontmatter?.section)
+        .map((entry) => entry.data.section)
         .filter((section) => typeof section === 'string')
     )
   );
-
   return sections.map((section) => ({
     params: { page: section },
   }));
@@ -24,17 +23,24 @@ if (!section) {
   throw new Error(`Unknown rules page: ${page}`);
 }
 
-const rulePages = await Astro.glob('../../content/rules/*.mdx');
-const pages = rulePages
-  .filter((entry) => entry.frontmatter?.section === page)
-  .sort((a, b) => (a.frontmatter?.slug || '').localeCompare(b.frontmatter?.slug || '')); 
+const rulePages = await getCollection('rules');
+const matchingPages = rulePages
+  .filter((entry) => entry.data.section === page)
+  .sort((a, b) => (a.id || '').localeCompare(b.id || ''));
 
-if (pages.length === 0) {
+if (matchingPages.length === 0) {
   throw new Error(`No rule content found for ${page}`);
 }
 
 const pageTitle = section.label;
-const pageDescription = pages[0]?.frontmatter?.description ?? `${section.label} for Alt-Hammer 40,000.`;
+const pageDescription = matchingPages[0]?.data.description ?? `${section.label} for Alt-Hammer 40,000.`;
+
+const renderedPages = await Promise.all(
+  matchingPages.map(async (entry) => {
+    const { Content } = await entry.render();
+    return Content;
+  })
+);
 ---
 
 <DocsLayout
@@ -51,7 +57,5 @@ const pageDescription = pages[0]?.frontmatter?.description ?? `${section.label} 
     </p>
   </div>
 
-  {pages.map((entry) => (
-    <entry.Content />
-  ))}
+  {renderedPages.map((Content) => <Content />)}
 </DocsLayout>

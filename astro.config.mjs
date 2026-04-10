@@ -1,21 +1,15 @@
 import { defineConfig } from 'astro/config';
-import netlify from '@astrojs/netlify';
 import mdx from '@astrojs/mdx';
-import remarkGfm from 'remark-gfm';
+import netlify from '@astrojs/netlify';
+import rehypeRaw from 'rehype-raw';
 
 export default defineConfig({
   site: 'https://alt-hammer.netlify.app',
-  output: 'static',
+  markdown: {
+    rehypePlugins: [rehypeRaw],
+  },
+  integrations: [
+    mdx(),
+  ],
   adapter: netlify(),
-  integrations: [mdx({
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
-    extendMarkdownConfig: (config) => {
-      config.options = {
-        ...config.options,
-        allowHTML: true,
-      };
-      return config;
-    },
-  })],
 });

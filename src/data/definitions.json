@@ -1,0 +1,422 @@
+{
+  "remain-stationary": {
+    "name": "Remain Stationary",
+    "type": "action",
+    "body": "This Action can only be used by a unit as its first Action. The selected unit entrenches itself in a secure, defensible position. No other Actions aside from Shoot can be used as part the unit's Activation thereafter. A unit that chose to Remain Stationary increases its Initiative characteristic by 1 until the end of the Battle Round."
+  },
+  "move": {
+    "name": "Move",
+    "type": "action",
+    "body": "The selected unit may Move up to the maximum Movement characteristic detailed on its datasheet, and in accordance with any Model Characteristic Keywords impacting how that unit can move.\nThis Action cannot be used under the following conditions:\n• Your unit is within Base-to-base contact of any enemy models.\n• Your unit has already used this Action once as part of its activation.\nUnits can choose to Advance as part of a Move Action. An Advance is additional movement completed as follows:\n• The unit completes its Advance movement up to a distance in inches equal to the lowest Initiative value in that unit.\n• Units that Advance are not eligible to Shoot with any weapons other than weapons that possess the Pistol or Assault keyword.\n• Units that Advance are not eligible to Charge and Fight, unless they possess an ability or model keyword that enables them to do so."
+  },
+  "fall-back": {
+    "name": "Fall Back",
+    "type": "action",
+    "body": "The selected unit may Fall Back as its first Action if it begins its Activation within Base-to-base contact of enemy models. It may Fall Back up to the maximum Movement characteristic detailed on its datasheet, and must not end this Fall Back move closer to any enemy models than when it began. Units that Fall Back cannot then use remaining Activation Points for any of the following actions: Move, Shoot, and Charge and Fight unless that unit has access to abilities, or Stratagems that allow it to complete other Actions after making a Fall Back Action."
+  },
+  "enter-the-battlefield-from-strategic-reserve": {
+    "name": "Enter the Battlefield from Strategic Reserve",
+    "type": "action",
+    "body": "Units held in Strategic Reserves may enter the battlefield as their first Action. Units that do so may not then use Move."
+  },
+  "embark-or-disembark-from-a-transport": {
+    "name": "Embark or Disembark from a TRANSPORT",
+    "type": "action",
+    "body": "This Action is utilized by the selected unit in one of several ways:\n• Disembark: If the selected unit is currently embarked in a Transport, it can use this Action to Disembark from that Transport unit. Models that disembark must first be placed within 3\" of the Transport unit before spending any more Activation Points.\n• Units that Disembark from a Transport that has not yet been activated this turn may then use their remaining Activation Points to complete any of the following eligible Actions: Move, Shoot, Charge and Fight, adhering to any limitations to the sequencing of those activations where applicable. Disembarking under this condition costs 1 Activation Point.\n• Units that Disembark from a Transport that has been activated this turn may not use the Charge and Fight Action, but can otherwise act normally. Disembarking under this condition costs 2 Activation Points.\n• Embark: If all models in the selected unit are within 3\" of a friendly Transport, it may use this Action to embark into that Transport. It may then no longer use any remaining Activation Points, unless that Transport's datasheet possesses unique abilities that allow units to function while embarked (ie, making Ranged attacks via the Firing Deck [X] ability). Embarking always costs 1 Activation Point.\n• Emergency Disembarkation: When a Transport model is destroyed, every unit embarked within it at that time must immediately make an Emergency Disembarkation. To do so, Roll 1 D6 for each model in the unit. For each roll of a 1 - or a roll of a 1 or 2 if the Transport being destroyed triggered the Deadly Demise [X] ability - the unit suffers 1 Mortal Wound. Models not destroyed at this stage are then placed within 3\" of the Transport model. The unit then takes a Battle Shock test, or is automatically considered to be Battle Shocked if the Transport being destroyed triggered the Deadly Demise [X] ability.\nRestrictions detailed here can be overruled if the Activated unit has abilities that affect interactions with Transport units. For example, some units (including Transports) may provide the ability to allow embarked units to be eligible to Charge and Fight after disembarking from a Transport that has Moved this turn."
+  },
+  "shoot": {
+    "name": "Shoot",
+    "type": "action",
+    "body": "The selected unit may make Ranged attacks with all models in the unit eligible to do so. Units that Shoot may then spend remaining Activation Points on any other Actions, but must follow any Action restrictions affecting that unit caused by Wargear abilities (ie, Heavy, Ordnance)."
+  },
+  "charge-and-fight": {
+    "name": "Charge and Fight",
+    "type": "action",
+    "body": "The selected unit may complete this Action if they have already completed a Move Action or used the Enter the Battlefield from Strategic Reserves Action. This Action is completed as follows:\n• The selected unit Charges an enemy unit (or units) by moving a charge move distance in Inches equal to D6 + the lowest Initiative characteristic in the unit. At least 1 model from the unit must be able to get into Base-to-Base Contact with a model from the enemy unit being Charged in order for the Charge to be considered successful.\n• Resolve Melee attacks using the Fight Order of Operations detailed under the Making Attacks section of the Core Rules. The unit that completed this Charge and Fight Action increases their Initiative value by 1 for this Fight.\nIf the selected unit has any remaining Activation Points after completing the Charge and Fight Activation, and there are no longer any enemy models within Base-to-Base contact with any models in the unit, it may then continue to spend them on the following eligible Actions: Move, Shoot, Embark or Disembark from a TRANSPORT."
+  },
+  "fight": {
+    "name": "Fight",
+    "type": "action",
+    "body": "The selected unit may Fight, following the order of operations described under the Melee Attacks rules section, under 1 of the 2 following scenarios:\n• As part of the unit's own Activation if it has models is within Base-to-base contact with enemy models when it is Activated, using its first Activation Point. Units selected to use the Fight Action in this manner may then spend any remaining Activation Points on other eligible Actions, excluding the following: Embark or Disembark from a TRANSPORT, Enter the Battlefield from Strategic Reserve, and Charge and Fight.\n• When it is the target of an enemy unit's Charge and Fight Action, wherein this Action does not cost the unit an Activation Point because it is must complete this Action as part of that enemy unit's Charge and Fight Action."
+  },
+  "ascend-to-the-skies": {
+    "name": "Ascend to the Skies",
+    "type": "action",
+    "body": "This Action can only be used by units with at least one of the following keywords: Aircraft, Fly, or Jump Pack. Remove the unit from the table and place it into Strategic Reserves."
+  },
+  "mission-task": {
+    "name": "Mission Task",
+    "type": "action",
+    "body": "This Action allows the unit to complete any Mission Task as determined by an active Primary or Secondary Objective.\nUnits cannot select this Action if any models in the unit are in Base-to-Base contact with any enemy models. Further this Action can only be used by a unit if that unit did not use any of the following Actions as part of this Activation: Shoot, Charge and Fight, Fight, Fall Back. Units that used this Action cannot be selected for a Bonus Activation during the current Battle Round."
+  },
+  "hold-fast": {
+    "name": "Hold Fast",
+    "type": "action",
+    "body": "This Action allows the unit to effectively 'pass' on being Activated this Battle Round. The unit must declare it will Hold Fast at the start of its Activation, and cannot use any subsequent Actions under any conditions whatsoever. This Action cannot be used if the unit is:\n• In Base-to-Base Contact with any enemy units,\n• or\n• Has any models within 6\" of any enemy units.\nUnits that Hold Fast are not eligible to complete a Bonus Activation this Battle Round."
+  },
+  "infantry": {
+    "name": "Infantry",
+    "type": "keyword",
+    "body": "Infantry models must abide by the following when completing the Move or Charge and Fight Actions:\n• Treat any terrain feature that is less than 1\" tall as if it was not there. However, moving over terrain features that are 1\" or taller must be factored into the model's movement as vertical distance it must travel.\n• Reduce their Movement characteristic by 2\" when entering or exiting a terrain feature with the Building keyword. This is to represent models spending their energy finding safe entry points breaching through walls, or clambering over debris. Move Actions that begin and end within a terrain feature with the Building keyword are not subject to this constraint, but are subject to vertical terrain feature measuring detailed above.\nWhen Infantry models make Ranged attacks, they can choose to target more than 1 enemy unit if they possess more than 1 Ranged weapon. However, the attacking player can only choose 1 target to attack at the model's full Ballistic Skill. Ranged attacks against each additional unit targeted reduces the model's Ballistic Skill by 1. These reductions are applied in the order that the player chooses to make their attacks (i.e., the first weapon fired will have full Ballistic Skill, the second will have Ballistic Skill -1, the third will have Ballistic Skill -2, and so on)."
+  },
+  "vehicle": {
+    "name": "Vehicle",
+    "type": "keyword",
+    "body": "Vehicles must abide by the following when completing a Move Action:\n• The model must always move forwards or backwards relative to the front of the vehicle's hull (use reasonable logic to identify this based on the design of the vehicle!). When completing any form of Movement, a Vehicle must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's hull. If the model will turn or pivot, reduce its Movement characteristic by 2\".\n• The model cannot move over any terrain features that are more than 2\" tall relative to the ground.\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Vehicle successfully breaches the terrain and can be moved into or through that terrain feature. Vehicles with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Vehicles moving into or through a terrain feature reduce their Movement characteristic by 2\". This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.\nVehicles can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player. They also ignore the effects of the Heavy keyword when making attacks.\nVehicles that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and subtract 1 from their Hit rolls."
+  },
+  "monster": {
+    "name": "Monster",
+    "type": "keyword",
+    "body": "Monster models must abide by the following when completing a Move Action:\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Monster successfully breaches the terrain and can be moved into or through that terrain feature. Monsters with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Monsters moving into or through a terrain feature reduce their Movement characteristic by 2\".\n• Cannot move more than 4\" vertically through any terrain feature.\nMonsters can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player. They also ignore the effects of the Heavy keyword when making attacks..\nMonsters that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and subtract 1 from their Hit rolls."
+  },
+  "beast": {
+    "name": "Beast",
+    "type": "keyword",
+    "body": "Models with the Beast keyword:\n• Have 2 Activation Points instead of 3.\n• Always possess the Relentless ability.\n• Must abide by the following when completing a Move Action:\n• Cannot enter terrain features with the Building keyword.\n• Cannot move more than 4\" vertically through any terrain feature.\n• Cannot complete the Mission Task Action."
+  },
+  "battleline": {
+    "name": "Battleline",
+    "type": "keyword",
+    "body": "Up to 2 of each unit with the Battleline keyword can be taken in your army for every 500 points. Battleline units are also eligible to make Bonus Activations, may be eligible for other Mission-specific rules, and often have interactions with faction-specific Army Rules and abilities."
+  },
+  "character": {
+    "name": "Character",
+    "type": "keyword",
+    "body": "Up to 1 of each unit with the Character keyword can be taken in your army for every 1,000 points.\nModels with the Character keyword can only be selected as the subject of an attack under the following conditions:\n• The model is the closest model to the attacking unit when making a Ranged attack, and is not within 3\" of any other friendly Units.\n• The model is in base-to-base contact with the attacking model when making a Melee attack.\n• The attacking model has the Precision ability.\nThe conditions above do not apply to Character units that also possess any of the following model type keywords: Vehicle, Monster."
+  },
+  "leader": {
+    "name": "Leader",
+    "type": "keyword",
+    "body": "Models with the Leader keyword can choose to lead a friendly Unit. The Units that the Leader is eligible to lead are listed on its Unit Profile. Leader models and friendly Units they are leading is determined during your Pregame Setup, before the units are placed on the battlefield, and before the decision to declare that those units are either embarked in a Transport, or placed into Strategic Reserve. Leader models and the Unit they are leading count as a single unit for Activation purposes, and when an enemy unit selects them as the subject of an attack."
+  },
+  "bodyguard": {
+    "name": "Bodyguard",
+    "type": "keyword",
+    "body": "When a model or unit with the Bodyguard keyword is being led by a Leader unit with the Character keyword, Damage that would be inflicted on that Character unit must be allocated to Bodyguard model(s) instead."
+  },
+  "walker": {
+    "name": "Walker",
+    "type": "keyword",
+    "body": "Models with the Walker keyword must abide by the following when completing a Move Action:\n• Do not need to reduce their Movement characteristic when making a turn or a pivot.\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 2+ the Walker successfully breaches the terrain and can be moved into or through that terrain feature.\n• Cannot move more than 4\" vertically through any terrain feature.\nWalkers ignore the effects of the Heavy keyword when making attacks."
+  },
+  "mounted": {
+    "name": "Mounted",
+    "type": "keyword",
+    "body": "Models with the Mounted keyword must abide by the following when completing a Move Action:\n• The model must always move forwards relative to the front of the model's body (typically identified by the direction its head is facing, or equivalent feature such as hull front).\n• When completing any form of Movement, a Mounted model must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's body. If the model will turn or pivot, reduce its Movement characteristic by 2\".\n• Cannot enter terrain features with the Building keyword.\n• Cannot move more than 4\" vertically through any terrain feature."
+  },
+  "swarm": {
+    "name": "Swarm",
+    "type": "keyword",
+    "body": "Models with the Swarm keyword:\n• Have 2 Activation Points instead of 3.\n• Cannot move more than 1\" vertically through any terrain feature.\n• Cannot complete the Mission Task Action."
+  },
+  "psyker": {
+    "name": "Psyker",
+    "type": "keyword",
+    "body": "Psykers can access Psychic weapons available to their respective Faction, and typically possess unique psychic abilities. The specifics of each's Psyker's rules are covered in their Unit Profile."
+  },
+  "small-profile": {
+    "name": "Small Profile",
+    "type": "keyword",
+    "body": "Small Profile models add 1 to their Toughness characteristic when they are the target of a Ranged attack. Additionally, these models gain the Invulnerable Save 4+ ability against Ranged attacks when wholly positioned in a terrain feature with the Light Cover or Heavy Cover keywords."
+  },
+  "phase-shift": {
+    "name": "Phase Shift",
+    "type": "keyword",
+    "body": "Models with this ability can move horizontally through any model or Terrain Feature as if it was not there."
+  },
+  "hover": {
+    "name": "Hover",
+    "type": "keyword",
+    "body": "Models with the Hover keyword treat any terrain feature that is less than 4\" tall as if it was not there and are not required to reduce their Movement characteristic when making a Move action that includes a turn or pivot if the model also has other Model Type keywords (such as Vehicle, Monster, and Mounted) that would require it to do so. Any other restrictions to Move actions determined by other keywords the model has are still in effect."
+  },
+  "jump-pack": {
+    "name": "Jump Pack",
+    "type": "keyword",
+    "body": "When completing either a Move or Charge and Fight Action, models with the Jump Pack keyword can ignore any terrain features that are less than 8\" tall."
+  },
+  "fly": {
+    "name": "Fly",
+    "type": "keyword",
+    "body": "When completing either a Move or Charge and Fight Action, models with the Fly keyword:\n• Can ignore any terrain features that are less than 8\" tall.\n• Do not need to make a Breaching Test to enter terrain features with the Building keyword if another keyword the model possesses typically requires that they do so (ie, Vehicle or Monster).\n• Are not required to reduce their Movement characteristic when making a Move action that includes a turn or pivot if the model also has other Model Type keywords (such as Vehicle, Monster, and Mounted) that would require it to do so.\nFurther, enemy units making a Ranged attack against a model with the Fly keyword reduce their Hit rolls by 1, unless that model has not moved this Battle Round, or moved less than 16\" this Battle Round as part of a Move Action."
+  },
+  "aircraft": {
+    "name": "Aircraft",
+    "type": "keyword",
+    "body": "Models with the Aircraft keyword have two values in their Movement characteristic: [X]\"-[Y]\". [X]\" is the minimum value this model must move, and [Y]\" is the maximum value this model can move.\nAdditionally, models with the Aircraft keyword:\n• Cannot elect to Remain Stationary when it is Activated, unless the model also possesses the Hover keyword.\n• Are not required to reduce their Movement characteristic when making a Move action that includes a turn or pivot (a limitation that is imposed by other Model Type keywords such as Vehicle, Monster). However, an Aircraft cannot turn or pivot more than 90 degrees in a single move unless the following 2 conditions are met:\n• The model possesses the Hover keyword.\n• The model moved more than 16\"\n• Are always treated as being fully visible to attacking enemy units making Ranged attacks, even if the Aircraft's position on the board is physically obscured.\n• Are always able to draw line of sight to an enemy unit they target for a Ranged attack. When making these attacks, weapons gain the Ignores Cover ability.\n• Can never benefit from Light Cover or Heavy Cover.\n• Cannot be the target of an enemy unit's Charge and Fight Action unless that enemy unit has the Fly or Jump Pack keywords.\n• Cannot use the following Actions: Fight and Charge and Fight.\nFurther, enemy units making a Ranged attack against an Aircraft reduce their Hit rolls by 1, unless that Aircraft model moved less than 16\" this Battle Round."
+  },
+  "titanic": {
+    "name": "Titanic",
+    "type": "keyword",
+    "body": "Model with the Titanic keyword:\n• Can never benefit from Light Cover or Heavy Cover.\n• Cannot benefit from the Obscuring keyword while any part of the model is visible to an attacking enemy model using true line of sight.\n• Treat the Ordnance wargear ability as if it was the Heavy wargear ability when making Ranged attacks.\n• Can move through terrain features unless that terrain feature has the Impassable Terrain keyword. When they do so, reduce their Movement characteristic by 4\". After a model with the Titanic keyword has moved through a terrain feature, remove that terrain feature from the tabletop and replace it with a terrain feature (or area marker) that represents Difficult Ground only, unless the terrain feature has the Hill keyword. This is to reflect the total destructive impact of such a large machine or creature traversing any physical structures, vegetation, or other objects. (Remember that terrain features with the Impassable Terrain keyword cannot be moved through or over unless a model has the Aircraft or Fly keywords!)\n• Can move over and passed enemy and friendly models as if they were not there. Additionally, when making a move passed models, or ending a move within Base-to-base contact of a model (ie, as part of a Charge and Fight Action), roll a D6 for each such model. On a 5+ that model suffers a Mortal Wound. This represents that model - friend, or foe - suffering the consequences of being unable to get out of the way of the Titanic model in time!"
+  },
+  "infiltrator": {
+    "name": "Infiltrator",
+    "type": "keyword",
+    "body": "Units where every model possesses the Infiltrator keyword can be set up anywhere in No Man's Land that is at least 9\" horizontally or diagonally from the edge of the enemy deployment zone that borders No Man's Land, and at least 9\" horizontally and/or vertically from any enemy units already deployed using this ability.\nAdditionally, models with this ability ignore modifiers to their Movement characteristic when moving through Light Cover or Heavy Cover."
+  },
+  "deep-strike": {
+    "name": "Deep Strike",
+    "type": "keyword",
+    "body": "Units where every model possesses the Deep Strike keyword can Enter the Battlefield from Strategic Reserve as detailed in the Core Activations section. However, these units can be placed anywhere on the battlefield that is at least 9\" horizontally and/or vertically from any enemy units."
+  },
+  "scout": {
+    "name": "Scout [X]”",
+    "type": "keyword",
+    "body": "Units where every model possesses the Scouts keyword can complete a Normal Move up to [X]\" before the start of the Activation Phase in Battle Round 1. If each player have units with this ability, the player with the Initiative resolves the first Scout move, and players alternate through any remaining units with Scout moves thereafter."
+  },
+  "stealth": {
+    "name": "Stealth",
+    "type": "keyword",
+    "body": "Units with the Stealth ability cannot be the subject of a Range attack if the attacking model is more than 12\" away."
+  },
+  "unyielding": {
+    "name": "Unyielding",
+    "type": "keyword",
+    "body": "Units with the Unyielding keyword can use the Charge and Fight Action in an activation that began with a Fall Back."
+  },
+  "relentless": {
+    "name": "Relentless",
+    "type": "keyword",
+    "body": "Units with the Relentless keyword can use the Charge and Fight Action in an activation that began with a Move action that included an advance."
+  },
+  "fearless": {
+    "name": "Fearless",
+    "type": "keyword",
+    "body": "Units with the Fearless keyword never need to take a Battle Shock test."
+  },
+  "transport": {
+    "name": "Transport [X]",
+    "type": "keyword",
+    "body": "Models with the Transport [X] keyword can transport a number of friendly Infantry models up to the value of X. Note that some units, models or wargear may identify that a model takes the place of more than 1 model for transport purposes. Further, models with the following keywords can never embark in a model with the Transport [X] ability: Fly, Jump Pack, Hover, Mounted, Vehicle, Walker, Swarm."
+  },
+  "firing-deck": {
+    "name": "Firing Deck [X]",
+    "type": "keyword",
+    "body": "Models with the Firing Deck [X] ability are models that have the Transport [X] ability and feature hatches, ports or open-topped designs that enable embarked models to make Ranged attacks. The [X] in Transport [X] identifies how many embarked models can make Ranged attacks out of the Transport model as part of their unit's activation. Units, models or wargear that identify that a model takes the place of more than 1 model for transport purposes also count as that many models for the purposes of this ability as well."
+  },
+  "deadly-demise": {
+    "name": "Deadly Demise [X]",
+    "type": "keyword",
+    "body": "When a model with the Deadly Demise [X] ability is destroyed, roll a D6. On a roll of a 1 or a 6, this ability takes effect. When it does so, each unit with at least 1 model within 6\" of this unit suffers [X] Mortal Wounds."
+  },
+  "invulnerable-save": {
+    "name": "Invulnerable Save [X]+",
+    "type": "keyword",
+    "body": "Models with this ability possess an Invulnerable Save of [X]+, where [X] is the maximum value that their Armour Save characteristic can be reduced to. For example, a model that has a base Armour Save characteristic of 3+ is the target of an attack that has an Armour Piercing value of -3, which would reduce their Armour Save characteristic to 6+. However, the model also possesses the Invulnerable Save 4+ ability, and therefor the Armour Piercing value of the attack is superseded by this ability, allowing the model to make its Armour Save on a 4+ instead of a 6+."
+  },
+  "feel-no-pain": {
+    "name": "Feel No Pain [X]+",
+    "type": "keyword",
+    "body": "Models with this ability possess an additional saving throw made against each point of Damage inflicted on them by an enemy's attack, where the value of [X]+ determines whether that point of Damage is taken by the model with this ability. For example, a model with a Wounds characteristic of 4 and the Feel No Pain 6+ ability is successfully wounded by an attack with a Damage characteristic of 3. The model rolls 3 dice - one for each point of Damage - and rolls a 2, 5 and 6. This means the model successfully avoided 1 of the 3 points of Damage from that attack with the roll of a 6, resulting in only 2 Damage taken and a loss of 2 of its 4 Wounds."
+  },
+  "pistol": {
+    "name": "Pistol",
+    "type": "keyword",
+    "body": "Units are eligible to make a Ranged attack using a weapon with this ability even if they Advanced as part of a Move Action or are in Base-to-base contact with enemy models."
+  },
+  "assault": {
+    "name": "Assault",
+    "type": "keyword",
+    "body": "Units are eligible to make a Ranged attack with this weapon even if they Advanced as part of a Move Action."
+  },
+  "heavy": {
+    "name": "Heavy",
+    "type": "keyword",
+    "body": "Infantry models making attacks with Heavy weapons do so as follows:\nFor Ranged attacks:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\n• Models that Move after making Ranged attacks reduce their Movement characteristic by half (rounding down), cannot Advance as part of that Move Action, and reduce their Initiative characteristic by 1.\nFor Melee attacks:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\nThese effects last until the end of the Battle Round."
+  },
+  "rapid-fire": {
+    "name": "Rapid Fire [X]",
+    "type": "keyword",
+    "body": "Weapons with this ability increase their Attacks characteristic by [X] when making Ranged attacks at enemy models that are half of the weapon's Range characteristic or less from the bearer."
+  },
+  "grenade": {
+    "name": "Grenade",
+    "type": "keyword",
+    "body": "A maximum of 1 model in every 5 models in a unit can make a Ranged attack with a Grenade type weapon as part of a Shoot Action."
+  },
+  "torrent": {
+    "name": "Torrent",
+    "type": "keyword",
+    "body": "Models making a Ranged attack using a weapon with the Torrent keyword automatically Hit their target."
+  },
+  "precision": {
+    "name": "Precision",
+    "type": "keyword",
+    "body": "Models making an attack using a weapon with the Precision keyword always choose a specific enemy model - including models with the Character keyword - as their target. All other criteria for a model being an eligible target (ie, line of sight) apply to this attack."
+  },
+  "ordnance": {
+    "name": "Ordnance",
+    "type": "keyword",
+    "body": "Models are only eligible to make a Ranged attack using a weapon with the Ordnance keyword if they first Remained Stationary this Activation, unless the model possesses the Titanic keyword. Instead, Models with the Titanic keyword:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\n• Reduce their Movement characteristic by half (rounding down) if they Move after making Ranged attacks, and cannot Advance as part of that Move Action, and reduce their Initiative characteristic by 1."
+  },
+  "indirect-fire": {
+    "name": "Indirect Fire",
+    "type": "keyword",
+    "body": "Models can target enemy units that it cannot draw line of sight to using weapons with this keyword. When doing so, the enemy units are considered to have Light Cover. Indirect Fire attacks can never benefit from the Precision ability under any circumstances."
+  },
+  "blast": {
+    "name": "Blast [X]”",
+    "type": "keyword",
+    "body": "Weapons with the Blast [X]\" ability always include some amount of randomly generated attacks (in the form of D6, 2D6, D3+3, etc.) as identified in the weapon's Attacks characteristic, where [X]\" determines the weapon's Blast radius. Models making a Ranged attack using a weapon with the Blast [X]\" keyword do so as follows:\n• Place the Blast Marker: After selecting a weapon with the Blast [X]\" keyword, place a round 25mm / ~1\" marker anywhere within range and line of sight of the attacking model. The marker can be placed over enemy models, including those in base-to-base contact with friendly models.\n• Determine Units Hit: Identify all units (friendly and enemy) with at least one model wholly or partially within the Blast radius.\n• Allocate Attacks: Determine the number of attacks as indicated by the weapon's profile (e.g., D6, 2D6, D3+3, etc.). For every 5 models within the Blast radius, add 1 additional attack to the total pool.\n• Assign Attacks to Units: Divide the total number of attacks as evenly as possible among all units within the Blast radius. Odd, additional attacks - ie, the seventh attack out of a total of 7, for example - are assigned to the unit with the most models within the Blast radius.\n• Resolve Attack Sequence for Each Unit: For each unit affected, resolve the attack sequence as normal, applying any modifiers to that specific unit from abilities affecting that unit.\nNote on Interactions between Blast & Stealth: Blast attacks can only be allocated to enemy units benefitting from the Stealth ability if other enemy units are within the Blast radius. This is to represent your units not wasting their shots on areas where they can't identify any targets."
+  },
+  "beam": {
+    "name": "Beam [X]",
+    "type": "keyword",
+    "body": "Models making a Ranged attack using a weapon with the Beam [X] keyword do so as follows:\n• Select the target unit for the attack.\n• Roll to Hit.\n• If the Hit is successful, use a 1\" wide straight edge (ie, a tape measure, or similar) to draw a straight line between the bearer's base to any visible part of the target unit.\n• Identify any units - both yours and your opponents - with at least 1 model within 1\" of the straight line. Each unit that meets the above criteria suffers [X] Mortal Wounds.\n• Complete the attack sequence against the target unit of the attack as normal.\nDisregard steps 3 and 4 if you are making an attack with a Beam [X] weapon against a unit with the Aircraft or Fly keywords."
+  },
+  "anti-air": {
+    "name": "Anti-Air",
+    "type": "keyword",
+    "body": "Models making an attack using a weapon with the Anti-Air ability increase their Ballistic Skill by 1 and count every Hit as a Critical Hit against enemy units that possess the Aircraft or Fly keywords."
+  },
+  "sustained-hits": {
+    "name": "Sustained Hits [X]",
+    "type": "keyword",
+    "body": "Models making an attack using a weapon with the Sustained Hits [X] ability add [X] additional Hits for each Critical Hit scored. These [X] additional Hits do not count as Critical Hits."
+  },
+  "lethal-hits": {
+    "name": "Lethal Hits",
+    "type": "keyword",
+    "body": "Attacks made with the Lethal Hits ability increase their Armour Penetration characteristic by 1 when that attack scores a Critical Hit."
+  },
+  "lance": {
+    "name": "Lance",
+    "type": "keyword",
+    "body": "Add 1 to the Wound roll each time a Melee attack is made using a weapon that has the Lance ability if the bearer attacked with this weapon as part of a Charge and Fight Action."
+  },
+  "anti": {
+    "name": "Anti-[KEYWORD] [X]+",
+    "type": "keyword",
+    "body": "Models making an attack using a weapon with the Anti-[Keyword] [X] ability score a Critical Wound on [X]+ against enemy units that possess the corresponding [Keyword]."
+  },
+  "devastating-wounds": {
+    "name": "Devastating Wounds",
+    "type": "keyword",
+    "body": "Models making an attack that scores a Critical Wound using a weapon with the Devastating Wounds keyword inflict a number of Mortal Wounds equal to the Damage characteristic of the attack."
+  },
+  "hazardous": {
+    "name": "Hazardous [X]",
+    "type": "keyword",
+    "body": "Models that roll a 1 to Hit suffer [X] Mortal Wounds when making attacks using a weapon with the Hazardous ability."
+  },
+  "poison": {
+    "name": "Poison [X]",
+    "type": "keyword",
+    "body": "Models (excluding those with the Vehicle keyword) suffer additional Damage equal to [X] on a Critical Wound from attacks made with weapons that possess the Poison keyword."
+  },
+  "melta": {
+    "name": "Melta [X]",
+    "type": "keyword",
+    "body": "A ranged attack using a weapon with the Melta [X] keyword adds [X] to that attack's Strength and Damage characteristics if the positions of the bearer and target enemy unit meet one of the following conditions:\n• The bearer is within half of the weapon's Range characteristic or less from the target enemy unit, or,\n• The bearer is within 9\" of the target enemy unit."
+  },
+  "harpoon": {
+    "name": "Harpoon",
+    "type": "keyword",
+    "body": "Models Hit by 1 or more Harpoon weapons:\n• Reduce their Activation Points by 1\n• Must remain within a distance equal to the Harpoon weapon's Range from the attacking model until:\n• The attacking model uses the Harpoon weapon again as part of a subsequent attack, or,\n• The attacking model makes a subsequent attack of any kind.\nAdditionally, models Hit by 1 or more Harpoon weapons can drag attacking models, or be themselves dragged by those attacking models. This works as follows:\n• If the target's Toughness is lower than the attacking model's Strength, the attacker can drag the target when they move, but the target must stay within the Harpoon weapon's Range.\n• If the target's Toughness is equal to or higher than the attacking model's Strength, the target can drag the attacker when they move, but the attacker must stay within the Harpoon weapon's Range.\nIn instances where multiple Harpoon weapons have successfully Hit a single model, then use the cumulative Strength of all attacking models to determine which of the above scenarios applies.\nFurther, Models Hit by 1 or more Harpoon weapons can complete a Charge and Fight Action against any enemy units. However, all of the above restrictions must be observed when resolving that Charge and Fight Action."
+  },
+  "ignores-cover": {
+    "name": "Ignores Cover",
+    "type": "keyword",
+    "body": "Enemy units that must make an Armour Save from attacks with the Ignores Cover ability never receive the benefits provided from Light Cover or Dense Cover."
+  },
+  "ensnare": {
+    "name": "Ensnare",
+    "type": "keyword",
+    "body": "Units successfully hit by a weapon with the Ensnare keyword reduce their Activation Points by 1 for the remainder of the Battle Round in addition to any other effects or damage inflicted by the weapon. These weapons have no effect on models with the Vehicle keyword."
+  },
+  "haywire": {
+    "name": "Haywire",
+    "type": "keyword",
+    "body": "Vehicle models successfully hit by Haywire weapons reduce their Activation Points by 1 for the remainder of the Battle Round in addition to any other effects or damage inflicted by the weapon."
+  },
+  "extra-attacks": {
+    "name": "Extra Attacks",
+    "type": "keyword",
+    "body": "Models equipped with Melee weapons that have the Extra Attacks ability can make Melee attacks with any such weapons in addition to Melee attacks with a weapon that does not have this ability."
+  },
+  "twin-linked": {
+    "name": "Twin-Linked",
+    "type": "keyword",
+    "body": "The Twin-linked ability is never found on a weapon's profile, but instead can be added to a weapon's profile by units that offer this ability as part of their wargear options in the form of paired weapons. For example, some units may allow models to be equipped with Twin-Linked Heavy Bolters, or Twin-Linked Lightning Claws, etc. as an option among potentially others. The Twin-Linked ability makes the following modifications to a weapon's profile:\n• Increase the Attacks characteristic by 1.\n• Grants the Sustained Hits 1 ability, or, if the paired weapons already have the Sustained Hits [X] ability, then the value of [X] for it is increased by 1.\n• If the weapon cannot have the Sustained Hits [X] ability because it is not required to make Hit rolls (ie, because it has the Torrent keyword), then the weapon's Attacks characteristic is increased by 3 instead of 1.\nFor example, a Twin-Linked Heavy Bolter will have 1 more attack (for a total of 4) than a single Heavy Bolter, and would have the Sustained Hits 2 ability (adding 1 to the Sustained Hits 1 ability a Heavy Bolter has as standard).\nThe Twin-linked ability is accessed via a Faction's Wargear Upgrades and uses a variable points cost system based on various weapon characteristics."
+  },
+  "smoke": {
+    "name": "Smoke [X]”",
+    "type": "keyword",
+    "body": "Smoke is a special form of blast attack that provides an area effect instead of damage. To complete an attack using a weapon or wargear with the smoke ability:\n• Place the Smoke Marker: Place a round 25mm / ~1\" marker anywhere within range and line of sight of the attacking model. The marker can be placed over enemy models, including those in base-to-base contact with friendly models.\n• Leave this marker in place until the end of the Battle Round. The effect of the smoke attack lasts until the end of the Battle Round.\n• Do not roll to Hit. Smoke attacks do not incur Damage of any kind, and thus no further attack sequence actions apply once the smoke marker has been placed.\nFor Units making Ranged Attacks near Smoke Markers: Each time a unit makes a Ranged attack that draws line of sight within [X]\" of the smoke attack's marker, reduce the Ballistic Skill of that attack to 2.\nFor Fights:\n• Each time a unit completes a Charge and Fight Action that involves moving some or all of its models within [X]\" of the smoke marker, reduce the Initiative characteristic of those models by 2.\n• Each time a model that is positioned within [X]\" of the smoke marker is selected to Fight, reduce Hit rolls by 1."
+  },
+  "combi-weapons": {
+    "name": "Combi Weapons",
+    "type": "keyword",
+    "body": "Combi-weapons combine 2 or more typical weapon profiles into a single piece of wargear. When making attacks, core model type keywords of the bearer (i.e. Infantry, Monster, Vehicle, etc.) must be observed."
+  },
+  "light-cover": {
+    "name": "Light Cover",
+    "type": "keyword",
+    "body": "• Models making Ranged attacks against models wholly positioned in this terrain feature reduce their Hit roll by 1. This applies when both models are whole wholly positioned in this terrain feature as well.\n• Reduce the Armour Piercing characteristic of Ranged attacks by 1 against models wholly positioned in Light Cover."
+  },
+  "heavy-cover": {
+    "name": "Heavy Cover",
+    "type": "keyword",
+    "body": "• Models making Ranged attacks against models wholly positioned in Heavy Cover - or against models wholly positioned behind Heavy Cover - reduce their Hit roll by 1.\n• Reduce the Armour Piercing characteristic of Ranged attacks by 2 against models wholly positioned in Heavy Cover."
+  },
+  "vantage-points": {
+    "name": "Vantage Points",
+    "type": "keyword",
+    "body": "• Vantage Points must be applied to any terrain feature where models can be positioned more than 5\" vertically above the ground level of the battlefield.\n• Models making Ranged attacks from a terrain feature with Vantage Points add 1 to their Hit rolls when they are positioned more than 5\" vertically above the ground level of the battlefield and are attacking a unit that is positioned at the ground level of the battlefield."
+  },
+  "difficult-ground": {
+    "name": "Difficult Ground",
+    "type": "keyword",
+    "body": "• Models that move in to, out of, or through Difficult Ground reduce their Movement characteristic by 1\".\n• Difficult Ground has no effect for models with the Fly, Jump Pack, Hover, Phase Shift or Aircraft keywords."
+  },
+  "impassable": {
+    "name": "Impassable",
+    "type": "keyword",
+    "body": "• Impassable terrain cannot be moved over or through by any model. This does not apply to models with the Phase Shift or Aircraft keywords\n• The vertical height of the terrain feature should be factored in when moving models that possess keywords that allow them to ignore certain terrain feature vertical heights (i.e., Fly, Hover)."
+  },
+  "obscuring": {
+    "name": "Obscuring",
+    "type": "keyword",
+    "body": "• Any terrain feature that is at least 12\" in vertical height relative to the ground level of the battlefield are considered to be Obscuring.\n• Models cannot be the subject of a Ranged attack if the following criteria are met:\n• The target model is wholly positioned behind Obscuring terrain relative to the attacking model.\n• The attacking model cannot draw true line of sight to the target model without that line of sight passing through Obscuring terrain."
+  },
+  "exposed-position": {
+    "name": "Exposed Position",
+    "type": "keyword",
+    "body": "• Terrain features - or parts of terrain features - that can reasonably be considered as having little or no protective features (like walls, pipes, trees, etc.), and which are at more than 5\" tall relative to the ground level of the battlefield should be considered Exposed Positions.\n• Models making Ranged attacks against models in Exposed Positions increase add 1 to their Hit rolls."
+  },
+  "defensible-position": {
+    "name": "Defensible Position",
+    "type": "keyword",
+    "body": "• Models positioned within a Defensible Position treat models within 2\" as being in Base-to-Base contact\n• Models that Charge and Fight models wholly within a terrain feature that has the Defensible Position keyword reduce their Initiative value by 1."
+  },
+  "hill": {
+    "name": "Hill",
+    "type": "keyword",
+    "body": "• Hills are considered part of the battlefield's ground level. Other terrain features (such as Buildings) can be placed on Hills if the footprint of that terrain feature can be wholly within the flat surfaces of the Hill feature.\n• Plain hills that are at least 5\" high relative to the ground level of the battlefield, which have discernable obscuring elements (or other Terrain Features on top of the Hill, for example) should possess the Exposed Position keyword."
+  },
+  "building": {
+    "name": "Building",
+    "type": "keyword",
+    "body": "• Many Core Model Type keywords specify how that model can interact with Building terrain features.\n• Buildings always possess the Heavy Cover keyword, and do not feature the Light Cover keyword.\n• Buildings can possess the Defensible Positions keyword, although it is not recommended. Players choosing to incorporate this keyword into the Building should specify areas on the Building considered to be Defensible Positions.\n• Taller Buildings with 2 or more storeys should have the Obscuring and Vantage Points keywords."
+  },
+  "ruins": {
+    "name": "Ruins",
+    "type": "keyword",
+    "body": "• Buildings that have visibly suffered damage should always possess the Ruins keyword.\n• Ruins always possess the Difficult Ground keyword.\n• Taller Ruins with 2 or more storeys should have the Obscuring and Vantage Points keywords."
+  },
+  "forest": {
+    "name": "Forest",
+    "type": "keyword",
+    "body": "• Forests always possess the Light Cover keyword and can never possess the Heavy Cover keyword.\n• Forests should include the Difficult Ground keyword."
+  },
+  "craters": {
+    "name": "Craters",
+    "type": "keyword",
+    "body": "• Craters always include the Difficult Ground keyword.\n• Craters can possess the Light Cover keyword, but can never possess the Heavy Cover keyword."
+  },
+  "linear-low-lying-terrain-features": {
+    "name": "Linear, Low-lying Terrain Features",
+    "type": "keyword",
+    "body": "• Smaller linear, low-lying terrain features like barricades, fortified lines, pipes, fences etc. possess the Light Cover and Defensible Position keywords.\n• These terrain features should not exceed 2\" in height, or 3\" in width/depth. Terrain features that exceed those dimensions should be considered a different type of terrain feature."
+  }
+}

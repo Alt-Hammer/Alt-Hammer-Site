@@ -85,8 +85,34 @@ def main():
     from convert_rules    import convert_rules,    CORE_RULES_DOCX,    OUTPUT_DIR as RULES_OUT
     from convert_factions import convert_factions, FACTION_INDEX_DOCX, OUTPUT_DIR as FACTIONS_OUT
     from convert_units    import convert_units,    DATATABLES_XLSX,    OUTPUT_DIR as UNITS_OUT
+    from extract_definitions import extract_definitions, CORE_RULES_DOCX as DEFS_DOCX, OUTPUT_PATH as DEFS_OUT
 
     results = []
+
+    # ── Step 0: Extract Keyword & Action definitions ───────────────────────────
+    import json, os
+
+    def _extract_and_write_defs(docx_path, out_path):
+        defs_list = extract_definitions(docx_path)
+        definitions = {}
+        for entry in defs_list:
+            if entry['slug'] not in definitions:
+                definitions[entry['slug']] = {
+                    'name': entry['name'],
+                    'type': entry['type'],
+                    'body': entry['body'],
+                }
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump(definitions, f, indent=2, ensure_ascii=False)
+        print(f"  ✓  Written: {out_path} ({len(definitions)} definitions)")
+
+    results.append(run_step(
+        "Definitions → src/data/definitions.json",
+        _extract_and_write_defs,
+        DEFS_DOCX,
+        DEFS_OUT,
+    ))
 
     # ── Step 1: Core Rules ────────────────────────────────────────────────────
     results.append(run_step(
@@ -117,7 +143,7 @@ def main():
     print(f"  PIPELINE COMPLETE")
     print(f"{'='*60}")
 
-    steps = ["Core Rules", "Faction Index", "Unit Datatables"]
+    steps = ["Definitions", "Core Rules", "Faction Index", "Unit Datatables"]
     all_ok = True
     for step, result in zip(steps, results):
         icon = "✓" if result else "✗"

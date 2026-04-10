@@ -10,6 +10,7 @@
 
 import { ALLIANCES } from '../data/alliances.ts';
 import { RULES_SECTIONS } from '../data/rules-nav.ts';
+import definitions from '../data/definitions.json';
 
 interface Props {
   title?: string;
@@ -196,6 +197,11 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
       <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
     </p>
   </footer>
+  <!-- ── Keyword & Action tooltip definitions (auto-generated from source docs) ── -->
+  <script is:inline define:vars={{ definitions }}>
+  window.AH_DEFINITIONS = definitions;
+  </script>
+  <script is:inline src="/js/keyword-tooltips.js"></script>
 
 </body>
 </html>
