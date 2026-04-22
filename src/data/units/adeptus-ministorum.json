@@ -21,7 +21,8 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Canoness",
@@ -47,7 +48,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Palatine",
@@ -73,7 +75,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Dogmata",
@@ -98,7 +101,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Dialogus",
@@ -123,7 +127,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Imagifier",
@@ -148,7 +153,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hospitaler",
@@ -173,7 +179,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Overseer of Redemption",
@@ -198,7 +205,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ministorum Priest",
@@ -224,7 +232,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Battle Sisters",
@@ -248,57 +257,8 @@
         "Adeptus Ministorum",
         "Adepta Sororitas",
         "Infantry"
-      ]
-    },
-    {
-      "name": "Novitiates - Sister Superior",
-      "category": "Infantry",
-      "stats": {
-        "M": "6\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 4,
-        "A": 2,
-        "S": 3,
-        "T": 3,
-        "W": 2,
-        "SV": "3+",
-        "LD": "6+",
-        "basePoints": 10,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Imperium",
-        "Adeptus Ministorum",
-        "Adepta Sororitas",
-        "Infantry",
-        "Scouts 6\""
-      ]
-    },
-    {
-      "name": "Novitiates",
-      "category": "Infantry",
-      "stats": {
-        "M": "6\"",
-        "WS": 3,
-        "BS": 3,
-        "I": 3,
-        "A": 2,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "5+",
-        "LD": "6+",
-        "basePoints": 5,
-        "squadSizes": "4 to 19"
-      },
-      "keywords": [
-        "Imperium",
-        "Adeptus Ministorum",
-        "Adepta Sororitas",
-        "Infantry",
-        "Scouts 6\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Frateris Militia",
@@ -321,7 +281,8 @@
         "Imperium",
         "Adeptus Ministorum",
         "Infantry"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ministorum Sanctifiers Retinue",
@@ -345,7 +306,8 @@
         "Adeptus Ministorum",
         "Infantry",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Dominions",
@@ -371,7 +333,8 @@
         "Infantry",
         "Infiltrators",
         "Scouts 6\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Celestians",
@@ -396,7 +359,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Seraphim",
@@ -421,7 +385,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Jump Pack"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Repentia",
@@ -446,7 +411,8 @@
         "Adepta Sororitas",
         "Infantry",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Arco-flagellants",
@@ -465,7 +431,14 @@
         "basePoints": 15,
         "squadSizes": "3 to 10"
       },
-      "keywords": []
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Beast",
+        "Relentless",
+        "Fearless"
+      ],
+      "models": null
     },
     {
       "name": "Penitent Engines",
@@ -489,10 +462,12 @@
         "Adeptus Ministorum",
         "Vehicle",
         "Walker",
+        "Relentless",
         "Fearless",
         "Feel No Pain 5+",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Castigator",
@@ -517,7 +492,8 @@
         "Adepta Sororitas",
         "Vehicle",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Exorcist",
@@ -542,7 +518,8 @@
         "Adepta Sororitas",
         "Vehicle",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Cathedrum Minoris",
@@ -558,7 +535,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 300,
+        "basePoints": 350,
         "squadSizes": "1"
       },
       "keywords": [
@@ -567,9 +544,11 @@
         "Titanic",
         "Vehicle",
         "Transport 25",
+        "Assault Egress",
         "Deep Strike",
         "Deadly Demise 2D6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Rhino",
@@ -596,7 +575,8 @@
         "Transport 10",
         "Firing Deck 4",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Immolator",
@@ -622,26 +602,78 @@
         "Vehicle",
         "Transport 6",
         "Deadly Demise D6"
+      ],
+      "models": null
+    },
+    {
+      "name": "Novitiates",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Imperium",
+        "Adeptus Ministorum",
+        "Adepta Sororitas",
+        "Infantry",
+        "Scouts 6\""
+      ],
+      "models": [
+        {
+          "modelName": "Sister Superior",
+          "stats": {
+            "M": "6\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 4,
+            "A": 2,
+            "S": 3,
+            "T": 3,
+            "W": 2,
+            "SV": "3+",
+            "LD": "6+",
+            "basePoints": 10,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Imperium",
+            "Adeptus Ministorum",
+            "Adepta Sororitas",
+            "Infantry",
+            "Scouts 6\""
+          ]
+        },
+        {
+          "modelName": "Novitiate",
+          "stats": {
+            "M": "6\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 3,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "5+",
+            "LD": "6+",
+            "basePoints": 5,
+            "squadSizes": "4 to 19"
+          },
+          "keywords": [
+            "Imperium",
+            "Adeptus Ministorum",
+            "Adepta Sororitas",
+            "Infantry",
+            "Scouts 6\""
+          ]
+        }
       ]
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Bolt Pistol",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 4,
@@ -649,12 +681,13 @@
       "damage": "2",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Bolter",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 4,
@@ -662,12 +695,13 @@
       "damage": "2",
       "keywords": [
         "Rapid Fire 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Storm Bolter",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2",
       "strength": 4,
@@ -676,12 +710,13 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Bolter",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "36\"",
       "attacks": "3",
       "strength": 5,
@@ -690,12 +725,13 @@
       "keywords": [
         "Heavy",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Condemnor Bolter",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 4,
@@ -706,12 +742,13 @@
         "Rapid Fire 1",
         "Anti-PYSKER 2+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autopistol",
+      "section": "Weapons",
       "points": 1,
+      "profiles": null,
       "range": "12\"",
       "attacks": "2",
       "strength": 2,
@@ -719,12 +756,13 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autogun",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "24\"",
       "attacks": "2",
       "strength": 2,
@@ -732,12 +770,13 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Exterminator Autocannon",
+      "section": "Weapons",
       "points": 70,
+      "profiles": null,
       "range": "48\"",
       "attacks": "4",
       "strength": 8,
@@ -746,12 +785,13 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Shotgun",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "4\"",
       "attacks": "2",
       "strength": 4,
@@ -762,12 +802,13 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Flamer",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
       "strength": 3,
@@ -777,12 +818,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Flamer",
+      "section": "Weapons",
       "points": 12,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+4",
       "strength": 4,
@@ -792,27 +834,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor - Shooting",
-      "points": 12,
-      "range": "9\"",
-      "attacks": "D6+2",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Melta Pistol",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "6\"",
       "attacks": "1",
       "strength": 9,
@@ -821,12 +849,13 @@
       "keywords": [
         "Pistol",
         "Melta 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Meltagun",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 9,
@@ -835,12 +864,13 @@
       "keywords": [
         "Assault",
         "Melta 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Multi-melta",
+      "section": "Weapons",
       "points": 22,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2",
       "strength": 9,
@@ -849,12 +879,13 @@
       "keywords": [
         "Heavy",
         "Melta 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Melta Cannon",
+      "section": "Weapons",
       "points": 55,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D3+1",
       "strength": 10,
@@ -863,185 +894,37 @@
       "keywords": [
         "Assault",
         "Melta 4"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Pistol - Normal",
-      "points": 6,
-      "range": "12\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Pistol"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Pistol - Supercharged",
-      "points": null,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 6,
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Pistol",
-        "Hazardous 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Gun - Normal",
-      "points": 12,
-      "range": "24\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Rapid Fire 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Gun - Supercharged",
-      "points": null,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Rapid Fire 1",
-        "Hazardous 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Grenade Launcher - Frag",
-      "points": 8,
-      "range": "24\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher - Frag",
-      "points": 15,
-      "range": "48\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher - Krak",
-      "points": null,
-      "range": "48\"",
-      "attacks": "1",
-      "strength": 10,
-      "ap": -2,
-      "damage": "4",
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Exorcist Missile Symphony - Profundus",
-      "points": 60,
-      "range": "12\"-48\"",
-      "attacks": "D6",
-      "strength": 11,
-      "ap": -2,
-      "damage": "5",
-      "keywords": [
-        "Ordnance",
-        "Indirect Fire",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Exorcist Missile Symphony - Altus",
-      "points": null,
-      "range": "12\"-48\"",
-      "attacks": "2D6+6",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Ordnance",
-        "Indirect Fire",
-        "Blast 4\"",
-        "Sustained Hits 4"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Battle Cannon - HE",
-      "points": 55,
-      "range": "48\"",
-      "attacks": "D6+3",
-      "strength": 5,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Blast 2\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Battle Cannon - AP",
-      "points": null,
-      "range": "48\"",
-      "attacks": "1",
-      "strength": 11,
-      "ap": -2,
-      "damage": "D6+1",
-      "keywords": [],
-      "availability": ""
+      ]
     },
     {
       "name": "Improvized Melee Relic",
+      "section": "Melee Weapons",
       "points": 1,
+      "profiles": null,
       "range": "-",
       "attacks": "A+1",
       "strength": "S",
       "ap": "0",
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Chainsword",
+      "section": "Melee Weapons",
       "points": 2,
+      "profiles": null,
       "range": "-",
       "attacks": "A +2",
       "strength": "S",
       "ap": "-1",
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Power Sword",
+      "section": "Melee Weapons",
       "points": 8,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +1",
@@ -1049,12 +932,13 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Power Mace",
+      "section": "Melee Weapons",
       "points": 8,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +2",
@@ -1062,12 +946,13 @@
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Power Spear",
+      "section": "Melee Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +2",
@@ -1076,86 +961,37 @@
       "keywords": [
         "Lance",
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Power Halberd - Sweep",
-      "points": 15,
-      "range": "-",
-      "attacks": "A +3",
-      "strength": "S",
-      "ap": "-2",
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Power Halberd - Strike",
-      "points": null,
-      "range": "-",
-      "attacks": "A -2",
-      "strength": "S +3",
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Lance",
-        "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Novitiate Blade",
+      "section": "Melee Weapons",
       "points": 2,
+      "profiles": null,
       "range": "-",
       "attacks": "A +1",
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Neural Whips",
+      "section": "Melee Weapons",
       "points": 8,
+      "profiles": null,
       "range": "-",
       "attacks": "A x2",
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Penitent Eviscerator - Sweep",
-      "points": 12,
-      "range": "-",
-      "attacks": "A +3",
-      "strength": "S +1",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Penitent Eviscerator - Evisceration",
-      "points": null,
-      "range": "-",
-      "attacks": "A -2",
-      "strength": "S +4",
-      "ap": -3,
-      "damage": "D3+3",
-      "keywords": [
-        "Heavy",
-        "Anti-INFANTRY 3+",
-        "Anti-MONSTER 5+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Arco-flails",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1163,34 +999,37 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Penitent Flail",
+      "section": "Melee Weapons",
       "points": 20,
+      "profiles": null,
       "range": "-",
       "attacks": "A x2",
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Penitent Buzz Saw",
+      "section": "Melee Weapons",
       "points": 20,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +6",
       "ap": -3,
       "damage": "4",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Paragon War Blade",
+      "section": "Melee Weapons",
       "points": 15,
+      "profiles": null,
       "range": "-",
       "attacks": "A +2",
       "strength": "S +1",
@@ -1198,37 +1037,13 @@
       "damage": "2",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Paragon War Mace - Sweep",
-      "points": 20,
-      "range": "-",
-      "attacks": "A x2",
-      "strength": "S",
-      "ap": -1,
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Paragon War Mace - Strike",
-      "points": null,
-      "range": "-",
-      "attacks": "A -3",
-      "strength": "S x3",
-      "ap": -2,
-      "damage": "5",
-      "keywords": [
-        "Heavy",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Null Rod",
+      "section": "Melee Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S + 2",
@@ -1238,12 +1053,13 @@
         "Precision",
         "Anti-PSYKER 2+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Chirurgeon's Tools",
+      "section": "Melee Weapons",
       "points": 4,
+      "profiles": null,
       "range": "-",
       "attacks": "A +3",
       "strength": "S",
@@ -1252,39 +1068,13 @@
       "keywords": [
         "Extra Attacks",
         "Anti-INFANTRY 2+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor - Melee - Sweep",
-      "points": 12,
-      "range": "-",
-      "attacks": "A +3",
-      "strength": "S +1",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor - Melee - Evisceration",
-      "points": null,
-      "range": "-",
-      "attacks": "A -2",
-      "strength": "S +4",
-      "ap": -3,
-      "damage": "D3+3",
-      "keywords": [
-        "Heavy",
-        "Anti-INFANTRY 3+",
-        "Anti-MONSTER 5+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Frag Grenades",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "D3",
       "strength": 3,
@@ -1293,12 +1083,13 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Krak Grenades",
+      "section": "Grenades",
       "points": 4,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": 8,
@@ -1306,12 +1097,13 @@
       "damage": "3",
       "keywords": [
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Smoke Grenades",
+      "section": "Grenades",
       "points": 3,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": "-",
@@ -1319,8 +1111,408 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
+      ]
+    },
+    {
+      "name": "Zealot's Vindictor",
+      "section": "Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 12,
+          "range": "9\"",
+          "attacks": "D6+2",
+          "strength": 3,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ]
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": 12,
+          "range": "-",
+          "attacks": "A +3",
+          "strength": "S +1",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": []
+        },
+        {
+          "profileName": "Melee - Evisceration",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S +4",
+          "ap": -3,
+          "damage": "D3+3",
+          "keywords": [
+            "Heavy",
+            "Anti-INFANTRY 3+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ]
+        }
       ],
-      "availability": ""
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Plasma Pistol",
+      "section": "Weapons",
+      "points": 6,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 6,
+          "range": "12\"",
+          "attacks": "2",
+          "strength": 4,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Pistol"
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": 6,
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Pistol",
+            "Hazardous 2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol"
+      ]
+    },
+    {
+      "name": "Plasma Gun",
+      "section": "Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 12,
+          "range": "24\"",
+          "attacks": "2",
+          "strength": 4,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Rapid Fire 1"
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": 8,
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Rapid Fire 1",
+            "Hazardous 2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Rapid Fire 1"
+      ]
+    },
+    {
+      "name": "Grenade Launcher",
+      "section": "Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 8,
+          "range": "24\"",
+          "attacks": "D6",
+          "strength": 3,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Blast 1\"",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Missile Launcher",
+      "section": "Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ]
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": 10,
+          "ap": -2,
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ]
+    },
+    {
+      "name": "Exorcist Missile Symphony",
+      "section": "Weapons",
+      "points": 60,
+      "profiles": [
+        {
+          "profileName": "Profundus",
+          "points": 60,
+          "range": "12\"-48\"",
+          "attacks": "D6",
+          "strength": 11,
+          "ap": -2,
+          "damage": "5",
+          "keywords": [
+            "Ordnance",
+            "Indirect Fire",
+            "Blast 1\""
+          ]
+        },
+        {
+          "profileName": "Altus",
+          "points": null,
+          "range": "12\"-48\"",
+          "attacks": "2D6+6",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Ordnance",
+            "Indirect Fire",
+            "Blast 4\"",
+            "Sustained Hits 4"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 1\""
+      ]
+    },
+    {
+      "name": "Battle Cannon",
+      "section": "Weapons",
+      "points": 55,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 55,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": 5,
+          "ap": 0,
+          "damage": "2",
+          "keywords": [
+            "Blast 2\""
+          ]
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": 11,
+          "ap": -2,
+          "damage": "D6+1",
+          "keywords": []
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\""
+      ]
+    },
+    {
+      "name": "Power Halberd",
+      "section": "Melee Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 15,
+          "range": "-",
+          "attacks": "A +3",
+          "strength": "S",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": []
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S +3",
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Lance",
+            "Lethal Hits"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": []
+    },
+    {
+      "name": "Penitent Eviscerator",
+      "section": "Melee Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 12,
+          "range": "-",
+          "attacks": "A +3",
+          "strength": "S +1",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": []
+        },
+        {
+          "profileName": "Evisceration",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S +4",
+          "ap": -3,
+          "damage": "D3+3",
+          "keywords": [
+            "Heavy",
+            "Anti-INFANTRY 3+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": []
+    },
+    {
+      "name": "Paragon War Mace",
+      "section": "Melee Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 20,
+          "range": "-",
+          "attacks": "A x2",
+          "strength": "S",
+          "ap": -1,
+          "damage": "1",
+          "keywords": []
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A -3",
+          "strength": "S x3",
+          "ap": -2,
+          "damage": "5",
+          "keywords": [
+            "Heavy",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": []
     }
   ]
 }

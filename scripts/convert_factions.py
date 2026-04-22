@@ -41,6 +41,7 @@ sys.path.insert(0, script_dir)
 from docx import Document
 from ah_converter_utils import (
     get_heading_level,
+    is_list_paragraph,
     paragraph_to_markdown,
     runs_to_markdown,
     write_mdx_file,
@@ -88,9 +89,8 @@ FACTION_ALLIANCE_MAP = {
     'asuryani':            'aeldari',
     'drukhari':            'aeldari',
     'orks':                'xenos',
-    'tau-empire':          'xenos',
-    'the-necrontyr':       'xenos',
-    'necrontyr':           'xenos',
+    'the-tau-empire':      'xenos',
+    'necrons':             'xenos',
     'leagues-of-votann':   'xenos',
 }
 
@@ -181,6 +181,12 @@ def convert_factions(docx_path: str, output_dir: str):
             text = para.text.strip()
             level = get_heading_level(para)
 
+            # Skip H1 paragraphs — these are alliance group headers (e.g.
+            # "Broader Xenos Factions") that fall inside a faction's paragraph
+            # range but belong to the document structure, not the faction content.
+            if level == 1:
+                continue
+
             if not text:
                 # Preserve blank lines within sections
                 if sections[current_section]:
@@ -189,26 +195,37 @@ def convert_factions(docx_path: str, output_dir: str):
 
             # Detect section switches by heading text
             if level is not None:
-                if heading_matches(text, ARMY_RULES_HEADINGS):
+                if level == 3 and heading_matches(text, ARMY_RULES_HEADINGS):
                     current_section = 'army_rules'
                     list_counter = {}
-                    continue  # don't include the section heading itself
-                elif heading_matches(text, DETACHMENT_HEADINGS):
+                    continue
+                elif level == 3 and heading_matches(text, DETACHMENT_HEADINGS):
                     current_section = 'detachment_traits'
                     list_counter = {}
                     continue
-                elif heading_matches(text, WARGEAR_HEADINGS):
+                elif level == 3 and heading_matches(text, WARGEAR_HEADINGS):
                     current_section = 'wargear'
                     list_counter = {}
                     continue
-                elif heading_matches(text, UNIT_SECTION_HEADINGS):
+                elif level == 3 and heading_matches(text, UNIT_SECTION_HEADINGS):
                     current_section = 'units'
                     list_counter = {}
                     continue
 
             md_line = paragraph_to_markdown(para, list_counter)
             if md_line:
-                sections[current_section].append(md_line)
+                current_lines = sections[current_section]
+                is_list = is_list_paragraph(para)
+                if (current_lines
+                    and current_lines[-1] != ''
+                    and not current_lines[-1].startswith('#')
+                    and not current_lines[-1].startswith('-')
+                    and not current_lines[-1].startswith('  -')
+                    and not is_list
+                    and not any(current_lines[-1].startswith(f'{n}.') for n in range(1, 20))
+                ):
+                    current_lines.append('')
+                current_lines.append(md_line)
 
         # ── Build the .mdx file content ───────────────────────────────────────
 
@@ -234,9 +251,13 @@ def convert_factions(docx_path: str, output_dir: str):
         if wargear_md:
             body_parts.append(wargear_md)
 
-        units_md = section_to_md(sections['units'], 'Units')
+        units_md = section_to_md(sections['units'], 'Unit Profiles')
         if units_md:
             body_parts.append(units_md)
+
+        # Weapon Profiles section — heading only; content is injected by JS
+        # from the faction JSON. Always append so the anchor exists.
+        body_parts.append('## Weapon Profiles\n')
 
         body = '\n\n'.join(body_parts)
 

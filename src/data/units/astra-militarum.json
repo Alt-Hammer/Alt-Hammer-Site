@@ -21,7 +21,8 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Senior Officer",
@@ -47,7 +48,8 @@
         "Character",
         "Leader",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Junior Officer",
@@ -73,7 +75,8 @@
         "Character",
         "Leader",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Squadron Commander",
@@ -99,7 +102,8 @@
         "Character",
         "Leader",
         "Squadron"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Commissar",
@@ -125,7 +129,8 @@
         "Character",
         "Leader",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Sanctioned Psyker",
@@ -150,7 +155,8 @@
         "Infantry",
         "Character",
         "Psyker"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ministorum Priest",
@@ -174,7 +180,8 @@
         "Adeptus Ministorum",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Techpriest Enginseer",
@@ -198,7 +205,8 @@
         "Adeptus Mechanicus",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Militarum Tempestus Tempestor Prime",
@@ -225,7 +233,8 @@
         "Character",
         "Leader",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ogryn Bodyguard",
@@ -251,7 +260,8 @@
         "Infantry",
         "Character",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Infantry Section",
@@ -275,7 +285,8 @@
         "Astra Militarum",
         "Infantry",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Command Squad Veteran",
@@ -299,7 +310,8 @@
         "Astra Militarum",
         "Infantry",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Special Weapons Section",
@@ -323,7 +335,8 @@
         "Astra Militarum",
         "Infantry",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Conscripts",
@@ -347,7 +360,8 @@
         "Astra Militarum",
         "Infantry",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Veterans",
@@ -371,7 +385,8 @@
         "Astra Militarum",
         "Infantry",
         "Regiment"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ogryn",
@@ -396,7 +411,8 @@
         "Militarum Auxilia",
         "Infantry",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ratlings",
@@ -424,7 +440,8 @@
         "Infiltrator",
         "Scout 5\"",
         "Stealth"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Militarum Tempestus Scions",
@@ -450,7 +467,8 @@
         "Infantry",
         "Infiltrator",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Militarum Tempestus Command Squad Scion",
@@ -475,7 +493,8 @@
         "Militarum Tempestus",
         "Infantry",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Militarum Tempestus Sentry Turret",
@@ -501,7 +520,8 @@
         "Infantry",
         "Deep Strike",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Rough Riders",
@@ -527,7 +547,8 @@
         "Mounted",
         "Regiment",
         "Unyielding"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Chimera",
@@ -554,7 +575,8 @@
         "Transport 12",
         "Firing Deck 8",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Taurox",
@@ -580,7 +602,8 @@
         "Regiment",
         "Transport 12",
         "Deadly Demise D3"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Militarum Tempestus Taurox",
@@ -606,7 +629,8 @@
         "Militarum Tempestus",
         "Transport 12",
         "Deadly Demise D3"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Valkyrie",
@@ -633,7 +657,8 @@
         "Transport 12",
         "Firing Deck 4",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Sentinels",
@@ -660,7 +685,8 @@
         "Regiment",
         "Squadron",
         "Deadly Demise 1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Light Artillery Teams",
@@ -684,7 +710,8 @@
         "Astra Militarum",
         "Vehicle",
         "Artillery"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Heavy Artillery Teams",
@@ -708,7 +735,8 @@
         "Astra Militarum",
         "Vehicle",
         "Artillery"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Onager Self Propelled Artillery",
@@ -733,7 +761,8 @@
         "Vehicle",
         "Artillery",
         "Deadly Demise D3"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Chimera Self Propelled Artillery",
@@ -758,7 +787,8 @@
         "Vehicle",
         "Artillery",
         "Deadly Demise D3"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hellhound Light Assault Tank",
@@ -783,7 +813,8 @@
         "Vehicle",
         "Squadron",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Leman Russ Battle Tank",
@@ -808,7 +839,8 @@
         "Vehicle",
         "Squadron",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Rogal Dorn Heavy Battle Tank",
@@ -833,7 +865,8 @@
         "Vehicle",
         "Squadron",
         "Deadly Demise D6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Baneblade Super-Heavy Battle Tank",
@@ -859,7 +892,8 @@
         "Titanic",
         "Squadron",
         "Deadly Demise 2D6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Stormlord Super-Heavy Assault Transport",
@@ -886,7 +920,8 @@
         "Transport 35",
         "Firing Deck 10",
         "Deadly Demise 2D6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Shadowsword Super-Heavy Tank Hunter",
@@ -911,26 +946,16 @@
         "Vehicle",
         "Titanic",
         "Deadly Demise 2D6"
-      ]
+      ],
+      "models": null
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Laspistol",
+      "section": "Weapons",
       "points": 1,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 3,
@@ -938,12 +963,13 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Lascarbine",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "12\"",
       "attacks": "3",
       "strength": 3,
@@ -951,12 +977,13 @@
       "damage": "1",
       "keywords": [
         "Assault"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Lasrifle",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 3,
@@ -964,12 +991,13 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Multilas",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "36\"",
       "attacks": "6",
       "strength": 4,
@@ -977,12 +1005,13 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Lascannon",
+      "section": "Weapons",
       "points": 25,
+      "profiles": null,
       "range": "36\"",
       "attacks": "1",
       "strength": 12,
@@ -990,12 +1019,13 @@
       "damage": "D6+2",
       "keywords": [
         "Heavy"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Lascannon",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "48\"",
       "attacks": "1",
       "strength": 15,
@@ -1003,12 +1033,13 @@
       "damage": "D6+4",
       "keywords": [
         "Ordnance"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Volcano Cannon",
+      "section": "Weapons",
       "points": 200,
+      "profiles": null,
       "range": "96\"",
       "attacks": "1",
       "strength": 30,
@@ -1019,12 +1050,13 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hot-shot Laspistol",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 3,
@@ -1032,12 +1064,13 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hot-shot Lascarbine",
+      "section": "Weapons",
       "points": 4,
+      "profiles": null,
       "range": "12\"",
       "attacks": "3",
       "strength": 3,
@@ -1045,12 +1078,13 @@
       "damage": "1",
       "keywords": [
         "Assault"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hot-shot Lasrifle",
+      "section": "Weapons",
       "points": 4,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 3,
@@ -1058,12 +1092,13 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hot-shot Volleygun",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "24\"",
       "attacks": "2",
       "strength": 3,
@@ -1072,12 +1107,13 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autogun",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 2,
@@ -1085,12 +1121,13 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Autogun",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "30\"",
       "attacks": "2",
       "strength": 4,
@@ -1099,12 +1136,13 @@
       "keywords": [
         "Heavy",
         "Rapid Fire 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Exterminator Autocannon",
+      "section": "Weapons",
       "points": 65,
+      "profiles": null,
       "range": "48\"",
       "attacks": "4",
       "strength": 8,
@@ -1113,12 +1151,13 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Shotgun",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "4\"",
       "attacks": "2",
       "strength": 4,
@@ -1129,12 +1168,13 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Sniper Rifle",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "48\"",
       "attacks": "1",
       "strength": 3,
@@ -1145,12 +1185,13 @@
         "Heavy",
         "Anti-INFANTRY 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Tankstopper Rifle",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "48\"",
       "attacks": "1",
       "strength": 9,
@@ -1160,25 +1201,13 @@
         "Precision",
         "Heavy",
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Ripper Gun - Shooting",
-      "points": 10,
-      "range": "18\"",
-      "attacks": "3",
-      "strength": 5,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Assault Cannon",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "24\"",
       "attacks": "8",
       "strength": 3,
@@ -1187,12 +1216,13 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Assault Cannon",
+      "section": "Weapons",
       "points": 65,
+      "profiles": null,
       "range": "24\"",
       "attacks": "16",
       "strength": 6,
@@ -1201,12 +1231,13 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Bolt Pistol",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 4,
@@ -1215,12 +1246,13 @@
       "keywords": [
         "Pistol",
         "Heavy"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Bolter",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 4,
@@ -1229,12 +1261,13 @@
       "keywords": [
         "Heavy",
         "Rapid Fire 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Storm Bolter",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2",
       "strength": 4,
@@ -1244,12 +1277,13 @@
         "Heavy",
         "Rapid Fire 2",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Vulcan Mega Bolter",
+      "section": "Weapons",
       "points": 80,
+      "profiles": null,
       "range": "36\"",
       "attacks": "20",
       "strength": 6,
@@ -1257,12 +1291,13 @@
       "damage": "3",
       "keywords": [
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hand Flamer",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+1",
       "strength": 3,
@@ -1272,12 +1307,13 @@
         "Pistol",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Flamer",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+4",
       "strength": 4,
@@ -1287,12 +1323,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Inferno Cannon",
+      "section": "Weapons",
       "points": 30,
+      "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
       "strength": 5,
@@ -1302,12 +1339,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Chem Cannon",
+      "section": "Weapons",
       "points": 35,
+      "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
       "strength": 3,
@@ -1319,27 +1357,13 @@
         "Anti-INFANTRY 4+",
         "Poison 1",
         "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor - Shooting",
-      "points": 15,
-      "range": "9\"",
-      "attacks": "D6+2",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Melta Carbine",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "9\"",
       "attacks": "1",
       "strength": 9,
@@ -1348,12 +1372,13 @@
       "keywords": [
         "Assault",
         "Melta 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Multi-melta",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2",
       "strength": 9,
@@ -1362,12 +1387,13 @@
       "keywords": [
         "Heavy",
         "Melta 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Melta Cannon",
+      "section": "Weapons",
       "points": 45,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D3+1",
       "strength": 10,
@@ -1376,180 +1402,13 @@
       "keywords": [
         "Assault",
         "Melta 4"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Pistol - Normal",
-      "points": 5,
-      "range": "12\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Pistol"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Pistol - Supercharged",
-      "points": null,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 6,
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Pistol",
-        "Hazardous 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Carbine - Normal",
-      "points": 8,
-      "range": "18\"",
-      "attacks": "3",
-      "strength": 4,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Assault"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Carbine - Supercharged",
-      "points": null,
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Assault",
-        "Hazardous 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Gun - Normal",
-      "points": 8,
-      "range": "24\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Rapid Fire 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Gun - Supercharged",
-      "points": null,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Rapid Fire 1",
-        "Hazardous 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Cannon - Normal",
-      "points": 20,
-      "range": "30\"",
-      "attacks": "D3+1",
-      "strength": 6,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Cannon - Supercharged",
-      "points": null,
-      "range": "30\"",
-      "attacks": "D3",
-      "strength": 8,
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Heavy",
-        "Blast 1\"",
-        "Hazardous D3+1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Macro Plasma Cannon - Normal",
-      "points": 70,
-      "range": "36\"",
-      "attacks": "D6+3",
-      "strength": 8,
-      "ap": -3,
-      "damage": "2",
-      "keywords": [
-        "Heavy",
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Macro Plasma Cannon - Supercharged",
-      "points": null,
-      "range": "36\"",
-      "attacks": "D3+1",
-      "strength": 11,
-      "ap": -4,
-      "damage": "4",
-      "keywords": [
-        "Ordnance",
-        "Blast 1\"",
-        "Hazardous D3+2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Grenade Launcher - Frag",
-      "points": 8,
-      "range": "24\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Grenade Launcher - Krak",
-      "points": null,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Assault",
-        "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rocket Pod",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "48\"",
       "attacks": "2D6",
       "strength": 2,
@@ -1559,12 +1418,13 @@
         "Heavy",
         "Blast 2\"",
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rocket Launcher",
+      "section": "Weapons",
       "points": 45,
+      "profiles": null,
       "range": "12\"-48\"",
       "attacks": "2D6+6",
       "strength": 2,
@@ -1575,39 +1435,13 @@
         "Indirect Fire",
         "Blast 2\"",
         "Sustained Hits 4"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher - Frag",
-      "points": 15,
-      "range": "48\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher - Krak",
-      "points": null,
-      "range": "48\"",
-      "attacks": "1",
-      "strength": 10,
-      "ap": -2,
-      "damage": "4",
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hunter-killer Missile",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "72\"",
       "attacks": "1",
       "strength": 10,
@@ -1619,113 +1453,13 @@
         "Heavy",
         "Anti-Air 3+",
         "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Light Cannon - HE",
-      "points": 30,
-      "range": "48\"",
-      "attacks": "D6+3",
-      "strength": 4,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Blast 2\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Light Cannon - AP",
-      "points": null,
-      "range": "48\"",
-      "attacks": "1",
-      "strength": 10,
-      "ap": -2,
-      "damage": "D6+1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Battle Cannon - HE",
-      "points": 50,
-      "range": "48\"",
-      "attacks": "D6+3",
-      "strength": 5,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Blast 2\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Battle Cannon - AP",
-      "points": null,
-      "range": "48\"",
-      "attacks": "1",
-      "strength": 11,
-      "ap": -2,
-      "damage": "D6+1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Oppressor Cannon - HE",
-      "points": 80,
-      "range": "60\"",
-      "attacks": "2D6+3",
-      "strength": 5,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Oppressor Cannon - AP",
-      "points": null,
-      "range": "60\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -2,
-      "damage": "D6+3",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Quake Cannon - HE",
-      "points": 100,
-      "range": "72\"",
-      "attacks": "3D6+3",
-      "strength": 7,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Blast 4\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Quake Cannon - AP",
-      "points": null,
-      "range": "72\"",
-      "attacks": "1",
-      "strength": 18,
-      "ap": -3,
-      "damage": "D6+12",
-      "keywords": [
-        "Ordnance",
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 5+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Sunderer Cannon",
+      "section": "Weapons",
       "points": 45,
+      "profiles": null,
       "range": "72\"",
       "attacks": "1",
       "strength": 8,
@@ -1735,12 +1469,13 @@
         "Ordnance",
         "Anti-VEHICLE 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Vanquisher Cannon",
+      "section": "Weapons",
       "points": 75,
+      "profiles": null,
       "range": "72\"",
       "attacks": "1",
       "strength": 24,
@@ -1751,12 +1486,13 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Tremor Cannon",
+      "section": "Weapons",
       "points": 100,
+      "profiles": null,
       "range": "36\"",
       "attacks": "2D6+3",
       "strength": 8,
@@ -1765,12 +1501,13 @@
       "keywords": [
         "Blast 3\"",
         "Ensnare"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pulverizer Seige Cannon",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D6",
       "strength": 7,
@@ -1779,12 +1516,13 @@
       "keywords": [
         "Blast 2\"",
         "Anti-FORTIFICATION 3+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Demolisher Seige Cannon",
+      "section": "Weapons",
       "points": 65,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D6+2",
       "strength": 9,
@@ -1793,12 +1531,13 @@
       "keywords": [
         "Blast 3\"",
         "Anti-FORTIFICATION 2+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Stormsword Siege Cannon",
+      "section": "Weapons",
       "points": 100,
+      "profiles": null,
       "range": "36\"",
       "attacks": "D6+2",
       "strength": 11,
@@ -1808,12 +1547,13 @@
         "Blast 4\"",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Eradicator Nova Cannon",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "24\"",
       "attacks": "2D6+3",
       "strength": 4,
@@ -1825,12 +1565,13 @@
         "Anti-INFANTRY 3+",
         "Ignores Cover",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hellhammer Nova Cannon",
+      "section": "Weapons",
       "points": 120,
+      "profiles": null,
       "range": "24\"",
       "attacks": "3D6+3",
       "strength": 5,
@@ -1842,12 +1583,13 @@
         "Anti-INFANTRY 3+",
         "Ignores Cover",
         "Poison 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Bombast Cannon",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "18\"-72\"",
       "attacks": "2D6",
       "strength": 5,
@@ -1857,12 +1599,13 @@
         "Ordnance",
         "Indirect Fire",
         "Blast 3\""
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Earthshaker Cannon",
+      "section": "Weapons",
       "points": 150,
+      "profiles": null,
       "range": "30\"-240\"",
       "attacks": "2D6+6",
       "strength": 6,
@@ -1872,12 +1615,13 @@
         "Ordnance",
         "Indirect Fire",
         "Blast 4\""
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Mortar",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "12\"-48\"",
       "attacks": "D6",
       "strength": 3,
@@ -1888,12 +1632,13 @@
         "Indirect Fire",
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gryphon Heavy Mortar",
+      "section": "Weapons",
       "points": 40,
+      "profiles": null,
       "range": "18\"-48\"",
       "attacks": "D6+3",
       "strength": 5,
@@ -1904,12 +1649,13 @@
         "Indirect Fire",
         "Blast 3\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Orthrus Quad Mortar",
+      "section": "Weapons",
       "points": 60,
+      "profiles": null,
       "range": "18\"-48\"",
       "attacks": "4D6",
       "strength": 3,
@@ -1920,12 +1666,13 @@
         "Indirect Fire",
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Wyvern Heavy Quad Mortar",
+      "section": "Weapons",
       "points": 130,
+      "profiles": null,
       "range": "18\"-48\"",
       "attacks": "4D6+6",
       "strength": 5,
@@ -1936,12 +1683,13 @@
         "Indirect Fire",
         "Blast 2\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Medusa Siege Mortar",
+      "section": "Weapons",
       "points": 80,
+      "profiles": null,
       "range": "18\"-48\"",
       "attacks": "2D6",
       "strength": 8,
@@ -1953,12 +1701,13 @@
         "Blast 3\"",
         "Anti-FORTIFICATION 3+",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hydra Flak Autocannon",
+      "section": "Weapons",
       "points": 70,
+      "profiles": null,
       "range": "90\"",
       "attacks": "6",
       "strength": 7,
@@ -1970,12 +1719,13 @@
         "Sustained Hits 1",
         "Anti-AIRCRAFT 3+",
         "Anti-FLY 3+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Storm Eagle Rocket",
+      "section": "Weapons",
       "points": 150,
+      "profiles": null,
       "range": "48\"-240\"",
       "attacks": "3D6",
       "strength": 15,
@@ -1987,12 +1737,13 @@
         "Indirect Fire",
         "Blast 12\"",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Deathstrike Missile",
+      "section": "Weapons",
       "points": 900,
+      "profiles": null,
       "range": "48\"-240\"",
       "attacks": "4D6+12",
       "strength": 20,
@@ -2004,12 +1755,13 @@
         "Indirect Fire",
         "Blast 24\"",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Combat Knife",
+      "section": "Melee Weapons",
       "points": 2,
+      "profiles": null,
       "range": "-",
       "attacks": "A +1",
       "strength": "S",
@@ -2017,34 +1769,37 @@
       "damage": "1",
       "keywords": [
         "Precision"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Chainsword",
+      "section": "Melee Weapons",
       "points": 2,
+      "profiles": null,
       "range": "-",
       "attacks": "A +2",
       "strength": "S+1",
       "ap": "-1",
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Sentinel Chainsaw",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A +2",
       "strength": "S",
       "ap": "-1",
       "damage": "2",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Power Sword",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +1",
@@ -2052,12 +1807,13 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Power Fist",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A -2",
       "strength": "S +3",
@@ -2065,34 +1821,13 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Ripper Gun - Melee",
-      "points": "-",
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": 0,
-      "damage": "2",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Grenadier Gauntlet - Melee",
-      "points": "-",
-      "range": "-",
-      "attacks": "A",
-      "strength": "S+1",
-      "ap": 0,
-      "damage": "2",
-      "keywords": [],
-      "availability": ""
+      ]
     },
     {
       "name": "Ogryn Knife",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A+2",
       "strength": "S+1",
@@ -2100,12 +1835,13 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Ogryn Maul",
+      "section": "Melee Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S+3",
@@ -2113,41 +1849,13 @@
       "damage": "3",
       "keywords": [
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Hunting Lance - Frag Charge",
-      "points": 10,
-      "range": "-",
-      "attacks": "D6",
-      "strength": "S+1",
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Lance",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Hunting Lance - Melta Charge",
-      "points": null,
-      "range": "-",
-      "attacks": "A -2",
-      "strength": "S+7",
-      "ap": -4,
-      "damage": "D6",
-      "keywords": [
-        "Lance",
-        "Ignores Cover",
-        "Melta 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Goad Lance",
+      "section": "Melee Weapons",
       "points": 15,
+      "profiles": null,
       "range": "",
       "attacks": "D3+1",
       "strength": "S+3",
@@ -2156,12 +1864,13 @@
       "keywords": [
         "Lance",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Chirurgeon's Tools",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A +3",
       "strength": "S",
@@ -2170,39 +1879,13 @@
       "keywords": [
         "Extra Attacks",
         "Anti-INFANTRY 2+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor - Melee - Sweep",
-      "points": "-",
-      "range": "-",
-      "attacks": "A +3",
-      "strength": "S +1",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor - Melee - Evisceration",
-      "points": null,
-      "range": "-",
-      "attacks": "A -2",
-      "strength": "S +4",
-      "ap": -3,
-      "damage": "D3+3",
-      "keywords": [
-        "Heavy",
-        "Anti-INFANTRY 3+",
-        "Anti-MONSTER 5+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Servo Arm",
+      "section": "Melee Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A -2",
       "strength": "S +3",
@@ -2212,12 +1895,13 @@
         "Extra Attacks",
         "Heavy",
         "Anti-VEHICLE 4+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Omnissiah's Axe",
+      "section": "Melee Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +2",
@@ -2225,12 +1909,13 @@
       "damage": "2",
       "keywords": [
         "Anti-VEHICLE 3+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Force Weapon",
+      "section": "Melee Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +3",
@@ -2240,12 +1925,13 @@
         "Precision",
         "Anti-PSYKER 3+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Steed's Hooves",
+      "section": "Melee Weapons",
       "points": "-",
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -2253,45 +1939,13 @@
       "damage": "1",
       "keywords": [
         "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Smite - Focused Witchfire",
-      "points": "-",
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -4,
-      "damage": "5",
-      "keywords": [
-        "Beam D3",
-        "Hazardous D3",
-        "Anti-PSYKER 2+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Smite - Witchfire",
-      "points": "-",
-      "range": "8\"",
-      "attacks": "D6+4",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Pistol",
-        "Torrent",
-        "Anti-PSYKER 4+",
-        "Devastating Wounds",
-        "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Frag Grenades",
+      "section": "Grenades",
       "points": 1,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "D3",
       "strength": 3,
@@ -2301,12 +1955,13 @@
         "Grenade",
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Krak Grenades",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": 8,
@@ -2315,12 +1970,13 @@
       "keywords": [
         "Grenade",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Melta Bombs",
+      "section": "Grenades",
       "points": 10,
+      "profiles": null,
       "range": "S\"",
       "attacks": "1",
       "strength": 11,
@@ -2329,12 +1985,13 @@
       "keywords": [
         "Grenade",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Demolition Charges",
+      "section": "Grenades",
       "points": 10,
+      "profiles": null,
       "range": "1\"",
       "attacks": "1",
       "strength": 12,
@@ -2345,12 +2002,13 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Frag Bomb",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S\"",
       "attacks": "D6+3",
       "strength": 3,
@@ -2360,12 +2018,13 @@
         "Grenade",
         "Blast 2\"",
         "Ignores Covers"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Smoke Grenades",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": "-",
@@ -2374,8 +2033,659 @@
       "keywords": [
         "Grenade",
         "Smoke 1\""
+      ]
+    },
+    {
+      "name": "Ripper Gun",
+      "section": "Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 10,
+          "range": "18\"",
+          "attacks": "3",
+          "strength": 5,
+          "ap": 0,
+          "damage": "2",
+          "keywords": [
+            "Sustained Hits 2"
+          ]
+        },
+        {
+          "profileName": "Melee",
+          "points": "-",
+          "range": "-",
+          "attacks": "A",
+          "strength": "S",
+          "ap": 0,
+          "damage": "2",
+          "keywords": []
+        }
       ],
-      "availability": ""
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 2"
+      ]
+    },
+    {
+      "name": "Zealot's Vindictor",
+      "section": "Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 15,
+          "range": "9\"",
+          "attacks": "D6+2",
+          "strength": 3,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ]
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": "-",
+          "range": "-",
+          "attacks": "A +3",
+          "strength": "S +1",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": []
+        },
+        {
+          "profileName": "Melee - Evisceration",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S +4",
+          "ap": -3,
+          "damage": "D3+3",
+          "keywords": [
+            "Heavy",
+            "Anti-INFANTRY 3+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Plasma Pistol",
+      "section": "Weapons",
+      "points": 5,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 5,
+          "range": "12\"",
+          "attacks": "2",
+          "strength": 4,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Pistol"
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": 6,
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Pistol",
+            "Hazardous 2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol"
+      ]
+    },
+    {
+      "name": "Plasma Carbine",
+      "section": "Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 8,
+          "range": "18\"",
+          "attacks": "3",
+          "strength": 4,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Assault"
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "18\"",
+          "attacks": "1",
+          "strength": 8,
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Hazardous 2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault"
+      ]
+    },
+    {
+      "name": "Plasma Gun",
+      "section": "Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 8,
+          "range": "24\"",
+          "attacks": "2",
+          "strength": 4,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Rapid Fire 1"
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": 8,
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Rapid Fire 1",
+            "Hazardous 2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Rapid Fire 1"
+      ]
+    },
+    {
+      "name": "Plasma Cannon",
+      "section": "Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 20,
+          "range": "30\"",
+          "attacks": "D3+1",
+          "strength": 6,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "30\"",
+          "attacks": "D3",
+          "strength": 8,
+          "ap": -3,
+          "damage": "3",
+          "keywords": [
+            "Heavy",
+            "Blast 1\"",
+            "Hazardous D3+1"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ]
+    },
+    {
+      "name": "Macro Plasma Cannon",
+      "section": "Weapons",
+      "points": 70,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 70,
+          "range": "36\"",
+          "attacks": "D6+3",
+          "strength": 8,
+          "ap": -3,
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 3\""
+          ]
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "36\"",
+          "attacks": "D3+1",
+          "strength": 11,
+          "ap": -4,
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 1\"",
+            "Hazardous D3+2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ]
+    },
+    {
+      "name": "Grenade Launcher",
+      "section": "Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 8,
+          "range": "24\"",
+          "attacks": "D6",
+          "strength": 3,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Blast 1\"",
+            "Ignores Cover"
+          ]
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": 8,
+          "ap": -1,
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Missile Launcher",
+      "section": "Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ]
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": 10,
+          "ap": -2,
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ]
+    },
+    {
+      "name": "Light Cannon",
+      "section": "Weapons",
+      "points": 30,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 30,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": 4,
+          "ap": 0,
+          "damage": "2",
+          "keywords": [
+            "Blast 2\""
+          ]
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": 10,
+          "ap": -2,
+          "damage": "D6+1",
+          "keywords": []
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\""
+      ]
+    },
+    {
+      "name": "Battle Cannon",
+      "section": "Weapons",
+      "points": 50,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 50,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": 5,
+          "ap": 0,
+          "damage": "2",
+          "keywords": [
+            "Blast 2\""
+          ]
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": 11,
+          "ap": -2,
+          "damage": "D6+1",
+          "keywords": []
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\""
+      ]
+    },
+    {
+      "name": "Oppressor Cannon",
+      "section": "Weapons",
+      "points": 80,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 80,
+          "range": "60\"",
+          "attacks": "2D6+3",
+          "strength": 5,
+          "ap": 0,
+          "damage": "2",
+          "keywords": [
+            "Blast 3\""
+          ]
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "60\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -2,
+          "damage": "D6+3",
+          "keywords": []
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 3\""
+      ]
+    },
+    {
+      "name": "Quake Cannon",
+      "section": "Weapons",
+      "points": 100,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 100,
+          "range": "72\"",
+          "attacks": "3D6+3",
+          "strength": 7,
+          "ap": -1,
+          "damage": "3",
+          "keywords": [
+            "Blast 4\""
+          ]
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "72\"",
+          "attacks": "1",
+          "strength": 18,
+          "ap": -3,
+          "damage": "D6+12",
+          "keywords": [
+            "Ordnance",
+            "Anti-VEHICLE 4+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 4\""
+      ]
+    },
+    {
+      "name": "Grenadier Gauntlet",
+      "section": "Melee Weapons",
+      "points": "-",
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": "-",
+          "range": "-",
+          "attacks": "A",
+          "strength": "S+1",
+          "ap": 0,
+          "damage": "2",
+          "keywords": []
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": []
+    },
+    {
+      "name": "Hunting Lance",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Frag Charge",
+          "points": 10,
+          "range": "-",
+          "attacks": "D6",
+          "strength": "S+1",
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Lance",
+            "Ignores Cover"
+          ]
+        },
+        {
+          "profileName": "Melta Charge",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S+7",
+          "ap": -4,
+          "damage": "D6",
+          "keywords": [
+            "Lance",
+            "Ignores Cover",
+            "Melta 3"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Lance",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Smite",
+      "section": "Psychic Attacks",
+      "points": "-",
+      "profiles": [
+        {
+          "profileName": "Focused Witchfire",
+          "points": "-",
+          "range": "18\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -4,
+          "damage": "5",
+          "keywords": [
+            "Beam D3",
+            "Hazardous D3",
+            "Anti-PSYKER 2+",
+            "Devastating Wounds"
+          ]
+        },
+        {
+          "profileName": "Witchfire",
+          "points": "-",
+          "range": "8\"",
+          "attacks": "D6+4",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Torrent",
+            "Anti-PSYKER 4+",
+            "Devastating Wounds",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ]
     }
   ]
 }

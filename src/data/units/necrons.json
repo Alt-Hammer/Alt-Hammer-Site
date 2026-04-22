@@ -21,7 +21,8 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Overlord",
@@ -45,7 +46,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Royal Warden",
@@ -69,7 +71,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Mantic",
@@ -92,7 +95,8 @@
         "Necron",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hexmark Destroyer",
@@ -116,7 +120,8 @@
         "Infantry",
         "Character",
         "Relentless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Shard of Transcendent C'Tan",
@@ -144,7 +149,8 @@
         "Fearless",
         "Invulnerable Save 4+",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Warriors",
@@ -167,7 +173,8 @@
         "Necron",
         "Infantry",
         "Battleline"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Immortals",
@@ -190,7 +197,8 @@
         "Necron",
         "Infantry",
         "Battleline"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Flayed Ones",
@@ -214,7 +222,8 @@
         "Infantry",
         "Infiltrators",
         "Relentless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Deathmarks",
@@ -240,7 +249,8 @@
         "Stealth",
         "Infiltrators",
         "Scout 5\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Lychguard",
@@ -263,7 +273,8 @@
         "Necron",
         "Infantry",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Triarch Praetorians",
@@ -287,7 +298,8 @@
         "Infantry",
         "Jump Pack",
         "Phase Shift"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ophydian Destroyers",
@@ -313,7 +325,8 @@
         "Hover",
         "Relentless",
         "Phase Shift"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Skorpekh Destroyers",
@@ -336,7 +349,8 @@
         "Necron",
         "Infantry",
         "Relentless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Lokhust Destroyers",
@@ -360,7 +374,8 @@
         "Infantry",
         "Mounted",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Lokhust Heavy Destroyers",
@@ -384,7 +399,8 @@
         "Infantry",
         "Mounted",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Tomb Blades",
@@ -409,7 +425,8 @@
         "Mounted",
         "Fly",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Canoptek Scarabs",
@@ -434,7 +451,8 @@
         "Small Profile",
         "Fly",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Canoptek Wraiths",
@@ -459,7 +477,8 @@
         "Hover",
         "Fearless",
         "Phase Shift"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Canoptek Spyder",
@@ -483,7 +502,8 @@
         "Beast",
         "Hover",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ghost Ark",
@@ -507,7 +527,8 @@
         "Vehicle",
         "Hover",
         "Transport 10"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Canoptek Reaminator",
@@ -531,7 +552,8 @@
         "Monster",
         "Walker",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Canoptek Doomstalker",
@@ -555,7 +577,8 @@
         "Monster",
         "Walker",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Triarch Stalker",
@@ -578,7 +601,8 @@
         "Necron",
         "Monster",
         "Walker"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Overlord's Command Barge",
@@ -603,7 +627,8 @@
         "Character",
         "Leader",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Annihilation Barge",
@@ -626,7 +651,8 @@
         "Necron",
         "Vehicle",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Doomsday Ark",
@@ -649,7 +675,8 @@
         "Necron",
         "Vehicle",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Monolith",
@@ -674,7 +701,8 @@
         "Hover",
         "Deep Strike",
         "Transport 40"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Obelisk",
@@ -697,26 +725,16 @@
         "Necron",
         "Vehicle",
         "Hover"
-      ]
+      ],
+      "models": null
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Gauss Reaper",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "12\"",
       "attacks": "3",
       "strength": 2,
@@ -725,12 +743,13 @@
       "keywords": [
         "Lethal Hits",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gauss Flayer",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 3,
@@ -739,12 +758,13 @@
       "keywords": [
         "Lethal Hits",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gauss Flux Arc",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "24\"",
       "attacks": "3",
       "strength": 3,
@@ -753,12 +773,13 @@
       "keywords": [
         "Lethal Hits",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gauss Blaster",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "24\"",
       "attacks": "2",
       "strength": 5,
@@ -767,12 +788,13 @@
       "keywords": [
         "Lethal Hits",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gauss Cannon",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "24\"",
       "attacks": "3",
       "strength": 7,
@@ -782,12 +804,13 @@
         "Heavy",
         "Lethal Hits",
         "Poison 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gauss Destructor",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D3+1",
       "strength": 12,
@@ -797,12 +820,13 @@
         "Heavy",
         "Lethal Hits",
         "Poison 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Tesla Cannon",
+      "section": "Weapons",
       "points": 30,
+      "profiles": null,
       "range": "24\"",
       "attacks": "3",
       "strength": 6,
@@ -812,12 +836,13 @@
         "Assault",
         "Rapid Fire 3",
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Tesla Destructor",
+      "section": "Weapons",
       "points": 45,
+      "profiles": null,
       "range": "24\"",
       "attacks": "8",
       "strength": 8,
@@ -827,12 +852,13 @@
         "Assault",
         "Rapid Fire 4",
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Particle Caster",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "12\"",
       "attacks": "3",
       "strength": 3,
@@ -842,12 +868,13 @@
         "Pistol",
         "Ignores Cover",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Particle Shredder",
+      "section": "Weapons",
       "points": 18,
+      "profiles": null,
       "range": "18\"",
       "attacks": "D6+6",
       "strength": 6,
@@ -857,12 +884,13 @@
         "Blast 1\"",
         "Ignores Cover",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Particle Whip",
+      "section": "Weapons",
       "points": 55,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2D6+6",
       "strength": 7,
@@ -872,12 +900,13 @@
         "Blast 3\"",
         "Ignores Cover",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Enmitic Disintegrator",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "24\"",
       "attacks": "2",
       "strength": 3,
@@ -888,12 +917,13 @@
         "Precision",
         "Sustained Hits 2",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Enmitic Exterminator",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "24\"",
       "attacks": "12",
       "strength": 4,
@@ -901,12 +931,13 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Synaptic Disintegrator",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "48\"",
       "attacks": "1",
       "strength": 6,
@@ -916,12 +947,13 @@
         "Heavy",
         "Precision",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Doomsday Blaster",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "36\"",
       "attacks": "D6+3",
       "strength": 10,
@@ -930,12 +962,13 @@
       "keywords": [
         "Anti-VEHICLE 3+",
         "Anti-MONSTER 2+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Doomsday Cannon",
+      "section": "Weapons",
       "points": 85,
+      "profiles": null,
       "range": "60\"",
       "attacks": "D3",
       "strength": 18,
@@ -944,26 +977,13 @@
       "keywords": [
         "Anti-VEHICLE 3+",
         "Anti-MONSTER 2+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heat Ray - Focused",
-      "points": null,
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -4,
-      "damage": "2D6",
-      "keywords": [
-        "Beam 1",
-        "Melta 4"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Death Ray",
+      "section": "Weapons",
       "points": 45,
+      "profiles": null,
       "range": "36\"",
       "attacks": "1",
       "strength": 12,
@@ -972,40 +992,54 @@
       "keywords": [
         "Beam 1",
         "Sustained Hits D3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Rod of Covenant - Ranged",
-      "points": 25,
-      "range": "9\"",
-      "attacks": "D3+1",
-      "strength": 5,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Beam 1",
-        "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Staff of Light",
+      "section": "Weapons",
       "points": 25,
-      "range": "18\"",
-      "attacks": "D3+1",
-      "strength": 10,
-      "ap": -3,
-      "damage": "D3+1",
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 25,
+          "range": "-",
+          "attacks": "A",
+          "strength": "S",
+          "ap": -1,
+          "damage": "2",
+          "keywords": [
+            "Lethal Hits"
+          ]
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "1",
+          "strength": "S +3",
+          "ap": -2,
+          "damage": "4",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
         "Beam 1",
         "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gaze of Death",
+      "section": "Weapons",
       "points": 60,
+      "profiles": null,
       "range": "18\"",
       "attacks": "D6+3",
       "strength": 4,
@@ -1017,28 +1051,13 @@
         "Sustained Hits 3",
         "Anti-INFANTRY 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Void Dragon's Spear - Ranged",
-      "points": 75,
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 30,
-      "ap": -4,
-      "damage": "D6+8",
-      "keywords": [
-        "Assault",
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 5+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Living Metal Talons",
+      "section": "Melee Weapons",
       "points": 3,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1047,23 +1066,25 @@
       "keywords": [
         "Twin-linked",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Voidblade",
+      "section": "Melee Weapons",
       "points": null,
+      "profiles": null,
       "range": "-",
       "attacks": "A +2",
       "strength": "S",
       "ap": -2,
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Hyperphase Sword",
+      "section": "Melee Weapons",
       "points": null,
+      "profiles": null,
       "range": "-",
       "attacks": "A +3",
       "strength": "S",
@@ -1071,12 +1092,13 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hyperphase Glaive",
+      "section": "Melee Weapons",
       "points": null,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +2",
@@ -1084,139 +1106,228 @@
       "damage": "3",
       "keywords": [
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Warscythe",
+      "section": "Melee Weapons",
       "points": 15,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +3",
       "ap": -3,
       "damage": "2",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
-      "name": "Rod of Covenant - Sweep",
+      "name": "Heat Ray",
+      "section": "Weapons",
+      "points": null,
+      "profiles": [
+        {
+          "profileName": "Focused",
+          "points": null,
+          "range": "18\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -4,
+          "damage": "2D6",
+          "keywords": [
+            "Beam 1",
+            "Melta 4"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Beam 1",
+        "Melta 4"
+      ]
+    },
+    {
+      "name": "Rod of Covenant",
+      "section": "Weapons",
       "points": 25,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": -1,
-      "damage": "2",
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 25,
+          "range": "9\"",
+          "attacks": "D3+1",
+          "strength": 5,
+          "ap": -2,
+          "damage": "2",
+          "keywords": [
+            "Beam 1",
+            "Lethal Hits"
+          ]
+        },
+        {
+          "profileName": "Sweep",
+          "points": 25,
+          "range": "-",
+          "attacks": "A",
+          "strength": "S",
+          "ap": -1,
+          "damage": "2",
+          "keywords": [
+            "Lethal Hits"
+          ]
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "1",
+          "strength": "S +4",
+          "ap": -2,
+          "damage": "3",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
+        "Beam 1",
         "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
-      "name": "Rod of Covenant - Strike",
-      "points": null,
-      "range": "-",
-      "attacks": "1",
-      "strength": "S +4",
-      "ap": -2,
-      "damage": "3",
-      "keywords": [
-        "Lance",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Staff of Light - Sweep",
-      "points": 25,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Staff of Light - Strike",
-      "points": null,
-      "range": "-",
-      "attacks": "1",
-      "strength": "S +3",
-      "ap": -2,
-      "damage": "4",
-      "keywords": [
-        "Lance",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Deceiver's Grace - Melee",
-      "points": 50,
-      "range": "-",
-      "attacks": "A",
-      "strength": "7",
-      "ap": -3,
-      "damage": "D3",
-      "keywords": [
-        "Precision",
-        "Melta 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Nightbringer's Scythe - Sweep",
-      "points": 60,
-      "range": "",
-      "attacks": "10",
-      "strength": "S",
-      "ap": -3,
-      "damage": "1",
-      "keywords": [
-        "Lethal Hits",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Nightbringer's Scythe - Strike",
-      "points": null,
-      "range": "",
-      "attacks": "D3",
-      "strength": 10,
-      "ap": -3,
-      "damage": "D3+3",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Void Dragon's Spear - Sweep",
+      "name": "Void Dragon's Spear",
+      "section": "Weapons",
       "points": 75,
-      "range": "",
-      "attacks": "A",
-      "strength": "S",
-      "ap": -2,
-      "damage": "2",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Void Dragon's Spear - Strike",
-      "points": null,
-      "range": "",
-      "attacks": "1",
-      "strength": 30,
-      "ap": -4,
-      "damage": "D6+8",
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 75,
+          "range": "18\"",
+          "attacks": "1",
+          "strength": 30,
+          "ap": -4,
+          "damage": "D6+8",
+          "keywords": [
+            "Assault",
+            "Anti-VEHICLE 4+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ]
+        },
+        {
+          "profileName": "Sweep",
+          "points": 75,
+          "range": "",
+          "attacks": "A",
+          "strength": "S",
+          "ap": -2,
+          "damage": "2",
+          "keywords": []
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "",
+          "attacks": "1",
+          "strength": 30,
+          "ap": -4,
+          "damage": "D6+8",
+          "keywords": [
+            "Assault",
+            "Anti-VEHICLE 4+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
         "Assault",
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
+      ]
+    },
+    {
+      "name": "Deceiver's Grace",
+      "section": "Melee Weapons",
+      "points": 50,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 50,
+          "range": "-",
+          "attacks": "A",
+          "strength": "7",
+          "ap": -3,
+          "damage": "D3",
+          "keywords": [
+            "Precision",
+            "Melta 3"
+          ]
+        }
       ],
-      "availability": ""
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Precision",
+        "Melta 3"
+      ]
+    },
+    {
+      "name": "Nightbringer's Scythe",
+      "section": "Melee Weapons",
+      "points": 60,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 60,
+          "range": "",
+          "attacks": "10",
+          "strength": "S",
+          "ap": -3,
+          "damage": "1",
+          "keywords": [
+            "Lethal Hits",
+            "Devastating Wounds"
+          ]
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "",
+          "attacks": "D3",
+          "strength": 10,
+          "ap": -3,
+          "damage": "D3+3",
+          "keywords": []
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Lethal Hits",
+        "Devastating Wounds"
+      ]
     }
   ]
 }

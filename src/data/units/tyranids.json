@@ -21,7 +21,8 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hive Tyrant",
@@ -49,7 +50,8 @@
         "Fearless",
         "Feel No Pain 5+",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Tyranid Prime",
@@ -74,7 +76,8 @@
         "Character",
         "Synapse 6\"",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Neurotyrant",
@@ -101,7 +104,8 @@
         "Psyker",
         "Fearless",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Broodlord",
@@ -130,7 +134,8 @@
         "Fearless",
         "Feel No Pain 5+",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Parasite of Mortrex",
@@ -157,7 +162,8 @@
         "Infiltrators",
         "Invulnerable Save 5+",
         "Deadly Demise D3"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Tervigon",
@@ -183,7 +189,8 @@
         "Transport 10",
         "Feel No Pain 5+",
         "Deadly Demise D6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Norn Emissary",
@@ -209,7 +216,8 @@
         "Invulnerable Save 5+",
         "Feel No Pain 5+",
         "Deadly Demise D6+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Termagaunts",
@@ -231,7 +239,8 @@
       "keywords": [
         "Tyranids",
         "Beast"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hormagaunts",
@@ -253,7 +262,8 @@
       "keywords": [
         "Tyranids",
         "Beast"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Warriors",
@@ -276,7 +286,8 @@
         "Tyranids",
         "Infantry",
         "Synapse 3\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Gargoyles",
@@ -299,7 +310,8 @@
         "Tyranids",
         "Beast",
         "Fly"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Barbgaunts",
@@ -321,7 +333,8 @@
       "keywords": [
         "Tyranids",
         "Beast"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Von Ryan's Leapers",
@@ -344,7 +357,8 @@
         "Tyranids",
         "Beast",
         "Scout 7\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Genestealers",
@@ -369,7 +383,8 @@
         "Infiltrators",
         "Fearless",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Zoanthropes",
@@ -395,7 +410,8 @@
         "Psyker",
         "Hover",
         "Invulnerable Save 4+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Venomthropes",
@@ -418,7 +434,8 @@
         "Tyranids",
         "Infantry",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Biovores",
@@ -440,7 +457,8 @@
       "keywords": [
         "Tyranids",
         "Beast"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Lictor",
@@ -466,7 +484,8 @@
         "Infiltrators",
         "Scout 7\"",
         "Stealth"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Neurolictor",
@@ -495,7 +514,8 @@
         "Scout 7\"",
         "Stealth",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Neurogaunts",
@@ -518,7 +538,8 @@
         "Tyranids",
         "Beast",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Guardians",
@@ -541,7 +562,8 @@
         "Tyranids",
         "Beast",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Spores",
@@ -565,7 +587,8 @@
         "Beast",
         "Hover",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ripper Swarms",
@@ -590,7 +613,8 @@
         "Swarm",
         "Small Profile",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Carnifexes",
@@ -614,7 +638,8 @@
         "Monster",
         "Feel No Pain 5+",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Exocrine",
@@ -638,7 +663,8 @@
         "Monster",
         "Feel No Pain 5+",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Tyrannofex",
@@ -662,7 +688,8 @@
         "Monster",
         "Feel No Pain 5+",
         "Deadly Demise D6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Trygon",
@@ -687,7 +714,8 @@
         "Deep Strike",
         "Feel No Pain 5+",
         "Deadly Demise D3+1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Psychophages",
@@ -711,7 +739,8 @@
         "Monster",
         "Feel No Pain 6+",
         "Deadly Demise 1"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Toxicrene",
@@ -735,7 +764,8 @@
         "Monster",
         "Feel No Pain 5+",
         "Deadly Demise D3"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Maleceptor",
@@ -761,7 +791,8 @@
         "Psyker",
         "Feel No Pain 5+",
         "Deadly Demise D6+2"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Tyrannocyte",
@@ -786,11 +817,12 @@
         "Hover",
         "Deep Strike",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Harpy",
-      "category": "Dedicated Transports",
+      "category": "Aircraft",
       "stats": {
         "M": "10\" - 20\"",
         "WS": 4,
@@ -812,41 +844,16 @@
         "Deep Strike",
         "Feel No Pain 5+",
         "Deadly Demise D6"
-      ]
+      ],
+      "models": null
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Lash Whips - Shooting",
-      "points": 10,
-      "range": "6\"",
-      "attacks": "A",
-      "strength": "S-2",
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Pistol",
-        "Lethal Hits",
-        "Ensnare"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Spinefists / Spinebanks",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "9\"",
       "attacks": "A",
       "strength": "S",
@@ -855,12 +862,13 @@
       "keywords": [
         "Pistol",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Fleshborer",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "18\"",
       "attacks": "A",
       "strength": 3,
@@ -870,12 +878,13 @@
         "Pistol",
         "Rapid Fire 1",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Devourer",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "18\"",
       "attacks": "A+3",
       "strength": "S",
@@ -884,12 +893,13 @@
       "keywords": [
         "Assault",
         "Sustained Hits 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Shardlauncher",
+      "section": "Weapons",
       "points": 12,
+      "profiles": null,
       "range": "8\"-24\"",
       "attacks": "A+D6",
       "strength": "S+2",
@@ -899,12 +909,13 @@
         "Heavy",
         "Indirect Fire",
         "Blast 2\""
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Strangleweb",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "12\"",
       "attacks": "D6",
       "strength": 2,
@@ -916,12 +927,13 @@
         "Ignores Cover",
         "Anti-INFANTRY 2+",
         "Ensnare"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Spike Rifle",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "36\"",
       "attacks": "A",
       "strength": "S+1",
@@ -931,12 +943,13 @@
         "Heavy",
         "Precision",
         "Anti-INFANTRY 3+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Deathspitter",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "24\"",
       "attacks": "A",
       "strength": "S",
@@ -946,12 +959,13 @@
         "Assault",
         "Rapid Fire 2",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Barbed Strangler",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D6+6",
       "strength": "S",
@@ -962,12 +976,13 @@
         "Lethal Hits",
         "Ignores Cover",
         "Ensnare"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Barblauncher",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "8\"-24\"",
       "attacks": "D6+3",
       "strength": 3,
@@ -978,12 +993,13 @@
         "Indirect Fire",
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pyreburster",
+      "section": "Weapons",
       "points": 30,
+      "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
       "strength": 5,
@@ -994,78 +1010,25 @@
         "Torrent",
         "Ignores Cover",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Spore Launcher",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "18\"-72\"",
       "attacks": "-",
       "strength": "-",
       "ap": "-",
       "damage": "-",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Bio-plasmic Cannon - Dispersed",
-      "points": 65,
-      "range": "18\"-72\"",
-      "attacks": "D6+3",
-      "strength": 5,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Ordnance",
-        "Indirect Fire",
-        "Blast 4\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Bio-plasmic Cannon - Concentrated",
-      "points": null,
-      "range": "48\"",
-      "attacks": "1",
-      "strength": 18,
-      "ap": -4,
-      "damage": "10",
-      "keywords": [
-        "Ordnance"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Rupture Cannon - Dispersed",
-      "points": 60,
-      "range": "60\"",
-      "attacks": "2D6+6",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Blast 2\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Rupture Cannon - Concentrated",
-      "points": null,
-      "range": "60\"",
-      "attacks": "1",
-      "strength": 20,
-      "ap": -3,
-      "damage": "D6+8",
-      "keywords": [
-        "Ordnance"
-      ],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Fleshborer Hive",
+      "section": "Weapons",
       "points": 50,
+      "profiles": null,
       "range": "24\"",
       "attacks": "20",
       "strength": 3,
@@ -1074,12 +1037,13 @@
       "keywords": [
         "Sustained Hits 2",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Acid Sprayer",
+      "section": "Weapons",
       "points": 45,
+      "profiles": null,
       "range": "12\"",
       "attacks": "2D6+3",
       "strength": 5,
@@ -1090,81 +1054,13 @@
         "Torrent",
         "Ignores Cover",
         "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Acid Maw - Shooting",
-      "points": 15,
-      "range": "9\"",
-      "attacks": "D6+3",
-      "strength": "S",
-      "ap": -4,
-      "damage": "1",
-      "keywords": [
-        "Anti-INFANTRY 4+",
-        "Poison D3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Toxinjector Harpoon - Shooting",
-      "points": 35,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -3,
-      "damage": "D6+1",
-      "keywords": [
-        "Harpoon"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Harupsex Maw - Shooting",
-      "points": 25,
-      "range": "9\"",
-      "attacks": "D3",
-      "strength": 8,
-      "ap": -3,
-      "damage": "4",
-      "keywords": [
-        "Precision",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Scything Talons - Flury",
-      "points": 5,
-      "range": "-",
-      "attacks": "A+3",
-      "strength": "S",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Scything Talons - Stab",
-      "points": null,
-      "range": "-",
-      "attacks": "A-2",
-      "strength": "S+2",
-      "ap": -2,
-      "damage": "3",
-      "keywords": [
-        "Heavy",
-        "Lance",
-        "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Scything Wings",
+      "section": "Melee Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1172,12 +1068,13 @@
       "damage": "1",
       "keywords": [
         "Extra Attacks"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rending Claws",
+      "section": "Melee Weapons",
       "points": 8,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1186,12 +1083,13 @@
       "keywords": [
         "Sustained Hits 1",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Crusher Claws",
+      "section": "Melee Weapons",
       "points": 25,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S+5",
@@ -1202,12 +1100,13 @@
         "Anti-FORTIFICATION 2+",
         "Anti-VEHICLE 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Bone Reaper",
+      "section": "Melee Weapons",
       "points": 15,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S+2",
@@ -1215,88 +1114,13 @@
       "damage": "2",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Acid Maw - Melee",
-      "points": 15,
-      "range": "-",
-      "attacks": "D6",
-      "strength": "S",
-      "ap": -4,
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks",
-        "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Toxinjector Harpoons - Melee",
-      "points": 35,
-      "range": "-",
-      "attacks": "2",
-      "strength": 12,
-      "ap": -3,
-      "damage": "D6+1",
-      "keywords": [
-        "Extra Attacks",
-        "Harpoon",
-        "Poison 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Haruspex Maw - Melee",
-      "points": 25,
-      "range": "-",
-      "attacks": "Ax3",
-      "strength": "S",
-      "ap": "-1",
-      "damage": "2",
-      "keywords": [
-        "Extra Attacks",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Warp Blast - Focused Witchfire",
-      "points": "-",
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -4,
-      "damage": "5",
-      "keywords": [
-        "Beam D3",
-        "Hazardous D3",
-        "Anti-PSYKER 2+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Warp Blast - Witchfire",
-      "points": "-",
-      "range": "8\"",
-      "attacks": "D6+4",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Pistol",
-        "Torrent",
-        "Anti-PSYKER 4+",
-        "Devastating Wounds",
-        "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Neuro-piercer",
+      "section": "Psychic Attacks",
       "points": "-",
+      "profiles": null,
       "range": "3\"",
       "attacks": "D3",
       "strength": "4",
@@ -1308,12 +1132,13 @@
         "Anti-PSYKER 3+",
         "Anti-CHARACTER 3+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Psychoblast",
+      "section": "Psychic Attacks",
       "points": "-",
+      "profiles": null,
       "range": "24\"",
       "attacks": "2D6+6",
       "strength": "4",
@@ -1324,12 +1149,13 @@
         "Blast 2\"",
         "Sustained Hits 3",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Fragmentation Spore",
+      "section": "Grenades",
       "points": 4,
+      "profiles": null,
       "range": "6\"",
       "attacks": "D6+3",
       "strength": 3,
@@ -1339,12 +1165,13 @@
         "Torrent",
         "Blast 1\"",
         "Ignores Covers"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Bio-acid Spore",
+      "section": "Grenades",
       "points": 6,
+      "profiles": null,
       "range": "6\"",
       "attacks": "D3",
       "strength": 2,
@@ -1355,12 +1182,13 @@
         "Anti-INFANTRY 4+",
         "Ignores Cover",
         "Poison 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Mucolid Spore",
+      "section": "Grenades",
       "points": 12,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+3",
       "strength": 5,
@@ -1373,8 +1201,370 @@
         "Anti-INFANTRY 4+",
         "Ignores Cover",
         "Poison 2"
+      ]
+    },
+    {
+      "name": "Lash Whips",
+      "section": "Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 10,
+          "range": "6\"",
+          "attacks": "A",
+          "strength": "S-2",
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Lethal Hits",
+            "Ensnare"
+          ]
+        }
       ],
-      "availability": ""
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol",
+        "Lethal Hits",
+        "Ensnare"
+      ]
+    },
+    {
+      "name": "Bio-plasmic Cannon",
+      "section": "Weapons",
+      "points": 65,
+      "profiles": [
+        {
+          "profileName": "Dispersed",
+          "points": 65,
+          "range": "18\"-72\"",
+          "attacks": "D6+3",
+          "strength": 5,
+          "ap": -1,
+          "damage": "2",
+          "keywords": [
+            "Ordnance",
+            "Indirect Fire",
+            "Blast 4\"",
+            "Ignores Cover"
+          ]
+        },
+        {
+          "profileName": "Concentrated",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": 18,
+          "ap": -4,
+          "damage": "10",
+          "keywords": [
+            "Ordnance"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 4\"",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Rupture Cannon",
+      "section": "Weapons",
+      "points": 60,
+      "profiles": [
+        {
+          "profileName": "Dispersed",
+          "points": 60,
+          "range": "60\"",
+          "attacks": "2D6+6",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Blast 2\""
+          ]
+        },
+        {
+          "profileName": "Concentrated",
+          "points": null,
+          "range": "60\"",
+          "attacks": "1",
+          "strength": 20,
+          "ap": -3,
+          "damage": "D6+8",
+          "keywords": [
+            "Ordnance"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\""
+      ]
+    },
+    {
+      "name": "Acid Maw",
+      "section": "Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 15,
+          "range": "9\"",
+          "attacks": "D6+3",
+          "strength": "S",
+          "ap": -4,
+          "damage": "1",
+          "keywords": [
+            "Anti-INFANTRY 4+",
+            "Poison D3"
+          ]
+        },
+        {
+          "profileName": "Melee",
+          "points": 15,
+          "range": "-",
+          "attacks": "D6",
+          "strength": "S",
+          "ap": -4,
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks",
+            "Poison 1"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Anti-INFANTRY 4+",
+        "Poison D3"
+      ]
+    },
+    {
+      "name": "Toxinjector Harpoon",
+      "section": "Weapons",
+      "points": 35,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 35,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -3,
+          "damage": "D6+1",
+          "keywords": [
+            "Harpoon"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Harpoon"
+      ]
+    },
+    {
+      "name": "Harupsex Maw",
+      "section": "Weapons",
+      "points": 25,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 25,
+          "range": "9\"",
+          "attacks": "D3",
+          "strength": 8,
+          "ap": -3,
+          "damage": "4",
+          "keywords": [
+            "Precision",
+            "Lethal Hits"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Precision",
+        "Lethal Hits"
+      ]
+    },
+    {
+      "name": "Scything Talons",
+      "section": "Melee Weapons",
+      "points": 5,
+      "profiles": [
+        {
+          "profileName": "Flury",
+          "points": 5,
+          "range": "-",
+          "attacks": "A+3",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks"
+          ]
+        },
+        {
+          "profileName": "Stab",
+          "points": null,
+          "range": "-",
+          "attacks": "A-2",
+          "strength": "S+2",
+          "ap": -2,
+          "damage": "3",
+          "keywords": [
+            "Heavy",
+            "Lance",
+            "Lethal Hits"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Extra Attacks"
+      ]
+    },
+    {
+      "name": "Toxinjector Harpoons",
+      "section": "Melee Weapons",
+      "points": 35,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 35,
+          "range": "-",
+          "attacks": "2",
+          "strength": 12,
+          "ap": -3,
+          "damage": "D6+1",
+          "keywords": [
+            "Extra Attacks",
+            "Harpoon",
+            "Poison 2"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Extra Attacks",
+        "Harpoon",
+        "Poison 2"
+      ]
+    },
+    {
+      "name": "Haruspex Maw",
+      "section": "Melee Weapons",
+      "points": 25,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 25,
+          "range": "-",
+          "attacks": "Ax3",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Extra Attacks",
+            "Lethal Hits"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Extra Attacks",
+        "Lethal Hits"
+      ]
+    },
+    {
+      "name": "Warp Blast",
+      "section": "Psychic Attacks",
+      "points": "-",
+      "profiles": [
+        {
+          "profileName": "Focused Witchfire",
+          "points": "-",
+          "range": "18\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -4,
+          "damage": "5",
+          "keywords": [
+            "Beam D3",
+            "Hazardous D3",
+            "Anti-PSYKER 2+",
+            "Devastating Wounds"
+          ]
+        },
+        {
+          "profileName": "Witchfire",
+          "points": "-",
+          "range": "8\"",
+          "attacks": "D6+4",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Torrent",
+            "Anti-PSYKER 4+",
+            "Devastating Wounds",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ]
     }
   ]
 }

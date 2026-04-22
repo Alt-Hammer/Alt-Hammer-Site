@@ -1,6 +1,6 @@
 {
-  "faction": "Tau Empire",
-  "slug": "tau-empire",
+  "faction": "The T'au Empire",
+  "slug": "the-tau-empire",
   "units": [
     {
       "name": "Name",
@@ -21,10 +21,11 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
-      "name": "Shas'O",
+      "name": "Shas-O",
       "category": "Character",
       "stats": {
         "M": "8\"",
@@ -48,10 +49,11 @@
         "Walker",
         "Jump Pack",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
-      "name": "Shas'vre",
+      "name": "Shas-vre",
       "category": "Character",
       "stats": {
         "M": "8\"",
@@ -75,7 +77,8 @@
         "Walker",
         "Jump Pack",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Fireblade",
@@ -99,7 +102,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ethereal",
@@ -123,7 +127,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kroot Shaper",
@@ -148,101 +153,8 @@
         "Infantry",
         "Character",
         "Leader"
-      ]
-    },
-    {
-      "name": "Fire Warriors - Shas-la",
-      "category": "Battleline",
-      "stats": {
-        "M": "5\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 2,
-        "A": 1,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "4+",
-        "LD": "8+",
-        "basePoints": 3,
-        "squadSizes": "4 to 9"
-      },
-      "keywords": [
-        "T'au",
-        "Infantry",
-        "Battleline"
-      ]
-    },
-    {
-      "name": "Fire Warriors - Shas-ui",
-      "category": "Battleline",
-      "stats": {
-        "M": "5\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 3,
-        "A": 2,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "4+",
-        "LD": "7+",
-        "basePoints": 5,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "T'au",
-        "Infantry",
-        "Battleline"
-      ]
-    },
-    {
-      "name": "Pathfinders - Shas-la",
-      "category": "Infantry",
-      "stats": {
-        "M": "5\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 2,
-        "A": 1,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "4+",
-        "LD": "8+",
-        "basePoints": 4,
-        "squadSizes": "2 to 9"
-      },
-      "keywords": [
-        "T'au",
-        "Infantry",
-        "Infiltrators",
-        "Scout 5\""
-      ]
-    },
-    {
-      "name": "Pathfinders - Shas-ui",
-      "category": "Infantry",
-      "stats": {
-        "M": "5\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 3,
-        "A": 2,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "4+",
-        "LD": "7+",
-        "basePoints": 7,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "T'au",
-        "Infantry",
-        "Infiltrators",
-        "Scout 5\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Firesight Marksman",
@@ -265,7 +177,8 @@
         "T'au",
         "Infantry",
         "Infiltrators"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Steath Team",
@@ -292,7 +205,8 @@
         "Stealth",
         "Deep Strike",
         "Scout 6\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kroot Carnivores",
@@ -316,7 +230,8 @@
         "Kroot",
         "Infantry",
         "Scout 7\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Vespid Stingwings",
@@ -341,7 +256,8 @@
         "Infantry",
         "Fly",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Drone",
@@ -365,7 +281,8 @@
         "Infantry",
         "Hover",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kroot Hounds",
@@ -390,7 +307,8 @@
         "Beast",
         "Unyielding",
         "Fearless"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kalamandras Riders",
@@ -415,7 +333,8 @@
         "Infantry",
         "Mounted",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Krootox Riders",
@@ -439,7 +358,8 @@
         "Kroot",
         "Monster",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Crisis Team",
@@ -464,7 +384,8 @@
         "Walker",
         "Jump Pack",
         "Deep Strike"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Broadside Team",
@@ -487,7 +408,8 @@
         "T'au",
         "Infantry",
         "Walker"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ghostkeel Battlesuit",
@@ -512,7 +434,8 @@
         "Walker",
         "Jump Pack",
         "Stealth"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Riptide Battlesuit",
@@ -536,7 +459,8 @@
         "Vehicle",
         "Walker",
         "Jump Pack"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Stormsurge Battlesuit",
@@ -560,7 +484,8 @@
         "Vehicle",
         "Walker",
         "Titanic"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Piranhas",
@@ -583,7 +508,8 @@
         "T'au",
         "Vehicle",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hammerhead Gunship",
@@ -606,7 +532,8 @@
         "T'au",
         "Vehicle",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Devilfish",
@@ -630,26 +557,131 @@
         "Vehicle",
         "Hover",
         "Transport 12"
+      ],
+      "models": null
+    },
+    {
+      "name": "Fire Warriors",
+      "category": "Battleline",
+      "stats": null,
+      "keywords": [
+        "T'au",
+        "Infantry",
+        "Battleline"
+      ],
+      "models": [
+        {
+          "modelName": "Shas-la",
+          "stats": {
+            "M": "5\"",
+            "WS": 2,
+            "BS": 3,
+            "I": 2,
+            "A": 1,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "4+",
+            "LD": "8+",
+            "basePoints": 3,
+            "squadSizes": "4 to 9"
+          },
+          "keywords": [
+            "T'au",
+            "Infantry",
+            "Battleline"
+          ]
+        },
+        {
+          "modelName": "Shas-ui",
+          "stats": {
+            "M": "5\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 3,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "4+",
+            "LD": "7+",
+            "basePoints": 5,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "T'au",
+            "Infantry",
+            "Battleline"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pathfinders",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "T'au",
+        "Infantry",
+        "Infiltrators",
+        "Scout 5\""
+      ],
+      "models": [
+        {
+          "modelName": "Shas-la",
+          "stats": {
+            "M": "5\"",
+            "WS": 2,
+            "BS": 3,
+            "I": 2,
+            "A": 1,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "4+",
+            "LD": "8+",
+            "basePoints": 4,
+            "squadSizes": "2 to 9"
+          },
+          "keywords": [
+            "T'au",
+            "Infantry",
+            "Infiltrators",
+            "Scout 5\""
+          ]
+        },
+        {
+          "modelName": "Shas-ui",
+          "stats": {
+            "M": "5\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 3,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "4+",
+            "LD": "7+",
+            "basePoints": 7,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "T'au",
+            "Infantry",
+            "Infiltrators",
+            "Scout 5\""
+          ]
+        }
       ]
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Markerlight",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "72\"",
       "attacks": "1",
       "strength": "-",
@@ -657,12 +689,13 @@
       "damage": "-",
       "keywords": [
         "Heavy"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pulse Pistol",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "12\"",
       "attacks": "2",
       "strength": 4,
@@ -670,12 +703,13 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pulse Carbine",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2",
       "strength": 4,
@@ -683,12 +717,13 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pulse Rifle",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "30\"",
       "attacks": "1",
       "strength": 5,
@@ -696,12 +731,13 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Long-shot Pulse Rifle",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "48\"",
       "attacks": "1",
       "strength": 5,
@@ -713,12 +749,13 @@
         "Rapid Fire 1",
         "Anti-INFANTRY 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pulse Cannon",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "24\"",
       "attacks": "8",
       "strength": 3,
@@ -726,40 +763,13 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Pulse Blaster - Dispersion",
-      "points": 90,
-      "range": "36\"",
-      "attacks": "D6+6",
-      "strength": 4,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Blast 2\"",
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Pulse Blaster - Power-up",
-      "points": null,
-      "range": "120\"",
-      "attacks": "D3+1",
-      "strength": 12,
-      "ap": -3,
-      "damage": "D6+6",
-      "keywords": [
-        "Ordnance",
-        "Blast 2\""
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Pulse Driver",
+      "section": "Weapons",
       "points": 80,
+      "profiles": null,
       "range": "120\"",
       "attacks": "1",
       "strength": 27,
@@ -770,12 +780,13 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Flamer",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
       "strength": 3,
@@ -785,12 +796,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rail Rifle",
+      "section": "Weapons",
       "points": 35,
+      "profiles": null,
       "range": "60\"",
       "attacks": "1",
       "strength": 16,
@@ -801,12 +813,13 @@
         "Anti-VEHICLE 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Rail Rifle",
+      "section": "Weapons",
       "points": 65,
+      "profiles": null,
       "range": "72\"",
       "attacks": "1",
       "strength": 20,
@@ -817,12 +830,13 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rail Gun",
+      "section": "Weapons",
       "points": 90,
+      "profiles": null,
       "range": "120\"",
       "attacks": "1",
       "strength": 27,
@@ -833,66 +847,13 @@
         "Anti-VEHICLE 2+",
         "Anti-MONSTER 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Cyclic Ion Cannon - Pulse",
-      "points": 45,
-      "range": "18\"",
-      "attacks": "8",
-      "strength": 3,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Cyclic Ion Cannon - Power-up",
-      "points": null,
-      "range": "36\"",
-      "attacks": "D3",
-      "strength": 10,
-      "ap": -3,
-      "damage": "4",
-      "keywords": [
-        "Blast 2\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Ion Cannon - Pulse",
-      "points": 70,
-      "range": "24\"",
-      "attacks": "8",
-      "strength": 5,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Ion Cannon - Power-up",
-      "points": null,
-      "range": "48\"",
-      "attacks": "D3",
-      "strength": 12,
-      "ap": -3,
-      "damage": "4",
-      "keywords": [
-        "Blast 2\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Fusion Collider",
+      "section": "Weapons",
       "points": 40,
+      "profiles": null,
       "range": "18\"",
       "attacks": "D3+1",
       "strength": 10,
@@ -900,12 +861,13 @@
       "damage": "D6",
       "keywords": [
         "Melta 4"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Airburst Fragmentation Launchers",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "12\"-36\"",
       "attacks": "2D6",
       "strength": 2,
@@ -916,52 +878,13 @@
         "Heavy",
         "Blast 2\"",
         "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Smart Missile Pod - Penetration",
-      "points": null,
-      "range": "6\"-24\"",
-      "attacks": "1",
-      "strength": 10,
-      "ap": -2,
-      "damage": "4",
-      "keywords": [
-        "Indirect Fire"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Smart Missile Launcher - Fragmentation",
-      "points": 50,
-      "range": "6\"-24\"",
-      "attacks": "D6+3",
-      "strength": 2,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Indirect Fire",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Smart Missile Launcher - Dart",
-      "points": null,
-      "range": "6\"-24\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -3,
-      "damage": "6",
-      "keywords": [
-        "Indirect Fire"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Seeker Missile",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "12\"-60\"",
       "attacks": "1",
       "strength": 12,
@@ -971,12 +894,13 @@
         "Ordnance",
         "One Shot",
         "Indirect Fire"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Neutron Blaster",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 6,
@@ -985,12 +909,13 @@
       "keywords": [
         "Assault",
         "Hazardous 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Neutron Grenade Launcher",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "18\"",
       "attacks": "D6",
       "strength": 6,
@@ -999,12 +924,13 @@
       "keywords": [
         "Assault",
         "Hazardous D3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Kroot Pistol",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 2,
@@ -1012,39 +938,13 @@
       "damage": "D3",
       "keywords": [
         "Precision"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Carbine - Ranged",
-      "points": 2,
-      "range": "12\"",
-      "attacks": "2",
-      "strength": 2,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Rapid Fire 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Rifle - Ranged",
-      "points": 2,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 2,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Kroot Long Rifle",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "36\"",
       "attacks": "1",
       "strength": 4,
@@ -1055,12 +955,13 @@
         "Precision",
         "Anti-INFANTRY 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Kroot Tangelbomb Launcher",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "24\"",
       "attacks": "D3+3",
       "strength": 2,
@@ -1069,12 +970,13 @@
       "keywords": [
         "Assault",
         "Ensnare"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Kroot Barbslinger",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "18\"",
       "attacks": "1",
       "strength": 4,
@@ -1086,12 +988,13 @@
         "Anti-BEAST 2+",
         "Devastating Wounds",
         "Harpoon"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Dvorgite Skinner",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+3",
       "strength": 4,
@@ -1099,12 +1002,13 @@
       "damage": "1",
       "keywords": [
         "Torrent"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Londaxi Tribalest",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "18\"",
       "attacks": "D3+1",
       "strength": 11,
@@ -1113,50 +1017,25 @@
       "keywords": [
         "Heavy",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Spear - Ranged - Tanglebomb",
-      "points": 8,
-      "range": "12\"",
-      "attacks": "D3+3",
-      "strength": 2,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Ensnare"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Spear - Ranged - Piercer",
-      "points": null,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 6,
-      "ap": -2,
-      "damage": "3",
-      "keywords": [
-        "Assault"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Fire Caste Dagger",
+      "section": "Weapons",
       "points": 1,
+      "profiles": null,
       "range": "-",
       "attacks": "A+1",
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Fireblade",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A+2",
       "strength": "S+2",
@@ -1164,12 +1043,13 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Honour Stave",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "-",
       "attacks": "A+3",
       "strength": "S+2",
@@ -1178,23 +1058,25 @@
       "keywords": [
         "Lance",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Kroot Blade",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "-",
       "attacks": "A+1",
       "strength": "S+1",
       "ap": -1,
       "damage": "2",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Kroot Bladestave",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A+1",
       "strength": "S+3",
@@ -1202,12 +1084,13 @@
       "damage": "D3+1",
       "keywords": [
         "Lance"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Shaper's Blade",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "-",
       "attacks": "A+2",
       "strength": "S+2",
@@ -1216,65 +1099,13 @@
       "keywords": [
         "Precision",
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Tri-blade - Melee",
-      "points": 3,
-      "range": "",
-      "attacks": "A+4",
-      "strength": "S",
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Carbine - Melee",
-      "points": 2,
-      "range": "-",
-      "attacks": "A+1",
-      "strength": "S",
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Rifle - Melee",
-      "points": 2,
-      "range": "-",
-      "attacks": "A+1",
-      "strength": "S",
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Spear - Melee",
-      "points": 8,
-      "range": "-",
-      "attacks": "A+2",
-      "strength": "S+3",
-      "ap": -2,
-      "damage": "D3+1",
-      "keywords": [
-        "Lance",
-        "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rending Claws",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1284,12 +1115,13 @@
         "Extra Attacks",
         "Sustained Hits 1",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Photon Grenades",
+      "section": "Grenades",
       "points": 1,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": "-",
@@ -1299,12 +1131,13 @@
         "Grenade",
         "Blast 4\"",
         "Smoke"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Grav-Inhibitor Grenades",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": "-",
@@ -1314,12 +1147,13 @@
         "Grenade",
         "Blast 1\"",
         "Ensnare"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "EMP Grenade",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": "-",
@@ -1328,12 +1162,13 @@
       "keywords": [
         "Grenade",
         "Haywire"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Kroot Hand Bomb",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+4\"",
       "attacks": "D6+1",
       "strength": 4,
@@ -1343,8 +1178,358 @@
         "Grenade",
         "Blast 1\"",
         "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Pulse Blaster",
+      "section": "Weapons",
+      "points": 90,
+      "profiles": [
+        {
+          "profileName": "Dispersion",
+          "points": 90,
+          "range": "36\"",
+          "attacks": "D6+6",
+          "strength": 4,
+          "ap": 0,
+          "damage": "2",
+          "keywords": [
+            "Blast 2\"",
+            "Sustained Hits 2"
+          ]
+        },
+        {
+          "profileName": "Power-up",
+          "points": null,
+          "range": "120\"",
+          "attacks": "D3+1",
+          "strength": 12,
+          "ap": -3,
+          "damage": "D6+6",
+          "keywords": [
+            "Ordnance",
+            "Blast 2\""
+          ]
+        }
       ],
-      "availability": ""
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\"",
+        "Sustained Hits 2"
+      ]
+    },
+    {
+      "name": "Cyclic Ion Cannon",
+      "section": "Weapons",
+      "points": 45,
+      "profiles": [
+        {
+          "profileName": "Pulse",
+          "points": 45,
+          "range": "18\"",
+          "attacks": "8",
+          "strength": 3,
+          "ap": -1,
+          "damage": "2",
+          "keywords": [
+            "Sustained Hits 2"
+          ]
+        },
+        {
+          "profileName": "Power-up",
+          "points": null,
+          "range": "36\"",
+          "attacks": "D3",
+          "strength": 10,
+          "ap": -3,
+          "damage": "4",
+          "keywords": [
+            "Blast 2\"",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 2"
+      ]
+    },
+    {
+      "name": "Heavy Ion Cannon",
+      "section": "Weapons",
+      "points": 70,
+      "profiles": [
+        {
+          "profileName": "Pulse",
+          "points": 70,
+          "range": "24\"",
+          "attacks": "8",
+          "strength": 5,
+          "ap": -1,
+          "damage": "2",
+          "keywords": [
+            "Sustained Hits 2"
+          ]
+        },
+        {
+          "profileName": "Power-up",
+          "points": null,
+          "range": "48\"",
+          "attacks": "D3",
+          "strength": 12,
+          "ap": -3,
+          "damage": "4",
+          "keywords": [
+            "Blast 2\"",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 2"
+      ]
+    },
+    {
+      "name": "Smart Missile Pod",
+      "section": "Weapons",
+      "points": null,
+      "profiles": [
+        {
+          "profileName": "Penetration",
+          "points": null,
+          "range": "6\"-24\"",
+          "attacks": "1",
+          "strength": 10,
+          "ap": -2,
+          "damage": "4",
+          "keywords": [
+            "Indirect Fire"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Indirect Fire"
+      ]
+    },
+    {
+      "name": "Smart Missile Launcher",
+      "section": "Weapons",
+      "points": 50,
+      "profiles": [
+        {
+          "profileName": "Fragmentation",
+          "points": 50,
+          "range": "6\"-24\"",
+          "attacks": "D6+3",
+          "strength": 2,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Indirect Fire",
+            "Blast 1\""
+          ]
+        },
+        {
+          "profileName": "Dart",
+          "points": null,
+          "range": "6\"-24\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -3,
+          "damage": "6",
+          "keywords": [
+            "Indirect Fire"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Indirect Fire",
+        "Blast 1\""
+      ]
+    },
+    {
+      "name": "Kroot Carbine",
+      "section": "Weapons",
+      "points": 2,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 2,
+          "range": "12\"",
+          "attacks": "2",
+          "strength": 2,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Rapid Fire 2"
+          ]
+        },
+        {
+          "profileName": "Melee",
+          "points": 2,
+          "range": "-",
+          "attacks": "A+1",
+          "strength": "S",
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Rapid Fire 2"
+      ]
+    },
+    {
+      "name": "Kroot Rifle",
+      "section": "Weapons",
+      "points": 2,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 2,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": 2,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault"
+          ]
+        },
+        {
+          "profileName": "Melee",
+          "points": 2,
+          "range": "-",
+          "attacks": "A+1",
+          "strength": "S",
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault"
+      ]
+    },
+    {
+      "name": "Kroot Spear",
+      "section": "Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Ranged - Tanglebomb",
+          "points": 8,
+          "range": "12\"",
+          "attacks": "D3+3",
+          "strength": 2,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Ensnare"
+          ]
+        },
+        {
+          "profileName": "Ranged - Piercer",
+          "points": null,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": 6,
+          "ap": -2,
+          "damage": "3",
+          "keywords": [
+            "Assault"
+          ]
+        },
+        {
+          "profileName": "Melee",
+          "points": 8,
+          "range": "-",
+          "attacks": "A+2",
+          "strength": "S+3",
+          "ap": -2,
+          "damage": "D3+1",
+          "keywords": [
+            "Lance",
+            "Lethal Hits"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Ensnare"
+      ]
+    },
+    {
+      "name": "Kroot Tri-blade",
+      "section": "Weapons",
+      "points": 3,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 3,
+          "range": "",
+          "attacks": "A+4",
+          "strength": "S",
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Sustained Hits 3"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 3"
+      ]
     }
   ]
 }

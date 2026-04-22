@@ -1055,3 +1055,781 @@ code, kbd {
 .animate-in-delay-3 { animation-delay: 0.15s; }
 .animate-in-delay-4 { animation-delay: 0.2s; }
 .animate-in-delay-5 { animation-delay: 0.25s; }
+
+/* ── Faction sticky header ─────────────────────────────────────────────── */
+
+.faction-sticky-header {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 80;
+  background: var(--color-surface-1);
+  border-bottom: 1px solid var(--color-border-mid);
+  padding: var(--sp-3) var(--sp-6);
+  margin-bottom: var(--sp-8);
+  margin-top: calc(var(--sp-10) * -1);
+  margin-left: calc(var(--sp-10) * -1);
+  margin-right: calc(var(--sp-10) * -1);
+}
+
+.faction-sticky-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-3);
+}
+
+.faction-sticky-meta {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+}
+
+.faction-sticky-meta .breadcrumb {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.faction-sticky-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold-bright);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.faction-section-buttons {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.faction-section-btn {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: 2px;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+
+.faction-section-btn:hover {
+  color: var(--color-gold-bright);
+  border-color: var(--color-gold-dim);
+  background: var(--color-surface-3);
+}
+
+.faction-section-btn.active {
+  color: var(--color-gold-bright);
+  border-color: var(--color-gold);
+  background: var(--color-surface-3);
+}
+
+/* ── Unit Profile Cards (injected by [slug].astro script) ──────────────── */
+
+.up-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-mid);
+  border-top: 3px solid var(--color-gold-dim);
+  margin: var(--sp-3) 0 var(--sp-6);
+  position: relative;
+}
+
+.up-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-6);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-pts {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  white-space: nowrap;
+}
+
+.up-pts span {
+  font-size: 0.7rem;
+  color: var(--color-gold-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.up-squad {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.up-stat-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-stat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-1);
+  border-right: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.up-stat-cell:last-child {
+  border-right: none;
+}
+
+.up-stat-label {
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.up-stat-value {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.up-keywords {
+  padding: var(--sp-2) var(--sp-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.up-keywords .keyword {
+  font-size: 0.75rem;
+}
+
+/* ── Multi-model stat blocks ────────────────────────────────────────────── */
+
+.up-model-block {
+  border-top: 1px solid var(--color-border);
+}
+
+.up-model-block:first-of-type {
+  border-top: none;
+}
+
+.up-model-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-model-name {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.up-model-pts {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.up-model-pts span {
+  font-size: 0.65rem;
+  color: var(--color-gold-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .up-stat-row {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* ── Unit Profile Index ─────────────────────────────────────────────────── */
+
+.up-index {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-mid);
+  border-top: 3px solid var(--color-gold);
+  padding: var(--sp-4) var(--sp-5);
+  margin: var(--sp-6) 0 var(--sp-10);
+}
+
+.up-index-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--sp-4) var(--sp-6);
+}
+
+.up-index-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.up-index-cat {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  text-decoration: none;
+  padding-bottom: var(--sp-1);
+  margin-bottom: var(--sp-1);
+  border-bottom: 1px solid var(--color-border);
+  display: block;
+}
+
+.up-index-cat:hover {
+  color: var(--color-gold-bright);
+}
+
+.up-index-unit {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 2px 0;
+  transition: color 0.12s ease;
+  display: block;
+}
+
+.up-index-unit:hover {
+  color: var(--color-gold-bright);
+}
+
+@media (max-width: 600px) {
+  .up-index-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Unit Profile Two-Column Content ───────────────────────────────────── */
+
+.up-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+  margin: var(--sp-4) 0 var(--sp-10);
+  padding: var(--sp-5);
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border);
+  border-top: none;
+}
+
+.up-col h6 {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-top: var(--sp-5);
+  margin-bottom: var(--sp-2);
+  padding-bottom: var(--sp-1);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-col h6:first-child {
+  margin-top: 0;
+}
+
+.up-col p {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: var(--sp-3);
+}
+
+.up-col ul {
+  padding-left: var(--sp-4);
+  margin-bottom: var(--sp-3);
+}
+
+.up-col li {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--sp-1);
+  line-height: 1.4;
+}
+
+.up-col li::marker {
+  color: var(--color-gold-dim);
+}
+
+@media (max-width: 768px) {
+  .up-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Weapon Profile Cards (injected by [slug].astro script) ─────────────── */
+
+.wp-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-mid);
+  border-top: 3px solid var(--color-blue-bright);
+  margin: var(--sp-3) 0 var(--sp-6);
+}
+
+.wp-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-6);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border);
+  min-height: 36px;
+}
+
+.wp-pts {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-blue-bright);
+  white-space: nowrap;
+}
+
+.wp-pts span {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.wp-pts-inline {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-blue-bright);
+}
+
+.wp-pts-inline span {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Weapon stat row: 5 fixed stat columns + 1 flexible keywords column */
+.wp-stat-row {
+  display: grid;
+  grid-template-columns: repeat(5, 80px) 1fr;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.wp-stat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-1);
+  border-right: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.wp-stat-cell:last-child {
+  border-right: none;
+}
+
+.wp-kw-cell {
+  align-items: flex-start;
+  padding: var(--sp-2) var(--sp-3);
+  text-align: left;
+}
+
+.wp-stat-label {
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.wp-stat-value {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.wp-kw-value {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.wp-kw-value .keyword {
+  font-size: 0.72rem;
+}
+
+/* Multi-profile weapon blocks */
+.wp-profile-block {
+  border-top: 1px solid var(--color-border);
+}
+
+.wp-profile-block:first-of-type {
+  border-top: none;
+}
+
+.wp-profile-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.wp-profile-name {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+/* Section and weapon headings within the weapon profiles section */
+.wp-section-heading {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-blue-bright);
+  margin: var(--sp-8) 0 var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--color-border-mid);
+}
+
+.wp-weapon-heading {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin: var(--sp-5) 0 0;
+}
+
+/* Weapon Index */
+.wp-index {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-mid);
+  border-top: 3px solid var(--color-blue-bright);
+  padding: var(--sp-4) var(--sp-5);
+  margin: var(--sp-6) 0 var(--sp-10);
+}
+
+.wp-index-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-blue-bright);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.wp-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--sp-4) var(--sp-6);
+}
+
+.wp-index-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.wp-index-cat {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-blue-bright);
+  padding-bottom: var(--sp-1);
+  margin-bottom: var(--sp-1);
+  border-bottom: 1px solid var(--color-border);
+  display: block;
+}
+
+.wp-index-weapon {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 2px 0;
+  transition: color 0.12s ease;
+  display: block;
+}
+
+.wp-index-weapon:hover {
+  color: var(--color-blue-bright);
+}
+
+@media (max-width: 768px) {
+  .wp-stat-row {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .wp-kw-cell {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--color-border);
+    border-right: none;
+  }
+  .wp-index-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Weapon & Wargear inline reference spans ─────────────────────────────── */
+
+.weapon-ref {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-blue-bright);
+  border-bottom: 1px dotted var(--color-blue);
+  cursor: help;
+}
+
+.wargear-ref {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4ecdc4;
+  border-bottom: 1px dotted #2a8a85;
+  cursor: help;
+}
+
+/* ── Reference tooltip shared structure ──────────────────────────────────── */
+
+.ah-ref-tooltip {
+  max-width: 380px;
+  min-width: 220px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-mid);
+  border-radius: 3px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.65);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.ah-ref-tooltip__header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 12px 5px;
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border-mid);
+}
+
+.ah-ref-tooltip__type {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.ah-ref-tooltip__name {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ah-ref-tooltip--weapon .ah-ref-tooltip__name { color: var(--color-blue-bright); }
+.ah-ref-tooltip--wargear .ah-ref-tooltip__name { color: #4ecdc4; }
+
+.ah-ref-tooltip__points-inline {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-left: auto;
+}
+
+/* ── Weapon tooltip stat rows ────────────────────────────────────────────── */
+
+.ah-ref-tooltip__profile-block {
+  border-top: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__profile-block:first-of-type {
+  border-top: none;
+}
+
+.ah-ref-tooltip__profile-name {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  padding: 4px 10px 3px;
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__stat-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__stat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 4px;
+  border-right: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.ah-ref-tooltip__stat-cell:last-child { border-right: none; }
+
+.ah-ref-tooltip__stat-label {
+  font-family: var(--font-display);
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.ah-ref-tooltip__stat-value {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.ah-ref-tooltip__keywords {
+  padding: 5px 10px 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  line-height: 1.4;
+}
+
+.ah-ref-tooltip__points {
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-blue-bright);
+  background: var(--color-surface-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__points span {
+  font-size: 0.6rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Wargear tooltip body ─────────────────────────────────────────────────── */
+
+.ah-ref-tooltip__body {
+  padding: 8px 12px 10px;
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.ah-ref-tooltip__body p {
+  margin: 0 0 5px;
+}
+
+.ah-ref-tooltip__body ul {
+  margin: 4px 0 5px 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.ah-ref-tooltip__body li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 3px;
+  font-size: 0.76rem;
+}
+
+.ah-ref-tooltip__body li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2a8a85;
+}

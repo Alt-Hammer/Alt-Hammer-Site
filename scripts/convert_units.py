@@ -8,9 +8,11 @@ WHAT IT DOES
 ────────────
 1. Reads each faction sheet in the Excel file
 2. Extracts unit stat blocks (Movement, WS, BS, I, A, S, T, W, SV, LD)
-3. Extracts weapon profiles (Range, A, S, AP, D, Keywords)
-4. Structures everything into clean JSON
-5. Writes one JSON file per faction into src/data/units/
+3. Groups multi-model units (e.g. "Boys - Boy" / "Boys - Nob") into a
+   single unit entry with a 'models' array containing each variant
+4. Extracts weapon profiles (Range, A, S, AP, D, Keywords)
+5. Structures everything into clean JSON
+6. Writes one JSON file per faction into src/data/units/
 
 OUTPUT FILES
 ────────────
@@ -20,32 +22,31 @@ OUTPUT FILES
 
 JSON STRUCTURE PER FILE
 ───────────────────────
+Single-model unit:
 {
-  "faction": "Adeptus Astartes",
-  "units": [
+  "name": "Captain",
+  "category": "Character",
+  "stats": { "M": "6\"", "WS": 7, ... "basePoints": 130, "squadSizes": "1" },
+  "keywords": ["Imperium", "Adeptus Astartes", "Infantry", "Character", "Leader"],
+  "models": null
+}
+
+Multi-model unit:
+{
+  "name": "Boys",
+  "category": "Battleline",
+  "stats": null,
+  "keywords": ["Orks", "Infantry"],
+  "models": [
     {
-      "name": "Captain",
-      "category": "Character",
-      "stats": {
-        "M": "6\"", "WS": 7, "BS": 7, "I": 6,
-        "A": 6, "S": 4, "T": 4, "W": 6,
-        "SV": "3+", "LD": "3+",
-        "basePoints": 130, "squadSizes": "1"
-      },
-      "keywords": ["Imperium", "Adeptus Astartes", "Infantry", "Character", "Leader"]
-    }
-  ],
-  "weapons": [
+      "modelName": "Boy",
+      "stats": { "M": "5\"", "WS": 4, ... "basePoints": 6, "squadSizes": "5 to 30" },
+      "keywords": ["Orks", "Infantry"]
+    },
     {
-      "name": "Bolt Pistol",
-      "points": 2,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 4,
-      "ap": -1,
-      "damage": "2",
-      "keywords": ["Pistol"],
-      "availability": "Tacticus, Gravis, Phobos, Scouts, Jump Pack, Bike"
+      "modelName": "Nob",
+      "stats": { "M": "5\"", "WS": 5, ... "basePoints": 20, "squadSizes": "1" },
+      "keywords": ["Orks", "Infantry"]
     }
   ]
 }
@@ -79,7 +80,6 @@ OUTPUT_DIR = "src/data/units"
 NON_FACTION_SHEETS = {'Hit Roll Table', 'Wound Roll Table', 'Hit Roll', 'Wound Roll'}
 
 # ── Category labels that appear as section headers in the sheet ───────────────
-# These rows identify the start of a new unit category; they are not units.
 
 CATEGORY_LABELS = {
     'character', 'characters',
@@ -95,16 +95,18 @@ CATEGORY_LABELS = {
     'monsters', 'monster',
     'epic heroes', 'epic hero',
     'units',
+    'aircraft',
 }
 
-WEAPON_SECTION_LABELS = {'ranged weapons', 'melee weapons', 'weapons', 'psychic weapons'}
+WEAPON_SECTION_LABELS = {'ranged weapons', 'melee weapons', 'weapons', 'psychic attacks', 'grenades'}
 
-# ── Column indices (0-based, matching your xlsx structure) ────────────────────
-# Based on the earlier inspection of the file:
-# Units: B=1, C=2(M), D=3(WS), E=4(BS), F=5(I), G=6(A), H=7(S), 
-#        I=8(T), J=9(W), K=10(SV), L=11(LD), M=12(pts), N=13(sizes), O=14(keywords)
-# Weapons: Q=16(name), R=17(pts), S=18(range), T=19(A), U=20(S), 
-#          V=21(AP), W=22(D), X=23(keywords), Y=24(availability)
+# Maps sheet names to explicit slugs where the sheet name doesn't match
+# the faction MDX slug produced by convert_factions.py
+SHEET_SLUG_OVERRIDES = {
+    "The T'au Empire": 'the-tau-empire',
+}
+
+# ── Column indices (0-based) ──────────────────────────────────────────────────
 
 COL_UNIT_NAME     = 1
 COL_UNIT_M        = 2
@@ -129,7 +131,7 @@ COL_WPN_S        = 20
 COL_WPN_AP       = 21
 COL_WPN_D        = 22
 COL_WPN_KEYWORDS = 23
-COL_WPN_AVAIL    = 24  # may not exist in all sheets
+COL_WPN_AVAIL    = 24
 
 
 def cell_val(row: tuple, col_idx: int, default=None):
@@ -145,10 +147,13 @@ def clean_str(val) -> str:
     """Convert a cell value to a clean string."""
     if val is None:
         return ''
-    return str(val).strip()
+    s = str(val).strip()
+    return (s
+        .replace('\u2018', "'").replace('\u2019', "'")
+        .replace('\u201c', '"').replace('\u201d', '"')
+    )
 
-
-def parse_keywords(val) -> list[str]:
+def parse_keywords(val) -> list:
     """Split a comma-separated keywords string into a list."""
     if not val:
         return []
@@ -156,13 +161,46 @@ def parse_keywords(val) -> list[str]:
 
 
 def is_category_label(name: str) -> bool:
-    """Return True if this cell value is a category header row, not a unit name."""
     return name.lower().strip() in CATEGORY_LABELS
 
 
 def is_weapon_section_label(name: str) -> bool:
-    """Return True if this is a weapon section header."""
     return name.lower().strip() in WEAPON_SECTION_LABELS
+
+
+def parse_stats(row: tuple) -> dict:
+    """Extract the stats dict from a row."""
+    return {
+        'M':          clean_str(cell_val(row, COL_UNIT_M,    '')),
+        'WS':         cell_val(row, COL_UNIT_WS,   None),
+        'BS':         cell_val(row, COL_UNIT_BS,   None),
+        'I':          cell_val(row, COL_UNIT_I,    None),
+        'A':          cell_val(row, COL_UNIT_A,    None),
+        'S':          cell_val(row, COL_UNIT_S,    None),
+        'T':          cell_val(row, COL_UNIT_T,    None),
+        'W':          cell_val(row, COL_UNIT_W,    None),
+        'SV':         clean_str(cell_val(row, COL_UNIT_SV,   '')),
+        'LD':         clean_str(cell_val(row, COL_UNIT_LD,   '')),
+        'basePoints': cell_val(row, COL_UNIT_PTS,  None),
+        'squadSizes': clean_str(cell_val(row, COL_UNIT_SIZES, '')),
+    }
+
+
+def split_variant_name(name: str):
+    """
+    Split a 'Unit Name - Model Variant' string into (base_name, variant_name).
+    Returns (name, None) if no ' - ' separator is found.
+
+    Examples:
+      'Boys - Boy'              → ('Boys', 'Boy')
+      'Boys - Nob'              → ('Boys', 'Nob')
+      'Squighog Riderz - Nob on Smashasquig' → ('Squighog Riderz', 'Nob on Smashasquig')
+      'Captain'                 → ('Captain', None)
+    """
+    if ' - ' in name:
+        parts = name.split(' - ', 1)
+        return parts[0].strip(), parts[1].strip()
+    return name, None
 
 
 def convert_units(xlsx_path: str, output_dir: str):
@@ -176,7 +214,6 @@ def convert_units(xlsx_path: str, output_dir: str):
     if not os.path.exists(xlsx_path):
         print(f"  ✗  ERROR: Source file not found:")
         print(f"     {xlsx_path}")
-        print(f"\n  Please check the DATATABLES_XLSX path at the top of this script.")
         sys.exit(1)
 
     wb = openpyxl.load_workbook(xlsx_path, read_only=True, data_only=True)
@@ -190,79 +227,272 @@ def convert_units(xlsx_path: str, output_dir: str):
         ws = wb[sheet_name]
         print(f"  Processing: {sheet_name}")
 
-        units = []
-        weapons = []
-
+        # ── Pass 1: collect all raw unit rows ─────────────────────────────
+        # Each raw row is: { name, category, stats, keywords }
+        raw_units = []
+        raw_weapons = []
         current_unit_category = 'Unknown'
-        current_unit_name = None
-        current_unit_row = None
+        current_weapon_section = 'Weapons'
 
         for row in ws.iter_rows(min_row=5, values_only=True):
-            # ── Unit columns ──────────────────────────────────────────────
             unit_name_val = cell_val(row, COL_UNIT_NAME)
             unit_name = clean_str(unit_name_val) if unit_name_val else ''
 
-            # ── Weapon columns ────────────────────────────────────────────
             wpn_name_val = cell_val(row, COL_WPN_NAME)
             wpn_name = clean_str(wpn_name_val) if wpn_name_val else ''
 
-            # ── Detect category header rows ───────────────────────────────
+            # Detect category header rows
             if unit_name and is_category_label(unit_name):
                 current_unit_category = unit_name.title()
-                current_unit_name = None
                 continue
 
             if unit_name and is_weapon_section_label(unit_name):
                 continue
 
-            # ── Parse unit row ─────────────────────────────────────────────
-            # A unit row has a name AND at least a Movement value
+            # Parse unit row — must have a name AND a Movement value
             movement_val = cell_val(row, COL_UNIT_M)
             if unit_name and movement_val is not None:
-                current_unit_name = unit_name
-                unit = {
-                    'name': unit_name,
+                raw_units.append({
+                    'name':     unit_name,
                     'category': current_unit_category,
-                    'stats': {
-                        'M':          clean_str(cell_val(row, COL_UNIT_M,    '')),
-                        'WS':         cell_val(row, COL_UNIT_WS,   None),
-                        'BS':         cell_val(row, COL_UNIT_BS,   None),
-                        'I':          cell_val(row, COL_UNIT_I,    None),
-                        'A':          cell_val(row, COL_UNIT_A,    None),
-                        'S':          cell_val(row, COL_UNIT_S,    None),
-                        'T':          cell_val(row, COL_UNIT_T,    None),
-                        'W':          cell_val(row, COL_UNIT_W,    None),
-                        'SV':         clean_str(cell_val(row, COL_UNIT_SV,   '')),
-                        'LD':         clean_str(cell_val(row, COL_UNIT_LD,   '')),
-                        'basePoints': cell_val(row, COL_UNIT_PTS,  None),
-                        'squadSizes': clean_str(cell_val(row, COL_UNIT_SIZES, '')),
-                    },
+                    'stats':    parse_stats(row),
                     'keywords': parse_keywords(cell_val(row, COL_UNIT_KEYWORDS)),
-                }
-                units.append(unit)
+                })
 
-            # ── Parse weapon row ───────────────────────────────────────────
-            # A weapon row has a name AND at least a range value
-            wpn_range_val = cell_val(row, COL_WPN_RANGE)
-            if wpn_name and not is_weapon_section_label(wpn_name):
-                weapon = {
-                    'name':         wpn_name,
-                    'points':       cell_val(row, COL_WPN_PTS,      None),
-                    'range':        clean_str(cell_val(row, COL_WPN_RANGE,    '')),
-                    'attacks':      clean_str(cell_val(row, COL_WPN_A,        '')),
-                    'strength':     cell_val(row, COL_WPN_S,       None),
-                    'ap':           cell_val(row, COL_WPN_AP,      None),
-                    'damage':       clean_str(cell_val(row, COL_WPN_D,        '')),
-                    'keywords':     parse_keywords(cell_val(row, COL_WPN_KEYWORDS)),
-                    'availability': clean_str(cell_val(row, COL_WPN_AVAIL,   '')),
+            # Detect weapon section header rows (Ranged Weapons, Melee Weapons, etc.)
+            if wpn_name and is_weapon_section_label(wpn_name):
+                current_weapon_section = wpn_name.strip()
+                continue
+
+            # Parse weapon row — must have a name AND at least range or attacks
+            if wpn_name and wpn_name != 'Name':
+                wpn_range = clean_str(cell_val(row, COL_WPN_RANGE, ''))
+                wpn_attacks = clean_str(cell_val(row, COL_WPN_A, ''))
+                if wpn_range or wpn_attacks:
+                    raw_weapons.append({
+                        'name':     wpn_name,
+                        'section':  current_weapon_section,
+                        'points':   cell_val(row, COL_WPN_PTS,      None),
+                        'range':    wpn_range,
+                        'attacks':  wpn_attacks,
+                        'strength': cell_val(row, COL_WPN_S,       None),
+                        'ap':       cell_val(row, COL_WPN_AP,      None),
+                        'damage':   clean_str(cell_val(row, COL_WPN_D, '')),
+                        'keywords': parse_keywords(cell_val(row, COL_WPN_KEYWORDS)),
+                    })
+
+        # ── Pass 2: group variant rows under parent unit entries ───────────
+        #
+        # Strategy:
+        # - If a row name contains ' - ', it is a model variant.
+        # - Extract base_name (before ' - ') and model_name (after ' - ').
+        # - Find or create a parent unit entry with that base_name.
+        # - Add the variant as an entry in the parent's 'models' list.
+        # - If a standalone row exists with the same base_name (i.e. a plain
+        #   'Boys' row alongside 'Boys - Boy' and 'Boys - Nob'), that row
+        #   becomes the parent's own stats (unit-level stats), which may
+        #   differ from the model variant stats.
+        #
+        # Result: each parent unit has:
+        #   - stats: the unit-level stats row if present, else None
+        #   - models: list of { modelName, stats, keywords } if variants exist
+
+        # First pass: separate plain rows from variant rows
+        plain_rows = []
+        variant_rows = []
+        for raw in raw_units:
+            base_name, variant_name = split_variant_name(raw['name'])
+            if variant_name is not None:
+                variant_rows.append({
+                    'baseName':    base_name,
+                    'modelName':   variant_name,
+                    'category':    raw['category'],
+                    'stats':       raw['stats'],
+                    'keywords':    raw['keywords'],
+                })
+            else:
+                plain_rows.append(raw)
+
+        # Build the units list, merging variants into parents
+        units = []
+        # Track which base names have variants so we can create parent entries
+        variant_bases = {}
+        for v in variant_rows:
+            base = v['baseName']
+            if base not in variant_bases:
+                variant_bases[base] = []
+            variant_bases[base].append(v)
+
+        # Add all plain rows as unit entries
+        # If a plain row shares a base name with variants, it becomes the parent
+        added_bases = set()
+        for raw in plain_rows:
+            name = raw['name']
+            if name in variant_bases:
+                # This plain row is the parent of variant rows
+                models = [
+                    {
+                        'modelName': v['modelName'],
+                        'stats':     v['stats'],
+                        'keywords':  v['keywords'],
+                    }
+                    for v in variant_bases[name]
+                ]
+                units.append({
+                    'name':     name,
+                    'category': raw['category'],
+                    'stats':    raw['stats'],    # unit-level stats
+                    'keywords': raw['keywords'],
+                    'models':   models,
+                })
+                added_bases.add(name)
+            else:
+                # Standard single-model unit
+                units.append({
+                    'name':     name,
+                    'category': raw['category'],
+                    'stats':    raw['stats'],
+                    'keywords': raw['keywords'],
+                    'models':   None,
+                })
+
+        # Add variant-only groups where no plain parent row exists
+        # (e.g. 'Boys - Boy' / 'Boys - Nob' with no plain 'Boys' row)
+        for base_name, variants in variant_bases.items():
+            if base_name in added_bases:
+                continue
+            # Use the first variant's category and keywords as the parent's
+            models = [
+                {
+                    'modelName': v['modelName'],
+                    'stats':     v['stats'],
+                    'keywords':  v['keywords'],
                 }
-                # Only add if it has some meaningful data
-                if weapon['range'] or weapon['attacks']:
-                    weapons.append(weapon)
+                for v in variants
+            ]
+            units.append({
+                'name':     base_name,
+                'category': variants[0]['category'],
+                'stats':    None,   # no standalone unit-level stats row
+                'keywords': variants[0]['keywords'],
+                'models':   models,
+            })
+
+        # ── Pass 3: group weapon attack profiles under parent weapon entries ──
+        #
+        # Strategy mirrors the unit variant grouping:
+        # - Rows named 'Plasma Gun - Standard' / 'Plasma Gun - Overcharged'
+        #   are attack profiles. Extract base name and profile name.
+        # - If multiple profiles share a base name, create a parent entry
+        #   with a 'profiles' array.
+        # - Single-profile weapons keep a flat structure (profiles: null).
+        # - Weapons are grouped by their 'section' field for the index.
+
+        plain_weapons = []
+        profile_weapons = []
+        for raw in raw_weapons:
+            base_name, profile_name = split_variant_name(raw['name'])
+            if profile_name is not None:
+                profile_weapons.append({
+                    'baseName':    base_name,
+                    'profileName': profile_name,
+                    'section':     raw['section'],
+                    'points':      raw['points'],
+                    'range':       raw['range'],
+                    'attacks':     raw['attacks'],
+                    'strength':    raw['strength'],
+                    'ap':          raw['ap'],
+                    'damage':      raw['damage'],
+                    'keywords':    raw['keywords'],
+                })
+            else:
+                plain_weapons.append(raw)
+
+        # Build profile lookup
+        profile_bases = {}
+        for p in profile_weapons:
+            base = p['baseName']
+            if base not in profile_bases:
+                profile_bases[base] = []
+            profile_bases[base].append(p)
+
+        weapons = []
+        added_weapon_bases = set()
+
+        for raw in plain_weapons:
+            name = raw['name']
+            if name in profile_bases:
+                profiles = [
+                    {
+                        'profileName': p['profileName'],
+                        'points':      p['points'],
+                        'range':       p['range'],
+                        'attacks':     p['attacks'],
+                        'strength':    p['strength'],
+                        'ap':          p['ap'],
+                        'damage':      p['damage'],
+                        'keywords':    p['keywords'],
+                    }
+                    for p in profile_bases[name]
+                ]
+                weapons.append({
+                    'name':     name,
+                    'section':  raw['section'],
+                    'points':   raw['points'],
+                    'profiles': profiles,
+                    'range':    None,
+                    'attacks':  None,
+                    'strength': None,
+                    'ap':       None,
+                    'damage':   None,
+                    'keywords': raw['keywords'],
+                })
+                added_weapon_bases.add(name)
+            else:
+                weapons.append({
+                    'name':     name,
+                    'section':  raw['section'],
+                    'points':   raw['points'],
+                    'profiles': None,
+                    'range':    raw['range'],
+                    'attacks':  raw['attacks'],
+                    'strength': raw['strength'],
+                    'ap':       raw['ap'],
+                    'damage':   raw['damage'],
+                    'keywords': raw['keywords'],
+                })
+
+        # Profile-only weapons (no plain parent row)
+        for base_name, profiles in profile_bases.items():
+            if base_name in added_weapon_bases:
+                continue
+            weapons.append({
+                'name':     base_name,
+                'section':  profiles[0]['section'],
+                'points':   profiles[0]['points'],
+                'profiles': [
+                    {
+                        'profileName': p['profileName'],
+                        'points':      p['points'],
+                        'range':       p['range'],
+                        'attacks':     p['attacks'],
+                        'strength':    p['strength'],
+                        'ap':          p['ap'],
+                        'damage':      p['damage'],
+                        'keywords':    p['keywords'],
+                    }
+                    for p in profiles
+                ],
+                'range':    None,
+                'attacks':  None,
+                'strength': None,
+                'ap':       None,
+                'damage':   None,
+                'keywords': profiles[0]['keywords'],
+            })
 
         # ── Write faction JSON file ────────────────────────────────────────
-
-        faction_slug = slugify(sheet_name)
+        faction_slug = SHEET_SLUG_OVERRIDES.get(sheet_name, slugify(sheet_name))
         output_data = {
             'faction': sheet_name,
             'slug':    faction_slug,

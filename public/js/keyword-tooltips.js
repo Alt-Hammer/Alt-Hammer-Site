@@ -234,6 +234,8 @@
     }
     buildTooltip();
     attachTooltips();
+    // Expose for dynamic re-attachment (unit profile cards injected after load)
+    window.__ahAttachTooltips = attachTooltips;
   }
 
   if (document.readyState === 'loading') {
@@ -241,5 +243,36 @@
   } else {
     init();
   }
+
+
+// ── Section button active state on scroll ────────────────────────────────
+  function initSectionButtons() {
+    const buttons = document.querySelectorAll('.faction-section-btn');
+    if (!buttons.length) return;
+
+    const sections = Array.from(buttons).map((btn) => {
+      const href = btn.getAttribute('href');
+      const id = href ? href.replace('#', '') : '';
+      return { btn, el: document.getElementById(id) };
+    }).filter((s) => s.el);
+
+    function onScroll() {
+      const scrollY = window.scrollY + 140; // offset for sticky header height
+      let current = sections[0];
+      for (const s of sections) {
+        if (s.el.getBoundingClientRect().top + window.scrollY <= scrollY) {
+          current = s;
+        }
+      }
+      buttons.forEach((b) => b.classList.remove('active'));
+      if (current) current.btn.classList.add('active');
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  initSectionButtons();
+
 
 })();

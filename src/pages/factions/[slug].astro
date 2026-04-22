@@ -20,20 +20,17 @@ if (!factionEntry) {
 const { Content: FactionContent } = await factionEntry.render();
 const faction = factionEntry.data;
 
-const unitFiles = await Astro.glob('../../data/units/*.json');
-const unitFile = unitFiles.find((entry) => {
-  const filePath = entry.file ?? entry.url ?? '';
-  return filePath.endsWith(`${slug}.json`);
-});
-const unitData = unitFile?.default ?? null;
+const allUnitFiles = import.meta.glob('../../data/units/*.json', { eager: true });
+const unitFileKey = Object.keys(allUnitFiles).find((key) => key.endsWith(`${slug}.json`));
+const unitData = unitFileKey ? (allUnitFiles[unitFileKey] as any)?.default ?? allUnitFiles[unitFileKey] : null;
 const units = Array.isArray(unitData?.units) ? unitData.units : [];
-const unitsByCategory = new Map<string, Array<any>>();
+
+// Filter out the header row (name === 'Name') and build a lookup map
+const unitMap: Record<string, any> = {};
 for (const unit of units) {
-  const category = unit.category || 'Other';
-  if (!unitsByCategory.has(category)) {
-    unitsByCategory.set(category, []);
+  if (unit.name && unit.name !== 'Name') {
+    unitMap[unit.name.toLowerCase()] = unit;
   }
-  unitsByCategory.get(category)?.push(unit);
 }
 
 const allianceMeta = ALLIANCES.find((item) => item.id === faction.alliance) ?? {
@@ -44,6 +41,10 @@ const allianceMeta = ALLIANCES.find((item) => item.id === faction.alliance) ?? {
 
 const pageTitle = faction.title;
 const pageDescription = faction.description || `${faction.title} faction rules and unit profiles for Alt-Hammer 40,000.`;
+
+const unitMapJson = JSON.stringify(unitMap);
+const weapons = Array.isArray(unitData?.weapons) ? unitData.weapons : [];
+const weaponMapJson = JSON.stringify(weapons);
 ---
 
 <DocsLayout
@@ -52,61 +53,674 @@ const pageDescription = faction.description || `${faction.title} faction rules a
   activePage="factions"
   sidebarType="factions"
 >
-  <div class="page-header">
-    <p class="breadcrumb">
-      <a href="/factions">Factions</a> · {allianceMeta.label}
-    </p>
-    <h1>{pageTitle}</h1>
-    {faction.description && <p class="subtitle">{faction.description}</p>}
-    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-      <span class="badge {faction.status === 'coming-soon' ? 'badge-wip' : 'badge-complete'}">
+  <div class="faction-sticky-header" id="faction-header">
+    <div class="faction-sticky-top">
+      <div class="faction-sticky-meta">
+        <p class="breadcrumb">
+          <a href="/factions">Factions</a> · {allianceMeta.label}
+        </p>
+        <h1 class="faction-sticky-title">{pageTitle}</h1>
+      </div>
+      <span class={`badge ${faction.status === 'coming-soon' ? 'badge-wip' : 'badge-complete'}`}>
         {faction.status === 'coming-soon' ? 'Coming Soon' : 'Active'}
       </span>
     </div>
+    <nav class="faction-section-buttons" aria-label="Faction sections">
+      <a href="#army-rules" class="faction-section-btn">Army Rules</a>
+      <a href="#detachment-traits" class="faction-section-btn">Detachment Traits</a>
+      <a href="#wargear-upgrades" class="faction-section-btn">Wargear Upgrades</a>
+      <a href="#unit-profiles" class="faction-section-btn">Unit Profiles</a>
+      <a href="#weapon-profiles" class="faction-section-btn">Weapon Profiles</a>
+    </nav>
   </div>
 
   <FactionContent />
 
-  <section id="unit-profiles" style="margin-top: 48px;">
-    <h2>Unit Profiles</h2>
-    {units.length === 0 ? (
-      <p style="color: var(--color-text-muted);">
-        Unit profile data is not available for this faction yet.
-      </p>
-    ) : (
-      Array.from(unitsByCategory.entries()).map(([category, categoryUnits]) => (
-        <div style="margin-bottom: 40px;">
-          <h3>{category}</h3>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 16px;">
-            {categoryUnits.map((unit) => (
-              <article class="datasheet" style="padding: 18px; background: var(--color-surface-1); border: 1px solid var(--color-border);">
-                <div class="datasheet-header">
-                  <div>
-                    <h4 class="datasheet-name">{unit.name}</h4>
-                    <span class="datasheet-category">{unit.category}</span>
-                  </div>
-                  <span class="datasheet-points">{unit.stats?.basePoints ?? '—'} pts</span>
-                </div>
+  <script is:inline define:vars={{ unitMapJson, weaponMapJson }}>
+  (function () {
+    const STATS = ['M','WS','BS','I','A','S','T','W','SV','LD'];
+    const unitMap = JSON.parse(unitMapJson);
 
-                <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 16px;">
-                  {['M','WS','BS','I','A','S','T','W','SV','LD'].map((stat) => (
-                    <div style="border: 1px solid var(--color-border); padding: 10px; text-align: center;">
-                      <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-text-muted);">{stat}</div>
-                      <div style="font-size: 1rem; font-weight: 700;">{unit.stats?.[stat] ?? '—'}</div>
-                    </div>
-                  ))}
-                </div>
+    // Sections that appear in the left column
+    const LEFT_SECTIONS = new Set([
+      'force organization',
+      'unit composition',
+      'standard wargear',
+      'special abilities',
+    ]);
 
-                {unit.keywords && unit.keywords.length > 0 && (
-                  <div style="margin-top: 16px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.5;">
-                    {unit.keywords.join(' · ')}
-                  </div>
-                )}
-              </article>
-            ))}
-          </div>
-        </div>
-      ))
-    )}
-  </section>
+    function slugify(text) {
+      return text.toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/[\s_]+/g, '-')
+        .replace(/-+/g, '-')
+        .trim('-');
+    }
+
+    function buildStatline(unit) {
+      const card = document.createElement('div');
+      card.className = 'up-card';
+
+      if (unit.models && unit.models.length > 0) {
+        // ── Multi-model unit ───────────────────────────────────────────────
+        // Header shows unit-level points if available, otherwise omitted
+        if (unit.stats?.basePoints) {
+          const header = document.createElement('div');
+          header.className = 'up-header';
+          header.innerHTML = `<div class="up-pts">${unit.stats.basePoints} <span>pts base</span></div>`;
+          card.appendChild(header);
+        }
+
+        // One stat row per model variant
+        for (const model of unit.models) {
+          const modelBlock = document.createElement('div');
+          modelBlock.className = 'up-model-block';
+
+          const modelLabel = document.createElement('div');
+          modelLabel.className = 'up-model-label';
+          modelLabel.innerHTML = `
+            <span class="up-model-name">${model.modelName}</span>
+            <span class="up-model-pts">${model.stats?.basePoints ?? '—'} <span>pts</span></span>
+            ${model.stats?.squadSizes ? `<span class="up-squad">Squad: ${model.stats.squadSizes}</span>` : ''}
+          `;
+          modelBlock.appendChild(modelLabel);
+
+          const statRow = document.createElement('div');
+          statRow.className = 'up-stat-row';
+          for (const key of STATS) {
+            const cell = document.createElement('div');
+            cell.className = 'up-stat-cell';
+            const val = model.stats?.[key] ?? '—';
+            cell.innerHTML = `<span class="up-stat-label">${key}</span><span class="up-stat-value">${val}</span>`;
+            statRow.appendChild(cell);
+          }
+          modelBlock.appendChild(statRow);
+          card.appendChild(modelBlock);
+        }
+
+        // Keywords from first model (shared across models typically)
+        const kws = unit.models[0].keywords ?? unit.keywords ?? [];
+        if (kws.length > 0) {
+          const keywordsEl = document.createElement('div');
+          keywordsEl.className = 'up-keywords';
+          keywordsEl.innerHTML = kws.map((kw) => {
+            const kwSlug = slugify(kw);
+            return `<span class="keyword" data-term="${kwSlug}" data-type="keyword">${kw}</span>`;
+          }).join('');
+          card.appendChild(keywordsEl);
+        }
+
+      } else {
+        // ── Single-model unit ──────────────────────────────────────────────
+        const header = document.createElement('div');
+        header.className = 'up-header';
+        header.innerHTML = `
+          <div class="up-pts">${unit.stats?.basePoints ?? '—'} <span>pts</span></div>
+          ${unit.stats?.squadSizes ? `<div class="up-squad">Squad: ${unit.stats.squadSizes}</div>` : ''}
+        `;
+        card.appendChild(header);
+
+        const statRow = document.createElement('div');
+        statRow.className = 'up-stat-row';
+        for (const key of STATS) {
+          const cell = document.createElement('div');
+          cell.className = 'up-stat-cell';
+          const val = unit.stats?.[key] ?? '—';
+          cell.innerHTML = `<span class="up-stat-label">${key}</span><span class="up-stat-value">${val}</span>`;
+          statRow.appendChild(cell);
+        }
+        card.appendChild(statRow);
+
+        if (unit.keywords && unit.keywords.length > 0) {
+          const keywordsEl = document.createElement('div');
+          keywordsEl.className = 'up-keywords';
+          keywordsEl.innerHTML = unit.keywords.map((kw) => {
+            const kwSlug = slugify(kw);
+            return `<span class="keyword" data-term="${kwSlug}" data-type="keyword">${kw}</span>`;
+          }).join('');
+          card.appendChild(keywordsEl);
+        }
+      }
+
+      return card;
+    }
+
+    function buildIndex(categories) {
+      const index = document.createElement('div');
+      index.className = 'up-index';
+
+      const title = document.createElement('div');
+      title.className = 'up-index-title';
+      title.textContent = 'Unit Index';
+      index.appendChild(title);
+
+      const grid = document.createElement('div');
+      grid.className = 'up-index-grid';
+
+      for (const { categoryEl, units } of categories) {
+        const col = document.createElement('div');
+        col.className = 'up-index-col';
+
+        const catLabel = document.createElement('a');
+        catLabel.className = 'up-index-cat';
+        catLabel.href = `#${categoryEl.id}`;
+        catLabel.textContent = categoryEl.textContent.trim();
+        col.appendChild(catLabel);
+
+        for (const unitEl of units) {
+          const link = document.createElement('a');
+          link.className = 'up-index-unit';
+          link.href = `#${unitEl.id}`;
+          link.textContent = unitEl.textContent.trim();
+          col.appendChild(link);
+        }
+
+        grid.appendChild(col);
+      }
+
+      index.appendChild(grid);
+      return index;
+    }
+
+    function wrapUnitContent(h5, allH5s, allH4s) {
+      // Don't wrap twice
+      if (h5.nextElementSibling?.classList.contains('up-card') &&
+          h5.nextElementSibling?.nextElementSibling?.classList.contains('up-content')) {
+        return;
+      }
+
+      // Find the up-card that follows this h5
+      const card = (h5.nextElementSibling?.classList.contains('up-card'))
+        ? h5.nextElementSibling
+        : null;
+
+      const weaponHeading = document.getElementById('weapon-profiles');
+      const weaponProfilesHeading = document.getElementById('weapon-profiles');
+      const stopElements = new Set([...allH5s, ...allH4s]);
+      const contentEls = [];
+      let el = card ? card.nextElementSibling : h5.nextElementSibling;
+
+      while (el) {
+        if (stopElements.has(el)) break;
+        if (weaponHeading && el === weaponHeading) break;
+        if (el.classList?.contains('up-card')) { el = el.nextElementSibling; continue; }
+        contentEls.push(el);
+        el = el.nextElementSibling;
+      }
+
+      if (contentEls.length === 0) return;
+
+      const leftCol = document.createElement('div');
+      leftCol.className = 'up-col up-col-left';
+      const rightCol = document.createElement('div');
+      rightCol.className = 'up-col up-col-right';
+
+      // Default: if first element is not an H6, put everything in left
+      let currentCol = leftCol;
+
+      for (const contentEl of contentEls) {
+        if (contentEl.tagName === 'H6') {
+          const sectionName = contentEl.textContent.trim().toLowerCase();
+          currentCol = LEFT_SECTIONS.has(sectionName) ? leftCol : rightCol;
+        }
+        currentCol.appendChild(contentEl.cloneNode(true));
+      }
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'up-content';
+      wrapper.appendChild(leftCol);
+      wrapper.appendChild(rightCol);
+
+      const insertAfter = card ?? h5;
+      insertAfter.insertAdjacentElement('afterend', wrapper);
+      for (const el of contentEls) {
+        el.remove();
+      }
+    }
+
+    function inject() {
+      const heading = document.getElementById('unit-profiles');
+      if (!heading) return;
+
+      const allH4s = Array.from(document.querySelectorAll('.rules-content h4')).filter((h) => {
+        return heading.compareDocumentPosition(h) & Node.DOCUMENT_POSITION_FOLLOWING;
+      });
+
+      const allH5s = Array.from(document.querySelectorAll('.rules-content h5')).filter((h) => {
+        return heading.compareDocumentPosition(h) & Node.DOCUMENT_POSITION_FOLLOWING;
+      });
+
+      // Group H5 units under their nearest preceding H4 category
+      const categories = [];
+      for (const h4 of allH4s) {
+        const unitsInCat = allH5s.filter((h5) => {
+          const afterH4 = h4.compareDocumentPosition(h5) & Node.DOCUMENT_POSITION_FOLLOWING;
+          if (!afterH4) return false;
+          const h4Index = allH4s.indexOf(h4);
+          const nextH4 = allH4s[h4Index + 1];
+          if (!nextH4) return true;
+          return nextH4.compareDocumentPosition(h5) & Node.DOCUMENT_POSITION_PRECEDING;
+        });
+        categories.push({ categoryEl: h4, units: unitsInCat });
+      }
+
+      // Inject index after the unit-profiles heading
+      if (categories.length > 0 && !document.querySelector('.up-index')) {
+        const index = buildIndex(categories);
+        heading.insertAdjacentElement('afterend', index);
+      }
+
+      // Inject statline cards after each unit H5
+      allH5s.forEach((h5) => {
+        const name = h5.textContent?.trim() ?? '';
+        const unit = unitMap[name.toLowerCase()];
+        if (!unit) return;
+        if (h5.nextElementSibling?.classList.contains('up-card')) return;
+        const card = buildStatline(unit);
+        h5.insertAdjacentElement('afterend', card);
+        if (window.AH_DEFINITIONS && window.__ahAttachTooltips) {
+          window.__ahAttachTooltips(card.querySelectorAll('span.keyword[data-term]'));
+        }
+      });
+
+      // Wrap unit content into two-column layout
+      allH5s.forEach((h5) => {
+        wrapUnitContent(h5, allH5s, allH4s);
+      });
+    }
+
+    // ── Weapon profile injection ───────────────────────────────────────────
+
+    const WPN_STATS = ['Range','A','S','AP','D'];
+
+    function buildWeaponCard(weapon) {
+      const card = document.createElement('div');
+      card.className = 'wp-card';
+
+      if (weapon.profiles && weapon.profiles.length > 0) {
+        // Multi-profile weapon: one stat row per profile
+        if (weapon.points != null) {
+          const header = document.createElement('div');
+          header.className = 'wp-header';
+          header.innerHTML = `<div class="wp-pts">${weapon.points} <span>pts</span></div>`;
+          card.appendChild(header);
+        }
+        for (const profile of weapon.profiles) {
+          const block = document.createElement('div');
+          block.className = 'wp-profile-block';
+
+          const label = document.createElement('div');
+          label.className = 'wp-profile-label';
+          label.innerHTML = `
+            <span class="wp-profile-name">${profile.profileName}</span>
+            ${profile.points != null ? `<span class="wp-pts-inline">${profile.points} <span>pts</span></span>` : ''}
+          `;
+          block.appendChild(label);
+
+          const statRow = document.createElement('div');
+          statRow.className = 'wp-stat-row';
+          const vals = [profile.range, profile.attacks, profile.strength, profile.ap, profile.damage];
+          WPN_STATS.forEach((key, i) => {
+            const cell = document.createElement('div');
+            cell.className = 'wp-stat-cell';
+            cell.innerHTML = `<span class="wp-stat-label">${key}</span><span class="wp-stat-value">${vals[i] ?? '—'}</span>`;
+            statRow.appendChild(cell);
+          });
+
+          const kwCell = document.createElement('div');
+          kwCell.className = 'wp-stat-cell wp-kw-cell';
+          const kws = profile.keywords ?? [];
+          kwCell.innerHTML = `<span class="wp-stat-label">Keywords</span><span class="wp-kw-value">${
+            kws.length > 0
+              ? kws.map(kw => `<span class="keyword" data-term="${slugify(kw)}" data-type="keyword">${kw}</span>`).join('')
+              : '—'
+          }</span>`;
+          statRow.appendChild(kwCell);
+          block.appendChild(statRow);
+          card.appendChild(block);
+        }
+
+      } else {
+        // Single-profile weapon
+        const header = document.createElement('div');
+        header.className = 'wp-header';
+        header.innerHTML = `${weapon.points != null ? `<div class="wp-pts">${weapon.points} <span>pts</span></div>` : ''}`;
+        card.appendChild(header);
+
+        const statRow = document.createElement('div');
+        statRow.className = 'wp-stat-row';
+        const vals = [weapon.range, weapon.attacks, weapon.strength, weapon.ap, weapon.damage];
+        WPN_STATS.forEach((key, i) => {
+          const cell = document.createElement('div');
+          cell.className = 'wp-stat-cell';
+          cell.innerHTML = `<span class="wp-stat-label">${key}</span><span class="wp-stat-value">${vals[i] ?? '—'}</span>`;
+          statRow.appendChild(cell);
+        });
+
+        const kwCell = document.createElement('div');
+        kwCell.className = 'wp-stat-cell wp-kw-cell';
+        const kws = weapon.keywords ?? [];
+        kwCell.innerHTML = `<span class="wp-stat-label">Keywords</span><span class="wp-kw-value">${
+          kws.length > 0
+            ? kws.map(kw => `<span class="keyword" data-term="${slugify(kw)}" data-type="keyword">${kw}</span>`).join('')
+            : '—'
+        }</span>`;
+        statRow.appendChild(kwCell);
+        card.appendChild(statRow);
+      }
+
+      return card;
+    }
+
+    function buildWeaponIndex(sections) {
+      const index = document.createElement('div');
+      index.className = 'wp-index';
+
+      const title = document.createElement('div');
+      title.className = 'wp-index-title';
+      title.textContent = 'Weapon Index';
+      index.appendChild(title);
+
+      const grid = document.createElement('div');
+      grid.className = 'wp-index-grid';
+
+      for (const { sectionName, weapons } of sections) {
+        const col = document.createElement('div');
+        col.className = 'wp-index-col';
+
+        const catLabel = document.createElement('div');
+        catLabel.className = 'wp-index-cat';
+        catLabel.textContent = sectionName;
+        col.appendChild(catLabel);
+
+        for (const weapon of weapons) {
+          const link = document.createElement('a');
+          link.className = 'wp-index-weapon';
+          link.href = `#wpn-${slugify(weapon.name)}`;
+          link.textContent = weapon.name;
+          col.appendChild(link);
+        }
+
+        grid.appendChild(col);
+      }
+
+      index.appendChild(grid);
+      return index;
+    }
+
+    function injectWeapons() {
+      const heading = document.getElementById('weapon-profiles');
+      if (!heading) return;
+      if (document.querySelector('.wp-index')) return;
+
+      const weapons = JSON.parse(weaponMapJson);
+      if (!weapons || weapons.length === 0) return;
+
+      // Group weapons by section
+      const sectionMap = {};
+      const sectionOrder = [];
+      for (const weapon of weapons) {
+        const sec = weapon.section || 'Weapons';
+        if (!sectionMap[sec]) {
+          sectionMap[sec] = [];
+          sectionOrder.push(sec);
+        }
+        sectionMap[sec].push(weapon);
+      }
+      const sections = sectionOrder.map(s => ({ sectionName: s, weapons: sectionMap[s] }));
+
+      // Inject index
+      const index = buildWeaponIndex(sections);
+      heading.insertAdjacentElement('afterend', index);
+
+      // Inject each section heading and weapon cards after the index
+      let insertAfter = index;
+      for (const { sectionName, weapons: sectionWeapons } of sections) {
+        const secHeading = document.createElement('h3');
+        secHeading.className = 'wp-section-heading';
+        secHeading.textContent = sectionName;
+        insertAfter.insertAdjacentElement('afterend', secHeading);
+        insertAfter = secHeading;
+
+        for (const weapon of sectionWeapons) {
+          const wpnHeading = document.createElement('h4');
+          wpnHeading.className = 'wp-weapon-heading';
+          wpnHeading.id = `wpn-${slugify(weapon.name)}`;
+          wpnHeading.textContent = weapon.name;
+          insertAfter.insertAdjacentElement('afterend', wpnHeading);
+          insertAfter = wpnHeading;
+
+          const card = buildWeaponCard(weapon);
+          insertAfter.insertAdjacentElement('afterend', card);
+          insertAfter = card;
+
+          if (window.AH_DEFINITIONS && window.__ahAttachTooltips) {
+            window.__ahAttachTooltips(card.querySelectorAll('span.keyword[data-term]'));
+          }
+        }
+      }
+    }
+
+    // ── Weapon reference tooltips ──────────────────────────────────────────
+
+    function buildWeaponTooltip(weapon) {
+      const tip = document.createElement('div');
+      tip.className = 'ah-ref-tooltip ah-ref-tooltip--weapon';
+
+      const header = document.createElement('div');
+      header.className = 'ah-ref-tooltip__header';
+      header.innerHTML = `
+        <span class="ah-ref-tooltip__type">WEAPON</span>
+        <span class="ah-ref-tooltip__name">${weapon.name}</span>
+      `;
+      tip.appendChild(header);
+
+      if (weapon.profiles && weapon.profiles.length > 0) {
+        for (const profile of weapon.profiles) {
+          const block = document.createElement('div');
+          block.className = 'ah-ref-tooltip__profile-block';
+
+          const profileLabel = document.createElement('div');
+          profileLabel.className = 'ah-ref-tooltip__profile-name';
+          profileLabel.textContent = profile.profileName;
+          block.appendChild(profileLabel);
+
+          const row = document.createElement('div');
+          row.className = 'ah-ref-tooltip__stat-row';
+          const vals = [profile.range, profile.attacks, profile.strength, profile.ap, profile.damage];
+          ['Range','A','S','AP','D'].forEach((k, i) => {
+            const cell = document.createElement('div');
+            cell.className = 'ah-ref-tooltip__stat-cell';
+            cell.innerHTML = `<span class="ah-ref-tooltip__stat-label">${k}</span><span class="ah-ref-tooltip__stat-value">${vals[i] ?? '—'}</span>`;
+            row.appendChild(cell);
+          });
+          block.appendChild(row);
+
+          if (profile.keywords && profile.keywords.length > 0) {
+            const kw = document.createElement('div');
+            kw.className = 'ah-ref-tooltip__keywords';
+            kw.textContent = profile.keywords.join(', ');
+            block.appendChild(kw);
+          }
+          tip.appendChild(block);
+        }
+      } else {
+        const row = document.createElement('div');
+        row.className = 'ah-ref-tooltip__stat-row';
+        const vals = [weapon.range, weapon.attacks, weapon.strength, weapon.ap, weapon.damage];
+        ['Range','A','S','AP','D'].forEach((k, i) => {
+          const cell = document.createElement('div');
+          cell.className = 'ah-ref-tooltip__stat-cell';
+          cell.innerHTML = `<span class="ah-ref-tooltip__stat-label">${k}</span><span class="ah-ref-tooltip__stat-value">${vals[i] ?? '—'}</span>`;
+          row.appendChild(cell);
+        });
+        tip.appendChild(row);
+
+        if (weapon.keywords && weapon.keywords.length > 0) {
+          const kw = document.createElement('div');
+          kw.className = 'ah-ref-tooltip__keywords';
+          kw.textContent = weapon.keywords.join(', ');
+          tip.appendChild(kw);
+        }
+      }
+
+      if (weapon.points != null) {
+        const pts = document.createElement('div');
+        pts.className = 'ah-ref-tooltip__points';
+        pts.innerHTML = `${weapon.points} <span>pts</span>`;
+        tip.appendChild(pts);
+      }
+
+      return tip;
+    }
+
+    function buildWargearTooltip(name, points, bodyHtml) {
+      const tip = document.createElement('div');
+      tip.className = 'ah-ref-tooltip ah-ref-tooltip--wargear';
+
+      const header = document.createElement('div');
+      header.className = 'ah-ref-tooltip__header';
+      header.innerHTML = `
+        <span class="ah-ref-tooltip__type">WARGEAR</span>
+        <span class="ah-ref-tooltip__name">${name}</span>
+        ${points ? `<span class="ah-ref-tooltip__points-inline">${points}</span>` : ''}
+      `;
+      tip.appendChild(header);
+
+      const body = document.createElement('div');
+      body.className = 'ah-ref-tooltip__body';
+      body.innerHTML = bodyHtml;
+      tip.appendChild(body);
+
+      return tip;
+    }
+
+    function positionRefTooltip(tipEl, clientX, clientY) {
+      const pad  = 14;
+      const vpW  = window.innerWidth;
+      const vpH  = window.innerHeight;
+      const tipW = tipEl.offsetWidth  || 340;
+      const tipH = tipEl.offsetHeight || 120;
+
+      let x = clientX + pad;
+      let y = clientY - tipH - pad;
+      if (x + tipW > vpW - 8) x = clientX - tipW - pad;
+      if (y < 8) y = clientY + pad;
+      x = Math.max(8, Math.min(x, vpW - tipW - 8));
+      y = Math.max(8, Math.min(y, vpH - tipH - 8));
+
+      tipEl.style.left = x + 'px';
+      tipEl.style.top  = y + 'px';
+    }
+
+    function attachRefTooltip(el, buildFn) {
+      let tipEl = null;
+
+      el.addEventListener('mouseenter', function (e) {
+        tipEl = buildFn();
+        tipEl.style.position = 'fixed';
+        tipEl.style.zIndex   = '10000';
+        tipEl.style.opacity  = '0';
+        tipEl.style.transition = 'opacity 0.1s ease';
+        document.body.appendChild(tipEl);
+        // Position after append so offsetWidth is available
+        positionRefTooltip(tipEl, e.clientX, e.clientY);
+        tipEl.style.opacity = '1';
+      });
+
+      el.addEventListener('mousemove', function (e) {
+        if (tipEl) positionRefTooltip(tipEl, e.clientX, e.clientY);
+      });
+
+      el.addEventListener('mouseleave', function () {
+        if (tipEl) { tipEl.remove(); tipEl = null; }
+      });
+    }
+
+    function initWeaponRefs() {
+      const weapons = JSON.parse(weaponMapJson);
+      if (!weapons || weapons.length === 0) return;
+
+      // Build lookup by slug
+      const weaponLookup = {};
+      for (const w of weapons) {
+        weaponLookup[slugify(w.name)] = w;
+      }
+
+      document.querySelectorAll('span.weapon-ref[data-weapon]').forEach(function (el) {
+        const weapon = weaponLookup[el.dataset.weapon];
+        if (!weapon) return;
+        attachRefTooltip(el, () => buildWeaponTooltip(weapon));
+      });
+    }
+
+    // ── Wargear reference tooltips ─────────────────────────────────────────
+
+    function initWargearRefs() {
+      // Build wargear lookup from the rendered DOM:
+      // Scope to the ## Wargear Upgrades section (between its H2 and the next H2)
+      const wargearH2 = document.getElementById('wargear-upgrades');
+      if (!wargearH2) return;
+
+      // Find the next H2 after wargear-upgrades to know where to stop
+      const allH2s = Array.from(document.querySelectorAll('.rules-content h2'));
+      const wgIndex = allH2s.indexOf(wargearH2);
+      const nextH2 = allH2s[wgIndex + 1] ?? null;
+
+      // Collect all H6 elements in the wargear section
+      const wargearH6s = Array.from(document.querySelectorAll('.rules-content h6')).filter(h6 => {
+        const afterWg = wargearH2.compareDocumentPosition(h6) & Node.DOCUMENT_POSITION_FOLLOWING;
+        if (!afterWg) return false;
+        if (!nextH2) return true;
+        return nextH2.compareDocumentPosition(h6) & Node.DOCUMENT_POSITION_PRECEDING;
+      });
+
+      // For each H6, extract name + points from the tab-separated heading text,
+      // then collect all sibling elements up to the next H6 as body content
+      const wargearLookup = {};
+
+      wargearH6s.forEach(function (h6, idx) {
+        const rawText = h6.textContent ?? '';
+        const tabIdx  = rawText.indexOf('\t');
+        const name    = tabIdx > -1 ? rawText.slice(0, tabIdx).trim() : rawText.trim();
+        const points  = tabIdx > -1 ? rawText.slice(tabIdx + 1).trim() : '';
+        const slug    = slugify(name);
+
+        // Collect body elements between this H6 and the next H6
+        const nextH6  = wargearH6s[idx + 1] ?? null;
+        const bodyParts = [];
+        let el = h6.nextElementSibling;
+        while (el) {
+          if (nextH2 && el === nextH2) break;
+          if (nextH6 && el === nextH6) break;
+          bodyParts.push(el.outerHTML);
+          el = el.nextElementSibling;
+        }
+
+        wargearLookup[slug] = { name, points, bodyHtml: bodyParts.join('') };
+      });
+
+      document.querySelectorAll('span.wargear-ref[data-wargear]').forEach(function (el) {
+        const entry = wargearLookup[el.dataset.wargear];
+        if (!entry) return;
+        attachRefTooltip(el, () => buildWargearTooltip(entry.name, entry.points, entry.bodyHtml));
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        inject();
+        injectWeapons();
+        initWeaponRefs();
+        initWargearRefs();
+      });
+    } else {
+      inject();
+      injectWeapons();
+      initWeaponRefs();
+      initWargearRefs();
+    }
+
+  })();
+  </script>
 </DocsLayout>

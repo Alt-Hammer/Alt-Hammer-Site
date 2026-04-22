@@ -115,6 +115,21 @@ def is_action_run(run) -> bool:
         return False
     return style.lower() in ('action', 'action1', 'actions', 'actionchar', 'action char')
 
+def is_weapon_run(run) -> bool:
+    """Return True if this run uses the 'Weapon' character style."""
+    style = get_run_style_name(run)
+    if style is None:
+        return False
+    return style.lower() in ('weapon', 'weaponchar', 'weapon char', 'weapon ref', 'weaponref', 'weapon reference')
+
+
+def is_wargear_run(run) -> bool:
+    """Return True if this run uses the 'Wargear' character style."""
+    style = get_run_style_name(run)
+    if style is None:
+        return False
+    return style.lower() in ('wargear', 'wargearchar', 'wargear char', 'wargear ref', 'wargearref', 'wargear reference')
+
 
 # ── Paragraph → Markdown conversion ──────────────────────────────────────────
 
@@ -123,6 +138,8 @@ def runs_to_markdown(paragraph) -> str:
     Convert a paragraph's runs to a Markdown string, preserving:
       - Keyword style → <span class="keyword" data-term="slug" data-type="keyword">text</span>
       - Action style  → <span class="keyword" data-term="slug" data-type="action">text</span>
+      - Weapon style  → <span class="weapon-ref" data-weapon="slug">text</span>
+      - Wargear style → <span class="wargear-ref" data-wargear="slug">text</span>
       - Bold          → **text**
       - Italic        → *text*
 
@@ -142,6 +159,10 @@ def runs_to_markdown(paragraph) -> str:
             classified.append(['keyword', text])
         elif is_action_run(run):
             classified.append(['action', text])
+        elif is_weapon_run(run):
+            classified.append(['weapon', text])
+        elif is_wargear_run(run):
+            classified.append(['wargear', text])
         elif run.bold and run.italic:
             classified.append(['bold-italic', text])
         elif run.bold:
@@ -162,8 +183,8 @@ def runs_to_markdown(paragraph) -> str:
     # ── Step 3: emit markdown ────────────────────────────────────────────────
     parts = []
     for run_type, text in merged:
-        # Whitespace-only keyword/action spans: emit as plain text
-        if run_type in ('keyword', 'action') and not text.strip():
+        # Whitespace-only styled spans: emit as plain text
+        if run_type in ('keyword', 'action', 'weapon', 'wargear') and not text.strip():
             parts.append(text)
             continue
 
@@ -176,6 +197,16 @@ def runs_to_markdown(paragraph) -> str:
             slug = slugify(text.strip())
             parts.append(
                 f'<span class="keyword" data-term="{slug}" data-type="action">{text}</span>'
+            )
+        elif run_type == 'weapon':
+            slug = slugify(text.strip())
+            parts.append(
+                f'<span class="weapon-ref" data-weapon="{slug}">{text}</span>'
+            )
+        elif run_type == 'wargear':
+            slug = slugify(text.strip())
+            parts.append(
+                f'<span class="wargear-ref" data-wargear="{slug}">{text}</span>'
             )
         elif run_type == 'bold-italic':
             parts.append(f'***{text}***')
@@ -239,6 +270,23 @@ def paragraph_to_markdown(paragraph, list_counter: dict) -> str:
     list_counter: dict tracking current number for ordered lists per level,
                   e.g. {0: 3, 1: 1} means level-0 item 3, level-1 item 1
     """
+     # Check if the entire paragraph has a Weapon or Wargear paragraph style applied.
+    # This happens when the user styles a standalone line (e.g. a list option) as
+    # Weapon/Wargear rather than selecting inline text and applying a character style.
+    para_style = paragraph.style.name.lower() if paragraph.style else ''
+    if para_style == 'weapon':
+        raw_text = paragraph.text.strip()
+        if raw_text:
+            slug = slugify(raw_text)
+            return f'<p><span class="weapon-ref" data-weapon="{slug}">{raw_text}</span></p>'
+        return ''
+    elif para_style == 'wargear':
+        raw_text = paragraph.text.strip()
+        if raw_text:
+            slug = slugify(raw_text)
+            return f'<p><span class="wargear-ref" data-wargear="{slug}">{raw_text}</span></p>'
+        return ''
+
     text = runs_to_markdown(paragraph)
     
     if not text.strip():
@@ -320,6 +368,21 @@ def doc_to_markdown_sections(doc_path: str) -> list[dict]:
 
             md_line = paragraph_to_markdown(para, list_counter)
             if md_line:
+                # Insert a blank line between consecutive body paragraphs
+                # to preserve Word's paragraph spacing in the markdown output.
+                # Skip this if the previous line was already blank, a heading,
+                # or a list item (list items manage their own spacing).
+                style_name = para.style.name if para.style else ''
+                is_list = is_list_paragraph(para)
+                if (lines
+                    and lines[-1] != ''
+                    and not lines[-1].startswith('#')
+                    and not lines[-1].startswith('-')
+                    and not lines[-1].startswith('  -')
+                    and not is_list
+                    and not any(lines[-1].startswith(f'{n}.') for n in range(1, 20))
+                ):
+                    lines.append('')
                 lines.append(md_line)
 
     # Save last section

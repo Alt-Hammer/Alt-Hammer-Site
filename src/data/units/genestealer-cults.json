@@ -21,7 +21,8 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Patriarch",
@@ -47,7 +48,8 @@
         "Psyker",
         "Fearless",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Primus",
@@ -70,7 +72,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Magus",
@@ -93,7 +96,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Nexos",
@@ -116,7 +120,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Biophagus",
@@ -139,7 +144,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Benefictus",
@@ -162,7 +168,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Clamavus",
@@ -185,7 +192,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Locus",
@@ -208,7 +216,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Reductus Saboteur",
@@ -231,7 +240,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Sanctus",
@@ -254,7 +264,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kelermorph",
@@ -262,7 +273,7 @@
       "stats": {
         "M": "7\"",
         "WS": 4,
-        "BS": 5,
+        "BS": 6,
         "I": 5,
         "A": 3,
         "S": 3,
@@ -277,7 +288,8 @@
         "Genestealer Cults",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Neophytes",
@@ -301,7 +313,8 @@
         "Infantry",
         "Battleline",
         "Bodyguard"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Acolytes",
@@ -324,7 +337,8 @@
         "Genestealer Cults",
         "Infantry",
         "Battleline"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Genestealers",
@@ -349,7 +363,8 @@
         "Infiltrators",
         "Fearless",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Aberrants",
@@ -372,101 +387,30 @@
         "Genestealer Cults",
         "Infantry",
         "Feel No Pain 5+"
-      ]
-    },
-    {
-      "name": "Aberrants - Abominant",
-      "category": "Infantry",
-      "stats": {
-        "M": "5\"",
-        "WS": 5,
-        "BS": 2,
-        "I": 4,
-        "A": 5,
-        "S": 6,
-        "T": 6,
-        "W": 7,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 45,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Infantry",
-        "Feel No Pain 5+"
-      ]
-    },
-    {
-      "name": "Jackals",
-      "category": "Mounted",
-      "stats": {
-        "M": "12\"",
-        "WS": 3,
-        "BS": 3,
-        "I": 3,
-        "A": 3,
-        "S": 2,
-        "T": 3,
-        "W": 2,
-        "SV": "4+",
-        "LD": "8+",
-        "basePoints": 12,
-        "squadSizes": "5 to 10"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Infantry",
-        "Mounted",
-        "Scout 8\""
-      ]
-    },
-    {
-      "name": "Jackals - Wolfquad",
-      "category": "Mounted",
-      "stats": {
-        "M": "12\"",
-        "WS": 3,
-        "BS": 3,
-        "I": 3,
-        "A": 3,
-        "S": 2,
-        "T": 4,
-        "W": 5,
-        "SV": "4+",
-        "LD": "8+",
-        "basePoints": 20,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Infantry",
-        "Mounted",
-        "Scout 8\""
-      ]
-    },
-    {
-      "name": "Jackals - Alphus",
-      "category": "Mounted",
-      "stats": {
-        "M": "12\"",
-        "WS": 4,
-        "BS": 6,
-        "I": 4,
-        "A": 3,
-        "S": 3,
-        "T": 3,
-        "W": 5,
-        "SV": "4+",
-        "LD": "6+",
-        "basePoints": 35,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Infantry",
-        "Mounted",
-        "Scout 8\""
+      ],
+      "models": [
+        {
+          "modelName": "Abominant",
+          "stats": {
+            "M": "5\"",
+            "WS": 5,
+            "BS": 2,
+            "I": 4,
+            "A": 5,
+            "S": 6,
+            "T": 6,
+            "W": 7,
+            "SV": "2+",
+            "LD": "5+",
+            "basePoints": 45,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Infantry",
+            "Feel No Pain 5+"
+          ]
+        }
       ]
     },
     {
@@ -490,79 +434,8 @@
         "Genestealer Cults",
         "Vehicle",
         "Scout 8\""
-      ]
-    },
-    {
-      "name": "Ridgehauler",
-      "category": "Vehicles",
-      "stats": {
-        "M": "12\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 1,
-        "A": 6,
-        "S": 6,
-        "T": 8,
-        "W": 16,
-        "SV": "3+",
-        "LD": "6+",
-        "basePoints": 120,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Vehicle",
-        "Transport 20",
-        "Firing Deck 20"
-      ]
-    },
-    {
-      "name": "Ridgehauler - Ironcrawler",
-      "category": "Vehicles",
-      "stats": {
-        "M": "10\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 1,
-        "A": 6,
-        "S": 8,
-        "T": 11,
-        "W": 16,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 50,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Vehicle",
-        "Transport 20",
-        "Firing Deck 10"
-      ]
-    },
-    {
-      "name": "Ridgehauler Trailer",
-      "category": "Vehicles",
-      "stats": {
-        "M": "-",
-        "WS": "-",
-        "BS": "-",
-        "I": "-",
-        "A": "-",
-        "S": "-",
-        "T": 8,
-        "W": 6,
-        "SV": "4+",
-        "LD": "-",
-        "basePoints": 60,
-        "squadSizes": "1 to 2"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Vehicle",
-        "Transport 20",
-        "Firing Deck 20"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Goliath Truck",
@@ -586,26 +459,180 @@
         "Vehicle",
         "Transport 12",
         "Firing Deck 12"
+      ],
+      "models": null
+    },
+    {
+      "name": "Jackals",
+      "category": "Mounted",
+      "stats": null,
+      "keywords": [
+        "Genestealer Cults",
+        "Infantry",
+        "Mounted",
+        "Scout 8\""
+      ],
+      "models": [
+        {
+          "modelName": "Jackal",
+          "stats": {
+            "M": "12\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 3,
+            "A": 3,
+            "S": 2,
+            "T": 3,
+            "W": 2,
+            "SV": "4+",
+            "LD": "8+",
+            "basePoints": 12,
+            "squadSizes": "5 to 10"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Infantry",
+            "Mounted",
+            "Scout 8\""
+          ]
+        },
+        {
+          "modelName": "Wolfquad",
+          "stats": {
+            "M": "12\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 3,
+            "A": 3,
+            "S": 2,
+            "T": 4,
+            "W": 5,
+            "SV": "4+",
+            "LD": "8+",
+            "basePoints": 20,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Infantry",
+            "Mounted",
+            "Scout 8\""
+          ]
+        },
+        {
+          "modelName": "Alphus",
+          "stats": {
+            "M": "12\"",
+            "WS": 4,
+            "BS": 6,
+            "I": 4,
+            "A": 3,
+            "S": 3,
+            "T": 3,
+            "W": 5,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 35,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Infantry",
+            "Mounted",
+            "Scout 8\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ridgehauler",
+      "category": "Vehicles",
+      "stats": null,
+      "keywords": [
+        "Genestealer Cults",
+        "Vehicle",
+        "Transport 20",
+        "Firing Deck 20"
+      ],
+      "models": [
+        {
+          "modelName": "Ridgehauler",
+          "stats": {
+            "M": "12\"",
+            "WS": 2,
+            "BS": 3,
+            "I": 1,
+            "A": 6,
+            "S": 6,
+            "T": 9,
+            "W": 16,
+            "SV": "3+",
+            "LD": "6+",
+            "basePoints": 120,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Vehicle",
+            "Transport 20",
+            "Firing Deck 20"
+          ]
+        },
+        {
+          "modelName": "Ironcrawler",
+          "stats": {
+            "M": "10\"",
+            "WS": 2,
+            "BS": 3,
+            "I": 1,
+            "A": 6,
+            "S": 8,
+            "T": 11,
+            "W": 16,
+            "SV": "2+",
+            "LD": "5+",
+            "basePoints": 50,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Vehicle",
+            "Transport 20",
+            "Firing Deck 10"
+          ]
+        },
+        {
+          "modelName": "Ridgehauler Trailer",
+          "stats": {
+            "M": "-",
+            "WS": "-",
+            "BS": "-",
+            "I": "-",
+            "A": "-",
+            "S": "-",
+            "T": 8,
+            "W": 6,
+            "SV": "4+",
+            "LD": "-",
+            "basePoints": 60,
+            "squadSizes": "1 to 2"
+          },
+          "keywords": [
+            "Genestealer Cults",
+            "Vehicle",
+            "Transport 20",
+            "Firing Deck 20"
+          ]
+        }
       ]
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Needle Pistol",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 4,
@@ -616,26 +643,13 @@
         "Precision",
         "Anti-INFANTRY 3+",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Lash Whips - Shooting",
-      "points": 6,
-      "range": "6\"",
-      "attacks": "A",
-      "strength": "S",
-      "ap": -2,
-      "damage": "1",
-      "keywords": [
-        "Pistol",
-        "Lethal Hits"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Wheelgun",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "9\"",
       "attacks": "1",
       "strength": 3,
@@ -643,12 +657,13 @@
       "damage": "2",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autopistol",
+      "section": "Weapons",
       "points": 1,
+      "profiles": null,
       "range": "12\"",
       "attacks": "2",
       "strength": 2,
@@ -656,12 +671,13 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autogun",
+      "section": "Weapons",
       "points": 2,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 2,
@@ -670,12 +686,13 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Autogun",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "30\"",
       "attacks": "2",
       "strength": 4,
@@ -684,12 +701,13 @@
       "keywords": [
         "Heavy",
         "Rapid Fire 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autocannon",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "48\"",
       "attacks": "2",
       "strength": 7,
@@ -697,12 +715,13 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Shotgun",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "4\"",
       "attacks": "2",
       "strength": 4,
@@ -713,12 +732,13 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Sniper Rifle",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "48\"",
       "attacks": "1",
       "strength": 3,
@@ -729,12 +749,13 @@
         "Heavy",
         "Anti-INFANTRY 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Hand Flamer",
+      "section": "Weapons",
       "points": 5,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+1",
       "strength": 3,
@@ -744,12 +765,13 @@
         "Pistol",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Flamer",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
       "strength": 3,
@@ -759,12 +781,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Flamer",
+      "section": "Weapons",
       "points": 15,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+4",
       "strength": 4,
@@ -774,12 +797,13 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Chem Cannon",
+      "section": "Weapons",
       "points": 35,
+      "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
       "strength": 3,
@@ -791,55 +815,13 @@
         "Anti-INFANTRY 2+",
         "Ignores Cover",
         "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Grenade Launcher - Frag",
-      "points": 8,
-      "range": "24\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Grenade Launcher - Krak",
-      "points": null,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Assault",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher - Frag",
-      "points": 15,
-      "range": "48\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Webber",
+      "section": "Weapons",
       "points": 6,
+      "profiles": null,
       "range": "9\"",
       "attacks": "D6+3",
       "strength": 3,
@@ -847,12 +829,13 @@
       "damage": "0",
       "keywords": [
         "Ensnare"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Seismic Cannon",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "18\"",
       "attacks": "2",
       "strength": 5,
@@ -862,12 +845,13 @@
         "Heavy",
         "Rapid Fire 2",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Heavy Seismic Cannon",
+      "section": "Weapons",
       "points": 35,
+      "profiles": null,
       "range": "24\"",
       "attacks": "3",
       "strength": 6,
@@ -877,12 +861,13 @@
         "Heavy",
         "Rapid Fire 3",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Mining Laser",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "24\"",
       "attacks": "1",
       "strength": 9,
@@ -891,12 +876,13 @@
       "keywords": [
         "Heavy",
         "Beam 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Boring Laser",
+      "section": "Weapons",
       "points": 70,
+      "profiles": null,
       "range": "48\"",
       "attacks": "D3",
       "strength": 20,
@@ -909,12 +895,13 @@
         "Anti-MONSTER 3+",
         "Anti-FORTIFICATION 2+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Gryphon Heavy Mortar",
+      "section": "Weapons",
       "points": 40,
+      "profiles": null,
       "range": "18\"-48\"",
       "attacks": "2D6",
       "strength": 5,
@@ -925,12 +912,13 @@
         "Indirect Fire",
         "Blast 3\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Remote-detonated Explosives",
+      "section": "Weapons",
       "points": 25,
+      "profiles": null,
       "range": "6\"-18\"",
       "attacks": "D3",
       "strength": 12,
@@ -942,48 +930,25 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Improvised Melee Weapon",
+      "section": "Weapons",
       "points": 1,
+      "profiles": null,
       "range": "-",
       "attacks": "A+1",
       "strength": "S",
       "ap": "0",
       "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Improvised Cudgel - Sweep",
-      "points": 10,
-      "range": "-",
-      "attacks": "A+3",
-      "strength": "S",
-      "ap": 0,
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Improvised Cudgel - Smash",
-      "points": null,
-      "range": "-",
-      "attacks": "A-1",
-      "strength": "S+3",
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Heavy",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Cult Blade",
+      "section": "Weapons",
       "points": 3,
+      "profiles": null,
       "range": "-",
       "attacks": "A+1",
       "strength": "S",
@@ -991,12 +956,13 @@
       "damage": "1",
       "keywords": [
         "Precision"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rending Claws",
+      "section": "Weapons",
       "points": 8,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1005,27 +971,13 @@
       "keywords": [
         "Sustained Hits 1",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Lash Whips - Melee",
-      "points": 6,
-      "range": "-",
-      "attacks": "A",
-      "strength": -2,
-      "ap": -2,
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks",
-        "Lethal Hits",
-        "Anti-INFANTRY 3+"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Mining Pick",
+      "section": "Weapons",
       "points": 12,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S+2",
@@ -1033,12 +985,13 @@
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rock Grinder",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "-",
       "attacks": "1",
       "strength": "9",
@@ -1046,12 +999,13 @@
       "damage": "2D6",
       "keywords": [
         "Sustained Hits 3"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Rock Cutter",
+      "section": "Weapons",
       "points": 20,
+      "profiles": null,
       "range": "-",
       "attacks": "D3+1",
       "strength": 7,
@@ -1059,39 +1013,13 @@
       "damage": "3",
       "keywords": [
         "Sustained Hits 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Seismic Hammer - Sweep",
-      "points": 20,
-      "range": "-",
-      "attacks": "A+2",
-      "strength": "S",
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Seismic Hammer - Smash",
-      "points": null,
-      "range": "-",
-      "attacks": "A-2",
-      "strength": "S+5",
-      "ap": -2,
-      "damage": "D6+2",
-      "keywords": [
-        "Heavy",
-        "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Toxinjector Claw",
+      "section": "Weapons",
       "points": 10,
+      "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S",
@@ -1101,45 +1029,46 @@
         "Extra Attacks",
         "Anti-INFANTRY 4+",
         "Poison 1"
-      ],
-      "availability": ""
+      ]
     },
     {
-      "name": "Warp Blast - Focused Witchfire",
-      "points": "-",
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -4,
-      "damage": "5",
+      "name": "Force Weapon",
+      "section": "Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": "-",
+      "damage": "3",
       "keywords": [
-        "Beam D3",
-        "Hazardous D3",
-        "Anti-PSYKER 2+",
+        "Precision",
+        "Anti-PSYKER 3+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
-      "name": "Warp Blast - Witchfire",
-      "points": "-",
-      "range": "8\"",
-      "attacks": "D6+4",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
+      "name": "Dozer-Grinder",
+      "section": "Weapons",
+      "points": 25,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A+3",
+      "strength": "S+5",
+      "ap": "-2",
+      "damage": "D6+1",
       "keywords": [
-        "Pistol",
-        "Torrent",
-        "Anti-PSYKER 4+",
-        "Devastating Wounds",
-        "Ignores Cover"
-      ],
-      "availability": ""
+        "Sustained Hits 2",
+        "Anti-Fortification 3+",
+        "Anti-VEHICLE 3+",
+        "Devastating Wounds"
+      ]
     },
     {
       "name": "Neuroparasite",
+      "section": "Psychic Attacks",
       "points": "-",
+      "profiles": null,
       "range": "18\"",
       "attacks": "3",
       "strength": "6",
@@ -1151,12 +1080,13 @@
         "Anti-PSYKER 2+",
         "Devastating Wounds",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Mining Explosives",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "D3",
       "strength": 4,
@@ -1165,12 +1095,13 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Demolition Charge",
+      "section": "Grenades",
       "points": 8,
+      "profiles": null,
       "range": "1\"",
       "attacks": "1",
       "strength": 12,
@@ -1181,12 +1112,13 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Smoke Grenades",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "1",
       "strength": "-",
@@ -1194,8 +1126,248 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
+      ]
+    },
+    {
+      "name": "Lash Whips",
+      "section": "Weapons",
+      "points": 6,
+      "profiles": [
+        {
+          "profileName": "Shooting",
+          "points": 6,
+          "range": "6\"",
+          "attacks": "A",
+          "strength": "S",
+          "ap": -2,
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Lethal Hits"
+          ]
+        },
+        {
+          "profileName": "Melee",
+          "points": 6,
+          "range": "-",
+          "attacks": "A",
+          "strength": -2,
+          "ap": -2,
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks",
+            "Lethal Hits",
+            "Anti-INFANTRY 3+"
+          ]
+        }
       ],
-      "availability": ""
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol",
+        "Lethal Hits"
+      ]
+    },
+    {
+      "name": "Grenade Launcher",
+      "section": "Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 8,
+          "range": "24\"",
+          "attacks": "D6",
+          "strength": 3,
+          "ap": 0,
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Blast 1\"",
+            "Ignores Cover"
+          ]
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": 8,
+          "ap": -1,
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ]
+    },
+    {
+      "name": "Missile Launcher",
+      "section": "Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ]
+    },
+    {
+      "name": "Improvised Cudgel",
+      "section": "Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 10,
+          "range": "-",
+          "attacks": "A+3",
+          "strength": "S",
+          "ap": 0,
+          "damage": "1",
+          "keywords": []
+        },
+        {
+          "profileName": "Smash",
+          "points": null,
+          "range": "-",
+          "attacks": "A-1",
+          "strength": "S+3",
+          "ap": -1,
+          "damage": "3",
+          "keywords": [
+            "Heavy",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": []
+    },
+    {
+      "name": "Seismic Hammer",
+      "section": "Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 20,
+          "range": "-",
+          "attacks": "A+2",
+          "strength": "S",
+          "ap": -1,
+          "damage": "2",
+          "keywords": [
+            "Devastating Wounds"
+          ]
+        },
+        {
+          "profileName": "Smash",
+          "points": null,
+          "range": "-",
+          "attacks": "A-2",
+          "strength": "S+5",
+          "ap": -2,
+          "damage": "D6+2",
+          "keywords": [
+            "Heavy",
+            "Devastating Wounds"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Devastating Wounds"
+      ]
+    },
+    {
+      "name": "Warp Blast",
+      "section": "Psychic Attacks",
+      "points": "-",
+      "profiles": [
+        {
+          "profileName": "Focused Witchfire",
+          "points": "-",
+          "range": "18\"",
+          "attacks": "1",
+          "strength": 12,
+          "ap": -4,
+          "damage": "5",
+          "keywords": [
+            "Beam D3",
+            "Hazardous D3",
+            "Anti-PSYKER 2+",
+            "Devastating Wounds"
+          ]
+        },
+        {
+          "profileName": "Witchfire",
+          "points": "-",
+          "range": "8\"",
+          "attacks": "D6+4",
+          "strength": 3,
+          "ap": -1,
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Torrent",
+            "Anti-PSYKER 4+",
+            "Devastating Wounds",
+            "Ignores Cover"
+          ]
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Beam D3",
+        "Hazardous D3",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds"
+      ]
     }
   ]
 }

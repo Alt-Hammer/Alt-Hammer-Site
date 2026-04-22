@@ -21,7 +21,8 @@
       },
       "keywords": [
         "Keywords"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kâhl",
@@ -44,7 +45,8 @@
         "Leagues of Votann",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Grimnyr",
@@ -67,7 +69,8 @@
         "Leagues of Votann",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Einhyr Champion",
@@ -90,7 +93,8 @@
         "Leagues of Votann",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Brôkhyr Iron-master",
@@ -113,7 +117,8 @@
         "Leagues of Votann",
         "Infantry",
         "Character"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hearthkyn Warriors",
@@ -135,7 +140,8 @@
       "keywords": [
         "Leagues of Votann",
         "Infantry"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hernkyn Yaegirs",
@@ -159,7 +165,8 @@
         "Infantry",
         "Infiltrators",
         "Scout 6\""
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Cthonian Beserks",
@@ -184,7 +191,8 @@
         "Relentless",
         "Fearless",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Brôkhyr Thunderkyn",
@@ -206,7 +214,8 @@
       "keywords": [
         "Leagues of Votann",
         "Infantry"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Einhyr Hearthguard",
@@ -230,7 +239,8 @@
         "Infantry",
         "Bodyguard",
         "Invulnerable Save 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Cthonian Earthshakers",
@@ -253,7 +263,8 @@
         "Leagues of Votann",
         "Infantry",
         "Artillery"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Ironkin Steeljacks",
@@ -276,7 +287,8 @@
         "Leagues of Votann",
         "Infantry",
         "Feel No Pain 5+"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hernkyn Pioneers",
@@ -301,7 +313,8 @@
         "Mounted",
         "Scout 8\"",
         "Hover"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Hekaton Land Fortress",
@@ -324,7 +337,8 @@
         "Leagues of Votann",
         "Vehicle",
         "Transport 25"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Kapricus",
@@ -350,7 +364,8 @@
         "Hover",
         "Transport 6",
         "Firing Deck 6"
-      ]
+      ],
+      "models": null
     },
     {
       "name": "Sagitaur",
@@ -374,48 +389,40 @@
         "Vehicle",
         "Scout 8\"",
         "Transport 6"
-      ]
+      ],
+      "models": null
     }
   ],
   "weapons": [
     {
-      "name": "Name",
-      "points": "Points Cost",
-      "range": "Range",
-      "attacks": "Attacks",
-      "strength": "Strength",
-      "ap": "Armour Piercing",
-      "damage": "Damage",
-      "keywords": [
-        "Keywords"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Autoch Revolver",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "9\"",
       "attacks": "1",
       "strength": 4,
       "ap": -1,
       "damage": "3",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Autoch Pistol",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "12\"",
       "attacks": "1",
       "strength": 4,
       "ap": -1,
       "damage": "2",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Autoch Bolter",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "18\"",
       "attacks": "1",
       "strength": 4,
@@ -423,12 +430,13 @@
       "damage": "2",
       "keywords": [
         "Rapid Fire 2"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autoch Shotgun",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "4\"",
       "attacks": "2",
       "strength": 4,
@@ -439,12 +447,13 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autoch Sniper Rifle",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "60\"",
       "attacks": "1",
       "strength": 4,
@@ -455,12 +464,13 @@
         "Heavy",
         "Anti-INFANTRY 4+",
         "Devastating Wounds"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Autoch Cannon",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "36\"",
       "attacks": "3",
       "strength": 5,
@@ -469,12 +479,13 @@
       "keywords": [
         "Heavy",
         "Sustained Hits 1"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Ion Pistol",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "18\"",
       "attacks": "3",
       "strength": 2,
@@ -482,12 +493,13 @@
       "damage": "1",
       "keywords": [
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Ion Blaster",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "24\"",
       "attacks": "3",
       "strength": 2,
@@ -495,23 +507,25 @@
       "damage": "1",
       "keywords": [
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "HYLas Rifle",
+      "section": "Weapons",
       "points": null,
+      "profiles": null,
       "range": "30\"",
       "attacks": "2",
       "strength": 3,
       "ap": -1,
       "damage": "1",
-      "keywords": [],
-      "availability": ""
+      "keywords": []
     },
     {
       "name": "Mining Explosives",
+      "section": "Grenades",
       "points": 2,
+      "profiles": null,
       "range": "S+3\"",
       "attacks": "D3",
       "strength": 4,
@@ -520,12 +534,13 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     },
     {
       "name": "Demolition Charge",
+      "section": "Grenades",
       "points": 8,
+      "profiles": null,
       "range": "1\"",
       "attacks": "1",
       "strength": 12,
@@ -536,8 +551,7 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ],
-      "availability": ""
+      ]
     }
   ]
 }

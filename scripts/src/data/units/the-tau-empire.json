@@ -1,6 +1,6 @@
 {
   "faction": "Tau Empire",
-  "slug": "tau-empire",
+  "slug": "the-tau-empire",
   "units": [
     {
       "name": "Name",
@@ -21,8 +21,7 @@
       },
       "keywords": [
         "Keywords"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Shas'O",
@@ -49,8 +48,7 @@
         "Walker",
         "Jump Pack",
         "Deep Strike"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Shas'vre",
@@ -77,8 +75,7 @@
         "Walker",
         "Jump Pack",
         "Deep Strike"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Fireblade",
@@ -102,8 +99,7 @@
         "Infantry",
         "Character",
         "Leader"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Ethereal",
@@ -127,8 +123,7 @@
         "Infantry",
         "Character",
         "Leader"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Kroot Shaper",
@@ -153,8 +148,101 @@
         "Infantry",
         "Character",
         "Leader"
-      ],
-      "models": null
+      ]
+    },
+    {
+      "name": "Fire Warriors - Shas-la",
+      "category": "Battleline",
+      "stats": {
+        "M": "5\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 3,
+        "squadSizes": "4 to 9"
+      },
+      "keywords": [
+        "T'au",
+        "Infantry",
+        "Battleline"
+      ]
+    },
+    {
+      "name": "Fire Warriors - Shas-ui",
+      "category": "Battleline",
+      "stats": {
+        "M": "5\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 5,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "T'au",
+        "Infantry",
+        "Battleline"
+      ]
+    },
+    {
+      "name": "Pathfinders - Shas-la",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "8+",
+        "basePoints": 4,
+        "squadSizes": "2 to 9"
+      },
+      "keywords": [
+        "T'au",
+        "Infantry",
+        "Infiltrators",
+        "Scout 5\""
+      ]
+    },
+    {
+      "name": "Pathfinders - Shas-ui",
+      "category": "Infantry",
+      "stats": {
+        "M": "5\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "4+",
+        "LD": "7+",
+        "basePoints": 7,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "T'au",
+        "Infantry",
+        "Infiltrators",
+        "Scout 5\""
+      ]
     },
     {
       "name": "Firesight Marksman",
@@ -177,8 +265,7 @@
         "T'au",
         "Infantry",
         "Infiltrators"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Steath Team",
@@ -205,8 +292,7 @@
         "Stealth",
         "Deep Strike",
         "Scout 6\""
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Kroot Carnivores",
@@ -230,8 +316,7 @@
         "Kroot",
         "Infantry",
         "Scout 7\""
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Vespid Stingwings",
@@ -256,8 +341,7 @@
         "Infantry",
         "Fly",
         "Deep Strike"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Drone",
@@ -281,8 +365,7 @@
         "Infantry",
         "Hover",
         "Fearless"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Kroot Hounds",
@@ -307,8 +390,7 @@
         "Beast",
         "Unyielding",
         "Fearless"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Kalamandras Riders",
@@ -333,8 +415,7 @@
         "Infantry",
         "Mounted",
         "Invulnerable Save 5+"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Krootox Riders",
@@ -358,8 +439,7 @@
         "Kroot",
         "Monster",
         "Feel No Pain 5+"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Crisis Team",
@@ -384,8 +464,7 @@
         "Walker",
         "Jump Pack",
         "Deep Strike"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Broadside Team",
@@ -408,8 +487,7 @@
         "T'au",
         "Infantry",
         "Walker"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Ghostkeel Battlesuit",
@@ -434,8 +512,7 @@
         "Walker",
         "Jump Pack",
         "Stealth"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Riptide Battlesuit",
@@ -459,8 +536,7 @@
         "Vehicle",
         "Walker",
         "Jump Pack"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Stormsurge Battlesuit",
@@ -484,8 +560,7 @@
         "Vehicle",
         "Walker",
         "Titanic"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Piranhas",
@@ -508,8 +583,7 @@
         "T'au",
         "Vehicle",
         "Hover"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Hammerhead Gunship",
@@ -532,8 +606,7 @@
         "T'au",
         "Vehicle",
         "Hover"
-      ],
-      "models": null
+      ]
     },
     {
       "name": "Devilfish",
@@ -557,122 +630,6 @@
         "Vehicle",
         "Hover",
         "Transport 12"
-      ],
-      "models": null
-    },
-    {
-      "name": "Fire Warriors",
-      "category": "Battleline",
-      "stats": null,
-      "keywords": [
-        "T'au",
-        "Infantry",
-        "Battleline"
-      ],
-      "models": [
-        {
-          "modelName": "Shas-la",
-          "stats": {
-            "M": "5\"",
-            "WS": 2,
-            "BS": 3,
-            "I": 2,
-            "A": 1,
-            "S": 2,
-            "T": 2,
-            "W": 1,
-            "SV": "4+",
-            "LD": "8+",
-            "basePoints": 3,
-            "squadSizes": "4 to 9"
-          },
-          "keywords": [
-            "T'au",
-            "Infantry",
-            "Battleline"
-          ]
-        },
-        {
-          "modelName": "Shas-ui",
-          "stats": {
-            "M": "5\"",
-            "WS": 3,
-            "BS": 4,
-            "I": 3,
-            "A": 2,
-            "S": 2,
-            "T": 2,
-            "W": 1,
-            "SV": "4+",
-            "LD": "7+",
-            "basePoints": 5,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "T'au",
-            "Infantry",
-            "Battleline"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Pathfinders",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "T'au",
-        "Infantry",
-        "Infiltrators",
-        "Scout 5\""
-      ],
-      "models": [
-        {
-          "modelName": "Shas-la",
-          "stats": {
-            "M": "5\"",
-            "WS": 2,
-            "BS": 3,
-            "I": 2,
-            "A": 1,
-            "S": 2,
-            "T": 2,
-            "W": 1,
-            "SV": "4+",
-            "LD": "8+",
-            "basePoints": 4,
-            "squadSizes": "2 to 9"
-          },
-          "keywords": [
-            "T'au",
-            "Infantry",
-            "Infiltrators",
-            "Scout 5\""
-          ]
-        },
-        {
-          "modelName": "Shas-ui",
-          "stats": {
-            "M": "5\"",
-            "WS": 3,
-            "BS": 4,
-            "I": 3,
-            "A": 2,
-            "S": 2,
-            "T": 2,
-            "W": 1,
-            "SV": "4+",
-            "LD": "7+",
-            "basePoints": 7,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "T'au",
-            "Infantry",
-            "Infiltrators",
-            "Scout 5\""
-          ]
-        }
       ]
     }
   ],
