@@ -404,7 +404,8 @@
       "strength": 4,
       "ap": -1,
       "damage": "3",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Autoch Pistol",
@@ -416,7 +417,8 @@
       "strength": 4,
       "ap": -1,
       "damage": "2",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Autoch Bolter",
@@ -430,7 +432,8 @@
       "damage": "2",
       "keywords": [
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autoch Shotgun",
@@ -447,7 +450,8 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autoch Sniper Rifle",
@@ -464,7 +468,8 @@
         "Heavy",
         "Anti-INFANTRY 4+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autoch Cannon",
@@ -479,7 +484,8 @@
       "keywords": [
         "Heavy",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Ion Pistol",
@@ -493,7 +499,8 @@
       "damage": "1",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Ion Blaster",
@@ -507,7 +514,8 @@
       "damage": "1",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "HYLas Rifle",
@@ -519,7 +527,8 @@
       "strength": 3,
       "ap": -1,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Mining Explosives",
@@ -534,7 +543,8 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Demolition Charge",
@@ -551,7 +561,8 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     }
   ]
 }

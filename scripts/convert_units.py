@@ -270,15 +270,16 @@ def convert_units(xlsx_path: str, output_dir: str):
                 wpn_attacks = clean_str(cell_val(row, COL_WPN_A, ''))
                 if wpn_range or wpn_attacks:
                     raw_weapons.append({
-                        'name':     wpn_name,
-                        'section':  current_weapon_section,
-                        'points':   cell_val(row, COL_WPN_PTS,      None),
-                        'range':    wpn_range,
-                        'attacks':  wpn_attacks,
-                        'strength': cell_val(row, COL_WPN_S,       None),
-                        'ap':       cell_val(row, COL_WPN_AP,      None),
-                        'damage':   clean_str(cell_val(row, COL_WPN_D, '')),
-                        'keywords': parse_keywords(cell_val(row, COL_WPN_KEYWORDS)),
+                        'name':         wpn_name,
+                        'section':      current_weapon_section,
+                        'points':       cell_val(row, COL_WPN_PTS,      None),
+                        'range':        wpn_range,
+                        'attacks':      wpn_attacks,
+                        'strength':     cell_val(row, COL_WPN_S,       None),
+                        'ap':           cell_val(row, COL_WPN_AP,      None),
+                        'damage':       clean_str(cell_val(row, COL_WPN_D, '')),
+                        'keywords':     parse_keywords(cell_val(row, COL_WPN_KEYWORDS)),
+                        'availability': clean_str(cell_val(row, COL_WPN_AVAIL, '')),
                     })
 
         # ── Pass 2: group variant rows under parent unit entries ───────────
@@ -404,6 +405,7 @@ def convert_units(xlsx_path: str, output_dir: str):
                     'ap':          raw['ap'],
                     'damage':      raw['damage'],
                     'keywords':    raw['keywords'],
+                    'availability': raw['availability'],
                 })
             else:
                 plain_weapons.append(raw)
@@ -424,42 +426,45 @@ def convert_units(xlsx_path: str, output_dir: str):
             if name in profile_bases:
                 profiles = [
                     {
-                        'profileName': p['profileName'],
-                        'points':      p['points'],
-                        'range':       p['range'],
-                        'attacks':     p['attacks'],
-                        'strength':    p['strength'],
-                        'ap':          p['ap'],
-                        'damage':      p['damage'],
-                        'keywords':    p['keywords'],
+                        'profileName':  p['profileName'],
+                        'points':       p['points'],
+                        'range':        p['range'],
+                        'attacks':      p['attacks'],
+                        'strength':     p['strength'],
+                        'ap':           p['ap'],
+                        'damage':       p['damage'],
+                        'keywords':     p['keywords'],
+                        'availability': p['availability'],
                     }
                     for p in profile_bases[name]
                 ]
                 weapons.append({
-                    'name':     name,
-                    'section':  raw['section'],
-                    'points':   raw['points'],
-                    'profiles': profiles,
-                    'range':    None,
-                    'attacks':  None,
-                    'strength': None,
-                    'ap':       None,
-                    'damage':   None,
-                    'keywords': raw['keywords'],
+                    'name':         name,
+                    'section':      raw['section'],
+                    'points':       raw['points'],
+                    'profiles':     profiles,
+                    'range':        None,
+                    'attacks':      None,
+                    'strength':     None,
+                    'ap':           None,
+                    'damage':       None,
+                    'keywords':     raw['keywords'],
+                    'availability': raw['availability'],
                 })
                 added_weapon_bases.add(name)
             else:
                 weapons.append({
-                    'name':     name,
-                    'section':  raw['section'],
-                    'points':   raw['points'],
-                    'profiles': None,
-                    'range':    raw['range'],
-                    'attacks':  raw['attacks'],
-                    'strength': raw['strength'],
-                    'ap':       raw['ap'],
-                    'damage':   raw['damage'],
-                    'keywords': raw['keywords'],
+                    'name':         name,
+                    'section':      raw['section'],
+                    'points':       raw['points'],
+                    'profiles':     None,
+                    'range':        raw['range'],
+                    'attacks':      raw['attacks'],
+                    'strength':     raw['strength'],
+                    'ap':           raw['ap'],
+                    'damage':       raw['damage'],
+                    'keywords':     raw['keywords'],
+                    'availability': raw['availability'],
                 })
 
         # Profile-only weapons (no plain parent row)
@@ -467,28 +472,30 @@ def convert_units(xlsx_path: str, output_dir: str):
             if base_name in added_weapon_bases:
                 continue
             weapons.append({
-                'name':     base_name,
-                'section':  profiles[0]['section'],
-                'points':   profiles[0]['points'],
+                'name':         base_name,
+                'section':      profiles[0]['section'],
+                'points':       profiles[0]['points'],
                 'profiles': [
                     {
-                        'profileName': p['profileName'],
-                        'points':      p['points'],
-                        'range':       p['range'],
-                        'attacks':     p['attacks'],
-                        'strength':    p['strength'],
-                        'ap':          p['ap'],
-                        'damage':      p['damage'],
-                        'keywords':    p['keywords'],
+                        'profileName':  p['profileName'],
+                        'points':       p['points'],
+                        'range':        p['range'],
+                        'attacks':      p['attacks'],
+                        'strength':     p['strength'],
+                        'ap':           p['ap'],
+                        'damage':       p['damage'],
+                        'keywords':     p['keywords'],
+                        'availability': p['availability'],
                     }
                     for p in profiles
                 ],
-                'range':    None,
-                'attacks':  None,
-                'strength': None,
-                'ap':       None,
-                'damage':   None,
-                'keywords': profiles[0]['keywords'],
+                'range':        None,
+                'attacks':      None,
+                'strength':     None,
+                'ap':           None,
+                'damage':       None,
+                'keywords':     profiles[0]['keywords'],
+                'availability': profiles[0]['availability'],
             })
 
         # ── Write faction JSON file ────────────────────────────────────────

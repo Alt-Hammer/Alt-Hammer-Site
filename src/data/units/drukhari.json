@@ -475,7 +475,8 @@
         "Anti-INFANTRY 5+",
         "Anti-BEAST 4+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Splinter Pod",
@@ -492,7 +493,8 @@
         "Anti-INFANTRY 5+",
         "Anti-BEAST 4+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Splinter Carbine",
@@ -509,7 +511,8 @@
         "Anti-INFANTRY 5+",
         "Anti-BEAST 4+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Splinter Rifle",
@@ -526,7 +529,8 @@
         "Anti-INFANTRY 5+",
         "Anti-BEAST 4+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Blaster Pistol",
@@ -540,7 +544,8 @@
       "damage": "2",
       "keywords": [
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Blaster Carbine",
@@ -555,7 +560,8 @@
       "keywords": [
         "Assault",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Haywire Blaster",
@@ -571,7 +577,8 @@
         "Sustained Hits 1",
         "Anti-VEHICLE 4+",
         "Haywire"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Stinger Pistol",
@@ -588,7 +595,8 @@
         "Precision",
         "Anti-INFANTRY 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shredder",
@@ -602,7 +610,8 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heat Lance",
@@ -617,7 +626,8 @@
       "keywords": [
         "Heavy",
         "Melta 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Dark Lance",
@@ -631,7 +641,8 @@
       "damage": "D3+3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Khaidespear",
@@ -646,7 +657,8 @@
       "keywords": [
         "Heavy",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Baleblast",
@@ -662,7 +674,8 @@
         "Torrent",
         "Ignores Cover",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Liquifier",
@@ -678,7 +691,8 @@
         "Torrent",
         "Ignores Cover",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Ossefactor",
@@ -690,7 +704,8 @@
       "strength": 5,
       "ap": -3,
       "damage": "D3+1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Hekatarii Blade",
@@ -702,7 +717,8 @@
       "strength": "S +1",
       "ap": "-1",
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Electrovoid Whip",
@@ -718,7 +734,8 @@
         "Anti-INFANTRY 3+",
         "Anti-BEAST 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Electrovoid Gauntlet",
@@ -732,7 +749,8 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Electrovoid Klaive",
@@ -747,7 +765,8 @@
       "keywords": [
         "Lethal Hits",
         "Lance"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Great Klaive",
@@ -763,7 +782,8 @@
         "Heavy",
         "Lethal Hits",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Demi Klaives",
@@ -778,7 +798,8 @@
       "keywords": [
         "Sustained Hits 1",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Stunclaw",
@@ -793,7 +814,8 @@
       "keywords": [
         "Precision",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shardnet and Impaler",
@@ -807,7 +829,8 @@
       "damage": "1",
       "keywords": [
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Masochir Blade",
@@ -821,7 +844,8 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Agoniser",
@@ -836,7 +860,8 @@
       "keywords": [
         "Anti-INFANTRY 4+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Chain Flails",
@@ -850,7 +875,8 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Macro-Scalpel",
@@ -864,7 +890,8 @@
       "damage": "2",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Viviscector's Array",
@@ -879,7 +906,8 @@
       "keywords": [
         "Sustained Hits 1",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Ichor Injectors",
@@ -895,7 +923,8 @@
         "Extra Attacks",
         "Anti-INFANTRY 3+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Scything Blades",
@@ -909,7 +938,8 @@
       "damage": "1 / 2",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Impaler Ram",
@@ -924,7 +954,8 @@
       "keywords": [
         "Devastating Wounds",
         "Hazardous D3+1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Haywire Grenades",
@@ -940,7 +971,8 @@
         "Anti-VEHICLE 4+",
         "Ignores Cover",
         "Haywire"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Grenades",
@@ -954,7 +986,8 @@
       "damage": "D3+1",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Tanglefoot Grenades",
@@ -969,7 +1002,8 @@
       "keywords": [
         "Ensnare",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smoke Grenades",
@@ -983,7 +1017,8 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
-      ]
+      ],
+      "availability": ""
     }
   ]
 }

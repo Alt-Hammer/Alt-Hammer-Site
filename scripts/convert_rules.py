@@ -10,23 +10,42 @@ WHAT IT DOES
 2. Splits the document by Heading 1 into separate sections
 3. Detects 'Keyword' and 'Action' character styles and wraps them
    in the correct HTML span tags for tooltip functionality
-4. Writes one .mdx file per section into src/content/rules/
+4. Extracts Word tables as GFM markdown or HTML (see ah_converter_utils.py)
+5. Writes one .mdx file per Heading 1 section into src/content/rules/
 
-OUTPUT FILES
-────────────
-Each Heading 1 section becomes its own file:
+OUTPUT FILES (one per Heading 1 in the Word doc, in document order)
+────────────────────────────────────────────────────────────────────
   src/content/rules/introduction.mdx
   src/content/rules/preparing-your-game.mdx
   src/content/rules/the-battle-round.mdx
-  src/content/rules/actions-and-activation-points.mdx
-  ... etc.
+  src/content/rules/actions-activation-points.mdx
+  src/content/rules/model-weapon-characteristics.mdx
+  src/content/rules/keywords-abilities.mdx
+  src/content/rules/making-attacks.mdx
+  src/content/rules/psychic-attacks-abilities-psykers.mdx
+  src/content/rules/battle-shock.mdx
+  src/content/rules/strategic-reserves.mdx
+  src/content/rules/command-points-stratagems.mdx
+  src/content/rules/generating-a-battle.mdx
+
+FRONTMATTER MODEL (new — one page per slug)
+────────────────────────────────────────────
+Each .mdx file now has:
+  section: "<slug>"   ← equals the file's own slug, not a group name
+                         This makes [page].astro route each file to its own
+                         dedicated URL at /rules/<slug>
+
+The Introduction section is a special case: it is written to a file so the
+Python pipeline always regenerates it, but it is intentionally excluded from
+the RULES_SECTIONS nav array in rules-nav.ts. Its content is instead embedded
+on the homepage (index.astro) above the feature-card grid.
 
 HOW TO RUN
 ──────────
 From the alt-hammer-site project folder, in your terminal:
   python scripts/convert_rules.py
 
-Or double-click run_all.py to convert everything at once.
+Or use run_all.py to convert everything at once.
 
 CONFIGURATION
 ─────────────
@@ -91,8 +110,8 @@ def convert_rules(docx_path: str, output_dir: str):
     skipped = 0
 
     for section in sections:
-        title = section['title']
-        slug = section['slug']
+        title   = section['title']
+        slug    = section['slug']
         content = section['content']
 
         # Skip the Table of Contents if present
@@ -106,19 +125,14 @@ def convert_rules(docx_path: str, output_dir: str):
             skipped += 1
             continue
 
-        # Build frontmatter
-        SECTION_MAP = {
-            'keywords-abilities': 'keywords',
-            'command-points-stratagems': 'stratagems',
-            'generating-a-mission': 'missions',
-        }
-        section_value = SECTION_MAP.get(slug, 'core-rules')
-
+        # Each section's 'section' field now equals its own slug.
+        # This makes [page].astro route each MDX file to /rules/<slug>
+        # rather than grouping multiple files under one old catch-all slug.
         frontmatter = {
-            'title': title,
-            'slug': slug,
+            'title':       title,
+            'slug':        slug,
             'description': f"Alt-Hammer 40,000 Core Rules — {title}",
-            'section': section_value,
+            'section':     slug,
             'subsections': section['subsections'],
         }
 

@@ -681,7 +681,8 @@
       "damage": "2",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Bolter",
@@ -695,7 +696,8 @@
       "damage": "2",
       "keywords": [
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Storm Bolter",
@@ -710,7 +712,8 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Bolter",
@@ -725,7 +728,8 @@
       "keywords": [
         "Heavy",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Condemnor Bolter",
@@ -742,7 +746,8 @@
         "Rapid Fire 1",
         "Anti-PYSKER 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autopistol",
@@ -756,7 +761,8 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autogun",
@@ -770,7 +776,8 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Exterminator Autocannon",
@@ -785,7 +792,8 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shotgun",
@@ -802,7 +810,8 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Flamer",
@@ -818,7 +827,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Flamer",
@@ -834,7 +844,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Melta Pistol",
@@ -849,7 +860,8 @@
       "keywords": [
         "Pistol",
         "Melta 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Meltagun",
@@ -864,7 +876,8 @@
       "keywords": [
         "Assault",
         "Melta 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Multi-melta",
@@ -879,7 +892,8 @@
       "keywords": [
         "Heavy",
         "Melta 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Melta Cannon",
@@ -894,7 +908,8 @@
       "keywords": [
         "Assault",
         "Melta 4"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Improvized Melee Relic",
@@ -906,7 +921,8 @@
       "strength": "S",
       "ap": "0",
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Chainsword",
@@ -918,7 +934,8 @@
       "strength": "S",
       "ap": "-1",
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Power Sword",
@@ -932,7 +949,8 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Power Mace",
@@ -946,7 +964,8 @@
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Power Spear",
@@ -961,7 +980,8 @@
       "keywords": [
         "Lance",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Novitiate Blade",
@@ -973,7 +993,8 @@
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Neural Whips",
@@ -985,7 +1006,8 @@
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Arco-flails",
@@ -999,7 +1021,8 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Penitent Flail",
@@ -1011,7 +1034,8 @@
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Penitent Buzz Saw",
@@ -1023,7 +1047,8 @@
       "strength": "S +6",
       "ap": -3,
       "damage": "4",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Paragon War Blade",
@@ -1037,7 +1062,8 @@
       "damage": "2",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Null Rod",
@@ -1053,7 +1079,8 @@
         "Precision",
         "Anti-PSYKER 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Chirurgeon's Tools",
@@ -1068,7 +1095,8 @@
       "keywords": [
         "Extra Attacks",
         "Anti-INFANTRY 2+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Frag Grenades",
@@ -1083,7 +1111,8 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Krak Grenades",
@@ -1097,7 +1126,8 @@
       "damage": "3",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smoke Grenades",
@@ -1111,7 +1141,8 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Zealot's Vindictor",
@@ -1130,7 +1161,8 @@
             "Assault",
             "Torrent",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee - Sweep",
@@ -1140,7 +1172,8 @@
           "strength": "S +1",
           "ap": "-1",
           "damage": "1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Melee - Evisceration",
@@ -1155,7 +1188,8 @@
             "Anti-INFANTRY 3+",
             "Anti-MONSTER 5+",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1167,7 +1201,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Pistol",
@@ -1184,7 +1219,8 @@
           "damage": "2",
           "keywords": [
             "Pistol"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Supercharged",
@@ -1197,7 +1233,8 @@
           "keywords": [
             "Pistol",
             "Hazardous 2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1207,7 +1244,8 @@
       "damage": null,
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Gun",
@@ -1224,7 +1262,8 @@
           "damage": "2",
           "keywords": [
             "Rapid Fire 1"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Supercharged",
@@ -1237,7 +1276,8 @@
           "keywords": [
             "Rapid Fire 1",
             "Hazardous 2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1247,7 +1287,8 @@
       "damage": null,
       "keywords": [
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Grenade Launcher",
@@ -1266,7 +1307,8 @@
             "Assault",
             "Blast 1\"",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1278,7 +1320,8 @@
         "Assault",
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Missile Launcher",
@@ -1296,7 +1339,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Krak",
@@ -1308,7 +1352,8 @@
           "damage": "4",
           "keywords": [
             "Heavy"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1319,7 +1364,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Exorcist Missile Symphony",
@@ -1338,7 +1384,8 @@
             "Ordnance",
             "Indirect Fire",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Altus",
@@ -1353,7 +1400,8 @@
             "Indirect Fire",
             "Blast 4\"",
             "Sustained Hits 4"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1365,7 +1413,8 @@
         "Ordnance",
         "Indirect Fire",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Battle Cannon",
@@ -1382,7 +1431,8 @@
           "damage": "2",
           "keywords": [
             "Blast 2\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "AP",
@@ -1392,7 +1442,8 @@
           "strength": 11,
           "ap": -2,
           "damage": "D6+1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1402,7 +1453,8 @@
       "damage": null,
       "keywords": [
         "Blast 2\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Power Halberd",
@@ -1417,7 +1469,8 @@
           "strength": "S",
           "ap": "-2",
           "damage": "1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Strike",
@@ -1430,7 +1483,8 @@
           "keywords": [
             "Lance",
             "Lethal Hits"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1438,7 +1492,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Penitent Eviscerator",
@@ -1453,7 +1508,8 @@
           "strength": "S +1",
           "ap": "-1",
           "damage": "1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Evisceration",
@@ -1468,7 +1524,8 @@
             "Anti-INFANTRY 3+",
             "Anti-MONSTER 5+",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1476,7 +1533,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Paragon War Mace",
@@ -1491,7 +1549,8 @@
           "strength": "S",
           "ap": -1,
           "damage": "1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Strike",
@@ -1504,7 +1563,8 @@
           "keywords": [
             "Heavy",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1512,7 +1572,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     }
   ]
 }

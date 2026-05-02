@@ -689,7 +689,8 @@
       "damage": "-",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Pulse Pistol",
@@ -703,7 +704,8 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Pulse Carbine",
@@ -717,7 +719,8 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Pulse Rifle",
@@ -731,7 +734,8 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Long-shot Pulse Rifle",
@@ -749,7 +753,8 @@
         "Rapid Fire 1",
         "Anti-INFANTRY 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Pulse Cannon",
@@ -763,7 +768,8 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Pulse Driver",
@@ -780,7 +786,8 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 4+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Flamer",
@@ -796,7 +803,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rail Rifle",
@@ -813,7 +821,8 @@
         "Anti-VEHICLE 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Rail Rifle",
@@ -830,7 +839,8 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 4+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rail Gun",
@@ -847,7 +857,8 @@
         "Anti-VEHICLE 2+",
         "Anti-MONSTER 4+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Fusion Collider",
@@ -861,7 +872,8 @@
       "damage": "D6",
       "keywords": [
         "Melta 4"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Airburst Fragmentation Launchers",
@@ -878,7 +890,8 @@
         "Heavy",
         "Blast 2\"",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Seeker Missile",
@@ -894,7 +907,8 @@
         "Ordnance",
         "One Shot",
         "Indirect Fire"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Neutron Blaster",
@@ -909,7 +923,8 @@
       "keywords": [
         "Assault",
         "Hazardous 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Neutron Grenade Launcher",
@@ -924,7 +939,8 @@
       "keywords": [
         "Assault",
         "Hazardous D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Pistol",
@@ -938,7 +954,8 @@
       "damage": "D3",
       "keywords": [
         "Precision"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Long Rifle",
@@ -955,7 +972,8 @@
         "Precision",
         "Anti-INFANTRY 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Tangelbomb Launcher",
@@ -970,7 +988,8 @@
       "keywords": [
         "Assault",
         "Ensnare"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Barbslinger",
@@ -988,7 +1007,8 @@
         "Anti-BEAST 2+",
         "Devastating Wounds",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Dvorgite Skinner",
@@ -1002,7 +1022,8 @@
       "damage": "1",
       "keywords": [
         "Torrent"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Londaxi Tribalest",
@@ -1017,7 +1038,8 @@
       "keywords": [
         "Heavy",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Fire Caste Dagger",
@@ -1029,7 +1051,8 @@
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Fireblade",
@@ -1043,7 +1066,8 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Honour Stave",
@@ -1058,7 +1082,8 @@
       "keywords": [
         "Lance",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Blade",
@@ -1070,7 +1095,8 @@
       "strength": "S+1",
       "ap": -1,
       "damage": "2",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Kroot Bladestave",
@@ -1084,7 +1110,8 @@
       "damage": "D3+1",
       "keywords": [
         "Lance"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shaper's Blade",
@@ -1099,7 +1126,8 @@
       "keywords": [
         "Precision",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rending Claws",
@@ -1115,7 +1143,8 @@
         "Extra Attacks",
         "Sustained Hits 1",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Photon Grenades",
@@ -1131,7 +1160,8 @@
         "Grenade",
         "Blast 4\"",
         "Smoke"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Grav-Inhibitor Grenades",
@@ -1147,7 +1177,8 @@
         "Grenade",
         "Blast 1\"",
         "Ensnare"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "EMP Grenade",
@@ -1162,7 +1193,8 @@
       "keywords": [
         "Grenade",
         "Haywire"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Hand Bomb",
@@ -1178,7 +1210,8 @@
         "Grenade",
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Pulse Blaster",
@@ -1196,7 +1229,8 @@
           "keywords": [
             "Blast 2\"",
             "Sustained Hits 2"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Power-up",
@@ -1209,7 +1243,8 @@
           "keywords": [
             "Ordnance",
             "Blast 2\""
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1220,7 +1255,8 @@
       "keywords": [
         "Blast 2\"",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Cyclic Ion Cannon",
@@ -1237,7 +1273,8 @@
           "damage": "2",
           "keywords": [
             "Sustained Hits 2"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Power-up",
@@ -1250,7 +1287,8 @@
           "keywords": [
             "Blast 2\"",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1260,7 +1298,8 @@
       "damage": null,
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Ion Cannon",
@@ -1277,7 +1316,8 @@
           "damage": "2",
           "keywords": [
             "Sustained Hits 2"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Power-up",
@@ -1290,7 +1330,8 @@
           "keywords": [
             "Blast 2\"",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1300,7 +1341,8 @@
       "damage": null,
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smart Missile Pod",
@@ -1317,7 +1359,8 @@
           "damage": "4",
           "keywords": [
             "Indirect Fire"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1327,7 +1370,8 @@
       "damage": null,
       "keywords": [
         "Indirect Fire"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smart Missile Launcher",
@@ -1345,7 +1389,8 @@
           "keywords": [
             "Indirect Fire",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Dart",
@@ -1357,7 +1402,8 @@
           "damage": "6",
           "keywords": [
             "Indirect Fire"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1368,7 +1414,8 @@
       "keywords": [
         "Indirect Fire",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Carbine",
@@ -1386,7 +1433,8 @@
           "keywords": [
             "Assault",
             "Rapid Fire 2"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1398,7 +1446,8 @@
           "damage": "1",
           "keywords": [
             "Extra Attacks"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1409,7 +1458,8 @@
       "keywords": [
         "Assault",
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Rifle",
@@ -1426,7 +1476,8 @@
           "damage": "1",
           "keywords": [
             "Assault"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1438,7 +1489,8 @@
           "damage": "1",
           "keywords": [
             "Extra Attacks"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1448,7 +1500,8 @@
       "damage": null,
       "keywords": [
         "Assault"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Spear",
@@ -1466,7 +1519,8 @@
           "keywords": [
             "Assault",
             "Ensnare"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Ranged - Piercer",
@@ -1478,7 +1532,8 @@
           "damage": "3",
           "keywords": [
             "Assault"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1491,7 +1546,8 @@
           "keywords": [
             "Lance",
             "Lethal Hits"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1502,7 +1558,8 @@
       "keywords": [
         "Assault",
         "Ensnare"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kroot Tri-blade",
@@ -1519,7 +1576,8 @@
           "damage": "1",
           "keywords": [
             "Sustained Hits 3"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1529,7 +1587,8 @@
       "damage": null,
       "keywords": [
         "Sustained Hits 3"
-      ]
+      ],
+      "availability": ""
     }
   ]
 }

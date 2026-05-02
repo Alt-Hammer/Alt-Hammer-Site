@@ -77,7 +77,7 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
     </a>
 
     <nav class="header-nav">
-      <a href="/rules/core-rules" class={activePage === 'rules' ? 'active' : ''}>
+      <a href="/rules/preparing-your-game" class={activePage === 'rules' ? 'active' : ''}>
         Core Rules
       </a>
       <a href="/factions" class={activePage === 'factions' ? 'active' : ''}>
@@ -157,12 +157,12 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
                   >
                     {section.label}
                   </a>
-                  {currentPath === section.href && section.items.length > 0 && (
+                  {section.items.length > 0 && (
                     <div class="sidebar-nav-sub">
                       {section.items.map((item) => (
                         <a
-                          href={item.anchor ? `${section.href}${item.anchor}` : item.href ?? '#'}
-                          class="sidebar-nav-item"
+                          href={`${section.href}${item.anchor}`}
+                          class={`sidebar-nav-item ${currentPath === section.href ? 'sub-active' : ''}`}
                         >
                           {item.label}
                         </a>
@@ -192,7 +192,7 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
       Warhammer 40,000 is a trademark of Games Workshop Ltd.
     </p>
     <p style="margin-top: 8px;">
-      <a href="/rules/core-rules">Core Rules</a> ·
+      <a href="/rules/preparing-your-game">Core Rules</a> ·
       <a href="/factions">Factions</a> ·
       <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
     </p>

@@ -114,7 +114,7 @@ body {
 /* --------------------------------------------------------------------------
    Typography
    -------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7, h8 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -123,14 +123,128 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-primary);
 }
 
-h1 { font-size: clamp(2rem, 4vw, 3.2rem);   letter-spacing: 0.08em; }
-h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--color-gold); }
-h3 { font-size: 1.4rem; color: var(--color-text-primary); }
-h4 { font-size: 1.15rem; color: var(--color-gold-dim); }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.875rem; color: var(--color-text-secondary); }
+/* H1 — out of scope, preserved as-is */
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: 0.08em; }
 
-p { margin-bottom: var(--sp-4); }
+/* H2 — primary section break. Gold, all-caps, gold underline border. */
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: var(--color-gold);
+  margin-top: 40px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-gold-dim);
+}
+
+/* H3 — secondary section. Parchment, all-caps, slightly smaller. */
+h3 {
+  font-size: 1.55rem;
+  color: var(--color-text-primary);
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+/* H4 — tertiary section. Gold-dim, all-caps. */
+h4 {
+  font-size: 1.35rem;
+  color: var(--color-gold-dim);
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+/* H5 — content-level heading (unit names, ability names, etc.).
+   Full-width shaded band, high-contrast text over it. */
+h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-gold-dim);
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-border-mid);
+  padding: 6px 10px;
+  margin-top: 24px;
+  margin-bottom: 18px;
+  /* Bleed the shaded band to full content width */
+  margin-left: calc(-1 * var(--sp-5));
+  margin-right: calc(-1 * var(--sp-5));
+  padding-left: var(--sp-5);
+  padding-right: var(--sp-5);
+}
+
+/* H6 — sub-content heading. Gold text, heavy underline.
+   Tab-right support: right-aligned value after a tab character. */
+h6 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-top: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--color-border-mid);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* H7 — minor sub-heading. Parchment-dim, lighter underline.
+   Tab-right support: right-aligned value after a tab character. */
+h7 {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  color: var(--color-gold-dim);
+  margin-top: 14px;
+  margin-bottom: 13px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-border-mid);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* H8 — lowest heading level. Muted, subtle underline.
+   Tab-right support: right-aligned value after a tab character. */
+h8 {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  color: var(--color-text-muted);
+  margin-top: 13px;
+  margin-bottom: 11px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Tab-right value spans inside H6/H7/H8.
+   The Python converter wraps tab-separated trailing content in
+   <span class="heading-value"> for right-alignment. */
+h6 .heading-value,
+h7 .heading-value,
+h8 .heading-value {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.06em;
+  text-transform: none;
+  margin-left: var(--sp-4);
+  white-space: nowrap;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
 p:last-child { margin-bottom: 0; }
 
 a {
@@ -361,48 +475,61 @@ code, kbd {
 /* --------------------------------------------------------------------------
    Rules Content Styles
    -------------------------------------------------------------------------- */
-.rules-content h2 {
-  margin-top: var(--sp-12);
-  margin-bottom: var(--sp-4);
-  padding-bottom: var(--sp-3);
-  border-bottom: 1px solid var(--color-gold-dim);
-}
 
+/* H2 — already styled globally; just reset top margin for first heading */
 .rules-content h2:first-child {
   margin-top: 0;
 }
 
-.rules-content h3 {
-  margin-top: var(--sp-8);
-  margin-bottom: var(--sp-3);
-  color: var(--color-text-primary);
+/* H3 — rules content inherits global H3, no override needed */
+
+/* H4 — rules content inherits global H4, no override needed */
+
+/* H5 — shaded band needs to bleed to the rules content padding edge.
+   The global rule uses calc(-1 * var(--sp-5)) but rules-content has
+   its own padding (--sp-10), so we restate the bleed here. */
+.rules-content h5 {
+  margin-left: calc(-1 * var(--sp-10));
+  margin-right: calc(-1 * var(--sp-10));
+  padding-left: var(--sp-10);
+  padding-right: var(--sp-10);
 }
 
-.rules-content h4 {
-  margin-top: var(--sp-6);
-  margin-bottom: var(--sp-2);
-  color: var(--color-gold-dim);
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-}
+/* H6/H7/H8 — inherit global styles; no rules-specific overrides needed */
 
 .rules-content p {
   color: var(--color-text-secondary);
   max-width: 72ch;
 }
 
-.rules-content ul, .rules-content ol {
+.rules-content ul,
+.rules-content ol {
   padding-left: var(--sp-6);
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-3);
   color: var(--color-text-secondary);
 }
 
+/* Multi-level list support */
+.rules-content ul ul,
+.rules-content ul ol,
+.rules-content ol ul,
+.rules-content ol ol {
+  padding-left: var(--sp-5);
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
 .rules-content li {
-  margin-bottom: var(--sp-2);
+  margin-bottom: 6px;
 }
 
 .rules-content li::marker {
   color: var(--color-gold-dim);
+}
+
+/* Sub-list items get a slightly muted marker */
+.rules-content li li::marker {
+  color: var(--color-text-muted);
 }
 
 /* Rule summary blocks (quick reference) */
@@ -1367,18 +1494,58 @@ code, kbd {
 
 .up-col h6 {
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-gold-dim);
-  margin-top: var(--sp-5);
-  margin-bottom: var(--sp-2);
-  padding-bottom: var(--sp-1);
+  margin-top: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 4px;
   border-bottom: 1px solid var(--color-border);
 }
 
 .up-col h6:first-child {
+  margin-top: 0;
+}
+
+.up-col h7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-top: 14px;
+  margin-bottom: 12px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-col h7:first-child {
+  margin-top: 0;
+}
+
+.up-col h8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.up-col h8:first-child {
   margin-top: 0;
 }
 
@@ -1832,4 +1999,76 @@ code, kbd {
   position: absolute;
   left: 0;
   color: #2a8a85;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.rules-table {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.rules-table th,
+.rules-table td {
+  border: 1px solid var(--color-border);
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.rules-table thead th {
+  background: var(--color-surface-raised);
+  font-weight: 600;
+}
+
+.matrix-table th,
+.matrix-table td {
+  min-width: 48px;
+  white-space: nowrap;
+}
+
+/* Weapon card availability row */
+.wp-avail-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--color-surface-2);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.78rem;
+}
+
+.wp-avail-label {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.wp-avail-value {
+  color: var(--color-text-secondary);
+}
+
+/* Tooltip availability line */
+.ah-ref-tooltip__availability {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  padding: 4px 10px;
+  border-top: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__avail-label {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-right: 4px;
 }

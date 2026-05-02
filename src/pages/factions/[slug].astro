@@ -377,6 +377,15 @@ const weaponMapJson = JSON.stringify(weapons);
           }</span>`;
           statRow.appendChild(kwCell);
           block.appendChild(statRow);
+
+          const profileAvail = profile.availability || weapon.availability || '';
+          if (profileAvail) {
+            const availRow = document.createElement('div');
+            availRow.className = 'wp-avail-row';
+            availRow.innerHTML = `<span class="wp-avail-label">Available To</span><span class="wp-avail-value">${profileAvail}</span>`;
+            block.appendChild(availRow);
+          }
+
           card.appendChild(block);
         }
 
@@ -407,6 +416,13 @@ const weaponMapJson = JSON.stringify(weapons);
         }</span>`;
         statRow.appendChild(kwCell);
         card.appendChild(statRow);
+
+        if (weapon.availability) {
+          const availRow = document.createElement('div');
+          availRow.className = 'wp-avail-row';
+          availRow.innerHTML = `<span class="wp-avail-label">Available To</span><span class="wp-avail-value">${weapon.availability}</span>`;
+          card.appendChild(availRow);
+        }
       }
 
       return card;
@@ -562,6 +578,13 @@ const weaponMapJson = JSON.stringify(weapons);
           kw.textContent = weapon.keywords.join(', ');
           tip.appendChild(kw);
         }
+      }
+
+      if (weapon.availability) {
+        const avail = document.createElement('div');
+        avail.className = 'ah-ref-tooltip__availability';
+        avail.innerHTML = `<span class="ah-ref-tooltip__avail-label">Available To</span> ${weapon.availability}`;
+        tip.appendChild(avail);
       }
 
       if (weapon.points != null) {

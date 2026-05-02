@@ -1010,7 +1010,8 @@
       "keywords": [
         "Pistol",
         "Precision"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Slugga",
@@ -1025,7 +1026,8 @@
       "keywords": [
         "Pistol",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shoota",
@@ -1040,7 +1042,8 @@
       "keywords": [
         "Rapid Fire 1",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kommando Shoota",
@@ -1055,7 +1058,8 @@
       "keywords": [
         "Rapid Fire 4",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Big Shoota",
@@ -1071,7 +1075,8 @@
         "Heavy",
         "Rapid Fire 2",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shokk Shoota",
@@ -1086,7 +1091,8 @@
       "keywords": [
         "Assault",
         "Precision"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rivet Shoota",
@@ -1101,7 +1107,8 @@
       "keywords": [
         "Rapid Fire 4",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Mek Speshul",
@@ -1116,7 +1123,8 @@
       "keywords": [
         "Rapid Fire 6",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Killkannon",
@@ -1130,7 +1138,8 @@
       "damage": "4",
       "keywords": [
         "Blast 2\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Deff Kannon",
@@ -1144,7 +1153,8 @@
       "damage": "4",
       "keywords": [
         "Blast 6\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shokk Attakka",
@@ -1161,7 +1171,8 @@
         "Blast 1\"",
         "Sustained Hits 1",
         "Hazardous 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Zzappa",
@@ -1177,7 +1188,8 @@
         "Ordnance",
         "Hazardous 3",
         "Beam D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Mega Zzappa",
@@ -1193,7 +1205,8 @@
         "Ordnance",
         "Hazardous D3+2",
         "Beam D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Thumpa",
@@ -1208,7 +1221,8 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Burna Slugga",
@@ -1224,7 +1238,8 @@
         "Pistol",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Burna",
@@ -1240,7 +1255,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Skorcha",
@@ -1256,7 +1272,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rokkit Slugga",
@@ -1271,7 +1288,8 @@
       "keywords": [
         "Assault",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rokkit Launcha",
@@ -1286,7 +1304,8 @@
       "keywords": [
         "Assault",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Wing Rokkits",
@@ -1301,7 +1320,8 @@
       "keywords": [
         "Assault",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kustom Mega-blasta",
@@ -1316,7 +1336,8 @@
       "keywords": [
         "Blast 2\"",
         "Hazardous 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kustom Mega-kannon",
@@ -1331,7 +1352,8 @@
       "keywords": [
         "Blast 4\"",
         "Hazardous 5"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Bombsquig Launcha",
@@ -1347,7 +1369,8 @@
         "Indirect Fire",
         "Blast 3\"",
         "Sustained Hits 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Big Lobba",
@@ -1363,7 +1386,8 @@
         "Indirect Fire",
         "Blast 4\"",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smasha Gun",
@@ -1379,7 +1403,8 @@
         "Ordnance",
         "Blast 2\"",
         "Hazardous 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Trakta Blasta",
@@ -1398,7 +1423,8 @@
         "Devastating Wounds",
         "Hazardous 2",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Wurrtowa",
@@ -1414,7 +1440,8 @@
         "Anti-PSYKER 3+",
         "Devastating Wounds",
         "Hazardous D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Choppa",
@@ -1426,7 +1453,8 @@
       "strength": "S +1",
       "ap": "-1",
       "damage": "2",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Big Choppa",
@@ -1438,7 +1466,8 @@
       "strength": "S +2",
       "ap": "-2",
       "damage": "3",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Uge Choppa",
@@ -1450,7 +1479,8 @@
       "strength": "S +3",
       "ap": -3,
       "damage": "4",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Smasha Hammer",
@@ -1464,7 +1494,8 @@
       "damage": "D6+3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Weirdboy Staff",
@@ -1482,7 +1513,8 @@
         "Anti-PSYKER 3+",
         "Devastating Wounds",
         "Hazardous D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Urty Srynge",
@@ -1498,7 +1530,8 @@
         "Extra Attacks",
         "Anti-INFANTRY 3+",
         "Poison 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Spinnin' Rotas",
@@ -1512,7 +1545,8 @@
       "damage": "1",
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Spikey Bits",
@@ -1524,7 +1558,8 @@
       "strength": "S",
       "ap": -1,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Buzz Drill",
@@ -1538,7 +1573,8 @@
       "damage": "2",
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Deff Rolla",
@@ -1553,7 +1589,8 @@
       "keywords": [
         "Extra Attacks",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Wrekkin Ball",
@@ -1570,7 +1607,8 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Attack Squig",
@@ -1585,7 +1623,8 @@
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Squighog",
@@ -1600,7 +1639,8 @@
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smashasquig",
@@ -1615,7 +1655,8 @@
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Squigosaur",
@@ -1630,7 +1671,8 @@
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Tramplasquig",
@@ -1645,7 +1687,8 @@
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Eadbanga",
@@ -1661,7 +1704,8 @@
         "Anti-PSYKER 3+",
         "Devastating Wounds",
         "Hazardous D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Eyez of Mork",
@@ -1678,7 +1722,8 @@
         "Anti-PSYKER 2+",
         "Devastating Wounds",
         "Hazardous 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Eyez of Gork",
@@ -1696,7 +1741,8 @@
         "Anti-PSYKER 4+",
         "Devastating Wounds",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Stik Bombs / Firebombs",
@@ -1711,7 +1757,8 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Tankbusta Stiks",
@@ -1725,7 +1772,8 @@
       "damage": "D6",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Bombsquig",
@@ -1741,7 +1789,8 @@
         "One Shot",
         "Blast 3\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smoke Stik",
@@ -1755,7 +1804,8 @@
       "damage": "-",
       "keywords": [
         "Smoke 2\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Kannon",
@@ -1774,7 +1824,8 @@
             "Blast 1\"",
             "Anti-VEHICLE 4+",
             "Anti-FORTIFICATION 3+"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1786,7 +1837,8 @@
         "Blast 1\"",
         "Anti-VEHICLE 4+",
         "Anti-FORTIFICATION 3+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Bubblechukka",
@@ -1805,7 +1857,8 @@
             "Ordnance",
             "Indirect Fire",
             "Blast 5\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "3-4: wobbly bubble",
@@ -1818,7 +1871,8 @@
           "keywords": [
             "Ordnance",
             "Indirect Fire"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "6: stinky bubble",
@@ -1834,7 +1888,8 @@
             "Blast 5\"",
             "Anti-INFANTRY 5+",
             "Poison 2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1846,7 +1901,8 @@
         "Ordnance",
         "Indirect Fire",
         "Blast 5\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Snagga Stik",
@@ -1866,7 +1922,8 @@
             "Anti-MONSTER 3+",
             "Anti-VEHICLE 5+",
             "Harpoon"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1880,7 +1937,8 @@
             "Lance",
             "Anti-MONSTER 3+",
             "Harpoon"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1893,7 +1951,8 @@
         "Anti-MONSTER 3+",
         "Anti-VEHICLE 5+",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Big Snagga",
@@ -1913,7 +1972,8 @@
             "Anti-MONSTER 2+",
             "Anti-VEHICLE 5+",
             "Harpoon"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1927,7 +1987,8 @@
             "Lance",
             "Anti-MONSTER 2+",
             "Harpoon"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1940,7 +2001,8 @@
         "Anti-MONSTER 2+",
         "Anti-VEHICLE 5+",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Killa Klaw",
@@ -1957,7 +2019,8 @@
           "damage": "1",
           "keywords": [
             "Lethal Hits"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Strike",
@@ -1971,7 +2034,8 @@
             "Heavy",
             "Anti-VEHICLE 5+",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1981,7 +2045,8 @@
       "damage": null,
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     }
   ]
 }

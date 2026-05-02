@@ -2,6 +2,8 @@
 // src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ALLIANCES } from '../data/alliances.ts';
+import { RULES_SECTIONS } from '../data/rules-nav.ts';
+import { getCollection } from 'astro:content';
 
 interface FactionFrontmatter {
   title: string;
@@ -29,6 +31,30 @@ const allianceColors: Record<string, string> = {
   xenos:    '#2e8b57',
   devourer: '#7b3fa0',
 };
+
+// Load the Introduction section content from the rules collection
+const rulesEntries = await getCollection('rules');
+const introEntry = rulesEntries.find((e) => e.data.section === 'introduction');
+const { Content: IntroContent } = introEntry ? await introEntry.render() : { Content: null };
+
+// Tile accent colors — one per rules section, in nav order
+const tileAccents = [
+  'var(--color-gold)',  // Preparing Your Game
+  '#c9a84c',           // The Battle Round
+  '#3a7bd5',           // Actions & Activation Points
+  '#5a8fd5',           // Model & Weapon Characteristics
+  '#3a7bd5',           // Keywords & Abilities
+  '#9b2020',           // Making Attacks
+  '#7b3fa0',           // Psychic Attacks & Psykers
+  '#8b2020',           // Battle Shock
+  '#2e6b7b',           // Strategic Reserves
+  '#8b2020',           // Command Points & Stratagems
+  '#2e8b57',           // Generating a Battle
+];
+
+const tileIcons = [
+  '◈', '◉', '⚡', '◎', '◈', '⚔', '✦', '◉', '◎', '▶', '◎',
+];
 ---
 
 <BaseLayout activePage="home">
@@ -47,7 +73,7 @@ const allianceColors: Record<string, string> = {
       </p>
       <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;"
            class="animate-in animate-in-delay-3">
-        <a href="/rules/core-rules" class="btn btn-primary">Read Core Rules</a>
+        <a href="/rules/preparing-your-game" class="btn btn-primary">Read Core Rules</a>
         <a href="/factions" class="btn btn-ghost">Browse Factions</a>
       </div>
 
@@ -57,60 +83,39 @@ const allianceColors: Record<string, string> = {
     </div>
   </section>
 
-  <!-- ── Feature Cards ────────────────────────────────────────────────── -->
+  <!-- ── Introduction ─────────────────────────────────────────────────── -->
+  {IntroContent && (
+    <section class="home-intro">
+      <div class="home-intro-inner">
+        <IntroContent />
+      </div>
+    </section>
+  )}
+
+  <!-- ── Core Rules Tiles ─────────────────────────────────────────────── -->
+  <div class="home-section-header">
+    <h2>Core Rules</h2>
+    <a href="/rules/preparing-your-game" class="home-section-link">Browse all sections →</a>
+  </div>
+
   <div class="card-grid">
+    {RULES_SECTIONS.map((section, i) => (
+      <a
+        href={section.href}
+        class="feature-card animate-in"
+        style={`--card-accent: ${tileAccents[i] ?? 'var(--color-gold)'};`}
+      >
+        <span class="feature-card-icon">{tileIcons[i] ?? '◈'}</span>
+        <div class="feature-card-title">{section.label}</div>
+        <p class="feature-card-desc">
+          {section.items.length > 0
+            ? section.items.map((item) => item.label).join(' · ')
+            : `Read the ${section.label} rules.`}
+        </p>
+      </a>
+    ))}
 
-    <a href="/rules/core-rules" class="feature-card animate-in animate-in-delay-1"
-       style="--card-accent: var(--color-gold);">
-      <span class="feature-card-icon">⚔</span>
-      <div class="feature-card-title">Core Rules</div>
-      <p class="feature-card-desc">
-        Battle round structure, activations, attack sequences, terrain, 
-        psychic powers, and all universal keywords and abilities.
-      </p>
-    </a>
-
-    <a href="/rules/keywords" class="feature-card animate-in animate-in-delay-2"
-       style="--card-accent: #3a7bd5;">
-      <span class="feature-card-icon">◈</span>
-      <div class="feature-card-title">Keywords & Abilities</div>
-      <p class="feature-card-desc">
-        Every universal keyword and wargear ability — from Devastating
-        Wounds to Twin-Linked — explained and cross-linked.
-      </p>
-    </a>
-
-    <a href="/factions" class="feature-card animate-in animate-in-delay-3"
-       style="--card-accent: #7b3fa0;">
-      <span class="feature-card-icon">◉</span>
-      <div class="feature-card-title">Factions</div>
-      <p class="feature-card-desc">
-        Army rules, detachment traits, wargear upgrades, and fully
-        detailed unit profiles for all {FACTIONS.filter((f) => f.status === 'active').length} active factions.
-      </p>
-    </a>
-
-    <a href="/rules/missions" class="feature-card animate-in animate-in-delay-4"
-       style="--card-accent: #2e8b57;">
-      <span class="feature-card-icon">◎</span>
-      <div class="feature-card-title">Missions</div>
-      <p class="feature-card-desc">
-        Deployment zones, primary objectives, secondary mission objectives,
-        and optional mission rules for every game size.
-      </p>
-    </a>
-
-    <a href="/rules/stratagems" class="feature-card animate-in animate-in-delay-5"
-       style="--card-accent: #8b2020;">
-      <span class="feature-card-icon">▶</span>
-      <div class="feature-card-title">Stratagems</div>
-      <p class="feature-card-desc">
-        Core stratagems and faction-specific tactical plays, with
-        Command Point costs and timing clearly presented.
-      </p>
-    </a>
-
-    <a href="/list-builder" class="feature-card animate-in animate-in-delay-5"
+    <a href="/list-builder" class="feature-card animate-in"
        style="--card-accent: #3a7bd5; opacity: 0.7;">
       <span class="feature-card-icon">☰</span>
       <div class="feature-card-title">
@@ -124,7 +129,6 @@ const allianceColors: Record<string, string> = {
         enforcement, wargear constraints, and shareable list links.
       </p>
     </a>
-
   </div>
 
   <!-- ── Factions section ──────────────────────────────────────────────── -->
@@ -172,5 +176,68 @@ const allianceColors: Record<string, string> = {
   .main-content {
     padding: 0;
     max-width: 100%;
+  }
+
+  /* Introduction prose block */
+  .home-intro {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 32px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .home-intro-inner {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+  }
+
+  .home-intro-inner h3 {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-intro-inner ol,
+  .home-intro-inner ul {
+    padding-left: 1.4rem;
+    margin: 0.75rem 0;
+  }
+
+  .home-intro-inner li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* Core Rules section heading row */
+  .home-section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 40px 24px 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .home-section-header h2 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .home-section-link {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+
+  .home-section-link:hover {
+    color: var(--color-gold);
   }
 </style>

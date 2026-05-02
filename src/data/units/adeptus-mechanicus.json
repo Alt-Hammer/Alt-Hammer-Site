@@ -521,7 +521,8 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Galvanic Carbine",
@@ -535,7 +536,8 @@
       "damage": "1",
       "keywords": [
         "Assault"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Galvanic Rifle",
@@ -547,7 +549,8 @@
       "strength": 4,
       "ap": -2,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Radium Pistol",
@@ -565,7 +568,8 @@
         "Anti-INFANTRY 4+",
         "Poison 1",
         "Hazardous 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Radium Carbine",
@@ -582,7 +586,8 @@
         "Anti-INFANTRY 4+",
         "Poison 1",
         "Hazardous 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Radium Jezzail",
@@ -600,7 +605,8 @@
         "Anti-INFANTRY 4+",
         "Poison D3",
         "Hazardous 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Arc Pistol",
@@ -614,7 +620,8 @@
       "damage": "D6",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Arc Destructor",
@@ -628,7 +635,8 @@
       "damage": "D6+1",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Flechette Blaster",
@@ -643,7 +651,8 @@
       "keywords": [
         "Pistol",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Phosphor Blast Pistol",
@@ -658,7 +667,8 @@
       "keywords": [
         "Pistol",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Phosphor Serpenta",
@@ -674,7 +684,8 @@
         "Pistol",
         "Precision",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Phosphor Blast Carbine",
@@ -689,7 +700,8 @@
       "keywords": [
         "Sustained Hits 1",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Phosphor Blaster",
@@ -704,7 +716,8 @@
       "keywords": [
         "Rapid Fire 2",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Phosphor Blaster",
@@ -719,7 +732,8 @@
       "keywords": [
         "Sustained Hits 1",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Phosphor Cannon",
@@ -734,7 +748,8 @@
       "keywords": [
         "Sustained Hits 2",
         "Ingores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Phosphor Combustor",
@@ -750,7 +765,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Cognis Autocarbine",
@@ -764,7 +780,8 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Cognis Autocannon",
@@ -778,7 +795,8 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Cognis Lascannon",
@@ -792,7 +810,8 @@
       "damage": "D6+2",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Culverin- Overcharged",
@@ -808,7 +827,8 @@
         "Heavy",
         "Blast 1\"",
         "Hazardous D3+1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Meltagun",
@@ -822,7 +842,8 @@
       "damage": "D6",
       "keywords": [
         "Melta 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Multi-melta",
@@ -837,7 +858,8 @@
       "keywords": [
         "Heavy",
         "Melta 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Bolter",
@@ -852,7 +874,8 @@
       "keywords": [
         "Heavy",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Transuranic Arquebus",
@@ -867,7 +890,8 @@
       "keywords": [
         "Precision",
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Transonic Cannon",
@@ -881,7 +905,8 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Magnarail Lance",
@@ -895,7 +920,8 @@
       "damage": "8",
       "keywords": [
         "Ordnance"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Torsion Cannon",
@@ -909,7 +935,8 @@
       "damage": "3",
       "keywords": [
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Grav Cannon",
@@ -923,7 +950,8 @@
       "damage": "4",
       "keywords": [
         "Anti-VEHICLE 4+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Belleros Cannon",
@@ -940,7 +968,8 @@
         "Indirect Fire",
         "Blast 1\"",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Neutron Laser",
@@ -955,7 +984,8 @@
       "keywords": [
         "Ordnance",
         "Beam 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Omnissiah's Axe",
@@ -969,7 +999,8 @@
       "damage": "2",
       "keywords": [
         "Anti-VEHICLE 3+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Manipulator Arm(s)",
@@ -983,7 +1014,8 @@
       "damage": "2",
       "keywords": [
         "Extra Attacks"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Servo Arm",
@@ -999,7 +1031,8 @@
         "Extra Attacks",
         "Heavy",
         "Anti-VEHICLE 4+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Power Sword",
@@ -1013,7 +1046,8 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Power Mace",
@@ -1027,7 +1061,8 @@
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Power Fist",
@@ -1041,7 +1076,8 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Taser Goad",
@@ -1056,7 +1092,8 @@
       "keywords": [
         "Lance",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Taser Lance",
@@ -1071,7 +1108,8 @@
       "keywords": [
         "Lance",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Transonic Blades",
@@ -1083,7 +1121,8 @@
       "strength": "S",
       "ap": -2,
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Chordclaw",
@@ -1098,7 +1137,8 @@
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Iron Claws",
@@ -1112,7 +1152,8 @@
       "damage": "2",
       "keywords": [
         "Extra Attacks"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Caliver",
@@ -1129,7 +1170,8 @@
           "damage": "2",
           "keywords": [
             "Rapid Fire 1"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Overcharged",
@@ -1142,7 +1184,8 @@
           "keywords": [
             "Rapid Fire 1",
             "Hazardous 2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1152,7 +1195,8 @@
       "damage": null,
       "keywords": [
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Eradication Pistol",
@@ -1171,7 +1215,8 @@
             "Assault",
             "Torrent",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Focused",
@@ -1185,7 +1230,8 @@
             "Ordnance",
             "Beam 1",
             "Melta 2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1197,7 +1243,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Eradication Ray",
@@ -1216,7 +1263,8 @@
             "Ordnance",
             "Beam 1",
             "Melta 3"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1228,7 +1276,8 @@
         "Ordnance",
         "Beam 1",
         "Melta 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Eradication Beamer",
@@ -1247,7 +1296,8 @@
             "Assault",
             "Torrent",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Focused",
@@ -1261,7 +1311,8 @@
             "Ordnance",
             "Beam 1",
             "Melta 4"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1273,7 +1324,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Cannon",
@@ -1291,7 +1343,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Supercharged",
@@ -1305,7 +1358,8 @@
             "Heavy",
             "Blast 1\"",
             "Hazardous D3+1"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1316,7 +1370,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Electrostatc Gauntlets",
@@ -1335,7 +1390,8 @@
             "Assault",
             "Torrent",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1348,7 +1404,8 @@
           "keywords": [
             "Sustained Hits 2",
             "Lethal Hits"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1360,7 +1417,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Missile Launcher",
@@ -1378,7 +1436,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Krak",
@@ -1390,7 +1449,8 @@
           "damage": "4",
           "keywords": [
             "Heavy"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1401,7 +1461,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Daedalus Missile Launcher",
@@ -1423,7 +1484,8 @@
             "Anti-FLY 2+",
             "Anti-INFANTRY 4+",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1438,7 +1500,8 @@
         "Anti-FLY 2+",
         "Anti-INFANTRY 4+",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Ferrumite Cannon",
@@ -1457,7 +1520,8 @@
             "Blast 3\"",
             "Anti-INFANTRY 3+",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Solid Shell",
@@ -1467,7 +1531,8 @@
           "strength": 11,
           "ap": -3,
           "damage": "D6+1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1479,7 +1544,8 @@
         "Blast 3\"",
         "Anti-INFANTRY 3+",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Electroleech Stave",
@@ -1494,7 +1560,8 @@
           "strength": "S",
           "ap": -1,
           "damage": "1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Strike",
@@ -1507,7 +1574,8 @@
           "keywords": [
             "Heavy",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1515,7 +1583,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     }
   ]
 }

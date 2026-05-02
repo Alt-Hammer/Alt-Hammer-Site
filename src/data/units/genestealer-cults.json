@@ -643,7 +643,8 @@
         "Precision",
         "Anti-INFANTRY 3+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Wheelgun",
@@ -657,7 +658,8 @@
       "damage": "2",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autopistol",
@@ -671,7 +673,8 @@
       "damage": "1",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autogun",
@@ -686,7 +689,8 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Autogun",
@@ -701,7 +705,8 @@
       "keywords": [
         "Heavy",
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autocannon",
@@ -715,7 +720,8 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Shotgun",
@@ -732,7 +738,8 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Sniper Rifle",
@@ -749,7 +756,8 @@
         "Heavy",
         "Anti-INFANTRY 4+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Hand Flamer",
@@ -765,7 +773,8 @@
         "Pistol",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Flamer",
@@ -781,7 +790,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Flamer",
@@ -797,7 +807,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Chem Cannon",
@@ -815,7 +826,8 @@
         "Anti-INFANTRY 2+",
         "Ignores Cover",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Webber",
@@ -829,7 +841,8 @@
       "damage": "0",
       "keywords": [
         "Ensnare"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Seismic Cannon",
@@ -845,7 +858,8 @@
         "Heavy",
         "Rapid Fire 2",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Seismic Cannon",
@@ -861,7 +875,8 @@
         "Heavy",
         "Rapid Fire 3",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Mining Laser",
@@ -876,7 +891,8 @@
       "keywords": [
         "Heavy",
         "Beam 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Boring Laser",
@@ -895,7 +911,8 @@
         "Anti-MONSTER 3+",
         "Anti-FORTIFICATION 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Gryphon Heavy Mortar",
@@ -912,7 +929,8 @@
         "Indirect Fire",
         "Blast 3\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Remote-detonated Explosives",
@@ -930,7 +948,8 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Improvised Melee Weapon",
@@ -942,7 +961,8 @@
       "strength": "S",
       "ap": "0",
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Cult Blade",
@@ -956,7 +976,8 @@
       "damage": "1",
       "keywords": [
         "Precision"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rending Claws",
@@ -971,7 +992,8 @@
       "keywords": [
         "Sustained Hits 1",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Mining Pick",
@@ -985,7 +1007,8 @@
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rock Grinder",
@@ -999,7 +1022,8 @@
       "damage": "2D6",
       "keywords": [
         "Sustained Hits 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Rock Cutter",
@@ -1013,7 +1037,8 @@
       "damage": "3",
       "keywords": [
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Toxinjector Claw",
@@ -1029,7 +1054,8 @@
         "Extra Attacks",
         "Anti-INFANTRY 4+",
         "Poison 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Force Weapon",
@@ -1045,7 +1071,8 @@
         "Precision",
         "Anti-PSYKER 3+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Dozer-Grinder",
@@ -1062,7 +1089,8 @@
         "Anti-Fortification 3+",
         "Anti-VEHICLE 3+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Neuroparasite",
@@ -1080,7 +1108,8 @@
         "Anti-PSYKER 2+",
         "Devastating Wounds",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Mining Explosives",
@@ -1095,7 +1124,8 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Demolition Charge",
@@ -1112,7 +1142,8 @@
         "Anti-VEHICLE 3+",
         "Anti-FORTIFICATION 2+",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Smoke Grenades",
@@ -1126,7 +1157,8 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Lash Whips",
@@ -1144,7 +1176,8 @@
           "keywords": [
             "Pistol",
             "Lethal Hits"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1158,7 +1191,8 @@
             "Extra Attacks",
             "Lethal Hits",
             "Anti-INFANTRY 3+"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1169,7 +1203,8 @@
       "keywords": [
         "Pistol",
         "Lethal Hits"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Grenade Launcher",
@@ -1188,7 +1223,8 @@
             "Assault",
             "Blast 1\"",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Krak",
@@ -1201,7 +1237,8 @@
           "keywords": [
             "Assault",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1213,7 +1250,8 @@
         "Assault",
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Missile Launcher",
@@ -1231,7 +1269,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1242,7 +1281,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Improvised Cudgel",
@@ -1257,7 +1297,8 @@
           "strength": "S",
           "ap": 0,
           "damage": "1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Smash",
@@ -1270,7 +1311,8 @@
           "keywords": [
             "Heavy",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1278,7 +1320,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Seismic Hammer",
@@ -1295,7 +1338,8 @@
           "damage": "2",
           "keywords": [
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Smash",
@@ -1308,7 +1352,8 @@
           "keywords": [
             "Heavy",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1318,7 +1363,8 @@
       "damage": null,
       "keywords": [
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Warp Blast",
@@ -1338,7 +1384,8 @@
             "Hazardous D3",
             "Anti-PSYKER 2+",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Witchfire",
@@ -1354,7 +1401,8 @@
             "Anti-PSYKER 4+",
             "Devastating Wounds",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1367,7 +1415,8 @@
         "Hazardous D3",
         "Anti-PSYKER 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     }
   ]
 }

@@ -274,7 +274,7 @@
       "models": null
     },
     {
-      "name": "Legionnaries",
+      "name": "Legionaries",
       "category": "Battleline",
       "stats": {
         "M": "6\"",
@@ -1037,7 +1037,8 @@
       "damage": "2",
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
     },
     {
       "name": "Bolter",
@@ -1052,7 +1053,8 @@
       "keywords": [
         "Assault",
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Heavy Bolter",
@@ -1067,7 +1069,8 @@
       "keywords": [
         "Heavy",
         "Sustained Hits 1"
-      ]
+      ],
+      "availability": "Tacticus, Havoc"
     },
     {
       "name": "Shotgun",
@@ -1084,7 +1087,8 @@
         "Anti-INFANTRY 5+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus"
     },
     {
       "name": "Autogun",
@@ -1098,7 +1102,8 @@
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Heavy Autogun",
@@ -1113,7 +1118,8 @@
       "keywords": [
         "Heavy",
         "Rapid Fire 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Autocannon",
@@ -1127,7 +1133,8 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
     },
     {
       "name": "Exterminator Autocannon",
@@ -1142,7 +1149,8 @@
       "keywords": [
         "Rapid Fire 2",
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Assault Cannon",
@@ -1157,7 +1165,8 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
     },
     {
       "name": "Heavy Assault Cannon",
@@ -1172,7 +1181,8 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Flamer",
@@ -1188,7 +1198,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
     },
     {
       "name": "Heavy Flamer",
@@ -1204,7 +1215,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
     },
     {
       "name": "Inferno Cannon",
@@ -1220,7 +1232,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Melta Pistol",
@@ -1235,7 +1248,8 @@
       "keywords": [
         "Pistol",
         "Melta 2"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
     },
     {
       "name": "Multi-melta",
@@ -1250,7 +1264,8 @@
       "keywords": [
         "Heavy",
         "Melta 3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Melta Cannon",
@@ -1264,7 +1279,8 @@
       "damage": "D6",
       "keywords": [
         "Melta 4"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Lascannon",
@@ -1278,7 +1294,8 @@
       "damage": "D6+2",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
     },
     {
       "name": "Havoc Launcher",
@@ -1293,7 +1310,8 @@
       "keywords": [
         "Blast 2\"",
         "Anti-INFANTRY 4+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Demolisher Cannon",
@@ -1308,7 +1326,8 @@
       "keywords": [
         "Blast 3\"",
         "Anti-FORTIFICATION 2+"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Conflagration Cannon",
@@ -1324,7 +1343,8 @@
         "Assault",
         "Torrent",
         "Ignores Cover"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Vulcan Mega Bolter",
@@ -1338,7 +1358,8 @@
       "damage": "3",
       "keywords": [
         "Sustained Hits 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Avenger Gatling Cannon",
@@ -1353,7 +1374,8 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Magma Cannon",
@@ -1368,7 +1390,8 @@
       "keywords": [
         "Assault",
         "Melta 6"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Laser Destroyer",
@@ -1383,7 +1406,8 @@
       "keywords": [
         "Ordnance",
         "Beam 1"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Volcano Cannon",
@@ -1400,7 +1424,8 @@
         "Anti-VEHICLE 4+",
         "Anti-MONSTER 5+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Storm Eagle Rocket",
@@ -1418,7 +1443,8 @@
         "Indirect Fire",
         "Blast 12\"",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Hydra Flak Autocannon",
@@ -1436,7 +1462,26 @@
         "Sustained Hits 1",
         "Anti-AIRCRAFT 3+",
         "Anti-FLY 3+"
-      ]
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Whirlwind Vengeance Launcher",
+      "section": "Weapons",
+      "points": 90,
+      "profiles": null,
+      "range": "18\"-72\"",
+      "attacks": "3D6",
+      "strength": 8,
+      "ap": -2,
+      "damage": "3",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 6\"",
+        "Anti-Air"
+      ],
+      "availability": ""
     },
     {
       "name": "Improvised Melee Weapon",
@@ -1448,7 +1493,8 @@
       "strength": "S",
       "ap": "0",
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Combat Knife",
@@ -1462,7 +1508,8 @@
       "damage": "1",
       "keywords": [
         "Precision"
-      ]
+      ],
+      "availability": "Tacticus, Bike"
     },
     {
       "name": "Chainblade",
@@ -1474,7 +1521,8 @@
       "strength": "S",
       "ap": "-1",
       "damage": "1",
-      "keywords": []
+      "keywords": [],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
     },
     {
       "name": "Power Sword",
@@ -1488,7 +1536,8 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
     },
     {
       "name": "Power Maul",
@@ -1502,7 +1551,8 @@
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
     },
     {
       "name": "Power Fist",
@@ -1516,7 +1566,8 @@
       "damage": "3",
       "keywords": [
         "Heavy"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
       "name": "Power Scourge",
@@ -1530,7 +1581,8 @@
       "damage": "2",
       "keywords": [
         "Harpoon"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
       "name": "Chainglaive",
@@ -1544,7 +1596,8 @@
       "damage": "1",
       "keywords": [
         "Lance"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
       "name": "Chainfist",
@@ -1560,7 +1613,8 @@
         "Heavy",
         "Anti-VEHICLE 3+",
         "Anti-MONSTER 4+"
-      ]
+      ],
+      "availability": "Terminator"
     },
     {
       "name": "Lightning Claw",
@@ -1574,7 +1628,8 @@
       "damage": "1",
       "keywords": [
         "Lethal Hits"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
       "name": "Rending Claws",
@@ -1589,7 +1644,8 @@
       "keywords": [
         "Sustained Hits 1",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Terminator"
     },
     {
       "name": "Crusher Claws",
@@ -1606,7 +1662,8 @@
         "Anti-FORTIFICATION 2+",
         "Anti-VEHICLE 4+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Terminator"
     },
     {
       "name": "Scything Wings",
@@ -1620,7 +1677,8 @@
       "damage": "1",
       "keywords": [
         "Extra Attacks"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Force Weapon",
@@ -1636,7 +1694,8 @@
         "Precision",
         "Anti-PSYKER 3+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
     },
     {
       "name": "Servo Scourges",
@@ -1651,7 +1710,8 @@
       "keywords": [
         "Extra Attacks",
         "Harpoon"
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator, Bike"
     },
     {
       "name": "Warpforge Axe",
@@ -1665,7 +1725,8 @@
       "damage": "2",
       "keywords": [
         "Anti-VEHICLE 3+"
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator, Bike"
     },
     {
       "name": "Dreadnought Crusher Drill",
@@ -1680,7 +1741,8 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Toxinjector",
@@ -1695,7 +1757,8 @@
       "keywords": [
         "Extra Attacks",
         "Poison D3"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Frag Grenades",
@@ -1710,7 +1773,8 @@
       "keywords": [
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Krak Grenades",
@@ -1724,7 +1788,8 @@
       "damage": "3",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Melta Bombs",
@@ -1738,7 +1803,8 @@
       "damage": "D6+3",
       "keywords": [
         "Ignores Cover"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Smoke Grenades",
@@ -1752,7 +1818,8 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Carrion Bombs",
@@ -1770,7 +1837,8 @@
         "Anti-BEAST 4+",
         "Anti-MONSTER 5+",
         "Poison 1"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Magma Cutter",
@@ -1787,7 +1855,8 @@
           "damage": "D6",
           "keywords": [
             "Melta 2"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Melee",
@@ -1800,7 +1869,8 @@
           "keywords": [
             "Extra Attacks",
             "Melta 2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1810,7 +1880,8 @@
       "damage": null,
       "keywords": [
         "Melta 2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Pistol",
@@ -1827,7 +1898,8 @@
           "damage": "2",
           "keywords": [
             "Pistol"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Bike"
         },
         {
           "profileName": "Supercharged",
@@ -1840,7 +1912,8 @@
           "keywords": [
             "Pistol",
             "Hazardous 2"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Bike"
         }
       ],
       "range": null,
@@ -1850,7 +1923,8 @@
       "damage": null,
       "keywords": [
         "Pistol"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Plasma Gun",
@@ -1867,7 +1941,8 @@
           "damage": "2",
           "keywords": [
             "Rapid Fire 1"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Bike"
         }
       ],
       "range": null,
@@ -1877,7 +1952,8 @@
       "damage": null,
       "keywords": [
         "Rapid Fire 1"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
     },
     {
       "name": "Plasma Cannon",
@@ -1895,7 +1971,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": "Tacticus, Havoc, Terminator"
         },
         {
           "profileName": "Supercharged",
@@ -1909,7 +1986,8 @@
             "Heavy",
             "Blast 1\"",
             "Hazardous D3+1"
-          ]
+          ],
+          "availability": "Tacticus, Havoc, Terminator"
         }
       ],
       "range": null,
@@ -1920,7 +1998,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
     },
     {
       "name": "Macro Plasma Cannon",
@@ -1939,7 +2018,8 @@
             "Ordnance",
             "Blast 3\"",
             "Hazardous D3+2"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1951,7 +2031,8 @@
         "Ordnance",
         "Blast 3\"",
         "Hazardous D3+2"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Executor",
@@ -1969,7 +2050,8 @@
           "keywords": [
             "Heavy",
             "Blast 3\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Supercharged",
@@ -1983,7 +2065,8 @@
             "Ordnance",
             "Blast 2\"",
             "Hazardous 3"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1994,7 +2077,8 @@
       "keywords": [
         "Heavy",
         "Blast 3\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Plasma Decimator",
@@ -2012,7 +2096,8 @@
           "keywords": [
             "Heavy",
             "Blast 3\""
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2023,7 +2108,8 @@
       "keywords": [
         "Heavy",
         "Blast 3\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Missile Launcher",
@@ -2041,7 +2127,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": "Tacticus, Havoc"
         },
         {
           "profileName": "Krak",
@@ -2053,7 +2140,8 @@
           "damage": "4",
           "keywords": [
             "Heavy"
-          ]
+          ],
+          "availability": "Tacticus, Havoc"
         }
       ],
       "range": null,
@@ -2064,7 +2152,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": "Tacticus, Havoc"
     },
     {
       "name": "Grenade Launcher",
@@ -2083,7 +2172,8 @@
             "Assault",
             "Blast 1\"",
             "Ignores Cover"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Bike"
         }
       ],
       "range": null,
@@ -2095,7 +2185,8 @@
         "Assault",
         "Blast 1\"",
         "Ignores Cover"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     },
     {
       "name": "Light Cannon",
@@ -2112,7 +2203,8 @@
           "damage": "2",
           "keywords": [
             "Blast 2\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "AP",
@@ -2122,7 +2214,8 @@
           "strength": 10,
           "ap": -2,
           "damage": "D6+1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2132,7 +2225,8 @@
       "damage": null,
       "keywords": [
         "Blast 2\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Battle Cannon",
@@ -2149,7 +2243,8 @@
           "damage": "2",
           "keywords": [
             "Blast 2\""
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "AP",
@@ -2159,7 +2254,8 @@
           "strength": 11,
           "ap": -2,
           "damage": "D6+1",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2169,7 +2265,8 @@
       "damage": null,
       "keywords": [
         "Blast 2\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Missile Bastion",
@@ -2187,7 +2284,8 @@
           "keywords": [
             "Heavy",
             "Blast 1\""
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2198,7 +2296,8 @@
       "keywords": [
         "Heavy",
         "Blast 1\""
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Thundercoil Harpoon",
@@ -2218,7 +2317,8 @@
             "Anti-MONSTER 4+",
             "Devastating Wounds",
             "Harpoon"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2231,7 +2331,8 @@
         "Anti-MONSTER 4+",
         "Devastating Wounds",
         "Harpoon"
-      ]
+      ],
+      "availability": ""
     },
     {
       "name": "Daemonhammer",
@@ -2248,7 +2349,8 @@
           "damage": "2",
           "keywords": [
             "Devastating Wounds"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Terminator"
         },
         {
           "profileName": "Strike",
@@ -2261,7 +2363,8 @@
           "keywords": [
             "Heavy",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Terminator"
         }
       ],
       "range": null,
@@ -2271,7 +2374,8 @@
       "damage": null,
       "keywords": [
         "Devastating Wounds"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
       "name": "Scything Talons",
@@ -2288,7 +2392,8 @@
           "damage": "1",
           "keywords": [
             "Extra Attacks"
-          ]
+          ],
+          "availability": "Tacticus, Raptor"
         },
         {
           "profileName": "Stab",
@@ -2302,7 +2407,8 @@
             "Heavy",
             "Lance",
             "Lethal Hits"
-          ]
+          ],
+          "availability": "Tacticus, Raptor"
         }
       ],
       "range": null,
@@ -2312,7 +2418,8 @@
       "damage": null,
       "keywords": [
         "Extra Attacks"
-      ]
+      ],
+      "availability": "Tacticus, Raptor"
     },
     {
       "name": "Ruinblade",
@@ -2331,7 +2438,8 @@
             "Heavy",
             "Lethal Hits",
             "Anti-PSYKER 4+"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Terminator"
         },
         {
           "profileName": "Melee - Strike",
@@ -2343,7 +2451,8 @@
           "damage": "S +D6",
           "keywords": [
             "Devastating Wounds"
-          ]
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Terminator"
         }
       ],
       "range": null,
@@ -2355,7 +2464,8 @@
         "Heavy",
         "Lethal Hits",
         "Anti-PSYKER 4+"
-      ]
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
       "name": "Dreadnought Chainblade",
@@ -2370,7 +2480,8 @@
           "strength": "S",
           "ap": -1,
           "damage": "2",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Strike",
@@ -2382,7 +2493,8 @@
           "damage": "D3+3",
           "keywords": [
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2390,7 +2502,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Dreadnought Power Claw",
@@ -2405,7 +2518,8 @@
           "strength": "S +1",
           "ap": -1,
           "damage": "2",
-          "keywords": []
+          "keywords": [],
+          "availability": ""
         },
         {
           "profileName": "Crush",
@@ -2417,7 +2531,8 @@
           "damage": "D3+3",
           "keywords": [
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2425,7 +2540,8 @@
       "strength": null,
       "ap": null,
       "damage": null,
-      "keywords": []
+      "keywords": [],
+      "availability": ""
     },
     {
       "name": "Infernal Gaze",
@@ -2445,7 +2561,8 @@
             "Hazardous D3",
             "Anti-PSYKER 2+",
             "Devastating Wounds"
-          ]
+          ],
+          "availability": ""
         },
         {
           "profileName": "Witchfire",
@@ -2461,7 +2578,8 @@
             "Anti-PSYKER 4+",
             "Devastating Wounds",
             "Ignores Cover"
-          ]
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2474,7 +2592,8 @@
         "Hazardous D3",
         "Anti-PSYKER 2+",
         "Devastating Wounds"
-      ]
+      ],
+      "availability": ""
     }
   ]
 }

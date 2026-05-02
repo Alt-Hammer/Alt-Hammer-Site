@@ -1,46 +1,77 @@
 ---
+// src/pages/rules/[page].astro
+// Renders one dedicated page per Heading 1 section from the Core Rules doc.
+//
+// ROUTING MODEL
+// ─────────────
+// Each .mdx file in src/content/rules/ now has:
+//   section: "<slug>"   ← equals its own slug (not a group name)
+//
+// getStaticPaths() collects every unique section value and creates a route
+// for each — so /rules/making-attacks renders making-attacks.mdx,
+// /rules/battle-shock renders battle-shock.mdx, etc.
+//
+// The Introduction slug is present as an .mdx file but excluded from the
+// RULES_SECTIONS nav — its content is embedded on the homepage instead.
+// Navigating directly to /rules/introduction still renders a valid page.
+//
+// STICKY NAVBAR
+// ─────────────
+// Pages with Heading 2 subsections render a sticky bar below the site header
+// containing jump-link buttons for each H2. Subsection text comes from the
+// MDX frontmatter 'subsections' array (populated by the Python converter).
+// The anchor href is computed by slugifying the subsection label the same
+// way Astro's MDX renderer auto-generates heading ids.
+// Reuses the existing .faction-sticky-header / .faction-section-btn CSS.
+
 import DocsLayout from '../../layouts/DocsLayout.astro';
 import { RULES_SECTIONS } from '../../data/rules-nav.ts';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const rulePages = await getCollection('rules');
-  const sections = Array.from(
+  const slugs = Array.from(
     new Set(
       rulePages
         .map((entry) => entry.data.section)
-        .filter((section) => typeof section === 'string')
+        .filter((s): s is string => typeof s === 'string')
     )
   );
-  return sections.map((section) => ({
-    params: { page: section },
-  }));
+  return slugs.map((slug) => ({ params: { page: slug } }));
 }
 
 const page = Astro.params.page;
-const section = RULES_SECTIONS.find((item) => item.href === `/rules/${page}`);
-if (!section) {
-  throw new Error(`Unknown rules page: ${page}`);
-}
 
+// Find this page's nav entry (undefined for 'introduction')
+const navSection = RULES_SECTIONS.find((s) => s.slug === page);
+
+// Load and render the single matching MDX entry
 const rulePages = await getCollection('rules');
-const matchingPages = rulePages
-  .filter((entry) => entry.data.section === page)
-  .sort((a, b) => (a.id || '').localeCompare(b.id || ''));
-
-if (matchingPages.length === 0) {
-  throw new Error(`No rule content found for ${page}`);
+const entry = rulePages.find((e) => e.data.section === page);
+if (!entry) {
+  throw new Error(`No rule content found for section: ${page}`);
 }
 
-const pageTitle = section.label;
-const pageDescription = matchingPages[0]?.data.description ?? `${section.label} for Alt-Hammer 40,000.`;
+const { Content } = await entry.render();
 
-const renderedPages = await Promise.all(
-  matchingPages.map(async (entry) => {
-    const { Content } = await entry.render();
-    return Content;
-  })
-);
+const pageTitle       = entry.data.title;
+const pageDescription = entry.data.description ?? `${pageTitle} — Alt-Hammer 40,000 Core Rules.`;
+
+// Subsections drive the sticky H2 navbar buttons.
+const subsections: string[] = Array.isArray(entry.data.subsections)
+  ? (entry.data.subsections as string[])
+  : [];
+
+// Compute anchor slugs the same way Astro's MDX renderer does:
+// lowercase, strip non-word chars (except hyphens), collapse spaces to hyphens.
+function toAnchor(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
 ---
 
 <DocsLayout
@@ -49,13 +80,33 @@ const renderedPages = await Promise.all(
   activePage="rules"
   sidebarType="rules"
 >
-  <div class="page-header">
-    <p class="breadcrumb">Rules</p>
-    <h1>{pageTitle}</h1>
-    <p class="subtitle">
-      {pageDescription}
-    </p>
-  </div>
+  {subsections.length > 0 ? (
+    <div class="faction-sticky-header" id="rules-sticky-header">
+      <div class="faction-sticky-top">
+        <div class="faction-sticky-meta">
+          <p class="breadcrumb">
+            <a href="/rules">Rules</a>
+          </p>
+          <h1 class="faction-sticky-title">{pageTitle}</h1>
+        </div>
+      </div>
+      <nav class="faction-section-buttons" aria-label="Page sections">
+        {subsections.map((sub) => (
+          <a href={`#${toAnchor(sub)}`} class="faction-section-btn">
+            {sub}
+          </a>
+        ))}
+      </nav>
+    </div>
+  ) : (
+    <div class="page-header">
+      <p class="breadcrumb"><a href="/rules">Rules</a></p>
+      <h1>{pageTitle}</h1>
+      <p class="subtitle">{pageDescription}</p>
+    </div>
+  )}
 
-  {renderedPages.map((Content) => <Content />)}
+  <div class="rules-content-body">
+    <Content />
+  </div>
 </DocsLayout>
