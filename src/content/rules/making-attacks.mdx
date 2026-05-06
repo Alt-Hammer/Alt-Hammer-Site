@@ -21,8 +21,8 @@ Your units and models can make attacks against enemy units and models both at Ra
 
 ### General Conditions Applicable to Making Attacks
 
-1. Models cannot select enemy units or models as the target of an attack if that model is incapable of successfully hitting that target (because the attacking model's Weapons Skill or Ballistic Skill is too low relative to the target model/unit). Check the Hit Roll Table to confirm and remember to apply any applicable modifiers to confirm that your attacking model is able to Hit. If it not able to Hit, choose another target, or, if none are available, the model is not eligible to make those attacks.
-2. Models cannot select enemy units or models as the target of an attack if that model is incapable of successfully wounding that target for any reason; ie, the attack's Strength characteristic would be too low to wound the model. The Wound Rolls subsection includes a Wound Table that displays the dice roll values needed to successfully Wound, but a good rule of thumb to keep in mind is that any model with a Toughness characteristic that is greater than double a weapon's Strength characteristic is likely unable to be successfully Wounded by that attack.
+1. Models cannot select enemy units or models as the target of an attack if that model is incapable of successfully hitting that target (because the attacking model's Weapons Skill or Ballistic Skill is too low relative to the target model/unit). Check the Hit Roll Table to confirm and remember to account for any applicable modifiers to confirm that your attacking model is able to Hit. If it's not able to Hit, choose another target, or, if none are available, the model is not eligible to make those attacks.
+2. Models cannot select enemy units or models as the target of an attack if that model is incapable of successfully Wounding that target for any reason; ie, the attack's Strength characteristic would be too low to Wound the model. The Wound Rolls subsection includes a Wound Table that displays the dice roll values needed to successfully Wound.
 3. Attacks that have a Strength characteristic that is more than three times the value of the target's toughness characteristic automatically destroy that target upon a successful Hit roll. The target model or unit cannot use any saving throws of any kind, and one model is destroyed for each attack that meets these conditions.
 4. Hit Rolls are made using a model's Ballistic Skill for Ranged attacks, and their Weapon Skill for Melee attacks. Hit rolls of 1 always fail, and rolls of 6 always count as a Critical Hit. Be sure to account for any abilities that may alter Hit rolls, such as abilities that enable Critical Hits to be scored on a 5 instead of a 6. However, if a model is not able to Hit a target per the Hit Roll Table, then that model is not able to score a Critical Hit on that target.
 5. Wound Rolls of 1 always fail, and rolls of 6 always count as a Critical Wound. Be sure to account for any abilities that may alter Wound rolls, such as abilities that enable Critical Wounds to be scored on a 5 instead of a 6. However, if a model is not able to Wound a target per the Wound Roll Table, then that model is not able to score a Critical Wound.
@@ -841,23 +841,24 @@ Additional units can become eligible to make Melee attacks as part of the initia
 ### Multiple Melee Attacks within a Battle Round
 
 
-A unit can be triggered to complete Melee attacks any number of times in a single Battle Round. However, each successive time that that same unit has to complete Melee attacks it will suffer some degradation of Melee capabilities. This is to represent models gradually being worn down by the repeated onslaught of enemies without having a chance to regain their composure and refocus. As such, for that unit's:
-1. 1st and 2nd Melee attacks - no negative effects are applied
-2. 3rd Melee attack onwards - reduce Initiative characteristic by 1 for each successive Melee attack, to a minimum of 1.
-3. 4th Melee attack onwards - reduce Attacks characteristic by 1 for each successive Melee attack, to a minimum of 1.
-4. 5th Melee attack onwards - reduce Weapons Skill characteristic by 1 for each successive Melee attack, to a minimum of 1.
-5. 6th Melee attack onwards - the unit is automatically Battle Shocked after completing their Melee attacks.
+A unit can be triggered to complete Melee attacks a part of a <span class="keyword" data-term="fight" data-type="action">Fight</span> Action any number of times in a single Battle Round. However, each successive time that that same unit makes Melee attacks it will suffer some degradation of its Melee capabilities through reductions in select model characteristics, which remain in effect until the end of the Battle Round. This is to represent models in the unit gradually being worn down by the repeated onslaught of enemies without having a chance to regain their composure and refocus. The following scale degradation steps are used for this purpose:
+1. 1st Melee attack - no negative effects are applied
+2. 2nd Melee attack onwards - reduce Attacks characteristic by 1 for each successive Melee attack, to a minimum of 1.
+3. 3rd Melee attack onwards - reduce Initiative characteristic by 1 for each successive Melee attack, to a minimum of 1.
+4. 4th Melee attack onwards - reduce Weapons Skill characteristic by 1 for each successive Melee attack, to a minimum of 1.
+5. 5th Melee attack onwards - the unit's Weapons Skill, Attacks and Initiative continue to be reduced, and the unit is automatically Battle Shocked after completing their 5th Melee attack.
 
 #### Example Scenario
 
 
-Player One has a unit that has been triggered to complete Melee attacks 4 times during Battle Round. Models in that unit originally had Weapons Skill of 5, an Initiative of 4, and 3 Attacks. However, after multiple melee engagements in short succession, the surviving models in the unit have been beaten down and are exhausted, but are still fighting as best as they can to survive. The unit has once again been triggered to make Melee attacks resulting from yet another enemy unit targeting them as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action. Since this will be the 5th Melee attack the unit is forced to make this Battle Round, models in the unit's relevant characteristics are modified as follows: 
-1. Initiative of 1 (-1 from 3rd Melee, -1 from 4th Melee, -1 from this latest 5th Melee)
-2. 1 Attack (-1 from 4th Melee, -1 from this latest 5th Melee) 
-3. Weapons Skill of 4 (-1 from this latest 5th Melee)
+Player One has a unit that has been triggered to complete Melee attacks 3 times during the Battle Round. Models in that unit originally had Weapons Skill of 5, an Initiative of 4, and 3 Attacks. However, after multiple melee engagements in short succession, the surviving models in the unit have been beaten down and are exhausted, but are still fighting as best as they can to survive. The unit has once again been triggered to make Melee attacks resulting from yet another enemy unit from Player Two targeting them as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action. Since this will be the 4th <span class="keyword" data-term="fight" data-type="action">Fight</span> Action the unit is forced to participate in this Battle Round, the characteristics of models in the unit are modified as follows: 
+1. Weapons Skill of 4 (-1 from this latest 4th Melee)
+2. Initiative of 2 (-1 from 3rd Melee, -1 from this latest 4th Melee)
+3. 1 Attack (-1 from 2nd Melee, -1 from 3rrd Melee, -1 from this latest 4th Melee, now at the minimum of 1 and cannot be reduced further) 
 
 Should this unit miraculously survive this latest Melee engagement and have the misfortune of being the target of *yet another* enemy unit as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action, the models in that unit's relevant characteristics would be modified as follows:
-1. Initiative of 1 (-1 from 3rd Melee, -1 from 4th Melee, -1 from 5th Melee, now at the minimum of 1 for this 6th Melee)
-2. 1 Attacks (-1 from 4th Melee, -1 from 5th Melee, now at the minimum of 1 for this 6th Melee)
-3. Weapons Skill of 3 (-1 from 5th Melee, -1 from this latest 6th Melee)
-4. The unit will be Battle Shocked once their Melee attacks are completed
+1. Weapons Skill of 3 (-1 from this latest 5th Melee plus prior reduction from 4th Melee)
+2. Initiative of 1 (-1 from 3rd Melee, -1 from 4th Melee, -1 from this latest 5th Melee, now at the minimum of 1 and cannot be reduced further)
+3. 1 Attacks (reduced to the minimum of 1 from the prior 4th Melee)
+
+Should models in the unit survive this 5th Fight as well and have even more misfortune to endure a 5th Fight, their Weapons Skill would be reduced to 2, Initiative and Attacks would remain at 1 (the lowest they can go), and the unit would become Battle Shocked once their Melee attacks are completed.

@@ -3,28 +3,6 @@
   "slug": "adeptus-mechanicus",
   "units": [
     {
-      "name": "Name",
-      "category": "Unknown",
-      "stats": {
-        "M": "Movement",
-        "WS": "Weapon Skill",
-        "BS": "Ballistic Skill",
-        "I": "Initiative",
-        "A": "Attacks",
-        "S": "Strength",
-        "T": "Toughness",
-        "W": "Wounds",
-        "SV": "Save",
-        "LD": "Leadership",
-        "basePoints": "Base Points per Model",
-        "squadSizes": "Squad Sizes"
-      },
-      "keywords": [
-        "Keywords"
-      ],
-      "models": null
-    },
-    {
       "name": "Techpriest Dominus",
       "category": "Character",
       "stats": {
@@ -90,7 +68,7 @@
         "W": 2,
         "SV": "4+",
         "LD": "8+",
-        "basePoints": 75,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -511,13 +489,13 @@
   "weapons": [
     {
       "name": "Galvanic Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "18\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -2,
+      "strength": "4",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Pistol"
@@ -526,13 +504,13 @@
     },
     {
       "name": "Galvanic Carbine",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 4,
       "profiles": null,
       "range": "18\"",
       "attacks": "3",
-      "strength": 4,
-      "ap": -2,
+      "strength": "4",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Assault"
@@ -541,26 +519,26 @@
     },
     {
       "name": "Galvanic Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 4,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -2,
+      "strength": "4",
+      "ap": "-2",
       "damage": "1",
       "keywords": [],
       "availability": ""
     },
     {
       "name": "Radium Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "12\"",
       "attacks": "1",
-      "strength": 3,
-      "ap": -1,
+      "strength": "3",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Pistol",
@@ -573,13 +551,13 @@
     },
     {
       "name": "Radium Carbine",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 3,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 3,
-      "ap": -1,
+      "strength": "3",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -591,13 +569,13 @@
     },
     {
       "name": "Radium Jezzail",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "24\"",
       "attacks": "2",
-      "strength": 6,
-      "ap": -1,
+      "strength": "6",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Assault",
@@ -610,13 +588,13 @@
     },
     {
       "name": "Arc Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "12\"",
       "attacks": "D3",
-      "strength": 10,
-      "ap": -3,
+      "strength": "10",
+      "ap": "-3",
       "damage": "D6",
       "keywords": [
         "Pistol"
@@ -624,14 +602,29 @@
       "availability": ""
     },
     {
+      "name": "Arc Rifle",
+      "section": "Ranged Weapons",
+      "points": 12,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "D3+1",
+      "strength": "10",
+      "ap": "-3",
+      "damage": "D6",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Arc Destructor",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 25,
       "profiles": null,
       "range": "18\"",
       "attacks": "D3+2",
-      "strength": 10,
-      "ap": -3,
+      "strength": "10",
+      "ap": "-3",
       "damage": "D6+1",
       "keywords": [
         "Heavy"
@@ -640,13 +633,13 @@
     },
     {
       "name": "Flechette Blaster",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 4,
       "profiles": null,
       "range": "18\"",
       "attacks": "5",
-      "strength": 2,
-      "ap": -2,
+      "strength": "2",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Pistol",
@@ -655,14 +648,30 @@
       "availability": ""
     },
     {
+      "name": "Flechette Carbine",
+      "section": "Ranged Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "5",
+      "strength": "2",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Sustained Hits 3"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Phosphor Blast Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 4,
       "profiles": null,
       "range": "9\"",
       "attacks": "D3+1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Pistol",
@@ -672,13 +681,13 @@
     },
     {
       "name": "Phosphor Serpenta",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "18\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Pistol",
@@ -689,13 +698,13 @@
     },
     {
       "name": "Phosphor Blast Carbine",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "18\"",
       "attacks": "D3+1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Sustained Hits 1",
@@ -705,13 +714,13 @@
     },
     {
       "name": "Phosphor Blaster",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "24\"",
       "attacks": "2",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Rapid Fire 2",
@@ -721,13 +730,13 @@
     },
     {
       "name": "Heavy Phosphor Blaster",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "24\"",
       "attacks": "3",
-      "strength": 5,
-      "ap": -1,
+      "strength": "5",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Sustained Hits 1",
@@ -737,13 +746,13 @@
     },
     {
       "name": "Phosphor Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 45,
       "profiles": null,
       "range": "36\"",
       "attacks": "6",
-      "strength": 7,
-      "ap": -1,
+      "strength": "7",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Sustained Hits 2",
@@ -752,14 +761,31 @@
       "availability": ""
     },
     {
+      "name": "Phosphor Torch",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "9\"",
+      "attacks": "D6+2",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Phosphor Combustor",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 12,
       "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
+      "strength": "5",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -770,13 +796,13 @@
     },
     {
       "name": "Cognis Autocarbine",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 3,
       "profiles": null,
       "range": "24\"",
       "attacks": "2",
-      "strength": 2,
-      "ap": 0,
+      "strength": "2",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
@@ -784,14 +810,30 @@
       "availability": ""
     },
     {
+      "name": "Cognis Heavy Autogun",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "36\"",
+      "attacks": "2",
+      "strength": "4",
+      "ap": "0",
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Rapid Fire 2"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Cognis Autocannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "60\"",
       "attacks": "2",
-      "strength": 7,
-      "ap": -1,
+      "strength": "7",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Heavy"
@@ -800,13 +842,13 @@
     },
     {
       "name": "Cognis Lascannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 25,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",
-      "strength": 12,
-      "ap": -3,
+      "strength": "12",
+      "ap": "-3",
       "damage": "D6+2",
       "keywords": [
         "Heavy"
@@ -814,31 +856,293 @@
       "availability": ""
     },
     {
-      "name": "Plasma Culverin- Overcharged",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "30\"",
-      "attacks": "D3",
-      "strength": 8,
-      "ap": -3,
-      "damage": "3",
+      "name": "Plasma Caliver",
+      "section": "Ranged Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 12,
+          "range": "24\"",
+          "attacks": "2",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Rapid Fire 1"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [
+            "Rapid Fire 1",
+            "Hazardous 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Culverin",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 20,
+          "range": "30\"",
+          "attacks": "D3+1",
+          "strength": "6",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "30\"",
+          "attacks": "D3",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [
+            "Heavy",
+            "Blast 1\"",
+            "Hazardous D3+1"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
         "Heavy",
-        "Blast 1\"",
-        "Hazardous D3+1"
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Cannon",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 20,
+          "range": "30\"",
+          "attacks": "D3+2",
+          "strength": "6",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "30\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 1\"",
+            "Hazardous D3+1"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Pistol",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Dispersion",
+          "points": 15,
+          "range": "9\"",
+          "attacks": "D6+2",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Focused",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-3",
+          "damage": "D3+3",
+          "keywords": [
+            "Ordnance",
+            "Beam 1",
+            "Melta 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Ray",
+      "section": "Ranged Weapons",
+      "points": 30,
+      "profiles": [
+        {
+          "profileName": "Dispersion",
+          "points": 30,
+          "range": "9\"",
+          "attacks": "D6+4",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Focused",
+          "points": null,
+          "range": "36\"",
+          "attacks": "1",
+          "strength": "11",
+          "ap": "-3",
+          "damage": "D6+2",
+          "keywords": [
+            "Ordnance",
+            "Beam 1",
+            "Melta 3"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eradication Beamer",
+      "section": "Ranged Weapons",
+      "points": 55,
+      "profiles": [
+        {
+          "profileName": "Dispersion",
+          "points": 55,
+          "range": "12\"",
+          "attacks": "D6+6",
+          "strength": "5",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Focused",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "12",
+          "ap": "-3",
+          "damage": "D6+3",
+          "keywords": [
+            "Ordnance",
+            "Beam 1",
+            "Melta 4"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
       ],
       "availability": ""
     },
     {
       "name": "Meltagun",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "12\"",
       "attacks": "1",
-      "strength": 9,
-      "ap": -4,
+      "strength": "9",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Melta 2"
@@ -847,13 +1151,13 @@
     },
     {
       "name": "Multi-melta",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 9,
-      "ap": -4,
+      "strength": "9",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Heavy",
@@ -863,13 +1167,13 @@
     },
     {
       "name": "Heavy Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 12,
       "profiles": null,
       "range": "36\"",
       "attacks": "3",
-      "strength": 5,
-      "ap": -1,
+      "strength": "5",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Heavy",
@@ -879,13 +1183,13 @@
     },
     {
       "name": "Transuranic Arquebus",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",
-      "strength": 10,
-      "ap": -3,
+      "strength": "10",
+      "ap": "-3",
       "damage": "D3+3",
       "keywords": [
         "Precision",
@@ -895,13 +1199,13 @@
     },
     {
       "name": "Transonic Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "24\"",
       "attacks": "D6+3",
-      "strength": 2,
-      "ap": -2,
+      "strength": "2",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Lethal Hits"
@@ -910,13 +1214,13 @@
     },
     {
       "name": "Magnarail Lance",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 25,
       "profiles": null,
       "range": "72\"",
       "attacks": "1",
-      "strength": 12,
-      "ap": -5,
+      "strength": "12",
+      "ap": "-5",
       "damage": "8",
       "keywords": [
         "Ordnance"
@@ -924,14 +1228,146 @@
       "availability": ""
     },
     {
+      "name": "Electrostatc Gauntlets - Shooting",
+      "section": "Ranged Weapons",
+      "points": 6,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 6,
+          "range": "6\"",
+          "attacks": "D6+2",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Daedalus Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 40,
+      "profiles": [
+        {
+          "profileName": "Chohort-Breaker",
+          "points": 40,
+          "range": "18\"-72\"",
+          "attacks": "D6+3",
+          "strength": "3",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Indirect Fire",
+            "Blast 2\"",
+            "Anti Air 4+",
+            "Anti-FLY 2+",
+            "Anti-INFANTRY 4+",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Macro-Breach",
+          "points": null,
+          "range": "18\"-72\"",
+          "attacks": "1",
+          "strength": "12",
+          "ap": "-2",
+          "damage": "D6+4",
+          "keywords": [
+            "Ordnance",
+            "Indirect Fire",
+            "Anti Air 4+",
+            "Anti-AIRCRAFT 2+"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Indirect Fire",
+        "Blast 2\"",
+        "Anti Air 4+",
+        "Anti-FLY 2+",
+        "Anti-INFANTRY 4+",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Torsion Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 25,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 5,
-      "ap": -2,
+      "strength": "5",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Rapid Fire 2"
@@ -940,7 +1376,7 @@
     },
     {
       "name": "Grav Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "24\"",
@@ -955,13 +1391,13 @@
     },
     {
       "name": "Belleros Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 60,
       "profiles": null,
       "range": "18\"-72\"",
       "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
+      "strength": "5",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Ordnance",
@@ -972,14 +1408,56 @@
       "availability": ""
     },
     {
+      "name": "Ferrumite Cannon",
+      "section": "Ranged Weapons",
+      "points": 60,
+      "profiles": [
+        {
+          "profileName": "Phosphor Shell",
+          "points": 60,
+          "range": "48\"",
+          "attacks": "2D6+3",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Blast 3\"",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Solid Shell",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "11",
+          "ap": "-3",
+          "damage": "D6+1",
+          "keywords": [],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 3\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Neutron Laser",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 85,
       "profiles": null,
       "range": "72\"",
       "attacks": "1",
-      "strength": 24,
-      "ap": -4,
+      "strength": "24",
+      "ap": "-4",
       "damage": "D6+10",
       "keywords": [
         "Ordnance",
@@ -1057,7 +1535,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +2",
-      "ap": -1,
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
@@ -1087,7 +1565,7 @@
       "range": "-",
       "attacks": "A+1",
       "strength": "S +1",
-      "ap": -2,
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Lance",
@@ -1103,7 +1581,7 @@
       "range": "-",
       "attacks": "A+2",
       "strength": "S +2",
-      "ap": -2,
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Lance",
@@ -1119,7 +1597,7 @@
       "range": "-",
       "attacks": "A x2",
       "strength": "S",
-      "ap": -2,
+      "ap": "-2",
       "damage": "1",
       "keywords": [],
       "availability": ""
@@ -1132,7 +1610,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S",
-      "ap": -2,
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Extra Attacks",
@@ -1141,265 +1619,17 @@
       "availability": ""
     },
     {
-      "name": "Iron Claws",
-      "section": "Melee Weapons",
-      "points": "-",
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": "-",
-      "damage": "2",
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Caliver",
-      "section": "Weapons",
-      "points": 12,
-      "profiles": [
-        {
-          "profileName": "Standard",
-          "points": 12,
-          "range": "24\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Rapid Fire 1"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Overcharged",
-          "points": null,
-          "range": "24\"",
-          "attacks": "1",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Rapid Fire 1",
-            "Hazardous 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Rapid Fire 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Eradication Pistol",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": [
-        {
-          "profileName": "Dispersion",
-          "points": 15,
-          "range": "9\"",
-          "attacks": "D6+2",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Assault",
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Focused",
-          "points": null,
-          "range": "24\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -3,
-          "damage": "D3+3",
-          "keywords": [
-            "Ordnance",
-            "Beam 1",
-            "Melta 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Eradication Ray",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Focused",
-          "points": null,
-          "range": "36\"",
-          "attacks": "1",
-          "strength": 11,
-          "ap": -3,
-          "damage": "D6+2",
-          "keywords": [
-            "Ordnance",
-            "Beam 1",
-            "Melta 3"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Ordnance",
-        "Beam 1",
-        "Melta 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Eradication Beamer",
-      "section": "Weapons",
-      "points": 55,
-      "profiles": [
-        {
-          "profileName": "Dispersion",
-          "points": 55,
-          "range": "12\"",
-          "attacks": "D6+6",
-          "strength": 5,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Assault",
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Focused",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 12,
-          "ap": -3,
-          "damage": "D6+3",
-          "keywords": [
-            "Ordnance",
-            "Beam 1",
-            "Melta 4"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Cannon",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 20,
-          "range": "30\"",
-          "attacks": "D3+1",
-          "strength": 6,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "30\"",
-          "attacks": "D3",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Heavy",
-            "Blast 1\"",
-            "Hazardous D3+1"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
       "name": "Electrostatc Gauntlets",
-      "section": "Weapons",
+      "section": "Melee Weapons",
       "points": 6,
       "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 6,
-          "range": "6\"",
-          "attacks": "D6+2",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Assault",
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        },
         {
           "profileName": "Melee",
           "points": 6,
           "range": "-",
           "attacks": "A+2",
           "strength": "S +2",
-          "ap": -1,
+          "ap": "-1",
           "damage": "2",
           "keywords": [
             "Sustained Hits 2",
@@ -1414,136 +1644,8 @@
       "ap": null,
       "damage": null,
       "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 15,
-          "range": "48\"",
-          "attacks": "D6",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Daedalus Missile Launcher",
-      "section": "Weapons",
-      "points": 40,
-      "profiles": [
-        {
-          "profileName": "Cohort Breaker",
-          "points": 40,
-          "range": "18\"-72\"",
-          "attacks": "D6+3",
-          "strength": 3,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Indirect Fire",
-            "Blast 2\"",
-            "Anti Air 4+",
-            "Anti-FLY 2+",
-            "Anti-INFANTRY 4+",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Indirect Fire",
-        "Blast 2\"",
-        "Anti Air 4+",
-        "Anti-FLY 2+",
-        "Anti-INFANTRY 4+",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Ferrumite Cannon",
-      "section": "Weapons",
-      "points": 60,
-      "profiles": [
-        {
-          "profileName": "Phosphor Shell",
-          "points": 60,
-          "range": "48\"",
-          "attacks": "2D6+3",
-          "strength": 5,
-          "ap": -1,
-          "damage": "2",
-          "keywords": [
-            "Blast 3\"",
-            "Anti-INFANTRY 3+",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Solid Shell",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 11,
-          "ap": -3,
-          "damage": "D6+1",
-          "keywords": [],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Blast 3\"",
-        "Anti-INFANTRY 3+",
-        "Ignores Cover"
+        "Sustained Hits 2",
+        "Lethal Hits"
       ],
       "availability": ""
     },
@@ -1558,7 +1660,7 @@
           "range": "-",
           "attacks": "A +3",
           "strength": "S",
-          "ap": -1,
+          "ap": "-1",
           "damage": "1",
           "keywords": [],
           "availability": ""
@@ -1569,7 +1671,7 @@
           "range": "-",
           "attacks": "A -2",
           "strength": "S +4",
-          "ap": -3,
+          "ap": "-3",
           "damage": "3",
           "keywords": [
             "Heavy",
@@ -1584,6 +1686,21 @@
       "ap": null,
       "damage": null,
       "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Iron Claws",
+      "section": "Melee Weapons",
+      "points": null,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks"
+      ],
       "availability": ""
     }
   ]

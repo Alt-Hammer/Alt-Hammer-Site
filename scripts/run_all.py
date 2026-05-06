@@ -82,9 +82,10 @@ def main():
     check_working_directory()
 
     # Import conversion functions
-    from convert_rules    import convert_rules,    CORE_RULES_DOCX,    OUTPUT_DIR as RULES_OUT
-    from convert_factions import convert_factions, FACTION_INDEX_DOCX, OUTPUT_DIR as FACTIONS_OUT
-    from convert_units    import convert_units,    DATATABLES_XLSX,    OUTPUT_DIR as UNITS_OUT
+    from convert_rules    import convert_rules,    CORE_RULES_DOCX,        OUTPUT_DIR as RULES_OUT
+    from convert_factions import convert_factions, FACTION_INDEX_DOCX,     OUTPUT_DIR as FACTIONS_OUT
+    from convert_units    import convert_units,    UNIT_DATATABLES_XLSX,   OUTPUT_DIR as UNITS_OUT
+    from convert_weapons  import convert_weapons,  WEAPON_DATATABLES_XLSX, OUTPUT_DIR as WEAPONS_OUT
     from extract_definitions import extract_definitions, CORE_RULES_DOCX as DEFS_DOCX, OUTPUT_PATH as DEFS_OUT
 
     results = []
@@ -130,12 +131,22 @@ def main():
         FACTIONS_OUT,
     ))
 
-    # ── Step 3: Unit Datatables ───────────────────────────────────────────────
+    # ── Step 3: Unit Data Tables ──────────────────────────────────────────────
     results.append(run_step(
-        "Datatables → src/data/units/",
+        "Unit Data Tables → src/data/units/ (units)",
         convert_units,
-        DATATABLES_XLSX,
+        UNIT_DATATABLES_XLSX,
         UNITS_OUT,
+    ))
+
+    # ── Step 4: Weapon Data Tables ────────────────────────────────────────────
+    # Reads the weapon file and merges weapon data into the JSON files
+    # written by Step 3. Must run after convert_units.
+    results.append(run_step(
+        "Weapon Data Tables → src/data/units/ (weapons)",
+        convert_weapons,
+        WEAPON_DATATABLES_XLSX,
+        WEAPONS_OUT,
     ))
 
     # ── Summary ───────────────────────────────────────────────────────────────
@@ -143,7 +154,7 @@ def main():
     print(f"  PIPELINE COMPLETE")
     print(f"{'='*60}")
 
-    steps = ["Definitions", "Core Rules", "Faction Index", "Unit Datatables"]
+    steps = ["Definitions", "Core Rules", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
     all_ok = True
     for step, result in zip(steps, results):
         icon = "✓" if result else "✗"

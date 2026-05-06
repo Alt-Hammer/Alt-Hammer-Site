@@ -3,28 +3,6 @@
   "slug": "asuryani",
   "units": [
     {
-      "name": "Name",
-      "category": "Unknown",
-      "stats": {
-        "M": "Movement",
-        "WS": "Weapon Skill",
-        "BS": "Ballistic Skill",
-        "I": "Initiative",
-        "A": "Attacks",
-        "S": "Strength",
-        "T": "Toughness",
-        "W": "Wounds",
-        "SV": "Save",
-        "LD": "Leadership",
-        "basePoints": "Base Points per Model",
-        "squadSizes": "Unit Sizes"
-      },
-      "keywords": [
-        "Keywords"
-      ],
-      "models": null
-    },
-    {
       "name": "Autarch",
       "category": "Character",
       "stats": {
@@ -107,50 +85,59 @@
     {
       "name": "Guardians",
       "category": "Battleline",
-      "stats": {
-        "M": "7\"",
-        "WS": 3,
-        "BS": 3,
-        "I": 4,
-        "A": 1,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "4+",
-        "LD": "7+",
-        "basePoints": 4,
-        "squadSizes": "5 to 20"
-      },
+      "stats": null,
       "keywords": [
         "Aeldari",
         "Asuryani",
         "Infantry"
       ],
-      "models": null
-    },
-    {
-      "name": "Guardians Heavy Weapon Platform",
-      "category": "Battleline",
-      "stats": {
-        "M": "7\"",
-        "WS": 1,
-        "BS": 3,
-        "I": 1,
-        "A": 1,
-        "S": 2,
-        "T": 4,
-        "W": 3,
-        "SV": "4+",
-        "LD": "7+",
-        "basePoints": 10,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry"
-      ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Guardian",
+          "stats": {
+            "M": "7\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 4,
+            "A": 1,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "4+",
+            "LD": "7+",
+            "basePoints": 4,
+            "squadSizes": "5 to 20"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry"
+          ]
+        },
+        {
+          "modelName": "Heavy Weapon Platform",
+          "stats": {
+            "M": "7\"",
+            "WS": 1,
+            "BS": 3,
+            "I": 1,
+            "A": 1,
+            "S": 2,
+            "T": 4,
+            "W": 3,
+            "SV": "4+",
+            "LD": "7+",
+            "basePoints": 10,
+            "squadSizes": "0 to 2"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Hover"
+          ]
+        }
+      ]
     },
     {
       "name": "Rangers",
@@ -177,6 +164,449 @@
         "Scout 6\""
       ],
       "models": null
+    },
+    {
+      "name": "Dire Avengers",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Unyielding",
+        "Feel No Pain 5+"
+      ],
+      "models": [
+        {
+          "modelName": "Dire Avenger",
+          "stats": {
+            "M": "7\"",
+            "WS": 4,
+            "BS": 5,
+            "I": 5,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 3,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 15,
+            "squadSizes": "4 to 9"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Unyielding",
+            "Feel No Pain 5+"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "7\"",
+            "WS": 5,
+            "BS": 6,
+            "I": 5,
+            "A": 3,
+            "S": 2,
+            "T": 2,
+            "W": 5,
+            "SV": "4+",
+            "LD": "5+",
+            "basePoints": 20,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Unyielding",
+            "Feel No Pain 5+"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dark Reapers",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors"
+      ],
+      "models": [
+        {
+          "modelName": "Dark Reaper",
+          "stats": {
+            "M": "6\"",
+            "WS": 4,
+            "BS": 5,
+            "I": 3,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 3,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 20,
+            "squadSizes": "2 to 4"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "6\"",
+            "WS": 5,
+            "BS": 6,
+            "I": 3,
+            "A": 3,
+            "S": 2,
+            "T": 2,
+            "W": 5,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 25,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fire Dragons",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors"
+      ],
+      "models": [
+        {
+          "modelName": "Fire Dragon",
+          "stats": {
+            "M": "7\"",
+            "WS": 4,
+            "BS": 5,
+            "I": 5,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 2,
+            "SV": "3+",
+            "LD": "6+",
+            "basePoints": 20,
+            "squadSizes": "2 to 4"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "7\"",
+            "WS": 5,
+            "BS": 6,
+            "I": 5,
+            "A": 3,
+            "S": 2,
+            "T": 2,
+            "W": 4,
+            "SV": "3+",
+            "LD": "5+",
+            "basePoints": 25,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Howling Banshees",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Relentless",
+        "Fearless"
+      ],
+      "models": [
+        {
+          "modelName": "Howling Banshee",
+          "stats": {
+            "M": "8\"",
+            "WS": 6,
+            "BS": 5,
+            "I": 7,
+            "A": 4,
+            "S": 2,
+            "T": 2,
+            "W": 3,
+            "SV": "5+",
+            "LD": "6+",
+            "basePoints": 20,
+            "squadSizes": "4 to 9"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Relentless",
+            "Fearless"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "8\"",
+            "WS": 7,
+            "BS": 6,
+            "I": 8,
+            "A": 5,
+            "S": 2,
+            "T": 2,
+            "W": 5,
+            "SV": "5+",
+            "LD": "5+",
+            "basePoints": 25,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Relentless",
+            "Fearless"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Striking Scorpions",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Infiltrators",
+        "Scout 6\""
+      ],
+      "models": [
+        {
+          "modelName": "Striking Scorpion",
+          "stats": {
+            "M": "6\"",
+            "WS": 5,
+            "BS": 5,
+            "I": 6,
+            "A": 3,
+            "S": 3,
+            "T": 3,
+            "W": 3,
+            "SV": "3+",
+            "LD": "6+",
+            "basePoints": 25,
+            "squadSizes": "4 to 9"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Infiltrators",
+            "Scout 6\""
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "6\"",
+            "WS": 6,
+            "BS": 6,
+            "I": 7,
+            "A": 5,
+            "S": 3,
+            "T": 3,
+            "W": 5,
+            "SV": "3+",
+            "LD": "5+",
+            "basePoints": 35,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Infiltrators",
+            "Scout 6\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Swooping Hawks",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Jump Pack"
+      ],
+      "models": [
+        {
+          "modelName": "Swooping Hawk",
+          "stats": {
+            "M": "14\"",
+            "WS": 5,
+            "BS": 5,
+            "I": 5,
+            "A": 2,
+            "S": 2,
+            "T": 3,
+            "W": 3,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 20,
+            "squadSizes": "2 to 4"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Jump Pack"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "14\"",
+            "WS": 6,
+            "BS": 6,
+            "I": 5,
+            "A": 4,
+            "S": 2,
+            "T": 3,
+            "W": 4,
+            "SV": "4+",
+            "LD": "5+",
+            "basePoints": 25,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Jump Pack"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Warp Spiders",
+      "category": "Infantry",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Aspect Warriors",
+        "Deep Strike",
+        "Phase Shift",
+        "Invulnerable Save 5+"
+      ],
+      "models": [
+        {
+          "modelName": "Warp Spider",
+          "stats": {
+            "M": "10\"",
+            "WS": 5,
+            "BS": 5,
+            "I": 5,
+            "A": 2,
+            "S": 3,
+            "T": 3,
+            "W": 3,
+            "SV": "3+",
+            "LD": "6+",
+            "basePoints": 15,
+            "squadSizes": "2 to 4"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Deep Strike",
+            "Phase Shift",
+            "Invulnerable Save 5+"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "10\"",
+            "WS": 6,
+            "BS": 6,
+            "I": 5,
+            "A": 4,
+            "S": 3,
+            "T": 3,
+            "W": 4,
+            "SV": "3+",
+            "LD": "5+",
+            "basePoints": 25,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Aspect Warriors",
+            "Deep Strike",
+            "Phase Shift",
+            "Invulnerable Save 5+"
+          ]
+        }
+      ]
     },
     {
       "name": "Warlocks",
@@ -282,6 +712,74 @@
         "Fly"
       ],
       "models": null
+    },
+    {
+      "name": "Shining Spears",
+      "category": "Mounted",
+      "stats": null,
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Mounted",
+        "Fly",
+        "Aspect Warriors",
+        "Deep Strike"
+      ],
+      "models": [
+        {
+          "modelName": "Shining Spear",
+          "stats": {
+            "M": "12\"",
+            "WS": 5,
+            "BS": 5,
+            "I": 6,
+            "A": 3,
+            "S": 2,
+            "T": 4,
+            "W": 3,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 40,
+            "squadSizes": "2 to 4"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Mounted",
+            "Fly",
+            "Aspect Warriors",
+            "Deep Strike"
+          ]
+        },
+        {
+          "modelName": "Exarch",
+          "stats": {
+            "M": "12\"",
+            "WS": 6,
+            "BS": 6,
+            "I": 6,
+            "A": 4,
+            "S": 2,
+            "T": 4,
+            "W": 4,
+            "SV": "4+",
+            "LD": "5+",
+            "basePoints": 45,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Aeldari",
+            "Asuryani",
+            "Infantry",
+            "Mounted",
+            "Fly",
+            "Aspect Warriors",
+            "Deep Strike"
+          ]
+        }
+      ]
     },
     {
       "name": "Wave Serpent",
@@ -492,529 +990,18 @@
         "Deep Strike"
       ],
       "models": null
-    },
-    {
-      "name": "Dire Avengers",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors",
-        "Unyielding",
-        "Feel No Pain 5+"
-      ],
-      "models": [
-        {
-          "modelName": "Dire Avenger",
-          "stats": {
-            "M": "7\"",
-            "WS": 4,
-            "BS": 4,
-            "I": 5,
-            "A": 2,
-            "S": 2,
-            "T": 2,
-            "W": 3,
-            "SV": "4+",
-            "LD": "6+",
-            "basePoints": 15,
-            "squadSizes": "4 to 9"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Unyielding",
-            "Feel No Pain 5+"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "7\"",
-            "WS": 5,
-            "BS": 5,
-            "I": 5,
-            "A": 3,
-            "S": 2,
-            "T": 2,
-            "W": 5,
-            "SV": "4+",
-            "LD": "5+",
-            "basePoints": 20,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Unyielding",
-            "Feel No Pain 5+"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Dark Reapers",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors"
-      ],
-      "models": [
-        {
-          "modelName": "Dark Reaper",
-          "stats": {
-            "M": "6\"",
-            "WS": 4,
-            "BS": 4,
-            "I": 3,
-            "A": 2,
-            "S": 2,
-            "T": 2,
-            "W": 3,
-            "SV": "4+",
-            "LD": "6+",
-            "basePoints": 20,
-            "squadSizes": "2 to 4"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "6\"",
-            "WS": 5,
-            "BS": 4,
-            "I": 3,
-            "A": 3,
-            "S": 2,
-            "T": 2,
-            "W": 5,
-            "SV": "4+",
-            "LD": "6+",
-            "basePoints": 25,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Fire Dragons",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors"
-      ],
-      "models": [
-        {
-          "modelName": "Fire Dragon",
-          "stats": {
-            "M": "7\"",
-            "WS": 4,
-            "BS": 4,
-            "I": 5,
-            "A": 2,
-            "S": 2,
-            "T": 2,
-            "W": 2,
-            "SV": "3+",
-            "LD": "6+",
-            "basePoints": 20,
-            "squadSizes": "2 to 4"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "7\"",
-            "WS": 5,
-            "BS": 5,
-            "I": 5,
-            "A": 3,
-            "S": 2,
-            "T": 2,
-            "W": 4,
-            "SV": "3+",
-            "LD": "5+",
-            "basePoints": 25,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Howling Banshees",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors",
-        "Relentless",
-        "Fearless"
-      ],
-      "models": [
-        {
-          "modelName": "Howling Banshee",
-          "stats": {
-            "M": "8\"",
-            "WS": 6,
-            "BS": 4,
-            "I": 7,
-            "A": 4,
-            "S": 2,
-            "T": 2,
-            "W": 3,
-            "SV": "5+",
-            "LD": "6+",
-            "basePoints": 20,
-            "squadSizes": "4 to 9"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Relentless",
-            "Fearless"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "8\"",
-            "WS": 7,
-            "BS": 4,
-            "I": 8,
-            "A": 5,
-            "S": 2,
-            "T": 2,
-            "W": 5,
-            "SV": "5+",
-            "LD": "5+",
-            "basePoints": 25,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Relentless",
-            "Fearless"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Striking Scorpions",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors",
-        "Infiltrators",
-        "Scout 6\""
-      ],
-      "models": [
-        {
-          "modelName": "Striking Scorpion",
-          "stats": {
-            "M": "6\"",
-            "WS": 5,
-            "BS": 4,
-            "I": 6,
-            "A": 3,
-            "S": 3,
-            "T": 3,
-            "W": 3,
-            "SV": "3+",
-            "LD": "6+",
-            "basePoints": 25,
-            "squadSizes": "4 to 9"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Infiltrators",
-            "Scout 6\""
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "6\"",
-            "WS": 6,
-            "BS": 5,
-            "I": 7,
-            "A": 5,
-            "S": 3,
-            "T": 3,
-            "W": 5,
-            "SV": "3+",
-            "LD": "5+",
-            "basePoints": 35,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Infiltrators",
-            "Scout 6\""
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Swooping Hawks",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors",
-        "Jump Pack"
-      ],
-      "models": [
-        {
-          "modelName": "Swooping Hawk",
-          "stats": {
-            "M": "14\"",
-            "WS": 5,
-            "BS": 5,
-            "I": 5,
-            "A": 2,
-            "S": 2,
-            "T": 3,
-            "W": 3,
-            "SV": "4+",
-            "LD": "6+",
-            "basePoints": 20,
-            "squadSizes": "2 to 4"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Jump Pack"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "14\"",
-            "WS": 6,
-            "BS": 6,
-            "I": 5,
-            "A": 4,
-            "S": 2,
-            "T": 3,
-            "W": 4,
-            "SV": "4+",
-            "LD": "5+",
-            "basePoints": 25,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Jump Pack"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Warp Spiders",
-      "category": "Infantry",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Aspect Warriors",
-        "Deep Strike",
-        "Phase Shift",
-        "Invulnerable Save 5+"
-      ],
-      "models": [
-        {
-          "modelName": "Warp Spider",
-          "stats": {
-            "M": "10\"",
-            "WS": 5,
-            "BS": 4,
-            "I": 5,
-            "A": 2,
-            "S": 3,
-            "T": 3,
-            "W": 3,
-            "SV": "3+",
-            "LD": "6+",
-            "basePoints": 15,
-            "squadSizes": "2 to 4"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Deep Strike",
-            "Phase Shift",
-            "Invulnerable Save 5+"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "10\"",
-            "WS": 6,
-            "BS": 5,
-            "I": 5,
-            "A": 4,
-            "S": 3,
-            "T": 3,
-            "W": 4,
-            "SV": "3+",
-            "LD": "5+",
-            "basePoints": 25,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Aspect Warriors",
-            "Deep Strike",
-            "Phase Shift",
-            "Invulnerable Save 5+"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Shining Spears",
-      "category": "Mounted",
-      "stats": null,
-      "keywords": [
-        "Aeldari",
-        "Asuryani",
-        "Infantry",
-        "Mounted",
-        "Fly",
-        "Aspect Warriors",
-        "Deep Strike"
-      ],
-      "models": [
-        {
-          "modelName": "Shining Spear",
-          "stats": {
-            "M": "12\"",
-            "WS": 5,
-            "BS": 4,
-            "I": 6,
-            "A": 3,
-            "S": 2,
-            "T": 4,
-            "W": 3,
-            "SV": "4+",
-            "LD": "6+",
-            "basePoints": 40,
-            "squadSizes": "2 to 4"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Mounted",
-            "Fly",
-            "Aspect Warriors",
-            "Deep Strike"
-          ]
-        },
-        {
-          "modelName": "Exarch",
-          "stats": {
-            "M": "12\"",
-            "WS": 6,
-            "BS": 4,
-            "I": 6,
-            "A": 4,
-            "S": 2,
-            "T": 4,
-            "W": 4,
-            "SV": "4+",
-            "LD": "5+",
-            "basePoints": 45,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Aeldari",
-            "Asuryani",
-            "Infantry",
-            "Mounted",
-            "Fly",
-            "Aspect Warriors",
-            "Deep Strike"
-          ]
-        }
-      ]
     }
   ],
   "weapons": [
     {
       "name": "Shuriken Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "9\"",
       "attacks": "2",
-      "strength": 2,
-      "ap": -2,
+      "strength": "2",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Pistol",
@@ -1024,13 +1011,13 @@
     },
     {
       "name": "Shuriken Catapult",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 4,
       "profiles": null,
       "range": "24\"",
       "attacks": "2",
-      "strength": 2,
-      "ap": -2,
+      "strength": "2",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -1041,13 +1028,13 @@
     },
     {
       "name": "Shuriken Long Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",
-      "strength": 2,
-      "ap": -2,
+      "strength": "2",
+      "ap": "-2",
       "damage": "D3+2",
       "keywords": [
         "Precision",
@@ -1058,13 +1045,13 @@
     },
     {
       "name": "Shuriken Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "36\"",
       "attacks": "4",
-      "strength": 4,
-      "ap": -2,
+      "strength": "4",
+      "ap": "-2",
       "damage": "1",
       "keywords": [
         "Heavy",
@@ -1074,14 +1061,29 @@
       "availability": ""
     },
     {
+      "name": "Bright Lance",
+      "section": "Ranged Weapons",
+      "points": 30,
+      "profiles": null,
+      "range": "60\"",
+      "attacks": "1",
+      "strength": "12",
+      "ap": "-3",
+      "damage": "D3+3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Sun Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 7,
-      "ap": -2,
+      "strength": "7",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Pistol"
@@ -1089,14 +1091,77 @@
       "availability": ""
     },
     {
+      "name": "Sun Cannon",
+      "section": "Ranged Weapons",
+      "points": 130,
+      "profiles": [
+        {
+          "profileName": "Sunburst",
+          "points": 130,
+          "range": "24\"",
+          "attacks": "16",
+          "strength": "4",
+          "ap": "0",
+          "damage": "1",
+          "keywords": [
+            "Sustained Hits 3",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Starshot",
+          "points": null,
+          "range": "96\"",
+          "attacks": "1",
+          "strength": "30",
+          "ap": "-4",
+          "damage": "D6+12",
+          "keywords": [
+            "Ordnance",
+            "Anti-VEHICLE 3+",
+            "Anti-MONSTER 3+",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Cannon",
+      "section": "Ranged Weapons",
+      "points": 35,
+      "profiles": null,
+      "range": "48\"",
+      "attacks": "3",
+      "strength": "7",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Pulse Laser",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 45,
       "profiles": null,
       "range": "60\"",
       "attacks": "2",
-      "strength": 10,
-      "ap": -2,
+      "strength": "10",
+      "ap": "-2",
       "damage": "D3+3",
       "keywords": [
         "Sustained Hits 1"
@@ -1105,13 +1170,13 @@
     },
     {
       "name": "Scatter Laser",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "36\"",
       "attacks": "8",
-      "strength": 4,
-      "ap": 0,
+      "strength": "4",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Sustained Hits 3"
@@ -1119,14 +1184,45 @@
       "availability": ""
     },
     {
+      "name": "Mandiblasters",
+      "section": "Ranged Weapons",
+      "points": 4,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 4,
+          "range": "3\"",
+          "attacks": "2",
+          "strength": "2",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Anti-INFANTRY 2+"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol",
+        "Anti-INFANTRY 2+"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Death Weavers",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+1",
-      "strength": 3,
-      "ap": 0,
+      "strength": "3",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Pistol",
@@ -1137,13 +1233,13 @@
     },
     {
       "name": "Death Spinners",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
-      "strength": 3,
-      "ap": 0,
+      "strength": "3",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -1154,13 +1250,13 @@
     },
     {
       "name": "Spinneret Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "18\"",
       "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
+      "strength": "5",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Torrent",
@@ -1169,14 +1265,76 @@
       "availability": ""
     },
     {
+      "name": "Laser Lance",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 8,
+          "range": "12\"",
+          "attacks": "2",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Rapid Fire 1",
+            "Anti-INFANTRY 5+"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Rapid Fire 1",
+        "Anti-INFANTRY 5+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Lance",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 10,
+          "range": "12\"",
+          "attacks": "3",
+          "strength": "7",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Sustained Hits 1"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Dragon Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 6,
       "profiles": null,
       "range": "6\"",
       "attacks": "1",
-      "strength": 7,
-      "ap": -4,
+      "strength": "7",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Pistol",
@@ -1185,14 +1343,78 @@
       "availability": ""
     },
     {
+      "name": "Dragon Rifle",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 10,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": "9",
+          "ap": "-4",
+          "damage": "D6",
+          "keywords": [
+            "Assault",
+            "Melta 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon's Breath",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 8,
+          "range": "9\"",
+          "attacks": "D6+4",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Dragon Pike",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "24\"",
       "attacks": "2",
-      "strength": 9,
-      "ap": -4,
+      "strength": "9",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Heavy",
@@ -1202,13 +1424,13 @@
     },
     {
       "name": "Lasblaster",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 6,
       "profiles": null,
       "range": "12\"",
       "attacks": "3",
-      "strength": 3,
-      "ap": -1,
+      "strength": "3",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Sustained Hits 1"
@@ -1217,13 +1439,13 @@
     },
     {
       "name": "Hawk's Talon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 12,
       "profiles": null,
       "range": "24\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -3,
+      "strength": "4",
+      "ap": "-3",
       "damage": "D3+2",
       "keywords": [
         "Precision",
@@ -1233,14 +1455,123 @@
       "availability": ""
     },
     {
+      "name": "Reaper Launcher",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Sunburst",
+          "points": 20,
+          "range": "6\" - 36\"",
+          "attacks": "D6+6",
+          "strength": "2",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Ordnance",
+            "Indirect Fire",
+            "Blast 4\"",
+            "Anti-INFANTRY 4+"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Starshot",
+          "points": null,
+          "range": "36\"",
+          "attacks": "1",
+          "strength": "13",
+          "ap": "-2",
+          "damage": "5",
+          "keywords": [
+            "Ordnance"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 4\"",
+        "Anti-INFANTRY 4+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Sunburst",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Starshot",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Tempest Launcher",
+      "section": "Ranged Weapons",
+      "points": 25,
+      "profiles": null,
+      "range": "12\" - 48\"",
+      "attacks": "D3+1",
+      "strength": "11",
+      "ap": "-3",
+      "damage": "D6+1",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
       "name": "Wraithcannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 8,
-      "ap": -2,
+      "strength": "8",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Anti-PSYKER 3+"
@@ -1249,13 +1580,13 @@
     },
     {
       "name": "Heavy Wraithcannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 55,
       "profiles": null,
       "range": "36\"",
       "attacks": "2",
-      "strength": 16,
-      "ap": -2,
+      "strength": "16",
+      "ap": "-2",
       "damage": "4",
       "keywords": [
         "Anti-PSYKER 2+"
@@ -1264,13 +1595,13 @@
     },
     {
       "name": "D-Scythe",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
-      "strength": 5,
-      "ap": -3,
+      "strength": "5",
+      "ap": "-3",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -1280,14 +1611,79 @@
       "availability": ""
     },
     {
+      "name": "Prism Cannon",
+      "section": "Ranged Weapons",
+      "points": 90,
+      "profiles": [
+        {
+          "profileName": "Dispersion",
+          "points": 90,
+          "range": "48\"",
+          "attacks": "3D6+6",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Sustained Hits 3",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Focused",
+          "points": null,
+          "range": "96\"",
+          "attacks": "1",
+          "strength": "20",
+          "ap": "-4",
+          "damage": "D6+12",
+          "keywords": [
+            "Ordnance",
+            "Beam D3",
+            "Anti-VEHICLE 3+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "D-Cannon",
+      "section": "Ranged Weapons",
+      "points": 100,
+      "profiles": null,
+      "range": "8\"-24\"",
+      "attacks": "D6+3",
+      "strength": "20",
+      "ap": "-3",
+      "damage": "D6",
+      "keywords": [
+        "Ordnance",
+        "Indirect Fire",
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
       "name": "Vibro Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 60,
       "profiles": null,
       "range": "36\"",
       "attacks": "D3+3",
-      "strength": 9,
-      "ap": -2,
+      "strength": "9",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Ordnance",
@@ -1298,13 +1694,13 @@
     },
     {
       "name": "Doomweaver",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 75,
       "profiles": null,
       "range": "18\"-60\"",
       "attacks": "2D6+6",
-      "strength": 10,
-      "ap": -2,
+      "strength": "10",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Ordnance",
@@ -1348,7 +1744,22 @@
       "range": "-",
       "attacks": "A +2",
       "strength": "S +1",
-      "ap": -2,
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Blade",
+      "section": "Melee Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-3",
       "damage": "1",
       "keywords": [
         "Lethal Hits"
@@ -1363,7 +1774,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +3",
-      "ap": -3,
+      "ap": "-3",
       "damage": "3",
       "keywords": [
         "Lethal Hits"
@@ -1378,8 +1789,39 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +2",
-      "ap": -3,
+      "ap": "-3",
       "damage": "2",
+      "keywords": [
+        "Lance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Star Lance",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 10,
+          "range": "-",
+          "attacks": "A +2",
+          "strength": "7",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Lance",
+            "Lethal Hits"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
         "Lance",
         "Lethal Hits"
@@ -1394,7 +1836,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +1",
-      "ap": -2,
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Lethal Hits",
@@ -1410,7 +1852,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +5",
-      "ap": -2,
+      "ap": "-2",
       "damage": "4",
       "keywords": [
         "Anti-PSYKER 3+"
@@ -1418,513 +1860,30 @@
       "availability": ""
     },
     {
-      "name": "Eldrich Storm",
-      "section": "Psychic Attacks",
-      "points": "-",
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "3",
-      "strength": "4",
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Precision",
-        "Indirect Fire",
-        "Anti-PSYKER 2+",
-        "Devastating Wounds",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Sunburst Grenades",
-      "section": "Grenades",
-      "points": 1,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "D3",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Starshot Grenades",
-      "section": "Grenades",
-      "points": 2,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Haywire Grenades",
-      "section": "Grenades",
-      "points": 5,
-      "profiles": null,
-      "range": "1\"",
-      "attacks": "D3",
-      "strength": 8,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Anti-VEHICLE 4+",
-        "Ignores Cover",
-        "Haywire"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Grenades",
-      "section": "Grenades",
-      "points": 5,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "D3",
-      "strength": 7,
-      "ap": -3,
-      "damage": "D3+1",
-      "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Smoke Grenades",
-      "section": "Grenades",
-      "points": 2,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "1",
-      "strength": "-",
-      "ap": "-",
-      "damage": "-",
-      "keywords": [
-        "Smoke 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Sun Cannon",
-      "section": "Weapons",
-      "points": 130,
-      "profiles": [
-        {
-          "profileName": "Sunburst",
-          "points": 130,
-          "range": "24\"",
-          "attacks": "16",
-          "strength": 4,
-          "ap": 0,
-          "damage": "1",
-          "keywords": [
-            "Sustained Hits 3",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Starshot",
-          "points": null,
-          "range": "96\"",
-          "attacks": "1",
-          "strength": 30,
-          "ap": -4,
-          "damage": "D6+12",
-          "keywords": [
-            "Ordnance",
-            "Anti-VEHICLE 3+",
-            "Anti-MONSTER 3+",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Sustained Hits 3",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Mandiblasters",
-      "section": "Weapons",
-      "points": 4,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 4,
-          "range": "3\"",
-          "attacks": "2",
-          "strength": 2,
-          "ap": -2,
-          "damage": "1",
-          "keywords": [
-            "Pistol",
-            "Anti-INFANTRY 2+"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": 4,
-          "range": "-",
-          "attacks": "2",
-          "strength": 2,
-          "ap": -2,
-          "damage": "1",
-          "keywords": [
-            "Extra Attacks",
-            "Anti-INFANTRY 2+"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol",
-        "Anti-INFANTRY 2+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Laser Lance",
-      "section": "Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 8,
-          "range": "12\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -2,
-          "damage": "1",
-          "keywords": [
-            "Assault",
-            "Rapid Fire 1",
-            "Anti-INFANTRY 5+"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Rapid Fire 1",
-        "Anti-INFANTRY 5+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Star Lance",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 10,
-          "range": "12\"",
-          "attacks": "3",
-          "strength": 7,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Sustained Hits 1"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": 10,
-          "range": "-",
-          "attacks": "A +2",
-          "strength": 7,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Lance",
-            "Lethal Hits"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Sustained Hits 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Dragon Rifle",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 10,
-          "range": "12\"",
-          "attacks": "1",
-          "strength": 9,
-          "ap": -4,
-          "damage": "D6",
-          "keywords": [
-            "Assault",
-            "Melta 2"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": 10,
-          "range": "-",
-          "attacks": "1",
-          "strength": 9,
-          "ap": -4,
-          "damage": "D6",
-          "keywords": [
-            "Melta 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Melta 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Dragon's Breath",
-      "section": "Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 8,
-          "range": "9\"",
-          "attacks": "D6+4",
-          "strength": 4,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Assault",
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": 6,
-          "range": "-",
-          "attacks": "D3+2",
-          "strength": 4,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Reaper Launcher",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Sunburst",
-          "points": 20,
-          "range": "6\" - 36\"",
-          "attacks": "D6+6",
-          "strength": 2,
-          "ap": -2,
-          "damage": "1",
-          "keywords": [
-            "Ordnance",
-            "Indirect Fire",
-            "Blast 4\"",
-            "Anti-INFANTRY 4+"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Starshot",
-          "points": null,
-          "range": "36\"",
-          "attacks": "1",
-          "strength": 13,
-          "ap": -2,
-          "damage": "5",
-          "keywords": [
-            "Ordnance"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Ordnance",
-        "Indirect Fire",
-        "Blast 4\"",
-        "Anti-INFANTRY 4+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher",
-      "section": "Weapons",
+      "name": "Wraithspear",
+      "section": "Melee Weapons",
       "points": 15,
       "profiles": [
         {
-          "profileName": "Sunburst",
+          "profileName": "Sweep",
           "points": 15,
-          "range": "48\"",
-          "attacks": "D6",
-          "strength": 3,
-          "ap": -1,
+          "range": "-",
+          "attacks": "A +3",
+          "strength": "S",
+          "ap": "-2",
           "damage": "1",
           "keywords": [
-            "Heavy",
-            "Blast 1\""
+            "Anti-PSYKER 3+"
           ],
           "availability": ""
         },
-        {
-          "profileName": "Starshot",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Prism Cannon",
-      "section": "Weapons",
-      "points": 90,
-      "profiles": [
-        {
-          "profileName": "Dispersion",
-          "points": 90,
-          "range": "48\"",
-          "attacks": "4D6",
-          "strength": 4,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Sustained Hits 3",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Focused",
-          "points": null,
-          "range": "96\"",
-          "attacks": "1",
-          "strength": 20,
-          "ap": -4,
-          "damage": "D6+12",
-          "keywords": [
-            "Ordnance",
-            "Beam D3",
-            "Anti-VEHICLE 3+",
-            "Anti-MONSTER 5+",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Sustained Hits 3",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Wraithspear",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": [
         {
           "profileName": "Strike",
           "points": null,
           "range": "-",
           "attacks": "A -2",
           "strength": "S x3",
-          "ap": -3,
+          "ap": "-3",
           "damage": "3",
           "keywords": [
             "Lance",
@@ -1940,8 +1899,6 @@
       "ap": null,
       "damage": null,
       "keywords": [
-        "Lance",
-        "Lethal Hits",
         "Anti-PSYKER 3+"
       ],
       "availability": ""
@@ -1970,7 +1927,7 @@
           "range": "-",
           "attacks": "A -3",
           "strength": "S x3",
-          "ap": -3,
+          "ap": "-3",
           "damage": "4",
           "keywords": [
             "Heavy",
@@ -1991,17 +1948,137 @@
       "availability": ""
     },
     {
+      "name": "Laser Lance",
+      "section": "Melee Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 8,
+          "range": "-",
+          "attacks": "A",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Lance"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Lance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon Rifle",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 10,
+          "range": "-",
+          "attacks": "1",
+          "strength": "9",
+          "ap": "-4",
+          "damage": "D6",
+          "keywords": [
+            "Melta 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dragon's Breath",
+      "section": "Melee Weapons",
+      "points": 6,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 6,
+          "range": "-",
+          "attacks": "D3+2",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Mandiblasters",
+      "section": "Melee Weapons",
+      "points": 4,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": 4,
+          "range": "-",
+          "attacks": "2",
+          "strength": "2",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks",
+            "Anti-INFANTRY 2+"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Extra Attacks",
+        "Anti-INFANTRY 2+"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Smite",
       "section": "Psychic Attacks",
-      "points": "-",
+      "points": null,
       "profiles": [
         {
           "profileName": "Focused Witchfire",
-          "points": "-",
+          "points": null,
           "range": "18\"",
           "attacks": "1",
-          "strength": 12,
-          "ap": -4,
+          "strength": "12",
+          "ap": "-4",
           "damage": "5",
           "keywords": [
             "Beam D3",
@@ -2013,11 +2090,11 @@
         },
         {
           "profileName": "Witchfire",
-          "points": "-",
+          "points": null,
           "range": "8\"",
           "attacks": "D6+4",
-          "strength": 3,
-          "ap": -1,
+          "strength": "3",
+          "ap": "-1",
           "damage": "1",
           "keywords": [
             "Pistol",
@@ -2039,6 +2116,103 @@
         "Hazardous D3",
         "Anti-PSYKER 2+",
         "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Eldrich Storm",
+      "section": "Psychic Attacks",
+      "points": null,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": "4",
+      "ap": "-3",
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Indirect Fire",
+        "Anti-PSYKER 2+",
+        "Devastating Wounds",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Sunburst Grenades",
+      "section": "Grenades",
+      "points": 1,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Starshot Grenades",
+      "section": "Grenades",
+      "points": 2,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "8",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Haywire Grenades",
+      "section": "Grenades",
+      "points": 5,
+      "profiles": null,
+      "range": "1\"",
+      "attacks": "D3",
+      "strength": "8",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Anti-VEHICLE 4+",
+        "Ignores Cover",
+        "Haywire"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Grenades",
+      "section": "Grenades",
+      "points": 5,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": "7",
+      "ap": "-3",
+      "damage": "D3+1",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Smoke Grenades",
+      "section": "Grenades",
+      "points": 2,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
       ],
       "availability": ""
     }

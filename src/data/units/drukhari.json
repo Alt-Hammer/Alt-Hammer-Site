@@ -3,28 +3,6 @@
   "slug": "drukhari",
   "units": [
     {
-      "name": "Name",
-      "category": "Unknown",
-      "stats": {
-        "M": "Movement",
-        "WS": "Weapon Skill",
-        "BS": "Ballistic Skill",
-        "I": "Initiative",
-        "A": "Attacks",
-        "S": "Strength",
-        "T": "Toughness",
-        "W": "Wounds",
-        "SV": "Save",
-        "LD": "Leadership",
-        "basePoints": "Base Points per Model",
-        "squadSizes": "Unit Sizes"
-      },
-      "keywords": [
-        "Keywords"
-      ],
-      "models": null
-    },
-    {
       "name": "Archon",
       "category": "Character",
       "stats": {
@@ -320,7 +298,7 @@
       "models": null
     },
     {
-      "name": "Venom",
+      "name": "Venoms",
       "category": "Dedicated Transports",
       "stats": {
         "M": "16\"",
@@ -334,7 +312,7 @@
         "SV": "4+",
         "LD": "7+",
         "basePoints": 40,
-        "squadSizes": "1"
+        "squadSizes": "1 to 2"
       },
       "keywords": [
         "Aeldari",
@@ -461,14 +439,225 @@
   ],
   "weapons": [
     {
+      "name": "Blaster Carbine",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": "6",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Blaster Pistol",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "3",
+      "strength": "6",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Dark Lance",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": null,
+      "range": "24\"",
+      "attacks": "1",
+      "strength": "12",
+      "ap": "-3",
+      "damage": "D3+3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Haywire Blaster",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "D6",
+      "strength": "8",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-VEHICLE 4+",
+        "Haywire"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Heat Lance",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": "10",
+      "ap": "-4",
+      "damage": "D6",
+      "keywords": [
+        "Heavy",
+        "Melta 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Hexrifle",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "36\"",
+      "attacks": "1",
+      "strength": "4",
+      "ap": "-3",
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Precision",
+        "Anti-INFANTRY 4+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Khaidespear",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": "8",
+      "ap": "-2",
+      "damage": "D3+1",
+      "keywords": [
+        "Heavy",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Liquifier",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": null,
+      "range": "9\"",
+      "attacks": "D6+3",
+      "strength": "4",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Torrent",
+        "Ignores Cover",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Ossefactor",
+      "section": "Ranged Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": "5",
+      "ap": "-3",
+      "damage": "D3+1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Pulse Disintegrator",
+      "section": "Ranged Weapons",
+      "points": 60,
+      "profiles": null,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": "12",
+      "ap": "-2",
+      "damage": "D6+2",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shredder",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "8",
+      "strength": "3",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 3"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Splinter Cannon",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "24\"",
+      "attacks": "2",
+      "strength": "3",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Heavy",
+        "Rapide Fire 2",
+        "Sustained Hits 2",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Splinter Carbine",
+      "section": "Ranged Weapons",
+      "points": 4,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "3",
+      "strength": "2",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Poison 1"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Splinter Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "9\"",
       "attacks": "2",
-      "strength": 2,
-      "ap": -1,
+      "strength": "2",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Pistol",
@@ -480,13 +669,13 @@
     },
     {
       "name": "Splinter Pod",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "9\"",
       "attacks": "3",
-      "strength": 2,
-      "ap": -1,
+      "strength": "2",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -497,32 +686,14 @@
       "availability": ""
     },
     {
-      "name": "Splinter Carbine",
-      "section": "Weapons",
-      "points": 4,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "3",
-      "strength": 2,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 1",
-        "Anti-INFANTRY 5+",
-        "Anti-BEAST 4+",
-        "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Splinter Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 4,
       "profiles": null,
       "range": "24\"",
       "attacks": "1",
-      "strength": 2,
-      "ap": -1,
+      "strength": "2",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Rapid Fire 2",
@@ -533,317 +704,35 @@
       "availability": ""
     },
     {
-      "name": "Blaster Pistol",
-      "section": "Weapons",
-      "points": 10,
+      "name": "Stinger",
+      "section": "Ranged Weapons",
+      "points": null,
       "profiles": null,
-      "range": "12\"",
-      "attacks": "3",
-      "strength": 6,
-      "ap": -2,
-      "damage": "2",
+      "range": "18\"",
+      "attacks": "2D6+3",
+      "strength": "3",
+      "ap": "-1",
+      "damage": "1",
       "keywords": [
         "Sustained Hits 1"
       ],
       "availability": ""
     },
     {
-      "name": "Blaster Carbine",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "3",
-      "strength": 6,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Assault",
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Haywire Blaster",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "12\"",
-      "attacks": "D6",
-      "strength": 8,
-      "ap": -2,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 1",
-        "Anti-VEHICLE 4+",
-        "Haywire"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Stinger Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "18\"",
       "attacks": "1",
-      "strength": 5,
-      "ap": -3,
+      "strength": "5",
+      "ap": "-3",
       "damage": "D3+1",
       "keywords": [
         "Pistol",
         "Precision",
         "Anti-INFANTRY 5+",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Shredder",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "8",
-      "strength": 3,
-      "ap": -2,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heat Lance",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": null,
-      "range": "12\"",
-      "attacks": "2",
-      "strength": 10,
-      "ap": -4,
-      "damage": "D6",
-      "keywords": [
-        "Heavy",
-        "Melta 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Dark Lance",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -3,
-      "damage": "D3+3",
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Khaidespear",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": null,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -2,
-      "damage": "D3+1",
-      "keywords": [
-        "Heavy",
-        "Harpoon"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Baleblast",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "9\"",
-      "attacks": "D6+3",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Torrent",
-        "Ignores Cover",
-        "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Liquifier",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": null,
-      "range": "9\"",
-      "attacks": "D6+3",
-      "strength": 4,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Torrent",
-        "Ignores Cover",
-        "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Ossefactor",
-      "section": "Weapons",
-      "points": 5,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "1",
-      "strength": 5,
-      "ap": -3,
-      "damage": "D3+1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Hekatarii Blade",
-      "section": "Melee Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A+2",
-      "strength": "S +1",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Electrovoid Whip",
-      "section": "Melee Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A+3",
-      "strength": "S +1",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Anti-INFANTRY 3+",
-        "Anti-BEAST 2+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Electrovoid Gauntlet",
-      "section": "Melee Weapons",
-      "points": 5,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A-2",
-      "strength": "S x2",
-      "ap": "-2",
-      "damage": "3",
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Electrovoid Klaive",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A-2",
-      "strength": "S +2",
-      "ap": "-2",
-      "damage": "2",
-      "keywords": [
-        "Lethal Hits",
-        "Lance"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Great Klaive",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A-1",
-      "strength": "S x2",
-      "ap": "-2",
-      "damage": "3",
-      "keywords": [
-        "Heavy",
-        "Lethal Hits",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Demi Klaives",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": null,
-      "range": "-",
-      "attacks": "Ax2",
-      "strength": "S",
-      "ap": -2,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 1",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Stunclaw",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "1",
-      "strength": "S +2",
-      "ap": "-2",
-      "damage": "1",
-      "keywords": [
-        "Precision",
-        "Harpoon"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Shardnet and Impaler",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "1",
-      "strength": "S +2",
-      "ap": "-2",
-      "damage": "1",
-      "keywords": [
-        "Harpoon"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Masochir Blade",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S +2",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 1"
       ],
       "availability": ""
     },
@@ -879,32 +768,142 @@
       "availability": ""
     },
     {
-      "name": "Macro-Scalpel",
+      "name": "Demi Klaives",
       "section": "Melee Weapons",
-      "points": 10,
+      "points": 8,
       "profiles": null,
       "range": "-",
-      "attacks": "A",
-      "strength": "S +3",
-      "ap": -3,
-      "damage": "2",
+      "attacks": "Ax2",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "1",
       "keywords": [
+        "Sustained Hits 1",
         "Lethal Hits"
       ],
       "availability": ""
     },
     {
-      "name": "Viviscector's Array",
+      "name": "Electrovoid Blade",
       "section": "Melee Weapons",
       "points": 5,
       "profiles": null,
       "range": "-",
       "attacks": "A",
       "strength": "S +1",
-      "ap": -1,
+      "ap": "-3",
       "damage": "1",
       "keywords": [
-        "Sustained Hits 1",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrovoid Gauntlet",
+      "section": "Melee Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": "S x2",
+      "ap": "-2",
+      "damage": "3",
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrovoid Klaive",
+      "section": "Melee Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A-2",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits",
+        "Lance"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Electrovoid Whip",
+      "section": "Melee Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A+3",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Anti-INFANTRY 3+",
+        "Anti-BEAST 2+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Glimmersteel Blade",
+      "section": "Melee Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S+1",
+      "ap": "-4",
+      "damage": "1",
+      "keywords": [
+        "Lethal Hits",
+        "Anti-INFANTRY 3+",
+        "Anti-BEAST 2+"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Great Klaive",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A-1",
+      "strength": "S x2",
+      "ap": "-2",
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Lethal Hits",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Hekatarii Blade",
+      "section": "Melee Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A+2",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [],
+      "availability": ""
+    },
+    {
+      "name": "Huskblade",
+      "section": "Melee Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A+2",
+      "strength": "S +1",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
         "Devastating Wounds"
       ],
       "availability": ""
@@ -916,28 +915,13 @@
       "profiles": null,
       "range": "-",
       "attacks": "A-2",
-      "strength": 2,
-      "ap": -1,
+      "strength": "2",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Extra Attacks",
         "Anti-INFANTRY 3+",
         "Poison 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Scything Blades",
-      "section": "Melee Weapons",
-      "points": "5 / 10",
-      "profiles": null,
-      "range": "-",
-      "attacks": "D3",
-      "strength": "S",
-      "ap": "-2",
-      "damage": "1 / 2",
-      "keywords": [
-        "Lethal Hits"
       ],
       "availability": ""
     },
@@ -958,14 +942,106 @@
       "availability": ""
     },
     {
+      "name": "Macro-Scalpel",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": "-3",
+      "damage": "2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Masochir Blade",
+      "section": "Melee Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Scything Blades",
+      "section": "Melee Weapons",
+      "points": "5 / 10",
+      "profiles": null,
+      "range": "-",
+      "attacks": "D3",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "1 / 2",
+      "keywords": [
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Shardnet and Impaler",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Stunclaw",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Precision",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Viviscector's Array",
+      "section": "Melee Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Sustained Hits 1",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Haywire Grenades",
       "section": "Grenades",
       "points": 5,
       "profiles": null,
       "range": "1\"",
       "attacks": "D3",
-      "strength": 8,
-      "ap": -1,
+      "strength": "8",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Anti-VEHICLE 4+",
@@ -981,26 +1057,10 @@
       "profiles": null,
       "range": "S+3\"",
       "attacks": "D3",
-      "strength": 7,
-      "ap": -3,
+      "strength": "7",
+      "ap": "-3",
       "damage": "D3+1",
       "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Tanglefoot Grenades",
-      "section": "Grenades",
-      "points": 3,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "D3+1",
-      "strength": 2,
-      "ap": 0,
-      "damage": "0",
-      "keywords": [
-        "Ensnare",
         "Ignores Cover"
       ],
       "availability": ""
@@ -1017,6 +1077,22 @@
       "damage": "-",
       "keywords": [
         "Smoke 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Tanglefoot Grenades",
+      "section": "Grenades",
+      "points": 3,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D3+1",
+      "strength": "2",
+      "ap": "0",
+      "damage": "0",
+      "keywords": [
+        "Ensnare",
+        "Ignores Cover"
       ],
       "availability": ""
     }

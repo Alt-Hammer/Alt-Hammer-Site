@@ -23,20 +23,20 @@ Before the Deployment step of the battle, you can use this ability if your army 
 <h6 id="montka">Mont'ka</h6>
 
 
-Each time a T'au unit is Activated, select 1 of the following abilities to be in effect for the remainder of the battle round:
-- The unit can <span class="keyword" data-term="shoot" data-type="action">Shoot</span> twice as its first 2 Actions, but reduce Hit rolls by 1 for the second <span class="keyword" data-term="shoot" data-type="action">Shoot</span> action. Further, the unit cannot <span class="keyword" data-term="move" data-type="action">Move</span> for the remainder of the Battle Round.
-- The unit can <span class="keyword" data-term="move" data-type="action">Move</span> twice as its first 2 Actions, but neither can include an <span class="keyword" data-term="advance" data-type="action">Advance</span>, and the second <span class="keyword" data-term="move" data-type="action">Move</span> can only be a maximum distance equal to half the lowest Movement characteristic in the unit. Further, the unit cannot <span class="keyword" data-term="shoot" data-type="action">Shoot</span> or <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> for the remainder of the Battle Round.
+Each time a <span class="keyword" data-term="tau" data-type="keyword">T'au</span> unit is Activated, select 1 of the following abilities to be in effect until the end of their Activation:
+- If the unit starts its Activation with the <span class="keyword" data-term="remain-stationary" data-type="action">Remain Stationary</span> Action, weapons equipped by models in the unit gain the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1 </span>ability, or increase an existing <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability by 1.
+- If the unit starts its Activation with a <span class="keyword" data-term="move" data-type="action">Move</span> Action, weapons equipped by models in the unit gain the <span class="keyword" data-term="assault" data-type="keyword">Assault </span>ability.
+- If the unit starts its Activation with a <span class="keyword" data-term="move" data-type="action">Move</span> Action, models in the unit increase their Movement characteristic by 2", their Initiative characteristic by 1, and gain the <span class="keyword" data-term="relentless" data-type="keyword">Relentless</span> ability.
 
 <h6 id="kauyon">Kauyon</h6>
 
 
-T'au units possess the <span class="keyword" data-term="stealth" data-type="keyword">Stealth</span> ability until the first time they <span class="keyword" data-term="move" data-type="action">Move</span> or <span class="keyword" data-term="shoot" data-type="action">Shoot</span> when wholly positioned within a terrain feature. Units that already possess the Stealth ability increase the range of that ability from 12" to 24". When a unit first <span class="keyword" data-term="shoots" data-type="action">Shoots</span> as part of its Activation, it can choose 1 of the following abilities to be in effect for that activation:
-- The unit's Ranged weapons gain the <span class="keyword" data-term="assault" data-type="keyword">Assault</span> ability. If Ranged weapons already possess the <span class="keyword" data-term="assault" data-type="keyword">Assault</span> ability, those weapons instead gain the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability, or increase X by 1 if they already possess the <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability.
-- The unit's Ranged weapons gain the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> and <span class="keyword" data-term="lethal-hits" data-type="keyword">Lethal Hits</span> abilities, but:
-- The unit must <span class="keyword" data-term="remain-stationary" data-type="action">Remain Stationary</span> as part of its Activation. 
-- All models in the unit must target the same enemy unit. 
-Ranged weapons that already possess the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability instead score Critical Hits on a 4+.
+<span class="keyword" data-term="tau" data-type="keyword">T'au</span> units possess the <span class="keyword" data-term="stealth" data-type="keyword">Stealth</span> ability until the first time they <span class="keyword" data-term="move" data-type="action">Move</span> or <span class="keyword" data-term="shoot" data-type="action">Shoot</span> when wholly positioned within a terrain feature. Units that already possess the Stealth ability increase the range of that ability from 12" to 24". 
 
+Further, when a unit begins its Activation with the <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action, it can choose 1 of the following abilities to be in effect until the end of their Activation:
+- The unit's Ranged weapons gain the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability 
+- The unit's Ranged weapons gain the <span class="keyword" data-term="lethal-hits" data-type="keyword">Lethal Hits</span> ability
+- The unit's Ranged weapons score Critical Hits on a 5+ instead of a 6+
 
 ##### "Our Plans Have Failed - Withdraw and Regroup!"
 
@@ -62,7 +62,7 @@ The enemy player can attempt to Route your units when they are attempting to Wit
 <h6 id="markerlight">Markerlight<span class="heading-value">5 Points</span></h6>
 
 
-A Markerlight is a Ranged weapon that generates zero damage but confers the following ability when fired:
+A <span class="weapon-ref" data-weapon="markerlight">Markerlight</span> is a Ranged weapon that generates zero damage but confers the following ability when fired:
 
 **Target Acquisition:** Markerlights that successfully Hit an enemy unit provide stacking, cumulative abilities for other friendly T'au units that make Ranged attacks against that enemy unit:
 - 1 to 5 Markerlight Hits: friendly T'au units add 1 to their Hit roll
@@ -93,25 +93,25 @@ Enemy units cannot <span class="keyword" data-term="enter-the-battlefield-from-s
 <h6 id="counterfire-defence-system">Counterfire Defence System<span class="heading-value">20 Points</span></h6>
 
 
-Reduce the Attacks characteristic of incoming Ranged attacks against the bearer's unit by D3 (to a minimum of 1).
+Reduce the Attacks characteristic of incoming Ranged attacks against the bearer's unit by D3 (to a minimum of 1). This wargear has no effect against Ranged attacks with the <span class="keyword" data-term="torrent" data-type="keyword">Torrent</span> keyword.
 
 
 <h6 id="velocity-tracker">Velocity Tracker<span class="heading-value">10 Points</span></h6>
 
 
-<span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> <span class="keyword" data-term="walker" data-type="keyword">Walker</span> model only. The bearer's Ranged weapons gain the <span class="keyword" data-term="anti-air" data-type="keyword">Anti Air</span> ability.
+The bearer's Ranged weapons gain the <span class="keyword" data-term="anti-air" data-type="keyword">Anti Air</span> ability.
 
 
 <h6 id="multi-tracker">Multi-Tracker<span class="heading-value">10 Points</span></h6>
 
 
-<span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> <span class="keyword" data-term="walker" data-type="keyword">Walker</span> model only. The bearer can make Ranged attacks as if it was a <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>.
+The bearer can make Ranged attacks as if it was a <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>.
 
 
 <h6 id="stim-injectors">Stim Injectors<span class="heading-value">25 Points</span></h6>
 
 
-The bearer gains the <span class="keyword" data-term="feel-no-pain-5" data-type="keyword">Feel No Pain 5+</span> ability. Once per battle when the unit is the target of an enemy attack, you can choose to have the bearer drain its Stims. When it does do, the Damage characteristic of enemy attacks is reduced by 1 (to a minimum of 1), and, if the bearer is still on the battlefield in your next Command Phase, it can regain up to D3 lost Wounds. 
+The bearer gains the <span class="keyword" data-term="feel-no-pain-5" data-type="keyword">Feel No Pain 5+</span> ability. Once per battle when the unit is the target of an enemy attack, you can choose to have the bearer drain its Stims. When it does do, the Damage characteristic of enemy attacks is reduced by 1 (to a minimum of 1), and, if the bearer is still on the battlefield in your next Command Phase, it can regain up to D3 lost Wounds. After choosing to drain its Stims, this wargear upgrade confers no further abilities to its bearer.
 
 
 <h6 id="stealth-field-projector">Stealth Field Projector<span class="heading-value">25 Points</span></h6>
@@ -123,13 +123,13 @@ The unit gains the <span class="keyword" data-term="stealth" data-type="keyword"
 <h6 id="target-lock">Target Lock<span class="heading-value">15 Points</span></h6>
 
 
-<span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> <span class="keyword" data-term="walker" data-type="keyword">Walker</span> model only. The bearer's weapons gain the <span class="keyword" data-term="assault" data-type="keyword">Assault</span> ability. This wargear has no effect on weapons that already possess the <span class="keyword" data-term="assault" data-type="keyword">Assault</span> ability, or which possess the <span class="keyword" data-term="ordnance" data-type="keyword">Ordnance</span> keyword.
+The bearer's weapons gain the <span class="keyword" data-term="assault" data-type="keyword">Assault</span> ability. This wargear has no effect on weapons that already possess the <span class="keyword" data-term="assault" data-type="keyword">Assault</span> ability, or which possess the <span class="keyword" data-term="ordnance" data-type="keyword">Ordnance</span> keyword.
 
 
 <h6 id="advanced-targeting-system">Advanced Targeting System<span class="heading-value">10 Points</span></h6>
 
 
-<span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> <span class="keyword" data-term="walker" data-type="keyword">Walker</span> model only. The bearer scores Critical Wounds on a 5+ when making Ranged attacks.
+The bearer scores Critical Wounds on a 5+ when making Ranged attacks.
 
 
 <h6 id="iridium-armour">Iridium Armour<span class="heading-value">15 Points</span></h6>
@@ -168,23 +168,6 @@ The unit gains the <span class="keyword" data-term="stealth" data-type="keyword"
 - Ranged weapons increase their Armour Piercing and Damage characteristics by 1, but gain the <span class="keyword" data-term="hazardous-d3" data-type="keyword">Hazardous D3</span> ability.
 - Ranged <span class="keyword" data-term="torrent" data-type="keyword">Torrent</span> weapons instead increase their Strength and Attacks characteristic by 2 and gain the <span class="keyword" data-term="poison-1" data-type="keyword">Poison 1</span> ability, but gain the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> ability reduce their Range characteristic by 3".
 
-<h6 id="drone">Drone<span class="heading-value">10 Points</span></h6>
-
-
-Drones are additional models equipped by a unit. Each Drone equipped by a unit must be equipped with 1 of the following Wargear items:
-- Twin-linked Pulse Carbines
-- Long-shot Pulse Rifle
-- Pulse Cannon
-- Smart Missile Pod
-- Shield Generator
-- Pulse Accelerator* 
-- Early Warning Override*
-- Counterfire Defence System*
-- Stealth Field Projector*
-
-** A maximum of 2 of these items can be included in a unit that includes more than 1 Drone.*
-
-
 <h6 id="twin-linked">Twin-linked<span class="heading-value">Varies (see below)</span></h6>
 
 
@@ -199,6 +182,14 @@ This upgrade costs 4 points for weapons that meet all of the following criteria:
 - The weapon has a minimum Attacks characteristic of 3 or lower
 
 The upgrade costs 8 points for all other weapons.
+
+
+<h6 id="drones">Drones<span class="heading-value">(see Unit Profile)</span></h6>
+
+
+Drones are an Infantry unit that 'join' other T'au units. Each T'au Unit Profile specifies how many Drones can join their unit (which may be based on per-model limits, or unit-level limits). There is no limit of the number of Drones units that can join other units in your army. However, Drones can never be included in your army as a standalone unit. 
+
+Refer to the Drones Unit Profile for model characteristics and wargear options.
 
 
 ## Unit Profiles
@@ -245,7 +236,7 @@ Your army can include 1 Shas'O unit for 2,000 points.
 
 
 **Adaptive Strategist:** During your first Command Phase, after you have selected your T'au Battle Tactic for the battle, you can select up to 3 units currently on the battlefield and complete 1 of the following:
-- If you selected Mont'ka, those 3 units gain the Scout 6" ability. If they already possess the <span class="keyword" data-term="scout-x" data-type="keyword">Scout [X]"</span> ability, increase [X] by 3".
+- If you selected Mont'ka, those 3 units gain the <span class="keyword" data-term="scout-6" data-type="keyword">Scout 6"</span> ability. If they already possess the <span class="keyword" data-term="scout-x" data-type="keyword">Scout [X]"</span> ability, increase [X] by 3".
 - If you selected Kauyon, those 3 units can either be repositioned anywhere on the battlefield that allows the unit to be placed wholly within a terrain feature, or be placed into Strategic Reserves.
 
 This unit cannot be selected as 1 of the 3 units you can select for this ability.
@@ -832,6 +823,48 @@ For every 5 models in the unit, 2 Vespid Stingwings can replace their <span clas
 <p><span class="weapon-ref" data-weapon="rail-rifle">Rail Rifle</span></p>
 
 The unit can be equipped with 1 <span class="wargear-ref" data-wargear="drone">Drone</span>.
+
+
+##### Drones
+
+
+
+<h6 id="force-organization">Force Organization</h6>
+
+
+Drones are not a typical unit. Instead, units of Drones 'join' other T'au units, whose Unit Profiles specify how many Drones can join their unit (which may be based on per-model limits, or unit-level limits). There is no limit of the number of Drones units that can join other units in your army. However, Drones can never be included in your army as a standalone unit. 
+
+
+<h6 id="unit-composition">Unit Composition</h6>
+
+
+Varies - refer to the 'Drones' section of Unit Profiles of the T'au units you wish to have Drones join.
+
+
+<h6 id="standard-wargear">Standard Wargear</h6>
+
+
+Every Drone must be equipped with 1 of the following:
+
+<span class="wargear-ref" data-wargear="twin-linked">Twin-linked</span> <span class="weapon-ref" data-weapon="pulse-carbine">Pulse Carbine</span>
+
+<p><span class="weapon-ref" data-weapon="long-shot-pulse-rifle">Long-shot Pulse Rifle</span></p>
+
+<p><span class="weapon-ref" data-weapon="pulse-cannon">Pulse Cannon</span></p>
+
+<p><span class="weapon-ref" data-weapon="smart-missile-pod">Smart Missile Pod</span></p>
+
+<p><span class="wargear-ref" data-wargear="shield-generator">Shield Generator</span></p>
+
+<span class="wargear-ref" data-wargear="pulse-accelerator">Pulse Accelerator</span> * 
+
+<span class="wargear-ref" data-wargear="early-warning-override">Early Warning Override</span> *
+
+<span class="wargear-ref" data-wargear="counterfire-defence-system">Counterfire Defence System</span> *
+
+<span class="wargear-ref" data-wargear="stealth-field-projector">Stealth Field Projector</span> *
+
+* A maximum of 2 of these items can be included in a unit that includes more than 1 Drone.
 
 
 #### Beasts

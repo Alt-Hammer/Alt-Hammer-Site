@@ -3,28 +3,6 @@
   "slug": "chaos-undivided",
   "units": [
     {
-      "name": "Name",
-      "category": "Unknown",
-      "stats": {
-        "M": "Movement",
-        "WS": "Weapon Skill",
-        "BS": "Ballistic Skill",
-        "I": "Initiative",
-        "A": "Attacks",
-        "S": "Strength",
-        "T": "Toughness",
-        "W": "Wounds",
-        "SV": "Save",
-        "LD": "Leadership",
-        "basePoints": "Base Points per Model",
-        "squadSizes": "Squad Sizes"
-      },
-      "keywords": [
-        "Keywords"
-      ],
-      "models": null
-    },
-    {
       "name": "Daemon Prince",
       "category": "Character",
       "stats": {
@@ -195,20 +173,7 @@
     {
       "name": "Warpsmith",
       "category": "Character",
-      "stats": {
-        "M": "6\"",
-        "WS": 5,
-        "BS": 5,
-        "I": 4,
-        "A": 3,
-        "S": 4,
-        "T": 4,
-        "W": 5,
-        "SV": "3+",
-        "LD": "4+",
-        "basePoints": 80,
-        "squadSizes": "1"
-      },
+      "stats": null,
       "keywords": [
         "Chaos",
         "Undivided",
@@ -217,35 +182,61 @@
         "Character",
         "Tacticus"
       ],
-      "models": null
-    },
-    {
-      "name": "Hellstalker",
-      "category": "Character",
-      "stats": {
-        "M": "10\"",
-        "WS": "-",
-        "BS": "-",
-        "I": "-",
-        "A": "-",
-        "S": 6,
-        "T": 6,
-        "W": 8,
-        "SV": "3+",
-        "LD": "-",
-        "basePoints": 80,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Chaos",
-        "Undivided",
-        "Heretic Astartes",
-        "Mounted",
-        "Character",
-        "Tacticus",
-        "Feel No Pain 5+"
-      ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Warpsmith",
+          "stats": {
+            "M": "6\"",
+            "WS": 5,
+            "BS": 5,
+            "I": 4,
+            "A": 3,
+            "S": 4,
+            "T": 4,
+            "W": 5,
+            "SV": "3+",
+            "LD": "4+",
+            "basePoints": 80,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Chaos",
+            "Undivided",
+            "Heretic Astartes",
+            "Infantry",
+            "Character",
+            "Tacticus"
+          ]
+        },
+        {
+          "modelName": "Helstalker",
+          "stats": {
+            "M": "10\"",
+            "WS": 5,
+            "BS": 5,
+            "I": 4,
+            "A": 3,
+            "S": 6,
+            "T": 6,
+            "W": 8,
+            "SV": "3+",
+            "LD": "4+",
+            "basePoints": 80,
+            "squadSizes": "0 to 1"
+          },
+          "keywords": [
+            "Chaos",
+            "Undivided",
+            "Heretic Astartes",
+            "Monster",
+            "Character",
+            "Daemon Engine",
+            "Mounted",
+            "Tacticus",
+            "Feel No Pain 5+"
+          ]
+        }
+      ]
     },
     {
       "name": "Questor Traitoris Lord",
@@ -272,6 +263,66 @@
         "Leader"
       ],
       "models": null
+    },
+    {
+      "name": "Cultists",
+      "category": "Battleline",
+      "stats": null,
+      "keywords": [
+        "Chaos",
+        "Undivided",
+        "Infantry",
+        "Bodyguard"
+      ],
+      "models": [
+        {
+          "modelName": "Cultist",
+          "stats": {
+            "M": "6\"",
+            "WS": 2,
+            "BS": 2,
+            "I": 3,
+            "A": 1,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "6+",
+            "LD": "7+",
+            "basePoints": 2,
+            "squadSizes": "5 to 30"
+          },
+          "keywords": [
+            "Chaos",
+            "Undivided",
+            "Infantry",
+            "Bodyguard"
+          ]
+        },
+        {
+          "modelName": "Torment",
+          "stats": {
+            "M": "6\"",
+            "WS": 4,
+            "BS": 2,
+            "I": 3,
+            "A": 3,
+            "S": 3,
+            "T": 4,
+            "W": 4,
+            "SV": "6+",
+            "LD": "7+",
+            "basePoints": 2,
+            "squadSizes": "5 to 30"
+          },
+          "keywords": [
+            "Chaos",
+            "Undivided",
+            "Infantry",
+            "Fearless",
+            "Feel No Pain 5+"
+          ]
+        }
+      ]
     },
     {
       "name": "Legionaries",
@@ -437,34 +488,6 @@
       "models": null
     },
     {
-      "name": "Spawn",
-      "category": "Beasts",
-      "stats": {
-        "M": "7\"",
-        "WS": 3,
-        "BS": 2,
-        "I": 4,
-        "A": 5,
-        "S": 4,
-        "T": 3,
-        "W": 6,
-        "SV": "4+",
-        "LD": "10+",
-        "basePoints": 30,
-        "squadSizes": "1 to 4"
-      },
-      "keywords": [
-        "Chaos",
-        "Undivided",
-        "Beast",
-        "Deep Strike",
-        "Fearless",
-        "Invulnerable Save 4+",
-        "Feel No Pain 5+"
-      ],
-      "models": null
-    },
-    {
       "name": "Venomcrawler",
       "category": "Monsters",
       "stats": {
@@ -485,7 +508,7 @@
         "Chaos",
         "Undivided",
         "Monster",
-        "Demon Engine",
+        "Daemon Engine",
         "Fearless",
         "Feel No Pain 5+",
         "Deadly Demise D3"
@@ -513,7 +536,7 @@
         "Chaos",
         "Undivided",
         "Monster",
-        "Demon Engine",
+        "Daemon Engine",
         "Fearless",
         "Feel No Pain 5+",
         "Deadly Demise D3+1"
@@ -541,7 +564,7 @@
         "Chaos",
         "Undivided",
         "Monster",
-        "Demon Engine",
+        "Daemon Engine",
         "Fearless",
         "Feel No Pain 5+",
         "Deadly Demise D6+2"
@@ -842,55 +865,7 @@
         "Infantry",
         "Bodyguard"
       ],
-      "models": [
-        {
-          "modelName": "Cultist",
-          "stats": {
-            "M": "6\"",
-            "WS": 2,
-            "BS": 2,
-            "I": 3,
-            "A": 1,
-            "S": 2,
-            "T": 2,
-            "W": 1,
-            "SV": "6+",
-            "LD": "7+",
-            "basePoints": 2,
-            "squadSizes": "5 to 30"
-          },
-          "keywords": [
-            "Chaos",
-            "Undivided",
-            "Infantry",
-            "Bodyguard"
-          ]
-        },
-        {
-          "modelName": "Torment",
-          "stats": {
-            "M": "6\"",
-            "WS": 4,
-            "BS": 2,
-            "I": 3,
-            "A": 3,
-            "S": 3,
-            "T": 4,
-            "W": 4,
-            "SV": "6+",
-            "LD": "7+",
-            "basePoints": 2,
-            "squadSizes": "5 to 30"
-          },
-          "keywords": [
-            "Chaos",
-            "Undivided",
-            "Infantry",
-            "Fearless",
-            "Feel No Pain 5+"
-          ]
-        }
-      ]
+      "models": null
     },
     {
       "name": "Legionnaries",
@@ -1027,13 +1002,13 @@
   "weapons": [
     {
       "name": "Bolt Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "12\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Pistol"
@@ -1042,13 +1017,13 @@
     },
     {
       "name": "Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "24\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -1058,13 +1033,13 @@
     },
     {
       "name": "Heavy Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "36\"",
       "attacks": "3",
-      "strength": 5,
-      "ap": -1,
+      "strength": "5",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Heavy",
@@ -1074,13 +1049,13 @@
     },
     {
       "name": "Shotgun",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "4\"",
       "attacks": "2",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "4",
       "keywords": [
         "Assault",
@@ -1092,13 +1067,13 @@
     },
     {
       "name": "Autogun",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "24\"",
       "attacks": "1",
-      "strength": 2,
-      "ap": 0,
+      "strength": "2",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Rapid Fire 2"
@@ -1107,13 +1082,13 @@
     },
     {
       "name": "Heavy Autogun",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 7,
       "profiles": null,
       "range": "30\"",
       "attacks": "2",
-      "strength": 4,
-      "ap": 0,
+      "strength": "4",
+      "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
@@ -1123,13 +1098,13 @@
     },
     {
       "name": "Autocannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "48\"",
       "attacks": "2",
-      "strength": 7,
-      "ap": -1,
+      "strength": "7",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Heavy"
@@ -1138,13 +1113,13 @@
     },
     {
       "name": "Exterminator Autocannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 65,
       "profiles": null,
       "range": "48\"",
       "attacks": "4",
-      "strength": 8,
-      "ap": -1,
+      "strength": "8",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Rapid Fire 2",
@@ -1154,13 +1129,13 @@
     },
     {
       "name": "Assault Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "24\"",
       "attacks": "8",
-      "strength": 3,
-      "ap": -1,
+      "strength": "3",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Sustained Hits 3",
@@ -1170,13 +1145,13 @@
     },
     {
       "name": "Heavy Assault Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 65,
       "profiles": null,
       "range": "24\"",
       "attacks": "16",
-      "strength": 6,
-      "ap": -1,
+      "strength": "6",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Sustained Hits 3",
@@ -1185,14 +1160,31 @@
       "availability": ""
     },
     {
+      "name": "Hand Flamer",
+      "section": "Ranged Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "9\"",
+      "attacks": "D6+1",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
       "name": "Flamer",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
-      "strength": 3,
-      "ap": 0,
+      "strength": "3",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -1203,13 +1195,13 @@
     },
     {
       "name": "Heavy Flamer",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+4",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -1220,13 +1212,13 @@
     },
     {
       "name": "Inferno Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 30,
       "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
+      "strength": "5",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -1237,13 +1229,13 @@
     },
     {
       "name": "Melta Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "6\"",
       "attacks": "1",
-      "strength": 7,
-      "ap": -4,
+      "strength": "7",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Pistol",
@@ -1252,14 +1244,30 @@
       "availability": "Tacticus, Raptor, Havoc, Bike"
     },
     {
+      "name": "Meltagun",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": "9",
+      "ap": "-4",
+      "damage": "D6",
+      "keywords": [
+        "Assault",
+        "Melta 2"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
+    },
+    {
       "name": "Multi-melta",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 25,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 9,
-      "ap": -4,
+      "strength": "9",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Heavy",
@@ -1269,13 +1277,13 @@
     },
     {
       "name": "Melta Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 50,
       "profiles": null,
       "range": "24\"",
       "attacks": "D3+1",
-      "strength": 10,
-      "ap": -4,
+      "strength": "10",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Melta 4"
@@ -1283,14 +1291,312 @@
       "availability": ""
     },
     {
+      "name": "Magma Cutter",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 10,
+          "range": "9\"",
+          "attacks": "D3",
+          "strength": "9",
+          "ap": "-4",
+          "damage": "D6",
+          "keywords": [
+            "Melta 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Pistol",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 8,
+          "range": "12\"",
+          "attacks": "2",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Pistol"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": "6",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [
+            "Pistol",
+            "Hazardous 2"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Plasma Gun",
+      "section": "Ranged Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 12,
+          "range": "24\"",
+          "attacks": "2",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Rapid Fire 1"
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Bike"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "4",
+          "keywords": [
+            "Hazardous 2"
+          ],
+          "availability": "Tacticus, Raptor, Havoc, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Bike"
+    },
+    {
+      "name": "Plasma Cannon",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 20,
+          "range": "30\"",
+          "attacks": "D3+2",
+          "strength": "6",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": "Tacticus, Havoc, Terminator"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "30\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 1\"",
+            "Hazardous D3+1"
+          ],
+          "availability": "Tacticus, Havoc, Terminator"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Havoc, Terminator"
+    },
+    {
+      "name": "Macro Plasma Cannon",
+      "section": "Ranged Weapons",
+      "points": 70,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 70,
+          "range": "36\"",
+          "attacks": "D6+3",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 3\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "36\"",
+          "attacks": "D3+1",
+          "strength": "11",
+          "ap": "-4",
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 1\"",
+            "Hazardous D3+2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Executor",
+      "section": "Ranged Weapons",
+      "points": 90,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 90,
+          "range": "36\"",
+          "attacks": "D6+3",
+          "strength": "9",
+          "ap": "-3",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 3\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "36\"",
+          "attacks": "D3+1",
+          "strength": "12",
+          "ap": "-3",
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 2\"",
+            "Hazardous 3"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasma Decimator",
+      "section": "Ranged Weapons",
+      "points": 120,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 120,
+          "range": "48\"",
+          "attacks": "2D6+3",
+          "strength": "9",
+          "ap": "-3",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 3\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "48\"",
+          "attacks": "D3+1",
+          "strength": "15",
+          "ap": "-3",
+          "damage": "6",
+          "keywords": [
+            "Ordnance",
+            "Blast 3\"",
+            "Hazardous 3"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": ""
+    },
+    {
       "name": "Lascannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 35,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
-      "strength": 12,
-      "ap": -3,
+      "strength": "12",
+      "ap": "-3",
       "damage": "D6+2",
       "keywords": [
         "Heavy"
@@ -1299,13 +1605,13 @@
     },
     {
       "name": "Havoc Launcher",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "48\"",
       "attacks": "D6+2",
-      "strength": 2,
-      "ap": -1,
+      "strength": "2",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Blast 2\"",
@@ -1314,14 +1620,185 @@
       "availability": ""
     },
     {
+      "name": "Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": "Tacticus, Havoc"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": "Tacticus, Havoc"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Havoc"
+    },
+    {
+      "name": "Grenade Launcher",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 10,
+          "range": "24\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "0",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Blast 1\"",
+            "Ignores Cover"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-1",
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Ignores Cover"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Skirmisher Cannon",
+      "section": "Ranged Weapons",
+      "points": 30,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 30,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": "4",
+          "ap": "0",
+          "damage": "2",
+          "keywords": [
+            "Blast 2\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "D6+1",
+          "keywords": [],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Battle Cannon",
+      "section": "Ranged Weapons",
+      "points": 50,
+      "profiles": [
+        {
+          "profileName": "HE",
+          "points": 50,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": "5",
+          "ap": "0",
+          "damage": "2",
+          "keywords": [
+            "Blast 2\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "AP",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "11",
+          "ap": "-2",
+          "damage": "D6+1",
+          "keywords": [],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\""
+      ],
+      "availability": ""
+    },
+    {
       "name": "Demolisher Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 75,
       "profiles": null,
       "range": "24\"",
       "attacks": "D6+2",
-      "strength": 9,
-      "ap": -2,
+      "strength": "9",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Blast 3\"",
@@ -1330,14 +1807,31 @@
       "availability": ""
     },
     {
+      "name": "Pyre Cannon",
+      "section": "Ranged Weapons",
+      "points": 45,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "2D6+3",
+      "strength": "6",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Conflagration Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 60,
       "profiles": null,
       "range": "18\"",
       "attacks": "2D6+6",
-      "strength": 7,
-      "ap": -2,
+      "strength": "7",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -1348,13 +1842,13 @@
     },
     {
       "name": "Vulcan Mega Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 80,
       "profiles": null,
       "range": "36\"",
       "attacks": "20",
-      "strength": 6,
-      "ap": -1,
+      "strength": "6",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Sustained Hits 2"
@@ -1363,13 +1857,13 @@
     },
     {
       "name": "Avenger Gatling Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 80,
       "profiles": null,
       "range": "30\"",
       "attacks": "20",
-      "strength": 6,
-      "ap": -1,
+      "strength": "6",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Sustained Hits 3",
@@ -1379,13 +1873,13 @@
     },
     {
       "name": "Magma Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 110,
       "profiles": null,
       "range": "24\"",
       "attacks": "D6+1",
-      "strength": 12,
-      "ap": -4,
+      "strength": "12",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Assault",
@@ -1395,13 +1889,13 @@
     },
     {
       "name": "Laser Destroyer",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 100,
       "profiles": null,
       "range": "72\"",
       "attacks": "1",
-      "strength": 24,
-      "ap": -4,
+      "strength": "24",
+      "ap": "-4",
       "damage": "12",
       "keywords": [
         "Ordnance",
@@ -1411,13 +1905,13 @@
     },
     {
       "name": "Volcano Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 200,
       "profiles": null,
       "range": "96\"",
       "attacks": "1",
-      "strength": 30,
-      "ap": -5,
+      "strength": "30",
+      "ap": "-5",
       "damage": "2D6+12",
       "keywords": [
         "Ordnance",
@@ -1428,14 +1922,58 @@
       "availability": ""
     },
     {
+      "name": "Missile Bastion",
+      "section": "Ranged Weapons",
+      "points": 40,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 40,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "D3",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
       "name": "Storm Eagle Rocket",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 150,
       "profiles": null,
       "range": "24\"-240\"",
       "attacks": "3D6",
-      "strength": 15,
-      "ap": -3,
+      "strength": "15",
+      "ap": "-3",
       "damage": "8",
       "keywords": [
         "One Shot",
@@ -1447,14 +1985,49 @@
       "availability": ""
     },
     {
+      "name": "Thundercoil Harpoon",
+      "section": "Ranged Weapons",
+      "points": 65,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 65,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": "13",
+          "ap": "-3",
+          "damage": "8",
+          "keywords": [
+            "Anti-VEHICLE 4+",
+            "Anti-MONSTER 4+",
+            "Devastating Wounds",
+            "Harpoon"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Anti-VEHICLE 4+",
+        "Anti-MONSTER 4+",
+        "Devastating Wounds",
+        "Harpoon"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Hydra Flak Autocannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 70,
       "profiles": null,
       "range": "90\"",
       "attacks": "6",
-      "strength": 7,
-      "ap": -1,
+      "strength": "7",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Ordnance",
@@ -1467,13 +2040,13 @@
     },
     {
       "name": "Whirlwind Vengeance Launcher",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 90,
       "profiles": null,
       "range": "18\"-72\"",
       "attacks": "3D6",
-      "strength": 8,
-      "ap": -2,
+      "strength": "8",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Ordnance",
@@ -1547,7 +2120,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +1",
-      "ap": -1,
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Devastating Wounds"
@@ -1577,7 +2150,7 @@
       "range": "-",
       "attacks": "A+3",
       "strength": "S +1",
-      "ap": -1,
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Harpoon"
@@ -1607,7 +2180,7 @@
       "range": "-",
       "attacks": "A -2",
       "strength": "S +4",
-      "ap": -4,
+      "ap": "-4",
       "damage": "3",
       "keywords": [
         "Heavy",
@@ -1630,709 +2203,6 @@
         "Lethal Hits"
       ],
       "availability": "Tacticus, Raptor, Havoc, Terminator"
-    },
-    {
-      "name": "Rending Claws",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": "-2",
-      "damage": "2",
-      "keywords": [
-        "Sustained Hits 1",
-        "Devastating Wounds"
-      ],
-      "availability": "Tacticus, Raptor, Terminator"
-    },
-    {
-      "name": "Crusher Claws",
-      "section": "Melee Weapons",
-      "points": 25,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S+5",
-      "ap": -3,
-      "damage": "4",
-      "keywords": [
-        "Sustained Hits 1",
-        "Anti-FORTIFICATION 2+",
-        "Anti-VEHICLE 4+",
-        "Devastating Wounds"
-      ],
-      "availability": "Tacticus, Raptor, Terminator"
-    },
-    {
-      "name": "Scything Wings",
-      "section": "Melee Weapons",
-      "points": 5,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Force Weapon",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S +3",
-      "ap": -3,
-      "damage": "3",
-      "keywords": [
-        "Precision",
-        "Anti-PSYKER 3+",
-        "Devastating Wounds"
-      ],
-      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
-    },
-    {
-      "name": "Servo Scourges",
-      "section": "Melee Weapons",
-      "points": 5,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks",
-        "Harpoon"
-      ],
-      "availability": "Tacticus, Havoc, Terminator, Bike"
-    },
-    {
-      "name": "Warpforge Axe",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S +2",
-      "ap": "-2",
-      "damage": "2",
-      "keywords": [
-        "Anti-VEHICLE 3+"
-      ],
-      "availability": "Tacticus, Havoc, Terminator, Bike"
-    },
-    {
-      "name": "Dreadnought Crusher Drill",
-      "section": "Melee Weapons",
-      "points": 25,
-      "profiles": null,
-      "range": "-",
-      "attacks": "1",
-      "strength": "S +7",
-      "ap": -5,
-      "damage": "D6+3",
-      "keywords": [
-        "Sustained Hits 3",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Toxinjector",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "D3+1",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Extra Attacks",
-        "Poison D3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Frag Grenades",
-      "section": "Grenades",
-      "points": 3,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "D3",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Krak Grenades",
-      "section": "Grenades",
-      "points": 5,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Melta Bombs",
-      "section": "Grenades",
-      "points": 10,
-      "profiles": null,
-      "range": "S\"",
-      "attacks": "1",
-      "strength": 11,
-      "ap": -4,
-      "damage": "D6+3",
-      "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Smoke Grenades",
-      "section": "Grenades",
-      "points": 4,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "1",
-      "strength": "-",
-      "ap": "-",
-      "damage": "-",
-      "keywords": [
-        "Smoke 1\""
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Carrion Bombs",
-      "section": "Grenades",
-      "points": 5,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "D6",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Blast 2\"",
-        "Anti-INFANTRY 5+",
-        "Anti-BEAST 4+",
-        "Anti-MONSTER 5+",
-        "Poison 1"
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Magma Cutter",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Ranged",
-          "points": 10,
-          "range": "9\"",
-          "attacks": "D3",
-          "strength": 9,
-          "ap": -4,
-          "damage": "D6",
-          "keywords": [
-            "Melta 2"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": 10,
-          "range": "-",
-          "attacks": "D3",
-          "strength": 9,
-          "ap": -4,
-          "damage": "D6",
-          "keywords": [
-            "Extra Attacks",
-            "Melta 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Melta 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Pistol",
-      "section": "Weapons",
-      "points": 5,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 5,
-          "range": "12\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Pistol"
-          ],
-          "availability": "Tacticus, Raptor, Bike"
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "12\"",
-          "attacks": "1",
-          "strength": 6,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Pistol",
-            "Hazardous 2"
-          ],
-          "availability": "Tacticus, Raptor, Bike"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol"
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Plasma Gun",
-      "section": "Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 8,
-          "range": "24\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Rapid Fire 1"
-          ],
-          "availability": "Tacticus, Raptor, Havoc, Bike"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Rapid Fire 1"
-      ],
-      "availability": "Tacticus, Raptor, Havoc, Bike"
-    },
-    {
-      "name": "Plasma Cannon",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 20,
-          "range": "30\"",
-          "attacks": "D3+1",
-          "strength": 6,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": "Tacticus, Havoc, Terminator"
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "30\"",
-          "attacks": "D3",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Heavy",
-            "Blast 1\"",
-            "Hazardous D3+1"
-          ],
-          "availability": "Tacticus, Havoc, Terminator"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": "Tacticus, Havoc, Terminator"
-    },
-    {
-      "name": "Macro Plasma Cannon",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "36\"",
-          "attacks": "D3+1",
-          "strength": 11,
-          "ap": -4,
-          "damage": "4",
-          "keywords": [
-            "Ordnance",
-            "Blast 3\"",
-            "Hazardous D3+2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Ordnance",
-        "Blast 3\"",
-        "Hazardous D3+2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Executor",
-      "section": "Weapons",
-      "points": 90,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 90,
-          "range": "36\"",
-          "attacks": "D6+3",
-          "strength": 9,
-          "ap": -3,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 3\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "36\"",
-          "attacks": "D3+1",
-          "strength": 12,
-          "ap": -3,
-          "damage": "4",
-          "keywords": [
-            "Ordnance",
-            "Blast 2\"",
-            "Hazardous 3"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Decimator",
-      "section": "Weapons",
-      "points": 120,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 120,
-          "range": "48\"",
-          "attacks": "2D6+3",
-          "strength": 9,
-          "ap": -3,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 3\""
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 15,
-          "range": "48\"",
-          "attacks": "D6",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": "Tacticus, Havoc"
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Tacticus, Havoc"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": "Tacticus, Havoc"
-    },
-    {
-      "name": "Grenade Launcher",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 10,
-          "range": "24\"",
-          "attacks": "D6",
-          "strength": 3,
-          "ap": 0,
-          "damage": "1",
-          "keywords": [
-            "Assault",
-            "Blast 1\"",
-            "Ignores Cover"
-          ],
-          "availability": "Tacticus, Raptor, Bike"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Raptor, Bike"
-    },
-    {
-      "name": "Light Cannon",
-      "section": "Weapons",
-      "points": 30,
-      "profiles": [
-        {
-          "profileName": "HE",
-          "points": 30,
-          "range": "48\"",
-          "attacks": "D6+3",
-          "strength": 4,
-          "ap": 0,
-          "damage": "2",
-          "keywords": [
-            "Blast 2\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "AP",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -2,
-          "damage": "D6+1",
-          "keywords": [],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Blast 2\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Battle Cannon",
-      "section": "Weapons",
-      "points": 50,
-      "profiles": [
-        {
-          "profileName": "HE",
-          "points": 50,
-          "range": "48\"",
-          "attacks": "D6+3",
-          "strength": 5,
-          "ap": 0,
-          "damage": "2",
-          "keywords": [
-            "Blast 2\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "AP",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 11,
-          "ap": -2,
-          "damage": "D6+1",
-          "keywords": [],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Blast 2\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Bastion",
-      "section": "Weapons",
-      "points": 40,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 40,
-          "range": "48\"",
-          "attacks": "D6+3",
-          "strength": 4,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Thundercoil Harpoon",
-      "section": "Weapons",
-      "points": 65,
-      "profiles": [
-        {
-          "profileName": "Ranged",
-          "points": 65,
-          "range": "12\"",
-          "attacks": "1",
-          "strength": 13,
-          "ap": -3,
-          "damage": "8",
-          "keywords": [
-            "Anti-VEHICLE 4+",
-            "Anti-MONSTER 4+",
-            "Devastating Wounds",
-            "Harpoon"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 4+",
-        "Devastating Wounds",
-        "Harpoon"
-      ],
-      "availability": ""
     },
     {
       "name": "Daemonhammer",
@@ -2378,6 +2248,40 @@
       "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
+      "name": "Rending Claws",
+      "section": "Melee Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Sustained Hits 1",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Terminator"
+    },
+    {
+      "name": "Crusher Claws",
+      "section": "Melee Weapons",
+      "points": 25,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S+5",
+      "ap": "-3",
+      "damage": "4",
+      "keywords": [
+        "Sustained Hits 1",
+        "Anti-FORTIFICATION 2+",
+        "Anti-VEHICLE 4+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Terminator"
+    },
+    {
       "name": "Scything Talons",
       "section": "Melee Weapons",
       "points": 5,
@@ -2401,7 +2305,7 @@
           "range": "-",
           "attacks": "A-2",
           "strength": "S+2",
-          "ap": -2,
+          "ap": "-2",
           "damage": "3",
           "keywords": [
             "Heavy",
@@ -2422,17 +2326,32 @@
       "availability": "Tacticus, Raptor"
     },
     {
+      "name": "Scything Wings",
+      "section": "Melee Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Ruinblade",
       "section": "Melee Weapons",
       "points": 25,
       "profiles": [
         {
-          "profileName": "Melee - Sweep",
+          "profileName": "Sweep",
           "points": 25,
           "range": "",
           "attacks": "A+1",
           "strength": "S +2",
-          "ap": -2,
+          "ap": "-2",
           "damage": "2",
           "keywords": [
             "Heavy",
@@ -2442,12 +2361,12 @@
           "availability": "Tacticus, Raptor, Havoc, Terminator"
         },
         {
-          "profileName": "Melee - Strike",
+          "profileName": "Strike",
           "points": null,
           "range": "-",
           "attacks": "1",
           "strength": "S +5",
-          "ap": -4,
+          "ap": "-4",
           "damage": "S +D6",
           "keywords": [
             "Devastating Wounds"
@@ -2468,6 +2387,54 @@
       "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
     {
+      "name": "Force Weapon",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +3",
+      "ap": "-3",
+      "damage": "3",
+      "keywords": [
+        "Precision",
+        "Anti-PSYKER 3+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Servo Scourges",
+      "section": "Melee Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Harpoon"
+      ],
+      "availability": "Tacticus, Havoc, Terminator, Bike"
+    },
+    {
+      "name": "Warpforge Axe",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S +2",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Anti-VEHICLE 3+"
+      ],
+      "availability": "Tacticus, Havoc, Terminator, Bike"
+    },
+    {
       "name": "Dreadnought Chainblade",
       "section": "Melee Weapons",
       "points": 20,
@@ -2478,7 +2445,7 @@
           "range": "-",
           "attacks": "A x2",
           "strength": "S",
-          "ap": -1,
+          "ap": "-1",
           "damage": "2",
           "keywords": [],
           "availability": ""
@@ -2489,7 +2456,7 @@
           "range": "",
           "attacks": "A -2",
           "strength": "S +3",
-          "ap": -2,
+          "ap": "-2",
           "damage": "D3+3",
           "keywords": [
             "Devastating Wounds"
@@ -2516,7 +2483,7 @@
           "range": "-",
           "attacks": "A x2",
           "strength": "S +1",
-          "ap": -1,
+          "ap": "-1",
           "damage": "2",
           "keywords": [],
           "availability": ""
@@ -2527,7 +2494,7 @@
           "range": "",
           "attacks": "1",
           "strength": "S +5",
-          "ap": -3,
+          "ap": "-3",
           "damage": "D3+3",
           "keywords": [
             "Devastating Wounds"
@@ -2544,6 +2511,54 @@
       "availability": ""
     },
     {
+      "name": "Dreadnought Crusher Drill",
+      "section": "Melee Weapons",
+      "points": 25,
+      "profiles": null,
+      "range": "-",
+      "attacks": "1",
+      "strength": "S +7",
+      "ap": "-5",
+      "damage": "D6+3",
+      "keywords": [
+        "Sustained Hits 3",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Magma Cutter - Melee",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "D3",
+      "strength": "9",
+      "ap": "-4",
+      "damage": "D6",
+      "keywords": [
+        "Extra Attacks",
+        "Melta 2"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Toxinjector",
+      "section": "Melee Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "-",
+      "attacks": "D3+1",
+      "strength": "3",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks",
+        "Poison D3"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Infernal Gaze",
       "section": "Psychic Attacks",
       "points": null,
@@ -2553,8 +2568,8 @@
           "points": null,
           "range": "18\"",
           "attacks": "1",
-          "strength": 12,
-          "ap": -4,
+          "strength": "12",
+          "ap": "-4",
           "damage": "5",
           "keywords": [
             "Beam D3",
@@ -2569,8 +2584,8 @@
           "points": null,
           "range": "8\"",
           "attacks": "D6+4",
-          "strength": 3,
-          "ap": -1,
+          "strength": "3",
+          "ap": "-1",
           "damage": "1",
           "keywords": [
             "Pistol",
@@ -2594,6 +2609,86 @@
         "Devastating Wounds"
       ],
       "availability": ""
+    },
+    {
+      "name": "Frag Grenades",
+      "section": "Grenades",
+      "points": 3,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Krak Grenades",
+      "section": "Grenades",
+      "points": 5,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "8",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Melta Bombs",
+      "section": "Grenades",
+      "points": 10,
+      "profiles": null,
+      "range": "S\"",
+      "attacks": "1",
+      "strength": "11",
+      "ap": "-4",
+      "damage": "D6+3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Smoke Grenades",
+      "section": "Grenades",
+      "points": 4,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
+      "name": "Carrion Bombs",
+      "section": "Grenades",
+      "points": 5,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D6",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Blast 2\"",
+        "Anti-INFANTRY 5+",
+        "Anti-BEAST 4+",
+        "Anti-MONSTER 5+",
+        "Poison 1"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
     }
   ]
 }

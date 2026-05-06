@@ -3,430 +3,321 @@
   "slug": "agents-of-the-imperium",
   "units": [
     {
-      "name": "Name",
-      "category": "Unknown",
-      "stats": {
-        "M": "Movement",
-        "WS": "Weapon Skill",
-        "BS": "Ballistic Skill",
-        "I": "Initiative",
-        "A": "Attacks",
-        "S": "Strength",
-        "T": "Toughness",
-        "W": "Wounds",
-        "SV": "Save",
-        "LD": "Leadership",
-        "basePoints": "Base Points per Model",
-        "squadSizes": "Squad Sizes"
-      },
-      "keywords": [
-        "Keywords"
-      ],
-      "models": null
-    },
-    {
       "name": "Inquisitor",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "5",
         "WS": 5,
-        "BS": 5,
-        "I": 4,
-        "A": 6,
+        "BS": 4,
+        "I": 6,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 6,
-        "SV": "5+",
-        "LD": "2+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "T": 6,
+        "W": "5+",
+        "SV": "2+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Inquisition, Infantry, Character, Leader"
       },
-      "keywords": [
-        "Imperium",
-        "Inquisition",
-        "Infantry",
-        "Character",
-        "Leader"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Navigator",
       "category": "Character",
       "stats": {
-        "M": "6\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 2,
-        "A": 6,
+        "M": "2",
+        "WS": 3,
+        "BS": 2,
+        "I": 6,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 3,
-        "SV": "5+",
-        "LD": "6+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "T": 3,
+        "W": "5+",
+        "SV": "6+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Navis Imperialis, Infantry, Character, Leader"
       },
-      "keywords": [
-        "Imperium",
-        "Navis Imperialis",
-        "Infantry",
-        "Character",
-        "Leader"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Adjudicator",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "5",
         "WS": 5,
         "BS": 5,
-        "I": 5,
-        "A": 6,
+        "I": 6,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 4,
-        "SV": "4+",
-        "LD": "6+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "T": 4,
+        "W": "4+",
+        "SV": "6+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Adeptus Arbites, Infantry, Character, Leader"
       },
-      "keywords": [
-        "Imperium",
-        "Adeptus Arbites",
-        "Infantry",
-        "Character",
-        "Leader"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Watchmaster",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "7",
         "WS": 7,
-        "BS": 7,
+        "BS": 6,
         "I": 6,
-        "A": 6,
+        "A": 4,
         "S": 4,
-        "T": 4,
-        "W": 6,
-        "SV": "3+",
-        "LD": "4+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "T": 6,
+        "W": "3+",
+        "SV": "4+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Deathwatch, Infantry, Character, Leader"
       },
-      "keywords": [
-        "Imperium",
-        "Deathwatch",
-        "Infantry",
-        "Character",
-        "Leader"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Grandmaster",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "7",
         "WS": 7,
-        "BS": 7,
+        "BS": 6,
         "I": 6,
-        "A": 6,
+        "A": 4,
         "S": 4,
-        "T": 4,
-        "W": 6,
-        "SV": "3+",
-        "LD": "4+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "T": 6,
+        "W": "3+",
+        "SV": "4+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Grey Knights, Infantry, Character, Leader, Psyker, Deep Strike"
       },
-      "keywords": [
-        "Imperium",
-        "Grey Knights",
-        "Infantry",
-        "Character",
-        "Leader",
-        "Psyker",
-        "Deep Strike"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Shield Captain",
       "category": "Character",
       "stats": {
-        "M": "7\"",
+        "M": "8",
         "WS": 8,
-        "BS": 8,
-        "I": 7,
+        "BS": 7,
+        "I": 6,
         "A": 6,
         "S": 6,
-        "T": 6,
-        "W": 8,
+        "T": 8,
+        "W": "2+",
         "SV": "2+",
-        "LD": "2+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Adeptus Custodes, Infantry, Character, Leader, Invulnerable Save 5+"
       },
-      "keywords": [
-        "Imperium",
-        "Adeptus Custodes",
-        "Infantry",
-        "Character",
-        "Leader",
-        "Invulnerable Save 5+"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Blade Champion",
       "category": "Character",
       "stats": {
-        "M": "7\"",
-        "WS": 8,
+        "M": "8",
+        "WS": 7,
         "BS": 7,
         "I": 7,
-        "A": 7,
+        "A": 6,
         "S": 6,
-        "T": 6,
-        "W": 8,
+        "T": 8,
+        "W": "2+",
         "SV": "2+",
-        "LD": "2+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Adeptus Custodes, Infantry, Character, Relentless, Unyielding, Invulnerable Save 5+"
       },
-      "keywords": [
-        "Imperium",
-        "Adeptus Custodes",
-        "Infantry",
-        "Character",
-        "Relentless",
-        "Unyielding",
-        "Invulnerable Save 5+"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Centura",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "6",
         "WS": 6,
         "BS": 6,
-        "I": 6,
-        "A": 5,
+        "I": 5,
+        "A": 3,
         "S": 3,
-        "T": 3,
-        "W": 5,
-        "SV": "3+",
-        "LD": "4+",
+        "T": 5,
+        "W": "3+",
+        "SV": "4+",
+        "LD": "",
         "basePoints": null,
-        "squadSizes": ""
+        "squadSizes": "Imperium, Sisters of Silence, Infantry, Character, Leader, Invulnerable Save 6+"
       },
-      "keywords": [
-        "Imperium",
-        "Sisters of Silence",
-        "Infantry",
-        "Character",
-        "Leader",
-        "Invulnerable Save 6+"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Seneschal",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "6",
         "WS": 6,
-        "BS": 6,
-        "I": 4,
+        "BS": 4,
+        "I": 3,
         "A": 3,
         "S": 3,
-        "T": 3,
-        "W": 5,
+        "T": 5,
+        "W": "4+",
         "SV": "4+",
-        "LD": "4+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Questor Imperialis, Character, Infantry"
       },
-      "keywords": [
-        "Imperium",
-        "Questor Imperialis",
-        "Character",
-        "Infantry"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Freeblade",
       "category": "Character",
       "stats": {
-        "M": "6\"",
+        "M": "5",
         "WS": 5,
-        "BS": 5,
-        "I": 4,
+        "BS": 4,
+        "I": 3,
         "A": 3,
         "S": 3,
-        "T": 3,
-        "W": 5,
+        "T": 5,
+        "W": "4+",
         "SV": "4+",
-        "LD": "4+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Questor Imperialis, Character, Infantry"
       },
-      "keywords": [
-        "Imperium",
-        "Questor Imperialis",
-        "Character",
-        "Infantry"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Assassin",
       "category": "Character",
       "stats": {
-        "M": "7\"",
+        "M": "5",
         "WS": 5,
-        "BS": 5,
+        "BS": 4,
         "I": 4,
-        "A": 4,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 4,
-        "SV": "5+",
-        "LD": "2+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "T": 4,
+        "W": "5+",
+        "SV": "2+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Infantry, Character, Invulnerable Save 4+, Stealth, Infiltrator, Deep Strike, Scout 7\""
       },
-      "keywords": [
-        "Imperium",
-        "Infantry",
-        "Character",
-        "Invulnerable Save 4+",
-        "Stealth",
-        "Infiltrator",
-        "Deep Strike",
-        "Scout 7\""
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Penal Legion Squad",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
+        "M": "3",
         "WS": 3,
-        "BS": 3,
-        "I": 2,
-        "A": 1,
+        "BS": 2,
+        "I": 1,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "6+",
-        "LD": "10+",
-        "basePoints": 2,
-        "squadSizes": "10 to 30"
+        "T": 1,
+        "W": "6+",
+        "SV": "10+",
+        "LD": "2",
+        "basePoints": "10 to 30",
+        "squadSizes": "Imperium, Infantry"
       },
-      "keywords": [
-        "Imperium",
-        "Infantry"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Inquisitor's Henchmen",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
+        "M": "3",
         "WS": 3,
-        "BS": 3,
-        "I": 2,
-        "A": 1,
+        "BS": 2,
+        "I": 1,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "6+",
-        "LD": "7+",
+        "T": 1,
+        "W": "6+",
+        "SV": "7+",
+        "LD": "",
         "basePoints": null,
-        "squadSizes": ""
+        "squadSizes": "Imperium, Inquisition, Infantry, Bodyguard"
       },
-      "keywords": [
-        "Imperium",
-        "Inquisition",
-        "Infantry",
-        "Bodyguard"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Inquisitorial Veteran Guardsmen",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 3,
+        "M": "3",
+        "WS": 4,
+        "BS": 3,
+        "I": 2,
         "A": 2,
         "S": 2,
         "T": 2,
-        "W": 2,
-        "SV": "5+",
-        "LD": "7+",
-        "basePoints": 6,
-        "squadSizes": "5 to 10"
+        "W": "5+",
+        "SV": "7+",
+        "LD": "6",
+        "basePoints": "5 to 10",
+        "squadSizes": "Imperium, Inquisition, Infantry"
       },
-      "keywords": [
-        "Imperium",
-        "Inquisition",
-        "Infantry"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Adeptus Arbites Squad",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
+        "M": "3",
         "WS": 3,
         "BS": 3,
-        "I": 3,
-        "A": 1,
+        "I": 1,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "5+",
-        "LD": "8+",
-        "basePoints": 5,
-        "squadSizes": "5 to 10"
+        "T": 1,
+        "W": "5+",
+        "SV": "8+",
+        "LD": "5",
+        "basePoints": "5 to 10",
+        "squadSizes": "Imperium,"
       },
-      "keywords": [
-        "Imperium"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Voidsmen-at-Arms Squad",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
+        "M": "3",
         "WS": 3,
-        "BS": 3,
-        "I": 2,
-        "A": 1,
+        "BS": 2,
+        "I": 1,
+        "A": 2,
         "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "5+",
-        "LD": "8+",
-        "basePoints": 3,
-        "squadSizes": "10 to 20"
+        "T": 1,
+        "W": "5+",
+        "SV": "8+",
+        "LD": "3",
+        "basePoints": "10 to 20",
+        "squadSizes": ""
       },
       "keywords": [],
       "models": null
@@ -435,1626 +326,342 @@
       "name": "Deathwatch Kill Team",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
+        "M": "5",
         "WS": 5,
-        "BS": 5,
-        "I": 4,
-        "A": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 4,
         "S": 4,
-        "T": 4,
-        "W": 3,
-        "SV": "3+",
-        "LD": "5+",
-        "basePoints": 20,
-        "squadSizes": "3 to 5"
+        "T": 3,
+        "W": "3+",
+        "SV": "5+",
+        "LD": "20",
+        "basePoints": "3 to 5",
+        "squadSizes": "Imperium,"
       },
-      "keywords": [
-        "Imperium"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Grey Knights Strike Team",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
+        "M": "5",
         "WS": 5,
-        "BS": 5,
-        "I": 4,
-        "A": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 4,
         "S": 4,
-        "T": 4,
-        "W": 3,
-        "SV": "3+",
-        "LD": "5+",
-        "basePoints": 25,
-        "squadSizes": "3 to 5"
+        "T": 3,
+        "W": "3+",
+        "SV": "5+",
+        "LD": "25",
+        "basePoints": "3 to 5",
+        "squadSizes": "Imperium, Grey Knights, Infantry, Psyker, Deep Strike"
       },
-      "keywords": [
-        "Imperium",
-        "Grey Knights",
-        "Infantry",
-        "Psyker",
-        "Deep Strike"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Custodians",
       "category": "Infantry",
       "stats": {
-        "M": "7\"",
+        "M": "7",
         "WS": 7,
-        "BS": 7,
+        "BS": 5,
         "I": 5,
-        "A": 5,
+        "A": 6,
         "S": 6,
         "T": 6,
-        "W": 6,
-        "SV": "2+",
-        "LD": "3+",
-        "basePoints": 70,
-        "squadSizes": "1 to 4"
+        "W": "2+",
+        "SV": "3+",
+        "LD": "70",
+        "basePoints": "1 to 4",
+        "squadSizes": "Imperium, Adeptus Custodes, Infantry, Invulnerable Save 5+"
       },
-      "keywords": [
-        "Imperium",
-        "Adeptus Custodes",
-        "Infantry",
-        "Invulnerable Save 5+"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Sisters of Silence",
       "category": "Infantry",
       "stats": {
-        "M": "6\"",
-        "WS": 5,
-        "BS": 4,
-        "I": 5,
+        "M": "5",
+        "WS": 4,
+        "BS": 5,
+        "I": 3,
         "A": 3,
         "S": 3,
         "T": 3,
-        "W": 3,
-        "SV": "3+",
-        "LD": "5+",
-        "basePoints": 15,
-        "squadSizes": "3 to 10"
+        "W": "3+",
+        "SV": "5+",
+        "LD": "15",
+        "basePoints": "3 to 10",
+        "squadSizes": "Imperium, Sisters of Silence, Infantry, Scouts 6\", Invulnerable Save 6+"
       },
-      "keywords": [
-        "Imperium",
-        "Sisters of Silence",
-        "Infantry",
-        "Scouts 6\"",
-        "Invulnerable Save 6+"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Contemptor Deadnought",
       "category": "Walkers",
       "stats": {
-        "M": "8\"",
+        "M": "6",
         "WS": 6,
-        "BS": 6,
-        "I": 4,
-        "A": 3,
-        "S": 7,
-        "T": 9,
-        "W": 10,
+        "BS": 4,
+        "I": 3,
+        "A": 7,
+        "S": 9,
+        "T": 10,
+        "W": "3+",
         "SV": "3+",
-        "LD": "3+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Adeptus Custodes, Vehicle, Walker, Invulnerable Save 5+"
       },
-      "keywords": [
-        "Imperium",
-        "Adeptus Custodes",
-        "Vehicle",
-        "Walker",
-        "Invulnerable Save 5+"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Nemesis Dreadknight",
       "category": "Walkers",
       "stats": {
-        "M": "8\"",
+        "M": "5",
         "WS": 5,
         "BS": 5,
-        "I": 5,
-        "A": 4,
-        "S": 7,
-        "T": 9,
-        "W": 13,
-        "SV": "2+",
-        "LD": "3+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "I": 4,
+        "A": 7,
+        "S": 9,
+        "T": 13,
+        "W": "2+",
+        "SV": "3+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Grey Knights, Vehicle, Walker, Deep Strike"
       },
-      "keywords": [
-        "Imperium",
-        "Grey Knights",
-        "Vehicle",
-        "Walker",
-        "Deep Strike"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Armigers",
       "category": "Walkers",
       "stats": {
-        "M": "12\"",
+        "M": "4",
         "WS": 4,
         "BS": 4,
         "I": 4,
-        "A": 4,
-        "S": 7,
-        "T": 9,
-        "W": 10,
-        "SV": "3+",
-        "LD": "6+",
-        "basePoints": 120,
-        "squadSizes": "1 to 2"
+        "A": 7,
+        "S": 9,
+        "T": 10,
+        "W": "3+",
+        "SV": "6+",
+        "LD": "120",
+        "basePoints": "1 to 2",
+        "squadSizes": "Imperium, Questor Imperialis, Vehicle, Walker"
       },
-      "keywords": [
-        "Imperium",
-        "Questor Imperialis",
-        "Vehicle",
-        "Walker"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Knight Cerastus",
       "category": "Walkers",
       "stats": {
-        "M": "14\"",
+        "M": "4",
         "WS": 4,
         "BS": 4,
         "I": 4,
-        "A": 4,
-        "S": 9,
-        "T": 10,
-        "W": 14,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 200,
-        "squadSizes": "1"
+        "A": 9,
+        "S": 10,
+        "T": 14,
+        "W": "2+",
+        "SV": "5+",
+        "LD": "200",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Questor Imperialis, Vehicle, Walker, Titanic"
       },
-      "keywords": [
-        "Imperium",
-        "Questor Imperialis",
-        "Vehicle",
-        "Walker",
-        "Titanic"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Knight Questoris",
       "category": "Walkers",
       "stats": {
-        "M": "12\"",
+        "M": "4",
         "WS": 4,
-        "BS": 4,
-        "I": 3,
-        "A": 4,
-        "S": 9,
-        "T": 11,
-        "W": 18,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 200,
-        "squadSizes": "1"
+        "BS": 3,
+        "I": 4,
+        "A": 9,
+        "S": 11,
+        "T": 18,
+        "W": "2+",
+        "SV": "5+",
+        "LD": "200",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Questor Imperialis, Vehicle, Walker, Titanic"
       },
-      "keywords": [
-        "Imperium",
-        "Questor Imperialis",
-        "Vehicle",
-        "Walker",
-        "Titanic"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Knight Castellan",
       "category": "Walkers",
       "stats": {
-        "M": "10\"",
+        "M": "4",
         "WS": 4,
-        "BS": 4,
+        "BS": 2,
         "I": 2,
-        "A": 2,
+        "A": 12,
         "S": 12,
-        "T": 12,
-        "W": 20,
-        "SV": "2+",
-        "LD": "4+",
-        "basePoints": 300,
-        "squadSizes": "1"
+        "T": 20,
+        "W": "2+",
+        "SV": "4+",
+        "LD": "300",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Questor Imperialis, Vehicle, Walker, Titanic"
       },
-      "keywords": [
-        "Imperium",
-        "Questor Imperialis",
-        "Vehicle",
-        "Walker",
-        "Titanic"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Rhino",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "12\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 1,
-        "A": 4,
-        "S": 6,
+        "M": "3",
+        "WS": 4,
+        "BS": 1,
+        "I": 4,
+        "A": 6,
+        "S": 10,
         "T": 10,
-        "W": 10,
-        "SV": "3+",
-        "LD": "5+",
-        "basePoints": null,
-        "squadSizes": "1"
+        "W": "3+",
+        "SV": "5+",
+        "LD": "",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Vehicle, Transport 10, Firing Deck 4"
       },
-      "keywords": [
-        "Imperium",
-        "Vehicle",
-        "Transport 10",
-        "Firing Deck 4"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Razorback",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "12\"",
-        "WS": 3,
-        "BS": 5,
-        "I": 1,
-        "A": 3,
-        "S": 6,
+        "M": "3",
+        "WS": 5,
+        "BS": 1,
+        "I": 3,
+        "A": 6,
+        "S": 10,
         "T": 10,
-        "W": 10,
-        "SV": "3+",
-        "LD": "5+",
-        "basePoints": 70,
-        "squadSizes": "1"
+        "W": "3+",
+        "SV": "5+",
+        "LD": "70",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Vehicle, Transport 4"
       },
-      "keywords": [
-        "Imperium",
-        "Vehicle",
-        "Transport 4"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Chimera",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "10\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 1,
-        "A": 3,
-        "S": 6,
-        "T": 10,
-        "W": 11,
-        "SV": "3+",
-        "LD": "7+",
-        "basePoints": 85,
-        "squadSizes": "1"
+        "M": "2",
+        "WS": 3,
+        "BS": 1,
+        "I": 3,
+        "A": 6,
+        "S": 10,
+        "T": 11,
+        "W": "3+",
+        "SV": "7+",
+        "LD": "85",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Vehicle, Transport 12, Firing Deck 2"
       },
-      "keywords": [
-        "Imperium",
-        "Vehicle",
-        "Transport 12",
-        "Firing Deck 2"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Taurox",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "12\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 1,
-        "A": 3,
-        "S": 5,
-        "T": 8,
-        "W": 10,
-        "SV": "3+",
-        "LD": "7+",
-        "basePoints": 85,
-        "squadSizes": "1"
+        "M": "2",
+        "WS": 3,
+        "BS": 1,
+        "I": 3,
+        "A": 5,
+        "S": 8,
+        "T": 10,
+        "W": "3+",
+        "SV": "7+",
+        "LD": "85",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Vehicle, Transport 12"
       },
-      "keywords": [
-        "Imperium",
-        "Vehicle",
-        "Transport 12"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Valkyrie",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "12\" - 30\"",
-        "WS": 2,
-        "BS": 3,
-        "I": 1,
-        "A": 3,
-        "S": 5,
-        "T": 9,
-        "W": 14,
-        "SV": "3+",
-        "LD": "6+",
-        "basePoints": 150,
-        "squadSizes": "1"
+        "M": "2",
+        "WS": 3,
+        "BS": 1,
+        "I": 3,
+        "A": 5,
+        "S": 9,
+        "T": 14,
+        "W": "3+",
+        "SV": "6+",
+        "LD": "150",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Aircraft, Hover, Transport 12, Firing Deck 4"
       },
-      "keywords": [
-        "Imperium",
-        "Aircraft",
-        "Hover",
-        "Transport 12",
-        "Firing Deck 4"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Corvus Blackstar",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "12\" - 30\"",
-        "WS": 2,
-        "BS": 5,
-        "I": 1,
-        "A": 3,
-        "S": 7,
-        "T": 11,
-        "W": 14,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 180,
-        "squadSizes": "1"
+        "M": "2",
+        "WS": 5,
+        "BS": 1,
+        "I": 3,
+        "A": 7,
+        "S": 11,
+        "T": 14,
+        "W": "2+",
+        "SV": "5+",
+        "LD": "180",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Deatchwatch, Aircraft, Hover, Transport 12, Firing Deck 4"
       },
-      "keywords": [
-        "Imperium",
-        "Deatchwatch",
-        "Aircraft",
-        "Hover",
-        "Transport 12",
-        "Firing Deck 4"
-      ],
+      "keywords": [],
       "models": null
     },
     {
       "name": "Land Raider",
       "category": "Vehicles",
       "stats": {
-        "M": "12\"",
-        "WS": 3,
-        "BS": 5,
-        "I": 1,
-        "A": 6,
-        "S": 9,
-        "T": 12,
-        "W": 18,
-        "SV": "2+",
-        "LD": "3+",
-        "basePoints": 250,
-        "squadSizes": "1"
+        "M": "3",
+        "WS": 5,
+        "BS": 1,
+        "I": 6,
+        "A": 9,
+        "S": 12,
+        "T": 18,
+        "W": "2+",
+        "SV": "3+",
+        "LD": "250",
+        "basePoints": 1,
+        "squadSizes": "Imperium, Vehicle, Transport 12"
       },
-      "keywords": [
-        "Imperium",
-        "Vehicle",
-        "Transport 12"
-      ],
+      "keywords": [],
       "models": null
     }
   ],
-  "weapons": [
-    {
-      "name": "Bolter",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "1",
-      "strength": 4,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Rapid Fire 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Storm Bolter",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Rapid Fire 2",
-        "Sustained Hits 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Bolter",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "36\"",
-      "attacks": "3",
-      "strength": 5,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Heavy",
-        "Sustained Hits 1"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Hurricane Bolter Array",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "6",
-      "strength": 4,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Rapid Fire 6",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Assault Cannon",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "8",
-      "strength": 3,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 3",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Flamer",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "9\"",
-      "attacks": "D6+2",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Autogun",
-      "section": "Weapons",
-      "points": 6,
-      "profiles": null,
-      "range": "30\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": 0,
-      "damage": "2",
-      "keywords": [
-        "Heavy",
-        "Rapid Fire 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Phosphor Blaster",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "3",
-      "strength": 5,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Sustained Hits 1",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Flamer",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "9\"",
-      "attacks": "D6+4",
-      "strength": 4,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Multilaser",
-      "section": "Weapons",
-      "points": 12,
-      "profiles": null,
-      "range": "36\"",
-      "attacks": "6",
-      "strength": 4,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Lascannon",
-      "section": "Weapons",
-      "points": 25,
-      "profiles": null,
-      "range": "36\"",
-      "attacks": "1",
-      "strength": 12,
-      "ap": -3,
-      "damage": "D6+2",
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Melta Gun",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "12\"",
-      "attacks": "1",
-      "strength": 9,
-      "ap": -4,
-      "damage": "D6",
-      "keywords": [
-        "Melta 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Multi-melta",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "2",
-      "strength": 9,
-      "ap": -4,
-      "damage": "D6",
-      "keywords": [
-        "Heavy",
-        "Melta 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Autocannon",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "48\"",
-      "attacks": "2",
-      "strength": 7,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Heavy Incinerator",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "12\"",
-      "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Anti-DAEMON 4+",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Psilencer",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "2",
-      "strength": 4,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Rapid Fire 2",
-        "Anti-DAEMON 4+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Gatling Psilencer",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "16",
-      "strength": 6,
-      "ap": -1,
-      "damage": "1",
-      "keywords": [
-        "Sustained Hits 3",
-        "Anti-DAEMON 4+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Psyblaster",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "36\"",
-      "attacks": "3",
-      "strength": 5,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Sustained Hits 1",
-        "Anti-DAEMON 4+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Psycannon",
-      "section": "Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "60\"",
-      "attacks": "D6+3",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Blast 2\"",
-        "Sustained Hits 2",
-        "Anti-DAEMON 4+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Exterminator Autocannon",
-      "section": "Weapons",
-      "points": 65,
-      "profiles": null,
-      "range": "48\"",
-      "attacks": "4",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Rapid Fire 2",
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Inferno Cannon",
-      "section": "Weapons",
-      "points": 30,
-      "profiles": null,
-      "range": "12\"",
-      "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Conflagration Cannon",
-      "section": "Weapons",
-      "points": 30,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "2D6+6",
-      "strength": 7,
-      "ap": -2,
-      "damage": "2",
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Vulcan Mega Bolter",
-      "section": "Weapons",
-      "points": 80,
-      "profiles": null,
-      "range": "36\"",
-      "attacks": "20",
-      "strength": 6,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Avenger Gatling Cannon",
-      "section": "Weapons",
-      "points": 80,
-      "profiles": null,
-      "range": "30\"",
-      "attacks": "20",
-      "strength": 6,
-      "ap": -1,
-      "damage": "2",
-      "keywords": [
-        "Sustained Hits 3",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Magma Cannon",
-      "section": "Weapons",
-      "points": 110,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "D6+1",
-      "strength": 10,
-      "ap": -4,
-      "damage": "D6",
-      "keywords": [
-        "Assault",
-        "Melta 6"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Volcano Cannon",
-      "section": "Weapons",
-      "points": 200,
-      "profiles": null,
-      "range": "96\"",
-      "attacks": "1",
-      "strength": 30,
-      "ap": -5,
-      "damage": "2D6+12",
-      "keywords": [
-        "Ordnance",
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 5+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Storm Eagle Rocket",
-      "section": "Weapons",
-      "points": 150,
-      "profiles": null,
-      "range": "24\"-240\"",
-      "attacks": "3D6",
-      "strength": 15,
-      "ap": -3,
-      "damage": "8",
-      "keywords": [
-        "One Shot",
-        "Ordnance",
-        "Indirect Fire",
-        "Blast 12\"",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Misericordia",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A +1",
-      "strength": "S",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Precision"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Interceptor Lance",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S +3",
-      "ap": -3,
-      "damage": "4",
-      "keywords": [
-        "Precision",
-        "Lance",
-        "Anti-CHARACTER 3+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Executioner Greatblade",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A +3",
-      "strength": "S +1",
-      "ap": -3,
-      "damage": "2",
-      "keywords": [
-        "Precision",
-        "Anti-PSYKER 3+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Reaper Chainblade",
-      "section": "Melee Weapons",
-      "points": 40,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A+4",
-      "strength": "S",
-      "ap": -2,
-      "damage": "3",
-      "keywords": [
-        "Sustained Hits 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Temptest Warblade",
-      "section": "Melee Weapons",
-      "points": 45,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A",
-      "strength": "S+2",
-      "ap": -4,
-      "damage": "3",
-      "keywords": [
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Thunderstrike Gauntlet",
-      "section": "Melee Weapons",
-      "points": 55,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A-2",
-      "strength": "Sx2",
-      "ap": -3,
-      "damage": "D6+3",
-      "keywords": [
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 4+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Cannon",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 20,
-          "range": "30\"",
-          "attacks": "D3+1",
-          "strength": 6,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "30\"",
-          "attacks": "D3",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Heavy",
-            "Blast 1\"",
-            "Hazardous D3+1"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Guardian Spear with Bolter",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": null,
-          "range": "24\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -1,
-          "damage": "2",
-          "keywords": [
-            "Pistol",
-            "Rapid Fire 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol",
-        "Rapid Fire 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Guardian Spear with Meltagun",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": null,
-          "range": "12\"",
-          "attacks": "1",
-          "strength": 9,
-          "ap": -4,
-          "damage": "D6",
-          "keywords": [
-            "Assault",
-            "Melta 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Melta 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Castellan Axe with Bolter",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": null,
-          "range": "24\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -1,
-          "damage": "2",
-          "keywords": [
-            "Pistol",
-            "Rapid Fire 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol",
-        "Rapid Fire 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Sentinel Blade",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "shooting",
-          "points": null,
-          "range": "24\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -1,
-          "damage": "2",
-          "keywords": [
-            "Pistol",
-            "Rapid Fire 2"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": null,
-          "range": "-",
-          "attacks": "A +2",
-          "strength": "S +1",
-          "ap": -3,
-          "damage": "2",
-          "keywords": [
-            "Lethal Hits"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol",
-        "Rapid Fire 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Macro Plasma Cannon",
-      "section": "Weapons",
-      "points": 70,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 70,
-          "range": "36\"",
-          "attacks": "D6+3",
-          "strength": 8,
-          "ap": -3,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 3\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "36\"",
-          "attacks": "D3+1",
-          "strength": 11,
-          "ap": -4,
-          "damage": "4",
-          "keywords": [
-            "Ordnance",
-            "Blast 1\"",
-            "Hazardous D3+2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Plasma Decimator Cannon",
-      "section": "Weapons",
-      "points": 100,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 100,
-          "range": "36\"",
-          "attacks": "D6+3",
-          "strength": 9,
-          "ap": -3,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 3\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "36\"",
-          "attacks": "D3+1",
-          "strength": 15,
-          "ap": -3,
-          "damage": "6",
-          "keywords": [
-            "Heavy",
-            "Blast 3\"",
-            "Hazardous 3"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Light Cannon",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "AP",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -2,
-          "damage": "D6",
-          "keywords": [],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [],
-      "availability": ""
-    },
-    {
-      "name": "Oppressor Cannon",
-      "section": "Weapons",
-      "points": 80,
-      "profiles": [
-        {
-          "profileName": "HE",
-          "points": 80,
-          "range": "60\"",
-          "attacks": "D6+3",
-          "strength": 6,
-          "ap": -1,
-          "damage": "2",
-          "keywords": [
-            "Blast 3\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "AP",
-          "points": null,
-          "range": "60\"",
-          "attacks": "1",
-          "strength": 12,
-          "ap": -2,
-          "damage": "D6+3",
-          "keywords": [],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Blast 3\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Eradication Obliterator",
-      "section": "Weapons",
-      "points": 140,
-      "profiles": [
-        {
-          "profileName": "Dispersion",
-          "points": 140,
-          "range": "12\"",
-          "attacks": "2D6+6",
-          "strength": 5,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Assault",
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Focused",
-          "points": null,
-          "range": "60\"",
-          "attacks": "1",
-          "strength": 14,
-          "ap": -5,
-          "damage": "D6+3",
-          "keywords": [
-            "Ordnance",
-            "Beam 1",
-            "Melta 6"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Cyclone Missile Launcher",
-      "section": "Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": null,
-          "range": "48\"",
-          "attacks": "D6+3",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "48\"",
-          "attacks": "2",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Bastion",
-      "section": "Weapons",
-      "points": 40,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 40,
-          "range": "48\"",
-          "attacks": "D6+3",
-          "strength": 4,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "48\"",
-          "attacks": "D3",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Thundercoil Harpoon",
-      "section": "Weapons",
-      "points": 65,
-      "profiles": [
-        {
-          "profileName": "Ranged",
-          "points": 65,
-          "range": "12\"",
-          "attacks": "1",
-          "strength": 13,
-          "ap": -3,
-          "damage": "8",
-          "keywords": [
-            "Anti-VEHICLE 4+",
-            "Anti-MONSTER 4+",
-            "Devastating Wounds",
-            "Harpoon"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee",
-          "points": 65,
-          "range": "-",
-          "attacks": "1",
-          "strength": 13,
-          "ap": -3,
-          "damage": "8",
-          "keywords": [
-            "Anti-VEHICLE 4+",
-            "Anti-MONSTER 4+",
-            "Devastating Wounds",
-            "Harpoon"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 4+",
-        "Devastating Wounds",
-        "Harpoon"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Guardian Spear",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Melee - Sweep",
-          "points": null,
-          "range": "-",
-          "attacks": "A +3",
-          "strength": "S",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [
-            "Lance",
-            "Sustained Hits 1",
-            "Lethal Hits"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee - Strike",
-          "points": null,
-          "range": "-",
-          "attacks": "A -2",
-          "strength": "S +3",
-          "ap": -3,
-          "damage": "4",
-          "keywords": [
-            "Heavy",
-            "Lance",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
-        "Sustained Hits 1",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Castellan Axe",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Melee - Sweep",
-          "points": null,
-          "range": "-",
-          "attacks": "A + 3",
-          "strength": "S +2",
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Lance",
-            "Sustained Hits 1",
-            "Lethal Hits"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee - Strike",
-          "points": null,
-          "range": "-",
-          "attacks": "A -3",
-          "strength": "S +5",
-          "ap": -3,
-          "damage": "6",
-          "keywords": [
-            "Heavy",
-            "Lance",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
-        "Sustained Hits 1",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Shock Lance",
-      "section": "Melee Weapons",
-      "points": 65,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 65,
-          "range": "-",
-          "attacks": "1",
-          "strength": 24,
-          "ap": -4,
-          "damage": "2D6+4",
-          "keywords": [
-            "Lance",
-            "Anti-VEHICLE 4+",
-            "Anti-MONSTER 4+",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
-        "Anti-VEHICLE 4+",
-        "Anti-MONSTER 4+",
-        "Devastating Wounds"
-      ],
-      "availability": ""
-    }
-  ]
+  "weapons": []
 }

@@ -3,28 +3,6 @@
   "slug": "adeptus-astartes",
   "units": [
     {
-      "name": "Name",
-      "category": "Unknown",
-      "stats": {
-        "M": "Movement",
-        "WS": "Weapon Skill",
-        "BS": "Ballistic Skill",
-        "I": "Initiative",
-        "A": "Attacks",
-        "S": "Strength",
-        "T": "Toughness",
-        "W": "Wounds",
-        "SV": "Save",
-        "LD": "Leadership",
-        "basePoints": "Base Points per Model",
-        "squadSizes": "Squad Sizes"
-      },
-      "keywords": [
-        "Keywords"
-      ],
-      "models": null
-    },
-    {
       "name": "Captain",
       "category": "Character",
       "stats": {
@@ -579,7 +557,7 @@
       "models": null
     },
     {
-      "name": "Invader ATV",
+      "name": "Invader ATVs",
       "category": "Vehicles",
       "stats": {
         "M": "12\"",
@@ -593,7 +571,7 @@
         "SV": "3+",
         "LD": "5+",
         "basePoints": 60,
-        "squadSizes": "1"
+        "squadSizes": "1 to 2"
       },
       "keywords": [
         "Imperium",
@@ -816,13 +794,13 @@
   "weapons": [
     {
       "name": "Bolt Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 2,
       "profiles": null,
       "range": "12\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Pistol"
@@ -831,13 +809,13 @@
     },
     {
       "name": "Heavy Bolt Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 3,
       "profiles": null,
       "range": "12\"",
       "attacks": "1",
-      "strength": 5,
-      "ap": -1,
+      "strength": "5",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Pistol"
@@ -846,13 +824,13 @@
     },
     {
       "name": "Absolvor Bolt Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "12\"",
       "attacks": "1",
-      "strength": 5,
-      "ap": -1,
+      "strength": "5",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Precision",
@@ -862,13 +840,13 @@
     },
     {
       "name": "Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "24\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -878,13 +856,13 @@
     },
     {
       "name": "Assault Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "12\"",
       "attacks": "3",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -894,13 +872,13 @@
     },
     {
       "name": "Storm Bolter",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Rapid Fire 2",
@@ -910,13 +888,13 @@
     },
     {
       "name": "Bolt Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "30\"",
       "attacks": "1",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Rapid Fire 1"
@@ -925,13 +903,13 @@
     },
     {
       "name": "Heavy Bolt Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
-      "strength": 5,
-      "ap": -1,
+      "strength": "5",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Rapid Fire 1",
@@ -940,14 +918,61 @@
       "availability": "Tacticus, Gravis"
     },
     {
+      "name": "Heavy Bolter",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "36\"",
+      "attacks": "3",
+      "strength": "5",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [
+        "Heavy",
+        "Sustained Hits 1"
+      ],
+      "availability": "Tacticus, Gravis, Scouts"
+    },
+    {
+      "name": "Boltstorm Gauntlet",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 10,
+          "range": "12\"",
+          "attacks": "3",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Pistol",
+            "Assault"
+          ],
+          "availability": "Gravis, Centurion"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol",
+        "Assault"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
       "name": "Hurricane Bolter Array",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 30,
       "profiles": null,
       "range": "24\"",
       "attacks": "6",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "2",
       "keywords": [
         "Rapid Fire 6",
@@ -956,14 +981,32 @@
       "availability": "Vehicles only"
     },
     {
+      "name": "Bolt Sniper Rifle",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": "4",
+      "ap": "-2",
+      "damage": "2D3",
+      "keywords": [
+        "Precision",
+        "Heavy",
+        "Anti-INFANTRY 4+",
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Scouts"
+    },
+    {
       "name": "Shotgun",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "4\"",
       "attacks": "2",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "4",
       "keywords": [
         "Assault",
@@ -975,13 +1018,13 @@
     },
     {
       "name": "Heavy Autogun",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 7,
       "profiles": null,
       "range": "30\"",
       "attacks": "2",
-      "strength": 4,
-      "ap": 0,
+      "strength": "4",
+      "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
@@ -991,13 +1034,13 @@
     },
     {
       "name": "Autocannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 10,
       "profiles": null,
       "range": "48\"",
       "attacks": "2",
-      "strength": 7,
-      "ap": -1,
+      "strength": "7",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Heavy"
@@ -1006,13 +1049,13 @@
     },
     {
       "name": "Exterminator Autocannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 65,
       "profiles": null,
       "range": "48\"",
       "attacks": "4",
-      "strength": 8,
-      "ap": -1,
+      "strength": "8",
+      "ap": "-1",
       "damage": "3",
       "keywords": [
         "Rapid Fire 2",
@@ -1022,13 +1065,13 @@
     },
     {
       "name": "Assault Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "24\"",
       "attacks": "8",
-      "strength": 3,
-      "ap": -1,
+      "strength": "3",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Sustained Hits 3",
@@ -1038,13 +1081,13 @@
     },
     {
       "name": "Heavy Assault Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 65,
       "profiles": null,
       "range": "24\"",
       "attacks": "16",
-      "strength": 6,
-      "ap": -1,
+      "strength": "6",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Sustained Hits 3",
@@ -1053,14 +1096,64 @@
       "availability": "Vehicles only"
     },
     {
+      "name": "Hand Flamer",
+      "section": "Ranged Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "9\"",
+      "attacks": "D6+1",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+    },
+    {
+      "name": "Flamestorm Gauntlet",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 10,
+          "range": "9\"",
+          "attacks": "D6+1",
+          "strength": "3",
+          "ap": "0",
+          "damage": "1",
+          "keywords": [
+            "Pistol",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": "Gravis, Centurion"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol",
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
       "name": "Flamer",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+2",
-      "strength": 3,
-      "ap": 0,
+      "strength": "3",
+      "ap": "0",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -1071,13 +1164,13 @@
     },
     {
       "name": "Heavy Flamer",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+4",
-      "strength": 4,
-      "ap": -1,
+      "strength": "4",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Assault",
@@ -1088,13 +1181,13 @@
     },
     {
       "name": "Inferno Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 30,
       "profiles": null,
       "range": "12\"",
       "attacks": "D6+6",
-      "strength": 5,
-      "ap": -2,
+      "strength": "5",
+      "ap": "-2",
       "damage": "2",
       "keywords": [
         "Assault",
@@ -1105,13 +1198,13 @@
     },
     {
       "name": "Melta Pistol",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
       "range": "6\"",
       "attacks": "1",
-      "strength": 7,
-      "ap": -4,
+      "strength": "7",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Pistol",
@@ -1120,14 +1213,30 @@
       "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
     },
     {
+      "name": "Meltagun",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "1",
+      "strength": "9",
+      "ap": "-4",
+      "damage": "D6",
+      "keywords": [
+        "Assault",
+        "Melta 2"
+      ],
+      "availability": "Tacticus, Gravis, Jump Pack, Bike"
+    },
+    {
       "name": "Melta Rifle",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 15,
       "profiles": null,
       "range": "18\"",
       "attacks": "1",
-      "strength": 9,
-      "ap": -4,
+      "strength": "9",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Melta 2"
@@ -1136,13 +1245,13 @@
     },
     {
       "name": "Multi-melta",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 25,
       "profiles": null,
       "range": "18\"",
       "attacks": "2",
-      "strength": 9,
-      "ap": -4,
+      "strength": "9",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Heavy",
@@ -1152,13 +1261,13 @@
     },
     {
       "name": "Melta Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 50,
       "profiles": null,
       "range": "24\"",
       "attacks": "D3+1",
-      "strength": 10,
-      "ap": -4,
+      "strength": "10",
+      "ap": "-4",
       "damage": "D6",
       "keywords": [
         "Melta 4"
@@ -1166,14 +1275,234 @@
       "availability": "Vehicles only"
     },
     {
+      "name": "Plasma Pistol",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 8,
+          "range": "12\"",
+          "attacks": "2",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Pistol"
+          ],
+          "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "12\"",
+          "attacks": "1",
+          "strength": "6",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [
+            "Pistol",
+            "Hazardous 2"
+          ],
+          "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
+    },
+    {
+      "name": "Plasma Carbine",
+      "section": "Ranged Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 12,
+          "range": "18\"",
+          "attacks": "3",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Assault"
+          ],
+          "availability": "Gravis"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "18\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Hazardous 2"
+          ],
+          "availability": "Gravis"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault"
+      ],
+      "availability": "Gravis"
+    },
+    {
+      "name": "Plasma Gun",
+      "section": "Ranged Weapons",
+      "points": 12,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 12,
+          "range": "24\"",
+          "attacks": "2",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Rapid Fire 1"
+          ],
+          "availability": "Tacticus, Jump Pack, Bike"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "4",
+          "keywords": [
+            "Hazardous 2"
+          ],
+          "availability": "Tacticus, Jump Pack, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Rapid Fire 1"
+      ],
+      "availability": "Tacticus, Jump Pack, Bike"
+    },
+    {
+      "name": "Plasma Cannon",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 20,
+          "range": "30\"",
+          "attacks": "D3+2",
+          "strength": "6",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": "Tacticus, Gravis, Terminator"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "30\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 1\"",
+            "Hazardous D3+1"
+          ],
+          "availability": "Tacticus, Gravis, Terminator"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Gravis, Terminator"
+    },
+    {
+      "name": "Macro Plasma Cannon",
+      "section": "Ranged Weapons",
+      "points": 70,
+      "profiles": [
+        {
+          "profileName": "Normal",
+          "points": 70,
+          "range": "36\"",
+          "attacks": "D6+3",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "2",
+          "keywords": [
+            "Heavy",
+            "Blast 3\""
+          ],
+          "availability": "Vehicles only"
+        },
+        {
+          "profileName": "Supercharged",
+          "points": null,
+          "range": "36\"",
+          "attacks": "D3+1",
+          "strength": "11",
+          "ap": "-4",
+          "damage": "4",
+          "keywords": [
+            "Ordnance",
+            "Blast 1\"",
+            "Hazardous D3+2"
+          ],
+          "availability": "Vehicles only"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 3\""
+      ],
+      "availability": "Vehicles only"
+    },
+    {
       "name": "Lasfusil",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
-      "strength": 12,
-      "ap": -3,
+      "strength": "12",
+      "ap": "-3",
       "damage": "4",
       "keywords": [
         "Heavy"
@@ -1182,13 +1511,13 @@
     },
     {
       "name": "Lascannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 35,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
-      "strength": 12,
-      "ap": -3,
+      "strength": "12",
+      "ap": "-3",
       "damage": "D6+2",
       "keywords": [
         "Heavy"
@@ -1196,14 +1525,29 @@
       "availability": "Tacticus, Gravis"
     },
     {
+      "name": "Heavy Lascannon",
+      "section": "Ranged Weapons",
+      "points": 55,
+      "profiles": null,
+      "range": "48\"",
+      "attacks": "1",
+      "strength": "15",
+      "ap": "-3",
+      "damage": "D6+4",
+      "keywords": [
+        "Ordnance"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
       "name": "Laser Destroyer",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 100,
       "profiles": null,
       "range": "72\"",
       "attacks": "1",
-      "strength": 24,
-      "ap": -4,
+      "strength": "24",
+      "ap": "-4",
       "damage": "12",
       "keywords": [
         "Ordnance",
@@ -1213,13 +1557,13 @@
     },
     {
       "name": "Rocket Pod",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 35,
       "profiles": null,
       "range": "48\"",
       "attacks": "2D6",
-      "strength": 2,
-      "ap": -1,
+      "strength": "2",
+      "ap": "-1",
       "damage": "1",
       "keywords": [
         "Blast 2\"",
@@ -1228,14 +1572,102 @@
       "availability": "Tacticus"
     },
     {
+      "name": "Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 15,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": "Tacticus, Scout"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": "Tacticus, Scout"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Scout"
+    },
+    {
+      "name": "Cyclone Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 25,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 25,
+          "range": "48\"",
+          "attacks": "D6+3",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Blast 1\""
+          ],
+          "availability": "Terminator"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "2",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": "Terminator"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Terminator"
+    },
+    {
       "name": "Whirlwind Vengeance Launcher",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 90,
       "profiles": null,
-      "range": "18\"-72\"",
+      "range": "18\"-200\"",
       "attacks": "3D6",
-      "strength": 8,
-      "ap": -2,
+      "strength": "7",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Ordnance",
@@ -1247,13 +1679,13 @@
     },
     {
       "name": "Hunter-killer Missile",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 20,
       "profiles": null,
       "range": "72\"",
       "attacks": "1",
-      "strength": 10,
-      "ap": -2,
+      "strength": "10",
+      "ap": "-2",
       "damage": "4",
       "keywords": [
         "One Shot",
@@ -1265,14 +1697,61 @@
       "availability": "Vehicles only"
     },
     {
+      "name": "Grenade Launcher",
+      "section": "Ranged Weapons",
+      "points": 10,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 10,
+          "range": "24\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "0",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Blast 1\"",
+            "Ignores Cover"
+          ],
+          "availability": "Tacticus, Jump Pack, Bike"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-1",
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Ignores Cover"
+          ],
+          "availability": "Tacticus, Jump Pack, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Jump Pack, Bike"
+    },
+    {
       "name": "Demolisher Cannon",
-      "section": "Weapons",
+      "section": "Ranged Weapons",
       "points": 75,
       "profiles": null,
       "range": "24\"",
       "attacks": "D6+2",
-      "strength": 9,
-      "ap": -2,
+      "strength": "9",
+      "ap": "-2",
       "damage": "3",
       "keywords": [
         "Blast 3\"",
@@ -1346,7 +1825,7 @@
       "range": "-",
       "attacks": "A -2",
       "strength": "S +4",
-      "ap": -4,
+      "ap": "-4",
       "damage": "3",
       "keywords": [
         "Heavy",
@@ -1354,6 +1833,107 @@
         "Anti-MONSTER 4+"
       ],
       "availability": "Terminator"
+    },
+    {
+      "name": "Thunder Hammer",
+      "section": "Melee Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Sweep",
+          "points": 20,
+          "range": "-",
+          "attacks": "A x2",
+          "strength": "S +2",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Devastating Wounds"
+          ],
+          "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
+        },
+        {
+          "profileName": "Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S +5",
+          "ap": "-1",
+          "damage": "4",
+          "keywords": [
+            "Heavy",
+            "Devastating Wounds"
+          ],
+          "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Devastating Wounds"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
+    },
+    {
+      "name": "Boltstorm Gauntlet",
+      "section": "Melee Weapons",
+      "points": null,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A -1",
+          "strength": "S +2",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": "Gravis, Centurion"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Gravis, Centurion"
+    },
+    {
+      "name": "Flamestorm Gauntlet",
+      "section": "Melee Weapons",
+      "points": null,
+      "profiles": [
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A -1",
+          "strength": "S +2",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": "Gravis, Centurion"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy"
+      ],
+      "availability": "Gravis, Centurion"
     },
     {
       "name": "Lightning Claw",
@@ -1408,7 +1988,7 @@
       "range": "-",
       "attacks": "A",
       "strength": "S +3",
-      "ap": -3,
+      "ap": "-3",
       "damage": "3",
       "keywords": [
         "Precision",
@@ -1466,542 +2046,6 @@
       "availability": "Tacticus, Gravis, Terminator, Bike"
     },
     {
-      "name": "Frag Grenades",
-      "section": "Grenades",
-      "points": 3,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "D3",
-      "strength": 3,
-      "ap": 0,
-      "damage": "1",
-      "keywords": [
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
-    },
-    {
-      "name": "Krak Grenades",
-      "section": "Grenades",
-      "points": 5,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "1",
-      "strength": 8,
-      "ap": -1,
-      "damage": "3",
-      "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
-    },
-    {
-      "name": "Melta Bombs",
-      "section": "Grenades",
-      "points": 10,
-      "profiles": null,
-      "range": "S\"",
-      "attacks": "1",
-      "strength": 11,
-      "ap": -4,
-      "damage": "D6+3",
-      "keywords": [
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
-    },
-    {
-      "name": "Smoke Grenades",
-      "section": "Grenades",
-      "points": 4,
-      "profiles": null,
-      "range": "S+3\"",
-      "attacks": "1",
-      "strength": "-",
-      "ap": "-",
-      "damage": "-",
-      "keywords": [
-        "Smoke 1\""
-      ],
-      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
-    },
-    {
-      "name": "Boltstorm Gauntlet",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 10,
-          "range": "12\"",
-          "attacks": "3",
-          "strength": 4,
-          "ap": -1,
-          "damage": "2",
-          "keywords": [
-            "Pistol",
-            "Assault"
-          ],
-          "availability": "Gravis, Centurion"
-        },
-        {
-          "profileName": "Melee",
-          "points": "-",
-          "range": "-",
-          "attacks": "A -1",
-          "strength": "S +2",
-          "ap": "-1",
-          "damage": "2",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Gravis, Centurion"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol",
-        "Assault"
-      ],
-      "availability": "Gravis, Centurion"
-    },
-    {
-      "name": "Flamestorm Gauntlet",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Shooting",
-          "points": 10,
-          "range": "9\"",
-          "attacks": "D6+1",
-          "strength": 3,
-          "ap": 0,
-          "damage": "1",
-          "keywords": [
-            "Pistol",
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": "Gravis, Centurion"
-        },
-        {
-          "profileName": "Melee",
-          "points": "-",
-          "range": "-",
-          "attacks": "A -1",
-          "strength": "S +2",
-          "ap": "-1",
-          "damage": "2",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Gravis, Centurion"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol",
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": "Gravis, Centurion"
-    },
-    {
-      "name": "Plasma Pistol",
-      "section": "Weapons",
-      "points": 5,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 5,
-          "range": "12\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Pistol"
-          ],
-          "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Pistol"
-      ],
-      "availability": "Tacticus, Phobos, Scouts, Jump Pack, Bike"
-    },
-    {
-      "name": "Plasma Carbine",
-      "section": "Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 8,
-          "range": "18\"",
-          "attacks": "3",
-          "strength": 4,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Assault"
-          ],
-          "availability": "Gravis"
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "18\"",
-          "attacks": "1",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Assault",
-            "Hazardous 2"
-          ],
-          "availability": "Gravis"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault"
-      ],
-      "availability": "Gravis"
-    },
-    {
-      "name": "Plasma Gun",
-      "section": "Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 8,
-          "range": "24\"",
-          "attacks": "2",
-          "strength": 4,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Rapid Fire 1"
-          ],
-          "availability": "Tacticus, Jump Pack, Bike"
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "24\"",
-          "attacks": "1",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Rapid Fire 1",
-            "Hazardous 2"
-          ],
-          "availability": "Tacticus, Jump Pack, Bike"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Rapid Fire 1"
-      ],
-      "availability": "Tacticus, Jump Pack, Bike"
-    },
-    {
-      "name": "Plasma Cannon",
-      "section": "Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 20,
-          "range": "30\"",
-          "attacks": "D3+1",
-          "strength": 6,
-          "ap": -2,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": "Tacticus, Gravis, Terminator"
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "30\"",
-          "attacks": "D3",
-          "strength": 8,
-          "ap": -3,
-          "damage": "3",
-          "keywords": [
-            "Heavy",
-            "Blast 1\"",
-            "Hazardous D3+1"
-          ],
-          "availability": "Tacticus, Gravis, Terminator"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": "Tacticus, Gravis, Terminator"
-    },
-    {
-      "name": "Macro Plasma Cannon",
-      "section": "Weapons",
-      "points": 70,
-      "profiles": [
-        {
-          "profileName": "Normal",
-          "points": 70,
-          "range": "36\"",
-          "attacks": "D6+3",
-          "strength": 8,
-          "ap": -3,
-          "damage": "2",
-          "keywords": [
-            "Heavy",
-            "Blast 3\""
-          ],
-          "availability": "Vehicles only"
-        },
-        {
-          "profileName": "Supercharged",
-          "points": null,
-          "range": "36\"",
-          "attacks": "D3+1",
-          "strength": 11,
-          "ap": -4,
-          "damage": "4",
-          "keywords": [
-            "Ordnance",
-            "Blast 1\"",
-            "Hazardous D3+2"
-          ],
-          "availability": "Vehicles only"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 3\""
-      ],
-      "availability": "Vehicles only"
-    },
-    {
-      "name": "Missile Launcher",
-      "section": "Weapons",
-      "points": 15,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 15,
-          "range": "48\"",
-          "attacks": "D6",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": "Tacticus, Scout"
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "48\"",
-          "attacks": "1",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Tacticus, Scout"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": "Tacticus, Scout"
-    },
-    {
-      "name": "Cyclone Missile Launcher",
-      "section": "Weapons",
-      "points": 25,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 25,
-          "range": "48\"",
-          "attacks": "D6+3",
-          "strength": 3,
-          "ap": -1,
-          "damage": "1",
-          "keywords": [
-            "Heavy",
-            "Blast 1\""
-          ],
-          "availability": "Terminator"
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "48\"",
-          "attacks": "2",
-          "strength": 10,
-          "ap": -2,
-          "damage": "4",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Terminator"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": "Terminator"
-    },
-    {
-      "name": "Grenade Launcher",
-      "section": "Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Frag",
-          "points": 10,
-          "range": "24\"",
-          "attacks": "D6",
-          "strength": 3,
-          "ap": 0,
-          "damage": "1",
-          "keywords": [
-            "Assault",
-            "Blast 1\"",
-            "Ignores Cover"
-          ],
-          "availability": "Tacticus, Jump Pack, Bike"
-        },
-        {
-          "profileName": "Krak",
-          "points": null,
-          "range": "24\"",
-          "attacks": "1",
-          "strength": 8,
-          "ap": -1,
-          "damage": "3",
-          "keywords": [
-            "Assault",
-            "Ignores Cover"
-          ],
-          "availability": "Tacticus, Jump Pack, Bike"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": "Tacticus, Jump Pack, Bike"
-    },
-    {
-      "name": "Thunder Hammer",
-      "section": "Melee Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Sweep",
-          "points": 20,
-          "range": "-",
-          "attacks": "A x2",
-          "strength": "S +2",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [
-            "Devastating Wounds"
-          ],
-          "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
-        },
-        {
-          "profileName": "Strike",
-          "points": null,
-          "range": "-",
-          "attacks": "A -2",
-          "strength": "S +5",
-          "ap": "-1",
-          "damage": "4",
-          "keywords": [
-            "Heavy",
-            "Devastating Wounds"
-          ],
-          "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Devastating Wounds"
-      ],
-      "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
-    },
-    {
       "name": "Dreadnought Power Fist",
       "section": "Melee Weapons",
       "points": 25,
@@ -2012,10 +2056,10 @@
           "range": "-",
           "attacks": "A x2",
           "strength": "S",
-          "ap": -1,
+          "ap": "-1",
           "damage": "2",
           "keywords": [],
-          "availability": ""
+          "availability": "Vehicles only"
         },
         {
           "profileName": "Crush",
@@ -2023,12 +2067,12 @@
           "range": "",
           "attacks": "A",
           "strength": "S +5",
-          "ap": -3,
+          "ap": "-3",
           "damage": "D3+3",
           "keywords": [
             "Devastating Wounds"
           ],
-          "availability": ""
+          "availability": "Vehicles only"
         }
       ],
       "range": null,
@@ -2037,7 +2081,7 @@
       "ap": null,
       "damage": null,
       "keywords": [],
-      "availability": ""
+      "availability": "Vehicles only"
     },
     {
       "name": "Dreadnought Power Talons",
@@ -2050,12 +2094,12 @@
           "range": "-",
           "attacks": "A x2",
           "strength": "S",
-          "ap": -2,
+          "ap": "-2",
           "damage": "2",
           "keywords": [
             "Lethal Hits"
           ],
-          "availability": ""
+          "availability": "Vehicles only"
         },
         {
           "profileName": "Crush",
@@ -2063,12 +2107,12 @@
           "range": "",
           "attacks": "A",
           "strength": "S +4",
-          "ap": -3,
+          "ap": "-3",
           "damage": "D3+3",
           "keywords": [
             "Lethal Hits"
           ],
-          "availability": ""
+          "availability": "Vehicles only"
         }
       ],
       "range": null,
@@ -2079,7 +2123,7 @@
       "keywords": [
         "Lethal Hits"
       ],
-      "availability": ""
+      "availability": "Vehicles only"
     },
     {
       "name": "Smite",
@@ -2091,8 +2135,8 @@
           "points": null,
           "range": "18\"",
           "attacks": "1",
-          "strength": 12,
-          "ap": -4,
+          "strength": "12",
+          "ap": "-4",
           "damage": "5",
           "keywords": [
             "Beam D3",
@@ -2107,8 +2151,8 @@
           "points": null,
           "range": "8\"",
           "attacks": "D6+4",
-          "strength": 3,
-          "ap": -1,
+          "strength": "3",
+          "ap": "-1",
           "damage": "1",
           "keywords": [
             "Pistol",
@@ -2132,6 +2176,67 @@
         "Devastating Wounds"
       ],
       "availability": "All"
+    },
+    {
+      "name": "Frag Grenades",
+      "section": "Grenades",
+      "points": 3,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D3",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Krak Grenades",
+      "section": "Grenades",
+      "points": 5,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "8",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Melta Bombs",
+      "section": "Grenades",
+      "points": 10,
+      "profiles": null,
+      "range": "S\"",
+      "attacks": "1",
+      "strength": "11",
+      "ap": "-4",
+      "damage": "D6+3",
+      "keywords": [
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
+    },
+    {
+      "name": "Smoke Grenades",
+      "section": "Grenades",
+      "points": 4,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "1",
+      "strength": "-",
+      "ap": "-",
+      "damage": "-",
+      "keywords": [
+        "Smoke 1\""
+      ],
+      "availability": "Tacticus, Phobos, Gravis, Scout, Jump Pack, Bike"
     }
   ]
 }
