@@ -24,7 +24,9 @@ try {
   const defPath = resolve(__dirname, '../data/definitions.json');
   definitionsJson = readFileSync(defPath, 'utf-8');
 } catch (e) {
-  // definitions.json not yet generated — tooltips will be inactive
+  // TEMP: log the error so we can see it in the Netlify build log
+  console.error('[BaseLayout] Failed to read definitions.json:', e.message);
+  console.error('[BaseLayout] Resolved path was:', resolve(__dirname, '../data/definitions.json'));
 }
 
 interface Props {
