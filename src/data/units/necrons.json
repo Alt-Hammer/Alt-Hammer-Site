@@ -1176,6 +1176,20 @@
             "Ignores Cover"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 50,
+          "range": "-",
+          "attacks": "A",
+          "strength": "7",
+          "ap": "-3",
+          "damage": "D3",
+          "keywords": [
+            "Precision",
+            "Melta 3"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1416,37 +1430,6 @@
       "damage": null,
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Deceiver's Grace",
-      "section": "Melee Weapons",
-      "points": 50,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 50,
-          "range": "-",
-          "attacks": "A",
-          "strength": "7",
-          "ap": "-3",
-          "damage": "D3",
-          "keywords": [
-            "Precision",
-            "Melta 3"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Precision",
-        "Melta 3"
       ],
       "availability": ""
     },

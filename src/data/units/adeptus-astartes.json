@@ -951,6 +951,19 @@
             "Assault"
           ],
           "availability": "Gravis, Centurion"
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A -1",
+          "strength": "S +2",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Heavy"
+          ],
+          "availability": "Gravis, Centurion"
         }
       ],
       "range": null,
@@ -1129,6 +1142,19 @@
             "Pistol",
             "Torrent",
             "Ignores Cover"
+          ],
+          "availability": "Gravis, Centurion"
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A -1",
+          "strength": "S +2",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Heavy"
           ],
           "availability": "Gravis, Centurion"
         }
@@ -1876,64 +1902,6 @@
         "Devastating Wounds"
       ],
       "availability": "Tacticus, Phobos, Gravis, Scout, Terminator"
-    },
-    {
-      "name": "Boltstorm Gauntlet",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": null,
-          "range": "-",
-          "attacks": "A -1",
-          "strength": "S +2",
-          "ap": "-1",
-          "damage": "2",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Gravis, Centurion"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": "Gravis, Centurion"
-    },
-    {
-      "name": "Flamestorm Gauntlet",
-      "section": "Melee Weapons",
-      "points": null,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": null,
-          "range": "-",
-          "attacks": "A -1",
-          "strength": "S +2",
-          "ap": "-1",
-          "damage": "2",
-          "keywords": [
-            "Heavy"
-          ],
-          "availability": "Gravis, Centurion"
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy"
-      ],
-      "availability": "Gravis, Centurion"
     },
     {
       "name": "Lightning Claw",

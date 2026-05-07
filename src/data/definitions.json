@@ -7,22 +7,27 @@
   "move": {
     "name": "Move",
     "type": "action",
-    "body": "The selected unit may Move up to the maximum Movement characteristic detailed on its datasheet, and in accordance with any Model Characteristic Keywords impacting how that unit can move.\nThis Action cannot be used under the following conditions:\n• Your unit is within Base-to-base contact of any enemy models.\n• Your unit has already used this Action once as part of its activation.\nUnits can choose to Advance as part of a Move Action. An Advance is additional movement completed as follows:\n• The unit completes its Advance movement up to a distance in inches equal to the lowest Initiative value in that unit.\n• Units that Advance are not eligible to Shoot with any weapons other than weapons that possess the Pistol or Assault keyword.\n• Units that Advance are not eligible to Charge and Fight, unless they possess an ability or model keyword that enables them to do so."
+    "body": "The unit may Move up to the maximum Movement characteristic detailed on its datasheet, and in accordance with any applicable Keywords impacting how that unit can move (for example, weapons with the Heavy keyword).\nThis Action cannot be used under the following conditions:\n• Your unit is within Base-to-base contact of any enemy models.\n• Your unit has already used this Action once as part of its activation."
+  },
+  "advance": {
+    "name": "Advance",
+    "type": "action",
+    "body": "Units can choose to Advance immediately after completing a Move Action. An Advance is additional movement completed as follows:\n• The unit completes its Advance movement up to a distance in inches equal to the lowest Initiative value in that unit.\n• Units that Advance are not eligible to Shoot with any weapons other than weapons that possess the Pistol or Assault keyword.\n• Units that Advance are not eligible to Charge and Fight, unless they possess an ability or model keyword (such as Relentless) that enables them to do so."
   },
   "fall-back": {
     "name": "Fall Back",
     "type": "action",
-    "body": "The selected unit may Fall Back as its first Action if it begins its Activation within Base-to-base contact of enemy models. It may Fall Back up to the maximum Movement characteristic detailed on its datasheet, and must not end this Fall Back move closer to any enemy models than when it began. Units that Fall Back cannot then use remaining Activation Points for any of the following actions: Move, Shoot, and Charge and Fight unless that unit has access to abilities, or Stratagems that allow it to complete other Actions after making a Fall Back Action."
+    "body": "The selected unit may Fall Back as its first Action if it begins its Activation within Base-to-Base Contact of enemy models. It may Fall Back up to the maximum Movement characteristic detailed on its datasheet, and must not end this Fall Back move closer to any enemy models than when it began. Units that Fall Back cannot then use remaining Activation Points for any of the following actions: Move, Shoot, and Charge and Fight unless that unit has access to abilities, or Stratagems that allow it to complete other Actions after making a Fall Back Action."
   },
-  "enter-the-battlefield-from-strategic-reserve": {
-    "name": "Enter the Battlefield from Strategic Reserve",
+  "enter-the-battlefield-from-strategic-reserves": {
+    "name": "Enter the Battlefield from Strategic Reserves",
     "type": "action",
-    "body": "Units held in Strategic Reserves may enter the battlefield as their first Action. Units that do so may not then use Move."
+    "body": "Units held in Strategic Reserves may enter the battlefield as their first Action. Units that do count as having completed a Move Action and may not then Move, but can otherwise act normally."
   },
   "embark-or-disembark-from-a-transport": {
-    "name": "Embark or Disembark from a TRANSPORT",
+    "name": "Embark or Disembark from a Transport",
     "type": "action",
-    "body": "This Action is utilized by the selected unit in one of several ways:\n• Disembark: If the selected unit is currently embarked in a Transport, it can use this Action to Disembark from that Transport unit. Models that disembark must first be placed within 3\" of the Transport unit before spending any more Activation Points.\n• Units that Disembark from a Transport that has not yet been activated this turn may then use their remaining Activation Points to complete any of the following eligible Actions: Move, Shoot, Charge and Fight, adhering to any limitations to the sequencing of those activations where applicable. Disembarking under this condition costs 1 Activation Point.\n• Units that Disembark from a Transport that has been activated this turn may not use the Charge and Fight Action, but can otherwise act normally. Disembarking under this condition costs 2 Activation Points.\n• Embark: If all models in the selected unit are within 3\" of a friendly Transport, it may use this Action to embark into that Transport. It may then no longer use any remaining Activation Points, unless that Transport's datasheet possesses unique abilities that allow units to function while embarked (ie, making Ranged attacks via the Firing Deck [X] ability). Embarking always costs 1 Activation Point.\n• Emergency Disembarkation: When a Transport model is destroyed, every unit embarked within it at that time must immediately make an Emergency Disembarkation. To do so, Roll 1 D6 for each model in the unit. For each roll of a 1 - or a roll of a 1 or 2 if the Transport being destroyed triggered the Deadly Demise [X] ability - the unit suffers 1 Mortal Wound. Models not destroyed at this stage are then placed within 3\" of the Transport model. The unit then takes a Battle Shock test, or is automatically considered to be Battle Shocked if the Transport being destroyed triggered the Deadly Demise [X] ability.\nRestrictions detailed here can be overruled if the Activated unit has abilities that affect interactions with Transport units. For example, some units (including Transports) may provide the ability to allow embarked units to be eligible to Charge and Fight after disembarking from a Transport that has Moved this turn."
+    "body": "This Action is utilized by the selected unit in one of several ways:\nDisembark: If the selected unit is currently embarked in a Transport, it can use this Action to Disembark from that Transport unit. Models that disembark must first be placed within 3\" of the Transport unit before spending any more Activation Points.\n• Units that Disembark from a Transport that has not yet been activated this turn may then use their remaining Activation Points to complete any of the following eligible Actions: Move, Shoot, Mission Task, Charge and Fight, adhering to any limitations to the sequencing of those activations where applicable. Disembarking under this condition costs 1 Activation Point.\n• Units that Disembark from a Transport that has used the Move Action this Battle Round may not use the Charge and Fight Action, unless that Transport has the Assault Egress keyword, but can otherwise act normally. Disembarking under this condition costs 2 Activation Points.\n• Units can never disembark from a Transport that has used the Advance Action.\nEmbark: If all models in the selected unit are within 3\" of a friendly Transport, it may use this Action to embark into that Transport. It may then no longer use any remaining Activation Points, unless that Transport possesses unique abilities that allow units to function while embarked (ie, making Ranged attacks via the Firing Deck [X] ability). Embarking always costs 1 Activation Point.\nEmergency Disembarkation: When a Transport is destroyed, every unit embarked within it at that time must immediately make an Emergency Disembarkation. To do so, Roll 1 D6 for each model in the unit. For each roll of a 1 - or a roll of a 1 or 2 if the Transport being destroyed triggered the Deadly Demise [X] ability - the unit suffers 1 Mortal Wound. Models not destroyed at this stage are then placed within 3\" of the Transport model. The unit then takes a Battle Shock Test, or is automatically considered to be Battle Shocked if the Transport being destroyed triggered the Deadly Demise [X] ability."
   },
   "shoot": {
     "name": "Shoot",
@@ -32,47 +37,52 @@
   "charge-and-fight": {
     "name": "Charge and Fight",
     "type": "action",
-    "body": "The selected unit may complete this Action if they have already completed a Move Action or used the Enter the Battlefield from Strategic Reserves Action. This Action is completed as follows:\n• The selected unit Charges an enemy unit (or units) by moving a charge move distance in Inches equal to D6 + the lowest Initiative characteristic in the unit. At least 1 model from the unit must be able to get into Base-to-Base Contact with a model from the enemy unit being Charged in order for the Charge to be considered successful.\n• Resolve Melee attacks using the Fight Order of Operations detailed under the Making Attacks section of the Core Rules. The unit that completed this Charge and Fight Action increases their Initiative value by 1 for this Fight.\nIf the selected unit has any remaining Activation Points after completing the Charge and Fight Activation, and there are no longer any enemy models within Base-to-Base contact with any models in the unit, it may then continue to spend them on the following eligible Actions: Move, Shoot, Embark or Disembark from a TRANSPORT."
+    "body": "The selected unit may complete this Action if they have already completed a Move Action or used the Enter the Battlefield from Strategic Reserves Action. This Action is completed as follows:\n• The selected unit Charges an enemy unit (or units) by moving a charge move distance in Inches equal to D6 + the lowest Initiative characteristic in the unit. At least 1 model from the unit must be able to get into Base-to-Base Contact with a model from the enemy unit being Charged in order for the Charge to be considered successful.\n• Resolve Melee attacks using the Fight Order of Operations detailed under the Making Attacks section of the Core Rules. The unit that completed this Charge and Fight Action increases their Initiative value by 1 for this Fight.\nIf the selected unit has any remaining Activation Points after completing the Charge and Fight Activation, and there are no longer any enemy models within Base-to-Base contact with any models in the unit, it may then continue to spend them on the following eligible Actions: Move, Shoot, Embark or Disembark from a Transport."
   },
   "fight": {
     "name": "Fight",
     "type": "action",
-    "body": "The selected unit may Fight, following the order of operations described under the Melee Attacks rules section, under 1 of the 2 following scenarios:\n• As part of the unit's own Activation if it has models is within Base-to-base contact with enemy models when it is Activated, using its first Activation Point. Units selected to use the Fight Action in this manner may then spend any remaining Activation Points on other eligible Actions, excluding the following: Embark or Disembark from a TRANSPORT, Enter the Battlefield from Strategic Reserve, and Charge and Fight.\n• When it is the target of an enemy unit's Charge and Fight Action, wherein this Action does not cost the unit an Activation Point because it is must complete this Action as part of that enemy unit's Charge and Fight Action."
+    "body": "The selected unit may Fight, following the order of operations described under the Melee Attacks rules section, under 1 of the 2 following scenarios:\n• As part of the unit's own Activation if it has models is within Base-to-base contact with enemy models when it is Activated, using its first Activation Point. Units selected to use the Fight Action in this manner may then spend any remaining Activation Points on other eligible Actions, excluding the following: Embark or Disembark from a Transport, Enter the Battlefield from Strategic Reserves, and Charge and Fight.\n• When it is the target of an enemy unit's Charge and Fight Action, wherein this Action does not cost the unit an Activation Point because it is must complete this Action as part of that enemy unit's Charge and Fight Action."
   },
   "ascend-to-the-skies": {
     "name": "Ascend to the Skies",
     "type": "action",
     "body": "This Action can only be used by units with at least one of the following keywords: Aircraft, Fly, or Jump Pack. Remove the unit from the table and place it into Strategic Reserves."
   },
+  "return-to-the-shadows": {
+    "name": "Return to the Shadows",
+    "type": "action",
+    "body": "This Action is only available to be used through Faction or Unit abilities that explicitly state it can be used.\nA unit can use the following Action if satisfies all of the following conditions:\n• Already completed either a Move or Shoot Action as part of its Activation, but no other Actions\n• Is wholly within 3\" of a Terrain Feature\n• Is more than 6\" away from any enemy models\nWhen it does so, remove the unit from the table and place it into Strategic Reserves."
+  },
   "mission-task": {
     "name": "Mission Task",
     "type": "action",
-    "body": "This Action allows the unit to complete any Mission Task as determined by an active Primary or Secondary Objective.\nUnits cannot select this Action if any models in the unit are in Base-to-Base contact with any enemy models. Further this Action can only be used by a unit if that unit did not use any of the following Actions as part of this Activation: Shoot, Charge and Fight, Fight, Fall Back. Units that used this Action cannot be selected for a Bonus Activation during the current Battle Round."
+    "body": "This Action allows the unit to complete any Mission Task as determined by an active Primary or Secondary Objective.\nUnits cannot select this Action if any models in the unit are in Base-to-Base contact with any enemy models. Further this Action can only be used by a unit if that unit did not yet use any of the following Actions as part of this Activation: Shoot, Charge and Fight, Fight, Fall Back. Units that use this Action cannot then be selected for a Bonus Activation during the current Battle Round."
   },
   "hold-fast": {
     "name": "Hold Fast",
     "type": "action",
-    "body": "This Action allows the unit to effectively 'pass' on being Activated this Battle Round. The unit must declare it will Hold Fast at the start of its Activation, and cannot use any subsequent Actions under any conditions whatsoever. This Action cannot be used if the unit is:\n• In Base-to-Base Contact with any enemy units,\n• or\n• Has any models within 6\" of any enemy units.\nUnits that Hold Fast are not eligible to complete a Bonus Activation this Battle Round."
+    "body": "This Action allows the unit to effectively 'pass' on being Activated this Battle Round. The unit must declare it will Hold Fast at the start of its Activation, and cannot use any subsequent Actions under any conditions whatsoever. This Action cannot be used if the unit is:\n• In Base-to-Base Contact with any enemy units, or,\n• Has any models within 6\" of any enemy units.\nUnits that Hold Fast are not eligible to complete a Bonus Activation this Battle Round."
   },
   "infantry": {
     "name": "Infantry",
     "type": "keyword",
-    "body": "Infantry models must abide by the following when completing the Move or Charge and Fight Actions:\n• Treat any terrain feature that is less than 1\" tall as if it was not there. However, moving over terrain features that are 1\" or taller must be factored into the model's movement as vertical distance it must travel.\n• Reduce their Movement characteristic by 2\" when entering or exiting a terrain feature with the Building keyword. This is to represent models spending their energy finding safe entry points breaching through walls, or clambering over debris. Move Actions that begin and end within a terrain feature with the Building keyword are not subject to this constraint, but are subject to vertical terrain feature measuring detailed above.\nWhen Infantry models make Ranged attacks, they can choose to target more than 1 enemy unit if they possess more than 1 Ranged weapon. However, the attacking player can only choose 1 target to attack at the model's full Ballistic Skill. Ranged attacks against each additional unit targeted reduces the model's Ballistic Skill by 1. These reductions are applied in the order that the player chooses to make their attacks (i.e., the first weapon fired will have full Ballistic Skill, the second will have Ballistic Skill -1, the third will have Ballistic Skill -2, and so on)."
+    "body": "Infantry models must abide by the following when completing the Move or Charge and Fight Actions:\n• Treat any terrain feature that is less than 1\" tall as if it was not there. However, moving over terrain features that are 1\" or taller must be factored into the model's movement as vertical distance it must travel.\n• Reduce their Movement characteristic by 2\" when entering or exiting a terrain feature with the Building keyword. This is to represent models spending their energy finding safe entry points breaching through walls, or clambering over debris. Move Actions that begin and end within a terrain feature with the Building keyword are not subject to this constraint, but are subject to vertical terrain feature measuring detailed above.\nWhen Infantry models used the Shoot Action, they can choose to target more than 1 enemy unit if they possess more than 1 Ranged weapon. However, the attacking player can only choose 1 target to attack at the model's full Ballistic Skill. Ranged attacks against each additional unit targeted reduces the model's Ballistic Skill by 1. These reductions are applied in the order that the player chooses to make their attacks (i.e., the first weapon fired will have full Ballistic Skill, the second will have Ballistic Skill -1, the third will have Ballistic Skill -2, and so on)."
   },
   "vehicle": {
     "name": "Vehicle",
     "type": "keyword",
-    "body": "Vehicles must abide by the following when completing a Move Action:\n• The model must always move forwards or backwards relative to the front of the vehicle's hull (use reasonable logic to identify this based on the design of the vehicle!). When completing any form of Movement, a Vehicle must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's hull. If the model will turn or pivot, reduce its Movement characteristic by 2\".\n• The model cannot move over any terrain features that are more than 2\" tall relative to the ground.\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Vehicle successfully breaches the terrain and can be moved into or through that terrain feature. Vehicles with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Vehicles moving into or through a terrain feature reduce their Movement characteristic by 2\". This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.\nVehicles can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player. They also ignore the effects of the Heavy keyword when making attacks.\nVehicles that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and subtract 1 from their Hit rolls."
+    "body": "Vehicle models must abide by the following when completing a Move Action:\n• The model must always move forwards or backwards relative to the front of the vehicle's hull (use reasonable logic to identify this based on the design of the vehicle!). When completing any form of Movement, a Vehicle must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's hull. If the model will turn or pivot, reduce its Movement characteristic by 2\".\n• The model cannot move over any terrain features that are more than 2\" tall relative to the ground, unless benefitting from another keyword such as Fly that allows the model to ignore vertical movement distances.\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Vehicle successfully breaches the terrain and can be moved into or through that terrain feature. Vehicles with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Reduce their Movement characteristic by 2\" when moving into or through a terrain feature This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.\nWhen using the Shoot Action, Vehicle models:\n• Can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player.\n• Can target enemy units with models in Base-to-Base contact\n• Ignore the effects of the Heavy keyword when making attacks\nVehicle models are subject to the \"Hit Them From Behind!\" rule detailed under Making Attacks.\nVehicle models that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and their Ballistic Skill by 1."
   },
   "monster": {
     "name": "Monster",
     "type": "keyword",
-    "body": "Monster models must abide by the following when completing a Move Action:\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Monster successfully breaches the terrain and can be moved into or through that terrain feature. Monsters with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Monsters moving into or through a terrain feature reduce their Movement characteristic by 2\".\n• Cannot move more than 4\" vertically through any terrain feature.\nMonsters can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player. They also ignore the effects of the Heavy keyword when making attacks..\nMonsters that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and subtract 1 from their Hit rolls."
+    "body": "Monster models must abide by the following when completing a Move Action:\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Monster successfully breaches the terrain and can be moved into or through that terrain feature. Monsters with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Reduce their Movement characteristic by 2\" when moving into or through a terrain feature This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.\n• Cannot move more than 4\" vertically through any terrain feature, unless benefitting from another keyword such as Fly that allows the model to ignore vertical movement distances.\nWhen using the Shoot Action, Monster models:\n• Can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player.\n• Can target enemy units with models in Base-to-Base contact\n• Ignore the effects of the Heavy keyword when making attacks\nMonster models are subject to the \"Hit Them From Behind!\" rule detailed under Making Attacks.\nMonster models that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and their Ballistic Skill by 1."
   },
   "beast": {
     "name": "Beast",
     "type": "keyword",
-    "body": "Models with the Beast keyword:\n• Have 2 Activation Points instead of 3.\n• Always possess the Relentless ability.\n• Must abide by the following when completing a Move Action:\n• Cannot enter terrain features with the Building keyword.\n• Cannot move more than 4\" vertically through any terrain feature.\n• Cannot complete the Mission Task Action."
+    "body": "Models with the Beast keyword have 2 Activation Points instead of 3, and cannot complete the Mission Task Action.\nBeast models must abide by the following when completing a Move Action:\n• Cannot enter terrain features with the Building keyword.\n• Cannot move more than 4\" vertically through any terrain feature."
   },
   "battleline": {
     "name": "Battleline",
@@ -112,7 +122,7 @@
   "psyker": {
     "name": "Psyker",
     "type": "keyword",
-    "body": "Psykers can access Psychic weapons available to their respective Faction, and typically possess unique psychic abilities. The specifics of each's Psyker's rules are covered in their Unit Profile."
+    "body": "Many units in Alt-Hammer have psychic abilities drawn from the powers of the Warp. These units always possess the Psyker keyword, typically possess Special Abilities marked as [Psychic], and can typically access Psychic-type Ranged attacks.\nUsing any Psychic abilities or attacks requires first taking a Psychic Test, which follows these steps:\n• Each time a unit uses its [Psychic] ability or makes a Psychic attack, the controlling player first rolls 2D6.\n• The specific [Psychic] ability will describe when that ability is used (i.e., during your Command Phase, or when the unit is Activated)\n• Psychic attacks are considered Ranged weapons, and thus a Psychic Test for making that attack is completed as part of a Shoot Action.\n• If the result of the roll is higher than the model's Leadership characteristic, the Psychic Test is passed, and the [Psychic] ability or Psychic attack can proceed as normal.\n• If the result of the roll is lower than the model's Leadership characteristic, the Psychic Test is failed, and the [Psychic] ability or Psychic attack cannot be used.\n• If the result of the roll is either two 1s or two 6s (i.e., a total value of 2 or 12), the unit suffers Perils of the Warp and immediately takes 2 D3 Mortal Wounds.\n• If the roll was a 2, the [Psychic] ability or Psychic attack cannot be used.\n• If the roll was a 12, the [Psychic] ability or Psychic attack can be used, but must target the closest unit - friendly or enemy.\n• If the unit suffering Perils of the Warp is destroyed as a result of the Mortal Wounds inflicted, that unit is considered to have the Deadly Demise D3+1 ability.\nNote that some faction rules or unit special abilities may impact the results of Psychic Tests, or create requirements for a Psyker to take additional Psychic Tests even when not making Psychic attacks or using [Psychic] abilities."
   },
   "small-profile": {
     "name": "Small Profile",
@@ -157,7 +167,7 @@
   "deep-strike": {
     "name": "Deep Strike",
     "type": "keyword",
-    "body": "Units where every model possesses the Deep Strike keyword can Enter the Battlefield from Strategic Reserve as detailed in the Core Activations section. However, these units can be placed anywhere on the battlefield that is at least 9\" horizontally and/or vertically from any enemy units."
+    "body": "Units where every model possesses the Deep Strike keyword can Enter the Battlefield from Strategic Reserves as detailed in the Core Activations section. However, these units can be placed anywhere on the battlefield that is at least 9\" horizontally and/or vertically from any enemy units."
   },
   "scout": {
     "name": "Scout [X]”",
@@ -167,32 +177,37 @@
   "stealth": {
     "name": "Stealth",
     "type": "keyword",
-    "body": "Units with the Stealth ability cannot be the subject of a Range attack if the attacking model is more than 12\" away."
+    "body": "When a unit with the Stealth ability is wholly positioned in a terrain feature with the Dense Cover keyword, that unit cannot be the target of a Ranged attack by an enemy unit that is more than 12\" away. However, if the unit with the Stealth ability makes a Ranged attack from a position where they would otherwise be benefitting from the Stealth ability, that unit loses the benefits of Stealth until the end of the Battle Round."
   },
   "unyielding": {
     "name": "Unyielding",
     "type": "keyword",
-    "body": "Units with the Unyielding keyword can use the Charge and Fight Action in an activation that began with a Fall Back."
+    "body": "Models with the Unyielding keyword can use the Charge and Fight Action in an activation that began with a Fall Back."
   },
   "relentless": {
     "name": "Relentless",
     "type": "keyword",
-    "body": "Units with the Relentless keyword can use the Charge and Fight Action in an activation that began with a Move action that included an advance."
+    "body": "Models with the Relentless keyword can use the Charge and Fight Action in an activation that began with a Move action that included an advance."
   },
   "fearless": {
     "name": "Fearless",
     "type": "keyword",
-    "body": "Units with the Fearless keyword never need to take a Battle Shock test."
+    "body": "Models with the Fearless keyword never need to take a Battle Shock Test. However, these models can become Battle Shocked through rules / abilities that force a unit to become Battle Shocked."
   },
   "transport": {
     "name": "Transport [X]",
     "type": "keyword",
-    "body": "Models with the Transport [X] keyword can transport a number of friendly Infantry models up to the value of X. Note that some units, models or wargear may identify that a model takes the place of more than 1 model for transport purposes. Further, models with the following keywords can never embark in a model with the Transport [X] ability: Fly, Jump Pack, Hover, Mounted, Vehicle, Walker, Swarm."
+    "body": "Models with the Transport [X] keyword can transport a number of friendly Infantry models equal to the value of X when those models have a Toughness characteristic of 4 or less. Each Infantry model with a Toughness characteristic of 5 or more take the place of 3 models.\nFurther, models with the following keywords can never embark in a model with the Transport [X] ability: Fly, Jump Pack, Hover, Mounted, Vehicle, Walker, Swarm."
   },
   "firing-deck": {
     "name": "Firing Deck [X]",
     "type": "keyword",
-    "body": "Models with the Firing Deck [X] ability are models that have the Transport [X] ability and feature hatches, ports or open-topped designs that enable embarked models to make Ranged attacks. The [X] in Transport [X] identifies how many embarked models can make Ranged attacks out of the Transport model as part of their unit's activation. Units, models or wargear that identify that a model takes the place of more than 1 model for transport purposes also count as that many models for the purposes of this ability as well."
+    "body": "Transport models with the Firing Deck [X] ability feature hatches, ports or open-topped designs that enable embarked models to make Ranged attacks. The [X] in Firing Deck [X] identifies how many embarked models can make Ranged attacks out of the Transport as part of their unit's activation. Units, models or wargear that identify that a model takes the place of more than 1 model for transport purposes also count as that many models for the purposes of this ability as well."
+  },
+  "assault-egress": {
+    "name": "Assault Egress",
+    "type": "keyword",
+    "body": "Transport models with the Assault Egress ability feature assault ramps or open-topped designs that allow embarked units to quickly disembark and charge enemy units. When a unit uses the Embark or Disembark from a Transport Action to disembark from a Transport with the Assault Egress ability, that unit can then Charge and Fight."
   },
   "deadly-demise": {
     "name": "Deadly Demise [X]",
@@ -212,17 +227,17 @@
   "pistol": {
     "name": "Pistol",
     "type": "keyword",
-    "body": "Units are eligible to make a Ranged attack using a weapon with this ability even if they Advanced as part of a Move Action or are in Base-to-base contact with enemy models."
+    "body": "Models are eligible to make a Ranged attack using a weapon with this ability even if they Advance as part of their Activation, or are in Base-to-Base Contact with enemy models."
   },
   "assault": {
     "name": "Assault",
     "type": "keyword",
-    "body": "Units are eligible to make a Ranged attack with this weapon even if they Advanced as part of a Move Action."
+    "body": "Models are eligible to make a Ranged attack with this weapon even if they Advance after a Move."
   },
   "heavy": {
     "name": "Heavy",
     "type": "keyword",
-    "body": "Infantry models making attacks with Heavy weapons do so as follows:\nFor Ranged attacks:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\n• Models that Move after making Ranged attacks reduce their Movement characteristic by half (rounding down), cannot Advance as part of that Move Action, and reduce their Initiative characteristic by 1.\nFor Melee attacks:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\nThese effects last until the end of the Battle Round."
+    "body": "Models making attacks with Heavy weapons do so as follows:\nFor Ranged attacks:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\n• Models that Move after making Ranged attacks reduce their Movement characteristic by half (rounding down), cannot Advance as part of that Move Action, and reduce their Initiative characteristic by 1.\nFor Melee attacks:\n• Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already Moved.\nThese effects last until the end of the Battle Round."
   },
   "rapid-fire": {
     "name": "Rapid Fire [X]",

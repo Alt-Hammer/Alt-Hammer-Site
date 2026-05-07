@@ -24,10 +24,27 @@
 (function () {
   'use strict';
 
+  // ── Load definitions from embedded JSON script tag ──────────────────────────
+
+  let _definitions = null;
+
+  function getDefinitions() {
+    if (_definitions) return _definitions;
+    const el = document.getElementById('ah-definitions-data');
+    if (!el) return null;
+    try {
+      _definitions = JSON.parse(el.textContent);
+    } catch (e) {
+      _definitions = null;
+    }
+    return _definitions;
+  }
+
+
   // ── Look up a definition by slug, with prefix-fallback ──────────────────────
 
   function lookupDefinition(slug) {
-    const defs = window.AH_DEFINITIONS;
+    const defs = getDefinitions();
     if (!defs) return null;
 
     // Exact match
@@ -197,8 +214,8 @@
 
   // ── Wire up all keyword spans ────────────────────────────────────────────────
 
-  function attachTooltips() {
-    const spans = document.querySelectorAll('span.keyword[data-term]');
+  function attachTooltips(spanList) {
+    const spans = spanList || document.querySelectorAll('span.keyword[data-term]');
 
     spans.forEach(function (el) {
       const def = lookupDefinition(el.dataset.term);
@@ -228,14 +245,17 @@
   // ── Initialise ───────────────────────────────────────────────────────────────
 
   function init() {
-    if (!window.AH_DEFINITIONS) {
-      // Definitions not embedded — tooltip system inactive, spans still styled
+    if (!document.getElementById('ah-definitions-data')) {
+      // Definitions tag not present — tooltip system inactive, spans still styled
       return;
     }
     buildTooltip();
     attachTooltips();
-    // Expose for dynamic re-attachment (unit profile cards injected after load)
+    // Expose for dynamic re-attachment (unit profile cards injected after load).
+    // window.AH_DEFINITIONS lets callers check whether definitions are loaded
+    // before passing a NodeList of newly-injected spans.
     window.__ahAttachTooltips = attachTooltips;
+    window.AH_DEFINITIONS = getDefinitions();
   }
 
   if (document.readyState === 'loading') {

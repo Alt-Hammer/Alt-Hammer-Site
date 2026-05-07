@@ -1246,6 +1246,19 @@
             "Rapid Fire 2"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A+1",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1274,6 +1287,19 @@
           "damage": "1",
           "keywords": [
             "Assault"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A+1",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks"
           ],
           "availability": ""
         }
@@ -1391,11 +1417,11 @@
     {
       "name": "Kroot Tri-blade",
       "section": "Ranged Weapons",
-      "points": 3,
+      "points": 12,
       "profiles": [
         {
           "profileName": "Ranged",
-          "points": 3,
+          "points": 12,
           "range": "6\"",
           "attacks": "1",
           "strength": "5",
@@ -1404,6 +1430,19 @@
           "keywords": [
             "Precision",
             "Sustained Hits 2"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "",
+          "attacks": "A+4",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Sustained Hits 3"
           ],
           "availability": ""
         }
@@ -1448,6 +1487,20 @@
           "damage": "3",
           "keywords": [
             "Assault"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A+2",
+          "strength": "S+3",
+          "ap": "-2",
+          "damage": "D3+1",
+          "keywords": [
+            "Lance",
+            "Lethal Hits"
           ],
           "availability": ""
         }
@@ -1547,124 +1600,6 @@
       "damage": "D3+1",
       "keywords": [
         "Precision",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Tri-blade",
-      "section": "Melee Weapons",
-      "points": 3,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 3,
-          "range": "",
-          "attacks": "A+4",
-          "strength": "S",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [
-            "Sustained Hits 3"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Sustained Hits 3"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Carbine",
-      "section": "Melee Weapons",
-      "points": 2,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 2,
-          "range": "-",
-          "attacks": "A+1",
-          "strength": "S",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [
-            "Extra Attacks"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Rifle",
-      "section": "Melee Weapons",
-      "points": 2,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 2,
-          "range": "-",
-          "attacks": "A+1",
-          "strength": "S",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [
-            "Extra Attacks"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Extra Attacks"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Kroot Spear",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 8,
-          "range": "-",
-          "attacks": "A+2",
-          "strength": "S+3",
-          "ap": "-2",
-          "damage": "D3+1",
-          "keywords": [
-            "Lance",
-            "Lethal Hits"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
         "Lethal Hits"
       ],
       "availability": ""

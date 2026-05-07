@@ -21,9 +21,9 @@ The main way your units and their wargear are characterized is through Keywords.
 
 
 All models in Alt-Hammer must abide by the following core limitations to how they function on the tabletop:
-1. A model cannot be moved over another model's base, or any part of the model itself if the model does not have a base. This does not apply to models with any of the following keywords: <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span>, <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span>, <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, or <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span>.
-2. A model can be equipped with multiple Ranged weapons, but can only make Ranged attacks with 1 of those Ranged weapons as part of a <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action. Some model type keywords supersede this standard limitation.
-3. A model can be equipped with multiple Melee weapons, but can only make Melee attacks with 1 of those Melee weapons as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>* *or <span class="keyword" data-term="fight" data-type="action">Fight</span> Action. This limitation does not apply to Melee weapons that have the <span class="keyword" data-term="extra-attacks" data-type="keyword">Extra Attacks</span> ability equipped by that model.
+- A model cannot be moved over another model's base, or any part of the model itself if the model does not have a base. This does not apply to models with any of the following keywords: <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span>, <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span>, <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, or <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span>.
+- A model can be equipped with multiple Ranged weapons, but can only make Ranged attacks with 1 of those Ranged weapons as part of a <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action. Some model type keywords supersede this standard limitation.
+- A model can be equipped with multiple Melee weapons, but can only make Melee attacks with 1 of those Melee weapons as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>* *or <span class="keyword" data-term="fight" data-type="action">Fight</span> Action. This limitation does not apply to Melee weapons that have the <span class="keyword" data-term="extra-attacks" data-type="keyword">Extra Attacks</span> ability equipped by that model.
 
 ### Core Model Type Keywords
 
@@ -31,53 +31,61 @@ All models in Alt-Hammer must abide by the following core limitations to how the
 All Models in Alt-Hammer will have 1 of the following Model Type Keywords, which provide specific rules for how that model can interact with other models, make attacks, and the tabletop and terrain.
 
 
-#### Infantry
+<h6 id="infantry">Infantry</h6>
 
 
 <span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> models must abide by the following when completing the <span class="keyword" data-term="move" data-type="action">Move</span> or <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>* *Actions:
-1. Treat any terrain feature that is less than 1" tall as if it was not there. However, moving over terrain features that are 1" or taller must be factored into the model's movement as vertical distance it must travel.
-2. Reduce their Movement characteristic by 2" when entering or exiting a terrain feature with the Building keyword. This is to represent models spending their energy finding safe entry points breaching through walls, or clambering over debris. <span class="keyword" data-term="move" data-type="action">Move</span>* *Actions that begin and end within a terrain feature with the Building keyword are not subject to this constraint, but are subject to vertical terrain feature measuring detailed above.
+- Treat any terrain feature that is less than 1" tall as if it was not there. However, moving over terrain features that are 1" or taller must be factored into the model's movement as vertical distance it must travel.
+- Reduce their Movement characteristic by 2" when entering or exiting a terrain feature with the Building keyword. This is to represent models spending their energy finding safe entry points breaching through walls, or clambering over debris. <span class="keyword" data-term="move" data-type="action">Move</span>* *Actions that begin and end within a terrain feature with the Building keyword are not subject to this constraint, but are subject to vertical terrain feature measuring detailed above.
 
-When Infantry models make Ranged attacks, they can choose to target more than 1 enemy unit if they possess more than 1 Ranged weapon. However, the attacking player can only choose 1 target to attack at the model's full Ballistic Skill. Ranged attacks against each additional unit targeted reduces the model's Ballistic Skill by 1. These reductions are applied in the order that the player chooses to make their attacks (i.e., the first weapon fired will have full Ballistic Skill, the second will have Ballistic Skill -1, the third will have Ballistic Skill -2, and so on). 
-
-
-#### Vehicle
+When Infantry models used the <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action, they can choose to target more than 1 enemy unit if they possess more than 1 Ranged weapon. However, the attacking player can only choose 1 target to attack at the model's full Ballistic Skill. Ranged attacks against each additional unit targeted reduces the model's Ballistic Skill by 1. These reductions are applied in the order that the player chooses to make their attacks (i.e., the first weapon fired will have full Ballistic Skill, the second will have Ballistic Skill -1, the third will have Ballistic Skill -2, and so on). 
 
 
-<span class="keyword" data-term="vehicles" data-type="keyword">Vehicles</span> must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
-1. The model must always move forwards or backwards relative to the front of the vehicle's hull (use reasonable logic to identify this based on the design of the vehicle!). When completing any form of Movement, a <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's hull. If the model will turn or pivot, reduce its Movement characteristic by 2".
-2. The model cannot move over any terrain features that are more than 2" tall relative to the ground.
-3. The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> successfully breaches the terrain and can be moved into or through that terrain feature. <span class="keyword" data-term="vehicles" data-type="keyword">Vehicles</span> with a Toughness characteristic of 12 or above reduce the Breach test to 2+.
-4. <span class="keyword" data-term="vehicles" data-type="keyword">Vehicles</span> moving into or through a terrain feature reduce their Movement characteristic by 2". This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.
-
-<span class="keyword" data-term="vehicles" data-type="keyword">Vehicles</span> can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player. They also ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making attacks. 
-
-<span class="keyword" data-term="vehicles" data-type="keyword">Vehicles</span> that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and subtract 1 from their Hit rolls.
+<h6 id="vehicle">Vehicle</h6>
 
 
-#### Monster
+<span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> models must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
+- The model must always move forwards or backwards relative to the front of the vehicle's hull (use reasonable logic to identify this based on the design of the vehicle!). When completing any form of Movement, a <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's hull. If the model will turn or pivot, reduce its Movement characteristic by 2".
+- The model cannot move over any terrain features that are more than 2" tall relative to the ground, unless benefitting from another keyword such as <span class="keyword" data-term="fly" data-type="keyword">Fly</span> that allows the model to ignore vertical movement distances.
+- The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> successfully breaches the terrain and can be moved into or through that terrain feature. <span class="keyword" data-term="vehicles" data-type="keyword">Vehicles</span> with a Toughness characteristic of 12 or above reduce the Breach test to 2+.
+- Reduce their Movement characteristic by 2" when moving into or through a terrain feature This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.
+
+When using the <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action, <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> models:
+- Can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player.
+- Can target enemy units with models in Base-to-Base contact
+- Ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making attacks 
+
+<span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> models are subject to the **"Hit Them From Behind!"** rule detailed under **Making Attacks**.
+
+<span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> models that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and their Ballistic Skill by 1.
+
+
+<h6 id="monster">Monster</h6>
 
 
 <span class="keyword" data-term="monster" data-type="keyword">Monster</span> models must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
-1. The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the <span class="keyword" data-term="monster" data-type="keyword">Monster</span> successfully breaches the terrain and can be moved into or through that terrain feature. <span class="keyword" data-term="monsters" data-type="keyword">Monsters</span> with a Toughness characteristic of 12 or above reduce the Breach test to 2+.
-2. <span class="keyword" data-term="monsters" data-type="keyword">Monsters</span> moving into or through a terrain feature reduce their Movement characteristic by 2". 
-3. Cannot move more than 4" vertically through any terrain feature.
+- The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the <span class="keyword" data-term="monster" data-type="keyword">Monster</span> successfully breaches the terrain and can be moved into or through that terrain feature. <span class="keyword" data-term="monsters" data-type="keyword">Monsters</span> with a Toughness characteristic of 12 or above reduce the Breach test to 2+.
+- Reduce their Movement characteristic by 2" when moving into or through a terrain feature This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.
+- Cannot move more than 4" vertically through any terrain feature, unless benefitting from another keyword such as <span class="keyword" data-term="fly" data-type="keyword">Fly</span> that allows the model to ignore vertical movement distances.
 
-<span class="keyword" data-term="monsters" data-type="keyword">Monsters </span>can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player. They also ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making attacks..
+When using the <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action, <span class="keyword" data-term="monster" data-type="keyword">Monster</span> models:
+- Can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player.
+- Can target enemy units with models in Base-to-Base contact
+- Ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making attacks 
 
-<span class="keyword" data-term="monsters" data-type="keyword">Monsters</span> that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and subtract 1 from their Hit rolls.
+<span class="keyword" data-term="monster" data-type="keyword">Monster</span> models are subject to the **"Hit Them From Behind!"** rule detailed under **Making Attacks**.
+
+<span class="keyword" data-term="monster" data-type="keyword">Monster</span> models that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and their Ballistic Skill by 1.
 
 
-#### Beast
+<h6 id="beast">Beast</h6>
 
 
-Models with the <span class="keyword" data-term="beast" data-type="keyword">Beast</span> keyword: 
-1. Have 2 Activation Points instead of 3.
-2. Always possess the <span class="keyword" data-term="relentless" data-type="keyword">Relentless </span>ability. 
-3. Must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
-4. Cannot enter terrain features with the <span class="keyword" data-term="building" data-type="keyword">Building</span> keyword.
-5. Cannot move more than 4" vertically through any terrain feature.
-6. Cannot complete the <span class="keyword" data-term="mission-task" data-type="action">Mission Task</span> Action.
+Models with the <span class="keyword" data-term="beast" data-type="keyword">Beast</span> keyword have 2 Activation Points instead of 3, and cannot complete the <span class="keyword" data-term="mission-task" data-type="action">Mission Task</span> Action.
+
+<span class="keyword" data-term="beast" data-type="keyword">Beast </span>models must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
+- Cannot enter terrain features with the <span class="keyword" data-term="building" data-type="keyword">Building</span> keyword.
+- Cannot move more than 4" vertically through any terrain feature.
 
 ### Additional Model Type Keywords
 
@@ -85,136 +93,149 @@ Models with the <span class="keyword" data-term="beast" data-type="keyword">Beas
 The following model type keywords can be found on any model in Alt-Hammer. These keywords provide further rules for how that model can interact with other models, make attacks, and the tabletop and terrain that may, in some instances, overwrite the core model type keywords that model possesses. These keywords can also impact force organization, provide pre-game abilities, and abilities used throughout the battle.
 
 
-#### Battleline
+<h6 id="battleline">Battleline</h6>
 
 
 Up to 2 of each unit with the <span class="keyword" data-term="battleline" data-type="keyword">Battleline</span> keyword can be taken in your army for every 500 points. <span class="keyword" data-term="battleline" data-type="keyword">Battleline</span> units are also eligible to make Bonus Activations, may be eligible for other Mission-specific rules, and often have interactions with faction-specific Army Rules and abilities.
 
 
-#### Character
+<h6 id="character">Character</h6>
 
 
 Up to 1 of each unit with the <span class="keyword" data-term="character" data-type="keyword">Character </span>keyword can be taken in your army for every 1,000 points. 
 
 Models with the <span class="keyword" data-term="character" data-type="keyword">Character</span> keyword can only be selected as the subject of an attack under the following conditions:
-1. The model is the closest model to the attacking unit when making a Ranged attack, and is not within 3" of any other friendly Units.
-2. The model is in base-to-base contact with the attacking model when making a Melee attack.
-3. The attacking model has the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability.
+- The model is the closest model to the attacking unit when making a Ranged attack, and is not within 3" of any other friendly Units.
+- The model is in base-to-base contact with the attacking model when making a Melee attack.
+- The attacking model has the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability.
 
 The conditions above do not apply to <span class="keyword" data-term="character" data-type="keyword">Character</span> units that also possess any of the following model type keywords: <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="monster" data-type="keyword">Monster</span>.
 
 
-#### Leader
+<h6 id="leader">Leader</h6>
 
 
 Models with the <span class="keyword" data-term="leader" data-type="keyword">Leader</span> keyword can choose to lead a friendly Unit. The Units that the <span class="keyword" data-term="leader" data-type="keyword">Leader</span> is eligible to lead are listed on its Unit Profile. <span class="keyword" data-term="leader" data-type="keyword">Leader</span> models and friendly Units they are leading is determined during your Pregame Setup, before the units are placed on the battlefield, and before the decision to declare that those units are either embarked in a Transport, or placed into Strategic Reserve. <span class="keyword" data-term="leader" data-type="keyword">Leader</span> models and the Unit they are leading count as a single unit for Activation purposes, and when an enemy unit selects them as the subject of an attack.
 
 
-#### Bodyguard
+<h6 id="bodyguard">Bodyguard</h6>
 
 
 When a model or unit with the <span class="keyword" data-term="bodyguard" data-type="keyword">Bodyguard</span> keyword is being led by a Leader unit with the <span class="keyword" data-term="character" data-type="keyword">Character</span> keyword, Damage that would be inflicted on that Character unit must be allocated to <span class="keyword" data-term="bodyguard" data-type="keyword">Bodyguard</span> model(s) instead.
 
 
-#### Walker
+<h6 id="walker">Walker</h6>
 
 
 Models with the <span class="keyword" data-term="walker" data-type="keyword">Walker</span> keyword must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
-1. Do not need to reduce their Movement characteristic when making a turn or a pivot.
-2. The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 2+ the <span class="keyword" data-term="walker" data-type="keyword">Walker</span> successfully breaches the terrain and can be moved into or through that terrain feature. 
-3. Cannot move more than 4" vertically through any terrain feature.
+- Do not need to reduce their Movement characteristic when making a turn or a pivot.
+- The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 2+ the <span class="keyword" data-term="walker" data-type="keyword">Walker</span> successfully breaches the terrain and can be moved into or through that terrain feature. 
+- Cannot move more than 4" vertically through any terrain feature.
 
 <span class="keyword" data-term="walkers" data-type="keyword">Walkers </span>ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making attacks. 
 
 
-#### Mounted
+<h6 id="mounted">Mounted</h6>
 
 
 Models with the <span class="keyword" data-term="mounted" data-type="keyword">Mounted</span> keyword must abide by the following when completing a <span class="keyword" data-term="move" data-type="action">Move</span> Action:
-1. The model must always move forwards relative to the front of the model's body (typically identified by the direction its head is facing, or equivalent feature such as hull front). 
-2. When completing any form of Movement, a Mounted model must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's body. If the model will turn or pivot, reduce its Movement characteristic by 2".
-3. Cannot enter terrain features with the <span class="keyword" data-term="building" data-type="keyword">Building</span> keyword.
-4. Cannot move more than 4" vertically through any terrain feature.
+- The model must always move forwards relative to the front of the model's body (typically identified by the direction its head is facing, or equivalent feature such as hull front). 
+- When completing any form of Movement, a Mounted model must decide whether it will turn or pivot as part of its movement, or go in a straight line relative to the front of the model's body. If the model will turn or pivot, reduce its Movement characteristic by 2".
+- Cannot enter terrain features with the <span class="keyword" data-term="building" data-type="keyword">Building</span> keyword.
+- Cannot move more than 4" vertically through any terrain feature.
 
-#### Swarm
+<h6 id="swarm">Swarm</h6>
 
 
 Models with the <span class="keyword" data-term="swarm" data-type="keyword">Swarm</span> keyword: 
-1. Have 2 Activation Points instead of 3.
-2. Cannot move more than 1" vertically through any terrain feature.
-3. Cannot complete the <span class="keyword" data-term="mission-task" data-type="action">Mission Task</span> Action.
+- Have 2 Activation Points instead of 3.
+- Cannot move more than 1" vertically through any terrain feature.
+- Cannot complete the <span class="keyword" data-term="mission-task" data-type="action">Mission Task</span> Action.
 
-#### Psyker
-
-
-<span class="keyword" data-term="psykers" data-type="keyword">Psykers</span> can access Psychic weapons available to their respective Faction, and typically possess unique psychic abilities. The specifics of each's <span class="keyword" data-term="psykers" data-type="keyword">Psyker's</span> rules are covered in their Unit Profile.
+<h6 id="psyker">Psyker</h6>
 
 
-#### Small Profile
+Many units in Alt-Hammer have psychic abilities drawn from the powers of the Warp. These units always possess the <span class="keyword" data-term="psyker" data-type="keyword">Psyker</span> keyword, typically possess Special Abilities marked as **[Psychic]**, and can typically access Psychic-type Ranged attacks. 
+
+Using any Psychic abilities or attacks requires first taking a Psychic Test, which follows these steps:
+- Each time a unit uses its **[Psychic]** ability or makes a Psychic attack, the controlling player first rolls 2D6. 
+- The specific **[Psychic]** ability will describe when that ability is used (i.e., during your Command Phase, or when the unit is Activated)
+- Psychic attacks are considered Ranged weapons, and thus a Psychic Test for making that attack is completed as part of a <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action.
+- If the result of the roll is higher than the model's Leadership characteristic, the Psychic Test is passed, and the **[Psychic]** ability or Psychic attack can proceed as normal.
+- If the result of the roll is lower than the model's Leadership characteristic, the Psychic Test is failed, and the **[Psychic]** ability or Psychic attack cannot be used.
+- If the result of the roll is either two 1s or two 6s (i.e., a total value of 2 or 12), the unit suffers Perils of the Warp and immediately takes 2 D3 Mortal Wounds.
+- If the roll was a 2, the **[Psychic]** ability or Psychic attack cannot be used.
+- If the roll was a 12, the **[Psychic]** ability or Psychic attack can be used, but must target the closest unit - friendly or enemy.
+- If the unit suffering Perils of the Warp is destroyed as a result of the Mortal Wounds inflicted, that unit is considered to have the <span class="keyword" data-term="deadly-demise-d31" data-type="keyword">Deadly Demise D3+1</span> ability.
+
+Note that some faction rules or unit special abilities may impact the results of Psychic Tests, or create requirements for a <span class="keyword" data-term="psyker" data-type="keyword">Psyker</span> to take additional Psychic Tests even when not making Psychic attacks or using **[Psychic]** abilities. 
+
+
+<h6 id="small-profile">Small Profile</h6>
 
 
 <span class="keyword" data-term="small-profile" data-type="keyword">Small Profile</span> models add 1 to their Toughness characteristic when they are the target of a Ranged attack. Additionally, these models gain the <span class="keyword" data-term="invulnerable-save-4" data-type="keyword">Invulnerable Save 4+</span> ability against Ranged attacks when wholly positioned in a terrain feature with the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keywords.
 
 
-#### Phase Shift
+<h6 id="phase-shift">Phase Shift</h6>
 
 
 Models with this ability can move horizontally through any model or Terrain Feature as if it was not there.
 
 
-#### Hover
+<h6 id="hover">Hover</h6>
 
 
 Models with the <span class="keyword" data-term="hover" data-type="keyword">Hover</span> keyword treat any terrain feature that is less than 4" tall as if it was not there and are not required to reduce their Movement characteristic when making a <span class="keyword" data-term="move" data-type="action">Move</span>* *action that includes a turn or pivot if the model also has other Model Type keywords (such as <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="monster" data-type="keyword">Monster</span>, and <span class="keyword" data-term="mounted" data-type="keyword">Mounted</span>) that would require it to do so. Any other restrictions to <span class="keyword" data-term="move" data-type="action">Move</span> actions determined by other keywords the model has are still in effect.
 
 
-#### Jump Pack
+<h6 id="jump-pack">Jump Pack</h6>
 
 
 When completing either a <span class="keyword" data-term="move" data-type="action">Move</span> or <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action, models with the <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span> keyword can ignore any terrain features that are less than 8" tall.
 
 
-#### Fly
+<h6 id="fly">Fly</h6>
 
 
 When completing either a <span class="keyword" data-term="move" data-type="action">Move</span> or <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action, models with the <span class="keyword" data-term="fly" data-type="keyword">Fly</span> keyword:
-1. Can ignore any terrain features that are less than 8" tall.
-2. Do not need to make a Breaching Test to enter terrain features with the Building keyword if another keyword the model possesses typically requires that they do so (ie, <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> or <span class="keyword" data-term="monster" data-type="keyword">Monster</span>).
-3. Are not required to reduce their Movement characteristic when making a <span class="keyword" data-term="move" data-type="action">Move</span>* *action that includes a turn or pivot if the model also has other Model Type keywords (such as <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="monster" data-type="keyword">Monster</span>, and <span class="keyword" data-term="mounted" data-type="keyword">Mounted</span>) that would require it to do so.
+- Can ignore any terrain features that are less than 8" tall.
+- Do not need to make a Breaching Test to enter terrain features with the Building keyword if another keyword the model possesses typically requires that they do so (ie, <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> or <span class="keyword" data-term="monster" data-type="keyword">Monster</span>).
+- Are not required to reduce their Movement characteristic when making a <span class="keyword" data-term="move" data-type="action">Move</span>* *action that includes a turn or pivot if the model also has other Model Type keywords (such as <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="monster" data-type="keyword">Monster</span>, and <span class="keyword" data-term="mounted" data-type="keyword">Mounted</span>) that would require it to do so.
 
 Further, enemy units making a Ranged attack against a model with the <span class="keyword" data-term="fly" data-type="keyword">Fly</span> keyword reduce their Hit rolls by 1, unless that model has not moved this Battle Round, or moved less than 16" this Battle Round as part of a <span class="keyword" data-term="move" data-type="action">Move</span> Action.
 
 
-#### Aircraft
+<h6 id="aircraft">Aircraft</h6>
 
 
 Models with the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> keyword have two values in their Movement characteristic: [X]"-[Y]". [X]" is the minimum value this model must* *move, and [Y]" is the maximum value this model can move.
 
 Additionally, models with the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> keyword:
-1. Cannot elect to <span class="keyword" data-term="remain-stationary" data-type="action">Remain Stationary</span> when it is Activated, unless the model also possesses the <span class="keyword" data-term="hover" data-type="keyword">Hover</span> keyword.
-2. Are not required to reduce their Movement characteristic when making a <span class="keyword" data-term="move" data-type="action">Move</span> action that includes a turn or pivot (a limitation that is imposed by other Model Type keywords such as <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="monster" data-type="keyword">Monster</span>). However, an Aircraft cannot turn or pivot more than 90 degrees in a single move unless the following 2 conditions are met:
-3. The model possesses the <span class="keyword" data-term="hover" data-type="keyword">Hover</span> keyword.
-4. The model moved more than 16" 
-5. Are always treated as being fully visible to attacking enemy units making Ranged attacks, even if the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span>'s position on the board is physically obscured. 
-6. Are always able to draw line of sight to an enemy unit they target for a Ranged attack. When making these attacks, weapons gain the <span class="keyword" data-term="ignores-cover" data-type="keyword">Ignores Cover</span> ability.
-7. Can never benefit from <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
-8. Cannot be the target of an enemy unit's <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>* *Action unless that enemy unit has the <span class="keyword" data-term="fly" data-type="keyword">Fly</span> or <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span> keywords.
-9. Cannot use the following Actions: <span class="keyword" data-term="fight" data-type="action">Fight</span>* *and <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>*.*
+- Cannot elect to <span class="keyword" data-term="remain-stationary" data-type="action">Remain Stationary</span> when it is Activated, unless the model also possesses the <span class="keyword" data-term="hover" data-type="keyword">Hover</span> keyword.
+- Are not required to reduce their Movement characteristic when making a <span class="keyword" data-term="move" data-type="action">Move</span> action that includes a turn or pivot (a limitation that is imposed by other Model Type keywords such as <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="monster" data-type="keyword">Monster</span>). However, an Aircraft cannot turn or pivot more than 90 degrees in a single move unless the following 2 conditions are met:
+- The model possesses the <span class="keyword" data-term="hover" data-type="keyword">Hover</span> keyword.
+- The model moved more than 16" 
+- Are always treated as being fully visible to attacking enemy units making Ranged attacks, even if the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span>'s position on the board is physically obscured. 
+- Are always able to draw line of sight to an enemy unit they target for a Ranged attack. When making these attacks, weapons gain the <span class="keyword" data-term="ignores-cover" data-type="keyword">Ignores Cover</span> ability.
+- Can never benefit from <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
+- Cannot be the target of an enemy unit's <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>* *Action unless that enemy unit has the <span class="keyword" data-term="fly" data-type="keyword">Fly</span> or <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span> keywords.
+- Cannot use the following Actions: <span class="keyword" data-term="fight" data-type="action">Fight</span>* *and <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>*.*
 
 Further, enemy units making a Ranged attack against an <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> reduce their Hit rolls by 1, unless that <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> model moved less than 16" this Battle Round.
 
 
-#### Titanic
+<h6 id="titanic">Titanic</h6>
 
 
 Model with the <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span> keyword:
-1. Can never benefit from <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
-2. Cannot benefit from the <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> keyword while any part of the model is visible to an attacking enemy model using true line of sight. 
-3. Treat the <span class="keyword" data-term="ordnance" data-type="keyword">Ordnance</span> wargear ability as if it was the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> wargear ability when making Ranged attacks.
-4. Can move through terrain features unless that terrain feature has the Impassable Terrain keyword. When they do so, reduce their Movement characteristic by 4". After a model with the Titanic keyword has moved through a terrain feature, remove that terrain feature from the tabletop and replace it with a terrain feature (or area marker) that represents <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground </span>only, unless the terrain feature has the <span class="keyword" data-term="hill" data-type="keyword">Hill</span> keyword. This is to reflect the total destructive impact of such a large machine or creature traversing any physical structures, vegetation, or other objects. (Remember that terrain features with the <span class="keyword" data-term="impassable-terrain" data-type="keyword">Impassable Terrain</span> keyword cannot be moved through or over unless a model has the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> or <span class="keyword" data-term="fly" data-type="keyword">Fly</span> keywords!) 
-5. Can move over and passed enemy and friendly models as if they were not there. Additionally, when making a move passed models, or ending a move within Base-to-base contact of a model (ie, as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action), roll a D6 for each such model. On a 5+ that model suffers a Mortal Wound. This represents that model - friend, or foe - suffering the consequences of being unable to get out of the way of the <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span> model in time!
+- Can never benefit from <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
+- Cannot benefit from the <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> keyword while any part of the model is visible to an attacking enemy model using true line of sight. 
+- Treat the <span class="keyword" data-term="ordnance" data-type="keyword">Ordnance</span> wargear ability as if it was the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> wargear ability when making Ranged attacks.
+- Can move through terrain features unless that terrain feature has the Impassable Terrain keyword. When they do so, reduce their Movement characteristic by 4". After a model with the Titanic keyword has moved through a terrain feature, remove that terrain feature from the tabletop and replace it with a terrain feature (or area marker) that represents <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground </span>only, unless the terrain feature has the <span class="keyword" data-term="hill" data-type="keyword">Hill</span> keyword. This is to reflect the total destructive impact of such a large machine or creature traversing any physical structures, vegetation, or other objects. (Remember that terrain features with the <span class="keyword" data-term="impassable-terrain" data-type="keyword">Impassable Terrain</span> keyword cannot be moved through or over unless a model has the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> or <span class="keyword" data-term="fly" data-type="keyword">Fly</span> keywords!) 
+- Can move over and passed enemy and friendly models as if they were not there. Additionally, when making a move passed models, or ending a move within Base-to-base contact of a model (ie, as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action), roll a D6 for each such model. On a 5+ that model suffers a Mortal Wound. This represents that model - friend, or foe - suffering the consequences of being unable to get out of the way of the <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span> model in time!
 
-#### Infiltrator
+<h6 id="infiltrator">Infiltrator</h6>
 
 
 Units where every model possesses the <span class="keyword" data-term="infiltrator" data-type="keyword">Infiltrator</span> keyword can be set up anywhere in No Man's Land that is at least 9" horizontally or diagonally from the edge of the enemy deployment zone that borders No Man's Land, and at least 9" horizontally and/or vertically from any enemy units already deployed using this ability. 
@@ -222,43 +243,43 @@ Units where every model possesses the <span class="keyword" data-term="infiltrat
 Additionally, models with this ability ignore modifiers to their Movement characteristic when moving through <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
 
 
-#### Deep Strike
+<h6 id="deep-strike">Deep Strike</h6>
 
 
 Units where every model possesses the Deep Strike keyword can <span class="keyword" data-term="enter-the-battlefield-from-strategic-reserves" data-type="action">Enter the Battlefield from Strategic Reserves</span> as detailed in the Core Activations section. However, these units can be placed anywhere on the battlefield that is at least 9" horizontally and/or vertically from any enemy units.
 
 
-#### Scout [X]"
+<h6 id="scout-x">Scout [X]"</h6>
 
 
 Units where every model possesses the Scouts keyword can complete a Normal Move up to [X]" before the start of the Activation Phase in Battle Round 1. If each player have units with this ability, the player with the Initiative resolves the first Scout move, and players alternate through any remaining units with Scout moves thereafter.
 
 
-#### Stealth
+<h6 id="stealth">Stealth</h6>
 
 
 When a unit with the Stealth ability is wholly positioned in a terrain feature with the <span class="keyword" data-term="dense-cover" data-type="keyword">Dense Cover</span> keyword, that unit cannot be the target of a Ranged attack by an enemy unit that is more than 12" away. However, if the unit with the Stealth ability makes a Ranged attack from a position where they would otherwise be benefitting from the Stealth ability, that unit loses the benefits of Stealth until the end of the Battle Round.
 
 
-#### Unyielding
+<h6 id="unyielding">Unyielding</h6>
 
 
 Models with the <span class="keyword" data-term="unyielding" data-type="keyword">Unyielding</span> keyword can use the <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action in an activation that began with a <span class="keyword" data-term="fall-back" data-type="action">Fall Back.</span> 
 
 
-#### Relentless
+<h6 id="relentless">Relentless</h6>
 
 
 Models with the <span class="keyword" data-term="relentless" data-type="keyword">Relentless</span> keyword can use the <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action in an activation that began with a <span class="keyword" data-term="move" data-type="action">Move</span> action that included an <span class="keyword" data-term="advance" data-type="action">advance</span>*.*
 
 
-#### Fearless
+<h6 id="fearless">Fearless</h6>
 
 
 Models with the <span class="keyword" data-term="fearless" data-type="keyword">Fearless</span> keyword never need to take a Battle Shock Test. However, these models can become Battle Shocked through rules / abilities that force a unit to become Battle Shocked.
 
 
-#### Transport [X]
+<h6 id="transport-x">Transport [X]</h6>
 
 
 Models with the <span class="keyword" data-term="transport-x" data-type="keyword">Transport [X]</span> keyword can transport a number of friendly <span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> models equal to the value of X when those models have a Toughness characteristic of 4 or less. Each <span class="keyword" data-term="infantry" data-type="keyword">Infantry</span> model with a Toughness characteristic of 5 or more take the place of 3 models.
@@ -266,19 +287,19 @@ Models with the <span class="keyword" data-term="transport-x" data-type="keyword
 Further, models with the following keywords can never embark in a model with the <span class="keyword" data-term="transport-x" data-type="keyword">Transport [X]</span> ability: <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span>, <span class="keyword" data-term="hover" data-type="keyword">Hover</span>, <span class="keyword" data-term="mounted" data-type="keyword">Mounted</span>, <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span>, <span class="keyword" data-term="walker" data-type="keyword">Walker</span>, <span class="keyword" data-term="swarm" data-type="keyword">Swarm</span>.
 
 
-#### Firing Deck [X]
+<h6 id="firing-deck-x">Firing Deck [X]</h6>
 
 
 Transport models with the <span class="keyword" data-term="firing-deck-x" data-type="keyword">Firing Deck [X]</span> ability feature hatches, ports or open-topped designs that enable embarked models to make Ranged attacks. The [X] in <span class="keyword" data-term="firing-deck-x" data-type="keyword">Firing Deck [X]</span> identifies how many embarked models can make Ranged attacks out of the <span class="keyword" data-term="transport" data-type="keyword">Transport</span> as part of their unit's activation. Units, models or wargear that identify that a model takes the place of more than 1 model for transport purposes also count as that many models for the purposes of this ability as well.
 
 
-#### Assault Egress
+<h6 id="assault-egress">Assault Egress</h6>
 
 
 <span class="keyword" data-term="transport" data-type="keyword">Transport</span> models with the <span class="keyword" data-term="assault-egress" data-type="keyword">Assault Egress</span> ability feature assault ramps or open-topped designs that allow embarked units to quickly disembark and charge enemy units. When a unit uses the <span class="keyword" data-term="embark-or-disembark-from-a-transport" data-type="action">Embark or Disembark from a Transport</span> Action to disembark from a <span class="keyword" data-term="transport" data-type="keyword">Transport</span> with the <span class="keyword" data-term="assault-egress" data-type="keyword">Assault Egress</span> ability, that unit can then <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span>.
 
 
-#### Deadly Demise [X]
+<h6 id="deadly-demise-x">Deadly Demise [X]</h6>
 
 
 When a model with the <span class="keyword" data-term="deadly-demise-x" data-type="keyword">Deadly Demise [X]</span> ability is destroyed, roll a D6. On a roll of a 1 or a 6, this ability takes effect. When it does so, each unit with at least 1 model within 6" of this unit suffers [X] Mortal Wounds.
@@ -290,13 +311,13 @@ When a model with the <span class="keyword" data-term="deadly-demise-x" data-typ
 Many units and models possess enhanced protective abilities in addition to the Armour Save characteristic identified on their profile either through unique wargear they can acquire, or their own extraordinary physical properties. These protective abilities take the form of the following keywords.
 
 
-#### Invulnerable Save [X]+
+<h6 id="invulnerable-save-x">Invulnerable Save [X]+</h6>
 
 
 Models with this ability possess an Invulnerable Save of [X]+, where [X] is the maximum value that their Armour Save characteristic can be reduced to. For example, a model that has a base Armour Save characteristic of 3+ is the target of an attack that has an Armour Piercing value of -3, which would reduce their Armour Save characteristic to 6+. However, the model also possesses the <span class="keyword" data-term="invulnerable-save-4" data-type="keyword">Invulnerable Save 4+</span> ability, and therefor the Armour Piercing value of the attack is superseded by this ability, allowing the model to make its Armour Save on a 4+ instead of a 6+.
 
 
-#### Feel No Pain [X]+
+<h6 id="feel-no-pain-x">Feel No Pain [X]+</h6>
 
 
 Models with this ability possess an additional saving throw made against each point of Damage inflicted on them by an enemy's attack, where the value of [X]+ determines whether that point of Damage is taken by the model with this ability. For example, a model with a Wounds characteristic of 4 and the Feel No Pain 6+ ability is successfully wounded by an attack with a Damage characteristic of 3. The model rolls 3 dice - one for each point of Damage - and rolls a 2, 5 and 6. This means the model successfully avoided 1 of the 3 points of Damage from that attack with the roll of a 6, resulting in only 2 Damage taken and a loss of 2 of its 4 Wounds.
@@ -306,221 +327,221 @@ Models with this ability possess an additional saving throw made against each po
 
 
 
-#### Pistol
+<h6 id="pistol">Pistol</h6>
 
 
 Models are eligible to make a Ranged attack using a weapon with this ability even if they <span class="keyword" data-term="advance" data-type="action">Advance</span> as part of their Activation, or are in Base-to-Base Contact with enemy models. 
 
 
-#### Assault
+<h6 id="assault">Assault</h6>
 
 
 Models are eligible to make a Ranged attack with this weapon even if they <span class="keyword" data-term="advance" data-type="action">Advance</span> after a <span class="keyword" data-term="move" data-type="action">Move</span>.
 
 
-#### Heavy
+<h6 id="heavy">Heavy</h6>
 
 
 Models making attacks with <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> weapons do so as follows:
 
 For Ranged attacks: 
-1. Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already <span class="keyword" data-term="moved" data-type="action">Moved</span>. 
-2. Models that <span class="keyword" data-term="move" data-type="action">Move</span> after making Ranged attacks reduce their Movement characteristic by half (rounding down), cannot <span class="keyword" data-term="advance" data-type="action">Advance</span> as part of that <span class="keyword" data-term="move" data-type="action">Move</span> Action, and reduce their Initiative characteristic by 1. 
+- Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already <span class="keyword" data-term="moved" data-type="action">Moved</span>. 
+- Models that <span class="keyword" data-term="move" data-type="action">Move</span> after making Ranged attacks reduce their Movement characteristic by half (rounding down), cannot <span class="keyword" data-term="advance" data-type="action">Advance</span> as part of that <span class="keyword" data-term="move" data-type="action">Move</span> Action, and reduce their Initiative characteristic by 1. 
 
 For Melee attacks:
-1. Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already <span class="keyword" data-term="moved" data-type="action">Moved</span>. 
+- Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already <span class="keyword" data-term="moved" data-type="action">Moved</span>. 
 
 These effects last until the end of the Battle Round.
 
 
-#### Rapid Fire [X]
+<h6 id="rapid-fire-x">Rapid Fire [X]</h6>
 
 
 Weapons with this ability increase their Attacks characteristic by [X] when making Ranged attacks at enemy models that are half of the weapon's Range characteristic or less from the bearer.
 
 
-#### Grenade
+<h6 id="grenade">Grenade</h6>
 
 
 A maximum of 1 model in every 5 models in a unit can make a Ranged attack with a <span class="keyword" data-term="grenade" data-type="keyword">Grenade</span> type weapon as part of a <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action.
 
 
-#### Torrent
+<h6 id="torrent">Torrent</h6>
 
 
 Models making a Ranged attack using a weapon with the <span class="keyword" data-term="torrent" data-type="keyword">Torrent</span> keyword automatically Hit their target.
 
 
-#### Precision
+<h6 id="precision">Precision</h6>
 
 
 Models making an attack using a weapon with the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> keyword always choose a specific enemy model - including models with the <span class="keyword" data-term="character" data-type="keyword">Character</span> keyword - as their target. All other criteria for a model being an eligible target (ie, line of sight) apply to this attack.
 
 
-#### Ordnance
+<h6 id="ordnance">Ordnance</h6>
 
 
 Models are only eligible to make a Ranged attack using a weapon with the <span class="keyword" data-term="ordnance" data-type="keyword">Ordnance</span> keyword if they first <span class="keyword" data-term="remained-stationary" data-type="action">Remained Stationary</span> this Activation, unless the model possesses the <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span> keyword. Instead, Models with the <span class="keyword" data-term="titanic" data-type="keyword">Titanic</span> keyword:
-1. Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already <span class="keyword" data-term="moved" data-type="action">Moved</span>. 
-2. Reduce their Movement characteristic by half (rounding down) if they <span class="keyword" data-term="move" data-type="action">Move</span> after making Ranged attacks, and cannot <span class="keyword" data-term="advance" data-type="action">Advance</span> as part of that <span class="keyword" data-term="move" data-type="action">Move</span> Action, and reduce their Initiative characteristic by 1.
+- Reduce Hit rolls by 1 and Initiative characteristic by 1 if their unit has already <span class="keyword" data-term="moved" data-type="action">Moved</span>. 
+- Reduce their Movement characteristic by half (rounding down) if they <span class="keyword" data-term="move" data-type="action">Move</span> after making Ranged attacks, and cannot <span class="keyword" data-term="advance" data-type="action">Advance</span> as part of that <span class="keyword" data-term="move" data-type="action">Move</span> Action, and reduce their Initiative characteristic by 1.
 
-#### Indirect Fire
+<h6 id="indirect-fire">Indirect Fire</h6>
 
 
 Models can target enemy units that it cannot draw line of sight to using weapons with this keyword. When doing so, the enemy units are considered to have <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span>. <span class="keyword" data-term="indirect-fire" data-type="keyword">Indirect Fire</span> attacks can never benefit from the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability under any circumstances. 
 
 
-#### Blast [X]"
+<h6 id="blast-x">Blast [X]"</h6>
 
 
 Weapons with the <span class="keyword" data-term="blast-x" data-type="keyword">Blast [X]"</span> ability always include some amount of randomly generated attacks (in the form of D6, 2D6, D3+3, etc.) as identified in the weapon's Attacks characteristic, where [X]" determines the weapon's Blast radius. Models making a Ranged attack using a weapon with the Blast [X]" keyword do so as follows:
-1. **Place the Blast Marker:** After selecting a weapon with the Blast [X]" keyword, place a round 25mm / ~1" marker anywhere within range and line of sight of the attacking model. The marker can be placed over enemy models, including those in base-to-base contact with friendly models.
-2. **Determine Units Hit:** Identify all units (friendly and enemy) with at least one model wholly or partially within the Blast radius.
-3. **Allocate Attacks:** Determine the number of attacks as indicated by the weapon's profile (e.g., D6, 2D6, D3+3, etc.). For every 5 models within the Blast radius, add 1 additional attack to the total pool.
-4. **Assign Attacks to Units:** Divide the total number of attacks as evenly as possible among all units within the Blast radius. Odd, additional attacks - ie, the seventh attack out of a total of 7, for example - are assigned to the unit with the most models within the Blast radius.
-5. **Resolve Attack Sequence for Each Unit:** For each unit affected, resolve the attack sequence as normal, applying any modifiers to that specific unit from abilities affecting that unit. 
+- **Place the Blast Marker:** After selecting a weapon with the Blast [X]" keyword, place a round 25mm / ~1" marker anywhere within range and line of sight of the attacking model. The marker can be placed over enemy models, including those in base-to-base contact with friendly models.
+- **Determine Units Hit:** Identify all units (friendly and enemy) with at least one model wholly or partially within the Blast radius.
+- **Allocate Attacks:** Determine the number of attacks as indicated by the weapon's profile (e.g., D6, 2D6, D3+3, etc.). For every 5 models within the Blast radius, add 1 additional attack to the total pool.
+- **Assign Attacks to Units:** Divide the total number of attacks as evenly as possible among all units within the Blast radius. Odd, additional attacks - ie, the seventh attack out of a total of 7, for example - are assigned to the unit with the most models within the Blast radius.
+- **Resolve Attack Sequence for Each Unit:** For each unit affected, resolve the attack sequence as normal, applying any modifiers to that specific unit from abilities affecting that unit. 
 
 **Note on Interactions between**<span class="keyword" data-term="blast" data-type="keyword"> Blast</span>** & **<span class="keyword" data-term="stealth" data-type="keyword">Stealth</span>**:** Blast attacks can only be allocated to enemy units benefitting from the Stealth ability if other enemy units are within the Blast radius. This is to represent your units not wasting their shots on areas where they can't identify any targets.
 
 
-#### Beam [X]
+<h6 id="beam-x">Beam [X]</h6>
 
 
 Models making a Ranged attack using a weapon with the <span class="keyword" data-term="beam-x" data-type="keyword">Beam [X]</span> keyword do so as follows:
-1. Select the target unit for the attack.
-2. Roll to Hit.
-3. If the Hit is successful, use a 1" wide straight edge (ie, a tape measure, or similar) to draw a straight line between the bearer's base to any visible part of the target unit. 
-4. Identify any units - both yours and your opponents - with at least 1 model within 1" of the straight line. Each unit that meets the above criteria suffers [X] Mortal Wounds.
-5. Complete the attack sequence against the target unit of the attack as normal.
+- Select the target unit for the attack.
+- Roll to Hit.
+- If the Hit is successful, use a 1" wide straight edge (ie, a tape measure, or similar) to draw a straight line between the bearer's base to any visible part of the target unit. 
+- Identify any units - both yours and your opponents - with at least 1 model within 1" of the straight line. Each unit that meets the above criteria suffers [X] Mortal Wounds.
+- Complete the attack sequence against the target unit of the attack as normal.
 
 Disregard steps 3 and 4 if you are making an attack with a <span class="keyword" data-term="beam-x" data-type="keyword">Beam [X]</span> weapon against a unit with the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> or <span class="keyword" data-term="fly" data-type="keyword">Fly</span> keywords.
 
 
-#### Anti-Air
+<h6 id="anti-air">Anti-Air</h6>
 
 
 Models making an attack using a weapon with the <span class="keyword" data-term="anti-air" data-type="keyword">Anti-Air </span>ability increase their Ballistic Skill by 1 and count every Hit as a Critical Hit against enemy units that possess the <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> or <span class="keyword" data-term="fly" data-type="keyword">Fly</span> keywords.
 
 
-#### Sustained Hits [X]
+<h6 id="sustained-hits-x">Sustained Hits [X]</h6>
 
 
 Models making an attack using a weapon with the <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability add [X] additional Hits for each Critical Hit scored. These [X] additional Hits do not count as Critical Hits.
 
 
-#### Lethal Hits
+<h6 id="lethal-hits">Lethal Hits</h6>
 
 
 Attacks made with the <span class="keyword" data-term="lethal-hits" data-type="keyword">Lethal Hits</span> ability increase their Armour Penetration characteristic by 1 when that attack scores a Critical Hit. 
 
 
-#### Lance
+<h6 id="lance">Lance</h6>
 
 
 Add 1 to the Wound roll each time a Melee attack is made using a weapon that has the <span class="keyword" data-term="lance" data-type="keyword">Lance</span> ability if the bearer attacked with this weapon as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action.
 
 
-#### Anti-[KEYWORD] [X]+
+<h6 id="anti-keyword-x">Anti-[KEYWORD] [X]+</h6>
 
 
 Models making an attack using a weapon with the <span class="keyword" data-term="anti-keyword-x" data-type="keyword">Anti-[Keyword] [X]</span> ability score a Critical Wound on [X]+ against enemy units that possess the corresponding <span class="keyword" data-term="keyword" data-type="keyword">[Keyword]</span>.
 
 
-#### Devastating Wounds
+<h6 id="devastating-wounds">Devastating Wounds</h6>
 
 
 Models making an attack that scores a Critical Wound using a weapon with the <span class="keyword" data-term="devastating-wounds" data-type="keyword">Devastating Wounds</span> keyword inflict a number of Mortal Wounds equal to the Damage characteristic of the attack.
 
 
-#### Hazardous [X]
+<h6 id="hazardous-x">Hazardous [X]</h6>
 
 
 Models that roll a 1 to Hit suffer [X] Mortal Wounds when making attacks using a weapon with the <span class="keyword" data-term="hazardous" data-type="keyword">Hazardous</span> ability.
 
 
-#### Poison [X]
+<h6 id="poison-x">Poison [X]</h6>
 
 
 Models (excluding those with the <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> keyword) suffer additional Damage equal to [X] on a Critical Wound from attacks made with weapons that possess the Poison keyword.
 
 
-#### Melta [X]
+<h6 id="melta-x">Melta [X]</h6>
 
 
 A ranged attack using a weapon with the Melta [X] keyword adds [X] to that attack's Strength and Damage characteristics if the positions of the bearer and target enemy unit meet one of the following conditions:
-1. The bearer is within half of the weapon's Range characteristic or less from the target enemy unit, or,
-2. The bearer is within 9" of the target enemy unit.
+- The bearer is within half of the weapon's Range characteristic or less from the target enemy unit, or,
+- The bearer is within 9" of the target enemy unit.
 
-#### Harpoon
+<h6 id="harpoon">Harpoon</h6>
 
 
 Models Hit by 1 or more <span class="keyword" data-term="harpoon" data-type="keyword">Harpoon</span> weapons:
-1. Reduce their Activation Points by 1
-2. Must remain within a distance equal to the Harpoon weapon's Range from the attacking model until:
-3. The attacking model uses the Harpoon weapon again as part of a subsequent attack, or,
-4. The attacking model makes a subsequent attack of any kind.
+- Reduce their Activation Points by 1
+- Must remain within a distance equal to the Harpoon weapon's Range from the attacking model until:
+- The attacking model uses the Harpoon weapon again as part of a subsequent attack, or,
+- The attacking model makes a subsequent attack of any kind.
 
 Additionally, models Hit by 1 or more <span class="keyword" data-term="harpoon" data-type="keyword">Harpoon</span> weapons can *drag* attacking models, or be themselves *dragged* by those attacking models. This works as follows:
-1. If the target's Toughness is lower than the attacking model's Strength, the attacker can *drag* the target when they move, but the target must stay within the Harpoon weapon's Range.
-2. If the target's Toughness is equal to or higher than the attacking model's Strength, the target can *drag* the attacker when they move, but the attacker must stay within the Harpoon weapon's Range.
+- If the target's Toughness is lower than the attacking model's Strength, the attacker can *drag* the target when they move, but the target must stay within the Harpoon weapon's Range.
+- If the target's Toughness is equal to or higher than the attacking model's Strength, the target can *drag* the attacker when they move, but the attacker must stay within the Harpoon weapon's Range.
 
 In instances where multiple <span class="keyword" data-term="harpoon" data-type="keyword">Harpoon</span> weapons have successfully Hit a single model, then use the cumulative Strength of all attacking models to determine which of the above scenarios applies.
 
 Further, Models Hit by 1 or more <span class="keyword" data-term="harpoon" data-type="keyword">Harpoon</span> weapons can complete a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action against any enemy units. However, all of the above restrictions must be observed when resolving that <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action.
 
 
-#### Ignores Cover
+<h6 id="ignores-cover">Ignores Cover</h6>
 
 
 Enemy units that must make an Armour Save from attacks with the Ignores Cover ability never receive the benefits provided from <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> or <span class="keyword" data-term="dense-cover" data-type="keyword">Dense Cover</span>.
 
 
-#### Ensnare
+<h6 id="ensnare">Ensnare</h6>
 
 
 Units successfully hit by a weapon with the <span class="keyword" data-term="ensnare" data-type="keyword">Ensnare</span> keyword reduce their Activation Points by 1 for the remainder of the Battle Round in addition to any other effects or damage inflicted by the weapon. These weapons have no effect on models with the <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> keyword. 
 
 
-#### Haywire
+<h6 id="haywire">Haywire</h6>
 
 
 <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> models successfully hit by <span class="keyword" data-term="haywire" data-type="keyword">Haywire </span>weapons reduce their Activation Points by 1 for the remainder of the Battle Round in addition to any other effects or damage inflicted by the weapon.
 
 
-#### Extra Attacks
+<h6 id="extra-attacks">Extra Attacks</h6>
 
 
 Models equipped with Melee weapons that have the <span class="keyword" data-term="extra-attacks" data-type="keyword">Extra Attacks</span> ability can make Melee attacks with any such weapons in addition to Melee attacks with a weapon that does not have this ability.
 
 
-#### Twin-Linked
+<h6 id="twin-linked">Twin-Linked</h6>
 
 
 The Twin-linked ability is never found on a weapon's profile, but instead can be added to a weapon's profile by units that offer this ability as part of their wargear options in the form of paired weapons. For example, some units may allow models to be equipped with Twin-Linked Heavy Bolters, or Twin-Linked Lightning Claws, etc. as an option among potentially others. The <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-Linked</span> ability makes the following modifications to a weapon's profile: 
-1. Increase the Attacks characteristic by 1.
-2. Grants the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability, or, if the paired weapons already have the <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X] </span>ability, then the value of [X] for it is increased by 1.
-3. If the weapon cannot have the <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability because it is not required to make Hit rolls (ie, because it has the <span class="keyword" data-term="torrent" data-type="keyword">Torrent</span> keyword), then the weapon's Attacks characteristic is increased by 3 instead of 1.
+- Increase the Attacks characteristic by 1.
+- Grants the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability, or, if the paired weapons already have the <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X] </span>ability, then the value of [X] for it is increased by 1.
+- If the weapon cannot have the <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability because it is not required to make Hit rolls (ie, because it has the <span class="keyword" data-term="torrent" data-type="keyword">Torrent</span> keyword), then the weapon's Attacks characteristic is increased by 3 instead of 1.
 
 For example, a Twin-Linked Heavy Bolter will have 1 more attack (for a total of 4) than a single Heavy Bolter, and would have the <span class="keyword" data-term="sustained-hits-2" data-type="keyword">Sustained Hits 2</span> ability (adding 1 to the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability a Heavy Bolter has as standard).
 
 The Twin-linked ability is accessed via a Faction's Wargear Upgrades and uses a variable points cost system based on various weapon characteristics.
 
 
-#### Smoke [X]"
+<h6 id="smoke-x">Smoke [X]"</h6>
 
 
 Smoke is a special form of blast attack that provides an area effect instead of damage. To complete an attack using a weapon or wargear with the smoke ability:
-1. **Place the Smoke Marker:** Place a round 25mm / ~1" marker anywhere within range and line of sight of the attacking model. The marker can be placed over enemy models, including those in base-to-base contact with friendly models. 
-2. Leave this marker in place until the end of the Battle Round. The effect of the smoke attack lasts until the end of the Battle Round.
-3. Do not roll to Hit. Smoke attacks do not incur Damage of any kind, and thus no further attack sequence actions apply once the smoke marker has been placed.
+- **Place the Smoke Marker:** Place a round 25mm / ~1" marker anywhere within range and line of sight of the attacking model. The marker can be placed over enemy models, including those in base-to-base contact with friendly models. 
+- Leave this marker in place until the end of the Battle Round. The effect of the smoke attack lasts until the end of the Battle Round.
+- Do not roll to Hit. Smoke attacks do not incur Damage of any kind, and thus no further attack sequence actions apply once the smoke marker has been placed.
 
 **For Units making Ranged Attacks near Smoke Markers: **Each time a unit makes a Ranged attack that draws line of sight within [X]" of the smoke attack's marker, reduce the Ballistic Skill of that attack to 2.
 
 **For Fights:**
-1. Each time a unit completes a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action that involves moving some or all of its models within [X]" of the smoke marker, reduce the Initiative characteristic of those models by 2.
-2. Each time a model that is positioned within [X]" of the smoke marker is selected to <span class="keyword" data-term="fight" data-type="action">Fight</span>, reduce Hit rolls by 1.
+- Each time a unit completes a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action that involves moving some or all of its models within [X]" of the smoke marker, reduce the Initiative characteristic of those models by 2.
+- Each time a model that is positioned within [X]" of the smoke marker is selected to <span class="keyword" data-term="fight" data-type="action">Fight</span>, reduce Hit rolls by 1.
 
-#### Combi Weapons
+<h6 id="combi-weapons">Combi Weapons</h6>
 
 
 Combi-weapons combine 2 or more typical weapon profiles into a single piece of wargear. When making attacks, core model type keywords of the bearer (i.e. Infantry, Monster, Vehicle, etc.) must be observed.
@@ -538,47 +559,47 @@ Every terrain feature used in an Alt-Hammer battle should possess at least 1 of 
 Prior to starting your Alt-Hammer battle, players should establish which terrain features possess which of the following Terrain Attribute keywords.
 
 
-#### Light Cover
+<h6 id="light-cover">Light Cover</h6>
 
-1. Models making Ranged attacks against models wholly positioned in this terrain feature reduce their Hit roll by 1. This applies when both models are whole wholly positioned in this terrain feature as well.
-2. Reduce the Armour Piercing characteristic of Ranged attacks by 1 against models wholly positioned in <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span>.
+- Models making Ranged attacks against models wholly positioned in this terrain feature reduce their Hit roll by 1. This applies when both models are whole wholly positioned in this terrain feature as well.
+- Reduce the Armour Piercing characteristic of Ranged attacks by 1 against models wholly positioned in <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span>.
 
-#### Heavy Cover
+<h6 id="heavy-cover">Heavy Cover</h6>
 
-1. Models making Ranged attacks against models wholly positioned in <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> - or against models wholly positioned behind <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> - reduce their Hit roll by 1.
-2. Reduce the Armour Piercing characteristic of Ranged attacks by 2 against models wholly positioned in <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
+- Models making Ranged attacks against models wholly positioned in <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> - or against models wholly positioned behind <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> - reduce their Hit roll by 1.
+- Reduce the Armour Piercing characteristic of Ranged attacks by 2 against models wholly positioned in <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span>.
 
-#### Vantage Points
+<h6 id="vantage-points">Vantage Points</h6>
 
-1. <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> must be applied to any terrain feature where models can be positioned more than 5" vertically above the ground level of the battlefield.
-2. Models making Ranged attacks from a terrain feature with <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> add 1 to their Hit rolls when they are positioned more than 5" vertically above the ground level of the battlefield and are attacking a unit that is positioned at the ground level of the battlefield.
+- <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> must be applied to any terrain feature where models can be positioned more than 5" vertically above the ground level of the battlefield.
+- Models making Ranged attacks from a terrain feature with <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> add 1 to their Hit rolls when they are positioned more than 5" vertically above the ground level of the battlefield and are attacking a unit that is positioned at the ground level of the battlefield.
 
-#### Difficult Ground
+<h6 id="difficult-ground">Difficult Ground</h6>
 
-1. Models that move in to, out of, or through <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> reduce their Movement characteristic by 1".
-2. <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> has no effect for models with the <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span>, <span class="keyword" data-term="hover" data-type="keyword">Hover</span>, <span class="keyword" data-term="phase-shift" data-type="keyword">Phase Shift</span> or <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> keywords.
+- Models that move in to, out of, or through <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> reduce their Movement characteristic by 1".
+- <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> has no effect for models with the <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, <span class="keyword" data-term="jump-pack" data-type="keyword">Jump Pack</span>, <span class="keyword" data-term="hover" data-type="keyword">Hover</span>, <span class="keyword" data-term="phase-shift" data-type="keyword">Phase Shift</span> or <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> keywords.
 
-#### Impassable 
+<h6 id="impassable">Impassable</h6>
 
-1. Impassable terrain cannot be moved over or through by any model. This does not apply to models with the <span class="keyword" data-term="phase-shift" data-type="keyword">Phase Shift</span> or <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> keywords
-2. The vertical height of the terrain feature should be factored in when moving models that possess keywords that allow them to ignore certain terrain feature vertical heights (i.e., <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, <span class="keyword" data-term="hover" data-type="keyword">Hover</span>).
+- Impassable terrain cannot be moved over or through by any model. This does not apply to models with the <span class="keyword" data-term="phase-shift" data-type="keyword">Phase Shift</span> or <span class="keyword" data-term="aircraft" data-type="keyword">Aircraft</span> keywords
+- The vertical height of the terrain feature should be factored in when moving models that possess keywords that allow them to ignore certain terrain feature vertical heights (i.e., <span class="keyword" data-term="fly" data-type="keyword">Fly</span>, <span class="keyword" data-term="hover" data-type="keyword">Hover</span>).
 
-#### Obscuring
+<h6 id="obscuring">Obscuring</h6>
 
-1. Any terrain feature that is at least 12" in vertical height relative to the ground level of the battlefield are considered to be <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span>.
-2. Models cannot be the subject of a Ranged attack if the following criteria are met: 
-3. The target model is wholly positioned behind <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> terrain relative to the attacking model.
-4. The attacking model cannot draw true line of sight to the target model without that line of sight passing through <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> terrain.
+- Any terrain feature that is at least 12" in vertical height relative to the ground level of the battlefield are considered to be <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span>.
+- Models cannot be the subject of a Ranged attack if the following criteria are met: 
+- The target model is wholly positioned behind <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> terrain relative to the attacking model.
+- The attacking model cannot draw true line of sight to the target model without that line of sight passing through <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> terrain.
 
-#### Exposed Position
+<h6 id="exposed-position">Exposed Position</h6>
 
-1. Terrain features - or parts of terrain features - that can reasonably be considered as having little or no protective features (like walls, pipes, trees, etc.), and which are at more than 5" tall relative to the ground level of the battlefield should be considered <span class="keyword" data-term="exposed-positions" data-type="keyword">Exposed Positions</span>. 
-2. Models making Ranged attacks against models in <span class="keyword" data-term="exposed-positions" data-type="keyword">Exposed Positions</span> increase add 1 to their Hit rolls.
+- Terrain features - or parts of terrain features - that can reasonably be considered as having little or no protective features (like walls, pipes, trees, etc.), and which are at more than 5" tall relative to the ground level of the battlefield should be considered <span class="keyword" data-term="exposed-positions" data-type="keyword">Exposed Positions</span>. 
+- Models making Ranged attacks against models in <span class="keyword" data-term="exposed-positions" data-type="keyword">Exposed Positions</span> increase add 1 to their Hit rolls.
 
-#### Defensible Position
+<h6 id="defensible-position">Defensible Position</h6>
 
-1. Models positioned within a <span class="keyword" data-term="defensible-position" data-type="keyword">Defensible Position</span> treat models within 2" as being in Base-to-Base contact
-2. Models that <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> models wholly within a terrain feature that has the <span class="keyword" data-term="defensible-position" data-type="keyword">Defensible Position</span> keyword reduce their Initiative value by 1.
+- Models positioned within a <span class="keyword" data-term="defensible-position" data-type="keyword">Defensible Position</span> treat models within 2" as being in Base-to-Base contact
+- Models that <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> models wholly within a terrain feature that has the <span class="keyword" data-term="defensible-position" data-type="keyword">Defensible Position</span> keyword reduce their Initiative value by 1.
 
 ### Terrain Types
 
@@ -586,35 +607,35 @@ Prior to starting your Alt-Hammer battle, players should establish which terrain
 The following Terrain Types are a set of standard terrain features you can include on your Alt-Hammer battlefields. Each terrain type is its own keyword - which may itself provide effects for Faction rules or unit abilities - and also shows what other kinds of Terrain Attributes keywords that Terrain Type should have.
 
 
-#### Hill
+<h6 id="hill">Hill</h6>
 
-1. <span class="keyword" data-term="hills" data-type="keyword">Hills</span> are considered part of the battlefield's ground level. Other terrain features (such as <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span>) can be placed on <span class="keyword" data-term="hills" data-type="keyword">Hills</span> if the footprint of that terrain feature can be wholly within the flat surfaces of the <span class="keyword" data-term="hill" data-type="keyword">Hill</span> feature. 
-2. Plain hills that are at least 5" high relative to the ground level of the battlefield, which have discernable obscuring elements (or other Terrain Features on top of the Hill, for example) should possess the **Exposed Position** keyword.
+- <span class="keyword" data-term="hills" data-type="keyword">Hills</span> are considered part of the battlefield's ground level. Other terrain features (such as <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span>) can be placed on <span class="keyword" data-term="hills" data-type="keyword">Hills</span> if the footprint of that terrain feature can be wholly within the flat surfaces of the <span class="keyword" data-term="hill" data-type="keyword">Hill</span> feature. 
+- Plain hills that are at least 5" high relative to the ground level of the battlefield, which have discernable obscuring elements (or other Terrain Features on top of the Hill, for example) should possess the **Exposed Position** keyword.
 
-#### Building
+<h6 id="building">Building</h6>
 
-1. Many Core Model Type keywords specify how that model can interact with <span class="keyword" data-term="building" data-type="keyword">Building</span> terrain features.
-2. <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span> always possess the <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keyword, and do not feature the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> keyword.
-3. <span class="keyword" data-term="buildings" data-type="keyword">Buildings </span>can possess the <span class="keyword" data-term="defensible-positions" data-type="keyword">Defensible Positions</span> keyword, although it is not recommended. Players choosing to incorporate this keyword into the <span class="keyword" data-term="building" data-type="keyword">Building</span> should specify areas on the <span class="keyword" data-term="building" data-type="keyword">Building</span> considered to be <span class="keyword" data-term="defensible-positions" data-type="keyword">Defensible Positions</span>. 
-4. Taller <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span> with 2 or more storeys should have the <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> and <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> keywords.
+- Many Core Model Type keywords specify how that model can interact with <span class="keyword" data-term="building" data-type="keyword">Building</span> terrain features.
+- <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span> always possess the <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keyword, and do not feature the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> keyword.
+- <span class="keyword" data-term="buildings" data-type="keyword">Buildings </span>can possess the <span class="keyword" data-term="defensible-positions" data-type="keyword">Defensible Positions</span> keyword, although it is not recommended. Players choosing to incorporate this keyword into the <span class="keyword" data-term="building" data-type="keyword">Building</span> should specify areas on the <span class="keyword" data-term="building" data-type="keyword">Building</span> considered to be <span class="keyword" data-term="defensible-positions" data-type="keyword">Defensible Positions</span>. 
+- Taller <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span> with 2 or more storeys should have the <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> and <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> keywords.
 
-#### Ruins
+<h6 id="ruins">Ruins</h6>
 
-1. <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span> that have visibly suffered damage should always possess the <span class="keyword" data-term="ruins" data-type="keyword">Ruins</span> keyword.
-2. <span class="keyword" data-term="ruins" data-type="keyword">Ruins</span> always possess the <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> keyword.
-3. Taller<span class="keyword" data-term="ruins" data-type="keyword"> Ruins</span> with 2 or more storeys should have the <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> and <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> keywords.
+- <span class="keyword" data-term="buildings" data-type="keyword">Buildings</span> that have visibly suffered damage should always possess the <span class="keyword" data-term="ruins" data-type="keyword">Ruins</span> keyword.
+- <span class="keyword" data-term="ruins" data-type="keyword">Ruins</span> always possess the <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> keyword.
+- Taller<span class="keyword" data-term="ruins" data-type="keyword"> Ruins</span> with 2 or more storeys should have the <span class="keyword" data-term="obscuring" data-type="keyword">Obscuring</span> and <span class="keyword" data-term="vantage-points" data-type="keyword">Vantage Points</span> keywords.
 
-#### Forest
+<h6 id="forest">Forest</h6>
 
-1. Forests always possess the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> keyword and can never possess the <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keyword.
-2. Forests should include the <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> keyword.
+- Forests always possess the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> keyword and can never possess the <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keyword.
+- Forests should include the <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> keyword.
 
-#### Craters
+<h6 id="craters">Craters</h6>
 
-1. Craters always include the <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> keyword.
-2. Craters can possess the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> keyword, but can never possess the <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keyword.
+- Craters always include the <span class="keyword" data-term="difficult-ground" data-type="keyword">Difficult Ground</span> keyword.
+- Craters can possess the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> keyword, but can never possess the <span class="keyword" data-term="heavy-cover" data-type="keyword">Heavy Cover</span> keyword.
 
-#### Linear, Low-lying Terrain Features
+<h6 id="linear-low-lying-terrain-features">Linear, Low-lying Terrain Features</h6>
 
-1. Smaller linear, low-lying terrain features like barricades, fortified lines, pipes, fences etc. possess the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> and <span class="keyword" data-term="defensible-position" data-type="keyword">Defensible Position</span> keywords.
-2. These terrain features should not exceed 2" in height, or 3" in width/depth. Terrain features that exceed those dimensions should be considered a different type of terrain feature.
+- Smaller linear, low-lying terrain features like barricades, fortified lines, pipes, fences etc. possess the <span class="keyword" data-term="light-cover" data-type="keyword">Light Cover</span> and <span class="keyword" data-term="defensible-position" data-type="keyword">Defensible Position</span> keywords.
+- These terrain features should not exceed 2" in height, or 3" in width/depth. Terrain features that exceed those dimensions should be considered a different type of terrain feature.

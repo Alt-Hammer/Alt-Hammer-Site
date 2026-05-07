@@ -703,11 +703,15 @@ const weaponMapJson = JSON.stringify(weapons);
       const wargearLookup = {};
 
       wargearH6s.forEach(function (h6, idx) {
-        const rawText = h6.textContent ?? '';
-        const tabIdx  = rawText.indexOf('\t');
-        const name    = tabIdx > -1 ? rawText.slice(0, tabIdx).trim() : rawText.trim();
-        const points  = tabIdx > -1 ? rawText.slice(tabIdx + 1).trim() : '';
-        const slug    = slugify(name);
+        // The heading is emitted as raw HTML: <h6>Name<span class="heading-value">Points</span></h6>
+        // We extract name and points by cloning the node and removing the span,
+        // rather than splitting on a tab character (which no longer exists in the DOM).
+        const clone   = h6.cloneNode(true);
+        const valSpan = clone.querySelector('.heading-value');
+        const points  = valSpan ? valSpan.textContent.trim() : '';
+        if (valSpan) valSpan.remove();
+        const name = clone.textContent.trim();
+        const slug = slugify(name);
 
         // Collect body elements between this H6 and the next H6
         const nextH6  = wargearH6s[idx + 1] ?? null;

@@ -1201,6 +1201,20 @@
             "Anti-INFANTRY 2+"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "2",
+          "strength": "2",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks",
+            "Anti-INFANTRY 2+"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1283,6 +1297,19 @@
             "Anti-INFANTRY 5+"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A",
+          "strength": "4",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Lance"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1300,11 +1327,11 @@
     {
       "name": "Star Lance",
       "section": "Ranged Weapons",
-      "points": 10,
+      "points": 15,
       "profiles": [
         {
           "profileName": "Ranged",
-          "points": 10,
+          "points": 15,
           "range": "12\"",
           "attacks": "3",
           "strength": "7",
@@ -1312,6 +1339,20 @@
           "damage": "2",
           "keywords": [
             "Sustained Hits 1"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "A +2",
+          "strength": "7",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Lance",
+            "Lethal Hits"
           ],
           "availability": ""
         }
@@ -1360,6 +1401,19 @@
             "Melta 2"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "1",
+          "strength": "9",
+          "ap": "-4",
+          "damage": "D6",
+          "keywords": [
+            "Melta 2"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1388,6 +1442,20 @@
           "damage": "1",
           "keywords": [
             "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": null,
+          "range": "-",
+          "attacks": "D3+2",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
             "Torrent",
             "Ignores Cover"
           ],
@@ -1798,37 +1866,6 @@
       "availability": ""
     },
     {
-      "name": "Star Lance",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 10,
-          "range": "-",
-          "attacks": "A +2",
-          "strength": "7",
-          "ap": "-2",
-          "damage": "2",
-          "keywords": [
-            "Lance",
-            "Lethal Hits"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Wraithsword",
       "section": "Melee Weapons",
       "points": 8,
@@ -1944,126 +1981,6 @@
       "damage": null,
       "keywords": [
         "Anti-PSYKER 3+"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Laser Lance",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 8,
-          "range": "-",
-          "attacks": "A",
-          "strength": "4",
-          "ap": "-2",
-          "damage": "1",
-          "keywords": [
-            "Lance"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Dragon Rifle",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 10,
-          "range": "-",
-          "attacks": "1",
-          "strength": "9",
-          "ap": "-4",
-          "damage": "D6",
-          "keywords": [
-            "Melta 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Melta 2"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Dragon's Breath",
-      "section": "Melee Weapons",
-      "points": 6,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 6,
-          "range": "-",
-          "attacks": "D3+2",
-          "strength": "4",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [
-            "Torrent",
-            "Ignores Cover"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Torrent",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Mandiblasters",
-      "section": "Melee Weapons",
-      "points": 4,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 4,
-          "range": "-",
-          "attacks": "2",
-          "strength": "2",
-          "ap": "-2",
-          "damage": "1",
-          "keywords": [
-            "Extra Attacks",
-            "Anti-INFANTRY 2+"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Extra Attacks",
-        "Anti-INFANTRY 2+"
       ],
       "availability": ""
     },

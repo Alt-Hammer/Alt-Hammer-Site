@@ -1016,7 +1016,7 @@
       "availability": "Tacticus, Raptor, Havoc, Bike"
     },
     {
-      "name": "Bolter",
+      "name": "Boltgun",
       "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
@@ -1064,6 +1064,21 @@
         "Devastating Wounds"
       ],
       "availability": "Tacticus"
+    },
+    {
+      "name": "Autopistol",
+      "section": "Ranged Weapons",
+      "points": 1,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "2",
+      "strength": "2",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Pistol"
+      ],
+      "availability": ""
     },
     {
       "name": "Autogun",
@@ -1304,6 +1319,20 @@
           "ap": "-4",
           "damage": "D6",
           "keywords": [
+            "Melta 2"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 10,
+          "range": "-",
+          "attacks": "D3",
+          "strength": "9",
+          "ap": "-4",
+          "damage": "D6",
+          "keywords": [
+            "Extra Attacks",
             "Melta 2"
           ],
           "availability": ""
@@ -2523,22 +2552,6 @@
       "keywords": [
         "Sustained Hits 3",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Magma Cutter - Melee",
-      "section": "Melee Weapons",
-      "points": 10,
-      "profiles": null,
-      "range": "-",
-      "attacks": "D3",
-      "strength": "9",
-      "ap": "-4",
-      "damage": "D6",
-      "keywords": [
-        "Extra Attacks",
-        "Melta 2"
       ],
       "availability": ""
     },

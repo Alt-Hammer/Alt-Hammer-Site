@@ -651,6 +651,21 @@
             "Lethal Hits"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 6,
+          "range": "-",
+          "attacks": "A",
+          "strength": "-2",
+          "ap": "-2",
+          "damage": "1",
+          "keywords": [
+            "Extra Attacks",
+            "Lethal Hits",
+            "Anti-INFANTRY 3+"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1188,39 +1203,6 @@
       "damage": "2",
       "keywords": [
         "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Lash Whips",
-      "section": "Melee Weapons",
-      "points": 6,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 6,
-          "range": "-",
-          "attacks": "A",
-          "strength": "-2",
-          "ap": "-2",
-          "damage": "1",
-          "keywords": [
-            "Extra Attacks",
-            "Lethal Hits",
-            "Anti-INFANTRY 3+"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Extra Attacks",
-        "Lethal Hits",
-        "Anti-INFANTRY 3+"
       ],
       "availability": ""
     },

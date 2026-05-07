@@ -11,10 +11,10 @@ hover tooltips wherever keyword/action spans appear in content.
 WHAT IT EXTRACTS
 ────────────────
 From the "Keywords & Abilities" Heading 1 section:
-  Every Heading 4 entry and its body text → stored as type "keyword"
+  Every Heading 6 entry and its body text → stored as type "keyword"
 
 From the "Actions & Activation Points" Heading 1 section:
-  Every Heading 4 entry and its body text → stored as type "action"
+  Every Heading 6 entry and its body text → stored as type "action"
   (Skips "Example Scenario" and "Design Note" sub-headings)
 
 SLUG STRATEGY
@@ -46,8 +46,8 @@ import json
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer_40_000_1st_Edition_-_Core_Rules.docx"
 
+CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Core Rules.docx"
 OUTPUT_PATH = "src/data/definitions.json"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -177,8 +177,8 @@ def extract_definitions(docx_path: str) -> list[dict]:
             i += 1
             continue
 
-        # Within a target section, each H4 starts a definition
-        if in_target and 'Heading 4' in style and text:
+        # Within a target section, each H6 starts a definition
+        if in_target and 'Heading 6' in style and text:
             # The heading text may include a tab + AP cost: strip it for display
             heading_display = text.split('\t')[0].strip()
             slug = slugify_definition_heading(text)

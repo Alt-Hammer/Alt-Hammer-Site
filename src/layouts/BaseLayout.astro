@@ -10,7 +10,22 @@
 
 import { ALLIANCES } from '../data/alliances.ts';
 import { RULES_SECTIONS } from '../data/rules-nav.ts';
-import definitions from '../data/definitions.json';
+
+// Read definitions at build time for embedding into the page as a JSON script tag.
+// Using a dynamic readFileSync rather than a static import avoids Astro 5's
+// define:vars serialization issue with large JSON objects.
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { resolve, dirname } from 'node:path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+let definitionsJson = '{}';
+try {
+  const defPath = resolve(__dirname, '../data/definitions.json');
+  definitionsJson = readFileSync(defPath, 'utf-8');
+} catch (e) {
+  // definitions.json not yet generated — tooltips will be inactive
+}
 
 interface Props {
   title?: string;
@@ -198,9 +213,8 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
     </p>
   </footer>
   <!-- ── Keyword & Action tooltip definitions (auto-generated from source docs) ── -->
-  <script is:inline define:vars={{ definitions }}>
-  window.AH_DEFINITIONS = definitions;
-  </script>
+  <!-- Embedded as a JSON script tag — read by keyword-tooltips.js via getElementById -->
+  <script id="ah-definitions-data" type="application/json" set:html={definitionsJson}></script>
   <script is:inline src="/js/keyword-tooltips.js"></script>
 
 </body>
