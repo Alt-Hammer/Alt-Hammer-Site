@@ -15,18 +15,15 @@ import { RULES_SECTIONS } from '../data/rules-nav.ts';
 // Using a dynamic readFileSync rather than a static import avoids Astro 5's
 // define:vars serialization issue with large JSON objects.
 import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { resolve, dirname } from 'node:path';
+import { resolve } from 'node:path';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
 let definitionsJson = '{}';
 try {
-  const defPath = resolve(__dirname, '../data/definitions.json');
+  const defPath = resolve(process.cwd(), 'src/data/definitions.json');
   definitionsJson = readFileSync(defPath, 'utf-8');
 } catch (e) {
-  // TEMP: log the error so we can see it in the Netlify build log
   console.error('[BaseLayout] Failed to read definitions.json:', e.message);
-  console.error('[BaseLayout] Resolved path was:', resolve(__dirname, '../data/definitions.json'));
+  console.error('[BaseLayout] Resolved path was:', resolve(process.cwd(), 'src/data/definitions.json'));
 }
 
 interface Props {
