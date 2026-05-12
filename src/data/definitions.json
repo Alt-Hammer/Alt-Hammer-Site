@@ -77,7 +77,7 @@
   "monster": {
     "name": "Monster",
     "type": "keyword",
-    "body": "Monster models must abide by the following when completing a Move Action:\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Monster successfully breaches the terrain and can be moved into or through that terrain feature. Monsters with a Toughness characteristic of 12 or above reduce the Breach test to 2+.\n• Reduce their Movement characteristic by 2\" when moving into or through a terrain feature This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.\n• Cannot move more than 4\" vertically through any terrain feature, unless benefitting from another keyword such as Fly that allows the model to ignore vertical movement distances.\nWhen using the Shoot Action, Monster models:\n• Can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player.\n• Can target enemy units with models in Base-to-Base contact\n• Ignore the effects of the Heavy keyword when making attacks\nMonster models are subject to the \"Hit Them From Behind!\" rule detailed under Making Attacks.\nMonster models that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and their Ballistic Skill by 1."
+    "body": "Monster models must abide by the following when completing a Move Action:\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 3+ the Monster successfully breaches the terrain and can be moved into or through that terrain feature. A Monster with a Toughness characteristic of 12 or above reduces the Breach test to 2+.\n• Reduce their Movement characteristic by 2\" when moving into or through a terrain feature This is additional over any reductions to the Movement characteristic associated with turning or pivoting, as detailed above.\n• Cannot move more than 4\" vertically through any terrain feature, unless benefitting from another keyword such as Fly that allows the model to ignore vertical movement distances.\nWhen using the Shoot Action, Monster models:\n• Can make Ranged attacks with any number of Ranged weapons they are equipped with and may target any enemy units as chosen by the attacking player.\n• Can target enemy units with models in Base-to-Base contact\n• Ignore the effects of the Heavy keyword when making attacks\nMonster models are subject to the \"Hit Them From Behind!\" rule detailed under Making Attacks.\nMonster models that are reduced to 1/3 of their Starting Strength (rounding down) reduce their Activation Points by 1 and their Ballistic Skill by 1."
   },
   "beast": {
     "name": "Beast",
@@ -102,12 +102,17 @@
   "bodyguard": {
     "name": "Bodyguard",
     "type": "keyword",
-    "body": "When a model or unit with the Bodyguard keyword is being led by a Leader unit with the Character keyword, Damage that would be inflicted on that Character unit must be allocated to Bodyguard model(s) instead."
+    "body": "Models with the Bodyguard keyword must always take damage from attacks - and be destroyed - before any other models in the unit suffer damage. This includes when a unit includes a Character keyword, or when attacks made against the unit include the Precision ability."
+  },
+  "epic-hero": {
+    "name": "Epic Hero",
+    "type": "keyword",
+    "body": "Your army can only ever include 1x of a model with the Epic Hero keyword."
   },
   "walker": {
     "name": "Walker",
     "type": "keyword",
-    "body": "Models with the Walker keyword must abide by the following when completing a Move Action:\n• Do not need to reduce their Movement characteristic when making a turn or a pivot.\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 2+ the Walker successfully breaches the terrain and can be moved into or through that terrain feature.\n• Cannot move more than 4\" vertically through any terrain feature.\nWalkers ignore the effects of the Heavy keyword when making attacks."
+    "body": "Models with the Walker keyword must abide by the following when completing a Move Action:\n• Do not need to reduce their Movement characteristic when making a turn or a pivot.\n• The model may only enter terrain by completing a Breach test. To complete a Breach test, roll a D6. On a 2+ the Walker successfully breaches the terrain and can be moved into or through that terrain feature.\n• Cannot move more than 4\" vertically through any terrain feature, unless the model possesses other keywords (such as Fly or Jump Pack) that enable it to do so.\nWhen making attacks, Walker models:\n• Always use their full Ballistic Skill characteristic if the model possesses the Infantry keyword\n• Ignore the effects of the Heavy keyword when making attacks"
   },
   "mounted": {
     "name": "Mounted",

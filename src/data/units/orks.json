@@ -573,52 +573,60 @@
       ]
     },
     {
-      "name": "Bikerz - Boy",
+      "name": "Bikerz",
       "category": "Mounted",
-      "stats": {
-        "M": "12\"",
-        "WS": 4,
-        "BS": 2,
-        "I": 4,
-        "A": 2,
-        "S": 4,
-        "T": 5,
-        "W": 4,
-        "SV": "4+",
-        "LD": "7+",
-        "basePoints": 25,
-        "squadSizes": "2 to 5"
-      },
+      "stats": null,
       "keywords": [
         "Orks",
         "Infantry",
         "Mounted"
       ],
-      "models": null
-    },
-    {
-      "name": "Bikerz - Nob",
-      "category": "Mounted",
-      "stats": {
-        "M": "12\"",
-        "WS": 5,
-        "BS": 2,
-        "I": 5,
-        "A": 4,
-        "S": 5,
-        "T": 6,
-        "W": 5,
-        "SV": "4+",
-        "LD": "6+",
-        "basePoints": 40,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Orks",
-        "Infantry",
-        "Mounted"
-      ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Boy",
+          "stats": {
+            "M": "12\"",
+            "WS": 4,
+            "BS": 2,
+            "I": 4,
+            "A": 2,
+            "S": 4,
+            "T": 5,
+            "W": 4,
+            "SV": "4+",
+            "LD": "7+",
+            "basePoints": 25,
+            "squadSizes": "2 to 5"
+          },
+          "keywords": [
+            "Orks",
+            "Infantry",
+            "Mounted"
+          ]
+        },
+        {
+          "modelName": "Nob",
+          "stats": {
+            "M": "12\"",
+            "WS": 5,
+            "BS": 2,
+            "I": 5,
+            "A": 4,
+            "S": 5,
+            "T": 6,
+            "W": 5,
+            "SV": "4+",
+            "LD": "6+",
+            "basePoints": 40,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "Orks",
+            "Infantry",
+            "Mounted"
+          ]
+        }
+      ]
     },
     {
       "name": "Trukk",
@@ -761,7 +769,7 @@
         "W": 4,
         "SV": "4+",
         "LD": "5+",
-        "basePoints": 78,
+        "basePoints": 70,
         "squadSizes": "1 to 4"
       },
       "keywords": [
@@ -1318,8 +1326,8 @@
       "section": "Ranged Weapons",
       "points": 8,
       "profiles": null,
-      "range": "12\"",
-      "attacks": "2",
+      "range": "18\"",
+      "attacks": "D3+1",
       "strength": "5",
       "ap": "-1",
       "damage": "2",
@@ -1332,11 +1340,11 @@
     {
       "name": "Rokkit Launcha",
       "section": "Ranged Weapons",
-      "points": 25,
+      "points": 15,
       "profiles": null,
       "range": "24\"",
-      "attacks": "4",
-      "strength": "9",
+      "attacks": "D3+1",
+      "strength": "8",
       "ap": "-2",
       "damage": "3",
       "keywords": [
@@ -1351,7 +1359,7 @@
       "points": 25,
       "profiles": null,
       "range": "36\"",
-      "attacks": "6",
+      "attacks": "D6+2",
       "strength": "11",
       "ap": "-2",
       "damage": "3",
@@ -1368,7 +1376,7 @@
       "points": 15,
       "profiles": null,
       "range": "24\"",
-      "attacks": "2",
+      "attacks": "D3+1",
       "strength": "5",
       "ap": "-1",
       "damage": "2",

@@ -82,11 +82,12 @@ def main():
     check_working_directory()
 
     # Import conversion functions
-    from convert_rules    import convert_rules,    CORE_RULES_DOCX,        OUTPUT_DIR as RULES_OUT
-    from convert_factions import convert_factions, FACTION_INDEX_DOCX,     OUTPUT_DIR as FACTIONS_OUT
-    from convert_units    import convert_units,    UNIT_DATATABLES_XLSX,   OUTPUT_DIR as UNITS_OUT
-    from convert_weapons  import convert_weapons,  WEAPON_DATATABLES_XLSX, OUTPUT_DIR as WEAPONS_OUT
+    from convert_rules       import convert_rules,    CORE_RULES_DOCX,        OUTPUT_DIR as RULES_OUT
+    from convert_factions    import convert_factions, FACTION_INDEX_DOCX,     OUTPUT_DIR as FACTIONS_OUT
+    from convert_units       import convert_units,    UNIT_DATATABLES_XLSX,   OUTPUT_DIR as UNITS_OUT
+    from convert_weapons     import convert_weapons,  WEAPON_DATATABLES_XLSX, OUTPUT_DIR as WEAPONS_OUT
     from extract_definitions import extract_definitions, CORE_RULES_DOCX as DEFS_DOCX, OUTPUT_PATH as DEFS_OUT
+    from extract_roll_tables import extract_roll_tables, ROLL_TABLES_XLSX
 
     results = []
 
@@ -123,6 +124,18 @@ def main():
         RULES_OUT,
     ))
 
+    # ── Step 1b: Extract Roll Tables from Excel ───────────────────────────────
+    # Reads the Hit Roll and Wound Roll tables from the Excel source file and
+    # writes src/data/hit-roll-table.json and src/data/wound-roll-table.json.
+    # These JSON files are consumed by RollTable.astro in making-attacks.mdx.
+    # Runs independently of Step 1 — making-attacks.mdx is excluded from the
+    # convert_rules.py output and maintained manually.
+    results.append(run_step(
+        "Roll Tables → src/data/hit-roll-table.json + wound-roll-table.json",
+        extract_roll_tables,
+        ROLL_TABLES_XLSX,
+    ))
+
     # ── Step 2: Faction Rules ─────────────────────────────────────────────────
     results.append(run_step(
         "Faction Index → src/content/factions/",
@@ -154,7 +167,7 @@ def main():
     print(f"  PIPELINE COMPLETE")
     print(f"{'='*60}")
 
-    steps = ["Definitions", "Core Rules", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
+    steps = ["Definitions", "Core Rules", "Roll Tables", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
     all_ok = True
     for step, result in zip(steps, results):
         icon = "✓" if result else "✗"

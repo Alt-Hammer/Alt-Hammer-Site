@@ -2030,6 +2030,100 @@ code, kbd {
   white-space: nowrap;
 }
 
+/* --------------------------------------------------------------------------
+   Matrix Table — Roll Value Cell Colours
+   Applies to both Hit Roll and Wound Roll tables rendered by RollTable.astro.
+   -------------------------------------------------------------------------- */
+
+/* Prevent the rules-content-body prose table even-row rule from overriding
+   cell colour classes on matrix tables. Must be more specific than:
+   .rules-content-body tbody tr:nth-child(even) td { background: ... } */
+.rules-content-body .matrix-table tbody tr:nth-child(even) td {
+  background: unset;
+}
+.matrix-table td.cell-auto {
+  background: #1a3d2b;
+  color: #4caf7d;
+  font-weight: 700;
+  text-align: center;
+}
+
+.matrix-table td.cell-2 {
+  background: #0f2d1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.matrix-table td.cell-3 {
+  background: #1a4a28;
+  color: #ffffff;
+  text-align: center;
+}
+
+.matrix-table td.cell-4 {
+  background: #363b42;
+  color: #c0c8d0;
+  text-align: center;
+}
+
+.matrix-table td.cell-5 {
+  background: #2e2a14;
+  color: #c9a84c;
+  text-align: center;
+}
+
+.matrix-table td.cell-6 {
+  background: #3d0f0f;
+  color: #ffffff;
+  text-align: center;
+}
+
+.matrix-table td.cell-x {
+  background: #2e1515;
+  color: #c73030;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Row header cells — column number labels and row number labels */
+.matrix-table th[scope="row"] {
+  background: var(--color-surface-3);
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: var(--sp-3) var(--sp-4);
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid var(--color-border-mid);
+  white-space: nowrap;
+}
+
+/* Corner cell (top-left, empty) */
+.matrix-table th.roll-table-corner {
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border-mid);
+  min-width: 32px;
+}
+
+/* Row axis label — the "Attack Strength" / "Attacker's WS" header cell */
+.matrix-table th.roll-table-row-axis {
+  background: var(--color-surface-3);
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid var(--color-border-mid);
+  white-space: nowrap;
+  padding: var(--sp-3) var(--sp-4);
+}
+
 /* Weapon card availability row */
 .wp-avail-row {
   display: flex;

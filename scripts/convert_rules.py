@@ -64,6 +64,18 @@ CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hamme
 # Run this script from inside the alt-hammer-site folder
 OUTPUT_DIR = "src/content/rules"
 
+# Sections whose MDX files are maintained manually and must NOT be overwritten
+# by this script. Add a section slug here if its MDX uses custom Astro component
+# imports or other content that the Word-to-MDX pipeline cannot reproduce.
+#
+# making-attacks is excluded because its Hit Roll and Wound Roll tables are
+# sourced from the Excel file via extract_roll_tables.py and rendered by the
+# RollTable.astro component. The MDX file contains import statements that
+# convert_rules.py cannot generate, so overwriting it would break the tables.
+EXCLUDE_SLUGS = {
+    "making-attacks",
+}
+
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Add the scripts folder to path so we can import utilities
@@ -117,6 +129,12 @@ def convert_rules(docx_path: str, output_dir: str):
         # Skip the Table of Contents if present
         if slug in ('table-of-contents', 'contents', 'toc'):
             print(f"  —  Skipping: {title} (table of contents)")
+            skipped += 1
+            continue
+
+        # Skip manually-maintained MDX files (see EXCLUDE_SLUGS above)
+        if slug in EXCLUDE_SLUGS:
+            print(f"  —  Skipping: {title} (manually maintained — not overwritten)")
             skipped += 1
             continue
 

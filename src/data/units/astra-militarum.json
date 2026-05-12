@@ -244,77 +244,179 @@
     {
       "name": "Infantry Section",
       "category": "Battleline",
-      "stats": {
-        "M": "6\"",
-        "WS": 3,
-        "BS": 3,
-        "I": 3,
-        "A": 1,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "5+",
-        "LD": "8+",
-        "basePoints": 3,
-        "squadSizes": "10 to 20"
-      },
+      "stats": null,
       "keywords": [
         "Imperium",
         "Astra Militarum",
         "Infantry",
         "Regiment"
       ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Guardsman",
+          "stats": {
+            "M": "6\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 3,
+            "A": 1,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "5+",
+            "LD": "8+",
+            "basePoints": 3,
+            "squadSizes": "10 to 20"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        },
+        {
+          "modelName": "Heavy Weapons Team",
+          "stats": {
+            "M": "4\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 2,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 3,
+            "SV": "5+",
+            "LD": "8+",
+            "basePoints": 6,
+            "squadSizes": "-"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        }
+      ]
     },
     {
       "name": "Command Squad",
       "category": "Infantry",
-      "stats": {
-        "M": "6\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 3,
-        "A": 2,
-        "S": 2,
-        "T": 2,
-        "W": 2,
-        "SV": "5+",
-        "LD": "7+",
-        "basePoints": 5,
-        "squadSizes": "4"
-      },
+      "stats": null,
       "keywords": [
         "Imperium",
         "Astra Militarum",
         "Infantry",
         "Regiment"
       ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Veteran",
+          "stats": {
+            "M": "6\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 3,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 2,
+            "SV": "5+",
+            "LD": "7+",
+            "basePoints": 5,
+            "squadSizes": "4"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        },
+        {
+          "modelName": "Veteran Heavy Weapons Team",
+          "stats": {
+            "M": "4\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 2,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 4,
+            "SV": "5+",
+            "LD": "8+",
+            "basePoints": 10,
+            "squadSizes": "-"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        }
+      ]
     },
     {
       "name": "Special Weapons Section",
       "category": "Infantry",
-      "stats": {
-        "M": "4\"",
-        "WS": 3,
-        "BS": 3,
-        "I": 3,
-        "A": 1,
-        "S": 2,
-        "T": 2,
-        "W": 1,
-        "SV": "5+",
-        "LD": "8+",
-        "basePoints": 3,
-        "squadSizes": "6"
-      },
+      "stats": null,
       "keywords": [
         "Imperium",
         "Astra Militarum",
         "Infantry",
         "Regiment"
       ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Guardsman",
+          "stats": {
+            "M": "4\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 3,
+            "A": 1,
+            "S": 2,
+            "T": 2,
+            "W": 1,
+            "SV": "5+",
+            "LD": "8+",
+            "basePoints": 3,
+            "squadSizes": "6"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        },
+        {
+          "modelName": "Heavy Weapons Team",
+          "stats": {
+            "M": "4\"",
+            "WS": 3,
+            "BS": 3,
+            "I": 2,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 3,
+            "SV": "5+",
+            "LD": "8+",
+            "basePoints": 6,
+            "squadSizes": "-"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        }
+      ]
     },
     {
       "name": "Conscripts",
@@ -344,27 +446,61 @@
     {
       "name": "Veterans",
       "category": "Infantry",
-      "stats": {
-        "M": "6\"",
-        "WS": 3,
-        "BS": 4,
-        "I": 3,
-        "A": 2,
-        "S": 2,
-        "T": 2,
-        "W": 2,
-        "SV": "5+",
-        "LD": "7+",
-        "basePoints": 6,
-        "squadSizes": "5 to 10"
-      },
+      "stats": null,
       "keywords": [
         "Imperium",
         "Astra Militarum",
         "Infantry",
         "Regiment"
       ],
-      "models": null
+      "models": [
+        {
+          "modelName": "Veteran",
+          "stats": {
+            "M": "6\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 3,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 2,
+            "SV": "5+",
+            "LD": "7+",
+            "basePoints": 6,
+            "squadSizes": "5 to 10"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        },
+        {
+          "modelName": "Veteran Heavy Weapons Team",
+          "stats": {
+            "M": "4\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 2,
+            "A": 2,
+            "S": 2,
+            "T": 2,
+            "W": 4,
+            "SV": "5+",
+            "LD": "8+",
+            "basePoints": 10,
+            "squadSizes": "-"
+          },
+          "keywords": [
+            "Imperium",
+            "Astra Militarum",
+            "Infantry",
+            "Regiment"
+          ]
+        }
+      ]
     },
     {
       "name": "Ogryn",
@@ -582,14 +718,14 @@
         "M": "10\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 3,
         "S": 6,
         "T": 10,
         "W": 11,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 70,
+        "basePoints": 75,
         "squadSizes": "1"
       },
       "keywords": [
@@ -610,14 +746,14 @@
         "M": "12\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 3,
         "S": 5,
         "T": 8,
         "W": 10,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 70,
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
@@ -637,14 +773,14 @@
         "M": "12\"",
         "WS": 3,
         "BS": 5,
-        "I": 1,
+        "I": 3,
         "A": 3,
         "S": 5,
         "T": 8,
         "W": 10,
         "SV": "3+",
         "LD": "6+",
-        "basePoints": 85,
+        "basePoints": 75,
         "squadSizes": "1"
       },
       "keywords": [
@@ -664,7 +800,7 @@
         "M": "6\" - 30\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 3,
         "S": 5,
         "T": 9,
@@ -766,7 +902,7 @@
         "A": 3,
         "S": 2,
         "T": 5,
-        "W": 5,
+        "W": 6,
         "SV": "4+",
         "LD": "8+",
         "basePoints": 30,
@@ -791,7 +927,7 @@
         "A": 3,
         "S": 2,
         "T": 6,
-        "W": 7,
+        "W": 8,
         "SV": "4+",
         "LD": "8+",
         "basePoints": 40,
@@ -812,7 +948,7 @@
         "M": "8\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 3,
         "S": 5,
         "T": 7,
@@ -835,11 +971,11 @@
       "name": "Chimera Self Propelled Artillery",
       "category": "Vehicles",
       "stats": {
-        "M": "8\"",
+        "M": "10\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
-        "A": 4,
+        "I": 3,
+        "A": 3,
         "S": 6,
         "T": 10,
         "W": 11,
@@ -864,8 +1000,8 @@
         "M": "10\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
-        "A": 4,
+        "I": 3,
+        "A": 3,
         "S": 6,
         "T": 10,
         "W": 11,
@@ -890,7 +1026,7 @@
         "M": "10\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 4,
         "S": 7,
         "T": 11,
@@ -916,7 +1052,7 @@
         "M": "10\"",
         "WS": 2,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 6,
         "S": 8,
         "T": 12,
@@ -942,7 +1078,7 @@
         "M": "12\"",
         "WS": 3,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 12,
         "S": 10,
         "T": 13,
@@ -969,7 +1105,7 @@
         "M": "12\"",
         "WS": 3,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 12,
         "S": 10,
         "T": 13,
@@ -997,7 +1133,7 @@
         "M": "12\"",
         "WS": 3,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 12,
         "S": 10,
         "T": 13,

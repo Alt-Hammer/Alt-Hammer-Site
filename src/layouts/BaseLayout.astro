@@ -22,8 +22,7 @@ try {
   const defPath = resolve(process.cwd(), 'src/data/definitions.json');
   definitionsJson = readFileSync(defPath, 'utf-8');
 } catch (e) {
-  console.error('[BaseLayout] Failed to read definitions.json:', e.message);
-  console.error('[BaseLayout] Resolved path was:', resolve(process.cwd(), 'src/data/definitions.json'));
+  // definitions.json not yet generated — tooltips will be inactive
 }
 
 interface Props {

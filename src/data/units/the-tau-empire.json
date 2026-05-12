@@ -25,6 +25,7 @@
         "Character",
         "Leader",
         "Walker",
+        "Hover",
         "Jump Pack",
         "Deep Strike"
       ],
@@ -53,6 +54,7 @@
         "Character",
         "Leader",
         "Walker",
+        "Hover",
         "Jump Pack",
         "Deep Strike"
       ],
@@ -436,14 +438,14 @@
         "M": "7\"",
         "WS": 4,
         "BS": 2,
-        "I": 5,
+        "I": 4,
         "A": 4,
-        "S": 7,
-        "T": 7,
-        "W": 5,
+        "S": 6,
+        "T": 6,
+        "W": 7,
         "SV": "5+",
         "LD": "8+",
-        "basePoints": 55,
+        "basePoints": 40,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -465,7 +467,7 @@
         "A": 2,
         "S": 4,
         "T": 5,
-        "W": 4,
+        "W": 5,
         "SV": "3+",
         "LD": "7+",
         "basePoints": 30,
@@ -475,6 +477,7 @@
         "T'au",
         "Infantry",
         "Walker",
+        "Hover",
         "Jump Pack",
         "Deep Strike"
       ],
@@ -491,7 +494,7 @@
         "A": 2,
         "S": 4,
         "T": 5,
-        "W": 5,
+        "W": 7,
         "SV": "3+",
         "LD": "7+",
         "basePoints": 40,
@@ -514,8 +517,8 @@
         "I": 3,
         "A": 4,
         "S": 5,
-        "T": 6,
-        "W": 7,
+        "T": 7,
+        "W": 10,
         "SV": "2+",
         "LD": "7+",
         "basePoints": 90,
@@ -525,7 +528,9 @@
         "T'au",
         "Vehicle",
         "Walker",
+        "Hover",
         "Jump Pack",
+        "Deep Strike",
         "Stealth"
       ],
       "models": null
@@ -551,7 +556,9 @@
         "T'au",
         "Vehicle",
         "Walker",
-        "Jump Pack"
+        "Hover",
+        "Jump Pack",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -773,12 +780,12 @@
           "profileName": "Dispersion",
           "points": 90,
           "range": "36\"",
-          "attacks": "D6+6",
+          "attacks": "2D6+6",
           "strength": "4",
           "ap": "0",
           "damage": "2",
           "keywords": [
-            "Blast 2\"",
+            "Blast 3\"",
             "Sustained Hits 2"
           ],
           "availability": ""
@@ -793,7 +800,7 @@
           "damage": "D6+6",
           "keywords": [
             "Ordnance",
-            "Blast 2\""
+            "Blast 2\" Blast 2\""
           ],
           "availability": ""
         }
@@ -804,7 +811,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
-        "Blast 2\"",
+        "Blast 3\"",
         "Sustained Hits 2"
       ],
       "availability": ""
@@ -834,7 +841,7 @@
       "profiles": null,
       "range": "18\"",
       "attacks": "1",
-      "strength": "7",
+      "strength": "8",
       "ap": "-3",
       "damage": "2",
       "keywords": [
@@ -917,19 +924,47 @@
       "name": "Ion Blaster",
       "section": "Ranged Weapons",
       "points": 5,
-      "profiles": null,
-      "range": "24\"",
-      "attacks": "3",
-      "strength": "2",
-      "ap": "0",
-      "damage": "1",
+      "profiles": [
+        {
+          "profileName": "Pulse",
+          "points": 5,
+          "range": "18\"",
+          "attacks": "3",
+          "strength": "3",
+          "ap": "0",
+          "damage": "2",
+          "keywords": [
+            "Sustained Hits 1"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Power-up",
+          "points": null,
+          "range": "24\"",
+          "attacks": "D3",
+          "strength": "7",
+          "ap": "-2",
+          "damage": "3",
+          "keywords": [
+            "Blast 1\"",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
-        "Ignores Cover"
+        "Sustained Hits 1"
       ],
       "availability": ""
     },
     {
-      "name": "Cyclic Ion Cannon",
+      "name": "Ion Cannon",
       "section": "Ranged Weapons",
       "points": 45,
       "profiles": [
@@ -972,7 +1007,7 @@
       "availability": ""
     },
     {
-      "name": "Heavy Ion Cannon",
+      "name": "Ion Accelerator",
       "section": "Ranged Weapons",
       "points": 70,
       "profiles": [
@@ -980,7 +1015,7 @@
           "profileName": "Pulse",
           "points": 70,
           "range": "24\"",
-          "attacks": "8",
+          "attacks": "16",
           "strength": "5",
           "ap": "-1",
           "damage": "2",
@@ -993,7 +1028,7 @@
           "profileName": "Power-up",
           "points": null,
           "range": "48\"",
-          "attacks": "D3",
+          "attacks": "D3+1",
           "strength": "12",
           "ap": "-3",
           "damage": "4",
@@ -1025,7 +1060,7 @@
       "ap": "-4",
       "damage": "D6",
       "keywords": [
-        "Metla 3"
+        "Melta 3"
       ],
       "availability": ""
     },
@@ -1567,10 +1602,12 @@
       "profiles": null,
       "range": "-",
       "attacks": "A+1",
-      "strength": "S+1",
+      "strength": "3",
       "ap": "-1",
-      "damage": "2",
-      "keywords": [],
+      "damage": "1",
+      "keywords": [
+        "Extra Attacks"
+      ],
       "availability": ""
     },
     {

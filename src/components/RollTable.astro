@@ -1,0 +1,90 @@
+---
+/**
+ * RollTable.astro
+ * ───────────────
+ * Renders a Hit Roll or Wound Roll matrix table from structured JSON data.
+ *
+ * PROPS
+ * ─────
+ * data — the parsed JSON object from hit-roll-table.json or wound-roll-table.json
+ *
+ * DATA SHAPE
+ * ──────────
+ * {
+ *   title:    string           — e.g. "Hit Roll Table"
+ *   colLabel: string           — e.g. "Target's Weapons / Ballistics Skill"
+ *   rowLabel: string           — e.g. "Attacker's Weapons / Ballistics Skill"
+ *   cols:     number[]         — column header values: [1, 2, 3, ...]
+ *   rows:     {
+ *     label: number            — row header value
+ *     cells: string[]          — roll values: "auto"|"2+"|"3+"|"4+"|"5+"|"6+"|"x"
+ *   }[]
+ * }
+ *
+ * TABLE STRUCTURE
+ * ───────────────
+ * thead row 1: corner cell | colLabel spanning all data cols
+ * thead row 2: rowLabel    | individual col numbers
+ * tbody rows:  row number  | data cells with colour classes
+ */
+
+interface Row {
+  label: number;
+  cells: string[];
+}
+
+interface RollTableData {
+  title:    string;
+  colLabel: string;
+  rowLabel: string;
+  cols:     number[];
+  rows:     Row[];
+}
+
+interface Props {
+  data: RollTableData;
+}
+
+const { data } = Astro.props;
+
+const CELL_CLASS: Record<string, string> = {
+  'auto': 'cell-auto',
+  '2+':   'cell-2',
+  '3+':   'cell-3',
+  '4+':   'cell-4',
+  '5+':   'cell-5',
+  '6+':   'cell-6',
+  'x':    'cell-x',
+};
+
+function cellClass(value: string): string {
+  return CELL_CLASS[value] ?? '';
+}
+---
+
+<div class="table-scroll">
+  <table class="rules-table matrix-table">
+    <thead>
+      <tr>
+        <th class="roll-table-corner"></th>
+        <th colspan={data.cols.length}>{data.colLabel}</th>
+      </tr>
+      <tr>
+        <th class="roll-table-row-axis">{data.rowLabel}</th>
+        {data.cols.map((col) => (
+          <th>{col}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {data.rows.map((row) => (
+        <tr>
+          <th scope="row">{row.label}</th>
+          {row.cells.map((cell) => (
+            <td class={cellClass(cell)}>{cell}</td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
