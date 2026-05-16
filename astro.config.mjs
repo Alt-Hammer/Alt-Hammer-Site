@@ -5,16 +5,13 @@ import rehypeRaw from 'rehype-raw';
 
 export default defineConfig({
   site: 'https://alt-hammer.netlify.app',
-  markdown: {
-    rehypePlugins: [rehypeRaw],
-  },
   integrations: [
     mdx({
       // rehype-raw allows raw HTML in MDX content (e.g. inline <span> tags).
-      // It must be configured here on the MDX integration rather than only in
-      // markdown.rehypePlugins, because when applied at the markdown level it
-      // runs before JSX is resolved and strips component expressions like
-      // data={hitData} from Astro component calls in MDX files.
+      // Configured here on the MDX integration only — NOT in markdown.rehypePlugins.
+      // In Astro 5, markdown plugins cascade into MDX processing, so placing
+      // rehype-raw in markdown.rehypePlugins causes it to run before JSX is
+      // resolved, stripping Astro component expressions like data={hitData}.
       rehypePlugins: [rehypeRaw],
     }),
   ],

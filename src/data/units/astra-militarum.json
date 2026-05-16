@@ -716,7 +716,7 @@
       "category": "Dedicated Transports",
       "stats": {
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 3,
@@ -744,7 +744,7 @@
       "category": "Dedicated Transports",
       "stats": {
         "M": "12\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 3,
@@ -896,7 +896,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "3\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 2,
         "A": 3,
@@ -921,7 +921,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "2\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 2,
         "A": 3,
@@ -946,7 +946,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "8\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 3,
@@ -972,7 +972,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 3,
@@ -998,7 +998,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 3,
@@ -1024,7 +1024,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 4,
@@ -1050,7 +1050,7 @@
       "category": "Vehicles",
       "stats": {
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
         "I": 3,
         "A": 6,

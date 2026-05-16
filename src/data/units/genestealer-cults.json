@@ -22,7 +22,9 @@
       "keywords": [
         "Genestealer Cults",
         "Monster",
+        "Epic Hero",
         "Character",
+        "Leader",
         "Psyker",
         "Fearless",
         "Invulnerable Save 5+"
@@ -49,7 +51,9 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Epic Hero",
+        "Character",
+        "Leader"
       ],
       "models": null
     },
@@ -73,7 +77,9 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Epic Hero",
+        "Character",
+        "Leader"
       ],
       "models": null
     },
@@ -97,7 +103,9 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Epic Hero",
+        "Character",
+        "Leader"
       ],
       "models": null
     },
@@ -121,7 +129,9 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Epic Hero",
+        "Character",
+        "Leader"
       ],
       "models": null
     },
@@ -145,7 +155,9 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Epic Hero",
+        "Character",
+        "Leader"
       ],
       "models": null
     },
@@ -169,7 +181,9 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Epic Hero",
+        "Character",
+        "Leader"
       ],
       "models": null
     },
@@ -193,6 +207,32 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
+        "Epic Hero",
+        "Character"
+      ],
+      "models": null
+    },
+    {
+      "name": "Kelermorph",
+      "category": "Character",
+      "stats": {
+        "M": "7\"",
+        "WS": 4,
+        "BS": 6,
+        "I": 5,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 4,
+        "SV": "5+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Genestealer Cults",
+        "Infantry",
+        "Epic Hero",
         "Character"
       ],
       "models": null
@@ -232,30 +272,6 @@
         "A": 4,
         "S": 2,
         "T": 2,
-        "W": 4,
-        "SV": "5+",
-        "LD": "5+",
-        "basePoints": null,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Genestealer Cults",
-        "Infantry",
-        "Character"
-      ],
-      "models": null
-    },
-    {
-      "name": "Kelermorph",
-      "category": "Character",
-      "stats": {
-        "M": "7\"",
-        "WS": 4,
-        "BS": 6,
-        "I": 5,
-        "A": 3,
-        "S": 3,
-        "T": 3,
         "W": 4,
         "SV": "5+",
         "LD": "5+",
@@ -487,9 +503,9 @@
       "category": "Vehicles",
       "stats": {
         "M": "14\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
-        "I": 3,
+        "I": 4,
         "A": 3,
         "S": 5,
         "T": 7,
@@ -521,9 +537,9 @@
           "modelName": "Ridgehauler",
           "stats": {
             "M": "12\"",
-            "WS": 2,
+            "WS": 3,
             "BS": 3,
-            "I": 1,
+            "I": 3,
             "A": 6,
             "S": 6,
             "T": 9,
@@ -544,9 +560,9 @@
           "modelName": "Ironcrawler",
           "stats": {
             "M": "10\"",
-            "WS": 2,
+            "WS": 3,
             "BS": 3,
-            "I": 1,
+            "I": 3,
             "A": 6,
             "S": 8,
             "T": 11,
@@ -593,9 +609,9 @@
       "category": "Dedicated Transports",
       "stats": {
         "M": "12\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
-        "I": 1,
+        "I": 4,
         "A": 3,
         "S": 5,
         "T": 8,

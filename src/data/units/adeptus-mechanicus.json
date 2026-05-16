@@ -350,7 +350,14 @@
         "basePoints": 60,
         "squadSizes": "1 to 3"
       },
-      "keywords": [],
+      "keywords": [
+        "Adeptus Mechanicus",
+        "Vehicle",
+        "Walker",
+        "Scout 6\"",
+        "Unyielding",
+        "Deadly Demise 1"
+      ],
       "models": null
     },
     {
@@ -436,9 +443,9 @@
       "category": "Vehicles",
       "stats": {
         "M": "12\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 6,
         "S": 6,
         "T": 10,
@@ -462,9 +469,9 @@
       "category": "Dedicated Transports",
       "stats": {
         "M": "12\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
-        "I": 1,
+        "I": 3,
         "A": 6,
         "S": 6,
         "T": 10,
