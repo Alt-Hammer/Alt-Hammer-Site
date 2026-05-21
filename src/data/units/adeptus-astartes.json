@@ -1014,12 +1014,12 @@
     {
       "name": "Shotgun",
       "section": "Ranged Weapons",
-      "points": 5,
+      "points": 7,
       "profiles": null,
       "range": "4\"",
       "attacks": "2",
       "strength": "4",
-      "ap": "-1",
+      "ap": "0",
       "damage": "4",
       "keywords": [
         "Assault",

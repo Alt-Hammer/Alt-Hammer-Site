@@ -16,12 +16,12 @@
         "W": 5,
         "SV": "3+",
         "LD": "2+",
-        "basePoints": null,
+        "basePoints": 135,
         "squadSizes": "1"
       },
       "keywords": [
         "Genestealer Cults",
-        "Monster",
+        "Infantry",
         "Epic Hero",
         "Character",
         "Leader",
@@ -45,7 +45,7 @@
         "W": 5,
         "SV": "5+",
         "LD": "5+",
-        "basePoints": null,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -71,7 +71,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "6+",
-        "basePoints": null,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -79,7 +79,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Leader"
+        "Leader",
+        "Pysker"
       ],
       "models": null
     },
@@ -97,7 +98,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "6+",
-        "basePoints": null,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -123,7 +124,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "6+",
-        "basePoints": null,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -149,7 +150,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "6+",
-        "basePoints": null,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -175,7 +176,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "6+",
-        "basePoints": null,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -201,7 +202,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "5+",
-        "basePoints": null,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -226,7 +227,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "5+",
-        "basePoints": null,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -251,7 +252,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "5+",
-        "basePoints": null,
+        "basePoints": 30,
         "squadSizes": "1"
       },
       "keywords": [
@@ -275,7 +276,7 @@
         "W": 4,
         "SV": "5+",
         "LD": "5+",
-        "basePoints": null,
+        "basePoints": 40,
         "squadSizes": "1"
       },
       "keywords": [
@@ -296,7 +297,7 @@
         "A": 1,
         "S": 2,
         "T": 2,
-        "W": 1,
+        "W": 2,
         "SV": "5+",
         "LD": "8+",
         "basePoints": 4,
@@ -619,7 +620,7 @@
         "SV": "3+",
         "LD": "7+",
         "basePoints": 85,
-        "squadSizes": ""
+        "squadSizes": "1"
       },
       "keywords": [
         "Genestealer Cults",
@@ -780,7 +781,7 @@
       "range": "4\"",
       "attacks": "2",
       "strength": "4",
-      "ap": "-1",
+      "ap": "0",
       "damage": "4",
       "keywords": [
         "Assault",

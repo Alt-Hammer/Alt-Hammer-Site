@@ -132,7 +132,7 @@
         "T": 4,
         "W": 6,
         "SV": "4+",
-        "LD": "6+",
+        "LD": "4+",
         "basePoints": 85,
         "squadSizes": "1"
       },
@@ -160,7 +160,7 @@
         "T": 12,
         "W": 18,
         "SV": "2+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 175,
         "squadSizes": "1"
       },
@@ -187,7 +187,7 @@
         "T": 11,
         "W": 18,
         "SV": "2+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 230,
         "squadSizes": "1"
       },
@@ -206,9 +206,9 @@
       "category": "Battleline",
       "stats": {
         "M": "6\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 3,
-        "I": 2,
+        "I": 3,
         "A": 1,
         "S": 2,
         "T": 2,
@@ -238,7 +238,7 @@
         "W": 1,
         "SV": "5+",
         "LD": "10+",
-        "basePoints": 3,
+        "basePoints": 5,
         "squadSizes": "10 to 30"
       },
       "keywords": [
@@ -260,8 +260,8 @@
         "T": 4,
         "W": 4,
         "SV": "4+",
-        "LD": "6+",
-        "basePoints": 20,
+        "LD": "5+",
+        "basePoints": 16,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -300,7 +300,7 @@
       "category": "Battleline",
       "stats": {
         "M": "5\"",
-        "WS": 1,
+        "WS": 2,
         "BS": 3,
         "I": 2,
         "A": 1,
@@ -309,7 +309,7 @@
         "W": 3,
         "SV": "5+",
         "LD": "10+",
-        "basePoints": 10,
+        "basePoints": 8,
         "squadSizes": "3 to 6"
       },
       "keywords": [
@@ -356,7 +356,7 @@
         "W": 2,
         "SV": "5+",
         "LD": "5+",
-        "basePoints": 25,
+        "basePoints": 20,
         "squadSizes": "5 to 10"
       },
       "keywords": [
@@ -381,7 +381,7 @@
         "T": 4,
         "W": 3,
         "SV": "4+",
-        "LD": "5+",
+        "LD": "6+",
         "basePoints": 40,
         "squadSizes": "1 to 3"
       },
@@ -455,7 +455,7 @@
         "T": 5,
         "W": 5,
         "SV": "4+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 60,
         "squadSizes": "1"
       },
@@ -482,7 +482,7 @@
         "T": 4,
         "W": 4,
         "SV": "4+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 95,
         "squadSizes": "1"
       },
@@ -592,7 +592,6 @@
       "keywords": [
         "Tyranids",
         "Beast",
-        "Swarm",
         "Small Profile",
         "Feel No Pain 5+"
       ],
@@ -611,7 +610,7 @@
         "T": 10,
         "W": 8,
         "SV": "3+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 90,
         "squadSizes": "1 to 2"
       },
@@ -636,7 +635,7 @@
         "T": 10,
         "W": 13,
         "SV": "2+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 120,
         "squadSizes": "1"
       },
@@ -661,7 +660,7 @@
         "T": 12,
         "W": 18,
         "SV": "2+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 200,
         "squadSizes": "1"
       },
@@ -686,7 +685,7 @@
         "T": 9,
         "W": 12,
         "SV": "3+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 130,
         "squadSizes": "1"
       },
@@ -712,7 +711,7 @@
         "T": 6,
         "W": 8,
         "SV": "4+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 70,
         "squadSizes": "1 to 2"
       },
@@ -737,7 +736,7 @@
         "T": 9,
         "W": 12,
         "SV": "2+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 110,
         "squadSizes": "1"
       },
@@ -789,7 +788,7 @@
         "T": 10,
         "W": 14,
         "SV": "3+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": 130,
         "squadSizes": "1"
       },
@@ -815,7 +814,7 @@
         "T": 10,
         "W": 14,
         "SV": "3+",
-        "LD": "6+",
+        "LD": "5+",
         "basePoints": null,
         "squadSizes": "1"
       },
@@ -899,7 +898,7 @@
     {
       "name": "Fleshborer",
       "section": "Ranged Weapons",
-      "points": 3,
+      "points": 2,
       "profiles": null,
       "range": "18\"",
       "attacks": "A",
@@ -1152,7 +1151,7 @@
           "points": null,
           "range": "60\"",
           "attacks": "1",
-          "strength": "20",
+          "strength": "24",
           "ap": "-3",
           "damage": "D6+8",
           "keywords": [
