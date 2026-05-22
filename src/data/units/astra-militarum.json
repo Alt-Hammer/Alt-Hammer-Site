@@ -1519,7 +1519,7 @@
     {
       "name": "Boltgun",
       "section": "Ranged Weapons",
-      "points": 3,
+      "points": 4,
       "profiles": null,
       "range": "24\"",
       "attacks": "1",

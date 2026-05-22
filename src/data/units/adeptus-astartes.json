@@ -839,7 +839,7 @@
       "availability": "Tacticus, Gravis, Phobos, Jump Pack, Bike"
     },
     {
-      "name": "Bolter",
+      "name": "Boltgun",
       "section": "Ranged Weapons",
       "points": 5,
       "profiles": null,
@@ -1595,7 +1595,7 @@
         "Blast 2\"",
         "Anti-INFANTRY 4+"
       ],
-      "availability": "Tacticus"
+      "availability": "Tacticus, Gravis"
     },
     {
       "name": "Missile Launcher",
@@ -1614,7 +1614,7 @@
             "Heavy",
             "Blast 1\""
           ],
-          "availability": "Tacticus, Scout"
+          "availability": "Tacticus, Gravis, Scout"
         },
         {
           "profileName": "Krak",
@@ -1627,7 +1627,7 @@
           "keywords": [
             "Heavy"
           ],
-          "availability": "Tacticus, Scout"
+          "availability": "Tacticus, Gravis, Scout"
         }
       ],
       "range": null,
@@ -1639,7 +1639,7 @@
         "Heavy",
         "Blast 1\""
       ],
-      "availability": "Tacticus, Scout"
+      "availability": "Tacticus, Gravis, Scout"
     },
     {
       "name": "Cyclone Missile Launcher",
