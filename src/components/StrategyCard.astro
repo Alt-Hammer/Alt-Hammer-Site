@@ -23,16 +23,18 @@ const { stratagem } = Astro.props;
       {stratagem.maxUsesPerRound && (
         <div class="stratagem-max-uses">
           <span class="max-uses-label">Max Uses per Battle Round:</span>
-          <span class="max-uses-value">{stratagem.maxUsesPerRound}</span>
+          <span class="max-uses-value" set:html={stratagem.maxUsesPerRound}></span>
         </div>
       )}
     </div>
   </div>
   
-  <div class="card-field">
-    <span class="card-field-label">When Used:</span>
-    <div class="card-field-value" set:html={stratagem.timing} />
-  </div>
+  {stratagem.timing && (
+    <div class="card-field">
+      <span class="card-field-label">When Used:</span>
+      <div class="card-field-value" set:html={stratagem.timing} />
+    </div>
+  )}
   
   <div class="card-field">
     <span class="card-field-label">Description:</span>
@@ -41,9 +43,7 @@ const { stratagem } = Astro.props;
   
   <div class="card-field">
     <span class="card-field-label">Command Point Cost:</span>
-    <div class="card-field-value">{stratagem.cost}</div>
-  </div>
-  
+      <div class="card-field-value" set:html={stratagem.cost}></div>
   {stratagem.subRows && stratagem.subRows.length > 0 && (
     <div class="stratagem-sub-rows">
       {stratagem.subRows.map((row) => (

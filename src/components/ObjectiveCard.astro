@@ -19,17 +19,21 @@ const { objective } = Astro.props;
 
 <div class="objective-card">
   <div class="objective-header">
-    <div class="objective-meta">
-      <span class="objective-theme">{objective.theme}</span>
-      <span class="objective-dice">D6: {objective.diceRange}</span>
-    </div>
+    {(objective.theme || objective.diceRange) && (
+      <div class="objective-meta">
+        {objective.theme && <span class="objective-theme">{objective.theme}</span>}
+        {objective.diceRange && <span class="objective-dice">D6: {objective.diceRange}</span>}
+      </div>
+    )}
     <h3 class="objective-name">{objective.name}</h3>
   </div>
 
-  <div class="card-field">
-    <span class="card-field-label">Completion Timing:</span>
-    <div class="card-field-value" set:html={objective.timing} />
-  </div>
+  {objective.timing && (
+    <div class="card-field">
+      <span class="card-field-label">Completion Timing:</span>
+      <div class="card-field-value" set:html={objective.timing} />
+    </div>
+  )}
 
   <div class="card-field">
     <span class="card-field-label">Description:</span>
@@ -42,14 +46,20 @@ const { objective } = Astro.props;
       <ul class="points-list">
         {objective.pointsAwarded.map((point) => (
           <li>
-            {point.condition}: <strong>{point.points}</strong>
+            {point.points ? (
+              <>
+                {point.condition}: <strong>{point.points}</strong>
+              </>
+            ) : (
+              point.condition
+            )}
           </li>
         ))}
       </ul>
     </div>
   )}
 
-  {objective.gameEffects && objective.gameEffects !== "None." && (
+  {objective.gameEffects && objective.gameEffects.trim() !== "None." && (
     <div class="card-field">
       <span class="card-field-label">Game Effects:</span>
       <div class="card-field-value" set:html={objective.gameEffects} />
