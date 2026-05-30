@@ -78,7 +78,20 @@ const weaponMapJson = JSON.stringify(weapons);
 
   <script is:inline define:vars={{ unitMapJson, weaponMapJson }}>
   (function () {
-    const STATS = ['M','WS','BS','I','A','S','T','W','SV','LD'];
+    const STATS = ['Act.Pts.','M','WS','BS','I','A','S','T','W','SV','LD'];
+    const STAT_KEY_MAP = {
+      'Act.Pts.': 'AP',
+      'M': 'M',
+      'WS': 'WS',
+      'BS': 'BS',
+      'I': 'I',
+      'A': 'A',
+      'S': 'S',
+      'T': 'T',
+      'W': 'W',
+      'SV': 'SV',
+      'LD': 'LD',
+    };
     const unitMap = JSON.parse(unitMapJson);
 
     // Sections that appear in the left column
@@ -127,11 +140,12 @@ const weaponMapJson = JSON.stringify(weapons);
 
           const statRow = document.createElement('div');
           statRow.className = 'up-stat-row';
-          for (const key of STATS) {
+          for (const displayLabel of STATS) {
+            const key = STAT_KEY_MAP[displayLabel];
             const cell = document.createElement('div');
             cell.className = 'up-stat-cell';
             const val = model.stats?.[key] ?? '—';
-            cell.innerHTML = `<span class="up-stat-label">${key}</span><span class="up-stat-value">${val}</span>`;
+            cell.innerHTML = `<span class="up-stat-label">${displayLabel}</span><span class="up-stat-value">${val}</span>`;
             statRow.appendChild(cell);
           }
           modelBlock.appendChild(statRow);
@@ -162,11 +176,12 @@ const weaponMapJson = JSON.stringify(weapons);
 
         const statRow = document.createElement('div');
         statRow.className = 'up-stat-row';
-        for (const key of STATS) {
+        for (const displayLabel of STATS) {
+          const key = STAT_KEY_MAP[displayLabel];
           const cell = document.createElement('div');
           cell.className = 'up-stat-cell';
           const val = unit.stats?.[key] ?? '—';
-          cell.innerHTML = `<span class="up-stat-label">${key}</span><span class="up-stat-value">${val}</span>`;
+          cell.innerHTML = `<span class="up-stat-label">${displayLabel}</span><span class="up-stat-value">${val}</span>`;
           statRow.appendChild(cell);
         }
         card.appendChild(statRow);

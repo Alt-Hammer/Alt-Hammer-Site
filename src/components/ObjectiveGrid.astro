@@ -1,0 +1,22 @@
+---
+/**
+ * ObjectiveGrid.astro
+ * Renders a 3-column grid of ObjectiveCard components.
+ * Responsive: 3 cols on desktop, 2 on tablet, 1 on mobile.
+ */
+
+import type { SecondaryObjective } from '../data/objectives';
+import ObjectiveCard from './ObjectiveCard.astro';
+
+interface Props {
+  objectives: SecondaryObjective[];
+}
+
+const { objectives } = Astro.props;
+---
+
+<div class="objective-grid">
+  {objectives.map((objective) => (
+    <ObjectiveCard objective={objective} />
+  ))}
+</div>

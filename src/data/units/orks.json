@@ -16,6 +16,7 @@
         {
           "modelName": "Warboss",
           "stats": {
+            "AP": "3",
             "M": "6\"",
             "WS": 6,
             "BS": 3,
@@ -39,6 +40,7 @@
         {
           "modelName": "Warboss' Wartrike",
           "stats": {
+            "AP": "3",
             "M": "12\"",
             "WS": 6,
             "BS": 3,
@@ -63,6 +65,7 @@
         {
           "modelName": "Beast Snaggas Boss' Squigosaur",
           "stats": {
+            "AP": "3",
             "M": "10\"",
             "WS": 6,
             "BS": 3,
@@ -92,6 +95,7 @@
       "name": "Mekboy",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 5,
         "BS": 2,
@@ -117,6 +121,7 @@
       "name": "Weirdboy",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 5,
         "BS": 2,
@@ -142,6 +147,7 @@
       "name": "Painboy",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 5,
         "BS": 2,
@@ -175,6 +181,7 @@
         {
           "modelName": "Boy",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 4,
             "BS": 2,
@@ -196,6 +203,7 @@
         {
           "modelName": "Nob",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 5,
             "BS": 2,
@@ -220,6 +228,7 @@
       "name": "Gretchin",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 2,
         "BS": 3,
@@ -244,6 +253,7 @@
       "name": "Nobz",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 5,
         "BS": 2,
@@ -278,6 +288,7 @@
         {
           "modelName": "Boy",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 4,
             "BS": 2,
@@ -301,6 +312,7 @@
         {
           "modelName": "Nob",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 5,
             "BS": 2,
@@ -327,6 +339,7 @@
       "name": "Burna Boyz",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 4,
         "BS": 2,
@@ -350,6 +363,7 @@
       "name": "Tankbustaz",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 4,
         "BS": 2,
@@ -373,6 +387,7 @@
       "name": "Flash Gits",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 4,
         "BS": 3,
@@ -406,6 +421,7 @@
         {
           "modelName": "Boy",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 4,
             "BS": 3,
@@ -429,6 +445,7 @@
         {
           "modelName": "Nob",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 5,
             "BS": 3,
@@ -465,6 +482,7 @@
         {
           "modelName": "Boy",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 4,
             "BS": 2,
@@ -488,6 +506,7 @@
         {
           "modelName": "Nob",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 5,
             "BS": 2,
@@ -525,6 +544,7 @@
         {
           "modelName": "Boy",
           "stats": {
+            "AP": "2",
             "M": "10\"",
             "WS": 4,
             "BS": 2,
@@ -549,6 +569,7 @@
         {
           "modelName": "Nob on Smashasquig",
           "stats": {
+            "AP": "2",
             "M": "10\"",
             "WS": 5,
             "BS": 2,
@@ -585,6 +606,7 @@
         {
           "modelName": "Boy",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 4,
             "BS": 2,
@@ -607,6 +629,7 @@
         {
           "modelName": "Nob",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 5,
             "BS": 2,
@@ -632,6 +655,7 @@
       "name": "Trukk",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 4,
         "BS": 2,
@@ -657,6 +681,7 @@
       "name": "Killa Kans",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 3,
         "BS": 3,
@@ -682,6 +707,7 @@
       "name": "Deff Dred",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 4,
         "BS": 2,
@@ -707,6 +733,7 @@
       "name": "Gorkanot / Morkanot",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 4,
         "BS": 2,
@@ -733,6 +760,7 @@
       "name": "Stompa",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 4,
         "BS": 2,
@@ -759,6 +787,7 @@
       "name": "Deffkoptas",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "18\"",
         "WS": 4,
         "BS": 2,
@@ -785,6 +814,7 @@
       "name": "Mek Gunz",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "2\"",
         "WS": 1,
         "BS": 3,
@@ -809,6 +839,7 @@
       "name": "Rukkatrukk Squigbuggy",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 4,
         "BS": 2,
@@ -833,6 +864,7 @@
       "name": "Boomdakka Snazzwagon",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 4,
         "BS": 2,
@@ -857,6 +889,7 @@
       "name": "Shokkjump Dragsta",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 4,
         "BS": 2,
@@ -882,6 +915,7 @@
       "name": "Kustom Boosta-Blasta",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 4,
         "BS": 2,
@@ -906,6 +940,7 @@
       "name": "Megatrakk Scrapjet",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "14\"",
         "WS": 4,
         "BS": 2,
@@ -930,6 +965,7 @@
       "name": "Battlewagon",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 4,
         "BS": 2,
@@ -956,6 +992,7 @@
       "name": "Hunta Rig",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 4,
         "BS": 2,

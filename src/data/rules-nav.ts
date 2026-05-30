@@ -49,7 +49,7 @@ export const RULES_SECTIONS: RulesSection[] = [
     items: [
       { label: 'Command Phase',      anchor: '#phase-1-command-phase' },
       { label: 'Activation Phase',   anchor: '#phase-2-activation-phase' },
-      { label: 'Determine Initiative', anchor: '#phase-3-determine-the-initiative-for-the-next-battle-round' },
+      { label: 'Victory Points & Initiative', anchor: '#phase-3-victory-points-and-initiative' },
     ],
   },
   {

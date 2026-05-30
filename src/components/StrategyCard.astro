@@ -1,0 +1,57 @@
+---
+/**
+ * StrategyCard.astro
+ * Renders a single Stratagem card with name, timing, description, and cost.
+ * 
+ * Handles special cases:
+ * - Sub-rows for effects (e.g., Moment of Glory's 5 effect variants)
+ */
+
+import type { Stratagem } from '../data/stratagems';
+
+interface Props {
+  stratagem: Stratagem;
+}
+
+const { stratagem } = Astro.props;
+---
+
+<div class="stratagem-card">
+  <div class="stratagem-header">
+    <div class="stratagem-title-group">
+      <h3 class="stratagem-name">{stratagem.name}</h3>
+      {stratagem.maxUsesPerRound && (
+        <div class="stratagem-max-uses">
+          <span class="max-uses-label">Max Uses per Battle Round:</span>
+          <span class="max-uses-value">{stratagem.maxUsesPerRound}</span>
+        </div>
+      )}
+    </div>
+  </div>
+  
+  <div class="card-field">
+    <span class="card-field-label">When Used:</span>
+    <div class="card-field-value" set:html={stratagem.timing} />
+  </div>
+  
+  <div class="card-field">
+    <span class="card-field-label">Description:</span>
+    <div class="card-field-value" set:html={stratagem.description} />
+  </div>
+  
+  <div class="card-field">
+    <span class="card-field-label">Command Point Cost:</span>
+    <div class="card-field-value">{stratagem.cost}</div>
+  </div>
+  
+  {stratagem.subRows && stratagem.subRows.length > 0 && (
+    <div class="stratagem-sub-rows">
+      {stratagem.subRows.map((row) => (
+        <div class="sub-row">
+          <span>{row.effect}</span>
+          <span class="sub-cost">{row.cost}</span>
+        </div>
+      ))}
+    </div>
+  )}
+</div>

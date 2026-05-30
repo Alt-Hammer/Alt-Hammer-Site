@@ -6,6 +6,7 @@
       "name": "Captain",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 7,
         "BS": 7,
@@ -33,6 +34,7 @@
       "name": "Lieutenant",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 6,
@@ -60,6 +62,7 @@
       "name": "Chaplain",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 5,
@@ -87,6 +90,7 @@
       "name": "Librarian",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -115,6 +119,7 @@
       "name": "Apothecary",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -142,6 +147,7 @@
       "name": "Judiciar",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 5,
@@ -169,6 +175,7 @@
       "name": "Techmarine",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -195,6 +202,7 @@
       "name": "Intercessors",
       "category": "Battleline",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -220,6 +228,7 @@
       "name": "1st Company Veterans",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 5,
@@ -245,6 +254,7 @@
       "name": "Honour Guard",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 5,
@@ -271,6 +281,7 @@
       "name": "Devastators",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -296,6 +307,7 @@
       "name": "Scouts",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -322,6 +334,7 @@
       "name": "Centurions",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -347,6 +360,7 @@
       "name": "Rhino",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -357,7 +371,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -374,6 +388,7 @@
       "name": "Razorback",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -384,7 +399,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -400,6 +415,7 @@
       "name": "Impulsor",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -410,7 +426,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 80,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -428,6 +444,7 @@
       "name": "Drop Pod",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "0\"",
         "WS": "-",
         "BS": 5,
@@ -438,7 +455,7 @@
         "W": 6,
         "SV": "3+",
         "LD": "-",
-        "basePoints": 70,
+        "basePoints": 45,
         "squadSizes": "1"
       },
       "keywords": [
@@ -456,6 +473,7 @@
       "name": "Invictor Warsuit",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 5,
         "BS": 5,
@@ -466,7 +484,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 90,
+        "basePoints": 75,
         "squadSizes": "1"
       },
       "keywords": [
@@ -483,6 +501,7 @@
       "name": "Contemptor Deadnought",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 5,
         "BS": 5,
@@ -493,7 +512,7 @@
         "W": 12,
         "SV": "3+",
         "LD": "4+",
-        "basePoints": 110,
+        "basePoints": 95,
         "squadSizes": "1"
       },
       "keywords": [
@@ -509,6 +528,7 @@
       "name": "Redemptor Dreadnought",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 5,
         "BS": 5,
@@ -519,7 +539,7 @@
         "W": 14,
         "SV": "2+",
         "LD": "4+",
-        "basePoints": 135,
+        "basePoints": 115,
         "squadSizes": "1"
       },
       "keywords": [
@@ -535,6 +555,7 @@
       "name": "Firestrike Platform",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "3\"",
         "WS": 3,
         "BS": 5,
@@ -545,7 +566,7 @@
         "W": 7,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 50,
+        "basePoints": 40,
         "squadSizes": "1"
       },
       "keywords": [
@@ -560,6 +581,7 @@
       "name": "Invader ATVs",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -570,7 +592,7 @@
         "W": 7,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 60,
+        "basePoints": 50,
         "squadSizes": "1 to 2"
       },
       "keywords": [
@@ -582,9 +604,40 @@
       "models": null
     },
     {
+      "name": "Land Speeders",
+      "category": "Vehicles",
+      "stats": {
+        "AP": "2",
+        "M": "14\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 5,
+        "T": 7,
+        "W": 9,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 50,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Astartes",
+        "Vehicle",
+        "Fly",
+        "Hover",
+        "Scout 7\"",
+        "Deep Strike",
+        "Deadly Demise 1"
+      ],
+      "models": null
+    },
+    {
       "name": "Storm Speeder",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "14\"",
         "WS": 2,
         "BS": 5,
@@ -592,11 +645,11 @@
         "A": 3,
         "S": 5,
         "T": 9,
-        "W": 10,
+        "W": 13,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 85,
-        "squadSizes": "1 to 2"
+        "basePoints": 90,
+        "squadSizes": "1"
       },
       "keywords": [
         "Imperium",
@@ -612,6 +665,7 @@
       "name": "Predator",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -622,7 +676,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 100,
+        "basePoints": 90,
         "squadSizes": "1"
       },
       "keywords": [
@@ -637,8 +691,9 @@
       "name": "Gladiator",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 5,
         "I": 3,
         "A": 4,
@@ -647,7 +702,7 @@
         "W": 11,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 100,
+        "basePoints": 90,
         "squadSizes": "1"
       },
       "keywords": [
@@ -663,6 +718,7 @@
       "name": "Land Raider",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -673,7 +729,7 @@
         "W": 20,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 250,
+        "basePoints": 200,
         "squadSizes": "1"
       },
       "keywords": [
@@ -690,8 +746,9 @@
       "name": "Repulsor",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 5,
         "I": 3,
         "A": 6,
@@ -700,7 +757,7 @@
         "W": 18,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 250,
+        "basePoints": 190,
         "squadSizes": "1"
       },
       "keywords": [
@@ -717,6 +774,7 @@
       "name": "Vindicator",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 5,
@@ -727,7 +785,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 80,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -742,6 +800,7 @@
       "name": "Whirlwind",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 5,
@@ -752,7 +811,7 @@
         "W": 13,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 80,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -767,6 +826,7 @@
       "name": "Hammerfall Bunker",
       "category": "Fortifications",
       "stats": {
+        "AP": "2",
         "M": "0\"",
         "WS": "-",
         "BS": 5,
@@ -777,7 +837,7 @@
         "W": 15,
         "SV": "2+",
         "LD": "-",
-        "basePoints": 80,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1753,6 +1813,20 @@
           "keywords": [
             "Assault",
             "Ignores Cover"
+          ],
+          "availability": "Tacticus, Jump Pack, Bike"
+        },
+        {
+          "profileName": "Smoke",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "-",
+          "ap": "-",
+          "damage": "-",
+          "keywords": [
+            "Assault",
+            "Smoke 1\""
           ],
           "availability": "Tacticus, Jump Pack, Bike"
         }

@@ -11,19 +11,20 @@ Alt-Hammer 40,000 1st Edition - Unit Data Tables by Faction.xlsx
   Column layout (0-based indices):
     1  Unit Name
     2  Model Name
-    3  Movement
-    4  Weapon Skill
-    5  Ballistic Skill
-    6  Initiative
-    7  Attacks
-    8  Strength
-    9  Toughness
-    10 Wounds
-    11 Save
-    12 Leadership
-    13 Base Points per Model
-    14 Squad Sizes
-    15 Keywords
+    3  Activation Points
+    4  Movement
+    5  Weapon Skill
+    6  Ballistic Skill
+    7  Initiative
+    8  Attacks
+    9  Strength
+    10 Toughness
+    11 Wounds
+    12 Save
+    13 Leadership
+    14 Base Points per Model
+    15 Squad Sizes
+    16 Keywords
 
 UNIT CATEGORIES
 ───────────────
@@ -98,19 +99,20 @@ SHEET_SLUG_OVERRIDES = {
 
 COL_UNIT_NAME  = 1
 COL_MODEL_NAME = 2
-COL_M          = 3
-COL_WS         = 4
-COL_BS         = 5
-COL_I          = 6
-COL_A          = 7
-COL_S          = 8
-COL_T          = 9
-COL_W          = 10
-COL_SV         = 11
-COL_LD         = 12
-COL_PTS        = 13
-COL_SIZES      = 14
-COL_KEYWORDS   = 15
+COL_AP         = 3
+COL_M          = 4
+COL_WS         = 5
+COL_BS         = 6
+COL_I          = 7
+COL_A          = 8
+COL_S          = 9
+COL_T          = 10
+COL_W          = 11
+COL_SV         = 12
+COL_LD         = 13
+COL_PTS        = 14
+COL_SIZES      = 15
+COL_KEYWORDS   = 16
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -157,6 +159,7 @@ def is_category_label(unit_name: str, model_name: str, row) -> bool:
 
 def parse_stats(row) -> dict:
     return {
+        'AP':         clean_str(cell_val(row, COL_AP,     '')),
         'M':          clean_str(cell_val(row, COL_M,     '')),
         'WS':         cell_val(row, COL_WS,    None),
         'BS':         cell_val(row, COL_BS,    None),

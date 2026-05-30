@@ -72,8 +72,16 @@ OUTPUT_DIR = "src/content/rules"
 # sourced from the Excel file via extract_roll_tables.py and rendered by the
 # RollTable.astro component. The MDX file contains import statements that
 # convert_rules.py cannot generate, so overwriting it would break the tables.
+#
+# command-points-stratagems is excluded because its Stratagems section uses
+# the StrategyGrid.astro component with data from extract_stratagems.py.
+#
+# generating-a-battle is excluded because its Secondary Mission Objectives
+# section uses the ObjectiveGrid.astro component with data from extract_objectives.py.
 EXCLUDE_SLUGS = {
     "making-attacks",
+    "command-points-stratagems",
+    "generating-a-battle",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────

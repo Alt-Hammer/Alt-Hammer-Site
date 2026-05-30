@@ -1,0 +1,22 @@
+---
+/**
+ * StrategyGrid.astro
+ * Renders a 3-column grid of StrategyCard components.
+ * Responsive: 3 cols on desktop, 2 on tablet, 1 on mobile.
+ */
+
+import type { Stratagem } from '../data/stratagems';
+import StrategyCard from './StrategyCard.astro';
+
+interface Props {
+  strategies: Stratagem[];
+}
+
+const { strategies } = Astro.props;
+---
+
+<div class="stratagem-grid">
+  {strategies.map((strategy) => (
+    <StrategyCard stratagem={strategy} />
+  ))}
+</div>

@@ -6,6 +6,7 @@
       "name": "Senior Officer",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 5,
@@ -33,6 +34,7 @@
       "name": "Junior Officer",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 4,
@@ -60,6 +62,7 @@
       "name": "Squadron Commander",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 4,
@@ -87,6 +90,7 @@
       "name": "Commissar",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 4,
@@ -114,6 +118,7 @@
       "name": "Sanctioned Psyker",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 2,
         "BS": 3,
@@ -140,6 +145,7 @@
       "name": "Ministorum Priest",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -165,6 +171,7 @@
       "name": "Techpriest Enginseer",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -190,6 +197,7 @@
       "name": "Militarum Tempestus Tempestor Prime",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 6,
@@ -218,6 +226,7 @@
       "name": "Ogryn Bodyguard",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 2,
@@ -255,6 +264,7 @@
         {
           "modelName": "Guardsman",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 3,
             "BS": 3,
@@ -278,6 +288,7 @@
         {
           "modelName": "Heavy Weapons Team",
           "stats": {
+            "AP": "2",
             "M": "4\"",
             "WS": 3,
             "BS": 3,
@@ -314,6 +325,7 @@
         {
           "modelName": "Veteran",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 3,
             "BS": 4,
@@ -337,6 +349,7 @@
         {
           "modelName": "Veteran Heavy Weapons Team",
           "stats": {
+            "AP": "2",
             "M": "4\"",
             "WS": 3,
             "BS": 4,
@@ -373,6 +386,7 @@
         {
           "modelName": "Guardsman",
           "stats": {
+            "AP": "2",
             "M": "4\"",
             "WS": 3,
             "BS": 3,
@@ -396,6 +410,7 @@
         {
           "modelName": "Heavy Weapons Team",
           "stats": {
+            "AP": "2",
             "M": "4\"",
             "WS": 3,
             "BS": 3,
@@ -422,6 +437,7 @@
       "name": "Conscripts",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 2,
         "BS": 2,
@@ -457,6 +473,7 @@
         {
           "modelName": "Veteran",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 3,
             "BS": 4,
@@ -480,6 +497,7 @@
         {
           "modelName": "Veteran Heavy Weapons Team",
           "stats": {
+            "AP": "2",
             "M": "4\"",
             "WS": 3,
             "BS": 4,
@@ -506,13 +524,14 @@
       "name": "Ogryn",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 2,
         "I": 4,
         "A": 4,
         "S": 5,
-        "T": 5,
+        "T": 6,
         "W": 4,
         "SV": "5+",
         "LD": "5+",
@@ -524,6 +543,7 @@
         "Astra Militarum",
         "Militarum Auxilia",
         "Infantry",
+        "Implacable",
         "Feel No Pain 5+"
       ],
       "models": null
@@ -532,6 +552,7 @@
       "name": "Ratlings",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 1,
         "BS": 7,
@@ -572,6 +593,7 @@
         {
           "modelName": "Scion",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 4,
             "BS": 5,
@@ -597,6 +619,7 @@
         {
           "modelName": "Sentry Turret",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 0,
             "BS": 3,
@@ -636,6 +659,7 @@
         {
           "modelName": "Scion",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 4,
             "BS": 5,
@@ -660,6 +684,7 @@
         {
           "modelName": "Sentry Turret",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 0,
             "BS": 3,
@@ -688,6 +713,7 @@
       "name": "Rough Riders",
       "category": "Mounted",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 4,
         "BS": 3,
@@ -715,6 +741,7 @@
       "name": "Chimera",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -725,7 +752,7 @@
         "W": 11,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 75,
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
@@ -743,6 +770,7 @@
       "name": "Taurox",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -753,7 +781,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 65,
+        "basePoints": 55,
         "squadSizes": "1"
       },
       "keywords": [
@@ -770,6 +798,7 @@
       "name": "Militarum Tempestus Taurox",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -780,7 +809,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "6+",
-        "basePoints": 75,
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
@@ -797,6 +826,7 @@
       "name": "Valkyrie",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "6\" - 30\"",
         "WS": 2,
         "BS": 3,
@@ -807,7 +837,7 @@
         "W": 14,
         "SV": "3+",
         "LD": "6+",
-        "basePoints": 150,
+        "basePoints": 130,
         "squadSizes": "1"
       },
       "keywords": [
@@ -839,17 +869,18 @@
         {
           "modelName": "Scout Sentinel",
           "stats": {
+            "AP": "2",
             "M": "9\"",
             "WS": 3,
             "BS": 3,
-            "I": 3,
+            "I": 4,
             "A": 3,
-            "S": 6,
+            "S": 4,
             "T": 5,
             "W": 5,
             "SV": "4+",
             "LD": "7+",
-            "basePoints": 45,
+            "basePoints": 35,
             "squadSizes": "1 to 3"
           },
           "keywords": [
@@ -866,17 +897,18 @@
         {
           "modelName": "Armoured Sentinel",
           "stats": {
+            "AP": "2",
             "M": "8\"",
             "WS": 3,
             "BS": 3,
             "I": 3,
             "A": 3,
-            "S": 6,
+            "S": 4,
             "T": 6,
             "W": 6,
             "SV": "3+",
             "LD": "7+",
-            "basePoints": 55,
+            "basePoints": 45,
             "squadSizes": "1 to 3"
           },
           "keywords": [
@@ -895,6 +927,7 @@
       "name": "Light Artillery Teams",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "3\"",
         "WS": 3,
         "BS": 3,
@@ -905,7 +938,7 @@
         "W": 6,
         "SV": "4+",
         "LD": "8+",
-        "basePoints": 30,
+        "basePoints": 25,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -920,6 +953,7 @@
       "name": "Heavy Artillery Teams",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "2\"",
         "WS": 3,
         "BS": 3,
@@ -930,7 +964,7 @@
         "W": 8,
         "SV": "4+",
         "LD": "8+",
-        "basePoints": 40,
+        "basePoints": 35,
         "squadSizes": "1"
       },
       "keywords": [
@@ -942,9 +976,38 @@
       "models": null
     },
     {
+      "name": "Hippogriff Scout Cars",
+      "category": "Vehicles",
+      "stats": {
+        "AP": "2",
+        "M": "14\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 6,
+        "W": 9,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 40,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Imperium",
+        "Astra Militarum",
+        "Vehicle",
+        "Squadron",
+        "Scout 7\"",
+        "Deadly Demise D3"
+      ],
+      "models": null
+    },
+    {
       "name": "Onager Self Propelled Artillery",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "8\"",
         "WS": 3,
         "BS": 3,
@@ -955,7 +1018,7 @@
         "W": 9,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 60,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -971,6 +1034,7 @@
       "name": "Chimera Self Propelled Artillery",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -981,7 +1045,7 @@
         "W": 11,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 75,
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
@@ -997,6 +1061,7 @@
       "name": "Hellhound Light Assault Tank",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -1007,7 +1072,7 @@
         "W": 11,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 85,
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1023,6 +1088,7 @@
       "name": "Leman Russ Battle Tank",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -1033,7 +1099,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "6+",
-        "basePoints": 120,
+        "basePoints": 100,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1049,6 +1115,7 @@
       "name": "Rogal Dorn Heavy Battle Tank",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -1059,7 +1126,7 @@
         "W": 18,
         "SV": "2+",
         "LD": "6+",
-        "basePoints": 190,
+        "basePoints": 170,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1075,6 +1142,7 @@
       "name": "Baneblade Super-Heavy Battle Tank",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -1085,7 +1153,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 350,
+        "basePoints": 330,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1102,6 +1170,7 @@
       "name": "Stormlord Super-Heavy Assault Transport",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -1112,7 +1181,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 400,
+        "basePoints": 475,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1130,6 +1199,7 @@
       "name": "Shadowsword Super-Heavy Tank Hunter",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -1140,7 +1210,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 350,
+        "basePoints": 330,
         "squadSizes": "1"
       },
       "keywords": [
@@ -2000,7 +2070,7 @@
       "availability": ""
     },
     {
-      "name": "Grenade Launcher - Frag",
+      "name": "Grenade Launcher",
       "section": "Ranged Weapons",
       "points": 8,
       "profiles": [
@@ -2018,25 +2088,7 @@
             "Ignores Cover"
           ],
           "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Assault",
-        "Blast 1\"",
-        "Ignores Cover"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Grenade Launcher - Krak",
-      "section": "Ranged Weapons",
-      "points": null,
-      "profiles": [
+        },
         {
           "profileName": "Krak",
           "points": null,
@@ -2050,6 +2102,20 @@
             "Ignores Cover"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Smoke",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "-",
+          "ap": "-",
+          "damage": "-",
+          "keywords": [
+            "Assault",
+            "Smoke 1\""
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -2059,6 +2125,7 @@
       "damage": null,
       "keywords": [
         "Assault",
+        "Blast 1\"",
         "Ignores Cover"
       ],
       "availability": ""

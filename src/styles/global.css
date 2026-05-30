@@ -701,18 +701,44 @@ code, kbd {
 }
 
 /* --------------------------------------------------------------------------
-   Stratagem Cards
+   Stratagem Cards & Objective Cards
    -------------------------------------------------------------------------- */
-.stratagem-card {
-  background: var(--color-surface-1);
-  border: 1px solid var(--color-border-mid);
-  padding: var(--sp-5);
-  margin-bottom: var(--sp-4);
-  position: relative;
-  overflow: hidden;
+
+/* 3-column grid layout for stratagems and objectives */
+.stratagem-grid,
+.objective-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+  margin: var(--sp-6) 0;
+  align-items: stretch;
+  grid-auto-rows: auto;
 }
 
-.stratagem-card::after {
+/* Base card styling for both stratagem and objective cards */
+.stratagem-card,
+.objective-card {
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border-mid);
+  border-top: 3px solid var(--color-gold-dim);
+  padding: var(--sp-5);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.stratagem-card:hover,
+.objective-card:hover {
+  border-color: var(--color-border);
+  background: var(--color-surface-2);
+}
+
+/* Decorative accent overlay */
+.stratagem-card::after,
+.objective-card::after {
   content: '';
   position: absolute;
   top: 0; right: 0;
@@ -722,27 +748,85 @@ code, kbd {
   pointer-events: none;
 }
 
-.stratagem-header {
+/* Header section (title + badge) */
+.stratagem-header,
+.objective-header {
   display: flex;
   align-items: flex-start;
   gap: var(--sp-4);
-  margin-bottom: var(--sp-3);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  z-index: 1;
 }
 
-.stratagem-name {
+.stratagem-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  flex: 1;
+}
+
+/* Stratagem name and objective name */
+.stratagem-name,
+.objective-name {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-text-primary);
   margin: 0;
   flex: 1;
+  line-height: 1.2;
 }
 
+.stratagem-max-uses {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-top: calc(var(--sp-2) / 2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.stratagem-max-uses .max-uses-label {
+  font-weight: 700;
+  color: var(--color-gold-dim);
+  margin-right: var(--sp-2);
+  text-transform: none;
+  letter-spacing: 0.03em;
+}
+
+.stratagem-max-uses .max-uses-value {
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+/* Objective number badge */
+.objective-number {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  background: rgba(201,168,76,0.1);
+  border: 1px solid var(--color-gold-dim);
+  padding: var(--sp-1) var(--sp-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Stratagem cost badge */
 .stratagem-cost {
   font-family: var(--font-mono);
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--color-gold);
   white-space: nowrap;
@@ -750,9 +834,72 @@ code, kbd {
   background: rgba(201,168,76,0.1);
   border: 1px solid var(--color-gold-dim);
   padding: var(--sp-1) var(--sp-3);
-  line-height: 1;
+  line-height: 1.2;
 }
 
+/* Objective meta row: theme label + D6 range badge */
+.objective-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--sp-1);
+  flex-shrink: 0;
+}
+ 
+/* Theme label (e.g. "Purge the Foe") */
+.objective-theme {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+ 
+/* D6 range badge (e.g. "D6: 1–2") */
+.objective-dice {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  background: rgba(201, 168, 76, 0.1);
+  border: 1px solid var(--color-gold-dim);
+  padding: var(--sp-1) var(--sp-2);
+  white-space: nowrap;
+}
+
+/* Card field styling (label + value pairs) */
+.card-field {
+  margin-bottom: var(--sp-3);
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card-field:last-child {
+  margin-bottom: 0;
+}
+
+.card-field-label {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--sp-1);
+  display: block;
+}
+
+.card-field-value {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* Legacy field styling (for backwards compatibility) */
 .stratagem-field {
   margin-bottom: var(--sp-2);
   font-size: 0.9rem;
@@ -766,6 +913,72 @@ code, kbd {
   text-transform: uppercase;
   color: var(--color-gold-dim);
   margin-right: var(--sp-2);
+}
+
+/* Sub-rows for nested stratagem effects (e.g., Moment of Glory) */
+.stratagem-sub-rows {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--sp-3);
+  margin-top: var(--sp-3);
+}
+
+.sub-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--sp-2);
+  gap: var(--sp-2);
+}
+
+.sub-row:last-child {
+  margin-bottom: 0;
+}
+
+.sub-cost {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-gold-dim);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Points list for objectives */
+.points-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.points-list li {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.points-list strong {
+  color: var(--color-gold);
+  font-family: var(--font-mono);
+}
+
+/* Responsive grid layout */
+@media (max-width: 1200px) {
+  .stratagem-grid,
+  .objective-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stratagem-grid,
+  .objective-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1309,7 +1522,7 @@ code, kbd {
 
 .up-stat-row {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(11, 0.85fr);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -1401,7 +1614,10 @@ code, kbd {
 
 @media (max-width: 600px) {
   .up-stat-row {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+  .up-stat-cell {
+    padding: var(--sp-1) var(--sp-0.5);
   }
 }
 

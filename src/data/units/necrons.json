@@ -16,6 +16,7 @@
         {
           "modelName": "Overlord",
           "stats": {
+            "AP": "3",
             "M": "5\"",
             "WS": 6,
             "BS": 6,
@@ -39,6 +40,7 @@
         {
           "modelName": "Overlord's Command Barge",
           "stats": {
+            "AP": "2",
             "M": "10\"",
             "WS": 6,
             "BS": 6,
@@ -65,6 +67,7 @@
       "name": "Royal Warden",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -90,6 +93,7 @@
       "name": "Mantic",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 4,
         "BS": 5,
@@ -114,6 +118,7 @@
       "name": "Hexmark Destroyer",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 3,
         "BS": 7,
@@ -139,6 +144,7 @@
       "name": "Shard of Transcendent C'Tan",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 9,
         "BS": 7,
@@ -146,7 +152,7 @@
         "A": 8,
         "S": 11,
         "T": 11,
-        "W": 11,
+        "W": 18,
         "SV": "4+",
         "LD": "2+",
         "basePoints": 400,
@@ -168,6 +174,7 @@
       "name": "Warriors",
       "category": "Battleline",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 2,
         "BS": 4,
@@ -177,7 +184,7 @@
         "T": 3,
         "W": 1,
         "SV": "4+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 4,
         "squadSizes": "10 to 20"
       },
@@ -192,6 +199,7 @@
       "name": "Immortals",
       "category": "Battleline",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 3,
         "BS": 5,
@@ -201,7 +209,7 @@
         "T": 5,
         "W": 3,
         "SV": "3+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 18,
         "squadSizes": "5 to 10"
       },
@@ -216,6 +224,7 @@
       "name": "Flayed Ones",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 5,
         "BS": 3,
@@ -225,7 +234,7 @@
         "T": 3,
         "W": 2,
         "SV": "4+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 10,
         "squadSizes": "5 to 10"
       },
@@ -241,6 +250,7 @@
       "name": "Deathmarks",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 2,
         "BS": 7,
@@ -250,7 +260,7 @@
         "T": 3,
         "W": 2,
         "SV": "4+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 15,
         "squadSizes": "1 to 5"
       },
@@ -268,16 +278,17 @@
       "name": "Lychguard",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
-        "I": 3,
+        "I": 4,
         "A": 4,
         "S": 5,
-        "T": 4,
-        "W": 4,
-        "SV": "4+",
-        "LD": "5+",
+        "T": 5,
+        "W": 5,
+        "SV": "2+",
+        "LD": "3+",
         "basePoints": 25,
         "squadSizes": "2 to 5"
       },
@@ -292,16 +303,17 @@
       "name": "Triarch Praetorians",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 5,
         "BS": 5,
-        "I": 3,
+        "I": 4,
         "A": 4,
         "S": 5,
         "T": 4,
         "W": 3,
-        "SV": "4+",
-        "LD": "7+",
+        "SV": "3+",
+        "LD": "4+",
         "basePoints": 18,
         "squadSizes": "5 to 10"
       },
@@ -317,6 +329,7 @@
       "name": "Ophydian Destroyers",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 3,
         "BS": 4,
@@ -325,8 +338,8 @@
         "S": 4,
         "T": 3,
         "W": 4,
-        "SV": "4+",
-        "LD": "7+",
+        "SV": "3+",
+        "LD": "4+",
         "basePoints": 35,
         "squadSizes": "1 to 6"
       },
@@ -336,7 +349,8 @@
         "Stealth",
         "Hover",
         "Relentless",
-        "Phase Shift"
+        "Phase Shift",
+        "Deadly Demise D3"
       ],
       "models": null
     },
@@ -344,6 +358,7 @@
       "name": "Skorpekh Destroyers",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 4,
         "BS": 3,
@@ -352,15 +367,16 @@
         "S": 6,
         "T": 5,
         "W": 5,
-        "SV": "4+",
-        "LD": "7+",
+        "SV": "3+",
+        "LD": "4+",
         "basePoints": 30,
         "squadSizes": "1 to 6"
       },
       "keywords": [
         "Necron",
         "Infantry",
-        "Relentless"
+        "Relentless",
+        "Deadly Demise D3"
       ],
       "models": null
     },
@@ -368,16 +384,17 @@
       "name": "Lokhust Destroyers",
       "category": "Mounted",
       "stats": {
+        "AP": "2",
         "M": "8\"",
         "WS": 3,
         "BS": 4,
-        "I": 2,
+        "I": 3,
         "A": 2,
         "S": 4,
         "T": 4,
         "W": 5,
-        "SV": "4+",
-        "LD": "7+",
+        "SV": "3+",
+        "LD": "4+",
         "basePoints": 35,
         "squadSizes": "1 to 6"
       },
@@ -385,7 +402,8 @@
         "Necron",
         "Infantry",
         "Mounted",
-        "Hover"
+        "Hover",
+        "Implacable"
       ],
       "models": null
     },
@@ -393,16 +411,17 @@
       "name": "Lokhust Heavy Destroyers",
       "category": "Mounted",
       "stats": {
+        "AP": "2",
         "M": "8\"",
         "WS": 3,
         "BS": 4,
-        "I": 2,
+        "I": 3,
         "A": 4,
         "S": 7,
         "T": 7,
         "W": 8,
         "SV": "3+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 60,
         "squadSizes": "1 to 2"
       },
@@ -410,7 +429,8 @@
         "Necron",
         "Infantry",
         "Mounted",
-        "Hover"
+        "Hover",
+        "Implacable"
       ],
       "models": null
     },
@@ -418,6 +438,7 @@
       "name": "Tomb Blades",
       "category": "Mounted",
       "stats": {
+        "AP": "2",
         "M": "16\"",
         "WS": 3,
         "BS": 4,
@@ -427,7 +448,7 @@
         "T": 4,
         "W": 3,
         "SV": "4+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 40,
         "squadSizes": "1 to 6"
       },
@@ -444,6 +465,7 @@
       "name": "Canoptek Scarabs",
       "category": "Swarms",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 2,
@@ -470,6 +492,7 @@
       "name": "Canoptek Wraiths",
       "category": "Beasts",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -488,7 +511,8 @@
         "Beast",
         "Hover",
         "Fearless",
-        "Phase Shift"
+        "Phase Shift",
+        "Deadly Demise D3"
       ],
       "models": null
     },
@@ -496,6 +520,7 @@
       "name": "Canoptek Spyder",
       "category": "Monsters",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 3,
         "BS": 3,
@@ -513,7 +538,8 @@
         "Necron",
         "Beast",
         "Hover",
-        "Fearless"
+        "Fearless",
+        "Deadly Demise D3+2"
       ],
       "models": null
     },
@@ -521,24 +547,26 @@
       "name": "Ghost Ark",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "10\"",
-        "WS": 2,
-        "BS": 3,
+        "WS": 3,
+        "BS": 4,
         "I": 3,
         "A": 5,
         "S": 6,
         "T": 9,
         "W": 13,
         "SV": "4+",
-        "LD": "7+",
-        "basePoints": 75,
+        "LD": "4+",
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Vehicle",
         "Hover",
-        "Transport 10"
+        "Transport 10",
+        "Deadly Demise D3+1"
       ],
       "models": null
     },
@@ -546,9 +574,10 @@
       "name": "Canoptek Reaminator",
       "category": "Walkers",
       "stats": {
+        "AP": "2",
         "M": "5\"",
-        "WS": 2,
-        "BS": 3,
+        "WS": 3,
+        "BS": 2,
         "I": 3,
         "A": 4,
         "S": 5,
@@ -556,14 +585,15 @@
         "W": 8,
         "SV": "4+",
         "LD": "10+",
-        "basePoints": 70,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Monster",
         "Walker",
-        "Fearless"
+        "Fearless",
+        "Deadly Demise D3+1"
       ],
       "models": null
     },
@@ -571,9 +601,10 @@
       "name": "Canoptek Doomstalker",
       "category": "Walkers",
       "stats": {
+        "AP": "2",
         "M": "5\"",
-        "WS": 2,
-        "BS": 3,
+        "WS": 3,
+        "BS": 2,
         "I": 3,
         "A": 4,
         "S": 5,
@@ -581,14 +612,15 @@
         "W": 8,
         "SV": "4+",
         "LD": "10+",
-        "basePoints": 70,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Monster",
         "Walker",
-        "Fearless"
+        "Fearless",
+        "Deadly Demise D3+1"
       ],
       "models": null
     },
@@ -596,7 +628,8 @@
       "name": "Triarch Stalker",
       "category": "Walkers",
       "stats": {
-        "M": "10\"",
+        "AP": "3",
+        "M": "12\"",
         "WS": 5,
         "BS": 5,
         "I": 4,
@@ -605,14 +638,15 @@
         "T": 9,
         "W": 13,
         "SV": "4+",
-        "LD": "7+",
-        "basePoints": 110,
+        "LD": "4+",
+        "basePoints": 90,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Vehicle",
-        "Walker"
+        "Walker",
+        "Deadly Demise D3+3"
       ],
       "models": null
     },
@@ -620,8 +654,9 @@
       "name": "Annihilation Barge",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 4,
         "I": 3,
         "A": 4,
@@ -629,14 +664,15 @@
         "T": 8,
         "W": 9,
         "SV": "4+",
-        "LD": "7+",
+        "LD": "4+",
         "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Vehicle",
-        "Hover"
+        "Hover",
+        "Deadly Demise D3+1"
       ],
       "models": null
     },
@@ -644,8 +680,9 @@
       "name": "Doomsday Ark",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 4,
         "I": 3,
         "A": 5,
@@ -653,14 +690,15 @@
         "T": 9,
         "W": 13,
         "SV": "4+",
-        "LD": "7+",
-        "basePoints": 75,
+        "LD": "4+",
+        "basePoints": 65,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Vehicle",
-        "Hover"
+        "Hover",
+        "Deadly Demise D3+1"
       ],
       "models": null
     },
@@ -668,25 +706,28 @@
       "name": "Monolith",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "8\"",
-        "WS": 2,
+        "WS": 3,
         "BS": 4,
         "I": 2,
         "A": 8,
         "S": 8,
         "T": 13,
-        "W": 22,
+        "W": 26,
         "SV": "2+",
-        "LD": "5+",
-        "basePoints": 380,
+        "LD": "4+",
+        "basePoints": 350,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Vehicle",
+        "Titanic",
         "Hover",
         "Deep Strike",
-        "Transport 40"
+        "Transport 40",
+        "Deadly Demise D6+3"
       ],
       "models": null
     },
@@ -694,6 +735,7 @@
       "name": "Obelisk",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "4\"",
         "WS": 1,
         "BS": 4,
@@ -703,14 +745,16 @@
         "T": 13,
         "W": 22,
         "SV": "2+",
-        "LD": "5+",
-        "basePoints": 350,
+        "LD": "4+",
+        "basePoints": 300,
         "squadSizes": "1"
       },
       "keywords": [
         "Necron",
         "Vehicle",
-        "Hover"
+        "Titanic",
+        "Hover",
+        "Deadly Demise D6+3"
       ],
       "models": null
     }
@@ -801,10 +845,10 @@
     {
       "name": "Gauss Destructor",
       "section": "Ranged Weapons",
-      "points": 50,
+      "points": 35,
       "profiles": null,
       "range": "24\"",
-      "attacks": "D3+1",
+      "attacks": "1",
       "strength": "12",
       "ap": "-3",
       "damage": "D3+3",
@@ -873,7 +917,7 @@
       "profiles": null,
       "range": "48\"",
       "attacks": "D3+2",
-      "strength": "8",
+      "strength": "7",
       "ap": "-1",
       "damage": "2",
       "keywords": [
@@ -938,14 +982,45 @@
       "name": "Particle Whip",
       "section": "Ranged Weapons",
       "points": 55,
-      "profiles": null,
-      "range": "18\"",
-      "attacks": "2D6+6",
-      "strength": "7",
-      "ap": "-1",
-      "damage": "1",
+      "profiles": [
+        {
+          "profileName": "Arc",
+          "points": 55,
+          "range": "18\"",
+          "attacks": "2D6+6",
+          "strength": "7",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Blast 5\"",
+            "Ignores Cover",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Bolt",
+          "points": null,
+          "range": "18\"",
+          "attacks": "D3",
+          "strength": "12",
+          "ap": "-2",
+          "damage": "D6+3",
+          "keywords": [
+            "Blast 1\"",
+            "Ignores Cover",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
-        "Blast 3\"",
+        "Blast 5\"",
         "Ignores Cover",
         "Devastating Wounds"
       ],
@@ -991,12 +1066,13 @@
       "profiles": null,
       "range": "48\"",
       "attacks": "1",
-      "strength": "6",
+      "strength": "4",
       "ap": "-3",
       "damage": "D3+1",
       "keywords": [
         "Heavy",
         "Precision",
+        "Anti-INFANTRY 4+",
         "Devastating Wounds"
       ],
       "availability": ""
@@ -1008,7 +1084,7 @@
       "profiles": null,
       "range": "36\"",
       "attacks": "D6+3",
-      "strength": "10",
+      "strength": "8",
       "ap": "-2",
       "damage": "3",
       "keywords": [
@@ -1022,11 +1098,12 @@
       "points": 85,
       "profiles": null,
       "range": "60\"",
-      "attacks": "D3",
-      "strength": "18",
+      "attacks": "1",
+      "strength": "24",
       "ap": "-3",
       "damage": "D6+6",
       "keywords": [
+        "Beam D3+1",
         "Sustained Hits 1"
       ],
       "availability": ""
@@ -1112,6 +1189,33 @@
             "Lethal Hits"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": 25,
+          "range": "-",
+          "attacks": "A",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "1",
+          "strength": "S +4",
+          "ap": "-2",
+          "damage": "3",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1134,13 +1238,40 @@
           "profileName": "Ranged",
           "points": 25,
           "range": "18\"",
-          "attacks": "D3+1",
+          "attacks": "1",
           "strength": "10",
           "ap": "-3",
-          "damage": "D3+1",
+          "damage": "D6+2",
           "keywords": [
             "Beam 1",
             "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": null,
+          "range": "-",
+          "attacks": "A+3",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A-3",
+          "strength": "S +3",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
           ],
           "availability": ""
         }
@@ -1179,7 +1310,7 @@
         },
         {
           "profileName": "Melee",
-          "points": 50,
+          "points": null,
           "range": "-",
           "attacks": "A",
           "strength": "7",
@@ -1239,6 +1370,32 @@
           "damage": "D6+8",
           "keywords": [
             "Assault",
+            "Anti-VEHICLE 4+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": null,
+          "range": "-",
+          "attacks": "A",
+          "strength": "S",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "1",
+          "strength": "24",
+          "ap": "-4",
+          "damage": "D6+8",
+          "keywords": [
             "Anti-VEHICLE 4+",
             "Anti-MONSTER 5+",
             "Devastating Wounds"
@@ -1348,92 +1505,6 @@
       "availability": ""
     },
     {
-      "name": "Rod of Covenant",
-      "section": "Melee Weapons",
-      "points": 25,
-      "profiles": [
-        {
-          "profileName": "Sweep",
-          "points": 25,
-          "range": "-",
-          "attacks": "A",
-          "strength": "S",
-          "ap": "-1",
-          "damage": "2",
-          "keywords": [
-            "Lethal Hits"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Strike",
-          "points": null,
-          "range": "-",
-          "attacks": "1",
-          "strength": "S +4",
-          "ap": "-2",
-          "damage": "3",
-          "keywords": [
-            "Lance",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Staff of Light",
-      "section": "Melee Weapons",
-      "points": 25,
-      "profiles": [
-        {
-          "profileName": "Sweep",
-          "points": 25,
-          "range": "-",
-          "attacks": "A",
-          "strength": "S",
-          "ap": "-1",
-          "damage": "2",
-          "keywords": [
-            "Lethal Hits"
-          ],
-          "availability": ""
-        },
-        {
-          "profileName": "Strike",
-          "points": null,
-          "range": "-",
-          "attacks": "1",
-          "strength": "S +3",
-          "ap": "-2",
-          "damage": "4",
-          "keywords": [
-            "Lance",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lethal Hits"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Nightbringer's Scythe",
       "section": "Melee Weapons",
       "points": 60,
@@ -1441,7 +1512,7 @@
         {
           "profileName": "Sweep",
           "points": 60,
-          "range": "",
+          "range": "-",
           "attacks": "10",
           "strength": "S",
           "ap": "-3",
@@ -1455,7 +1526,7 @@
         {
           "profileName": "Strike",
           "points": null,
-          "range": "",
+          "range": "-",
           "attacks": "D3+1",
           "strength": "11",
           "ap": "-3",
@@ -1475,46 +1546,6 @@
         "Lethal Hits",
         "Devastating Wounds"
       ],
-      "availability": ""
-    },
-    {
-      "name": "Void Dragon's Spear",
-      "section": "Melee Weapons",
-      "points": 75,
-      "profiles": [
-        {
-          "profileName": "Sweep",
-          "points": 75,
-          "range": "",
-          "attacks": "A",
-          "strength": "S",
-          "ap": "-2",
-          "damage": "2",
-          "keywords": [],
-          "availability": ""
-        },
-        {
-          "profileName": "Strike",
-          "points": null,
-          "range": "",
-          "attacks": "1",
-          "strength": "24",
-          "ap": "-4",
-          "damage": "D6+8",
-          "keywords": [
-            "Anti-VEHICLE 4+",
-            "Anti-MONSTER 5+",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [],
       "availability": ""
     }
   ]

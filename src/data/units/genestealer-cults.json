@@ -6,6 +6,7 @@
       "name": "Patriarch",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 7,
         "BS": 6,
@@ -26,6 +27,7 @@
         "Character",
         "Leader",
         "Psyker",
+        "Deep Strike",
         "Fearless",
         "Invulnerable Save 5+"
       ],
@@ -35,6 +37,7 @@
       "name": "Primus",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 6,
         "BS": 5,
@@ -53,7 +56,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Leader"
+        "Leader",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -61,6 +65,7 @@
       "name": "Magus",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 4,
@@ -80,7 +85,8 @@
         "Epic Hero",
         "Character",
         "Leader",
-        "Pysker"
+        "Pysker",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -88,6 +94,7 @@
       "name": "Nexos",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -106,7 +113,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Leader"
+        "Leader",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -114,6 +122,7 @@
       "name": "Biophagus",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -132,7 +141,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Leader"
+        "Leader",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -140,6 +150,7 @@
       "name": "Benefictus",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -158,7 +169,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Leader"
+        "Leader",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -166,6 +178,7 @@
       "name": "Clamavus",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -184,7 +197,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Leader"
+        "Leader",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -192,6 +206,7 @@
       "name": "Locus",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 5,
         "BS": 4,
@@ -209,7 +224,8 @@
         "Genestealer Cults",
         "Infantry",
         "Epic Hero",
-        "Character"
+        "Character",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -217,6 +233,7 @@
       "name": "Kelermorph",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 4,
         "BS": 6,
@@ -234,7 +251,8 @@
         "Genestealer Cults",
         "Infantry",
         "Epic Hero",
-        "Character"
+        "Character",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -242,6 +260,7 @@
       "name": "Reductus Saboteur",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "7\"",
         "WS": 4,
         "BS": 5,
@@ -258,7 +277,8 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Character",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -266,6 +286,7 @@
       "name": "Sanctus",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "7\"",
         "WS": 6,
         "BS": 6,
@@ -282,7 +303,8 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Character"
+        "Character",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -290,6 +312,7 @@
       "name": "Neophytes",
       "category": "Battleline",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -307,7 +330,8 @@
         "Genestealer Cults",
         "Infantry",
         "Battleline",
-        "Bodyguard"
+        "Bodyguard",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -315,6 +339,7 @@
       "name": "Acolytes",
       "category": "Battleline",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 4,
         "BS": 3,
@@ -325,13 +350,14 @@
         "W": 2,
         "SV": "5+",
         "LD": "7+",
-        "basePoints": 9,
+        "basePoints": 14,
         "squadSizes": "5 to 15"
       },
       "keywords": [
         "Genestealer Cults",
         "Infantry",
-        "Battleline"
+        "Battleline",
+        "Deep Strike"
       ],
       "models": null
     },
@@ -339,6 +365,7 @@
       "name": "Genestealers",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 6,
         "BS": 6,
@@ -350,11 +377,12 @@
         "SV": "5+",
         "LD": "4+",
         "basePoints": 16,
-        "squadSizes": "5 to 10"
+        "squadSizes": "5 to 15"
       },
       "keywords": [
         "Genestealer Cults",
         "Infantry",
+        "Deep Strike",
         "Infiltrators",
         "Fearless",
         "Invulnerable Save 5+"
@@ -368,12 +396,15 @@
       "keywords": [
         "Genestealer Cults",
         "Infantry",
+        "Deep Strike",
+        "Implacable",
         "Feel No Pain 5+"
       ],
       "models": [
         {
           "modelName": "Aberrant",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 4,
             "BS": 2,
@@ -390,12 +421,15 @@
           "keywords": [
             "Genestealer Cults",
             "Infantry",
+            "Deep Strike",
+            "Implacable",
             "Feel No Pain 5+"
           ]
         },
         {
           "modelName": "Abominant",
           "stats": {
+            "AP": "2",
             "M": "5\"",
             "WS": 5,
             "BS": 2,
@@ -412,6 +446,8 @@
           "keywords": [
             "Genestealer Cults",
             "Infantry",
+            "Deep Strike",
+            "Implacable",
             "Feel No Pain 5+"
           ]
         }
@@ -431,6 +467,7 @@
         {
           "modelName": "Jackal",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 3,
             "BS": 3,
@@ -454,6 +491,7 @@
         {
           "modelName": "Wolfquad",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 3,
             "BS": 3,
@@ -471,12 +509,14 @@
             "Genestealer Cults",
             "Infantry",
             "Mounted",
+            "Implacable",
             "Scout 8\""
           ]
         },
         {
           "modelName": "Alphus",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 4,
             "BS": 6,
@@ -503,6 +543,7 @@
       "name": "Ridgerunners",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "14\"",
         "WS": 3,
         "BS": 3,
@@ -513,7 +554,7 @@
         "W": 7,
         "SV": "4+",
         "LD": "7+",
-        "basePoints": 55,
+        "basePoints": 45,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -537,6 +578,7 @@
         {
           "modelName": "Ridgehauler",
           "stats": {
+            "AP": "2",
             "M": "12\"",
             "WS": 3,
             "BS": 3,
@@ -547,7 +589,7 @@
             "W": 16,
             "SV": "3+",
             "LD": "6+",
-            "basePoints": 120,
+            "basePoints": 90,
             "squadSizes": "1"
           },
           "keywords": [
@@ -560,6 +602,7 @@
         {
           "modelName": "Ironcrawler",
           "stats": {
+            "AP": "2",
             "M": "10\"",
             "WS": 3,
             "BS": 3,
@@ -570,7 +613,7 @@
             "W": 16,
             "SV": "2+",
             "LD": "5+",
-            "basePoints": 50,
+            "basePoints": 40,
             "squadSizes": "1"
           },
           "keywords": [
@@ -583,6 +626,7 @@
         {
           "modelName": "Ridgehauler Trailer",
           "stats": {
+            "AP": "2",
             "M": "-",
             "WS": "-",
             "BS": "-",
@@ -593,7 +637,7 @@
             "W": 6,
             "SV": "4+",
             "LD": "-",
-            "basePoints": 60,
+            "basePoints": 50,
             "squadSizes": "1 to 2"
           },
           "keywords": [
@@ -609,6 +653,7 @@
       "name": "Goliath Truck",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -619,7 +664,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 85,
+        "basePoints": 55,
         "squadSizes": "1"
       },
       "keywords": [
@@ -927,6 +972,20 @@
           "keywords": [
             "Assault",
             "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Smoke",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "-",
+          "ap": "-",
+          "damage": "-",
+          "keywords": [
+            "Assault",
+            "Smoke 1\""
           ],
           "availability": ""
         }

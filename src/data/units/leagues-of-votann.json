@@ -6,6 +6,7 @@
       "name": "Kâhl",
       "category": "Character",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 6,
         "BS": 6,
@@ -30,6 +31,7 @@
       "name": "Grimnyr",
       "category": "Character",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -54,6 +56,7 @@
       "name": "Einhyr Champion",
       "category": "Character",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 6,
         "BS": 5,
@@ -78,6 +81,7 @@
       "name": "Brôkhyr Iron-master",
       "category": "Character",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 4,
         "BS": 4,
@@ -102,6 +106,7 @@
       "name": "Hearthkyn Warriors",
       "category": "Battleline",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 3,
         "BS": 3,
@@ -125,6 +130,7 @@
       "name": "Hernkyn Yaegirs",
       "category": "Infantry",
       "stats": {
+        "AP": "",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -150,6 +156,7 @@
       "name": "Cthonian Beserks",
       "category": "Infantry",
       "stats": {
+        "AP": "",
         "M": "7\"",
         "WS": 5,
         "BS": 3,
@@ -176,6 +183,7 @@
       "name": "Brôkhyr Thunderkyn",
       "category": "Infantry",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 3,
         "BS": 4,
@@ -199,6 +207,7 @@
       "name": "Einhyr Hearthguard",
       "category": "Infantry",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 4,
         "BS": 4,
@@ -224,6 +233,7 @@
       "name": "Cthonian Earthshakers",
       "category": "Infantry",
       "stats": {
+        "AP": "",
         "M": "3\"",
         "WS": 3,
         "BS": 3,
@@ -248,6 +258,7 @@
       "name": "Ironkin Steeljacks",
       "category": "Infantry",
       "stats": {
+        "AP": "",
         "M": "6\"",
         "WS": 4,
         "BS": 4,
@@ -272,6 +283,7 @@
       "name": "Hernkyn Pioneers",
       "category": "Mounted",
       "stats": {
+        "AP": "",
         "M": "14\"",
         "WS": 3,
         "BS": 3,
@@ -298,6 +310,7 @@
       "name": "Hekaton Land Fortress",
       "category": "Vehicles",
       "stats": {
+        "AP": "",
         "M": "12\"",
         "WS": "5+",
         "BS": "4+",
@@ -322,6 +335,7 @@
       "name": "Kapricus",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "",
         "M": "14\"",
         "WS": "5+",
         "BS": "4+",
@@ -349,6 +363,7 @@
       "name": "Sagitaur",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "",
         "M": "12\"",
         "WS": "5+",
         "BS": "4+",

@@ -109,24 +109,32 @@
         background: var(--color-surface-3, #1e2830);
         border-bottom: 1px solid var(--color-gold-dim, #6b5420);
         display: flex;
+        justify-content: space-between;
         align-items: baseline;
         gap: 8px;
       ">
-        <span style="
-          font-family: var(--font-display, 'Cinzel', serif);
-          font-size: 0.68rem;
-          letter-spacing: 0.12em;
-          color: var(--color-gold-dim, #9a7530);
-          text-transform: uppercase;
-        ">${typeLabel}</span>
-        <span style="
-          font-family: var(--font-display, 'Cinzel', serif);
-          font-size: 0.82rem;
-          font-weight: 600;
-          color: var(--color-gold-bright, #e8c96a);
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-        ">${escapeHtml(def.name)}</span>
+        <div style="display: flex; align-items: baseline; gap: 8px;">
+          <span style="
+            font-family: var(--font-display, 'Cinzel', serif);
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            color: var(--color-gold-dim, #9a7530);
+            text-transform: uppercase;
+          ">${typeLabel}</span>
+          <span style="
+            font-family: var(--font-display, 'Cinzel', serif);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--color-gold-bright, #e8c96a);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          ">${escapeHtml(def.name)}</span>
+        </div>
+        ${def.cost ? `<span style="
+          font-size: 0.75rem;
+          color: var(--color-text-muted, #a89060);
+          white-space: nowrap;
+        ">${escapeHtml(def.cost)}</span>` : ''}
       </div>
       <div style="padding: 9px 12px 10px; color: var(--color-text-muted, #a89060);">
         ${bodyHtml}
@@ -270,10 +278,27 @@
     const buttons = document.querySelectorAll('.faction-section-btn');
     if (!buttons.length) return;
 
+    // Lightweight slugify that mirrors the site's toAnchor() behaviour.
+    function slugify(text) {
+      return text
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/[\s_]+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
+    }
+
     const sections = Array.from(buttons).map((btn) => {
       const href = btn.getAttribute('href');
-      const id = href ? href.replace('#', '') : '';
-      return { btn, el: document.getElementById(id) };
+      const idFromHref = href ? href.replace(/^#/, '') : '';
+      let el = idFromHref ? document.getElementById(idFromHref) : null;
+      if (!el) {
+        // Fallback: try slugifying the button text and looking for a heading with that id
+        const text = (btn.textContent || btn.innerText || '').trim();
+        const slug = slugify(text);
+        el = slug ? document.getElementById(slug) : null;
+      }
+      return { btn, el };
     }).filter((s) => s.el);
 
     function onScroll() {

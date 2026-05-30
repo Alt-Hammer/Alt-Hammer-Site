@@ -1,0 +1,58 @@
+---
+/**
+ * ObjectiveCard.astro
+ * Renders a single Secondary Mission Objective card with all details.
+ *
+ * Updated to reflect the actual document structure:
+ * - Objectives are grouped into 3 Themes (Purge the Foe, Denial, Reconnaissance)
+ * - Each theme has 3 objectives rolled on a D6 (ranges: 1–2, 3–4, 5–6)
+ */
+
+import type { SecondaryObjective } from '../data/objectives';
+
+interface Props {
+  objective: SecondaryObjective;
+}
+
+const { objective } = Astro.props;
+---
+
+<div class="objective-card">
+  <div class="objective-header">
+    <div class="objective-meta">
+      <span class="objective-theme">{objective.theme}</span>
+      <span class="objective-dice">D6: {objective.diceRange}</span>
+    </div>
+    <h3 class="objective-name">{objective.name}</h3>
+  </div>
+
+  <div class="card-field">
+    <span class="card-field-label">Completion Timing:</span>
+    <div class="card-field-value" set:html={objective.timing} />
+  </div>
+
+  <div class="card-field">
+    <span class="card-field-label">Description:</span>
+    <div class="card-field-value" set:html={objective.description} />
+  </div>
+
+  {objective.pointsAwarded && objective.pointsAwarded.length > 0 && (
+    <div class="card-field">
+      <span class="card-field-label">Points Awarded:</span>
+      <ul class="points-list">
+        {objective.pointsAwarded.map((point) => (
+          <li>
+            {point.condition}: <strong>{point.points}</strong>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  {objective.gameEffects && objective.gameEffects !== "None." && (
+    <div class="card-field">
+      <span class="card-field-label">Game Effects:</span>
+      <div class="card-field-value" set:html={objective.gameEffects} />
+    </div>
+  )}
+</div>

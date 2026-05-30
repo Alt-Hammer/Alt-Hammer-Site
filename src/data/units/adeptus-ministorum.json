@@ -6,6 +6,7 @@
       "name": "Canoness",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -33,6 +34,7 @@
       "name": "Palatine",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -60,6 +62,7 @@
       "name": "Dogmata",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 4,
@@ -86,6 +89,7 @@
       "name": "Dialogus",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 4,
@@ -112,6 +116,7 @@
       "name": "Imagifier",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -138,6 +143,7 @@
       "name": "Hospitaler",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -164,6 +170,7 @@
       "name": "Overseer of Redemption",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -190,6 +197,7 @@
       "name": "Ministorum Priest",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -217,6 +225,7 @@
       "name": "Battle Sisters",
       "category": "Battleline",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -253,6 +262,7 @@
         {
           "modelName": "Sister Superior",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 3,
             "BS": 4,
@@ -277,6 +287,7 @@
         {
           "modelName": "Novitiate",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 3,
             "BS": 3,
@@ -304,6 +315,7 @@
       "name": "Frateris Militia",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 2,
         "BS": 2,
@@ -328,6 +340,7 @@
       "name": "Ministorum Sanctifiers Retinue",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -353,6 +366,7 @@
       "name": "Dominions",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -380,6 +394,7 @@
       "name": "Celestians",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 4,
@@ -406,6 +421,7 @@
       "name": "Seraphim",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 4,
@@ -432,6 +448,7 @@
       "name": "Repentia",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "7\"",
         "WS": 4,
         "BS": 4,
@@ -458,6 +475,7 @@
       "name": "Arco-flagellants",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "7\"",
         "WS": 3,
         "BS": 3,
@@ -484,17 +502,18 @@
       "name": "Penitent Engines",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "9\"",
         "WS": 3,
         "BS": 3,
         "I": 5,
         "A": 5,
-        "S": 6,
+        "S": 5,
         "T": 6,
         "W": 5,
         "SV": "4+",
         "LD": "6+",
-        "basePoints": 45,
+        "basePoints": 35,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -513,6 +532,7 @@
       "name": "Castigator",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 4,
@@ -523,7 +543,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 90,
+        "basePoints": 85,
         "squadSizes": "1"
       },
       "keywords": [
@@ -539,6 +559,7 @@
       "name": "Exorcist",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 4,
@@ -549,7 +570,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 90,
+        "basePoints": 85,
         "squadSizes": "1"
       },
       "keywords": [
@@ -565,6 +586,7 @@
       "name": "Cathedrum Minoris",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 4,
@@ -594,6 +616,7 @@
       "name": "Rhino",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 4,
@@ -604,7 +627,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 55,
         "squadSizes": "1"
       },
       "keywords": [
@@ -622,6 +645,7 @@
       "name": "Immolator",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 4,
@@ -632,7 +656,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 50,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1072,6 +1096,20 @@
           "keywords": [
             "Assault",
             "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Smoke",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "-",
+          "ap": "-",
+          "damage": "-",
+          "keywords": [
+            "Assault",
+            "Smoke 1\""
           ],
           "availability": ""
         }

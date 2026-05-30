@@ -77,6 +77,7 @@ Cannot be equipped by a model equipped any of the following: Noble of the Skorpe
 This model:
 - Increases its Movement characteristic by 2"
 - Increases its Toughness characteristic by 2
+- Increases its Initiative characteristic by 1
 - Gains the <span class="keyword" data-term="relentless" data-type="keyword">Relentless</span> ability
 - Must be modelled such that it physically resembles a Skorpek Destroyer model
 - Must have a 60mm base 
@@ -161,17 +162,11 @@ Friendly <span class="keyword" data-term="necron" data-type="keyword">Necron</sp
 <h6 id="twin-linked">Twin-linked<span class="heading-value">Varies (see below)</span></h6>
 
 
-Weapon gains the <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-linked</span> ability. This wargear upgrade will be identified for specific eligible weapons under the Weapon Options section of a unit's datasheet. The points cost for the Twin-linked upgrade varies, as described below. 
+Weapon gains the <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-linked</span> ability. 
 
-This upgrade costs 18 points for weapons that meet either of the following criteria: 
-- The weapon has a Strength characteristic of 9 or greater
-- The weapon has a minimum Attacks characteristic of 6 or more
-
-This upgrade costs 5 points for weapons that meet all of the following criteria:
-- The weapon has a Strength characteristic of 4 or lower
-- The weapon has a minimum Attacks characteristic of 3 or lower
-
-The upgrade costs 10 points for all other weapons.
+This cost of this wargear upgrade is determined as follows:
+- For weapons with a Strength characteristic of 9 or more, add the original points cost of the weapon. This includes weapons that have 1 or more attack profiles where 1 of those attack profiles has a Strength characteristic of 9 or more 
+- For weapons with a Strength characteristic of 8 or less, add half of the original points cost of the weapon, rounding up.
 
 
 ## Unit Profiles
@@ -206,9 +201,9 @@ This model is equipped with a <span class="weapon-ref" data-weapon="staff-of-lig
 
 
 **My Will Be Done:** During your Command Phase, select up to 3 enemy units to be the target of this ability, and up to 3 friendly units to benefit from this ability. Select 1 of the following abilities that those friendly unit(s) will benefit from when making attacks against the selected enemy unit(s) the duration of the Battle Round:
-- Friendly units score Critical Hits on a 4+ against the selected targets
-- Friendly units score Critical Wounds on a 3+ against the selected targets
-- Friendly units gain the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability on the selected targets if that target possesses the <span class="keyword" data-term="character" data-type="keyword">Character</span> keyword. 
+- Friendly units score Critical Hits on a 4+ against the selected enemy unit
+- Friendly units score Critical Wounds on a 3+ against the selected enemy unit
+- Friendly units gain the <span class="keyword" data-term="precision" data-type="keyword">Precision</span> ability on the selected enemy unit. 
 
 If you choose to select only 1 enemy unit as the target of this ability, your selected friendly units benefit from all of the above abilities.
 
@@ -246,7 +241,7 @@ This model is equipped with a <span class="weapon-ref" data-weapon="gauss-blaste
 <h6 id="special-abilities">Special Abilities</h6>
 
 
-**Disciplined Volleys:** While this model is leading a unit, Ranged attacks made by that unit gain the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability. If the unit Remains Stationary this Battle Round, and has models wholly within range of a Primary Objective Marker, Ranged attacks made by that unit instead gain the <span class="keyword" data-term="sustained-hits-2" data-type="keyword">Sustained Hits 2</span> ability.
+**Disciplined Volleys:** While this model is leading a unit, Ranged attacks made by that unit gain the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability. If the unit starts its Activation with the <span class="keyword" data-term="remain-stationary" data-type="action">Remain Stationary</span> Action, and has models wholly within range of a Primary Objective Marker, Ranged attacks made by that unit instead gain the <span class="keyword" data-term="sustained-hits-2" data-type="keyword">Sustained Hits 2</span> ability.
 
 **Priority Position: **While this model is leading a unit, that unit gains the <span class="keyword" data-term="fearless" data-type="keyword">Fearless</span> ability while it has models wholly within range of a Primary Objective Marker.
 

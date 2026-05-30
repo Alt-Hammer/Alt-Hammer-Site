@@ -118,19 +118,19 @@ With the exclusion of Scouts, all <span class="keyword" data-term="adeptus-astar
 <h6 id="phobos-armour">Phobos Armour<span class="heading-value">3 Points per model</span></h6>
 
 - Increase Movement characteristic by 1"
-- Increase Initiative Characteristic by 1
+- Increase Initiative characteristic by 1
 - Reduce Wounds characteristic by 1
 - Add the <span class="keyword" data-term="scout-7" data-type="keyword">Scout 7"</span> ability
 - Add the <span class="keyword" data-term="infiltrator" data-type="keyword">Infiltrator</span> ability
 
-<h6 id="gravis-armour">Gravis Armour<span class="heading-value">10 points per model</span></h6>
+<h6 id="gravis-armour">Gravis Armour<span class="heading-value">8 points per model</span></h6>
 
 - Increase Toughness characteristic by 1
-- Reduce Initiative Characteristic by 1
+- Reduce Initiative characteristic by 1
 - Reduce Movement characteristic by 1"
-- Ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making Attacks
+- Gain the <span class="keyword" data-term="implacable" data-type="keyword">Implacable</span> ability
 - Models equipped with Gravis armour must be on a 40mm base
-- Models equipped with Gravis armour count as 2 models for the purposes of the <span class="keyword" data-term="transport-x" data-type="keyword">Transport [X]</span> ability
+- Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less
 
 <h6 id="terminator-armour">Terminator Armour<span class="heading-value">20 Points per model</span></h6>
 
@@ -138,13 +138,13 @@ With the exclusion of Scouts, all <span class="keyword" data-term="adeptus-astar
 - Increase Toughness characteristic by 1
 - Reduce Movement characteristic by 1"
 - Increase Wounds characteristic by 1
-- Reduce Initiative Characteristic by 1
+- Reduce Initiative characteristic by 1
 - Increase Armour Save characteristic to 2+
-- Ignore the effects of the <span class="keyword" data-term="heavy" data-type="keyword">Heavy</span> keyword when making Attacks
-- Add the <span class="keyword" data-term="invulnerable-save-5" data-type="keyword">Invulnerable Save 5+</span> ability
-- Add the <span class="keyword" data-term="deep-strike" data-type="keyword">Deep Strike</span>* *ability
+- Gain the <span class="keyword" data-term="implacable" data-type="keyword">Implacable</span> ability
+- Gain the <span class="keyword" data-term="invulnerable-save-5" data-type="keyword">Invulnerable Save 5+</span> ability
+- Gain the <span class="keyword" data-term="deep-strike" data-type="keyword">Deep Strike</span>* *ability
 - Models must be on a 40mm to 60mm base
-- Models count as 2 models for the purposes of the <span class="keyword" data-term="transport-x" data-type="keyword">Transport [X]</span> ability
+- Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less
 
 <h6 id="saturnine-terminator-armour">Saturnine Terminator Armour<span class="heading-value">45 Points per model</span></h6>
 
@@ -152,13 +152,13 @@ With the exclusion of Scouts, all <span class="keyword" data-term="adeptus-astar
 - Increase Toughness characteristic by 3
 - Increase Wounds characteristic by 3
 - Reduce Movement characteristic by 1"
-- Reduce Initiative Characteristic by 2
+- Reduce Initiative characteristic by 2
 - Increase Armour Save characteristic to 2+
-- Ignore the effects of the Heavy keyword when making Attacks
+- Gain the <span class="keyword" data-term="implacable" data-type="keyword">Implacable</span> ability
 - Add the <span class="keyword" data-term="invulnerable-save-5" data-type="keyword">Invulnerable Save 5+</span> ability
 - Add the <span class="keyword" data-term="deep-strike" data-type="keyword">Deep Strike</span>* *ability
 - Models equipped with Saturnine Terminator armour must be on a 50mm to 60mm base 
-- Models equipped with Saturnine Terminator armour count as 4 models for the purposes of the Transport ability
+- Models cannot be Embarked in a Transport 
 
 <h6 id="scout-armour">Scout Armour<span class="heading-value">-10 Points per model</span></h6>
 
@@ -262,11 +262,14 @@ Models equipped with a Rosarius:
 <h6 id="combi-bolter">Combi-Bolter<span class="heading-value">5 points</span></h6>
 
 
-A Combi-Bolter is a Boltgun that must include 1 of the following Ranged weapons:
+A Combi-Bolter is a Boltgun that must also include 1 of the following Ranged weapons:
 
-- Flamer
-- Meltagun
-- Plasma Gun
+<p><span class="weapon-ref" data-weapon="flamer">Flamer</span></p>
+
+<p><span class="weapon-ref" data-weapon="meltagun">Meltagun</span></p>
+
+<p><span class="weapon-ref" data-weapon="plasma-gun">Plasma Gun</span></p>
+
 
 <h6 id="chapter-banner">Chapter Banner<span class="heading-value">60 points</span></h6>
 
@@ -286,23 +289,16 @@ Units equipped with a Hero's Heraldry Banner increase their Leadership character
 Units equipped with an Auspex Scanner:
 
 - Ignore the effects of the <span class="keyword" data-term="stealth" data-type="keyword">Stealth</span> ability when making Ranged attacks against units with at least 1 model within 18" that possess that ability. 
-- Cannot have enemy models placed within 12" of a model in this unit when that enemy unit uses the  <span class="keyword" data-term="enter-the-battlefield-from-strategic-reserves" data-type="action">Enter the Battlefield from Strategic Reserves</span> Action using the <span class="keyword" data-term="deep-strike" data-type="keyword">Deep Strike</span> ability.
+- Cannot have enemy models placed within 12" of a model in this unit when that enemy unit uses the <span class="keyword" data-term="enter-the-battlefield-from-strategic-reserves" data-type="action">Enter the Battlefield from Strategic Reserves</span> Action using the <span class="keyword" data-term="deep-strike" data-type="keyword">Deep Strike</span> ability.
 
 <h6 id="twin-linked">Twin-linked<span class="heading-value">Varies (see below)</span></h6>
 
 
-Weapon gains the <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-linked</span> ability. This wargear upgrade will be identified for specific eligible weapons under the Weapon Options section of a unit's datasheet. The points cost for the Twin-linked upgrade varies, as described below. 
+Weapon gains the <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-linked</span> ability. 
 
-This upgrade costs 20 points for weapons that meet either of the following criteria: 
-- The weapon has a Strength characteristic of 9 or greater
-- The weapon has a minimum Attacks characteristic of 6 or more
-
-This upgrade costs 8 points for weapons that meet all of the following criteria:
-- The weapon has a Strength characteristic of 4 or lower
-- The weapon has a minimum Attacks characteristic of 3 or lower
-
-The upgrade costs 12 points for all other weapons.
-
+This cost of this wargear upgrade is determined as follows:
+- For weapons with a Strength characteristic of 9 or more, add the original points cost of the weapon. This includes weapons that have 1 or more attack profiles where 1 of those attack profiles has a Strength characteristic of 9 or more 
+- For weapons with a Strength characteristic of 8 or less, add half of the original points cost of the weapon, rounding up.
 
 <h6 id="dozer-blade">Dozer Blade<span class="heading-value">20 Points</span></h6>
 
@@ -1104,17 +1100,17 @@ The unit can be equipped with any of the following additional Secondary weapons:
 
 Every model in the unit equipped with a Boltgun or Bolt Rifle can be equipped with an <span class="wargear-ref" data-wargear="occulus">Occulus</span>.
 
-The unit can be equipped with 1 of the following: 
+Every model in the unit can be equipped with 1 of the following: 
 
-<p><span class="wargear-ref" data-wargear="jump-packs">Jump Packs</span></p>
+<p><span class="wargear-ref" data-wargear="jump-pack">Jump Pack</span></p>
 
-<p><span class="wargear-ref" data-wargear="bikes">Bikes</span></p>
+<p><span class="wargear-ref" data-wargear="bike">Bike</span></p>
 
-If the unit is equipped with <span class="wargear-ref" data-wargear="phobos-armour">Phobos Armour</span>, the unit can then be equipped with 1 of the following:
+If the unit is equipped with <span class="wargear-ref" data-wargear="phobos-armour">Phobos Armour</span>, every model in the unit can then be equipped with 1 of the following:
 
-<p><span class="wargear-ref" data-wargear="reiver-gear">Reiver Gear</span></p>
+<p><span class="wargear-ref" data-wargear="riever-gear">Riever Gear</span></p>
 
-<p><span class="wargear-ref" data-wargear="camo-cloaks">Camo Cloaks</span></p>
+<p><span class="wargear-ref" data-wargear="camo-cloak">Camo Cloak</span></p>
 
 
 #### Infantry
@@ -1267,21 +1263,21 @@ Every model can be equipped with any of the following Secondary weapons:
 
 <p><span class="weapon-ref" data-weapon="melta-bombs">Melta Bombs</span></p>
 
-The unit can be equipped with 1 of the following: 
+Every model in the unit equipped with a Boltgun or Bolt Rifle can be equipped with an <span class="wargear-ref" data-wargear="occulus">Occulus</span>.
+
+Every model in the unit can be equipped with 1 of the following: 
 
 <p><span class="wargear-ref" data-wargear="artificer-armour">Artificer Armour</span></p>
 
 <p><span class="wargear-ref" data-wargear="grav-inhibitors">Grav Inhibitors</span></p>
 
-<p><span class="wargear-ref" data-wargear="jump-packs">Jump Packs</span></p>
+<p><span class="wargear-ref" data-wargear="jump-pack">Jump Pack</span></p>
 
-<p><span class="wargear-ref" data-wargear="bikes">Bikes</span></p>
+<p><span class="wargear-ref" data-wargear="bike">Bike</span></p>
 
-Every model in the unit equipped with a Boltgun or Bolt Rifle can be equipped with an <span class="wargear-ref" data-wargear="occulus">Occulus</span>.
+If the unit is equipped with <span class="wargear-ref" data-wargear="phobos-armour">Phobos Armour</span>, every model in the unit can then be equipped with 1 of the following:
 
-If the unit is equipped with <span class="wargear-ref" data-wargear="phobos-armour">Phobos Armour</span>, the unit can then be equipped with 1 of the following:
-
-<p><span class="wargear-ref" data-wargear="reiver-gear">Reiver Gear</span></p>
+<p><span class="wargear-ref" data-wargear="riever-gear">Riever Gear</span></p>
 
 <p><span class="wargear-ref" data-wargear="camo-cloak">Camo Cloak</span></p>
 
@@ -1433,23 +1429,23 @@ Every model can be equipped with any of the following Secondary weapons:
 
 <p><span class="weapon-ref" data-weapon="melta-bombs">Melta Bombs</span></p>
 
-The unit can be equipped with 1 of the following: 
+Every model in the unit equipped with a Boltgun or Bolt Rifle can be equipped with an <span class="wargear-ref" data-wargear="occulus">Occulus</span>.
+
+Every model in the unit can be equipped with 1 of the following: 
 
 <p><span class="wargear-ref" data-wargear="artificer-armour">Artificer Armour</span></p>
 
 <p><span class="wargear-ref" data-wargear="grav-inhibitors">Grav Inhibitors</span></p>
 
-<p><span class="wargear-ref" data-wargear="jump-packs">Jump Packs</span></p>
+<p><span class="wargear-ref" data-wargear="jump-pack">Jump Pack</span></p>
 
-<p><span class="wargear-ref" data-wargear="bikes">Bikes</span></p>
+<p><span class="wargear-ref" data-wargear="bike">Bike</span></p>
 
-If the unit is equipped with <span class="wargear-ref" data-wargear="phobos-armour">Phobos Armour</span>, the unit can then be equipped with 1 of the following:
+If the unit is equipped with <span class="wargear-ref" data-wargear="phobos-armour">Phobos Armour</span>, every model in the unit can then be equipped with 1 of the following:
 
-<p><span class="wargear-ref" data-wargear="reiver-gear">Reiver Gear</span></p>
+<p><span class="wargear-ref" data-wargear="riever-gear">Riever Gear</span></p>
 
 <p><span class="wargear-ref" data-wargear="camo-cloak">Camo Cloak</span></p>
-
-Every model in the unit equipped with a Boltgun or Bolt Rifle can be equipped with an <span class="wargear-ref" data-wargear="occulus">Occulus</span>.
 
 1 model in this unit can be equipped with a <span class="wargear-ref" data-wargear="chapter-banner">Chapter Banner</span>.
 
@@ -1566,7 +1562,7 @@ Every model in this unit can be equipped with any of the following Secondary wea
 
 <p><span class="weapon-ref" data-weapon="smoke-grenades">Smoke Grenades</span></p>
 
-The unit can be equipped with 1 of the following: 
+Every model in the unit can be equipped with 1 of the following: 
 
 <p><span class="wargear-ref" data-wargear="grav-inhibitors">Grav Inhibitors</span></p>
 
@@ -1625,11 +1621,11 @@ The unit can be equipped with any of the following additional Secondary weapons:
 
 Every model in the unit equipped with a Boltgun can be equipped with an <span class="wargear-ref" data-wargear="occulus">Occulus</span>.
 
-The unit can be equipped with 1 of the following: 
+Every model in the unit can be equipped with 1 of the following: 
 
 <p><span class="wargear-ref" data-wargear="riever-gear">Riever Gear</span></p>
 
-<p><span class="wargear-ref" data-wargear="camo-cloaks">Camo Cloaks</span></p>
+<p><span class="wargear-ref" data-wargear="camo-cloak">Camo Cloak</span></p>
 
 
 ##### Centurions
@@ -1795,9 +1791,9 @@ This model can replace its <span class="weapon-ref" data-weapon="heavy-assault-c
 
 <p><span class="weapon-ref" data-weapon="inferno-cannon">Inferno Cannon</span></p>
 
-<p><span class="weapon-ref" data-weapon="twin-linked-heavy-lascannons">Twin-linked Heavy Lascannons</span></p>
+<p><span class="weapon-ref" data-weapon="twin-linked-heavy-lascannon">Twin-linked Heavy Lascannon</span></p>
 
-<p><span class="weapon-ref" data-weapon="twin-linked-melta-cannons">Twin-linked Melta Cannons</span></p>
+<p><span class="weapon-ref" data-weapon="twin-linked-melta-cannon">Twin-linked Melta Cannon</span></p>
 
 <p><span class="weapon-ref" data-weapon="hurricane-bolter-array">Hurricane Bolter Array</span></p>
 
@@ -1888,20 +1884,62 @@ This model can replace its <span class="weapon-ref" data-weapon="exterminator-au
 <span class="wargear-ref" data-wargear="twin-linked">Twin-linked</span><span class="weapon-ref" data-weapon="boltgun"> Boltgun</span>
 
 
-<h6 id="weapon-options">Weapon Options</h6>
+<h6 id="wargear-options">Wargear Options</h6>
 
 
 This model can replace its <span class="weapon-ref" data-weapon="assault-cannon">Assault Cannon</span> with 1 <span class="weapon-ref" data-weapon="multi-melta">Multi-melta</span>.
 
 
-##### Storm Speeders
+##### Land Speeders
 
 
 
 <h6 id="unit-composition">Unit Composition</h6>
 
 
-1 to 2 Storm Speeders
+1 to 2 Land Speeders
+
+
+<h6 id="standard-wargear">Standard Wargear</h6>
+
+
+Every model is equipped with 1 <span class="weapon-ref" data-weapon="heavy-bolter">Heavy Bolter</span>
+
+
+<h6 id="wargear-options">Wargear Options</h6>
+
+
+Any model can replace its <span class="weapon-ref" data-weapon="heavy-bolter">Heavy Bolter</span> with 1 of the following:
+
+<span class="weapon-ref" data-weapon="heavy-flamer">Heavy Flamer</span>
+
+<span class="weapon-ref" data-weapon="multi-melta">Multi-melta</span>
+
+Any model can be equipped with 1 of the following:
+
+<p><span class="weapon-ref" data-weapon="assault-cannon">Assault Cannon</span></p>
+
+<p><span class="weapon-ref" data-weapon="heavy-flamer">Heavy Flamer</span></p>
+
+<p><span class="weapon-ref" data-weapon="plasma-cannon">Plasma Cannon</span></p>
+
+Any model can be equipped with 1 <span class="weapon-ref" data-weapon="missile-launcher">Missile Launcher</span>
+
+Any model can be equipped with 1 of the following:
+
+<p><span class="wargear-ref" data-wargear="auspex-scanner">Auspex Scanner</span></p>
+
+<p><span class="wargear-ref" data-wargear="orbital-comms-array">Orbital Comms Array</span></p>
+
+
+##### Storm Speeder
+
+
+
+<h6 id="unit-composition">Unit Composition</h6>
+
+
+1 Storm Speeder
 
 
 <h6 id="standard-wargear">Standard Wargear</h6>
@@ -1914,7 +1952,7 @@ This model can replace its <span class="weapon-ref" data-weapon="assault-cannon"
 2x <span class="wargear-ref" data-wargear="twin-linked">Twin-linked</span><span class="weapon-ref" data-weapon="storm-bolter"> Storm Bolter</span>
 
 
-<h6 id="weapon-options">Weapon Options</h6>
+<h6 id="wargear-options">Wargear Options</h6>
 
 
 This model can replace its <span class="weapon-ref" data-weapon="assault-cannon">Assault Cannon</span> with 1 of the following:

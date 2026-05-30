@@ -181,6 +181,7 @@ def extract_definitions(docx_path: str) -> list[dict]:
         if in_target and 'Heading 6' in style and text:
             # The heading text may include a tab + AP cost: strip it for display
             heading_display = text.split('\t')[0].strip()
+            heading_value = text.split('\t', 1)[1].strip() if '\t' in text else None
             slug = slugify_definition_heading(text)
 
             # Skip non-definition sub-headings
@@ -213,6 +214,7 @@ def extract_definitions(docx_path: str) -> list[dict]:
                 'name': heading_display,
                 'type': current_type,
                 'body': body,
+                'cost': heading_value,
             })
             continue
 
@@ -247,11 +249,14 @@ def main():
         if entry['slug'] in definitions:
             print(f"  ⚠  Duplicate slug '{entry['slug']}' — keeping first entry")
             continue
-        definitions[entry['slug']] = {
+        definition = {
             'name': entry['name'],
             'type': entry['type'],
             'body': entry['body'],
         }
+        if entry.get('cost'):
+            definition['cost'] = entry['cost']
+        definitions[entry['slug']] = definition
         print(f"  ✓  {entry['type']:8s} | {entry['slug']:40s} | {entry['name']}")
 
     # Write output

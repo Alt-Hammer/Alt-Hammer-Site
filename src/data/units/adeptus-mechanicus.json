@@ -6,6 +6,7 @@
       "name": "Techpriest Dominus",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 5,
         "BS": 6,
@@ -32,6 +33,7 @@
       "name": "Techpriest Manipulus",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 5,
         "BS": 6,
@@ -58,6 +60,7 @@
       "name": "Techpriest Enginseer",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -84,6 +87,7 @@
       "name": "Skitarii Marshall",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 5,
@@ -110,6 +114,7 @@
       "name": "Technoarchaologist",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -135,6 +140,7 @@
       "name": "Cybernetica Datasmith",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 4,
@@ -160,6 +166,7 @@
       "name": "Skitarii",
       "category": "Battleline",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -184,6 +191,7 @@
       "name": "Servitors",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "5\"",
         "WS": 2,
         "BS": 2,
@@ -210,6 +218,7 @@
       "name": "Sicarians",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "8\"",
         "WS": 4,
         "BS": 4,
@@ -236,6 +245,7 @@
       "name": "Pteraxii",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -262,6 +272,7 @@
       "name": "Skatros",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "7\"",
         "WS": 2,
         "BS": 6,
@@ -288,6 +299,7 @@
       "name": "Electropriests",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 3,
         "BS": 3,
@@ -312,6 +324,7 @@
       "name": "Skitarii Dragoons",
       "category": "Mounted",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 4,
         "BS": 3,
@@ -337,17 +350,18 @@
       "name": "Skitarii Ironstriders",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "9\"",
         "WS": 3,
         "BS": 3,
         "I": 4,
         "A": 3,
-        "S": 5,
+        "S": 4,
         "T": 7,
         "W": 7,
         "SV": "3+",
         "LD": "6+",
-        "basePoints": 60,
+        "basePoints": 45,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -364,6 +378,7 @@
       "name": "Kastellan Robots",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 3,
         "BS": 3,
@@ -374,7 +389,7 @@
         "W": 8,
         "SV": "2+",
         "LD": "8+",
-        "basePoints": 95,
+        "basePoints": 80,
         "squadSizes": "1 to 4"
       },
       "keywords": [
@@ -391,6 +406,7 @@
       "name": "Onager Dunecrawler",
       "category": "Walkers",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 3,
@@ -401,7 +417,7 @@
         "W": 13,
         "SV": "3+",
         "LD": "6+",
-        "basePoints": 110,
+        "basePoints": 85,
         "squadSizes": "1"
       },
       "keywords": [
@@ -417,17 +433,18 @@
       "name": "Kataphron Servitors",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 2,
         "BS": 2,
         "I": 2,
         "A": 1,
-        "S": 5,
+        "S": 4,
         "T": 6,
         "W": 5,
         "SV": "3+",
         "LD": "9+",
-        "basePoints": 20,
+        "basePoints": 15,
         "squadSizes": "2 to 6"
       },
       "keywords": [
@@ -442,6 +459,7 @@
       "name": "Skorpius Battle Tank",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -452,7 +470,7 @@
         "W": 13,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 115,
+        "basePoints": 90,
         "squadSizes": "1"
       },
       "keywords": [
@@ -468,6 +486,7 @@
       "name": "Skorpius Assault Transport",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 3,
@@ -478,7 +497,7 @@
         "W": 13,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -486,7 +505,7 @@
         "Vehicle",
         "Skitarii",
         "Hover",
-        "Transport 12",
+        "Transport 16",
         "Assault Egress",
         "Deadly Demise D3+1"
       ],

@@ -6,6 +6,7 @@
       "name": "Autarch",
       "category": "Character",
       "stats": {
+        "AP": "4",
         "M": "7\"",
         "WS": 7,
         "BS": 7,
@@ -16,7 +17,34 @@
         "W": 7,
         "SV": "4+",
         "LD": "4+",
-        "basePoints": 130,
+        "basePoints": 110,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Aeldari",
+        "Asuryani",
+        "Infantry",
+        "Character",
+        "Leader"
+      ],
+      "models": null
+    },
+    {
+      "name": "Annatharch",
+      "category": "Character",
+      "stats": {
+        "AP": "3",
+        "M": "7\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 7,
+        "A": 5,
+        "S": 2,
+        "T": 2,
+        "W": 6,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 90,
         "squadSizes": "1"
       },
       "keywords": [
@@ -32,6 +60,7 @@
       "name": "Farseer",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 6,
         "BS": 6,
@@ -42,7 +71,7 @@
         "W": 5,
         "SV": "4+",
         "LD": "4+",
-        "basePoints": 110,
+        "basePoints": 100,
         "squadSizes": "1"
       },
       "keywords": [
@@ -59,6 +88,7 @@
       "name": "Avatar of Khaine",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 9,
         "BS": 5,
@@ -95,9 +125,10 @@
         {
           "modelName": "Guardian",
           "stats": {
+            "AP": "3",
             "M": "7\"",
             "WS": 3,
-            "BS": 3,
+            "BS": 4,
             "I": 4,
             "A": 1,
             "S": 2,
@@ -106,7 +137,7 @@
             "SV": "4+",
             "LD": "7+",
             "basePoints": 4,
-            "squadSizes": "5 to 20"
+            "squadSizes": "5 to 30"
           },
           "keywords": [
             "Aeldari",
@@ -117,9 +148,10 @@
         {
           "modelName": "Heavy Weapon Platform",
           "stats": {
+            "AP": "3",
             "M": "7\"",
             "WS": 1,
-            "BS": 3,
+            "BS": 4,
             "I": 3,
             "A": 1,
             "S": 2,
@@ -128,13 +160,14 @@
             "SV": "4+",
             "LD": "7+",
             "basePoints": 10,
-            "squadSizes": "0 to 2"
+            "squadSizes": "0 to 3"
           },
           "keywords": [
             "Aeldari",
             "Asuryani",
             "Infantry",
-            "Hover"
+            "Hover",
+            "Implacable"
           ]
         }
       ]
@@ -143,17 +176,18 @@
       "name": "Rangers",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 3,
         "BS": 6,
         "I": 4,
-        "A": 1,
+        "A": 2,
         "S": 2,
         "T": 2,
         "W": 1,
         "SV": "4+",
         "LD": "7+",
-        "basePoints": 20,
+        "basePoints": 12,
         "squadSizes": "2 to 5"
       },
       "keywords": [
@@ -181,6 +215,7 @@
         {
           "modelName": "Dire Avenger",
           "stats": {
+            "AP": "3",
             "M": "7\"",
             "WS": 4,
             "BS": 5,
@@ -206,6 +241,7 @@
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "7\"",
             "WS": 5,
             "BS": 6,
@@ -238,12 +274,14 @@
         "Aeldari",
         "Asuryani",
         "Infantry",
-        "Aspect Warriors"
+        "Aspect Warriors",
+        "Implacable"
       ],
       "models": [
         {
           "modelName": "Dark Reaper",
           "stats": {
+            "AP": "3",
             "M": "6\"",
             "WS": 4,
             "BS": 5,
@@ -254,19 +292,21 @@
             "W": 3,
             "SV": "4+",
             "LD": "6+",
-            "basePoints": 20,
+            "basePoints": 15,
             "squadSizes": "2 to 4"
           },
           "keywords": [
             "Aeldari",
             "Asuryani",
             "Infantry",
-            "Aspect Warriors"
+            "Aspect Warriors",
+            "Implacable"
           ]
         },
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "6\"",
             "WS": 5,
             "BS": 6,
@@ -277,14 +317,15 @@
             "W": 5,
             "SV": "4+",
             "LD": "6+",
-            "basePoints": 25,
+            "basePoints": 20,
             "squadSizes": "1"
           },
           "keywords": [
             "Aeldari",
             "Asuryani",
             "Infantry",
-            "Aspect Warriors"
+            "Aspect Warriors",
+            "Implacable"
           ]
         }
       ]
@@ -303,6 +344,7 @@
         {
           "modelName": "Fire Dragon",
           "stats": {
+            "AP": "3",
             "M": "7\"",
             "WS": 4,
             "BS": 5,
@@ -313,7 +355,7 @@
             "W": 2,
             "SV": "3+",
             "LD": "6+",
-            "basePoints": 20,
+            "basePoints": 15,
             "squadSizes": "2 to 4"
           },
           "keywords": [
@@ -326,6 +368,7 @@
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "7\"",
             "WS": 5,
             "BS": 6,
@@ -336,7 +379,7 @@
             "W": 4,
             "SV": "3+",
             "LD": "5+",
-            "basePoints": 25,
+            "basePoints": 20,
             "squadSizes": "1"
           },
           "keywords": [
@@ -364,6 +407,7 @@
         {
           "modelName": "Howling Banshee",
           "stats": {
+            "AP": "3",
             "M": "8\"",
             "WS": 6,
             "BS": 5,
@@ -374,7 +418,7 @@
             "W": 3,
             "SV": "5+",
             "LD": "6+",
-            "basePoints": 20,
+            "basePoints": 15,
             "squadSizes": "4 to 9"
           },
           "keywords": [
@@ -389,6 +433,7 @@
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "8\"",
             "WS": 7,
             "BS": 6,
@@ -399,7 +444,7 @@
             "W": 5,
             "SV": "5+",
             "LD": "5+",
-            "basePoints": 25,
+            "basePoints": 20,
             "squadSizes": "1"
           },
           "keywords": [
@@ -429,6 +474,7 @@
         {
           "modelName": "Striking Scorpion",
           "stats": {
+            "AP": "3",
             "M": "6\"",
             "WS": 5,
             "BS": 5,
@@ -439,7 +485,7 @@
             "W": 3,
             "SV": "3+",
             "LD": "6+",
-            "basePoints": 25,
+            "basePoints": 15,
             "squadSizes": "4 to 9"
           },
           "keywords": [
@@ -454,6 +500,7 @@
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "6\"",
             "WS": 6,
             "BS": 6,
@@ -464,7 +511,7 @@
             "W": 5,
             "SV": "3+",
             "LD": "5+",
-            "basePoints": 35,
+            "basePoints": 20,
             "squadSizes": "1"
           },
           "keywords": [
@@ -487,12 +534,14 @@
         "Asuryani",
         "Infantry",
         "Aspect Warriors",
-        "Jump Pack"
+        "Jump Pack",
+        "Implacable"
       ],
       "models": [
         {
           "modelName": "Swooping Hawk",
           "stats": {
+            "AP": "3",
             "M": "14\"",
             "WS": 5,
             "BS": 5,
@@ -503,7 +552,7 @@
             "W": 3,
             "SV": "4+",
             "LD": "6+",
-            "basePoints": 20,
+            "basePoints": 15,
             "squadSizes": "2 to 4"
           },
           "keywords": [
@@ -511,12 +560,14 @@
             "Asuryani",
             "Infantry",
             "Aspect Warriors",
-            "Jump Pack"
+            "Jump Pack",
+            "Implacable"
           ]
         },
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "14\"",
             "WS": 6,
             "BS": 6,
@@ -527,7 +578,7 @@
             "W": 4,
             "SV": "4+",
             "LD": "5+",
-            "basePoints": 25,
+            "basePoints": 20,
             "squadSizes": "1"
           },
           "keywords": [
@@ -535,7 +586,8 @@
             "Asuryani",
             "Infantry",
             "Aspect Warriors",
-            "Jump Pack"
+            "Jump Pack",
+            "Implacable"
           ]
         }
       ]
@@ -557,6 +609,7 @@
         {
           "modelName": "Warp Spider",
           "stats": {
+            "AP": "3",
             "M": "10\"",
             "WS": 5,
             "BS": 5,
@@ -583,6 +636,7 @@
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "10\"",
             "WS": 6,
             "BS": 6,
@@ -593,7 +647,7 @@
             "W": 4,
             "SV": "3+",
             "LD": "5+",
-            "basePoints": 25,
+            "basePoints": 20,
             "squadSizes": "1"
           },
           "keywords": [
@@ -612,6 +666,7 @@
       "name": "Warlocks",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 5,
         "BS": 4,
@@ -622,7 +677,7 @@
         "W": 3,
         "SV": "4+",
         "LD": "5+",
-        "basePoints": 25,
+        "basePoints": 15,
         "squadSizes": "1 to 4"
       },
       "keywords": [
@@ -638,6 +693,7 @@
       "name": "Wraithguard",
       "category": "Infantry",
       "stats": {
+        "AP": "2",
         "M": "8\"",
         "WS": 4,
         "BS": 4,
@@ -646,7 +702,7 @@
         "S": 5,
         "T": 5,
         "W": 5,
-        "SV": "3+",
+        "SV": "2+",
         "LD": "6+",
         "basePoints": 30,
         "squadSizes": "2 to 6"
@@ -655,7 +711,8 @@
         "Aeldari",
         "Asuryani",
         "Infantry",
-        "Wraith Construct"
+        "Wraith Construct",
+        "Implacable"
       ],
       "models": null
     },
@@ -663,6 +720,7 @@
       "name": "Shroudrunners",
       "category": "Mounted",
       "stats": {
+        "AP": "3",
         "M": "12\"",
         "WS": 3,
         "BS": 6,
@@ -691,9 +749,10 @@
       "name": "Windriders",
       "category": "Mounted",
       "stats": {
+        "AP": "3",
         "M": "12\"",
         "WS": 3,
-        "BS": 3,
+        "BS": 4,
         "I": 4,
         "A": 1,
         "S": 2,
@@ -730,6 +789,7 @@
         {
           "modelName": "Shining Spear",
           "stats": {
+            "AP": "3",
             "M": "12\"",
             "WS": 5,
             "BS": 5,
@@ -756,6 +816,7 @@
         {
           "modelName": "Exarch",
           "stats": {
+            "AP": "3",
             "M": "12\"",
             "WS": 6,
             "BS": 6,
@@ -785,17 +846,18 @@
       "name": "Wave Serpent",
       "category": "Dedicated Transports",
       "stats": {
-        "M": "14\"",
-        "WS": 2,
-        "BS": 3,
+        "AP": "2",
+        "M": "16\"",
+        "WS": 3,
+        "BS": 4,
         "I": 4,
         "A": 5,
         "S": 5,
         "T": 9,
-        "W": 13,
+        "W": 15,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 120,
+        "basePoints": 100,
         "squadSizes": "1"
       },
       "keywords": [
@@ -812,15 +874,16 @@
       "name": "War Walkers",
       "category": "Walkers",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
-        "BS": 3,
+        "BS": 4,
         "I": 3,
         "A": 3,
-        "S": 5,
+        "S": 4,
         "T": 5,
         "W": 6,
-        "SV": "3+",
+        "SV": "4+",
         "LD": "7+",
         "basePoints": 40,
         "squadSizes": "1 to 3"
@@ -838,6 +901,7 @@
       "name": "Wraithlord",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 5,
         "BS": 4,
@@ -848,7 +912,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 100,
+        "basePoints": 85,
         "squadSizes": "1"
       },
       "keywords": [
@@ -864,6 +928,7 @@
       "name": "Wraithknight",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "14\"",
         "WS": 5,
         "BS": 4,
@@ -874,7 +939,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 300,
+        "basePoints": 275,
         "squadSizes": "1"
       },
       "keywords": [
@@ -891,9 +956,10 @@
       "name": "Artillery Platform",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "4\"",
-        "WS": 2,
-        "BS": 3,
+        "WS": 3,
+        "BS": 4,
         "I": 2,
         "A": 2,
         "S": 2,
@@ -901,7 +967,7 @@
         "W": 8,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 35,
+        "basePoints": 25,
         "squadSizes": "1 to 2"
       },
       "keywords": [
@@ -916,9 +982,10 @@
       "name": "Vypers",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "16\"",
-        "WS": 2,
-        "BS": 3,
+        "WS": 3,
+        "BS": 4,
         "I": 5,
         "A": 3,
         "S": 4,
@@ -926,7 +993,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 60,
+        "basePoints": 50,
         "squadSizes": "1 to 2"
       },
       "keywords": [
@@ -942,17 +1009,18 @@
       "name": "Falcon",
       "category": "Vehicles",
       "stats": {
-        "M": "14\"",
-        "WS": 2,
-        "BS": 3,
+        "AP": "2",
+        "M": "16\"",
+        "WS": 3,
+        "BS": 4,
         "I": 4,
         "A": 5,
         "S": 5,
         "T": 9,
-        "W": 13,
+        "W": 15,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 120,
+        "basePoints": 100,
         "squadSizes": "1"
       },
       "keywords": [
@@ -969,17 +1037,18 @@
       "name": "Luminarch",
       "category": "Vehicles",
       "stats": {
-        "M": "14\"",
-        "WS": 2,
-        "BS": 3,
+        "AP": "2",
+        "M": "16\"",
+        "WS": 3,
+        "BS": 4,
         "I": 4,
         "A": 5,
         "S": 5,
         "T": 9,
-        "W": 13,
+        "W": 15,
         "SV": "3+",
         "LD": "7+",
-        "basePoints": 120,
+        "basePoints": 100,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1065,13 +1134,14 @@
       "section": "Ranged Weapons",
       "points": 30,
       "profiles": null,
-      "range": "60\"",
+      "range": "48\"",
       "attacks": "1",
-      "strength": "12",
+      "strength": "9",
       "ap": "-3",
       "damage": "D3+3",
       "keywords": [
-        "Heavy"
+        "Heavy",
+        "Anti-VEHICLE 4+"
       ],
       "availability": ""
     },
@@ -1114,7 +1184,7 @@
           "points": null,
           "range": "96\"",
           "attacks": "1",
-          "strength": "30",
+          "strength": "24",
           "ap": "-4",
           "damage": "D6+12",
           "keywords": [
@@ -1702,7 +1772,7 @@
           "points": null,
           "range": "96\"",
           "attacks": "1",
-          "strength": "20",
+          "strength": "12",
           "ap": "-4",
           "damage": "D6+12",
           "keywords": [

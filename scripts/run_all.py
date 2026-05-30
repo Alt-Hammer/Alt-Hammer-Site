@@ -88,6 +88,8 @@ def main():
     from convert_weapons     import convert_weapons,  WEAPON_DATATABLES_XLSX, OUTPUT_DIR as WEAPONS_OUT
     from extract_definitions import extract_definitions, CORE_RULES_DOCX as DEFS_DOCX, OUTPUT_PATH as DEFS_OUT
     from extract_roll_tables import extract_roll_tables, ROLL_TABLES_XLSX
+    from extract_stratagems  import extract_stratagems
+    from extract_objectives  import extract_objectives
 
     results = []
 
@@ -99,11 +101,14 @@ def main():
         definitions = {}
         for entry in defs_list:
             if entry['slug'] not in definitions:
-                definitions[entry['slug']] = {
+                definition = {
                     'name': entry['name'],
                     'type': entry['type'],
                     'body': entry['body'],
                 }
+                if entry.get('cost'):
+                    definition['cost'] = entry['cost']
+                definitions[entry['slug']] = definition
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, 'w', encoding='utf-8') as f:
             json.dump(definitions, f, indent=2, ensure_ascii=False)
@@ -134,6 +139,26 @@ def main():
         "Roll Tables → src/data/hit-roll-table.json + wound-roll-table.json",
         extract_roll_tables,
         ROLL_TABLES_XLSX,
+    ))
+
+    # ── Step 1c: Extract Stratagems from Core Rules ────────────────────────────
+    # Reads Stratagems from the Core Rules .docx and writes
+    # src/data/stratagems.ts, consumed by StrategyGrid.astro.
+    # Runs independently of Step 1 — command-points-stratagems.mdx is excluded
+    # from convert_rules.py output and maintained manually.
+    results.append(run_step(
+        "Stratagems → src/data/stratagems.ts",
+        extract_stratagems,
+    ))
+
+    # ── Step 1d: Extract Secondary Objectives from Core Rules ──────────────────
+    # Reads Secondary Mission Objectives from the Core Rules .docx and writes
+    # src/data/objectives.ts, consumed by ObjectiveGrid.astro.
+    # Runs independently of Step 1 — generating-a-battle.mdx is excluded
+    # from convert_rules.py output and maintained manually.
+    results.append(run_step(
+        "Secondary Objectives → src/data/objectives.ts",
+        extract_objectives,
     ))
 
     # ── Step 2: Faction Rules ─────────────────────────────────────────────────
@@ -167,7 +192,7 @@ def main():
     print(f"  PIPELINE COMPLETE")
     print(f"{'='*60}")
 
-    steps = ["Definitions", "Core Rules", "Roll Tables", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
+    steps = ["Definitions", "Core Rules", "Roll Tables", "Stratagems", "Objectives", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
     all_ok = True
     for step, result in zip(steps, results):
         icon = "✓" if result else "✗"

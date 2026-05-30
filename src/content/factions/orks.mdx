@@ -12,9 +12,9 @@ description: ""
 
 
 While your Warlord is on the battlefield (but not embarked in a <span class="keyword" data-term="transport" data-type="keyword">Transport</span>), each <span class="keyword" data-term="ork" data-type="keyword">Ork</span> unit that can draw line of sight to your Warlord gain abilities based on the actions of your Warlord, as follows:
-- If your Warlord made a Ranged attack this Battle Round, <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units that have not yet been activated improve the Ballistic Skill characteristic of models in the unit by 1.
-- If your Warlord successfully Charged an enemy unit this Battle Round, <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units that have not yet been activated increase their Weapons Skill characteristic by 1.
-- If your Warlord made a Melee attack this Battle Round, <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units that have not yet been activated score Critical Hits for Melee attacks on a 5+ instead of a 6+.
+- If your Warlord made a Ranged attack this Battle Round as part of a <span class="keyword" data-term="shoot" data-type="action">Shoot</span> Action, <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units that have not yet been activated improve the Ballistic Skill characteristic of models in the unit by 1.
+- If your Warlord successfully Charged an enemy unit this Battle Round as part of a <span class="keyword" data-term="charge-and-fight" data-type="action">Charge and Fight</span> Action, <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units that have not yet been activated increase their Weapons Skill characteristic by 1.
+- If your Warlord made a Melee attack this Battle Round as part of a <span class="keyword" data-term="charge-and" data-type="action">Charge and</span> <span class="keyword" data-term="fight" data-type="action">Fight </span>Action, <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units that have not yet been activated score Critical Hits for Melee attacks on a 5+ instead of a 6+.
 
 If your Warlord is destroyed, all of the above abilities become permanently activated for all <span class="keyword" data-term="ork" data-type="keyword">Ork</span> units in your army for the remainder of the battle.
 
@@ -50,6 +50,12 @@ This Taktik can only be selected by a unit that is currently Battle Shocked. Whe
 When a <span class="keyword" data-term="beast-snaggas" data-type="keyword">Beast Snaggas</span> unit makes an attack against an enemy unit with the <span class="keyword" data-term="beast" data-type="keyword">Beast</span> or <span class="keyword" data-term="monster" data-type="keyword">Monster</span> keyword, increase the Strength characteristic of that attack by 1. If the attack scores a Critical Wound, increase the Damage characteristic of that attack by 1 as well.
 
 
+##### Ramshakkle 'n Scrapbuilt
+
+
+<span class="keyword" data-term="ork" data-type="keyword">Ork</span> <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> units with the <span class="keyword" data-term="deadly-demise-x" data-type="keyword">Deadly Demise [X]</span> ability do not trigger that ability normally. Instead, each time an <span class="keyword" data-term="ork" data-type="keyword">Ork</span> <span class="keyword" data-term="vehicle" data-type="keyword">Vehicle</span> with the <span class="keyword" data-term="deadly-demise-x" data-type="keyword">Deadly Demise [X]</span> ability is destroyed, roll a D6, on a 4+, the <span class="keyword" data-term="deadly-demise-x" data-type="keyword">Deadly Demise [X]</span> ability is triggered.
+
+
 ## Detachment Traits
 
 Your Ork army can select 1 of the following Detachment Traits. These detachment traits offer Force Organization and army structure changes to represent various infamous Ork formations and their warfare styles on the tabletop. 
@@ -83,6 +89,7 @@ Each time a <span class="keyword" data-term="battleline" data-type="keyword">Bat
 - Increase Attacks characteristic by 2
 - Increase Strength characteristic by 1
 - Increase Toughness characteristic by 1
+- Gain the <span class="keyword" data-term="implacable" data-type="keyword">Implacable</span> ability
 - Gain the <span class="keyword" data-term="feel-no-pain-5" data-type="keyword">Feel No Pain 5+</span> ability
 
 <h6 id="beast-snaggas-klan">Beast Snaggas Klan<span class="heading-value">25 Points</span></h6>
@@ -104,7 +111,8 @@ Each time a <span class="keyword" data-term="battleline" data-type="keyword">Bat
 - Increase Wounds characteristic by 3
 - Reduce Movement characteristic by 1"
 - Reduce Initiative characteristic by 2
-- The bearer counts as 3 models for the purposes of the <span class="keyword" data-term="transport-x" data-type="keyword">Transport [X]</span> ability
+- Gain the <span class="keyword" data-term="implacable" data-type="keyword">Implacable</span> ability
+- Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less
 - Model must be on a 40mm to 50mm base.
 
 <h6 id="grot-gunna">Grot Gunna<span class="heading-value">2 Points (Plus Weapon)</span></h6>
@@ -153,20 +161,20 @@ Ranged weapon including 1 <span class="weapon-ref" data-weapon="shoota">Shoota</
 - Friendly <span class="keyword" data-term="orks-infantry" data-type="keyword">Orks Infantry</span> units that can draw line of sight to the bearer, and who have at least 1 model within 18" of that model, change their Leadership characteristic to 5+. 
 - While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, add 20 to its total Objective Control value.
 
-<h6 id="twin-linked">Twin-linked<span class="heading-value">Varies (see below)</span></h6>
+<h6 id="bike">Bike<span class="heading-value">20 Points</span></h6>
 
 
-Weapon gains the <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-linked</span> ability. This wargear upgrade will be identified for specific eligible weapons under the Weapon Options section of a unit's datasheet. The points cost for the Twin-linked upgrade varies, as described below. 
 
-This upgrade costs 18 points for weapons that meet either of the following criteria: 
-- The weapon has a Strength characteristic of 9 or greater
-- The weapon has a minimum Attacks characteristic of 6 or more
+<h6 id="warboss-wartrike">Warboss' Wartrike<span class="heading-value">80 Points</span></h6>
 
-This upgrade costs 5 points for weapons that meet all of the following criteria:
-- The weapon has a Strength characteristic of 4 or lower
-- The weapon has a minimum Attacks characteristic of 3 or lower
 
-The upgrade costs 8 points for all other weapons.
+
+<h6 id="smashasquig">Smashasquig<span class="heading-value">40 Points</span></h6>
+
+
+
+<h6 id="beast-snaggas-boss-squigosaur">Beast Snaggas Boss' Squigosaur<span class="heading-value">80 Points</span></h6>
+
 
 
 <h6 id="ard-case">'Ard Case<span class="heading-value">25 Points</span></h6>
@@ -179,7 +187,16 @@ The upgrade costs 8 points for all other weapons.
 
 - Model gains the <span class="keyword" data-term="assault-egress" data-type="keyword">Assault Egress</span> keyword
 - Can only be equipped by models with the <span class="keyword" data-term="transport-x" data-type="keyword">Transport [X]</span> ability
-- Cannot be equipped by models equipped with an 'Ard Case
+- Cannot be equipped by models equipped with an 'Ard Case 
+
+<h6 id="twin-linked">Twin-linked<span class="heading-value">Varies (see below)</span></h6>
+
+
+Weapon gains the <span class="keyword" data-term="twin-linked" data-type="keyword">Twin-linked</span> ability. 
+
+This cost of this wargear upgrade is determined as follows:
+- For weapons with a Strength characteristic of 9 or more, add the original points cost of the weapon. This includes weapons that have 1 or more attack profiles where 1 of those attack profiles has a Strength characteristic of 9 or more 
+- For weapons with a Strength characteristic of 8 or less, add half of the original points cost of the weapon, rounding up.
 
 
 ## Unit Profiles
@@ -537,6 +554,8 @@ Any Nob can replace its <span class="weapon-ref" data-weapon="big-choppa">Big Ch
 The unit can take the <span class="wargear-ref" data-wargear="beast-snaggas-klan">Beast Snaggas Klan</span> upgrade.
 
 The unit can be equipped with 1 of the following:
+
+<p><span class="wargear-ref" data-wargear="bike">Bike</span></p>
 
 <p><span class="wargear-ref" data-wargear="eavy-armour">‘Eavy Armour</span></p>
 

@@ -2,17 +2,17 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import netlify from '@astrojs/netlify';
 import rehypeRaw from 'rehype-raw';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 export default defineConfig({
   site: 'https://alt-hammer.netlify.app',
   integrations: [
     mdx({
-      // rehype-raw allows raw HTML in MDX content (e.g. inline <span> tags).
-      // Configured here on the MDX integration only — NOT in markdown.rehypePlugins.
-      // In Astro 5, markdown plugins cascade into MDX processing, so placing
-      // rehype-raw in markdown.rehypePlugins causes it to run before JSX is
-      // resolved, stripping Astro component expressions like data={hitData}.
-      rehypePlugins: [rehypeRaw],
+      // Use rehype plugins to add stable id slugs and autolink headings
+      // to the generated HTML. rehype runs after MDX transforms so these
+      // plugins are safe to apply here alongside rehype-raw.
+      rehypePlugins: [rehypeRaw, rehypeSlug, [rehypeAutolinkHeadings, { behavior: 'wrap' }]],
     }),
   ],
   adapter: netlify(),

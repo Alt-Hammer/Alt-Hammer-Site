@@ -6,6 +6,7 @@
       "name": "Daemon Prince",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 8,
         "BS": 7,
@@ -34,6 +35,7 @@
       "name": "Lord",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 7,
         "BS": 7,
@@ -62,6 +64,7 @@
       "name": "Champion",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 6,
@@ -90,6 +93,7 @@
       "name": "Sorcerer",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -119,6 +123,7 @@
       "name": "Dark Apostle",
       "category": "Character",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -147,6 +152,7 @@
       "name": "Cultist Demagogue",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 4,
         "BS": 3,
@@ -186,6 +192,7 @@
         {
           "modelName": "Warpsmith",
           "stats": {
+            "AP": "3",
             "M": "6\"",
             "WS": 5,
             "BS": 5,
@@ -211,6 +218,7 @@
         {
           "modelName": "Helstalker",
           "stats": {
+            "AP": "3",
             "M": "10\"",
             "WS": 5,
             "BS": 5,
@@ -242,6 +250,7 @@
       "name": "Questor Traitoris Lord",
       "category": "Character",
       "stats": {
+        "AP": "2",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -278,6 +287,7 @@
         {
           "modelName": "Cultist",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 2,
             "BS": 2,
@@ -301,6 +311,7 @@
         {
           "modelName": "Torment",
           "stats": {
+            "AP": "2",
             "M": "6\"",
             "WS": 4,
             "BS": 2,
@@ -328,6 +339,7 @@
       "name": "Legionaries",
       "category": "Battleline",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -354,6 +366,7 @@
       "name": "Chosen",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "6\"",
         "WS": 6,
         "BS": 5,
@@ -381,6 +394,7 @@
       "name": "Havocs",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -407,6 +421,7 @@
       "name": "Raptors",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "12\"",
         "WS": 5,
         "BS": 5,
@@ -435,6 +450,7 @@
       "name": "Obliterators",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -461,6 +477,7 @@
       "name": "Possessed",
       "category": "Infantry",
       "stats": {
+        "AP": "3",
         "M": "7\"",
         "WS": 5,
         "BS": 5,
@@ -491,6 +508,7 @@
       "name": "Venomcrawler",
       "category": "Monsters",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 4,
         "BS": 3,
@@ -501,7 +519,7 @@
         "W": 10,
         "SV": "4+",
         "LD": "10+",
-        "basePoints": 80,
+        "basePoints": 65,
         "squadSizes": "1 to 2"
       },
       "keywords": [
@@ -519,6 +537,7 @@
       "name": "Fiend",
       "category": "Monsters",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 4,
         "BS": 3,
@@ -529,7 +548,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "10+",
-        "basePoints": 140,
+        "basePoints": 110,
         "squadSizes": "1"
       },
       "keywords": [
@@ -547,6 +566,7 @@
       "name": "Defiler",
       "category": "Monsters",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 4,
         "BS": 3,
@@ -557,7 +577,7 @@
         "W": 20,
         "SV": "2+",
         "LD": "10+",
-        "basePoints": 220,
+        "basePoints": 180,
         "squadSizes": "1"
       },
       "keywords": [
@@ -575,6 +595,7 @@
       "name": "War Dogs",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "12\"",
         "WS": 4,
         "BS": 4,
@@ -585,7 +606,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "6+",
-        "basePoints": 120,
+        "basePoints": 75,
         "squadSizes": "1 to 2"
       },
       "keywords": [
@@ -602,6 +623,7 @@
       "name": "Hellbrute",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "8\"",
         "WS": 5,
         "BS": 5,
@@ -612,7 +634,7 @@
         "W": 14,
         "SV": "2+",
         "LD": "4+",
-        "basePoints": 135,
+        "basePoints": 115,
         "squadSizes": "1"
       },
       "keywords": [
@@ -630,6 +652,7 @@
       "name": "Despoiler",
       "category": "Walkers",
       "stats": {
+        "AP": "3",
         "M": "10\"",
         "WS": 4,
         "BS": 4,
@@ -640,7 +663,7 @@
         "W": 18,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 200,
+        "basePoints": 180,
         "squadSizes": "1"
       },
       "keywords": [
@@ -648,7 +671,6 @@
         "Questor Traitoris",
         "Vehicle",
         "Walker",
-        "Titanic",
         "Deadly Demise 2D6"
       ],
       "models": null
@@ -657,6 +679,7 @@
       "name": "Tyrant",
       "category": "Walkers",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 4,
         "BS": 4,
@@ -667,7 +690,7 @@
         "W": 20,
         "SV": "2+",
         "LD": "4+",
-        "basePoints": 300,
+        "basePoints": 275,
         "squadSizes": "1"
       },
       "keywords": [
@@ -684,6 +707,7 @@
       "name": "Predator",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -694,7 +718,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 100,
+        "basePoints": 90,
         "squadSizes": "1"
       },
       "keywords": [
@@ -710,6 +734,7 @@
       "name": "Vindicator",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 5,
@@ -720,7 +745,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 80,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -736,6 +761,7 @@
       "name": "Whirlwind",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "10\"",
         "WS": 3,
         "BS": 5,
@@ -746,7 +772,7 @@
         "W": 13,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 80,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -762,6 +788,7 @@
       "name": "Land Raider",
       "category": "Vehicles",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -772,7 +799,7 @@
         "W": 20,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 250,
+        "basePoints": 200,
         "squadSizes": "1"
       },
       "keywords": [
@@ -789,6 +816,7 @@
       "name": "Rhino",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "12\"",
         "WS": 3,
         "BS": 5,
@@ -799,7 +827,7 @@
         "W": 10,
         "SV": "3+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 60,
         "squadSizes": "1"
       },
       "keywords": [
@@ -817,6 +845,7 @@
       "name": "Drop Pod",
       "category": "Dedicated Transports",
       "stats": {
+        "AP": "2",
         "M": "0\"",
         "WS": "-",
         "BS": 5,
@@ -827,7 +856,7 @@
         "W": 6,
         "SV": "3+",
         "LD": "-",
-        "basePoints": 70,
+        "basePoints": 55,
         "squadSizes": "1"
       },
       "keywords": [
@@ -846,6 +875,7 @@
       "name": "Cultists",
       "category": "Fortifications",
       "stats": {
+        "AP": "",
         "M": "6\"",
         "WS": 2,
         "BS": 2,
@@ -871,6 +901,7 @@
       "name": "Legionnaries",
       "category": "Fortifications",
       "stats": {
+        "AP": "",
         "M": "6\"",
         "WS": 5,
         "BS": 5,
@@ -896,6 +927,7 @@
       "name": "Bezerkers",
       "category": "Fortifications",
       "stats": {
+        "AP": "",
         "M": "7\"",
         "WS": 5,
         "BS": 4,
@@ -922,6 +954,7 @@
       "name": "Unbroken",
       "category": "Fortifications",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -948,6 +981,7 @@
       "name": "Tormentors",
       "category": "Fortifications",
       "stats": {
+        "AP": "",
         "M": "6\"",
         "WS": 6,
         "BS": 5,
@@ -975,6 +1009,7 @@
       "name": "Rubricae",
       "category": "Fortifications",
       "stats": {
+        "AP": "",
         "M": "5\"",
         "WS": 5,
         "BS": 5,
@@ -1723,6 +1758,20 @@
           "keywords": [
             "Assault",
             "Ignores Cover"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        },
+        {
+          "profileName": "Smoke",
+          "points": null,
+          "range": "24\"",
+          "attacks": "1",
+          "strength": "-",
+          "ap": "-",
+          "damage": "-",
+          "keywords": [
+            "Assault",
+            "Smoke 1\""
           ],
           "availability": "Tacticus, Raptor, Bike"
         }
