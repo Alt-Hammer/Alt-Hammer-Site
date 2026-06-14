@@ -84,24 +84,26 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
 
   <!-- ── Top Header ──────────────────────────────────────────────────── -->
   <header class="site-header">
-    <a href="/" class="header-logo">
-      <span>Alt-Hammer</span>
-      <span class="logo-edition">40,000<br/>1st Edition</span>
-    </a>
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <span>Alt-Hammer</span>
+        <span class="logo-edition">40,000<br/>1st Edition</span>
+      </a>
 
-    <nav class="header-nav">
-      <a href="/rules/preparing-your-game" class={activePage === 'rules' ? 'active' : ''}>
-        Core Rules
-      </a>
-      <a href="/factions" class={activePage === 'factions' ? 'active' : ''}>
-        Factions
-      </a>
-      <a href="/list-builder" class={activePage === 'list-builder' ? 'active' : ''}>
-        List Builder
-      </a>
-    </nav>
+      <nav class="header-nav">
+        <a href="/rules/preparing-your-game" class={activePage === 'rules' ? 'active' : ''}>
+          Core Rules
+        </a>
+        <a href="/factions" class={activePage === 'factions' ? 'active' : ''}>
+          Factions
+        </a>
+        <a href="/list-builder" class={activePage === 'list-builder' ? 'active' : ''}>
+          List Builder
+        </a>
+      </nav>
 
-    <span class="header-status">v1.0 · 1st Ed.</span>
+      <span class="header-status">v1.0 · 1st Ed.</span>
+    </div>
   </header>
 
   <!-- ── Body Layout ─────────────────────────────────────────────────── -->

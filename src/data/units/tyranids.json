@@ -25,7 +25,7 @@
         "Monster",
         "Character",
         "Leader",
-        "Synapse 9\"",
+        "Synapse 18\"",
         "Psyker",
         "Fearless",
         "Feel No Pain 5+",
@@ -84,7 +84,7 @@
         "Monster",
         "Character",
         "Leader",
-        "Synapse 18\"",
+        "Synapse 24\"",
         "Psyker",
         "Fearless",
         "Feel No Pain 5+"
@@ -120,91 +120,6 @@
         "Fearless",
         "Feel No Pain 5+",
         "Invulnerable Save 5+"
-      ],
-      "models": null
-    },
-    {
-      "name": "Parasite of Mortrex",
-      "category": "Character",
-      "stats": {
-        "AP": "2",
-        "M": "12\"",
-        "WS": 5,
-        "BS": 4,
-        "I": 6,
-        "A": 6,
-        "S": 4,
-        "T": 4,
-        "W": 6,
-        "SV": "4+",
-        "LD": "4+",
-        "basePoints": 85,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Tyranids",
-        "Infantry",
-        "Fly",
-        "Deep Strike",
-        "Infiltrators",
-        "Invulnerable Save 5+",
-        "Deadly Demise D3"
-      ],
-      "models": null
-    },
-    {
-      "name": "Tervigon",
-      "category": "Character",
-      "stats": {
-        "AP": "2",
-        "M": "8\"",
-        "WS": 4,
-        "BS": 3,
-        "I": 3,
-        "A": 6,
-        "S": 7,
-        "T": 12,
-        "W": 18,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 150,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Tyranids",
-        "Monster",
-        "Character",
-        "Transport 10",
-        "Feel No Pain 5+",
-        "Deadly Demise D6"
-      ],
-      "models": null
-    },
-    {
-      "name": "Norn Emissary",
-      "category": "Character",
-      "stats": {
-        "AP": "3",
-        "M": "10\"",
-        "WS": 6,
-        "BS": 5,
-        "I": 5,
-        "A": 8,
-        "S": 10,
-        "T": 11,
-        "W": 18,
-        "SV": "2+",
-        "LD": "5+",
-        "basePoints": 200,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "Tyranids",
-        "Monster",
-        "Character",
-        "Invulnerable Save 5+",
-        "Feel No Pain 5+",
-        "Deadly Demise D6+1"
       ],
       "models": null
     },
@@ -332,7 +247,7 @@
       "models": null
     },
     {
-      "name": "Von Ryan's Leapers",
+      "name": "Von Ryans Leapers",
       "category": "Battleline",
       "stats": {
         "AP": "2",
@@ -467,11 +382,11 @@
         "AP": "3",
         "M": "7\"",
         "WS": 6,
-        "BS": 3,
+        "BS": 4,
         "I": 6,
         "A": 6,
         "S": 5,
-        "T": 5,
+        "T": 4,
         "W": 5,
         "SV": "4+",
         "LD": "5+",
@@ -495,8 +410,8 @@
       "stats": {
         "AP": "3",
         "M": "7\"",
-        "WS": 4,
-        "BS": 3,
+        "WS": 5,
+        "BS": 4,
         "I": 6,
         "A": 4,
         "S": 4,
@@ -504,7 +419,7 @@
         "W": 4,
         "SV": "4+",
         "LD": "5+",
-        "basePoints": 95,
+        "basePoints": 70,
         "squadSizes": "1"
       },
       "keywords": [
@@ -542,6 +457,35 @@
         "Tyranids",
         "Beast",
         "Bodyguard"
+      ],
+      "models": null
+    },
+    {
+      "name": "Parasite of Mortrex",
+      "category": "Battleline",
+      "stats": {
+        "AP": "2",
+        "M": "12\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 6,
+        "A": 6,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Infantry",
+        "Fly",
+        "Deep Strike",
+        "Infiltrators",
+        "Invulnerable Save 5+",
+        "Deadly Demise D3"
       ],
       "models": null
     },
@@ -588,6 +532,32 @@
         "LD": "2+",
         "basePoints": 8,
         "squadSizes": "3 to 6"
+      },
+      "keywords": [
+        "Tyranids",
+        "Beast",
+        "Hover",
+        "Fearless"
+      ],
+      "models": null
+    },
+    {
+      "name": "Mucolid Spores",
+      "category": "Battleline",
+      "stats": {
+        "AP": "2",
+        "M": "5\"",
+        "WS": "-",
+        "BS": "-",
+        "I": "-",
+        "A": "-",
+        "S": "-",
+        "T": 4,
+        "W": 3,
+        "SV": "8+",
+        "LD": "2+",
+        "basePoints": 12,
+        "squadSizes": "1 to 3"
       },
       "keywords": [
         "Tyranids",
@@ -664,7 +634,7 @@
         "W": 13,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 100,
+        "basePoints": 95,
         "squadSizes": "1"
       },
       "keywords": [
@@ -809,6 +779,62 @@
       "models": null
     },
     {
+      "name": "Tervigon",
+      "category": "Monsters",
+      "stats": {
+        "AP": "2",
+        "M": "8\"",
+        "WS": 4,
+        "BS": 3,
+        "I": 3,
+        "A": 6,
+        "S": 7,
+        "T": 12,
+        "W": 18,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 150,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Transport 10",
+        "Feel No Pain 5+",
+        "Deadly Demise D6"
+      ],
+      "models": null
+    },
+    {
+      "name": "Norn Emissary",
+      "category": "Monsters",
+      "stats": {
+        "AP": "3",
+        "M": "10\"",
+        "WS": 6,
+        "BS": 5,
+        "I": 5,
+        "A": 8,
+        "S": 10,
+        "T": 11,
+        "W": 18,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 250,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Tyranids",
+        "Monster",
+        "Synapse 3\"",
+        "Psyker",
+        "Invulnerable Save 5+",
+        "Feel No Pain 5+",
+        "Deadly Demise D6+1"
+      ],
+      "models": null
+    },
+    {
       "name": "Tyrannocyte",
       "category": "Dedicated Transports",
       "stats": {
@@ -933,7 +959,7 @@
     {
       "name": "Fleshborer",
       "section": "Ranged Weapons",
-      "points": 2,
+      "points": 3,
       "profiles": null,
       "range": "18\"",
       "attacks": "A",
@@ -1103,19 +1129,6 @@
       "availability": ""
     },
     {
-      "name": "Spore Launcher",
-      "section": "Ranged Weapons",
-      "points": 15,
-      "profiles": null,
-      "range": "18\"-72\"",
-      "attacks": "-",
-      "strength": "-",
-      "ap": "-",
-      "damage": "-",
-      "keywords": [],
-      "availability": ""
-    },
-    {
       "name": "Bio-plasmic Cannon",
       "section": "Ranged Weapons",
       "points": 65,
@@ -1127,12 +1140,13 @@
           "attacks": "D6+3",
           "strength": "5",
           "ap": "-1",
-          "damage": "2",
+          "damage": "1",
           "keywords": [
             "Ordnance",
             "Indirect Fire",
             "Blast 4\"",
-            "Ignores Cover"
+            "Ignores Cover",
+            "Poison 2"
           ],
           "availability": ""
         },
@@ -1145,7 +1159,9 @@
           "ap": "-4",
           "damage": "10",
           "keywords": [
-            "Ordnance"
+            "Ordnance",
+            "Haywire",
+            "Poison D6"
           ],
           "availability": ""
         }
@@ -1159,7 +1175,8 @@
         "Ordnance",
         "Indirect Fire",
         "Blast 4\"",
-        "Ignores Cover"
+        "Ignores Cover",
+        "Poison 2"
       ],
       "availability": ""
     },
@@ -1190,7 +1207,8 @@
           "ap": "-3",
           "damage": "D6+8",
           "keywords": [
-            "Ordnance"
+            "Ordnance",
+            "Poison D6"
           ],
           "availability": ""
         }
@@ -1217,7 +1235,7 @@
       "damage": "2",
       "keywords": [
         "Sustained Hits 2",
-        "Devastating Wounds"
+        "Poison 1"
       ],
       "availability": ""
     },
@@ -1242,18 +1260,18 @@
     {
       "name": "Acid Maw",
       "section": "Ranged Weapons",
-      "points": 15,
+      "points": 10,
       "profiles": [
         {
           "profileName": "Ranged",
-          "points": 15,
+          "points": 10,
           "range": "9\"",
           "attacks": "D6+3",
           "strength": "S",
-          "ap": "-4",
+          "ap": "-2",
           "damage": "1",
           "keywords": [
-            "Anti-INFANTRY 4+",
+            "Anti-INFANTRY 5+",
             "Poison D3"
           ],
           "availability": ""
@@ -1265,13 +1283,13 @@
       "ap": null,
       "damage": null,
       "keywords": [
-        "Anti-INFANTRY 4+",
+        "Anti-INFANTRY 5+",
         "Poison D3"
       ],
       "availability": ""
     },
     {
-      "name": "Toxinjector Harpoon",
+      "name": "Toxinjector Harpoons",
       "section": "Ranged Weapons",
       "points": 35,
       "profiles": [
@@ -1285,6 +1303,21 @@
           "damage": "D6+1",
           "keywords": [
             "Harpoon"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 35,
+          "range": "-",
+          "attacks": "2",
+          "strength": "12",
+          "ap": "-3",
+          "damage": "D6+1",
+          "keywords": [
+            "Extra Attacks",
+            "Harpoon",
+            "Poison 2"
           ],
           "availability": ""
         }
@@ -1333,11 +1366,11 @@
     {
       "name": "Scything Talons",
       "section": "Melee Weapons",
-      "points": 5,
+      "points": 6,
       "profiles": [
         {
           "profileName": "Flury",
-          "points": 5,
+          "points": 6,
           "range": "-",
           "attacks": "A+3",
           "strength": "S",
@@ -1377,7 +1410,7 @@
     {
       "name": "Scything Wings",
       "section": "Melee Weapons",
-      "points": 5,
+      "points": 3,
       "profiles": null,
       "range": "-",
       "attacks": "A",
@@ -1519,39 +1552,6 @@
       "availability": ""
     },
     {
-      "name": "Toxinjector Harpoons",
-      "section": "Melee Weapons",
-      "points": 35,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 35,
-          "range": "-",
-          "attacks": "2",
-          "strength": "12",
-          "ap": "-3",
-          "damage": "D6+1",
-          "keywords": [
-            "Extra Attacks",
-            "Harpoon",
-            "Poison 2"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Extra Attacks",
-        "Harpoon",
-        "Poison 2"
-      ],
-      "availability": ""
-    },
-    {
       "name": "Haruspex Maw",
       "section": "Melee Weapons",
       "points": 25,
@@ -1583,6 +1583,23 @@
       "availability": ""
     },
     {
+      "name": "Barbed Ovispositor",
+      "section": "Melee Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "-",
+      "attacks": "D3",
+      "strength": "S",
+      "ap": "-3",
+      "damage": "D3+1",
+      "keywords": [
+        "Extra Attacks",
+        "Precision",
+        "Poison D3"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Warp Blast",
       "section": "Psychic Attacks",
       "points": null,
@@ -1596,6 +1613,7 @@
           "ap": "-4",
           "damage": "5",
           "keywords": [
+            "Psychic",
             "Beam D3",
             "Hazardous D3",
             "Anti-PSYKER 2+",
@@ -1612,6 +1630,7 @@
           "ap": "-1",
           "damage": "1",
           "keywords": [
+            "Psychic",
             "Pistol",
             "Torrent",
             "Anti-PSYKER 4+",
@@ -1627,6 +1646,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
+        "Psychic",
         "Beam D3",
         "Hazardous D3",
         "Anti-PSYKER 2+",
@@ -1645,6 +1665,7 @@
       "ap": "-3",
       "damage": "3",
       "keywords": [
+        "Psychic",
         "Precision",
         "Indirect Fire",
         "Anti-PSYKER 2+",
@@ -1662,8 +1683,9 @@
       "attacks": "D3",
       "strength": "4",
       "ap": "-1",
-      "damage": "3",
+      "damage": "D3+3",
       "keywords": [
+        "Psychic",
         "Precision",
         "Pistol",
         "Anti-PSYKER 3+",
@@ -1683,6 +1705,7 @@
       "ap": "-1",
       "damage": "1",
       "keywords": [
+        "Psychic",
         "Ordnance",
         "Blast 2\"",
         "Sustained Hits 3",
@@ -1691,37 +1714,51 @@
       "availability": ""
     },
     {
-      "name": "Fragmentation Spore",
+      "name": "Spore",
       "section": "Grenades",
-      "points": 4,
-      "profiles": null,
-      "range": "6\"",
-      "attacks": "D6+3",
-      "strength": "3",
-      "ap": "0",
-      "damage": "1",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Fragmentation",
+          "points": 8,
+          "range": "6\"",
+          "attacks": "D6+3",
+          "strength": "3",
+          "ap": "0",
+          "damage": "1",
+          "keywords": [
+            "Torrent",
+            "Blast 1\"",
+            "Ignores Covers"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Bio-Acid",
+          "points": null,
+          "range": "6\"",
+          "attacks": "D3+2",
+          "strength": "2",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Torrent",
+            "Anti-INFANTRY 4+",
+            "Ignores Cover",
+            "Poison 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
       "keywords": [
         "Torrent",
         "Blast 1\"",
         "Ignores Covers"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Bio-acid Spore",
-      "section": "Grenades",
-      "points": 6,
-      "profiles": null,
-      "range": "6\"",
-      "attacks": "D3",
-      "strength": "2",
-      "ap": "-1",
-      "damage": "2",
-      "keywords": [
-        "Torrent",
-        "Anti-INFANTRY 4+",
-        "Ignores Cover",
-        "Poison 2"
       ],
       "availability": ""
     },

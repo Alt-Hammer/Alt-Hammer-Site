@@ -5,91 +5,28 @@
     {
       "name": "Warboss",
       "category": "Character",
-      "stats": null,
+      "stats": {
+        "AP": "3",
+        "M": "6\"",
+        "WS": 6,
+        "BS": 3,
+        "I": 4,
+        "A": 5,
+        "S": 6,
+        "T": 6,
+        "W": 7,
+        "SV": "6+",
+        "LD": "4+",
+        "basePoints": 140,
+        "squadSizes": "1"
+      },
       "keywords": [
         "Orks",
         "Infantry",
         "Character",
         "Leader"
       ],
-      "models": [
-        {
-          "modelName": "Warboss",
-          "stats": {
-            "AP": "3",
-            "M": "6\"",
-            "WS": 6,
-            "BS": 3,
-            "I": 4,
-            "A": 5,
-            "S": 6,
-            "T": 6,
-            "W": 7,
-            "SV": "6+",
-            "LD": "4+",
-            "basePoints": 140,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Orks",
-            "Infantry",
-            "Character",
-            "Leader"
-          ]
-        },
-        {
-          "modelName": "Warboss' Wartrike",
-          "stats": {
-            "AP": "3",
-            "M": "12\"",
-            "WS": 6,
-            "BS": 3,
-            "I": 6,
-            "A": 7,
-            "S": 7,
-            "T": 8,
-            "W": 12,
-            "SV": "3+",
-            "LD": "4+",
-            "basePoints": 80,
-            "squadSizes": "0 to 1"
-          },
-          "keywords": [
-            "Orks",
-            "Infantry",
-            "Character",
-            "Leader",
-            "Mounted"
-          ]
-        },
-        {
-          "modelName": "Beast Snaggas Boss' Squigosaur",
-          "stats": {
-            "AP": "3",
-            "M": "10\"",
-            "WS": 6,
-            "BS": 3,
-            "I": 6,
-            "A": 7,
-            "S": 7,
-            "T": 8,
-            "W": 12,
-            "SV": "4+",
-            "LD": "4+",
-            "basePoints": 80,
-            "squadSizes": "0 to 1"
-          },
-          "keywords": [
-            "Orks",
-            "Monster",
-            "Character",
-            "Leader",
-            "Mounted",
-            "Scouts 6\"",
-            "Beast Snaggas"
-          ]
-        }
-      ]
+      "models": null
     },
     {
       "name": "Mekboy",
@@ -300,7 +237,7 @@
             "SV": "6+",
             "LD": "8+",
             "basePoints": 6,
-            "squadSizes": "9"
+            "squadSizes": "5 to 20"
           },
           "keywords": [
             "Orks",
@@ -538,7 +475,8 @@
         "Infantry",
         "Mounted",
         "Scouts 6\"",
-        "Beast Snaggas"
+        "Beast Snaggas",
+        "Feel No Pain 5+"
       ],
       "models": [
         {
@@ -555,15 +493,16 @@
             "W": 4,
             "SV": "5+",
             "LD": "8+",
-            "basePoints": 35,
-            "squadSizes": "1 to 3"
+            "basePoints": 30,
+            "squadSizes": "2 to 6"
           },
           "keywords": [
             "Orks",
             "Infantry",
             "Mounted",
             "Scouts 6\"",
-            "Beast Snaggas"
+            "Beast Snaggas",
+            "Feel No Pain 5+"
           ]
         },
         {
@@ -580,7 +519,7 @@
             "W": 5,
             "SV": "5+",
             "LD": "6+",
-            "basePoints": 60,
+            "basePoints": 50,
             "squadSizes": "1"
           },
           "keywords": [
@@ -588,7 +527,9 @@
             "Infantry",
             "Mounted",
             "Scouts 6\"",
-            "Beast Snaggas"
+            "Implacable",
+            "Beast Snaggas",
+            "Feel No Pain 5+"
           ]
         }
       ]
@@ -618,7 +559,7 @@
             "SV": "4+",
             "LD": "7+",
             "basePoints": 25,
-            "squadSizes": "2 to 5"
+            "squadSizes": "2 to 6"
           },
           "keywords": [
             "Orks",
@@ -788,7 +729,7 @@
       "category": "Vehicles",
       "stats": {
         "AP": "2",
-        "M": "18\"",
+        "M": "16\"",
         "WS": 4,
         "BS": 2,
         "I": 4,
@@ -798,7 +739,7 @@
         "W": 4,
         "SV": "4+",
         "LD": "5+",
-        "basePoints": 70,
+        "basePoints": 50,
         "squadSizes": "1 to 4"
       },
       "keywords": [
@@ -1069,6 +1010,22 @@
       "availability": ""
     },
     {
+      "name": "Snazzy Shoota",
+      "section": "Ranged Weapons",
+      "points": 5,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "2",
+      "strength": "3",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 2",
+        "Sustained Hits 2"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Kommando Shoota",
       "section": "Ranged Weapons",
       "points": 6,
@@ -1104,7 +1061,7 @@
     {
       "name": "Mega Shoota",
       "section": "Ranged Weapons",
-      "points": 55,
+      "points": 65,
       "profiles": null,
       "range": "36\"",
       "attacks": "20",
@@ -1260,7 +1217,7 @@
     {
       "name": "Zzappa",
       "section": "Ranged Weapons",
-      "points": 50,
+      "points": 35,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
@@ -1277,7 +1234,7 @@
     {
       "name": "Mega Zzappa",
       "section": "Ranged Weapons",
-      "points": 80,
+      "points": 50,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",
@@ -1420,6 +1377,53 @@
       "keywords": [
         "Assault",
         "Blast 1\""
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Killa Jet",
+      "section": "Ranged Weapons",
+      "points": 25,
+      "profiles": [
+        {
+          "profileName": "Burna",
+          "points": 25,
+          "range": "9\"",
+          "attacks": "D6+3",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Cutta",
+          "points": null,
+          "range": "12\"",
+          "attacks": "D3",
+          "strength": "9",
+          "ap": "-4",
+          "damage": "D6",
+          "keywords": [
+            "Assault",
+            "Melta 2"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Torrent",
+        "Ignores Cover"
       ],
       "availability": ""
     },
@@ -1644,6 +1648,21 @@
             "Harpoon"
           ],
           "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 8,
+          "range": "-",
+          "attacks": "1",
+          "strength": "S +3",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Lance",
+            "Anti-MONSTER 3+",
+            "Harpoon"
+          ],
+          "availability": ""
         }
       ],
       "range": null,
@@ -1676,6 +1695,21 @@
             "Assault",
             "Anti-MONSTER 2+",
             "Anti-VEHICLE 5+",
+            "Harpoon"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 20,
+          "range": "",
+          "attacks": "1",
+          "strength": "S +6",
+          "ap": "-3",
+          "damage": "5",
+          "keywords": [
+            "Lance",
+            "Anti-MONSTER 2+",
             "Harpoon"
           ],
           "availability": ""
@@ -1861,7 +1895,7 @@
       "availability": ""
     },
     {
-      "name": "Spikey Bits",
+      "name": "Spikey Bitz",
       "section": "Melee Weapons",
       "points": 10,
       "profiles": null,
@@ -1884,6 +1918,7 @@
       "ap": "-2",
       "damage": "4",
       "keywords": [
+        "Extra Attacks",
         "Sustained Hits 2"
       ],
       "availability": ""
@@ -1942,80 +1977,14 @@
       "profiles": null,
       "range": "-",
       "attacks": "A -3",
-      "strength": "S +6",
-      "ap": "-2",
+      "strength": "S +4",
+      "ap": "-1",
       "damage": "D6+3",
       "keywords": [
         "Extra Attacks",
-        "Anti-VEHICLE 3+",
+        "Anti-VEHICLE 5+",
         "Anti-FORTIFICATION 2+",
         "Devastating Wounds"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Snagga Stik",
-      "section": "Melee Weapons",
-      "points": 8,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 8,
-          "range": "-",
-          "attacks": "1",
-          "strength": "S +3",
-          "ap": "-2",
-          "damage": "2",
-          "keywords": [
-            "Lance",
-            "Anti-MONSTER 3+",
-            "Harpoon"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
-        "Anti-MONSTER 3+",
-        "Harpoon"
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Big Snagga",
-      "section": "Melee Weapons",
-      "points": 20,
-      "profiles": [
-        {
-          "profileName": "Melee",
-          "points": 20,
-          "range": "",
-          "attacks": "1",
-          "strength": "S +6",
-          "ap": "-3",
-          "damage": "5",
-          "keywords": [
-            "Lance",
-            "Anti-MONSTER 2+",
-            "Harpoon"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Lance",
-        "Anti-MONSTER 2+",
-        "Harpoon"
       ],
       "availability": ""
     },
@@ -2075,8 +2044,8 @@
       "range": "-",
       "attacks": "A",
       "strength": "6",
-      "ap": "0",
-      "damage": "1",
+      "ap": "-1",
+      "damage": "2",
       "keywords": [
         "Extra Attacks",
         "Lethal Hits"
@@ -2092,10 +2061,10 @@
       "attacks": "A",
       "strength": "10",
       "ap": "0",
-      "damage": "1",
+      "damage": "3",
       "keywords": [
         "Extra Attacks",
-        "Lethal Hits"
+        "Devastating Wounds"
       ],
       "availability": ""
     },
@@ -2110,6 +2079,7 @@
       "ap": "-3",
       "damage": "3",
       "keywords": [
+        "Psychic",
         "Anti-PSYKER 3+",
         "Devastating Wounds",
         "Hazardous D3"
@@ -2127,6 +2097,7 @@
       "ap": "-4",
       "damage": "5",
       "keywords": [
+        "Psychic",
         "Beam 3",
         "Anti-PSYKER 2+",
         "Devastating Wounds",
@@ -2145,6 +2116,7 @@
       "ap": "-1",
       "damage": "1",
       "keywords": [
+        "Psychic",
         "Pistol",
         "Torrent",
         "Anti-PSYKER 4+",
@@ -2154,7 +2126,7 @@
       "availability": ""
     },
     {
-      "name": "Stik Bombs / Firebombs",
+      "name": "Stikbombz",
       "section": "Grenades",
       "points": 1,
       "profiles": null,
@@ -2170,7 +2142,23 @@
       "availability": ""
     },
     {
-      "name": "Tankbusta Stiks",
+      "name": "Firebombz",
+      "section": "Grenades",
+      "points": 3,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D6+3",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Tankbustaz",
       "section": "Grenades",
       "points": 3,
       "profiles": null,
@@ -2202,7 +2190,7 @@
       "availability": ""
     },
     {
-      "name": "Smoke Stik",
+      "name": "Smoke Stikz",
       "section": "Grenades",
       "points": 1,
       "profiles": null,

@@ -230,7 +230,7 @@
       "stats": {
         "AP": "3",
         "M": "6\"",
-        "WS": 6,
+        "WS": 5,
         "BS": 5,
         "I": 5,
         "A": 4,
@@ -257,7 +257,7 @@
         "AP": "3",
         "M": "6\"",
         "WS": 6,
-        "BS": 5,
+        "BS": 6,
         "I": 5,
         "A": 4,
         "S": 4,
@@ -265,7 +265,7 @@
         "W": 4,
         "SV": "3+",
         "LD": "4+",
-        "basePoints": 30,
+        "basePoints": 35,
         "squadSizes": "1 to 3"
       },
       "keywords": [
@@ -498,7 +498,7 @@
       "models": null
     },
     {
-      "name": "Contemptor Deadnought",
+      "name": "Contemptor Dreadnought",
       "category": "Walkers",
       "stats": {
         "AP": "3",
@@ -510,7 +510,7 @@
         "S": 6,
         "T": 9,
         "W": 12,
-        "SV": "3+",
+        "SV": "2+",
         "LD": "4+",
         "basePoints": 95,
         "squadSizes": "1"
@@ -1092,16 +1092,17 @@
     {
       "name": "Heavy Autogun",
       "section": "Ranged Weapons",
-      "points": 7,
+      "points": 5,
       "profiles": null,
       "range": "30\"",
       "attacks": "2",
-      "strength": "4",
+      "strength": "3",
       "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
-        "Rapid Fire 2"
+        "Rapid Fire 2",
+        "Sustained Hits 1"
       ],
       "availability": "Vehicles only"
     },
@@ -1325,7 +1326,7 @@
       "ap": "-4",
       "damage": "D6",
       "keywords": [
-        "Melta 2"
+        "Melta 3"
       ],
       "availability": "Tacticus, Gravis"
     },
@@ -1697,6 +1698,53 @@
       "damage": null,
       "keywords": [
         "Heavy",
+        "Blast 1\""
+      ],
+      "availability": "Tacticus, Gravis, Scout"
+    },
+    {
+      "name": "Icarus Missile Launcher",
+      "section": "Ranged Weapons",
+      "points": 18,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 18,
+          "range": "48\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Heavy",
+            "Anti-Air",
+            "Blast 1\""
+          ],
+          "availability": "Tacticus, Gravis, Scout"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "48\"",
+          "attacks": "1",
+          "strength": "10",
+          "ap": "-2",
+          "damage": "4",
+          "keywords": [
+            "Heavy",
+            "Anti-Air"
+          ],
+          "availability": "Tacticus, Gravis, Scout"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Heavy",
+        "Anti-Air",
         "Blast 1\""
       ],
       "availability": "Tacticus, Gravis, Scout"
@@ -2181,6 +2229,7 @@
           "ap": "-4",
           "damage": "5",
           "keywords": [
+            "Psychic",
             "Beam D3",
             "Hazardous D3",
             "Anti-PSYKER 2+",
@@ -2197,6 +2246,7 @@
           "ap": "-1",
           "damage": "1",
           "keywords": [
+            "Psychic",
             "Pistol",
             "Torrent",
             "Anti-PSYKER 4+",
@@ -2212,6 +2262,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
+        "Psychic",
         "Beam D3",
         "Hazardous D3",
         "Anti-PSYKER 2+",

@@ -220,6 +220,7 @@
         "Phase Shift",
         "Infiltrators",
         "Scout 7\"",
+        "Stealth",
         "Invulnerable Save 4+"
       ],
       "models": null
@@ -238,8 +239,8 @@
         "T": 2,
         "W": 2,
         "SV": "4+",
-        "LD": "6+",
-        "basePoints": 10,
+        "LD": "5+",
+        "basePoints": 14,
         "squadSizes": "3 to 10"
       },
       "keywords": [
@@ -248,6 +249,7 @@
         "Infantry",
         "Jump Pack",
         "Deep Strike",
+        "Implacable",
         "Kabal"
       ],
       "models": null
@@ -900,7 +902,7 @@
       "profiles": null,
       "range": "-",
       "attacks": "A-2",
-      "strength": "S x2",
+      "strength": "S +3",
       "ap": "-2",
       "damage": "3",
       "keywords": [
@@ -1097,14 +1099,15 @@
     {
       "name": "Scything Blades",
       "section": "Melee Weapons",
-      "points": "5 / 10",
+      "points": 4,
       "profiles": null,
       "range": "-",
-      "attacks": "D3",
+      "attacks": "A",
       "strength": "S",
       "ap": "-2",
-      "damage": "1 / 2",
+      "damage": "1",
       "keywords": [
+        "Extra Attacks",
         "Lethal Hits"
       ],
       "availability": ""
@@ -1231,7 +1234,24 @@
       "ap": "0",
       "damage": "0",
       "keywords": [
+        "Blast 2\"",
         "Ensnare",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Phantasm Grenades",
+      "section": "Grenades",
+      "points": 3,
+      "profiles": null,
+      "range": "S+3\"",
+      "attacks": "D3+1",
+      "strength": "5",
+      "ap": "0",
+      "damage": "0",
+      "keywords": [
+        "Blast 2\"",
         "Ignores Cover"
       ],
       "availability": ""

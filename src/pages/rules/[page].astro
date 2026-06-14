@@ -27,6 +27,7 @@
 import DocsLayout from '../../layouts/DocsLayout.astro';
 import { RULES_SECTIONS } from '../../data/rules-nav.ts';
 import { getCollection } from 'astro:content';
+import ObjectiveGrid from '../../components/ObjectiveGrid.astro';
 
 export async function getStaticPaths() {
   const rulePages = await getCollection('rules');
@@ -107,6 +108,6 @@ function toAnchor(text: string): string {
   )}
 
   <div class="rules-content-body">
-    <Content />
+    <Content components={{ ObjectiveGrid }} />
   </div>
 </DocsLayout>

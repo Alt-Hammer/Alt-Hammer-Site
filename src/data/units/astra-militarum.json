@@ -738,7 +738,7 @@
       "models": null
     },
     {
-      "name": "Chimera",
+      "name": "Chimera Infantry Fighting Vehicle",
       "category": "Dedicated Transports",
       "stats": {
         "AP": "2",
@@ -950,7 +950,7 @@
       "models": null
     },
     {
-      "name": "Heavy Artillery Teams",
+      "name": "Heavy Artillery Team",
       "category": "Vehicles",
       "stats": {
         "AP": "2",
@@ -1004,7 +1004,7 @@
       "models": null
     },
     {
-      "name": "Onager Self Propelled Artillery",
+      "name": "Onager Light Self Propelled Artillery",
       "category": "Vehicles",
       "stats": {
         "AP": "2",
@@ -1139,7 +1139,7 @@
       "models": null
     },
     {
-      "name": "Baneblade Super-Heavy Battle Tank",
+      "name": "Baneblade Super-heavy Battle Tank",
       "category": "Vehicles",
       "stats": {
         "AP": "2",
@@ -1153,7 +1153,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 330,
+        "basePoints": 380,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1167,7 +1167,7 @@
       "models": null
     },
     {
-      "name": "Stormlord Super-Heavy Assault Transport",
+      "name": "Stormlord Super-heavy Assault Transport",
       "category": "Vehicles",
       "stats": {
         "AP": "2",
@@ -1181,7 +1181,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 475,
+        "basePoints": 420,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1196,7 +1196,7 @@
       "models": null
     },
     {
-      "name": "Shadowsword Super-Heavy Tank Hunter",
+      "name": "Shadowsword Super-heavy Destroyer",
       "category": "Vehicles",
       "stats": {
         "AP": "2",
@@ -1210,7 +1210,7 @@
         "W": 25,
         "SV": "2+",
         "LD": "5+",
-        "basePoints": 330,
+        "basePoints": 380,
         "squadSizes": "1"
       },
       "keywords": [
@@ -1245,12 +1245,13 @@
       "points": 2,
       "profiles": null,
       "range": "12\"",
-      "attacks": "3",
+      "attacks": "2",
       "strength": "3",
       "ap": "0",
       "damage": "1",
       "keywords": [
-        "Assault"
+        "Assault",
+        "Sustained Hits 1"
       ],
       "availability": ""
     },
@@ -1353,12 +1354,13 @@
       "points": 4,
       "profiles": null,
       "range": "12\"",
-      "attacks": "3",
+      "attacks": "2",
       "strength": "3",
       "ap": "-1",
       "damage": "1",
       "keywords": [
-        "Assault"
+        "Assault",
+        "Sustained Hits 1"
       ],
       "availability": ""
     },
@@ -1426,16 +1428,17 @@
     {
       "name": "Heavy Autogun",
       "section": "Ranged Weapons",
-      "points": 6,
+      "points": 4,
       "profiles": null,
       "range": "30\"",
       "attacks": "2",
-      "strength": "4",
+      "strength": "3",
       "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
-        "Rapid Fire 2"
+        "Rapid Fire 2",
+        "Sustained Hits 1"
       ],
       "availability": ""
     },
@@ -2183,7 +2186,7 @@
       "availability": ""
     },
     {
-      "name": "Missile Launcher - Frag",
+      "name": "Missile Launcher",
       "section": "Ranged Weapons",
       "points": 15,
       "profiles": [
@@ -2200,24 +2203,7 @@
             "Blast 1\""
           ],
           "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [
-        "Heavy",
-        "Blast 1\""
-      ],
-      "availability": ""
-    },
-    {
-      "name": "Missile Launcher - Krak",
-      "section": "Ranged Weapons",
-      "points": null,
-      "profiles": [
+        },
         {
           "profileName": "Krak",
           "points": null,
@@ -2238,7 +2224,8 @@
       "ap": null,
       "damage": null,
       "keywords": [
-        "Heavy"
+        "Heavy",
+        "Blast 1\""
       ],
       "availability": ""
     },
@@ -2271,7 +2258,7 @@
           "points": 30,
           "range": "48\"",
           "attacks": "D6+3",
-          "strength": "4",
+          "strength": "3",
           "ap": "0",
           "damage": "2",
           "keywords": [
@@ -2311,7 +2298,7 @@
           "points": 50,
           "range": "48\"",
           "attacks": "D6+3",
-          "strength": "5",
+          "strength": "4",
           "ap": "0",
           "damage": "2",
           "keywords": [
@@ -2494,7 +2481,7 @@
       "availability": ""
     },
     {
-      "name": "Demolisher Seige Cannon",
+      "name": "Demolisher Siege Cannon",
       "section": "Ranged Weapons",
       "points": 65,
       "profiles": null,
@@ -2570,8 +2557,8 @@
       "points": 50,
       "profiles": null,
       "range": "18\"-72\"",
-      "attacks": "2D6",
-      "strength": "5",
+      "attacks": "2D6+3",
+      "strength": "4",
       "ap": "0",
       "damage": "2",
       "keywords": [
@@ -2587,10 +2574,10 @@
       "points": 150,
       "profiles": null,
       "range": "30\"-240\"",
-      "attacks": "2D6+6",
-      "strength": "6",
+      "attacks": "3D6+3",
+      "strength": "5",
       "ap": "-1",
-      "damage": "2",
+      "damage": "3",
       "keywords": [
         "Ordnance",
         "Indirect Fire",
@@ -2607,7 +2594,7 @@
       "attacks": "D6",
       "strength": "3",
       "ap": "0",
-      "damage": "1",
+      "damage": "2",
       "keywords": [
         "Ordnance",
         "Indirect Fire",
@@ -2621,7 +2608,7 @@
       "section": "Ranged Weapons",
       "points": 40,
       "profiles": null,
-      "range": "18\"-48\"",
+      "range": "18\"-60\"",
       "attacks": "D6+3",
       "strength": "5",
       "ap": "0",
@@ -2640,24 +2627,25 @@
       "points": 60,
       "profiles": null,
       "range": "18\"-48\"",
-      "attacks": "4D6",
+      "attacks": "3D6+6",
       "strength": "3",
       "ap": "0",
-      "damage": "1",
+      "damage": "2",
       "keywords": [
         "Ordnance",
         "Indirect Fire",
         "Blast 1\"",
+        "Sustained Hits 2",
         "Ignores Cover"
       ],
       "availability": ""
     },
     {
-      "name": "Wyvern Heavy Quad Mortar",
+      "name": "Wyvern Quad Heavy Mortar",
       "section": "Ranged Weapons",
       "points": 130,
       "profiles": null,
-      "range": "18\"-48\"",
+      "range": "18\"-60\"",
       "attacks": "4D6+6",
       "strength": "5",
       "ap": "0",
@@ -2666,6 +2654,7 @@
         "Ordnance",
         "Indirect Fire",
         "Blast 2\"",
+        "Sustained Hits 2",
         "Ignores Cover"
       ],
       "availability": ""
@@ -2675,7 +2664,7 @@
       "section": "Ranged Weapons",
       "points": 80,
       "profiles": null,
-      "range": "18\"-48\"",
+      "range": "18\"-72\"",
       "attacks": "2D6",
       "strength": "8",
       "ap": "-2",
@@ -2715,7 +2704,7 @@
       "profiles": null,
       "range": "48\"-240\"",
       "attacks": "3D6",
-      "strength": "15",
+      "strength": "11",
       "ap": "-3",
       "damage": "8",
       "keywords": [
@@ -2730,7 +2719,7 @@
     {
       "name": "Deathstrike Missile",
       "section": "Ranged Weapons",
-      "points": 900,
+      "points": 1400,
       "profiles": null,
       "range": "48\"-240\"",
       "attacks": "4D6+12",
@@ -2743,6 +2732,21 @@
         "Indirect Fire",
         "Blast 24\"",
         "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Galvanic Pistol",
+      "section": "Ranged Weapons",
+      "points": 2,
+      "profiles": null,
+      "range": "18\"",
+      "attacks": "1",
+      "strength": "4",
+      "ap": "-2",
+      "damage": "1",
+      "keywords": [
+        "Pistol"
       ],
       "availability": ""
     },
@@ -3049,6 +3053,21 @@
       "availability": ""
     },
     {
+      "name": "Manipulator Arm(s)",
+      "section": "Melee Weapons",
+      "points": 4,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A",
+      "strength": "S",
+      "ap": "-",
+      "damage": "2",
+      "keywords": [
+        "Extra Attacks"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Force Weapon",
       "section": "Melee Weapons",
       "points": 10,
@@ -3094,6 +3113,7 @@
           "ap": "-4",
           "damage": "5",
           "keywords": [
+            "Psychic",
             "Beam D3",
             "Hazardous D3",
             "Anti-PSYKER 2+",
@@ -3110,6 +3130,7 @@
           "ap": "-1",
           "damage": "1",
           "keywords": [
+            "Psychic",
             "Pistol",
             "Torrent",
             "Anti-PSYKER 4+",
@@ -3125,6 +3146,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
+        "Psychic",
         "Beam D3",
         "Hazardous D3",
         "Anti-PSYKER 2+",
@@ -3200,7 +3222,7 @@
       "availability": ""
     },
     {
-      "name": "Frag Bomb",
+      "name": "Frag Bombs",
       "section": "Grenades",
       "points": 2,
       "profiles": null,

@@ -129,6 +129,57 @@ def main():
         RULES_OUT,
     ))
 
+    # ── Step 1a: Inject RollTable components into making-attacks.mdx ──────────
+    # Must run after Step 1 (which creates the MDX file).
+    # The converter outputs the Hit Roll and Wound Roll tables as HTML matrix
+    # blocks. This step replaces them in document order with <RollTable />
+    # component calls and adds the required import statements.
+    def _inject_roll_tables(mdx_path):
+        with open(mdx_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        roll_table_imports = (
+            "import RollTable from '../../components/RollTable.astro';\n"
+            "import hitData from '../../data/hit-roll-table.json';\n"
+            "import woundData from '../../data/wound-roll-table.json';"
+        )
+        if 'import RollTable' not in content:
+            frontmatter_end = content.find('\n---\n', 3)
+            if frontmatter_end == -1:
+                raise ValueError("Could not find frontmatter closing fence in making-attacks.mdx")
+            insert_at = frontmatter_end + len('\n---\n')
+            content = content[:insert_at] + roll_table_imports + '\n\n' + content[insert_at:]
+
+        # The hit/wound roll tables live in the Excel file, not the Word doc, so
+        # the converter produces no table HTML for them. Instead we use stable
+        # text anchors to find the right insertion points.
+        #
+        # Hit roll table: insert before the follow-up paragraph that begins
+        # "Hit rolls are often subject to positive or negative modifiers".
+        hit_anchor = '\nHit rolls are often subject to positive or negative modifiers'
+        hit_pos = content.find(hit_anchor)
+        if hit_pos == -1:
+            raise ValueError("Could not find hit-roll anchor paragraph in making-attacks.mdx")
+        content = content[:hit_pos] + '\n\n<RollTable data={hitData} />' + content[hit_pos:]
+
+        # Wound roll table: insert before the ### "Hit Them from Behind!" heading
+        # that immediately follows the wound roll section.
+        wound_anchor = '\n### "Hit Them from Behind!"'
+        wound_pos = content.find(wound_anchor)
+        if wound_pos == -1:
+            raise ValueError('Could not find wound-roll anchor heading in making-attacks.mdx')
+        content = content[:wound_pos] + '\n\n<RollTable data={woundData} />' + content[wound_pos:]
+
+        with open(mdx_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"  ✓  Injected RollTable components into {mdx_path}")
+
+    results.append(run_step(
+        "Inject RollTable → making-attacks.mdx",
+        _inject_roll_tables,
+        "src/content/rules/making-attacks.mdx",
+    ))
+
     # ── Step 1b: Extract Roll Tables from Excel ───────────────────────────────
     # Reads the Hit Roll and Wound Roll tables from the Excel source file and
     # writes src/data/hit-roll-table.json and src/data/wound-roll-table.json.
@@ -154,11 +205,147 @@ def main():
     # ── Step 1d: Extract Secondary Objectives from Core Rules ──────────────────
     # Reads Secondary Mission Objectives from the Core Rules .docx and writes
     # src/data/objectives.ts, consumed by ObjectiveGrid.astro.
-    # Runs independently of Step 1 — generating-a-battle.mdx is excluded
-    # from convert_rules.py output and maintained manually.
+    # Runs independently of Step 1 — generating-a-battle.mdx is now generated
+    # by convert_rules.py and no longer post-processed for tab conversion.
     results.append(run_step(
         "Secondary Objectives → src/data/objectives.ts",
         extract_objectives,
+    ))
+
+    # ── Step 1e: Inject ObjectiveGrid into generating-a-battle.mdx ────────────
+    # Must run after Step 1 (which creates the MDX file) and Step 1d (which
+    # creates objectives.ts that the injected import references).
+    # Replaces the raw H5/H6/H7 objectives content produced by the converter
+    # with an <ObjectiveGrid /> component invocation, and adds the required
+    # import statements.
+    def _inject_objective_grid(mdx_path):
+        with open(mdx_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        section_heading = '## Optional Game Feature: Secondary Mission Objectives'
+        section_start = content.find(section_heading)
+        if section_start == -1:
+            raise ValueError("Could not find 'Secondary Mission Objectives' section in MDX")
+
+        # Cut point: the first H5 theme heading (##### ...) after the section
+        # heading. Everything from here to EOF is raw converter output that
+        # ObjectiveGrid replaces.
+        cut_marker = '\n##### '
+        theme_start = content.find(cut_marker, section_start)
+        if theme_start == -1:
+            raise ValueError("Could not find theme headings (##### ...) in objectives section")
+
+        new_content = content[:theme_start].rstrip()
+        new_content += '\n\n<ObjectiveGrid objectives={SECONDARY_OBJECTIVES} />\n'
+
+        objective_imports = (
+            'import ObjectiveGrid from \'../../components/ObjectiveGrid.astro\';\n'
+            'import { SECONDARY_OBJECTIVES } from \'../../data/objectives\';'
+        )
+        if 'import ObjectiveGrid' not in new_content:
+            frontmatter_end = new_content.find('\n---\n', 3)
+            if frontmatter_end == -1:
+                raise ValueError("Could not find frontmatter closing fence in generated MDX")
+            insert_at = frontmatter_end + len('\n---\n')
+            new_content = new_content[:insert_at] + objective_imports + '\n\n' + new_content[insert_at:]
+
+        with open(mdx_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"  ✓  Injected ObjectiveGrid into {mdx_path}")
+
+    results.append(run_step(
+        "Inject ObjectiveGrid → generating-a-battle.mdx",
+        _inject_objective_grid,
+        "src/content/rules/generating-a-battle.mdx",
+    ))
+
+    # ── Step 1f: Wrap deployment zone layouts as accordions ───────────────────
+    # Must run after Step 1e (which finalises generating-a-battle.mdx).
+    # The converter marks each 'DZ Heading 7' paragraph with
+    # class="deployment-layout-heading". This step replaces those <h7> tags
+    # with <details class="deployment-layout"><summary>...</summary><img/></details>
+    # blocks, injecting the correct image for each layout from a static mapping.
+    # The image filenames follow the pattern {typology-slug}-{layout-number}.jpg
+    # and correspond to files in public/images/.
+    def _inject_deployment_accordions(mdx_path):
+        import re
+
+        # Flat ordered list of (filename, alt) in document order:
+        # SE-1, SE-2, SE-3, FR-1, FR-2, FR-3, AB-1, AB-2, AB-3
+        # Update this list if new typologies or layouts are ever added.
+        IMAGES_IN_ORDER = [
+            ('sweeping-engagement-1.jpg', 'Sweeping Engagement deployment zone layout 1'),
+            ('sweeping-engagement-2.jpg', 'Sweeping Engagement deployment zone layout 2'),
+            ('sweeping-engagement-3.jpg', 'Sweeping Engagement deployment zone layout 3'),
+            ('force-recon-1.jpg',         'Force Recon deployment zone layout 1'),
+            ('force-recon-2.jpg',         'Force Recon deployment zone layout 2'),
+            ('force-recon-3.jpg',         'Force Recon deployment zone layout 3'),
+            ('asymmetric-battle-1.jpg',   'Asymmetric Battle deployment zone layout 1'),
+            ('asymmetric-battle-2.jpg',   'Asymmetric Battle deployment zone layout 2'),
+            ('asymmetric-battle-3.jpg',   'Asymmetric Battle deployment zone layout 3'),
+        ]
+
+        with open(mdx_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # ── Phase 1: Normalise ────────────────────────────────────────────────
+        # Strip any state left by a previous run or manual edit so Phase 2
+        # always starts from the same clean baseline. This makes the function
+        # idempotent regardless of what state the file was in beforehand.
+
+        # 1a. Remove any standalone deployment <img> tags (orphaned images).
+        known_filenames = '|'.join(
+            re.escape(fname) for fname, _ in IMAGES_IN_ORDER
+        )
+        content = re.sub(
+            rf'\n*<img src="/images/(?:{known_filenames})"[^/]*/?>',
+            '',
+            content,
+        )
+
+        # 1b. Unwrap any existing <details class="deployment-layout"> blocks
+        #     back to bare <h7 class="deployment-layout-heading"> tags.
+        content = re.sub(
+            r'<details class="deployment-layout">\s*'
+            r'<summary([^>]*)>(.*?)</summary>\s*'
+            r'</details>',
+            r'<h7 class="deployment-layout-heading"\1>\2</h7>',
+            content,
+            flags=re.DOTALL,
+        )
+
+        # ── Phase 2: Apply accordion wrapping ────────────────────────────────
+        pattern = re.compile(
+            r'<h7 class="deployment-layout-heading"([^>]*)>(.*?)</h7>',
+            re.DOTALL,
+        )
+
+        matches = list(pattern.finditer(content))
+        if len(matches) != 9:
+            raise ValueError(
+                f"Expected 9 deployment-layout-heading <h7> tags, found {len(matches)}. "
+                "Check that all 9 Layout headings in the Word doc use the 'DZ Heading 7' style."
+            )
+
+        # Replace from last to first so earlier string positions remain valid.
+        for i, match in reversed(list(enumerate(matches))):
+            filename, alt_text = IMAGES_IN_ORDER[i]
+            replacement = (
+                f'<details class="deployment-layout">\n'
+                f'  <summary{match.group(1)}>{match.group(2)}</summary>\n'
+                f'  <img src="/images/{filename}" alt="{alt_text}" />\n'
+                f'</details>'
+            )
+            content = content[:match.start()] + replacement + content[match.end():]
+
+        with open(mdx_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"  ✓  Wrapped 9 deployment layout accordions in {mdx_path}")
+
+    results.append(run_step(
+        "Inject deployment accordions → generating-a-battle.mdx",
+        _inject_deployment_accordions,
+        "src/content/rules/generating-a-battle.mdx",
     ))
 
     # ── Step 2: Faction Rules ─────────────────────────────────────────────────
@@ -192,7 +379,7 @@ def main():
     print(f"  PIPELINE COMPLETE")
     print(f"{'='*60}")
 
-    steps = ["Definitions", "Core Rules", "Roll Tables", "Stratagems", "Objectives", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
+    steps = ["Definitions", "Core Rules", "Inject RollTable", "Roll Tables", "Stratagems", "Objectives", "Inject ObjectiveGrid", "Inject Deployment Accordions", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
     all_ok = True
     for step, result in zip(steps, results):
         icon = "✓" if result else "✗"

@@ -4,6 +4,8 @@
    accents. Heavily textured. Industrial type. No rounded corners.
    ========================================================================== */
 
+/* NOTE: Tab-aligned content styles are defined further down after CSS variables */
+
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap');
 
 /* --------------------------------------------------------------------------
@@ -51,6 +53,7 @@
   --sidebar-width:     280px;
   --header-height:     64px;
   --content-max-width: 860px;
+  --layout-max-width:  1220px; /* sidebar(280) + content(860) + padding(80) */
   --radius:            0px;   /* ZERO radius — hard industrial corners */
 
   /* Spacing scale */
@@ -225,6 +228,66 @@ h8 {
   align-items: baseline;
 }
 
+/* Deployment zone layout accordions.
+   <details class="deployment-layout"> wraps each Layout N heading and its
+   diagram image. The <summary> inherits the h7 visual treatment so collapsed
+   headings look identical to the rest of the h7 heading row. */
+details.deployment-layout {
+  margin-top: 14px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid var(--color-border-mid);
+}
+
+details.deployment-layout > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  color: var(--color-gold-dim);
+  padding-bottom: 5px;
+  cursor: pointer;
+  list-style: none;      /* remove default browser disclosure triangle */
+  user-select: none;
+}
+
+details.deployment-layout > summary::-webkit-details-marker {
+  display: none;         /* Safari fallback */
+}
+
+details.deployment-layout > summary::after {
+  content: '▶';
+  font-size: 0.7em;
+  color: var(--color-text-muted);
+  margin-left: var(--sp-3);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+details.deployment-layout[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+details.deployment-layout > summary:hover {
+  color: var(--color-gold);
+}
+
+details.deployment-layout > summary .heading-value {
+  margin-right: auto;    /* keep the value pinned left of the chevron */
+  margin-left: var(--sp-4);
+}
+
+details.deployment-layout > img {
+  display: block;
+  width: 100%;
+  margin-top: var(--sp-4);
+  margin-bottom: var(--sp-4);
+}
+
 /* Tab-right value spans inside H6/H7/H8.
    The Python converter wraps tab-separated trailing content in
    <span class="heading-value"> for right-alignment. */
@@ -294,8 +357,16 @@ code, kbd {
   border-bottom: 2px solid var(--color-gold-dim);
   display: flex;
   align-items: center;
-  padding: 0 var(--sp-6);
+}
+
+.header-inner {
+  max-width: var(--layout-max-width);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   gap: var(--sp-6);
+  padding: 0 var(--sp-6);
 }
 
 .site-header::before {
@@ -368,6 +439,8 @@ code, kbd {
   display: flex;
   min-height: 100vh;
   padding-top: var(--header-height);
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
 }
 
 /* Sidebar */
@@ -986,6 +1059,61 @@ code, kbd {
     grid-template-columns: 1fr;
     gap: var(--sp-3);
   }
+}
+
+/* --------------------------------------------------------------------------
+   Tab-Aligned Content (for objective control values, VP tables, etc.)
+   -------------------------------------------------------------------------- */
+/* Container for tab-separated left/right aligned content */
+.tab-aligned {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-2) var(--sp-10);
+  margin-left: calc(-1 * var(--sp-10));
+  margin-right: calc(-1 * var(--sp-10));
+  border-bottom: 1px solid var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.tab-aligned:last-child {
+  border-bottom: none;
+}
+
+/* Left-aligned text (model type, description, condition) */
+.tab-aligned-left {
+  flex: 1;
+  text-align: left;
+  color: var(--color-text-secondary);
+}
+
+/* Right-aligned text (OC value, VP amount, etc.) */
+.tab-aligned-right {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--color-gold);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: var(--sp-2);
+}
+
+/* Optional container class for grouping related tab-aligned items */
+.tab-aligned-section {
+  margin: var(--sp-4) 0;
+  padding: var(--sp-3) var(--sp-4);
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 2px solid var(--color-gold-dim);
+}
+
+.tab-aligned-section .tab-aligned:first-child {
+  padding-top: 0;
+}
+
+.tab-aligned-section .tab-aligned:last-child {
+  padding-bottom: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -2056,6 +2184,32 @@ code, kbd {
   color: #4ecdc4;
   border-bottom: 1px dotted #2a8a85;
   cursor: help;
+}
+
+/* ── Attacker & Defender inline badge spans ──────────────────────────────── */
+
+.attacker {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f5f0e0;
+  background-color: #9b1c1c;
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+
+.defender {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f5f0e0;
+  background-color: #1e3a6e;
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
 }
 
 /* ── Reference tooltip shared structure ──────────────────────────────────── */

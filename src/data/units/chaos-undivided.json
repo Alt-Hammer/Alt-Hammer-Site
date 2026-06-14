@@ -247,7 +247,7 @@
       ]
     },
     {
-      "name": "Questor Traitoris Lord",
+      "name": "Dread Baron",
       "category": "Character",
       "stats": {
         "AP": "2",
@@ -368,7 +368,7 @@
       "stats": {
         "AP": "3",
         "M": "6\"",
-        "WS": 6,
+        "WS": 5,
         "BS": 5,
         "I": 5,
         "A": 4,
@@ -458,7 +458,7 @@
         "A": 4,
         "S": 7,
         "T": 7,
-        "W": 6,
+        "W": 10,
         "SV": "2+",
         "LD": "5+",
         "basePoints": 80,
@@ -486,9 +486,9 @@
         "S": 4,
         "T": 4,
         "W": 4,
-        "SV": "4+",
+        "SV": "3+",
         "LD": "5+",
-        "basePoints": 35,
+        "basePoints": 40,
         "squadSizes": "3 to 5"
       },
       "keywords": [
@@ -1083,6 +1083,22 @@
       "availability": "Tacticus, Havoc"
     },
     {
+      "name": "Hurricane Bolter Array",
+      "section": "Ranged Weapons",
+      "points": 30,
+      "profiles": null,
+      "range": "24\"",
+      "attacks": "6",
+      "strength": "4",
+      "ap": "-1",
+      "damage": "2",
+      "keywords": [
+        "Rapid Fire 6",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Shotgun",
       "section": "Ranged Weapons",
       "points": 5,
@@ -1133,16 +1149,17 @@
     {
       "name": "Heavy Autogun",
       "section": "Ranged Weapons",
-      "points": 7,
+      "points": 5,
       "profiles": null,
       "range": "30\"",
       "attacks": "2",
-      "strength": "4",
+      "strength": "3",
       "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
-        "Rapid Fire 2"
+        "Rapid Fire 2",
+        "Sustained Hits 1"
       ],
       "availability": ""
     },
@@ -1728,6 +1745,67 @@
       "availability": "Tacticus, Havoc"
     },
     {
+      "name": "Grenade Gauntlet",
+      "section": "Ranged Weapons",
+      "points": 8,
+      "profiles": [
+        {
+          "profileName": "Frag",
+          "points": 8,
+          "range": "14\"",
+          "attacks": "D6",
+          "strength": "3",
+          "ap": "0",
+          "damage": "1",
+          "keywords": [
+            "Assault",
+            "Blast 1\"",
+            "Ignores Cover"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        },
+        {
+          "profileName": "Krak",
+          "points": null,
+          "range": "14\"",
+          "attacks": "1",
+          "strength": "8",
+          "ap": "-1",
+          "damage": "3",
+          "keywords": [
+            "Assault",
+            "Ignores Cover"
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        },
+        {
+          "profileName": "Smoke",
+          "points": null,
+          "range": "14\"",
+          "attacks": "1",
+          "strength": "-",
+          "ap": "-",
+          "damage": "-",
+          "keywords": [
+            "Assault",
+            "Smoke 1\""
+          ],
+          "availability": "Tacticus, Raptor, Bike"
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
+        "Ignores Cover"
+      ],
+      "availability": "Tacticus, Raptor, Bike"
+    },
+    {
       "name": "Grenade Launcher",
       "section": "Ranged Weapons",
       "points": 10,
@@ -1798,7 +1876,7 @@
           "points": 30,
           "range": "48\"",
           "attacks": "D6+3",
-          "strength": "4",
+          "strength": "3",
           "ap": "0",
           "damage": "2",
           "keywords": [
@@ -1838,7 +1916,7 @@
           "points": 50,
           "range": "48\"",
           "attacks": "D6+3",
-          "strength": "5",
+          "strength": "4",
           "ap": "0",
           "damage": "2",
           "keywords": [
@@ -2176,6 +2254,38 @@
       "availability": "Tacticus, Raptor, Havoc, Terminator, Bike"
     },
     {
+      "name": "Chainglaive",
+      "section": "Melee Weapons",
+      "points": 8,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": "-1",
+      "damage": "1",
+      "keywords": [
+        "Lance"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Chainfist",
+      "section": "Melee Weapons",
+      "points": 20,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A -2",
+      "strength": "S +4",
+      "ap": "-4",
+      "damage": "3",
+      "keywords": [
+        "Heavy",
+        "Anti-VEHICLE 3+",
+        "Anti-MONSTER 4+"
+      ],
+      "availability": "Terminator"
+    },
+    {
       "name": "Power Sword",
       "section": "Melee Weapons",
       "points": 10,
@@ -2234,38 +2344,6 @@
         "Harpoon"
       ],
       "availability": "Tacticus, Raptor, Havoc, Terminator"
-    },
-    {
-      "name": "Chainglaive",
-      "section": "Melee Weapons",
-      "points": 12,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A +2",
-      "strength": "S",
-      "ap": "-1",
-      "damage": "1",
-      "keywords": [
-        "Lance"
-      ],
-      "availability": "Tacticus, Raptor, Havoc, Terminator"
-    },
-    {
-      "name": "Chainfist",
-      "section": "Melee Weapons",
-      "points": 20,
-      "profiles": null,
-      "range": "-",
-      "attacks": "A -2",
-      "strength": "S +4",
-      "ap": "-4",
-      "damage": "3",
-      "keywords": [
-        "Heavy",
-        "Anti-VEHICLE 3+",
-        "Anti-MONSTER 4+"
-      ],
-      "availability": "Terminator"
     },
     {
       "name": "Lightning Claw",
@@ -2426,7 +2504,7 @@
         {
           "profileName": "Sweep",
           "points": 25,
-          "range": "",
+          "range": "-",
           "attacks": "A+1",
           "strength": "S +2",
           "ap": "-2",
@@ -2461,6 +2539,21 @@
         "Heavy",
         "Lethal Hits",
         "Anti-PSYKER 4+"
+      ],
+      "availability": "Tacticus, Raptor, Havoc, Terminator"
+    },
+    {
+      "name": "Crozius Arcanum",
+      "section": "Melee Weapons",
+      "points": 15,
+      "profiles": null,
+      "range": "-",
+      "attacks": "A +2",
+      "strength": "S +1",
+      "ap": "-2",
+      "damage": "2",
+      "keywords": [
+        "Devastating Wounds"
       ],
       "availability": "Tacticus, Raptor, Havoc, Terminator"
     },
@@ -2531,7 +2624,7 @@
         {
           "profileName": "Strike",
           "points": null,
-          "range": "",
+          "range": "-",
           "attacks": "A -2",
           "strength": "S +3",
           "ap": "-2",
@@ -2569,7 +2662,7 @@
         {
           "profileName": "Crush",
           "points": null,
-          "range": "",
+          "range": "-",
           "attacks": "1",
           "strength": "S +5",
           "ap": "-3",
@@ -2634,6 +2727,7 @@
           "ap": "-4",
           "damage": "5",
           "keywords": [
+            "Psychic",
             "Beam D3",
             "Hazardous D3",
             "Anti-PSYKER 2+",
@@ -2650,6 +2744,7 @@
           "ap": "-1",
           "damage": "1",
           "keywords": [
+            "Psychic",
             "Pistol",
             "Torrent",
             "Anti-PSYKER 4+",
@@ -2665,6 +2760,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
+        "Psychic",
         "Beam D3",
         "Hazardous D3",
         "Anti-PSYKER 2+",

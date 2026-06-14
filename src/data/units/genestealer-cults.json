@@ -170,6 +170,7 @@
         "Epic Hero",
         "Character",
         "Leader",
+        "Pysker",
         "Deep Strike"
       ],
       "models": null
@@ -252,7 +253,8 @@
         "Infantry",
         "Epic Hero",
         "Character",
-        "Deep Strike"
+        "Deep Strike",
+        "Implacable"
       ],
       "models": null
     },
@@ -790,16 +792,17 @@
     {
       "name": "Heavy Autogun",
       "section": "Ranged Weapons",
-      "points": 6,
+      "points": 4,
       "profiles": null,
       "range": "30\"",
       "attacks": "2",
-      "strength": "4",
+      "strength": "3",
       "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
-        "Rapid Fire 2"
+        "Rapid Fire 2",
+        "Sustained Hits 1"
       ],
       "availability": ""
     },
@@ -1166,6 +1169,25 @@
       "availability": ""
     },
     {
+      "name": "Hydra Flak Autocannon",
+      "section": "Ranged Weapons",
+      "points": 70,
+      "profiles": null,
+      "range": "90\"",
+      "attacks": "6",
+      "strength": "7",
+      "ap": "-1",
+      "damage": "3",
+      "keywords": [
+        "Ordnance",
+        "Anti-Air",
+        "Sustained Hits 1",
+        "Anti-AIRCRAFT 3+",
+        "Anti-FLY 3+"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Remote-detonated Explosives",
       "section": "Ranged Weapons",
       "points": 25,
@@ -1436,6 +1458,7 @@
           "ap": "-4",
           "damage": "5",
           "keywords": [
+            "Psychic",
             "Beam D3",
             "Hazardous D3",
             "Anti-PSYKER 2+",
@@ -1452,6 +1475,7 @@
           "ap": "-1",
           "damage": "1",
           "keywords": [
+            "Psychic",
             "Pistol",
             "Torrent",
             "Anti-PSYKER 4+",
@@ -1467,6 +1491,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
+        "Psychic",
         "Beam D3",
         "Hazardous D3",
         "Anti-PSYKER 2+",
@@ -1481,10 +1506,11 @@
       "profiles": null,
       "range": "18\"",
       "attacks": "3",
-      "strength": "6",
+      "strength": "4",
       "ap": "-3",
       "damage": "3",
       "keywords": [
+        "Psychic",
         "Precision",
         "Indirect Fire",
         "Anti-PSYKER 2+",

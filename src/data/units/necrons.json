@@ -5,63 +5,29 @@
     {
       "name": "Overlord",
       "category": "Character",
-      "stats": null,
+      "stats": {
+        "AP": "3",
+        "M": "5\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 5,
+        "A": 6,
+        "S": 5,
+        "T": 5,
+        "W": 7,
+        "SV": "3+",
+        "LD": "2+",
+        "basePoints": 130,
+        "squadSizes": "1"
+      },
       "keywords": [
         "Necron",
         "Infantry",
         "Character",
-        "Leader"
+        "Leader",
+        "Noble"
       ],
-      "models": [
-        {
-          "modelName": "Overlord",
-          "stats": {
-            "AP": "3",
-            "M": "5\"",
-            "WS": 6,
-            "BS": 6,
-            "I": 5,
-            "A": 6,
-            "S": 5,
-            "T": 5,
-            "W": 7,
-            "SV": "3+",
-            "LD": "2+",
-            "basePoints": 130,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Necron",
-            "Infantry",
-            "Character",
-            "Leader"
-          ]
-        },
-        {
-          "modelName": "Overlord's Command Barge",
-          "stats": {
-            "AP": "2",
-            "M": "10\"",
-            "WS": 6,
-            "BS": 6,
-            "I": 3,
-            "A": 6,
-            "S": 6,
-            "T": 8,
-            "W": 9,
-            "SV": "3+",
-            "LD": "2+",
-            "basePoints": 60,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "Necron",
-            "Vehicle",
-            "Character",
-            "Hover"
-          ]
-        }
-      ]
+      "models": null
     },
     {
       "name": "Royal Warden",
@@ -85,7 +51,8 @@
         "Necron",
         "Infantry",
         "Character",
-        "Leader"
+        "Leader",
+        "Noble"
       ],
       "models": null
     },
@@ -110,7 +77,9 @@
       "keywords": [
         "Necron",
         "Infantry",
-        "Character"
+        "Character",
+        "Leader",
+        "Noble"
       ],
       "models": null
     },
@@ -256,9 +225,9 @@
         "BS": 7,
         "I": 2,
         "A": 1,
-        "S": 2,
-        "T": 3,
-        "W": 2,
+        "S": 4,
+        "T": 4,
+        "W": 3,
         "SV": "4+",
         "LD": "4+",
         "basePoints": 15,
@@ -338,9 +307,9 @@
         "S": 4,
         "T": 3,
         "W": 4,
-        "SV": "3+",
+        "SV": "4+",
         "LD": "4+",
-        "basePoints": 35,
+        "basePoints": 30,
         "squadSizes": "1 to 6"
       },
       "keywords": [
@@ -484,7 +453,8 @@
         "Beast",
         "Small Profile",
         "Fly",
-        "Fearless"
+        "Fearless",
+        "Feel No Pain 5+"
       ],
       "models": null
     },
@@ -512,6 +482,7 @@
         "Hover",
         "Fearless",
         "Phase Shift",
+        "Feel No Pain 5+",
         "Deadly Demise D3"
       ],
       "models": null
@@ -529,7 +500,7 @@
         "S": 7,
         "T": 8,
         "W": 7,
-        "SV": "4+",
+        "SV": "2+",
         "LD": "10+",
         "basePoints": 65,
         "squadSizes": "1"
@@ -539,6 +510,7 @@
         "Beast",
         "Hover",
         "Fearless",
+        "Feel No Pain 5+",
         "Deadly Demise D3+2"
       ],
       "models": null
@@ -565,7 +537,7 @@
         "Necron",
         "Vehicle",
         "Hover",
-        "Transport 10",
+        "Transport 12",
         "Deadly Demise D3+1"
       ],
       "models": null
@@ -593,6 +565,7 @@
         "Monster",
         "Walker",
         "Fearless",
+        "Feel No Pain 5+",
         "Deadly Demise D3+1"
       ],
       "models": null
@@ -620,6 +593,7 @@
         "Monster",
         "Walker",
         "Fearless",
+        "Feel No Pain 5+",
         "Deadly Demise D3+1"
       ],
       "models": null
@@ -637,7 +611,7 @@
         "S": 7,
         "T": 9,
         "W": 13,
-        "SV": "4+",
+        "SV": "3+",
         "LD": "4+",
         "basePoints": 90,
         "squadSizes": "1"
@@ -663,7 +637,7 @@
         "S": 6,
         "T": 8,
         "W": 9,
-        "SV": "4+",
+        "SV": "3+",
         "LD": "4+",
         "basePoints": 60,
         "squadSizes": "1"
@@ -689,7 +663,7 @@
         "S": 6,
         "T": 9,
         "W": 13,
-        "SV": "4+",
+        "SV": "3+",
         "LD": "4+",
         "basePoints": 65,
         "squadSizes": "1"
@@ -717,7 +691,7 @@
         "W": 26,
         "SV": "2+",
         "LD": "4+",
-        "basePoints": 350,
+        "basePoints": 400,
         "squadSizes": "1"
       },
       "keywords": [
@@ -763,10 +737,10 @@
     {
       "name": "Gauss Reaper",
       "section": "Ranged Weapons",
-      "points": 5,
+      "points": 4,
       "profiles": null,
       "range": "18\"",
-      "attacks": "3",
+      "attacks": "2",
       "strength": "2",
       "ap": "-1",
       "damage": "1",
@@ -981,11 +955,11 @@
     {
       "name": "Particle Whip",
       "section": "Ranged Weapons",
-      "points": 55,
+      "points": 60,
       "profiles": [
         {
           "profileName": "Arc",
-          "points": 55,
+          "points": 60,
           "range": "18\"",
           "attacks": "2D6+6",
           "strength": "7",
@@ -1185,14 +1159,13 @@
           "ap": "-2",
           "damage": "2",
           "keywords": [
-            "Beam 1",
             "Lethal Hits"
           ],
           "availability": ""
         },
         {
           "profileName": "Melee - Sweep",
-          "points": 25,
+          "points": null,
           "range": "-",
           "attacks": "A",
           "strength": "S",
@@ -1224,7 +1197,6 @@
       "ap": null,
       "damage": null,
       "keywords": [
-        "Beam 1",
         "Lethal Hits"
       ],
       "availability": ""
@@ -1284,6 +1256,184 @@
       "keywords": [
         "Beam 1",
         "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Abyssal Lance",
+      "section": "Ranged Weapons",
+      "points": 25,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 25,
+          "range": "18\"",
+          "attacks": "1",
+          "strength": "12",
+          "ap": "-3",
+          "damage": "3D6+3",
+          "keywords": [
+            "Ordnance",
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": null,
+          "range": "-",
+          "attacks": "A+3",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A-3",
+          "strength": "S +3",
+          "ap": "-2",
+          "damage": "3",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Ordnance",
+        "Lethal Hits"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Plasmic Lance",
+      "section": "Ranged Weapons",
+      "points": 25,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 25,
+          "range": "36\"",
+          "attacks": "D3+1",
+          "strength": "8",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [
+            "Blast 2\"",
+            "Anti-MONSTER+",
+            "Anti-VEHICLE 5+",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": null,
+          "range": "-",
+          "attacks": "A+3",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "2",
+          "keywords": [
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A-3",
+          "strength": "S +3",
+          "ap": "-2",
+          "damage": "3",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Blast 2\"",
+        "Anti-MONSTER+",
+        "Anti-VEHICLE 5+",
+        "Devastating Wounds"
+      ],
+      "availability": ""
+    },
+    {
+      "name": "Aeonstave",
+      "section": "Ranged Weapons",
+      "points": 20,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 20,
+          "range": "18\"",
+          "attacks": "2D6+3",
+          "strength": "3",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Sustained Hits 2",
+            "Ensnare"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": null,
+          "range": "-",
+          "attacks": "A+3",
+          "strength": "S",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A-3",
+          "strength": "S +2",
+          "ap": "-2",
+          "damage": "2",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Sustained Hits 2",
+        "Ensnare"
       ],
       "availability": ""
     },

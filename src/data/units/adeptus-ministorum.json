@@ -852,7 +852,7 @@
     {
       "name": "Heavy Flamer",
       "section": "Ranged Weapons",
-      "points": 12,
+      "points": 15,
       "profiles": null,
       "range": "9\"",
       "attacks": "D6+4",
@@ -900,6 +900,33 @@
             "Assault",
             "Torrent",
             "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": 12,
+          "range": "-",
+          "attacks": "A +3",
+          "strength": "S +1",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Evisceration",
+          "points": null,
+          "range": "-",
+          "attacks": "A -2",
+          "strength": "S +4",
+          "ap": "-3",
+          "damage": "D3+3",
+          "keywords": [
+            "Heavy",
+            "Anti-INFANTRY 3+",
+            "Anti-MONSTER 5+",
+            "Devastating Wounds"
           ],
           "availability": ""
         }
@@ -1247,7 +1274,7 @@
           "points": 55,
           "range": "48\"",
           "attacks": "D6+3",
-          "strength": "5",
+          "strength": "4",
           "ap": "0",
           "damage": "2",
           "keywords": [
@@ -1581,47 +1608,6 @@
         "Extra Attacks",
         "Anti-INFANTRY 2+"
       ],
-      "availability": ""
-    },
-    {
-      "name": "Zealot's Vindictor",
-      "section": "Melee Weapons",
-      "points": 12,
-      "profiles": [
-        {
-          "profileName": "Melee - Sweep",
-          "points": 12,
-          "range": "-",
-          "attacks": "A +3",
-          "strength": "S +1",
-          "ap": "-1",
-          "damage": "1",
-          "keywords": [],
-          "availability": ""
-        },
-        {
-          "profileName": "Melee - Evisceration",
-          "points": null,
-          "range": "-",
-          "attacks": "A -2",
-          "strength": "S +4",
-          "ap": "-3",
-          "damage": "D3+3",
-          "keywords": [
-            "Heavy",
-            "Anti-INFANTRY 3+",
-            "Anti-MONSTER 5+",
-            "Devastating Wounds"
-          ],
-          "availability": ""
-        }
-      ],
-      "range": null,
-      "attacks": null,
-      "strength": null,
-      "ap": null,
-      "damage": null,
-      "keywords": [],
       "availability": ""
     },
     {

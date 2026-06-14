@@ -16,7 +16,7 @@
         "T": 2,
         "W": 7,
         "SV": "4+",
-        "LD": "4+",
+        "LD": "3+",
         "basePoints": 110,
         "squadSizes": "1"
       },
@@ -108,6 +108,7 @@
         "Monster",
         "Character",
         "Fearless",
+        "Deep Strike",
         "Invulnerable Save 5+"
       ],
       "models": null
@@ -953,7 +954,7 @@
       "models": null
     },
     {
-      "name": "Artillery Platform",
+      "name": "Artillery Platforms",
       "category": "Vehicles",
       "stats": {
         "AP": "2",
@@ -1346,6 +1347,45 @@
         "Torrent",
         "Ignores Cover"
       ],
+      "availability": ""
+    },
+    {
+      "name": "Singing Spear",
+      "section": "Ranged Weapons",
+      "points": 15,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 15,
+          "range": "18\"",
+          "attacks": "D3",
+          "strength": "9",
+          "ap": "-3",
+          "damage": "3",
+          "keywords": [],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee",
+          "points": 15,
+          "range": "-",
+          "attacks": "A",
+          "strength": "S +2",
+          "ap": "-2",
+          "damage": "3",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [],
       "availability": ""
     },
     {
@@ -1849,6 +1889,65 @@
       "availability": ""
     },
     {
+      "name": "The Wailing Doom",
+      "section": "Ranged Weapons",
+      "points": 60,
+      "profiles": [
+        {
+          "profileName": "Ranged",
+          "points": 60,
+          "range": "18\"",
+          "attacks": "2D6+3",
+          "strength": "4",
+          "ap": "-1",
+          "damage": "1",
+          "keywords": [
+            "Torrent",
+            "Ignores Cover"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Sweep",
+          "points": null,
+          "range": "-",
+          "attacks": "A x2",
+          "strength": "S",
+          "ap": "-3",
+          "damage": "2",
+          "keywords": [
+            "Sustained Hits 3",
+            "Lethal Hits"
+          ],
+          "availability": ""
+        },
+        {
+          "profileName": "Melee - Strike",
+          "points": null,
+          "range": "-",
+          "attacks": "A -3",
+          "strength": "S +6",
+          "ap": "-3",
+          "damage": "2D6+3",
+          "keywords": [
+            "Lance",
+            "Devastating Wounds"
+          ],
+          "availability": ""
+        }
+      ],
+      "range": null,
+      "attacks": null,
+      "strength": null,
+      "ap": null,
+      "damage": null,
+      "keywords": [
+        "Torrent",
+        "Ignores Cover"
+      ],
+      "availability": ""
+    },
+    {
       "name": "Guardian Blade",
       "section": "Melee Weapons",
       "points": 2,
@@ -2068,6 +2167,7 @@
           "ap": "-4",
           "damage": "5",
           "keywords": [
+            "Psychic",
             "Beam D3",
             "Hazardous D3",
             "Anti-PSYKER 2+",
@@ -2084,6 +2184,7 @@
           "ap": "-1",
           "damage": "1",
           "keywords": [
+            "Psychic",
             "Pistol",
             "Torrent",
             "Anti-PSYKER 4+",
@@ -2099,6 +2200,7 @@
       "ap": null,
       "damage": null,
       "keywords": [
+        "Psychic",
         "Beam D3",
         "Hazardous D3",
         "Anti-PSYKER 2+",
@@ -2117,6 +2219,7 @@
       "ap": "-3",
       "damage": "3",
       "keywords": [
+        "Psychic",
         "Precision",
         "Indirect Fire",
         "Anti-PSYKER 2+",

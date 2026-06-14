@@ -534,7 +534,7 @@
       "points": 4,
       "profiles": null,
       "range": "18\"",
-      "attacks": "3",
+      "attacks": "2",
       "strength": "4",
       "ap": "-2",
       "damage": "1",
@@ -599,10 +599,10 @@
       "points": 10,
       "profiles": null,
       "range": "24\"",
-      "attacks": "2",
+      "attacks": "1",
       "strength": "6",
       "ap": "-1",
-      "damage": "3",
+      "damage": "D3+2",
       "keywords": [
         "Assault",
         "Precision",
@@ -838,16 +838,17 @@
     {
       "name": "Cognis Heavy Autogun",
       "section": "Ranged Weapons",
-      "points": 8,
+      "points": 6,
       "profiles": null,
       "range": "36\"",
       "attacks": "2",
-      "strength": "4",
+      "strength": "3",
       "ap": "0",
       "damage": "2",
       "keywords": [
         "Heavy",
-        "Rapid Fire 2"
+        "Rapid Fire 2",
+        "Sustained Hits 1"
       ],
       "availability": ""
     },

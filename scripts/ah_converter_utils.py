@@ -158,6 +158,22 @@ def is_wargear_run(run) -> bool:
     return style.lower() in ('wargear', 'wargearchar', 'wargear char', 'wargear ref', 'wargearref', 'wargear reference')
 
 
+def is_attacker_run(run) -> bool:
+    """Return True if this run uses the 'Attacker' character style."""
+    style = get_run_style_name(run)
+    if style is None:
+        return False
+    return style.lower() in ('attacker', 'attacker1', 'attackerchar', 'attacker char')
+
+
+def is_defender_run(run) -> bool:
+    """Return True if this run uses the 'Defender' character style."""
+    style = get_run_style_name(run)
+    if style is None:
+        return False
+    return style.lower() in ('defender', 'defender1', 'defenderchar', 'defender char')
+
+
 # ── Paragraph -> Markdown conversion ─────────────────────────────────────────
 
 def runs_to_markdown(paragraph) -> str:
@@ -173,6 +189,11 @@ def runs_to_markdown(paragraph) -> str:
     Consecutive runs of the same character style are merged before emitting spans.
     This prevents Word's habit of splitting a single styled word across multiple runs
     (e.g. "M"+"ove", "Vehicles"+"s", "Anti-"+"Air") from producing broken spans.
+    
+    NOTE: Tab characters are preserved in output as-is. They are not converted to
+    HTML tab-aligned divs here because that would break markdown/HTML nesting when
+    combined with bold, italic, or keyword styling. Tab handling should be done as
+    a separate post-processing step if needed.
     """
     # Step 1: classify every run
     classified = []
@@ -190,6 +211,10 @@ def runs_to_markdown(paragraph) -> str:
             classified.append(['weapon', text])
         elif is_wargear_run(run):
             classified.append(['wargear', text])
+        elif is_attacker_run(run):
+            classified.append(['attacker', text])
+        elif is_defender_run(run):
+            classified.append(['defender', text])
         elif run.bold and run.italic:
             classified.append(['bold-italic', text])
         elif run.bold:
@@ -211,7 +236,7 @@ def runs_to_markdown(paragraph) -> str:
     parts = []
     for run_type, text in merged:
         # Whitespace-only styled spans: emit as plain text
-        if run_type in ('keyword', 'action', 'weapon', 'wargear') and not text.strip():
+        if run_type in ('keyword', 'action', 'weapon', 'wargear', 'attacker', 'defender') and not text.strip():
             parts.append(text)
             continue
 
@@ -235,6 +260,10 @@ def runs_to_markdown(paragraph) -> str:
             parts.append(
                 f'<span class="wargear-ref" data-wargear="{slug}">{text}</span>'
             )
+        elif run_type == 'attacker':
+            parts.append(f'<span class="attacker">{text}</span>')
+        elif run_type == 'defender':
+            parts.append(f'<span class="defender">{text}</span>')
         elif run_type == 'bold-italic':
             parts.append(f'***{text}***')
         elif run_type == 'bold':
@@ -245,6 +274,7 @@ def runs_to_markdown(paragraph) -> str:
             parts.append(text)
 
     return ''.join(parts)
+
 
 
 # ── Paragraph style classification ───────────────────────────────────────────
@@ -263,6 +293,7 @@ HEADING_STYLES = {
     'Heading 5': 5,
     'Heading 6': 6,
     'Heading 7': 7,
+    'DZ Heading 7': 7,  # deployment zone layout headings — rendered as accordion targets
     'Heading 8': 8,
 }
 
@@ -275,6 +306,8 @@ def get_heading_level(paragraph) -> int | None:
 def is_list_paragraph(paragraph) -> bool:
     """Return True if this paragraph is a list item."""
     style_name = paragraph.style.name if paragraph.style else ''
+    if style_name.strip().lower() == 'full-span list':
+        return False
     return 'List' in style_name or paragraph._p.find(qn('w:numPr')) is not None
 
 
@@ -339,6 +372,8 @@ def paragraph_to_markdown(paragraph, list_counter: dict) -> str:
             # <span class="heading-value"> so the CSS flex layout can
             # push it to the right edge of the heading bar.
             tag = f'h{heading_level}'
+            para_style_name = paragraph.style.name if paragraph.style else ''
+            extra_class = ' class="deployment-layout-heading"' if para_style_name == 'DZ Heading 7' else ''
             if '\t' in text:
                 title_part, value_part = text.split('\t', 1)
                 title_part = title_part.strip()
@@ -356,7 +391,7 @@ def paragraph_to_markdown(paragraph, list_counter: dict) -> str:
             plain_title = _re.sub(r'<[^>]+>', '', inner.split('<span class="heading-value">')[0])
             anchor_id = slugify(plain_title)
 
-            return f'\n<{tag} id="{anchor_id}">{inner}</{tag}>\n'
+            return f'\n<{tag}{extra_class} id="{anchor_id}">{inner}</{tag}>\n'
 
     if is_list_paragraph(paragraph):
         level = get_list_level(paragraph)
