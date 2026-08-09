@@ -1,0 +1,1534 @@
+{
+  "faction": "Astra Militarum",
+  "slug": "astra-militarum",
+  "wargearItems": [
+    {
+      "itemId": "vox-caster",
+      "name": "Vox Caster",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Units equipped with a Vox Caster can receive Orders that are issued by a unit equipped with a Master Vox from anywhere on the battlefield, including while embarked in a Transport."
+      ],
+      "effectsHtml": "<p>Units equipped with a Vox Caster can receive Orders that are issued by a unit equipped with a Master Vox from anywhere on the battlefield, including while embarked in a Transport.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "master-vox",
+      "name": "Master Vox",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Units equipped with a Master Vox can issue Orders to any eligible unit on the battlefield equipped with a Vox Caster. Additionally, once per battle, this unit can issue 1 Order to be in effect for an additional 2 Regiment units when using the Platoon Command ability."
+      ],
+      "effectsHtml": "<p>Units equipped with a Master Vox can issue Orders to any eligible unit on the battlefield equipped with a Vox Caster. Additionally, once per battle, this unit can issue 1 Order to be in effect for an additional 2 Regiment units when using the Platoon Command ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "regimental-standard",
+      "name": "Regimental Standard",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Friendly Astra Militarum units that can draw line of sight to the bearer, and who have at least 1 model within 12\" of the bearer, change their Leadership characteristic to 5+.",
+        "While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, it is considered to have an Objective Control value of 30."
+      ],
+      "effectsHtml": "<p>Friendly <span class=\"keyword\" data-term=\"astra-militarum\" data-type=\"keyword\">Astra Militarum</span> units that can draw line of sight to the bearer, and who have at least 1 model within 12\" of the bearer, change their Leadership characteristic to 5+.</p>\n<p>While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, it is considered to have an Objective Control value of 30.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "medi-kit",
+      "name": "Medi-kit",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While a model equipped with a Medi-kit is on the battlefield it is eligible to use one of the following abilities during your Command Phase:",
+        "Roll a D3 and return the number of lost wounds equal to the resulting value.",
+        "Roll a D6. On a roll of a 4 or higher, return a destroyed Character to the unit with 2 Wounds remaining. This ability can only be used when a Character from this unit has been destroyed in the previous Battle Round."
+      ],
+      "effectsHtml": "<p>While a model equipped with a Medi-kit is on the battlefield it is eligible to use one of the following abilities during your Command Phase:</p>\n<ul>\n<li>Roll a D3 and return the number of lost wounds equal to the resulting value.</li>\n<li>Roll a D6. On a roll of a 4 or higher, return a destroyed <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> to the unit with 2 Wounds remaining. This ability can only be used when a <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> from this unit has been destroyed in the previous Battle Round.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "relic-weapon",
+      "name": "Relic Weapon",
+      "pointsCost": 8,
+      "costNote": "weapon",
+      "category": null,
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1",
+        "Cannot be used on Grenade weapons"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n<li>Cannot be used on <span class=\"keyword\" data-term=\"grenade\" data-type=\"keyword\">Grenade</span> weapons</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponClass",
+                "values": [
+                  "Ranged",
+                  "Melee"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "refractor-field",
+      "name": "Refractor Field",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Refractor Field:",
+        "Increase their Toughness characteristic by 2 against Ranged attacks",
+        "Gain the Invulnerable Save 5+ ability"
+      ],
+      "effectsHtml": "<p>Models equipped with a Refractor Field:</p>\n<ul>\n<li>Increase their Toughness characteristic by 2 against Ranged attacks</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+ </span>ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "rosarius",
+      "name": "Rosarius",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Rosarius:",
+        "Increase their Toughness characteristic by 2 against Ranged attacks",
+        "Gain the Invulnerable Save 4+ ability."
+      ],
+      "effectsHtml": "<p>Models equipped with a Rosarius:</p>\n<ul>\n<li>Increase their Toughness characteristic by 2 against Ranged attacks</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "cavalry-mount",
+      "name": "Cavalry Mount",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Cavalry Mount:",
+        "Gain the Mounted keyword",
+        "Increase Movement characteristic to 12\"",
+        "Increase Toughness characteristic by 1",
+        "Increase Wounds characteristic by 1",
+        "Increase Armour Save characteristic to 4+",
+        "Cannot be selected by models equipped with any of the following: Carapace Armour, Camo Cloak",
+        "Models equipped with a Cavalry Mount cannot be equipped with weapons that possess the Heavy keyword unless that weapon also possesses the Pistol keyword."
+      ],
+      "effectsHtml": "<p>Models equipped with a Cavalry Mount:</p>\n<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Increase Movement characteristic to 12\"</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Increase Wounds characteristic by 1</li>\n<li>Increase Armour Save characteristic to 4+</li>\n<li>Cannot be selected by models equipped with any of the following: Carapace Armour, Camo Cloak</li>\n<li>Models equipped with a Cavalry Mount cannot be equipped with weapons that possess the <span class=\"keyword\" data-term=\"heavy\" data-type=\"keyword\">Heavy</span> keyword unless that weapon also possesses the <span class=\"keyword\" data-term=\"pistol\" data-type=\"keyword\">Pistol</span> keyword.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "4+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "carapace-armour",
+      "name": "Carapace Armour",
+      "pointsCost": 3,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Upgrade must be selected for every model in the unit.",
+        "Increase Armour Save characteristic to 4+."
+      ],
+      "effectsHtml": "<ul>\n<li>Upgrade must be selected for every model in the unit.</li>\n<li>Increase Armour Save characteristic to 4+.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "4+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 3
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "bullgryn-plate",
+      "name": "Bullgryn Plate",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Toughness characteristic by 1",
+        "Increase Armour Save characteristic to 3+."
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Toughness characteristic by 1</li>\n<li>Increase Armour Save characteristic to 3+.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "3+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "brute-shield",
+      "name": "Brute Shield",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Brute Shield:",
+        "Gain the Invulnerable Save 4+ ability",
+        "Reduce the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)"
+      ],
+      "effectsHtml": "<p>Models equipped with a Brute Shield:</p>\n<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability</li>\n<li>Reduce the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 4+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "slab-shield",
+      "name": "Slab Shield",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Slab Shield:",
+        "Reduce their Movement characteristic by 1\"",
+        "Reduce their Initiative characteristic by 1",
+        "Reduce their Attacks characteristic by 2",
+        "Add 1 to their Toughness characteristic",
+        "Add 3 to their Wounds characteristic",
+        "Increase their Armour Save characteristic to 3+",
+        "Reduce the Armour Piercing characteristic of attacks against the bearer by 1 (to a minimum of 0)",
+        "Reduce the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)"
+      ],
+      "effectsHtml": "<p>Models equipped with a Slab Shield:</p>\n<ul>\n<li>Reduce their Movement characteristic by 1\"</li>\n<li>Reduce their Initiative characteristic by 1</li>\n<li>Reduce their Attacks characteristic by 2</li>\n<li>Add 1 to their Toughness characteristic</li>\n<li>Add 3 to their Wounds characteristic</li>\n<li>Increase their Armour Save characteristic to 3+</li>\n<li>Reduce the Armour Piercing characteristic of attacks against the bearer by 1 (to a minimum of 0)</li>\n<li>Reduce the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "A",
+                "op": "dec",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "3+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "camo-cloak",
+      "name": "Camo Cloak",
+      "pointsCost": 2,
+      "costNote": "model",
+      "category": null,
+      "effects": [
+        "Enemy models making Ranged attacks against a model equipped with a Camo Cloak reduce their Ballistic Skill by 1 whilst the model equipped with a Camo Cloak is wholly positioned within a Terrain Feature."
+      ],
+      "effectsHtml": "<p>Enemy models making Ranged attacks against a model equipped with a Camo Cloak reduce their Ballistic Skill by 1 whilst the model equipped with a Camo Cloak is wholly positioned within a Terrain Feature.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 2
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "jump-pack",
+      "name": "Jump Pack",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Upgrade must be selected for every model in the unit.",
+        "Add the Jump Pack keyword.",
+        "Add the Deep Strike ability",
+        "Increase Movement characteristic to 12\""
+      ],
+      "effectsHtml": "<ul>\n<li>Upgrade must be selected for every model in the unit.</li>\n<li>Add the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> keyword.</li>\n<li>Add the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span><em> </em>ability</li>\n<li>Increase Movement characteristic to 12\"</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Jump Pack",
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "auspex-scanner",
+      "name": "Auspex Scanner",
+      "pointsCost": 12,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Units equipped with an Auspex Scanner ignore the effects of the Stealth ability when making Ranged attacks against enemy units with that ability."
+      ],
+      "effectsHtml": "<p>Units equipped with an Auspex Scanner ignore the effects of the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability when making Ranged attacks against enemy units with that ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "battlemutt",
+      "name": "Battlemutt",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Enemy units cannot be placed within 12\" of a unit equipped with a Battlemutt when using the Enter the Battlefield from Strategic Reserves Action."
+      ],
+      "effectsHtml": "<p>Enemy units cannot be placed within 12\" of a unit equipped with a Battlemutt when using the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "sacred-tome",
+      "name": "Sacred Tome",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Add 1 to this unit's Hymns of Battle roll."
+      ],
+      "effectsHtml": "<p>Add 1 to this unit's Hymns of Battle roll.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "simulacrum-imperialis",
+      "name": "Simulacrum Imperialis",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While the bearer is within range of a Primary Objective Marker, the bearer and friendly models within 12\" of them increase their Objective Control value by 1."
+      ],
+      "effectsHtml": "<p>While the bearer is within range of a Primary Objective Marker, the bearer and friendly models within 12\" of them increase their Objective Control value by 1.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "tempestus-command-rod",
+      "name": "Tempestus Command Rod",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer can issue 1 additional Order to eligible units."
+      ],
+      "effectsHtml": "<p>The bearer can issue 1 additional Order to eligible units.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "tempestus-sentry-turret",
+      "name": "Tempestus Sentry Turret",
+      "pointsCost": 5,
+      "costNote": "plus weapon cost",
+      "category": null,
+      "effects": [
+        "This model must be equipped with 1 of the following:",
+        "Flamer",
+        "Grenade Launcher",
+        "Hot-shot Volleygun",
+        "Meltagun",
+        "Multi-melta",
+        "Heavy Bolter",
+        "Heavy Flamer",
+        "1x Missile Launcher"
+      ],
+      "effectsHtml": "<p>This model must be equipped with 1 of the following:</p>\n<p>Flamer</p>\n<p>Grenade Launcher</p>\n<p>Hot-shot Volleygun</p>\n<p>Meltagun</p>\n<p>Multi-melta</p>\n<p>Heavy Bolter</p>\n<p>Heavy Flamer</p>\n<p>1x <span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:flamer",
+              "name": "Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:flamer",
+                  "name": "Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:grenade-launcher",
+              "name": "Grenade Launcher",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:grenade-launcher",
+                  "name": "Grenade Launcher",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:hot-shot-volleygun",
+              "name": "Hot-shot Volleygun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 6,
+              "parts": [
+                {
+                  "ref": "weapon:hot-shot-volleygun",
+                  "name": "Hot-shot Volleygun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:meltagun",
+              "name": "Meltagun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:meltagun",
+                  "name": "Meltagun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:multi-melta",
+              "name": "Multi-melta",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:multi-melta",
+                  "name": "Multi-melta",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-bolter",
+              "name": "Heavy Bolter",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-bolter",
+                  "name": "Heavy Bolter",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-flamer",
+              "name": "Heavy Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 15,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-flamer",
+                  "name": "Heavy Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:missile-launcher",
+              "name": "Missile Launcher",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 15,
+              "parts": [
+                {
+                  "ref": "weapon:missile-launcher",
+                  "name": "Missile Launcher",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dozer-blade-mount",
+      "name": "Dozer Blade Mount",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Dozer Blade Mount:",
+        "Are equipped with a Dozer Blade",
+        "Improve their Breach Test roll by 1",
+        "Do not reduce their Movement characteristic by 2\" when moving through Difficult Ground"
+      ],
+      "effectsHtml": "<p>Models equipped with a Dozer Blade Mount:</p>\n<ul>\n<li><span class=\"keyword\" data-term=\"are-equipped-with-a\" data-type=\"keyword\">Are equipped with a </span><span class=\"weapon-ref\" data-weapon=\"dozer-blade\">Dozer Blade</span></li>\n<li>Improve their Breach Test roll by 1</li>\n<li>Do not reduce their Movement characteristic by 2\" when moving through <span class=\"keyword\" data-term=\"difficult-ground\" data-type=\"keyword\">Difficult Ground</span></li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:dozer-blade",
+          "name": "Dozer Blade",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": null,
+          "parts": [
+            {
+              "ref": "weapon:dozer-blade",
+              "name": "Dozer Blade",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "searchlight",
+      "name": "Searchlight",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Searchlight ignore the effects of the Stealth ability when making Ranged attacks against enemy units with that ability."
+      ],
+      "effectsHtml": "<p>Models equipped with a Searchlight ignore the effects of the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability when making Ranged attacks against enemy units with that ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer can make 2 Smoke Grenades attacks as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> attacks as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "taurox-prime-weapon-system",
+      "name": "Taurox Prime Weapon System",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Models equipped with a Taurox Prime Weapon System change the model's Transport 12 ability to Transport 8.",
+        "Models equipped with a Taurox Prime Weapon System must be equipped with 1 of the following:",
+        "1x Skirmisher Cannon",
+        "1x Twin-linked Assault Cannon",
+        "1x Twin-linked Missile Launcher"
+      ],
+      "effectsHtml": "<p>Models equipped with a Taurox Prime Weapon System change the model's <span class=\"keyword\" data-term=\"transport-12\" data-type=\"keyword\">Transport 12</span> ability to <span class=\"keyword\" data-term=\"transport-8\" data-type=\"keyword\">Transport 8</span>.</p>\n<p>Models equipped with a Taurox Prime Weapon System must be equipped with 1 of the following:</p>\n<p>1x <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:skirmisher-cannon",
+              "name": "Skirmisher Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:skirmisher-cannon",
+                  "name": "Skirmisher Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:assault-cannon#m-twin-linked",
+              "name": "Assault Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:assault-cannon",
+                  "name": "Assault Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:missile-launcher#m-twin-linked",
+              "name": "Missile Launcher",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:missile-launcher",
+                  "name": "Missile Launcher",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Transport 8"
+              ],
+              "remove": [
+                "Transport 12"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "super-heavy-sponsons",
+      "name": "Super-heavy Sponsons",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Models selecting this wargear upgrade must be equipped with 2 or 4 Super-heavy Sponsons. Each Super-heavy Sponson must include selections detailed here, and all Super-heavy Sponsons on the model must have identical selections.",
+        "Each Super-heavy Sponson must be equipped with 1 of the following Primary Ranged Weapons:",
+        "Multilas",
+        "Autocannon",
+        "Lascannon",
+        "Skirmisher Cannon",
+        "Each Super-heavy Sponson must be equipped with 1 of the following Secondary Ranged Weapons:",
+        "1x Twin-linked Heavy Autogun",
+        "1x Twin-linked Multilas",
+        "1x Twin-linked Heavy Bolter",
+        "1x Twin-linked Heavy Flamer",
+        "1x Twin-linked Autocannon",
+        "1x Twin-linked Multi-melta"
+      ],
+      "effectsHtml": "<p>Models selecting this wargear upgrade must be equipped with 2 or 4 Super-heavy Sponsons. Each Super-heavy Sponson must include selections detailed here, and all Super-heavy Sponsons on the model must have identical selections.</p>\n<p>Each Super-heavy Sponson must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p>Multilas</p>\n<p>Autocannon</p>\n<p>Lascannon</p>\n<p>Skirmisher Cannon</p>\n<p>Each Super-heavy Sponson must be equipped with 1 of the following Secondary Ranged Weapons:</p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
+      "subSelections": [
+        {
+          "id": "primary-ranged-weapons",
+          "label": "Primary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:multilas",
+              "name": "Multilas",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:multilas",
+                  "name": "Multilas",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:autocannon",
+              "name": "Autocannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:autocannon",
+                  "name": "Autocannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:lascannon",
+              "name": "Lascannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 25,
+              "parts": [
+                {
+                  "ref": "weapon:lascannon",
+                  "name": "Lascannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:skirmisher-cannon",
+              "name": "Skirmisher Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:skirmisher-cannon",
+                  "name": "Skirmisher Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "secondary-ranged-weapons",
+          "label": "Secondary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:heavy-autogun#m-twin-linked",
+              "name": "Heavy Autogun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-autogun",
+                  "name": "Heavy Autogun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:multilas#m-twin-linked",
+              "name": "Multilas",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:multilas",
+                  "name": "Multilas",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-bolter#m-twin-linked",
+              "name": "Heavy Bolter",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 24,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-bolter",
+                  "name": "Heavy Bolter",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-flamer#m-twin-linked",
+              "name": "Heavy Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-flamer",
+                  "name": "Heavy Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:autocannon#m-twin-linked",
+              "name": "Autocannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 24,
+              "parts": [
+                {
+                  "ref": "weapon:autocannon",
+                  "name": "Autocannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:multi-melta#m-twin-linked",
+              "name": "Multi-melta",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 40,
+              "parts": [
+                {
+                  "ref": "weapon:multi-melta",
+                  "name": "Multi-melta",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "instances": {
+        "counts": [
+          2,
+          4
+        ],
+        "label": "Super-heavy Sponsons",
+        "identical": true
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

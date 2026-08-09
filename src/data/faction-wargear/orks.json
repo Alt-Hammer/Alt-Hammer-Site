@@ -1,0 +1,1216 @@
+{
+  "faction": "Orks",
+  "slug": "orks",
+  "wargearItems": [
+    {
+      "itemId": "bigga-stronga-tuffa",
+      "name": "Bigga, Stronga, Tuffa",
+      "pointsCost": 40,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Attacks characteristic by 2",
+        "Increase Strength characteristic by 1",
+        "Increase Toughness characteristic by 1",
+        "Gain the Implacable ability",
+        "Gain the Feel No Pain 5+ ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Attacks characteristic by 2</li>\n<li>Increase Strength characteristic by 1</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Implacable",
+                "Feel No Pain 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 40
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "beast-snaggas-klan",
+      "name": "Beast Snaggas Klan",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Gain the Beast Snaggas keyword",
+        "Increase Weapons Skill characteristic by 1",
+        "Increase Initiative characteristic by 1",
+        "Increase Wounds characteristic by 1",
+        "Leader models with this upgrade can only lead eligible Beast Snaggas units."
+      ],
+      "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> keyword</li>\n<li>Increase Weapons Skill characteristic by 1</li>\n<li>Increase Initiative characteristic by 1</li>\n<li>Increase Wounds characteristic by 1</li>\n<li><span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> models with this upgrade can only lead eligible <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> units.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "WS",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Beast Snaggas"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "eavy-armour",
+      "name": "'Eavy Armour",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Toughness characteristic by 1",
+        "Increase Armour Save to 4+",
+        "Increase Wounds characteristic by 2"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Toughness characteristic by 1</li>\n<li>Increase Armour Save to 4+</li>\n<li>Increase Wounds characteristic by 2</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "4+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "mega-armour",
+      "name": "Mega Armour",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Toughness characteristic by 2",
+        "Increase Armour Save to 2+",
+        "Increase Wounds characteristic by 3",
+        "Reduce Movement characteristic by 1\"",
+        "Reduce Initiative characteristic by 2",
+        "Gain the Implacable ability",
+        "Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less",
+        "Model must be on a 40mm or larger base."
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Toughness characteristic by 2</li>\n<li>Increase Armour Save to 2+</li>\n<li>Increase Wounds characteristic by 3</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Reduce Initiative characteristic by 2</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Cannot be Embarked in a <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span> with a Toughness characteristic of 11 or less</li>\n<li>Model must be on a 40mm or larger base.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Implacable"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "grot-gunna",
+      "name": "Grot Gunna",
+      "pointsCost": 2,
+      "costNote": "plus weapon",
+      "category": null,
+      "effects": [
+        "Adds a Grot Gunna with a Ballistic Skill of 3 to this model. Select 1 of the following as part of this upgrade:",
+        "Grot Blasta",
+        "Shoota",
+        "Big Shoota",
+        "Burna",
+        "Rokkit Launcha"
+      ],
+      "effectsHtml": "<p>Adds a Grot Gunna with a Ballistic Skill of 3 to this model. Select 1 of the following as part of this upgrade:</p>\n<p>Grot Blasta</p>\n<p>Shoota</p>\n<p>Big Shoota</p>\n<p>Burna</p>\n<p>Rokkit Launcha</p>",
+      "subSelections": [
+        {
+          "id": "as-part-of-this-upgrade",
+          "label": "as part of this upgrade",
+          "pick": {
+            "min": 0,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:grot-blasta",
+              "name": "Grot Blasta",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 1,
+              "parts": [
+                {
+                  "ref": "weapon:grot-blasta",
+                  "name": "Grot Blasta",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:shoota",
+              "name": "Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 2,
+              "parts": [
+                {
+                  "ref": "weapon:shoota",
+                  "name": "Shoota",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:big-shoota",
+              "name": "Big Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:big-shoota",
+                  "name": "Big Shoota",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:burna",
+              "name": "Burna",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:burna",
+                  "name": "Burna",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:rokkit-launcha",
+              "name": "Rokkit Launcha",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 15,
+              "parts": [
+                {
+                  "ref": "weapon:rokkit-launcha",
+                  "name": "Rokkit Launcha",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "grot-fixa",
+      "name": "Grot Fixa",
+      "pointsCost": 6,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "During your command phase, you can choose to use this upgrade's ability. To do so, roll a D6. On a roll of a 3-5, the bearer regains up to D3+1 lost Wounds. On a roll of a 6, the bearer regains up to D3+3 lost Wounds. One a roll of a 1, the Grot Fixa is killed in an accident. When this occurs, the bearer suffers D3+1 Mortal Wounds and this upgrade cannot be used again for the remainder of the battle."
+      ],
+      "effectsHtml": "<p>During your command phase, you can choose to use this upgrade's ability. To do so, roll a D6. On a roll of a 3-5, the bearer regains up to D3+1 lost Wounds. On a roll of a 6, the bearer regains up to D3+3 lost Wounds. One a roll of a 1, the Grot Fixa is killed in an accident. When this occurs, the bearer suffers D3+1 Mortal Wounds and this upgrade cannot be used again for the remainder of the battle.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 6
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "kombi-shoota",
+      "name": "Kombi-Shoota",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer is equipped with a Shoota",
+        "The bearer can be equipped with any of the following:",
+        "Kommando Shoota",
+        "Big Shoota",
+        "Snazzy Shoota",
+        "Burna Slugga",
+        "Rokkit Slugga",
+        "Kustom Mega-Slugga"
+      ],
+      "effectsHtml": "<p>The bearer is equipped with a <span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p>The bearer can be equipped with any of the following:</p>\n<p>Kommando Shoota</p>\n<p>Big Shoota</p>\n<p>Snazzy Shoota</p>\n<p>Burna Slugga</p>\n<p>Rokkit Slugga</p>\n<p>Kustom Mega-Slugga</p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 0,
+            "max": null
+          },
+          "options": [
+            {
+              "ref": "weapon:kommando-shoota",
+              "name": "Kommando Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 6,
+              "parts": [
+                {
+                  "ref": "weapon:kommando-shoota",
+                  "name": "Kommando Shoota",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:big-shoota",
+              "name": "Big Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:big-shoota",
+                  "name": "Big Shoota",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:snazzy-shoota",
+              "name": "Snazzy Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:snazzy-shoota",
+                  "name": "Snazzy Shoota",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:burna-slugga",
+              "name": "Burna Slugga",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:burna-slugga",
+                  "name": "Burna Slugga",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:rokkit-slugga",
+              "name": "Rokkit Slugga",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:rokkit-slugga",
+                  "name": "Rokkit Slugga",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:kustom-mega-slugga",
+              "name": "Kustom Mega-slugga",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:kustom-mega-slugga",
+                  "name": "Kustom Mega-slugga",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "includedWeapons": [
+        {
+          "ref": "weapon:shoota",
+          "name": "Shoota",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 2,
+          "parts": [
+            {
+              "ref": "weapon:shoota",
+              "name": "Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "boss-totem",
+      "name": "Boss Totem",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer increases its Leadership characteristic to 3+",
+        "Friendly Orks Infantry units that can draw line of sight to the bearer, and who have at least 1 model within 18\" of that model, change their Leadership characteristic to 5+.",
+        "While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, add 20 to its total Objective Control value."
+      ],
+      "effectsHtml": "<ul>\n<li>The bearer increases its Leadership characteristic to 3+</li>\n<li>Friendly <span class=\"keyword\" data-term=\"orks-infantry\" data-type=\"keyword\">Orks Infantry</span> units that can draw line of sight to the bearer, and who have at least 1 model within 18\" of that model, change their Leadership characteristic to 5+.</li>\n<li>While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, add 20 to its total Objective Control value.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "LD",
+                "op": "set",
+                "value": "3+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "bike",
+      "name": "Bike",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Movement characteristic to 12\"",
+        "Increase Toughness characteristic by 1",
+        "Increase Wounds characteristic by 2",
+        "Increase Armour Save characteristic to 4+",
+        "Gain the Mounted keyword"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic to 12\"</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Increase Wounds characteristic by 2</li>\n<li>Increase Armour Save characteristic to 4+</li>\n<li>Gain the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "4+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "wartrike",
+      "name": "Wartrike",
+      "pointsCost": 80,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Replaces the Infantry keyword with the Vehicle keyword",
+        "Increases its Movement characteristic to 12\"",
+        "Increases its Initiative characteristic by 1",
+        "Increases its Strength characteristic by 1",
+        "Increases its Toughness characteristic by 2",
+        "Increases its Wounds characteristic by 5",
+        "Increases its Armour Save characteristic to 4+",
+        "Is equipped with a Snazzy Shoota",
+        "Is equipped with a Killa Jet",
+        "The Wartrike cannot be selected by models equipped with any of the following Wargear Upgrades:",
+        "Heavy Armour",
+        "Mega Armour"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Replaces the <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> keyword with the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> keyword</li>\n<li>Increases its Movement characteristic to 12\"</li>\n<li>Increases its Initiative characteristic by 1</li>\n<li>Increases its Strength characteristic by 1</li>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Increases its Wounds characteristic by 5</li>\n<li>Increases its Armour Save characteristic to 4+</li>\n<li>Is equipped with a <span class=\"weapon-ref\" data-weapon=\"snazzy-shoota\">Snazzy Shoota</span></li>\n<li>Is equipped with a <span class=\"weapon-ref\" data-weapon=\"killa-jet\">Killa Jet</span></li>\n</ul>\n<p>The Wartrike cannot be selected by models equipped with any of the following Wargear Upgrades:</p>\n<p>Heavy Armour</p>\n<p>Mega Armour</p>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:snazzy-shoota",
+          "name": "Snazzy Shoota",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 5,
+          "parts": [
+            {
+              "ref": "weapon:snazzy-shoota",
+              "name": "Snazzy Shoota",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        },
+        {
+          "ref": "weapon:killa-jet",
+          "name": "Killa Jet",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 25,
+          "parts": [
+            {
+              "ref": "weapon:killa-jet",
+              "name": "Killa Jet",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 5
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "4+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Vehicle"
+              ],
+              "remove": [
+                "Infantry"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 80
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "squigosaur",
+      "name": "Squigosaur",
+      "pointsCost": 80,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Can only be equipped by a model with the Beast Snaggas Klan upgrade.",
+        "The bearer:",
+        "Replaces the Infantry keyword with the Monster keyword",
+        "Increases its Movement characteristic to 10\"",
+        "Increases its Initiative characteristic by 1",
+        "Increases its Strength characteristic by 1",
+        "Increases its Toughness characteristic by 2",
+        "Increases its Wounds characteristic by 5",
+        "Is equipped with a Squigosaur Maw",
+        "The Squigosaur cannot be selected by models equipped with any of the following Wargear Upgrades:",
+        "Heavy Armour",
+        "Mega Armour"
+      ],
+      "effectsHtml": "<p>Can only be equipped by a model with the <span class=\"wargear-ref\" data-wargear=\"beast-snaggas-klan\">Beast Snaggas Klan</span> upgrade.</p>\n<p>The bearer:</p>\n<ul>\n<li>Replaces the <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> keyword with the <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span> keyword</li>\n<li>Increases its Movement characteristic to 10\"</li>\n<li>Increases its Initiative characteristic by 1</li>\n<li>Increases its Strength characteristic by 1</li>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Increases its Wounds characteristic by 5</li>\n<li>Is equipped with a <span class=\"weapon-ref\" data-weapon=\"squigosaur-maw\">Squigosaur Maw</span></li>\n</ul>\n<p>The Squigosaur cannot be selected by models equipped with any of the following Wargear Upgrades:</p>\n<p>Heavy Armour</p>\n<p>Mega Armour</p>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:squigosaur-maw",
+          "name": "Squigosaur Maw",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": null,
+          "parts": [
+            {
+              "ref": "weapon:squigosaur-maw",
+              "name": "Squigosaur Maw",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "10\""
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 5
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Monster"
+              ],
+              "remove": [
+                "Infantry"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 80
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "ard-case",
+      "name": "'Ard Case",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increases Armour Save characteristic by 1",
+        "Add 3 to Wounds Characteristic",
+        "Remove the Firing Deck [X] ability, if applicable"
+      ],
+      "effectsHtml": "<ul>\n<li>Increases Armour Save characteristic by 1</li>\n<li>Add 3 to Wounds Characteristic</li>\n<li>Remove the <span class=\"keyword\" data-term=\"firing-deck-x\" data-type=\"keyword\">Firing Deck [X]</span> ability, if applicable</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "SV",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Firing Deck [X]"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "droppin-ramp",
+      "name": "Droppin' Ramp",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Model gains the Assault Egress keyword",
+        "Can only be equipped by models with the Transport [X] ability",
+        "Cannot be equipped by models equipped with an 'Ard Case."
+      ],
+      "effectsHtml": "<ul>\n<li>Model gains the <span class=\"keyword\" data-term=\"assault-egress\" data-type=\"keyword\">Assault Egress</span> keyword</li>\n<li>Can only be equipped by models with the <span class=\"keyword\" data-term=\"transport-x\" data-type=\"keyword\">Transport [X]</span> ability</li>\n<li>Cannot be equipped by models equipped with an <span class=\"wargear-ref\" data-wargear=\"ard-case\">'Ard Case</span>.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Assault Egress"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "more-big-dakka",
+      "name": "More Big Dakka",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer reduces its Transport 24 and Firing Deck 24 abilities to Transport 12 and Firing Deck 12.",
+        "The bearer must be equipped with 1 of the following Primary Ranged Weapons:",
+        "Big Snagga",
+        "Big Lobba"
+      ],
+      "effectsHtml": "<p>The bearer reduces its <span class=\"keyword\" data-term=\"transport-24\" data-type=\"keyword\">Transport 24</span> and <span class=\"keyword\" data-term=\"firing-deck-24\" data-type=\"keyword\">Firing Deck 24</span> abilities to <span class=\"keyword\" data-term=\"transport-12\" data-type=\"keyword\">Transport 12</span> and <span class=\"keyword\" data-term=\"firing-deck-12\" data-type=\"keyword\">Firing Deck 12</span>.</p>\n<p>The bearer must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p>Big Snagga</p>\n<p>Big Lobba</p>",
+      "subSelections": [
+        {
+          "id": "primary-ranged-weapons",
+          "label": "Primary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:big-snagga",
+              "name": "Big Snagga",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:big-snagga",
+                  "name": "Big Snagga",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:big-lobba",
+              "name": "Big Lobba",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:big-lobba",
+                  "name": "Big Lobba",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Transport 12",
+                "Firing Deck 12"
+              ],
+              "remove": [
+                "Transport 25",
+                "Firing 25"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "wurrtowa",
+      "name": "Wurrtowa",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Gains the Psyker keyword",
+        "Reduces its Transport 24 and Firing Deck 24 abilities to Transport 12 and Firing Deck 12.",
+        "This model knows the following Psychic Attacks:",
+        "Eadbanga",
+        "Eyez of Gork",
+        "The bearer gains the following Special Ability:",
+        "Spirit of Gork (Psychic): Once per battle round, when this model is activated, it can attempt to channel the Spirit of Gork. If the Psychic Test is passed, roll a D6. On a roll of a 1, this model suffers D3+1 Mortal Wounds. On a roll of a 2-5, select 1 of the following abilities to be in effect until the end of the Battle Round:",
+        "Increase the Movement characteristic of this model by 3\"",
+        "Increase the Initiative characteristic of this model by 2",
+        "This model gains the Relentless ability",
+        "Friendly Beast Snaggas Klan units with at least 1 model within 6\" of this model (including units embarked in this model) increase their Strength characteristic by 1",
+        "On a roll of a 6, all the above are considered to be in effect until the end of the Battle Round, and all units with at least 1 model within 6\" of this model suffer D3 Mortal Wounds."
+      ],
+      "effectsHtml": "<ul>\n<li>The bearer:</li>\n<li>Gains the <span class=\"keyword\" data-term=\"psyker\" data-type=\"keyword\">Psyker</span> keyword</li>\n<li>Reduces its <span class=\"keyword\" data-term=\"transport-24\" data-type=\"keyword\">Transport 24</span> and <span class=\"keyword\" data-term=\"firing-deck-24\" data-type=\"keyword\">Firing Deck 24</span> abilities to <span class=\"keyword\" data-term=\"transport-12\" data-type=\"keyword\">Transport 12</span> and <span class=\"keyword\" data-term=\"firing-deck-12\" data-type=\"keyword\">Firing Deck 12</span>.</li>\n</ul>\n<p>This model knows the following Psychic Attacks:</p>\n<p><span class=\"weapon-ref\" data-weapon=\"eadbanga\">Eadbanga</span></p>\n<p><span class=\"weapon-ref\" data-weapon=\"eyez-of-gork\">Eyez of Gork</span></p>\n<p>The bearer gains the following Special Ability:</p>\n<p><strong>Spirit of Gork (Psychic):</strong> Once per battle round, when this model is activated, it can attempt to channel the Spirit of Gork. If the Psychic Test is passed, roll a D6. On a roll of a 1, this model suffers D3+1 Mortal Wounds. On a roll of a 2-5, select 1 of the following abilities to be in effect until the end of the Battle Round:</p>\n<ul>\n<li>Increase the Movement characteristic of this model by 3\"</li>\n<li>Increase the Initiative characteristic of this model by 2</li>\n<li>This model gains the Relentless ability</li>\n<li>Friendly <span class=\"keyword\" data-term=\"beast-snaggas-klan\" data-type=\"keyword\">Beast Snaggas Klan</span> units with at least 1 model within 6\" of this model (including units embarked in this model) increase their Strength characteristic by 1</li>\n</ul>\n<p>On a roll of a 6, all the above are considered to be in effect until the end of the Battle Round, and all units with at least 1 model within 6\" of this model suffer D3 Mortal Wounds.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Pysker",
+                "Transport 12",
+                "Firing Deck 12"
+              ],
+              "remove": [
+                "Transport 25",
+                "Firing 25"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability.",
+        "This cost of this wargear upgrade is determined as follows:",
+        "For weapons with a Strength characteristic of 9 or more, add the original points cost of the weapon. This includes weapons that have 1 or more attack profiles where 1 of those attack profiles has a Strength characteristic of 9 or more",
+        "For weapons with a Strength characteristic of 8 or less, add half of the original points cost of the weapon, rounding up."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability.</p>\n<p>This cost of this wargear upgrade is determined as follows:</p>\n<ul>\n<li>For weapons with a Strength characteristic of 9 or more, add the original points cost of the weapon. This includes weapons that have 1 or more attack profiles where 1 of those attack profiles has a Strength characteristic of 9 or more</li>\n<li>For weapons with a Strength characteristic of 8 or less, add half of the original points cost of the weapon, rounding up.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

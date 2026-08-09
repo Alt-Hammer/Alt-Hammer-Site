@@ -1,0 +1,548 @@
+/* ==========================================================================
+   Alt-Hammer 40,000 — Army List Export
+   Read-only roster sheet rendered from a share link (/list-export#d=…).
+   Extends global.css design tokens; introduces no new colour variables.
+   ========================================================================== */
+
+.lx-root {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: var(--sp-6) var(--sp-4) var(--sp-12);
+}
+
+/* ── Actions bar ──────────────────────────────────────────────────────────── */
+
+.lx-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-6);
+}
+
+.lx-btn {
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: var(--sp-2) var(--sp-4);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.lx-btn:hover,
+.lx-btn:focus-visible {
+  background: var(--color-surface-raised);
+  border-color: var(--color-gold-dim);
+  color: var(--color-gold-bright);
+}
+
+/* ── Status / error / stale-link banner ───────────────────────────────────── */
+
+.lx-status {
+  padding: var(--sp-4);
+  border: 1px solid var(--color-border-mid);
+  background: var(--color-surface-2);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: var(--sp-6);
+}
+
+.lx-status ul { margin: var(--sp-2) 0 var(--sp-2) var(--sp-5); }
+.lx-status li { margin: var(--sp-1) 0; }
+.lx-status a { color: var(--color-gold); }
+
+.lx-status--warn {
+  border-left: 3px solid var(--color-gold);
+  color: var(--color-text-primary);
+}
+
+.lx-status--error {
+  border-left: 3px solid var(--color-red);
+  color: var(--color-text-primary);
+}
+
+/* ── Sheet header ─────────────────────────────────────────────────────────── */
+
+.lx-header {
+  border-bottom: 2px solid var(--color-border-mid);
+  padding-bottom: var(--sp-4);
+  margin-bottom: var(--sp-6);
+}
+
+.lx-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-gold-bright);
+  margin: 0 0 var(--sp-1);
+}
+
+.lx-subtitle {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.lx-total {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  margin-top: var(--sp-3);
+}
+
+.lx-total-pts { color: var(--color-gold-bright); font-weight: 700; }
+.lx-total--over .lx-total-pts { color: var(--color-red-bright); }
+.lx-total-sep,
+.lx-total-target,
+.lx-total-label { color: var(--color-text-muted); font-size: 0.95rem; }
+
+/* ── Sections ─────────────────────────────────────────────────────────────── */
+
+.lx-section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--sp-2);
+  margin: 0 0 var(--sp-3);
+}
+
+.lx-cat-pts,
+.lx-dp {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+}
+
+.lx-cat,
+.lx-detachment,
+.lx-problems { margin-bottom: var(--sp-6); }
+
+.lx-traits { list-style: none; margin: 0; padding: 0; }
+/* Direct children only — the rules prose below carries its own nested <ul>. */
+.lx-traits > li {
+  padding: var(--sp-2) 0;
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+  break-inside: avoid;
+}
+.lx-traits > li + li { border-top: 1px solid var(--color-border); }
+.lx-trait-cost { color: var(--color-text-muted); font-family: var(--font-mono); font-size: 0.78rem; }
+/* The trait's sub-selection, e.g. "Aspect Host — Dire Avengers". */
+.lx-trait-pick { color: var(--color-text-secondary); }
+
+/* Full rules text for the trait — the roster is played from, so it carries the rule. */
+.lx-trait-rules {
+  margin-top: var(--sp-2);
+  padding-left: var(--sp-3);
+  border-left: 2px solid var(--color-border-mid);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+.lx-trait-rules p { margin: 0 0 var(--sp-2); }
+.lx-trait-rules p:last-child { margin-bottom: 0; }
+.lx-trait-rules ul { margin: 0 0 var(--sp-2) var(--sp-5); list-style: disc; }
+.lx-trait-rules ul:last-child { margin-bottom: 0; }
+.lx-trait-rules li { padding: 0; font-size: inherit; color: inherit; }
+.lx-trait-rules strong { color: var(--color-text-primary); }
+
+/* ── Units ────────────────────────────────────────────────────────────────── */
+
+.lx-unit {
+  border-left: 2px solid var(--color-border-mid);
+  padding: var(--sp-2) 0 var(--sp-3) var(--sp-4);
+  margin-bottom: var(--sp-4);
+  break-inside: avoid;
+}
+
+.lx-unit-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-3);
+}
+
+.lx-unit-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--color-text-primary);
+}
+
+.lx-warlord {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-bright);
+}
+
+.lx-models {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.lx-unit-pts {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.lx-composition {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--sp-1);
+}
+
+.lx-characteristic {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--sp-1);
+}
+
+.lx-char-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-right: var(--sp-1);
+}
+
+/* ── Statlines & keywords ─────────────────────────────────────────────────── */
+
+.lx-stats-wrap {
+  overflow-x: auto;          /* narrow screens scroll the table, not the page */
+  margin: var(--sp-2) 0;
+}
+
+.lx-stats {
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.lx-stats th {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: var(--color-gold-dim);
+  font-weight: 600;
+  text-align: center;
+  padding: 0 var(--sp-2) 2px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lx-stats td {
+  text-align: center;
+  padding: 2px var(--sp-2);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.lx-stats-model {
+  text-align: left !important;
+  color: var(--color-text-secondary) !important;
+  padding-right: var(--sp-4) !important;
+}
+
+/* A value the unit's own wargear or a detachment trait moved off the book profile. */
+.lx-stat--mod { color: var(--color-gold-bright) !important; font-weight: 700; }
+
+/* Wargear only some models in the unit carry: the table row above speaks for the whole
+   model type, so the divergent models are footnoted beneath it. */
+.lx-partial-notes {
+  list-style: none;
+  margin: calc(var(--sp-1) * -1) 0 var(--sp-2);
+  padding: 0 0 0 var(--sp-3);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.lx-partial-notes li { position: relative; padding-left: var(--sp-4); }
+.lx-partial-notes li::before { content: "\2192"; position: absolute; left: 0; color: var(--color-gold-dim); }
+.lx-partial-src { color: var(--color-text-muted); }
+
+.lx-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1) var(--sp-2);
+  margin: var(--sp-2) 0;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lx-keywords .keyword { color: var(--color-text-muted); }
+
+/* ── Rules prose carried from the unit profile ────────────────────────────── */
+
+.lx-rule { margin-top: var(--sp-3); break-inside: avoid; }
+
+.lx-rule-label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--sp-1);
+}
+
+.lx-rule-body {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.lx-rule-body p { margin: 0 0 var(--sp-2); }
+.lx-rule-body p:last-child { margin-bottom: 0; }
+.lx-rule-body ul { margin: 0 0 var(--sp-2) var(--sp-5); }
+.lx-rule-body strong { color: var(--color-text-primary); }
+
+.lx-rule-block { margin-bottom: var(--sp-2); }
+
+.lx-rule-name {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.lx-rule-sublabel {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: 2px !important;
+}
+
+/* ── Weapon appendix ──────────────────────────────────────────────────────── */
+
+.lx-weapons {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.lx-weapons th {
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  font-weight: 600;
+  text-align: center;
+  padding: 0 var(--sp-2) var(--sp-1);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.lx-weapons th:first-child,
+.lx-weapons th:last-child { text-align: left; }
+
+.lx-weapons td {
+  text-align: center;
+  padding: 3px var(--sp-2);
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.lx-weapon-name {
+  text-align: left !important;
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.lx-profile-name {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--color-text-muted);
+  margin-left: var(--sp-2);
+}
+
+.lx-weapon-kw {
+  text-align: left !important;
+  white-space: normal !important;
+  font-size: 0.68rem;
+  color: var(--color-text-muted) !important;
+}
+
+/* ── Wargear list ─────────────────────────────────────────────────────────── */
+
+.lx-items {
+  list-style: none;
+  margin: var(--sp-2) 0 0;
+  padding: 0;
+  columns: 2;
+  column-gap: var(--sp-6);
+}
+
+.lx-item {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  padding: 1px 0;
+  break-inside: avoid;
+}
+
+/* Items a piece of wargear brings with it (a combi-weapon's chosen sub-weapon, a
+   mount's included weapon) hang beneath it rather than reading as separate kit. */
+.lx-subitems {
+  list-style: none;
+  margin: 0 0 0 var(--sp-3);
+  padding: 0 0 0 var(--sp-3);
+  border-left: 1px solid var(--color-border);
+}
+
+.lx-subitems .lx-item { font-size: 0.82rem; }
+
+.lx-qty {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.lx-item-mod { color: var(--color-gold-dim); font-size: 0.8rem; }
+
+.lx-unit-issue {
+  margin-top: var(--sp-2);
+  font-size: 0.8rem;
+  color: var(--color-red-bright);
+}
+
+.lx-problems ul { list-style: none; margin: 0; padding: 0; }
+.lx-problems li { color: var(--color-red-bright); font-size: 0.88rem; padding: var(--sp-1) 0; }
+
+.lx-valid {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-6);
+}
+
+.lx-appendix { margin-top: var(--sp-8); }
+
+@media (max-width: 40rem) {
+  .lx-items { columns: 1; }
+  .lx-unit-pts { margin-left: 0; }
+}
+
+/* ── Print ────────────────────────────────────────────────────────────────── */
+/* The roster is the natural thing to take to a table, so printing drops the site
+   chrome and the page's own controls and re-inks everything for paper.          */
+
+@media print {
+  .site-header,
+  .site-footer,
+  .lx-actions,
+  .lx-status { display: none !important; }
+
+  /* The site is a dark theme; paper is white. Drop the page background (and its
+     scanline texture) so the roster does not print as black ink on a black field
+     when the reader has "background graphics" switched on. */
+  html,
+  body,
+  .main-content,
+  .lx-root,
+  .lx-sheet {
+    background: #fff !important;
+    background-image: none !important;
+    color: #000 !important;
+  }
+
+  .main-content { padding: 0 !important; max-width: none !important; }
+
+  .lx-root {
+    max-width: none;
+    padding: 0;
+  }
+
+  /* One sweep is more robust than enumerating every element, since new roster
+     elements would otherwise keep their unreadable screen colours. */
+  .lx-root,
+  .lx-root * {
+    color: #000 !important;
+    background: transparent !important;
+    text-shadow: none !important;
+  }
+
+  /* Keep the reference terms distinguishable without colour. */
+  .lx-root .weapon-ref,
+  .lx-root .wargear-ref {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  .lx-subtitle,
+  .lx-qty,
+  .lx-cat-pts,
+  .lx-dp,
+  .lx-models,
+  .lx-item-mod,
+  .lx-composition { color: #444 !important; }
+
+  .lx-header { border-bottom: 2px solid #000; }
+  .lx-section-title { border-bottom: 1px solid #666; }
+  .lx-unit { border-left: 2px solid #999; break-inside: avoid; }
+  .lx-cat { break-inside: avoid-page; }
+  /* Trait rules travel with their trait — a rule split from its name is unusable. */
+  .lx-traits > li + li { border-top: 1px solid #ddd; }
+  .lx-trait-rules { border-left: 2px solid #999; break-inside: avoid; }
+  .lx-trait-cost, .lx-trait-pick { color: #444 !important; }
+
+  /* Tables and rule blocks must not split across a page break mid-unit. */
+  .lx-stats-wrap { overflow-x: visible; }
+  .lx-stats, .lx-rule, .lx-subitems { break-inside: avoid; }
+  .lx-stats th { border-bottom: 1px solid #000; }
+  .lx-stats-model { color: #333 !important; }
+  /* A modified stat still needs to read as modified without colour. */
+  .lx-stat--mod { font-weight: 700; text-decoration: underline; }
+  .lx-subitems { border-left: 1px solid #bbb; }
+  /* Footnotes stay with the table they qualify — a divergent statline is useless
+     stranded on the next page from the models it describes. */
+  .lx-partial-notes { color: #333 !important; break-before: avoid; break-inside: avoid; }
+  .lx-partial-notes li::before { color: #666 !important; }
+  .lx-partial-src { color: #666 !important; }
+
+  /* The appendix is a reference table — start it on a fresh page rather than
+     splitting the roster awkwardly, and keep its rows together. */
+  .lx-appendix { break-before: page; }
+  .lx-weapons { width: 100%; }
+  .lx-weapons tr { break-inside: avoid; }
+  .lx-weapons td { border-bottom: 1px solid #ddd; }
+  .lx-weapons th { border-bottom: 1px solid #000; }
+  .lx-weapons thead { display: table-header-group; }   /* repeat header per page */
+
+  /* Tooltips have no meaning on paper. */
+  .ah-tooltip, .ref-tooltip, .lb-tooltip { display: none !important; }
+
+  @page { margin: 14mm; }
+}

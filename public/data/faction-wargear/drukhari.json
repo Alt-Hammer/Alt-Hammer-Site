@@ -1,0 +1,579 @@
+{
+  "faction": "Drukhari",
+  "slug": "drukhari",
+  "wargearItems": [
+    {
+      "itemId": "combat-drugs",
+      "name": "Combat Drugs",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "During your Command Phase, your unit can use Combat Drugs. To do so, select one of the following combat drug effects, which is in effect unit until the end of the Battle Round:",
+        "Increase Movement characteristic by 2\"",
+        "Increase Initiative characteristic by 2",
+        "Gain the Relentless ability",
+        "Gain the Fearless ability",
+        "Gain the Feel No Pain 5+ ability",
+        "Alternatively, you can choose to expend 1 Pain token per combat drug effect and have up to all of the above combat drug effects in effect until the end of the Battle Round. However, when you do this, Weapons equipped by the unit gain the Hazardous 3 ability, or increase existing Hazardous [X] abilities by 3."
+      ],
+      "effectsHtml": "<p>During your Command Phase, your unit can use Combat Drugs. To do so, select one of the following combat drug effects, which is in effect unit until the end of the Battle Round:</p>\n<ul>\n<li>Increase Movement characteristic by 2\"</li>\n<li>Increase Initiative characteristic by 2</li>\n<li>Gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"fearless\" data-type=\"keyword\">Fearless</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability</li>\n</ul>\n<p>Alternatively, you can choose to expend 1 Pain token per combat drug effect and have up to all of the above combat drug effects in effect until the end of the Battle Round. However, when you do this, Weapons equipped by the unit gain the <span class=\"keyword\" data-term=\"hazardous-3\" data-type=\"keyword\">Hazardous 3</span> ability, or increase existing <span class=\"keyword\" data-term=\"hazardous-x\" data-type=\"keyword\">Hazardous [X]</span> abilities by 3.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "scourge-wings",
+      "name": "Scourge Wings",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Movement characteristic to 14\"",
+        "Gain the Jump Pack and Deep Strike abilities"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic to 14\"</li>\n<li>Gain the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> and <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> abilities</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "14\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Jump Pack",
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "hellion-board",
+      "name": "Hellion Board",
+      "pointsCost": 12,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 14\"",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 1",
+        "Gains the Mounted and Fly keywords",
+        "Is equipped with a Splinter Carbine",
+        "The bearer can be equipped with any of the following",
+        "Scything Blades",
+        "Grim Trophies"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 14\"</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> and <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span> keywords</li>\n<li>Is equipped with a <span class=\"weapon-ref\" data-weapon=\"splinter-carbine\">Splinter Carbine</span></li>\n</ul>\n<p>The bearer can be equipped with any of the following</p>\n<p>Scything Blades</p>\n<p>Grim Trophies</p>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:splinter-carbine",
+          "name": "Splinter Carbine",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 4,
+          "parts": [
+            {
+              "ref": "weapon:splinter-carbine",
+              "name": "Splinter Carbine",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "14\""
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted",
+                "Fly"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "reaver-jetbike",
+      "name": "Reaver Jetbike",
+      "pointsCost": 16,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 14\"",
+        "Increases its Strength characteristic by 1",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 2",
+        "Gains the Mounted and Fly abilities",
+        "Is equipped with a Splinter Carbine",
+        "The bearer can be equipped with any of the following",
+        "Scything Blades",
+        "Grim Trophies"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 14\"</li>\n<li>Increases its Strength characteristic by 1</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 2</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> and <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span> abilities</li>\n<li>Is equipped with a <span class=\"weapon-ref\" data-weapon=\"splinter-carbine\">Splinter Carbine</span></li>\n</ul>\n<p>The bearer can be equipped with any of the following</p>\n<p>Scything Blades</p>\n<p>Grim Trophies</p>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:splinter-carbine",
+          "name": "Splinter Carbine",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 4,
+          "parts": [
+            {
+              "ref": "weapon:splinter-carbine",
+              "name": "Splinter Carbine",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "14\""
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted",
+                "Fly"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "shadowfield",
+      "name": "Shadowfield",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Toughness characteristic by 2",
+        "Gains the Invulnerable Save 2+ ability.",
+        "The bearer may never re-roll its saving throw for any reason. The bearer loses all benefits from this wargear item upon the first failed Invulnerable Save 2+ saving throw."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Gains the <span class=\"keyword\" data-term=\"invulnerable-save-2\" data-type=\"keyword\">Invulnerable Save 2+</span> ability.</li>\n</ul>\n<p>The bearer may never re-roll its saving throw for any reason. The bearer loses all benefits from this wargear item upon the first failed <span class=\"keyword\" data-term=\"invulnerable-save-2\" data-type=\"keyword\">Invulnerable Save 2+</span> saving throw.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 2+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "voidshield",
+      "name": "Voidshield",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Reduce the Strength characteristics of Ranged attacks targeting the bearer by 2",
+        "Gain the Invulnerable Save 5+ ability against Ranged attacks"
+      ],
+      "effectsHtml": "<ul>\n<li>Reduce the Strength characteristics of Ranged attacks targeting the bearer by 2</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability against Ranged attacks</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "grim-trophies",
+      "name": "Grim Trophies",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Enemy units within 6\" of a unit equipped with Grim Trophies reduces its Leadership characteristic by 1."
+      ],
+      "effectsHtml": "<p>Enemy units within 6\" of a unit equipped with Grim Trophies reduces its Leadership characteristic by 1.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "kabalite-icon",
+      "name": "Kabalite Icon",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer increases its Objective Control Value by 20 whilst wholly within range of a Primary Objective Marker",
+        "Models in the bearer's unit increases their Leadership characteristic by 1 while the bearer is on the battlefield and not embarked in a Transport",
+        "While the bearer is on the battlefield and not embarked in a Transport, select 2 abilities from the Power from Pain ability for each Pain Tokens spent on this unit"
+      ],
+      "effectsHtml": "<ul>\n<li>The bearer increases its Objective Control Value by 20 whilst wholly within range of a Primary Objective Marker</li>\n<li>Models in the bearer's unit increases their Leadership characteristic by 1 while the bearer is on the battlefield and not embarked in a <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span></li>\n<li>While the bearer is on the battlefield and not embarked in a <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span>, select 2 abilities from the Power from Pain ability for each Pain Tokens spent on this unit</li>\n</ul>"
+    },
+    {
+      "itemId": "master-crafted",
+      "name": "Master-Crafted",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "phantasm-grenades",
+      "name": "Phantasm Grenades",
+      "pointsCost": 3,
+      "costNote": "model",
+      "category": null,
+      "effects": [
+        "Models equipped with Phantasm Grenades can make Ranged attacks using the Phantasm Grenades profile. Units successfully hit by a Phantasm Grenade attack must immediately take a Battle Shock Test, reducing their Leadership characteristic by 2."
+      ],
+      "effectsHtml": "<p>Models equipped with Phantasm Grenades can make Ranged attacks using the <span class=\"weapon-ref\" data-weapon=\"phantasm-grenades\">Phantasm Grenades</span> profile. Units successfully hit by a Phantasm Grenade attack must immediately take a Battle Shock Test, reducing their Leadership characteristic by 2.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "soul-trap",
+      "name": "Soul Trap",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Add 1 to the Attacks and Strength characteristics of the bearer's Melee weapons.",
+        "Additionally, Add 1 to the Damage characteristic and an additional 1 to the Strength characteristic of the bearer's Melee weapons each time the bearer destroys an enemy Character model."
+      ],
+      "effectsHtml": "<ul>\n<li>Add 1 to the Attacks and Strength characteristics of the bearer's Melee weapons.</li>\n<li>Additionally, Add 1 to the Damage characteristic and an additional 1 to the Strength characteristic of the bearer's Melee weapons each time the bearer destroys an enemy <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> model.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

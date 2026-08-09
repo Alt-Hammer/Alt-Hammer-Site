@@ -1,0 +1,470 @@
+{
+  "faction": "Asuryani",
+  "slug": "asuryani",
+  "detachmentPoints": 1,
+  "introText": "Your Asuryani army has 1 Detachment Point and can select 1 of the following Detachment Traits. These detachment traits offer Force Organization and army structure changes to represent various Aeldari Craftworlds and their warfare styles on the tabletop.",
+  "detachmentTraits": [
+    {
+      "traitId": "windrider-host",
+      "name": "Windrider Host",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Windriders gain the Battleline keyword",
+        "Guardians lose the Battleline keyword",
+        "Asuryani Mounted units gain access to the Agile Maneuvers ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Windriders gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Guardians lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li><span class=\"keyword\" data-term=\"asuryani\" data-type=\"keyword\">Asuryani</span> <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> units gain access to the Agile Maneuvers ability</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Guardians"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Windriders"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "wraith-host",
+      "name": "Wraith Host",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Wraithguard gain the Battleline keyword",
+        "Guardians lose the Battleline keyword",
+        "Wraith units gain access to the Agile Maneuvers Army Rule"
+      ],
+      "effectsHtml": "<ul>\n<li>Wraithguard gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Guardians lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li><span class=\"keyword\" data-term=\"wraith\" data-type=\"keyword\">Wraith</span> units gain access to the <strong>Agile Maneuvers</strong> Army Rule</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Guardians"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Wraithguard"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "star-host",
+      "name": "Star Host",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Guardians lose the Battleline keyword",
+        "Vypers gain the Battleline keyword",
+        "Asuryani Vehicle units increase their Activation Points characteristic by 1 and gain access to the Agile Maneuvers Army Rule.",
+        "Every Asuryani Infantry unit in your army must start the battle embarked in a Transport."
+      ],
+      "effectsHtml": "<ul>\n<li>Guardians lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Vypers gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li><span class=\"keyword\" data-term=\"asuryani\" data-type=\"keyword\">Asuryani</span> <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> units increase their Activation Points characteristic by 1 and gain access to the <strong>Agile Maneuvers</strong> Army Rule.</li>\n<li><span class=\"keyword\" data-term=\"every-asuryani\" data-type=\"keyword\">Every Asuryani</span> <span class=\"keyword\" data-term=\"infantry-unit-in-your-army-must-start-the-battle-embarked-in-a-transport\" data-type=\"keyword\">Infantry unit in your army must start the battle embarked in a Transport</span>.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Guardians"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Vypers"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "aspect-host",
+      "name": "Aspect Host",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Select 1 of the following Aspect Warriors units to gain the Battleline keyword:",
+        "Dire Avengers",
+        "Dark Reapers",
+        "Fire Dragons",
+        "Howling Banshees",
+        "Striking Scorpions",
+        "Swooping Hawks",
+        "Warp Spiders",
+        "Shining Spears",
+        "Further, your army:",
+        "Must include an Autarch or an Annatharch with a Path of the Aspect Shrine selection that allows it to Lead the Aspect Warriors unit you selected to gain the Battleline keyword.",
+        "Can only include Aeldari units with the following keywords: Aspect Warriors or Transport [X]"
+      ],
+      "effectsHtml": "<p>Select 1 of the following <span class=\"keyword\" data-term=\"aspect-warriors\" data-type=\"keyword\">Aspect Warriors</span> units to gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword:</p>\n<ul>\n<li>Dire Avengers</li>\n<li>Dark Reapers</li>\n<li>Fire Dragons</li>\n<li>Howling Banshees</li>\n<li>Striking Scorpions</li>\n<li>Swooping Hawks</li>\n<li>Warp Spiders</li>\n<li>Shining Spears</li>\n</ul>\n<p>Further, your army:</p>\n<ul>\n<li>Must include an Autarch or an Annatharch with a Path of the Aspect Shrine selection that allows it to Lead the <span class=\"keyword\" data-term=\"aspect-warriors\" data-type=\"keyword\">Aspect Warriors</span> unit you selected to gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n<li>Can only include Aeldari units with the following keywords: <span class=\"keyword\" data-term=\"aspect-warriors\" data-type=\"keyword\">Aspect Warriors</span> or <span class=\"keyword\" data-term=\"transport-x\" data-type=\"keyword\">Transport [X]</span></li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "choices": [
+        {
+          "choiceId": "battleline",
+          "pick": 1,
+          "options": [
+            {
+              "optionId": "dire-avengers",
+              "label": "Dire Avengers"
+            },
+            {
+              "optionId": "dark-reapers",
+              "label": "Dark Reapers"
+            },
+            {
+              "optionId": "fire-dragons",
+              "label": "Fire Dragons"
+            },
+            {
+              "optionId": "howling-banshees",
+              "label": "Howling Banshees"
+            },
+            {
+              "optionId": "striking-scorpions",
+              "label": "Striking Scorpions"
+            },
+            {
+              "optionId": "swooping-hawks",
+              "label": "Swooping Hawks"
+            },
+            {
+              "optionId": "warp-spiders",
+              "label": "Warp Spiders"
+            },
+            {
+              "optionId": "shining-spears",
+              "label": "Shining Spears"
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Guardians"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Dire Avengers"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "dire-avengers"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Dark Reapers"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "dark-reapers"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Fire Dragons"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "fire-dragons"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Howling Banshees"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "howling-banshees"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Striking Scorpions"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "striking-scorpions"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Swooping Hawks"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "swooping-hawks"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Warp Spiders"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "warp-spiders"
+            }
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Shining Spears"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null,
+            "choice": {
+              "group": "battleline",
+              "option": "shining-spears"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

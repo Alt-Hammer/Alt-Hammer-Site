@@ -44,9 +44,21 @@ and is silently skipped during conversion (image embedding is out of scope).
 
 import re
 import os
+import sys
 from pathlib import Path
 from docx import Document
 from docx.oxml.ns import qn
+
+# The Windows console defaults to cp1252, which cannot encode the glyphs the converters
+# print in their reports (⚠, ~, →). A single such print used to raise UnicodeEncodeError
+# and abort the whole run part-way through — convert_upgrades died on its points-drift
+# report, silently costing every faction after it in sheet order. Every converter imports
+# this module, so reconfiguring here fixes the pipeline once.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding='utf-8', errors='replace')
+    except (AttributeError, ValueError):
+        pass   # already UTF-8, or a stream that doesn't support reconfigure
 
 # Minimum number of data columns (after expanding gridSpan) for a table to be
 # treated as a matrix and rendered as HTML rather than GFM markdown.
@@ -325,6 +337,43 @@ def is_numbered_list(paragraph) -> bool:
     """Return True if this is a numbered (ordered) list item."""
     style_name = paragraph.style.name if paragraph.style else ''
     return 'List Number' in style_name or 'List Paragraph' in style_name
+
+
+# ── Prose → HTML ─────────────────────────────────────────────────────────────
+
+def md_inline(s: str) -> str:
+    """Convert markdown emphasis to HTML (keyword/weapon/wargear spans already HTML)."""
+    s = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
+    s = re.sub(r'\*([^*\n]+?)\*', r'<em>\1</em>', s)
+    return s
+
+
+def render_prose_html(paras) -> str:
+    """Render a run of body paragraphs to HTML, honouring bold/italic emphasis and
+    bullet lists so the output matches the faction pages.
+
+    This is the counterpart to the flat plain-text `effects[]` lists the converters
+    also emit: `effects` is what the grammar parsers read, this is what the reader
+    sees. Both come from the same paragraphs, so they never drift apart.
+    """
+    out = []
+    in_list = False
+    for p in paras:
+        md = runs_to_markdown(p)
+        if not md.strip():
+            continue
+        html = md_inline(md.strip())
+        if is_list_paragraph(p):
+            if not in_list:
+                out.append('<ul>'); in_list = True
+            out.append(f'<li>{html}</li>')
+        else:
+            if in_list:
+                out.append('</ul>'); in_list = False
+            out.append(f'<p>{html}</p>')
+    if in_list:
+        out.append('</ul>')
+    return '\n'.join(out)
 
 
 def paragraph_to_markdown(paragraph, list_counter: dict) -> str:

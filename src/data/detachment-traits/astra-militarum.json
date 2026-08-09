@@ -1,0 +1,617 @@
+{
+  "faction": "Astra Militarum",
+  "slug": "astra-militarum",
+  "detachmentPoints": 2,
+  "introText": "Your Astra Militarum army possesses 2 Detachment Points it can use to select from of the following Detachment Traits. Your Astra Militarum army can select up to 1 of the following Force Deployment Traits.",
+  "detachmentTraits": [
+    {
+      "traitId": "combined-arms-task-force",
+      "name": "Combined Arms Task Force",
+      "detachmentPointsCost": 1,
+      "category": "Force Deployment Traits",
+      "effects": [
+        "Increase the number of Orders that Leader units are eligible to issue by 1. Leader models that can issue Orders to Regiment units can also issue Orders to Squadron and Artillery units."
+      ],
+      "effectsHtml": "<p>Increase the number of Orders that <span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> units are eligible to issue by 1. <span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> models that can issue Orders to <span class=\"keyword\" data-term=\"regiment\" data-type=\"keyword\">Regiment</span> units can also issue Orders to <span class=\"keyword\" data-term=\"squadron\" data-type=\"keyword\">Squadron</span> and <span class=\"keyword\" data-term=\"artillery\" data-type=\"keyword\">Artillery</span> units.</p>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "planetary-defence-force",
+      "name": "Planetary Defence Force",
+      "detachmentPointsCost": 1,
+      "category": "Force Deployment Traits",
+      "effects": [
+        "Each time an Astra Militarum unit Remains Stationary, until the end of the turn, Ranged attacks by models in that unit have the Lethal Hits ability.",
+        "If at least 1 model in an Astra Militarum unit is positioned on a Primary Objective Marker, increase the Ballistic Skill characteristic of models in that unit by 1. Additionally, if the player is the Defender, units with at least 1 model positioned within range of a Primary Objective Marker score Critical Hits on a 5+."
+      ],
+      "effectsHtml": "<p>Each time an Astra Militarum unit <span class=\"keyword\" data-term=\"remains-stationary\" data-type=\"action\">Remains Stationary</span>, until the end of the turn, Ranged attacks by models in that unit have the <span class=\"keyword\" data-term=\"lethal-hits\" data-type=\"keyword\">Lethal Hits</span> ability.</p>\n<p>If at least 1 model in an Astra Militarum unit is positioned on a Primary Objective Marker, increase the Ballistic Skill characteristic of models in that unit by 1. Additionally, if the player is the <span class=\"defender\">Defender</span>, units with at least 1 model positioned within range of a Primary Objective Marker score Critical Hits on a 5+.</p>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "militarum-tempestus-task-force",
+      "name": "Militarum Tempestus Task Force",
+      "detachmentPointsCost": 2,
+      "category": "Force Deployment Traits",
+      "effects": [
+        "Your army can only include units with the Militarum Tempestus keyword or the Militarum Auxilia keyword.",
+        "Militarum Tempestus Scions gain the Battleline keyword.",
+        "The Infantry Section loses the Battleline keyword.",
+        "Militarum Tempestus Scions units can utilize the Regimental Coordination Army Rule when under the effects of an Order issued by a Tempestor Prime leading a Militarum Tempestus Scions Command Squad.",
+        "The Valkyrie unit:",
+        "Gains the Militarum Tempestus keyword",
+        "Increases its Ballistic Skill to 5",
+        "Increases its Points cost by 20 points."
+      ],
+      "effectsHtml": "<p>Your army can only include units with the <span class=\"keyword\" data-term=\"militarum-tempestus\" data-type=\"keyword\">Militarum Tempestus</span> keyword or the <span class=\"keyword\" data-term=\"militarum-auxilia\" data-type=\"keyword\">Militarum Auxilia</span> keyword.</p>\n<p>Militarum Tempestus Scions gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</p>\n<p>The Infantry Section loses the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</p>\n<p>Militarum Tempestus Scions units can utilize the Regimental Coordination Army Rule when under the effects of an Order issued by a Tempestor Prime leading a Militarum Tempestus Scions Command Squad.</p>\n<p>The Valkyrie unit:</p>\n<ul>\n<li>Gains the <span class=\"keyword\" data-term=\"militarum-tempestus\" data-type=\"keyword\">Militarum Tempestus</span> keyword</li>\n<li>Increases its Ballistic Skill to 5</li>\n<li>Increases its Points cost by 20 points.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry Section"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Militarum Tempestus Scions"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Valkyrie"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "BS",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Militarum Tempestus"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "armoured-spearhead",
+      "name": "Armoured Spearhead",
+      "detachmentPointsCost": 1,
+      "category": "Force Deployment Traits",
+      "effects": [
+        "The Leman Russ Battle Tank gains the Battleline keyword.",
+        "The Infantry Section unit loses the Battleline keyword.",
+        "Units with the Squadron keyword can use the Shoot Action in the same Activation in which they use the Mission Task Action. However, they can only use 1 Ranged Weapon for that Shoot Action."
+      ],
+      "effectsHtml": "<p>The Leman Russ Battle Tank gains the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</p>\n<p>The Infantry Section unit loses the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</p>\n<p>Units with the <span class=\"keyword\" data-term=\"squadron\" data-type=\"keyword\">Squadron</span> keyword can use the <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action in the same Activation in which they use the <span class=\"keyword\" data-term=\"mission-task\" data-type=\"action\">Mission Task</span> Action. However, they can only use 1 Ranged Weapon for that <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action.</p>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry Section"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Leman Russ Battle Tank"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "cavalry-brigade",
+      "name": "Cavalry Brigade",
+      "detachmentPointsCost": 1,
+      "category": "Force Deployment Traits",
+      "effects": [
+        "The Rough Riders unit gains the Battleline keyword.",
+        "The Infantry Section unit loses the Battleline keyword."
+      ],
+      "effectsHtml": "<p>The Rough Riders unit gains the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</p>\n<p>The Infantry Section unit loses the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</p>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry Section"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Rough Riders"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "expert-bombardiers",
+      "name": "Expert Bombardiers",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Artillery models making ranged attacks using weapons with the Indirect Fire ability against enemy units that are not in line of sight gain the Sustained Hits 1 ability (or improve an existing Sustained Hits [X] ability by 1) for those attacks. Change this ability to Sustained Hits 2 (or improve an existing Sustained Hits [X] ability by 2) when attacks with those weapons are made against enemy units that are in direct line of sight of the attacking unit."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"artillery\" data-type=\"keyword\">Artillery</span> models making ranged attacks using weapons with the <span class=\"keyword\" data-term=\"indirect-fire\" data-type=\"keyword\">Indirect Fire</span> ability against enemy units that are not in line of sight gain the <span class=\"keyword\" data-term=\"sustained-hits-1\" data-type=\"keyword\">Sustained Hits 1</span> ability (or improve an existing <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability by 1) for those attacks. Change this ability to <span class=\"keyword\" data-term=\"sustained-hits-2\" data-type=\"keyword\">Sustained Hits 2 </span>(or improve an existing <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability by 2) when attacks with those weapons are made against enemy units that are in direct line of sight of the attacking unit.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "armoured-fist-brigade",
+      "name": "Armoured Fist Brigade",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "When an Astra Militarum Regiment unit and a Transport unit are wholly within 6” of one another, each unit improves the Armour Piercing characteristic of Ranged attacks by 1."
+      ],
+      "effectsHtml": "<p>When an <span class=\"keyword\" data-term=\"astra-militarum-regiment\" data-type=\"keyword\">Astra Militarum Regiment</span> unit and a <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span> unit are wholly within 6\" of one another, each unit improves the Armour Piercing characteristic of Ranged attacks by 1.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "death-world-devils",
+      "name": "Death World Devils",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Astra Militarum Infantry Regiment units improve their Strength and Initiative characteristics by 1 and gain the Stealth ability when wholly positioned within a Terrain Feature with the Forest keyword.",
+        "This detachment cannot be taken in conjunction with the following other detachment traits: City Fighters, Border World Ghosts, Hardened Chem-Worlders."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"astra-militarum-infantry-regiment\" data-type=\"keyword\">Astra Militarum Infantry Regiment</span> units improve their Strength and Initiative characteristics by 1 and gain the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability when wholly positioned within a Terrain Feature with the <span class=\"keyword\" data-term=\"forest\" data-type=\"keyword\">Forest</span> keyword.</p>\n<p>This detachment cannot be taken in conjunction with the following other detachment traits: City Fighters, Border World Ghosts, Hardened Chem-Worlders.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": "pick one"
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry",
+                  "Regiment"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "border-world-ghosts",
+      "name": "Border World Ghosts",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Astra Militarum Infantry Regiment units gain the Stealth and Infiltrators keywords, and are considered to be equipped with the Camo Cloak as part of their Standard Wargear.",
+        "This detachment cannot be taken in conjunction with the following other detachment traits: City Fighters, Death World Devils, Hardened Chem-Worlders."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"astra-militarum-infantry-regiment\" data-type=\"keyword\">Astra Militarum Infantry Regiment</span> units gain the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> and <span class=\"keyword\" data-term=\"infiltrators\" data-type=\"keyword\">Infiltrators</span> keywords, and are considered to be equipped with the <span class=\"wargear-ref\" data-wargear=\"camo-cloak\">Camo Cloak</span> as part of their Standard Wargear.</p>\n<p>This detachment cannot be taken in conjunction with the following other detachment traits: City Fighters, Death World Devils, Hardened Chem-Worlders.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": "pick one"
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry",
+                  "Regiment"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Infiltrators",
+                "Stealth"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "swift-as-the-wind",
+      "name": "Swift as the Wind",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Astra Militarum Regiment and Squadron units improve their Movement characteristic by 1” and their Initiative characteristic by 1."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"astra-militarum\" data-type=\"keyword\">Astra Militarum</span> <span class=\"keyword\" data-term=\"regiment\" data-type=\"keyword\">Regiment</span> and <span class=\"keyword\" data-term=\"squadron\" data-type=\"keyword\">Squadron</span> units improve their Movement characteristic by 1\" and their Initiative characteristic by 1.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Regiment"
+                ],
+                [
+                  "Squadron"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "hardened-chem-worlders",
+      "name": "Hardened Chem-Worlders",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Astra Militarum Regiment Infantry units increase their Toughness characteristic by 1 and gain the Feel No Pain 6+ ability.",
+        "This detachment cannot be taken in conjunction with the following other detachment traits: City Fighters, Border World Ghosts, Death World Devils."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"astra-militarum-regiment\" data-type=\"keyword\">Astra Militarum Regiment</span><em> </em><span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry </span>units increase their Toughness characteristic by 1 and gain the <span class=\"keyword\" data-term=\"feel-no-pain-6\" data-type=\"keyword\">Feel No Pain 6+</span> ability.</p>\n<p>This detachment cannot be taken in conjunction with the following other detachment traits: City Fighters, Border World Ghosts, Death World Devils.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": "pick one"
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry",
+                  "Regiment"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Feel No Pain 6+"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "grim-determination",
+      "name": "Grim Determination",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Astra Militarum Infantry units gain the Fearless keywords.",
+        "When an Infantry unit is positioned within range of a Primary Objective Marker it gains Light Cover if it does not already gain it. If it is already benefitting from Light Cover or Heavy Cover (due to terrain traits, for example), change the Armour Save characteristic of models in that unit to 4+.",
+        "Add 3” to Charge rolls made for Infantry units that are using the Charge and Fight Action against enemy unit with at least 1 model positioned within range of a Primary Objective Marker."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"astra-militarum-infantry\" data-type=\"keyword\">Astra Militarum Infantry </span>units gain the <span class=\"keyword\" data-term=\"fearless\" data-type=\"keyword\">Fearless</span> keywords.</p>\n<p>When an <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> unit is positioned within range of a Primary Objective Marker it gains <span class=\"keyword\" data-term=\"light-cover\" data-type=\"keyword\">Light Cover</span> if it does not already gain it. If it is already benefitting from <span class=\"keyword\" data-term=\"light-cover\" data-type=\"keyword\">Light Cover</span> or <span class=\"keyword\" data-term=\"heavy-cover\" data-type=\"keyword\">Heavy Cover</span> (due to terrain traits, for example), change the Armour Save characteristic of models in that unit to 4+.</p>\n<p>Add 3\" to Charge rolls made for <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> units that are using the <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> Action against enemy unit with at least 1 model positioned within range of a Primary Objective Marker.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Fearless"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "city-fighters",
+      "name": "City Fighters",
+      "detachmentPointsCost": 1,
+      "category": "Regimental Traits",
+      "effects": [
+        "Astra Militarum Regiment Infantry models wholly within 1” of a terrain feature with the Building or Fortification keywords increase their Movement characteristic by 2”, and change their Armour Save characteristic to 4+ when receiving the benefit of Heavy Cover.",
+        "This detachment cannot be taken in conjunction with the following other detachment traits: Border World Ghosts, Death World Devils."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"astra-militarum-regiment\" data-type=\"keyword\">Astra Militarum Regiment</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry </span>models wholly within 1\" of a terrain feature with the <span class=\"keyword\" data-term=\"building\" data-type=\"keyword\">Building</span> or <span class=\"keyword\" data-term=\"fortification\" data-type=\"keyword\">Fortification</span> keywords increase their Movement characteristic by 2\", and change their Armour Save characteristic to 4+ when receiving the benefit of <span class=\"keyword\" data-term=\"heavy-cover\" data-type=\"keyword\">Heavy Cover</span>.</p>\n<p>This detachment cannot be taken in conjunction with the following other detachment traits: Border World Ghosts, Death World Devils.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": "pick one"
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry",
+                  "Regiment"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    }
+  ]
+}

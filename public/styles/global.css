@@ -84,6 +84,11 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  /* Anchor jumps must clear everything stuck to the top of the page, or the heading
+     they target ends up hidden behind it. That is the fixed site header plus, on rules
+     and faction pages, a sticky sub-header whose height depends on its content — so
+     BaseLayout measures that one and publishes it as --sticky-offset (0 elsewhere). */
+  scroll-padding-top: calc(var(--header-height) + var(--sticky-offset, 0px) + 1rem);
   scrollbar-color: var(--color-border-mid) var(--color-surface-1);
   scrollbar-width: thin;
 }
@@ -2270,6 +2275,62 @@ code, kbd {
 .ah-ref-tooltip__profile-block:first-of-type {
   border-top: none;
 }
+
+/* ── Weapon modifiers (Twin-linked, Accursed, Relic Weapon …) ─────────────────
+   Chips name the wargear upgrades folded into the statline below; the same cyan
+   as .wargear-ref, so the upgrade reads as the cause of the highlighted stats. */
+
+.ah-ref-tooltip__mods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 5px 10px;
+  background: var(--color-surface-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__mod {
+  font-family: var(--font-display);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4ecdc4;
+  border: 1px solid #2a8a85;
+  border-radius: 2px;
+  padding: 2px 5px 1px;
+  line-height: 1;
+}
+
+/* A weapon whose optional upgrade covers only some of its instances renders one
+   block per variant; the label says which is which. */
+.ah-ref-tooltip__variant--split + .ah-ref-tooltip__variant--split {
+  border-top: 1px solid var(--color-border-mid);
+}
+
+.ah-ref-tooltip__variant-label {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 10px 3px;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4ecdc4;
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ah-ref-tooltip__variant-count {
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+
+/* Characteristic moved by a modifier. */
+.ah-ref-tooltip__stat-value--mod { color: #4ecdc4; }
 
 .ah-ref-tooltip__profile-name {
   font-family: var(--font-display);

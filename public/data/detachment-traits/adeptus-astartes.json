@@ -1,0 +1,489 @@
+{
+  "faction": "Adeptus Astartes",
+  "slug": "adeptus-astartes",
+  "detachmentPoints": 2,
+  "introText": "Adeptus Astartes detachments are made up of Detachment Traits that reflect the combat doctrine preferences of their Chapter. Your Adeptus Astartes detachment has 2 Detachment Trait Points that you may allocate when constructing your army list by selecting Detachment Traits from the following options. Several Detachment Traits reflect unique identities found among legendary Adeptus Astartes Chapters such as the Ultramarines, Blood Angels, Imperial Fists, and their successor chapters. Your army may select up to 1 of these Detachment Traits.",
+  "detachmentTraits": [
+    {
+      "traitId": "adepts-of-the-codex",
+      "name": "Adepts of the Codex",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all Adeptus Astartes Infantry units from your army. You can only select each Combat Doctrine once per battle, and the effects of an active Combat Doctrine are no longer usable after you select a new Combat Doctrine to be active.",
+        "Devastator Doctrine: units increase their Ballistic Skill by 1 when they Remain Stationary.",
+        "Tactical Doctrine: units gain the Unyielding ability.",
+        "Assault Doctrine: units gain the Relentless keyword."
+      ],
+      "effectsHtml": "<p>At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all <span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> units from your army. You can only select each Combat Doctrine once per battle, and the effects of an active Combat Doctrine are no longer usable after you select a new Combat Doctrine to be active.</p>\n<ul>\n<li><strong>Devastator Doctrine:</strong> units increase their Ballistic Skill by 1 when they <span class=\"keyword\" data-term=\"remain-stationary\" data-type=\"action\">Remain Stationary</span>.</li>\n<li><strong>Tactical Doctrine:</strong> units gain the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding</span> ability.</li>\n<li><strong>Assault Doctrine:</strong> units gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> keyword.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "souls-of-iron",
+      "name": "Souls of Iron",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "Adeptus Astartes Infantry models gain the Implacable keyword.",
+        "Adeptus Astartes units gain the Lethal Hits ability when making attacks against enemy Vehicle units.",
+        "Adeptus Astartes units gain the Feel No Pain 5+ ability against Ranged attacks."
+      ],
+      "effectsHtml": "<ul>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> models gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> keyword.</li>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes </span>units gain the <span class=\"keyword\" data-term=\"lethal-hits\" data-type=\"keyword\">Lethal Hits</span> ability when making attacks against enemy <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> units.</li>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes </span>units gain the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability against Ranged attacks.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Implacable"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "born-in-the-saddle",
+      "name": "Born in the Saddle",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "Adeptus Astartes Mounted units gains the Relentless and Unyielding keywords.",
+        "Melee attacks by Mounted units gain the Lance ability.",
+        "All Infantry units must start the Battle embarked in a Transport unless they possess the Deep Strike ability, in which case they can start the battle in Strategic Reserves as normal."
+      ],
+      "effectsHtml": "<ul>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes-mounted\" data-type=\"keyword\">Adeptus Astartes Mounted</span> units gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> and <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding</span> keywords.</li>\n<li>Melee attacks by <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> units gain the <span class=\"keyword\" data-term=\"lance\" data-type=\"keyword\">Lance</span> ability.</li>\n<li>All <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> units must start the Battle embarked in a Transport unless they possess the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability, in which case they can start the battle in Strategic Reserves as normal.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Mounted"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Relentless",
+                "Unyielding"
+              ],
+              "remove": []
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Mounted"
+                ]
+              ],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponClass",
+                "values": [
+                  "Melee"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Lance"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "blood-lust",
+      "name": "Blood Lust",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "Adeptus Astartes Infantry units gain the Relentless ability.",
+        "Adeptus Astartes Infantry units add 1” to the distance they can move when they Advance and Charge and Fight.",
+        "Adeptus Astartes Infantry units must always move towards the closest enemy unit when they Advance as part of a Move action, and must always select the closest enemy unit as the target of a Charge and Fight action.",
+        "Adeptus Astartes units gain the Devastating Wounds ability when making Melee attacks as part of a Charge and Fight action. If a melee weapon being used already has the Devastating Wounds ability in these instances, critical wounds from attacks with that weapon are scored on a 5+ instead of a 6+, or have no additional effect if the weapon already possesses the Anti-[KEYWORD] [X+] ability."
+      ],
+      "effectsHtml": "<ul>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes-infantry\" data-type=\"keyword\">Adeptus Astartes Infantry</span> units gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability.</li>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes-infantry\" data-type=\"keyword\">Adeptus Astartes Infantry</span> units add 1\" to the distance they can move when they <span class=\"keyword\" data-term=\"advance\" data-type=\"action\">Advance</span> and <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span>.</li>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes-infantry\" data-type=\"keyword\">Adeptus Astartes Infantry</span> units must always move towards the closest enemy unit when they <span class=\"keyword\" data-term=\"advance\" data-type=\"action\">Advance</span> as part of a <span class=\"keyword\" data-term=\"move\" data-type=\"action\">Move</span><em> </em>action, and must always select the closest enemy unit as the target of a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action.</li>\n<li><span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> units gain the <span class=\"keyword\" data-term=\"devastating-wounds\" data-type=\"keyword\">Devastating Wounds</span> ability when making Melee attacks as part of a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action. If a melee weapon being used already has the <span class=\"keyword\" data-term=\"devastating-wounds\" data-type=\"keyword\">Devastating Wounds</span> ability in these instances, critical wounds from attacks with that weapon are scored on a 5+ instead of a 6+, or have no additional effect if the weapon already possesses the <span class=\"keyword\" data-term=\"anti-keyword-x\" data-type=\"keyword\">Anti-[KEYWORD] [X+]</span> ability.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Relentless"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "implacable-defenders",
+      "name": "Implacable Defenders",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "Adeptus Astartes Infantry models score Critical Hits on a 4+ when they Remain Stationary for Ranged attacks, and score Critical Wounds on 4+ for Melee attacks when they are the subject of an enemy Charge and Fight action whilst all models in the unit are wholly positioned in a Terrain Feature with the Defensible Position keyword. The above abilities are changed to automatically occur when the player is the Defender."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> models score Critical Hits on a 4+ when they <span class=\"keyword\" data-term=\"remain-stationary\" data-type=\"action\">Remain Stationary</span> for Ranged attacks, and score Critical Wounds on 4+ for Melee attacks when they are the subject of an enemy <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action whilst all models in the unit are wholly positioned in a Terrain Feature with the <span class=\"keyword\" data-term=\"defensible-position\" data-type=\"keyword\">Defensible Position</span> keyword. The above abilities are changed to automatically occur when the player is the <span class=\"defender\">Defender</span>.</p>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "dark-revenants",
+      "name": "Dark Revenants",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "Adeptus Astartes Infantry units gain the Stealth ability.",
+        "Units that already gain the Stealth ability (via selected Wargear Upgrades, for example) instead add 2” to their Movement characteristic when moving into, through, or out of Terrain Features with the Heavy Cover keyword.",
+        "Additionally, Adeptus Astartes Infantry units with the Stealth ability gain access to the following Return to the Shadows Action."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"adeptus-astartes-infantry\" data-type=\"keyword\">Adeptus Astartes Infantry</span> units gain the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability.</p>\n<p>Units that already gain the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability (via selected Wargear Upgrades, for example) instead add 2\" to their Movement characteristic when moving into, through, or out of Terrain Features with the <span class=\"keyword\" data-term=\"heavy-cover\" data-type=\"keyword\">Heavy Cover</span> keyword.</p>\n<p>Additionally, <span class=\"keyword\" data-term=\"adeptus-astartes-infantry\" data-type=\"keyword\">Adeptus Astartes Infantry</span> units with the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability gain access to the following <span class=\"keyword\" data-term=\"return-to-the-shadows\" data-type=\"action\">Return to the Shadows</span> Action.</p>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Infantry"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Stealth"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "brotherhood-of-inferno",
+      "name": "Brotherhood of Inferno",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Identity Detachment Traits",
+      "effects": [
+        "Torrent and Melta [X] weapons equipped by Adeptus Astartes models gain the Assault keyword if they do not already possess it.",
+        "Add 3 to the Attacks characteristic of Torrent weapons when making ranged attacks against enemy units that do not have the Vehicle or Monster keyword.",
+        "Add 1 to Wound rolls when making attacks with a Melta [X] weapon against enemy Vehicle or Monster units when your attacking model is within 6” of that enemy unit."
+      ],
+      "effectsHtml": "<ul>\n<li><span class=\"keyword\" data-term=\"torrent\" data-type=\"keyword\">Torrent</span> and <span class=\"keyword\" data-term=\"melta-x\" data-type=\"keyword\">Melta [X]</span> weapons equipped by <span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> models gain the <span class=\"keyword\" data-term=\"assault\" data-type=\"keyword\">Assault</span> keyword if they do not already possess it.</li>\n<li>Add 3 to the Attacks characteristic of <span class=\"keyword\" data-term=\"torrent\" data-type=\"keyword\">Torrent</span> weapons when making ranged attacks against enemy units that do not have the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> or <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span> keyword.</li>\n<li>Add 1 to Wound rolls when making attacks with a <span class=\"keyword\" data-term=\"melta-x\" data-type=\"keyword\">Melta [X]</span> weapon against enemy <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> or <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span> units when your attacking model is within 6\" of that enemy unit.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponKeyword",
+                "values": [
+                  "Torrent",
+                  "Melta"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Assault"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "1st-company-strike-force",
+      "name": "1st Company Strike Force",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Company Detachment Traits",
+      "effects": [
+        "The Veterans unit gains the Battleline keyword.",
+        "The Intercessors unit loses the Battleline keyword."
+      ],
+      "effectsHtml": "<ul>\n<li>The Veterans unit gains the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n<li>The Intercessors unit loses the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Veterans"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Intercessors"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "9th-company-fire-support-strike-force",
+      "name": "9th Company Fire Support Strike Force",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Company Detachment Traits",
+      "effects": [
+        "The Devastators unit gains the Battleline keyword.",
+        "The Intercessors unit loses the Battleline keyword."
+      ],
+      "effectsHtml": "<ul>\n<li>The Devastators unit gains the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n<li>The Intercessors unit loses the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Devastators"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Intercessors"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "10th-company-vanguard-strike-force",
+      "name": "10th Company Vanguard Strike Force",
+      "detachmentPointsCost": 1,
+      "category": "Chapter Company Detachment Traits",
+      "effects": [
+        "The Scouts unit gains the Battleline keyword.",
+        "The Intercessors unit loses the Battleline keyword."
+      ],
+      "effectsHtml": "<ul>\n<li>The Scouts unit gains the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n<li>The Intercessors unit loses the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": 1,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Scouts"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Intercessors"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,31 +1,128 @@
 ---
 // src/pages/list-builder.astro
+// Alt-Hammer Army List Builder — interactive three-panel UI.
+// Data is fetched client-side from /data/{type}/{slug}.json (public directory).
+// State is persisted to sessionStorage so each browser tab holds its own list.
+
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Collect active factions at build time for the faction selector.
+// Only slug + title are needed; the full data loads client-side via fetch().
+interface FactionFrontmatter {
+  slug: string;
+  title: string;
+  alliance: string;
+  status: 'active' | 'coming-soon';
+}
+
+const factionPages = await Astro.glob('../content/factions/*.mdx');
+const factions = factionPages
+  .map((p) => p.frontmatter as FactionFrontmatter)
+  .filter((f) => f?.slug && f.status === 'active')
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+const factionsJson = JSON.stringify(factions.map((f) => ({ slug: f.slug, title: f.title, alliance: f.alliance })));
 ---
 
 <BaseLayout
   title="List Builder"
   activePage="list-builder"
+  showSidebar={false}
 >
-  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;
-              min-height:60vh;text-align:center;padding:40px 20px;">
-    <div style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.3em;
-                text-transform:uppercase;color:var(--color-gold-dim);margin-bottom:20px;">
-      Coming Soon
-    </div>
-    <h1 style="font-size:2rem;margin-bottom:12px;">List Builder</h1>
-    <p style="color:var(--color-text-muted);max-width:50ch;margin-bottom:8px;line-height:1.6;">
-      The Alt-Hammer army list builder is under development. It will allow you to
-      construct and validate army lists with automatic Force Organization enforcement,
-      wargear constraints, and shareable list links.
-    </p>
-    <p style="color:var(--color-text-muted);max-width:50ch;margin-bottom:32px;font-size:0.9rem;">
-      In the meantime, see the <a href="/rules/preparing-your-game#force-organization">Force Organization rules</a>
-      and use the <a href="/factions">Faction pages</a> for unit reference.
-    </p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-      <a href="/factions" class="btn btn-primary">Browse Factions</a>
-      <a href="/rules/preparing-your-game" class="btn btn-ghost">Core Rules</a>
+  <!-- Override main-content constraints (see list-builder.css) -->
+  <link rel="stylesheet" href="/styles/list-builder.css" />
+
+  <!-- Faction list data for the JS selector (no hardcoded slugs in JS) -->
+  <script id="lb-factions-data" type="application/json" set:html={factionsJson}></script>
+
+  <!-- ── Three-panel app shell ─────────────────────────────────────────── -->
+  <div class="lb-root">
+    <div class="lb-app">
+
+      <!-- LEFT: Unit Browser ──────────────────────────────────────────── -->
+      <div class="lb-panel lb-panel--browser" id="lb-browser">
+        <div class="lb-panel-header">
+          <select id="lb-faction-select" class="lb-faction-select" aria-label="Select faction">
+            <option value="">— Select faction —</option>
+          </select>
+          <div class="lb-battle-sizes" id="lb-battle-sizes" role="group" aria-label="Battle size">
+            <!-- Injected by list-builder-ui.js -->
+          </div>
+          <div class="lb-panel-title">Unit Browser</div>
+        </div>
+        <div class="lb-panel-body" id="lb-browser-body" aria-live="polite">
+          <div class="lb-empty">Select a faction above to browse units.</div>
+        </div>
+      </div>
+
+      <!-- CENTRE: Army List ───────────────────────────────────────────── -->
+      <div class="lb-panel lb-panel--list" id="lb-list">
+        <div class="lb-panel-header">
+          <div class="lb-panel-title">Army List</div>
+          <input
+            type="text"
+            id="lb-list-name"
+            class="lb-list-name"
+            placeholder="Name this list…"
+            maxlength="120"
+            aria-label="List name"
+          />
+          <div class="lb-total-row" aria-live="polite">
+            <div id="lb-total-display">
+              <span class="lb-total-pts">0</span>
+              <span class="lb-total-sep">/</span>
+              <span class="lb-total-target">1000</span>
+              <span class="lb-pts-label">pts</span>
+            </div>
+          </div>
+          <div id="lb-forceorg-status" class="lb-forceorg-status" aria-live="polite"></div>
+          <!-- Share / export / saved lists -->
+          <div class="lb-actions" id="lb-actions">
+            <button class="lb-action" id="lb-share" type="button" title="Copy a link that rebuilds this list">Share</button>
+            <button class="lb-action" id="lb-view" type="button" title="Open the printable roster">Roster</button>
+            <button class="lb-action" id="lb-copy-md" type="button" title="Copy the list as Markdown">Copy</button>
+            <button class="lb-action" id="lb-lists" type="button" aria-expanded="false" title="Saved lists">Lists</button>
+            <button class="lb-action lb-action--danger" id="lb-new" type="button" title="Start a new list">New</button>
+          </div>
+          <div class="lb-action-note" id="lb-action-note" aria-live="polite" hidden></div>
+        </div>
+
+        <!-- Saved-list drawer (localStorage); the working draft stays per-tab -->
+        <div class="lb-library" id="lb-library" hidden>
+          <div class="lb-library-head">
+            <span>Saved Lists</span>
+            <button class="lb-action" id="lb-save-as" type="button">Save current</button>
+          </div>
+          <div class="lb-library-body" id="lb-library-body"></div>
+        </div>
+        <div class="lb-panel-body" id="lb-list-body" aria-live="polite">
+          <div class="lb-empty">No units added yet.<br><small>Use the browser on the left to add units.</small></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Unit Options ─────────────────────────────────────────── -->
+      <div class="lb-panel lb-panel--options" id="lb-options">
+        <div class="lb-panel-header">
+          <div class="lb-panel-title">Unit Options</div>
+          <div id="lb-options-title" style="font-family:var(--font-display);font-size:0.9rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-text-primary);margin-top:4px;">
+            Select a unit
+          </div>
+        </div>
+        <div class="lb-panel-body" id="lb-options-body" aria-live="polite">
+          <div class="lb-empty">Click a unit in the army list to configure its options.</div>
+        </div>
+      </div>
+
     </div>
   </div>
+
+  <!-- JS: tooltip helpers first (no deps), then state engine, share codec and
+       saved-list library, then the UI renderer that binds them together -->
+  <script is:inline src="/js/weapon-mods.js"></script>
+  <script is:inline src="/js/ref-tooltips.js"></script>
+  <script is:inline src="/js/keyword-tooltips.js"></script>
+  <script is:inline src="/js/list-builder.js"></script>
+  <script is:inline src="/js/list-share.js"></script>
+  <script is:inline src="/js/list-library.js"></script>
+  <script is:inline src="/js/list-builder-ui.js"></script>
 </BaseLayout>

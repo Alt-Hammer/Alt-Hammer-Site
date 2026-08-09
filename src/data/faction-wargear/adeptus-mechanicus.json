@@ -1,0 +1,471 @@
+{
+  "faction": "Adeptus Mechanicus",
+  "slug": "adeptus-mechanicus",
+  "wargearItems": [
+    {
+      "itemId": "biomechanical-masterworks",
+      "name": "Biomechanical Masterworks",
+      "pointsCost": 50,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "This upgrade can only be taken by your Warlord. This model:",
+        "Increases its Movement characteristic by 2\"",
+        "Increases its Weapons Skill by 2",
+        "Increases its Ballistics Skill by 2",
+        "Increases its Initiative characteristic by 2",
+        "Increases its Strength characteristic by 2",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 3",
+        "Gains the Feel No Pain 5+ ability",
+        "Must have a base greater than 60mm"
+      ],
+      "effectsHtml": "<p>This upgrade can only be taken by your Warlord. This model:</p>\n<ul>\n<li>Increases its Movement characteristic by 2\"</li>\n<li>Increases its Weapons Skill by 2</li>\n<li>Increases its Ballistics Skill by 2</li>\n<li>Increases its Initiative characteristic by 2</li>\n<li>Increases its Strength characteristic by 2</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 3</li>\n<li>Gains the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability</li>\n<li>Must have a base greater than 60mm</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "WS",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "BS",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Feel No Pain 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 50
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "microvoid-shield-generator",
+      "name": "Microvoid Shield Generator",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer gains the Invulnerable Save 5+ ability."
+      ],
+      "effectsHtml": "<p>The bearer gains the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "servitor-auto-proxy",
+      "name": "Servitor Auto-Proxy",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Allows Servitor models in a unit being led by a Techpriest to benefit from the Doctrina Imperative activated by that Techpriest for the Battle Round.",
+        "Expands Doctrina Imperative range for Skitarii units from 6\" to 12\""
+      ],
+      "effectsHtml": "<ul>\n<li>Allows Servitor models in a unit being led by a <span class=\"keyword\" data-term=\"techpriest\" data-type=\"keyword\">Techpriest</span> to benefit from the Doctrina Imperative activated by that Techpriest for the Battle Round.</li>\n<li>Expands Doctrina Imperative range for <span class=\"keyword\" data-term=\"skitarii\" data-type=\"keyword\">Skitarii</span> units from 6\" to 12\"</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "techno-kit",
+      "name": "Techno-Kit",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "During the Command Phase, Return Up to D3 models that were destroyed during the last Battle Round",
+        "Each model must first pass a Battle Shock Test before it can be returned to the battlefield. If it fails, the model is permanently destroyed for the remainder of the battle."
+      ],
+      "effectsHtml": "<ul>\n<li>During the Command Phase, Return Up to D3 models that were destroyed during the last Battle Round</li>\n<li>Each model must first pass a Battle Shock Test before it can be returned to the battlefield. If it fails, the model is permanently destroyed for the remainder of the battle.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "breacher-plate",
+      "name": "Breacher Plate",
+      "pointsCost": 12,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Armour Save characteristic to 2+",
+        "Increase Wounds characteristic by 2"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Armour Save characteristic to 2+</li>\n<li>Increase Wounds characteristic by 2</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "enhanced-data-tether",
+      "name": "Enhanced Data-Tether",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Allows Skitarii Infantry units to be treated as in range for a Doctrina Imperative when they are within 6\" of another Skitarii Infantry unit that is within Doctrina Imperative range, even if no models in the bearer's unit are within 6\" of a Techpriest Leader."
+      ],
+      "effectsHtml": "<p>Allows <span class=\"keyword\" data-term=\"skitarii\" data-type=\"keyword\">Skitarii</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> units to be treated as in range for a Doctrina Imperative when they are within 6\" of another <span class=\"keyword\" data-term=\"skitarii\" data-type=\"keyword\">Skitarii</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> unit that is within Doctrina Imperative range, even if no models in the bearer's unit are within 6\" of a <span class=\"keyword\" data-term=\"techpriest-leader\" data-type=\"keyword\">Techpriest Leader</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "broad-spectrum-data-tether",
+      "name": "Broad Spectrum Data-Tether",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Allows Skitarii Vehicle models to be treated as in range for a Doctrina Imperative when they are within 12\" of another Skitarii unit that is within Doctrina Imperative range, even if no models in the bearer's unit are within 6\" of a Techpriest Leader."
+      ],
+      "effectsHtml": "<p>Allows <span class=\"keyword\" data-term=\"skitarii-vehicle\" data-type=\"keyword\">Skitarii Vehicle</span> models to be treated as in range for a Doctrina Imperative when they are within 12\" of another <span class=\"keyword\" data-term=\"skitarii\" data-type=\"keyword\">Skitarii</span> unit that is within Doctrina Imperative range, even if no models in the bearer's unit are within 6\" of a <span class=\"keyword\" data-term=\"techpriest-leader\" data-type=\"keyword\">Techpriest Leader</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "omnispex",
+      "name": "Omnispex",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While the bearer is on the battlefield, enemy units cannot place models within 12\" of the bearer's unit when using the Enter the Battlefield from Strategic Reserves Action."
+      ],
+      "effectsHtml": "<p>While the bearer is on the battlefield, enemy units cannot place models within 12\" of the bearer's unit when using the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "auto-proxy",
+      "name": "Auto-proxy",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While the bearer is on the battlefield, the bearer's unit can benefit from the Doctrina Imperatives Army Rule."
+      ],
+      "effectsHtml": "<p>While the bearer is on the battlefield, the bearer's unit can benefit from the Doctrina Imperatives Army Rule.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer can make 2 attacks with Smoke Grenades as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 attacks with <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

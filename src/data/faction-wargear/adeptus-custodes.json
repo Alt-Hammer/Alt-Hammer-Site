@@ -1,0 +1,142 @@
+{
+  "faction": "Adeptus Custodes",
+  "slug": "adeptus-custodes",
+  "wargearItems": [
+    {
+      "itemId": "auric-halo",
+      "name": "Auric Halo",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Model gains the Invulnerable Save 4+ ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Model gains the <em>Invulnerable Save 4+</em> ability</li>\n</ul>"
+    },
+    {
+      "itemId": "relic-weapon",
+      "name": "Relic Weapon",
+      "pointsCost": 15,
+      "costNote": "weapon",
+      "category": null,
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n</ul>"
+    },
+    {
+      "itemId": "preasidium-shield",
+      "name": "Preasidium Shield",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Wounds characteristic by 2",
+        "Cannot be equipped by a model with the Mounted keyword"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Wounds characteristic by 2</li>\n<li>Cannot be equipped by a model with the <em>Mounted</em> keyword</li>\n</ul>"
+    },
+    {
+      "itemId": "vexilla",
+      "name": "Vexilla",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While a model equipped with a Vexilla is on the battlefield and positioned wholly within range of an objective marker, add 30 Wounds to the total Wounds count when determining which player controls that objective for the purpose of scoring Primary Objective Victory Points."
+      ],
+      "effectsHtml": "<p>While a model equipped with a Vexilla is on the battlefield and positioned wholly within range of an objective marker, add 30 Wounds to the total Wounds count when determining which player controls that objective for the purpose of scoring Primary Objective Victory Points.</p>"
+    },
+    {
+      "itemId": "allarus-terminator-armour",
+      "name": "Allarus Terminator Armour",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Strength characteristic by 1",
+        "Increase Toughness characteristic by 1",
+        "Reduce Movement characteristic by 1\"",
+        "Increase Wounds characteristic by 1",
+        "Reduce Initiative Characteristic by 1",
+        "Increase Armour Save characteristic to 2+",
+        "Ignore the effects of the Heavy keyword when making Attacks",
+        "Add the Deep Strike ability",
+        "Models equipped with Terminator armour count as 2 models for the purposes of the Transport ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Strength characteristic by 1</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Increase Wounds characteristic by 1</li>\n<li>Reduce Initiative Characteristic by 1</li>\n<li>Increase Armour Save characteristic to 2+</li>\n<li>Ignore the effects of the Heavy keyword when making Attacks</li>\n<li>Add the <em>Deep Strike </em>ability</li>\n<li>Models equipped with Terminator armour count as 2 models for the purposes of the Transport ability</li>\n</ul>"
+    },
+    {
+      "itemId": "dawneagle-jetbike",
+      "name": "Dawneagle Jetbike",
+      "pointsCost": 50,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Movement characteristic to 14\"",
+        "Increase Toughness characteristic to 8",
+        "Add the Mounted keyword",
+        "Add the Deep Strike keyword",
+        "Replace weapons equipped by the model with the following:",
+        "1 Interceptor Lance",
+        "1 of the following:",
+        "Hurricane Bolter",
+        "Cyclone Missile Launcher"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic to 14\"</li>\n<li>Increase Toughness characteristic to 8</li>\n<li>Add the <em>Mounted </em>keyword</li>\n<li>Add the <em>Deep Strike</em> keyword</li>\n<li>Replace weapons equipped by the model with the following:</li>\n<li>1 Interceptor Lance</li>\n<li>1 of the following:</li>\n<li>Hurricane Bolter</li>\n<li>Cyclone Missile Launcher</li>\n</ul>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 0,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "custom:hurricane-bolter",
+              "name": "Hurricane Bolter",
+              "kind": "custom",
+              "qty": 1,
+              "modifiers": [],
+              "points": null,
+              "parts": [
+                {
+                  "text": "Hurricane Bolter"
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "custom:cyclone-missile-launcher",
+              "name": "Cyclone Missile Launcher",
+              "kind": "custom",
+              "qty": 1,
+              "modifiers": [],
+              "points": null,
+              "parts": [
+                {
+                  "text": "Cyclone Missile Launcher"
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer can make 2 Smoke Grenades attacks as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> attacks as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>"
+    }
+  ]
+}

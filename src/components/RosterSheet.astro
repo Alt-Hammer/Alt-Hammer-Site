@@ -1,0 +1,34 @@
+---
+// src/components/RosterSheet.astro
+// The read-only army roster shell, shared by both routes that serve it:
+//   /list-export#d=<payload>  — the full-length link, prerendered
+//   /r/<id>                   — the short link, rendered on demand
+//
+// The markup is identical either way, and so is the client code: public/js/list-export.js
+// works out which form it was given and fetches the payload if it needs to. Keeping one
+// copy of the shell is what stops the two routes drifting apart.
+---
+
+<link rel="stylesheet" href="/styles/list-export.css" />
+
+<div class="lx-root" id="lx-root">
+  <!-- Actions: hidden until a list has loaded, and never printed -->
+  <div class="lx-actions" id="lx-actions" hidden>
+    <a class="lx-btn" id="lx-open-builder" href="/list-builder">Open in builder</a>
+    <button class="lx-btn" id="lx-copy-link" type="button">Copy link</button>
+    <button class="lx-btn" id="lx-copy-md" type="button">Copy as Markdown</button>
+    <button class="lx-btn" id="lx-print" type="button">Print</button>
+  </div>
+
+  <div class="lx-status" id="lx-status" aria-live="polite">Loading army list…</div>
+
+  <article class="lx-sheet" id="lx-sheet" hidden></article>
+</div>
+
+<!-- tooltip helpers first (no deps), then the engine, the codec, and the renderer -->
+<script is:inline src="/js/weapon-mods.js"></script>
+<script is:inline src="/js/ref-tooltips.js"></script>
+<script is:inline src="/js/keyword-tooltips.js"></script>
+<script is:inline src="/js/list-builder.js"></script>
+<script is:inline src="/js/list-share.js"></script>
+<script is:inline src="/js/list-export.js"></script>

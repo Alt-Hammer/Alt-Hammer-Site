@@ -1,0 +1,24 @@
+---
+// src/pages/r/[id].astro — the short-link form of the roster (/r/K3n8Qw2Lx7).
+//
+// A real route rather than a netlify.toml rewrite. Netlify evaluates redirect rules and
+// static-file resolution ahead of framework routing, which made a `/r/* -> /list-export`
+// rewrite unreliable — it never reached the page in local dev. Owning the route in Astro
+// means the same thing happens in dev and in production, with nothing to keep in step.
+//
+// The id is not read here: the shell is byte-identical for every list, and
+// public/js/list-export.js takes the id from the path and fetches the payload. That
+// keeps this response cacheable, which matters because it is rendered on demand.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RosterSheet from '../../components/RosterSheet.astro';
+
+export const prerender = false;
+
+// Invariant HTML, so let the CDN answer most requests without waking the function.
+Astro.response.headers.set('cache-control', 'public, max-age=3600');
+---
+
+<BaseLayout title="Army List" activePage="list-builder" showSidebar={false}>
+  <RosterSheet />
+</BaseLayout>

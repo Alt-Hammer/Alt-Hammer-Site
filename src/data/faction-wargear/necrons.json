@@ -1,0 +1,759 @@
+{
+  "faction": "Necrons",
+  "slug": "necrons",
+  "wargearItems": [
+    {
+      "itemId": "form-of-supreme-nobility",
+      "name": "Form of Supreme Nobility",
+      "pointsCost": 75,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "This upgrade can only be taken by your Warlord. This model:",
+        "Increases its Movement characteristic by 2\"",
+        "Increases its Weapons Skill by 2",
+        "Increases its Ballistics Skill by 2",
+        "Increases its Initiative characteristic by 2",
+        "Increases its Strength characteristic by 2",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 3",
+        "Gains the Relentless ability",
+        "Gains the Fearless ability",
+        "Must have a base size between 40mm to 60mm"
+      ],
+      "effectsHtml": "<p>This upgrade can only be taken by your Warlord. This model:</p>\n<ul>\n<li>Increases its Movement characteristic by 2\"</li>\n<li>Increases its Weapons Skill by 2</li>\n<li>Increases its Ballistics Skill by 2</li>\n<li>Increases its Initiative characteristic by 2</li>\n<li>Increases its Strength characteristic by 2</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 3</li>\n<li>Gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability</li>\n<li>Gains the <span class=\"keyword\" data-term=\"fearless\" data-type=\"keyword\">Fearless</span> ability</li>\n<li>Must have a base size between 40mm to 60mm</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "WS",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "BS",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Relentless",
+                "Fearless"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 75
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "command-barge",
+      "name": "Command Barge",
+      "pointsCost": 70,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "This upgrade can only be taken by your Warlord. This model:",
+        "Reduces its Activation Points characteristic by 1",
+        "Increases its Movement characteristic to 10\"",
+        "Increases its Strength characteristic by 1",
+        "Increases its Toughness characteristic by 3",
+        "Increases its Wounds characteristic by 5",
+        "Gains the Vehicle keyword",
+        "Gains the Hover keyword",
+        "Must select 1 of the following: 1 Gauss Cannon, 1 Tesla Cannon",
+        "When equipped with a Command Barge, a Necron Lord cannot Lead any other Necron units. However, a Necron Lord equipped with a Command Barge increases the number of friendly and enemy units eligible to be selected as part of the My Will Be Done ability from 3 to 5.",
+        "Cannot be equipped by a model equipped any of the following: Form of Supreme Nobility, Noble of the Skorpek Destroyer Cult, Noble of the Ophydian Destroyer Cult, Noble of the Ophydian Destroyer Cult, Mantle of Living Metal."
+      ],
+      "effectsHtml": "<p>This upgrade can only be taken by your Warlord. This model:</p>\n<ul>\n<li>Reduces its Activation Points characteristic by 1</li>\n<li>Increases its Movement characteristic to 10\"</li>\n<li>Increases its Strength characteristic by 1</li>\n<li>Increases its Toughness characteristic by 3</li>\n<li>Increases its Wounds characteristic by 5</li>\n<li>Gains the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> keyword</li>\n<li>Gains the <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover</span> keyword</li>\n<li>Must select 1 of the following: 1 <span class=\"weapon-ref\" data-weapon=\"gauss-cannon\">Gauss Cannon</span>, 1 <span class=\"weapon-ref\" data-weapon=\"tesla-cannon\">Tesla Cannon</span></li>\n</ul>\n<p>When equipped with a Command Barge, a Necron Lord cannot Lead any other Necron units. However, a Necron Lord equipped with a Command Barge increases the number of friendly and enemy units eligible to be selected as part of the <strong>My Will Be Done</strong> ability from 3 to 5.</p>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"form-of-supreme-nobility\">Form of Supreme Nobility</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-skorpek-destroyer-cult\">Noble of the Skorpek Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"mantle-of-living-metal\">Mantle of Living Metal</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "10\""
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 5
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Vehicle",
+                "Hover"
+              ],
+              "remove": [
+                "Infantry"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 70
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "noble-of-the-lokhust-destroyer-cult",
+      "name": "Noble of the Lokhust Destroyer Cult",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "This model:",
+        "Increases its Movement characteristic by 3\"",
+        "Increases its Toughness characteristic by 2",
+        "Gains the Mounted keyword",
+        "Gains the Hover keyword",
+        "Must be modelled such that it physically resembles a Lokhust Destroyer model",
+        "Must have a base size between 40mm to 60mm",
+        "Gains the ability to - and can only - lead Lokhust Destroyers",
+        "Cannot be equipped by a model equipped any of the following: Noble of the Skorpek Destroyer Cult, Noble of the Ophydian Destroyer Cult, Mantle of Living Metal."
+      ],
+      "effectsHtml": "<p>This model:</p>\n<ul>\n<li>Increases its Movement characteristic by 3\"</li>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Gains the <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover</span> keyword</li>\n<li>Must be modelled such that it physically resembles a Lokhust Destroyer model</li>\n<li>Must have a base size between 40mm to 60mm</li>\n<li>Gains the ability to - and can only - lead Lokhust Destroyers</li>\n</ul>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"noble-of-the-skorpek-destroyer-cult\">Noble of the Skorpek Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"mantle-of-living-metal\">Mantle of Living Metal</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted",
+                "Hover"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "noble-of-the-skorpek-destroyer-cult",
+      "name": "Noble of the Skorpek Destroyer Cult",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "This model:",
+        "Increases its Movement characteristic by 2\"",
+        "Increases its Toughness characteristic by 2",
+        "Increases its Initiative characteristic by 1",
+        "Gains the Relentless ability",
+        "Must be modelled such that it physically resembles a Skorpek Destroyer model",
+        "Must have a 60mm base",
+        "Gains the ability to - and can only - lead Skorpek Destroyers",
+        "Cannot be equipped by a model equipped any of the following: Noble of the Lokhust Destroyer Cult, Noble of the Ophydian Destroyer Cult, Mantle of Living Metal."
+      ],
+      "effectsHtml": "<p>This model:</p>\n<ul>\n<li>Increases its Movement characteristic by 2\"</li>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Increases its Initiative characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability</li>\n<li>Must be modelled such that it physically resembles a Skorpek Destroyer model</li>\n<li>Must have a 60mm base</li>\n<li>Gains the ability to - and can only - lead Skorpek Destroyers</li>\n</ul>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"noble-of-the-lokhust-destroyer-cult\">Noble of the Lokhust Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"mantle-of-living-metal\">Mantle of Living Metal</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Relentless"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "noble-of-the-ophydian-destroyer-cult",
+      "name": "Noble of the Ophydian Destroyer Cult",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "This model:",
+        "Increases its Movement characteristic by 4\"",
+        "Increases its Toughness characteristic by 2",
+        "Gains the Phase Shift ability",
+        "Gains the Relentless ability",
+        "Must be modelled such that it physically resembles an Ophydian Destroyer model",
+        "Must have a 50-60mm base",
+        "Gains the ability to - and can only - lead Skorpek Destroyers",
+        "Cannot be equipped by a model equipped any of the following: Noble of the Lokhust Destroyer Cult, Noble of the Skorpek Destroyer Cult, Mantle of Living Metal."
+      ],
+      "effectsHtml": "<p>This model:</p>\n<ul>\n<li>Increases its Movement characteristic by 4\"</li>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Gains the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift</span> ability</li>\n<li>Gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability</li>\n<li>Must be modelled such that it physically resembles an Ophydian Destroyer model</li>\n<li>Must have a 50-60mm base</li>\n<li>Gains the ability to - and can only - lead Skorpek Destroyers</li>\n</ul>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"noble-of-the-lokhust-destroyer-cult\">Noble of the Lokhust Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-skorpek-destroyer-cult\">Noble of the Skorpek Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"mantle-of-living-metal\">Mantle of Living Metal</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 4
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Phase Shift",
+                "Relentless"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "mantle-of-living-metal",
+      "name": "Mantle of Living Metal",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Mantle of Living Metal:",
+        "Add 2 to their Wounds characteristic",
+        "Gain the Invulnerable Save 5+ ability",
+        "Add 2 to the value of Necrodermis rolls",
+        "Cannot be equipped by a model equipped any of the following: Noble of the Lokhust Destroyer Cult, Noble of the Skorpek Destroyer Cult, Noble of the Ophydian Destroyer Cult."
+      ],
+      "effectsHtml": "<p>Models equipped with a Mantle of Living Metal:</p>\n<ul>\n<li>Add 2 to their Wounds characteristic</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n<li>Add 2 to the value of Necrodermis rolls</li>\n</ul>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"noble-of-the-lokhust-destroyer-cult\">Noble of the Lokhust Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-skorpek-destroyer-cult\">Noble of the Skorpek Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "armour-mount",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "resurrection-orb",
+      "name": "Resurrection Orb",
+      "pointsCost": 45,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While a model equipped with a Resurrection Orb is leading a unit, return D6+2 Wounds to that unit when using the Necrodermis ability."
+      ],
+      "effectsHtml": "<p>While a model equipped with a Resurrection Orb is leading a unit, return D6+2 Wounds to that unit when using the <strong>Necrodermis</strong> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 45
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "chronometron",
+      "name": "Chronometron",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While a model equipped with a Chronometron is leading a unit, once per Battle Round, that unit can Move immediately after being declared the target of an enemy Ranged attack."
+      ],
+      "effectsHtml": "<p>While a model equipped with a Chronometron is leading a unit, once per Battle Round, that unit can <span class=\"keyword\" data-term=\"move\" data-type=\"action\">Move</span> immediately after being declared the target of an enemy Ranged attack.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "phase-shifter",
+      "name": "Phase Shifter",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Phase Shifter gain the Phase Shift ability."
+      ],
+      "effectsHtml": "<p>Models equipped with a Phase Shifter gain the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Phase Shift"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "nightmare-shroud",
+      "name": "Nightmare Shroud",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Enemy units within 6\" of this model reduce their Leadership characteristic to 9+."
+      ],
+      "effectsHtml": "<p>Enemy units within 6\" of this model reduce their Leadership characteristic to 9+.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "veil-of-darkness",
+      "name": "Veil of Darkness",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While a model equipped with a Veil of Darkness is leading a unit, that unit has access to the Ascend to the Skies action and the Deep Strike ability."
+      ],
+      "effectsHtml": "<p>While a model equipped with a Veil of Darkness is leading a unit, that unit has access to the <span class=\"keyword\" data-term=\"ascend-to-the-skies\" data-type=\"action\">Ascend to the Skies</span> action and the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "nebuloscope",
+      "name": "Nebuloscope",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Ranged attacks by models equipped with a Nebuloscope - and by models being led by a model equipped with a Nebuloscope - gain the Ignores Cover ability. Weapons equipped by the unit that already possess the Ignores Cover ability instead add 1 to their Hit roles."
+      ],
+      "effectsHtml": "<p>Ranged attacks by models equipped with a Nebuloscope - and by models being led by a model equipped with a Nebuloscope - gain the <span class=\"keyword\" data-term=\"ignores-cover\" data-type=\"keyword\">Ignores Cover</span> ability. Weapons equipped by the unit that already possess the <span class=\"keyword\" data-term=\"ignores-cover\" data-type=\"keyword\">Ignores Cover</span> ability instead add 1 to their Hit roles.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "shadowloom",
+      "name": "Shadowloom",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer gains the Stealth ability."
+      ],
+      "effectsHtml": "<p>The bearer gains the <span class=\"wargear-ref\" data-wargear=\"stealth\">Stealth</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Stealth"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dispersion-shield",
+      "name": "Dispersion Shield",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Dispersion Shield gain the Invulnerable Save 5+ ability and increase their Toughness characteristic by 3 against Ranged attacks."
+      ],
+      "effectsHtml": "<p>Models equipped with a Dispersion Shield gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability and increase their Toughness characteristic by 3 against Ranged attacks.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "gloom-prism",
+      "name": "Gloom Prism",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Friendly Necron Infantry units with models that are within 6\" of a model equipped with a Gloom Prism gain the Feel No Pain 5+ ability."
+      ],
+      "effectsHtml": "<p>Friendly <span class=\"keyword\" data-term=\"necron\" data-type=\"keyword\">Necron</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> units with models that are within 6\" of a model equipped with a Gloom Prism gain the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

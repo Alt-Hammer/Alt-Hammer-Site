@@ -1,0 +1,1198 @@
+{
+  "faction": "Adeptus Ministorum",
+  "slug": "adeptus-ministorum",
+  "wargearItems": [
+    {
+      "itemId": "simulacrum-imperialis",
+      "name": "Simulacrum Imperialis",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While the bearer is within range of a Primary Objective Marker:",
+        "The bearer and friendly models within 12\" of them increase their Objective Control value by 1",
+        "Add 1 to the D6 roll for gaining Miracle dice",
+        "Cannot be equipped by a model with the Mounted or Walker keywords"
+      ],
+      "effectsHtml": "<p>While the bearer is within range of a Primary Objective Marker:</p>\n<ul>\n<li>The bearer and friendly models within 12\" of them increase their Objective Control value by 1</li>\n<li>Add 1 to the D6 roll for gaining Miracle dice</li>\n</ul>\n<p>Cannot be equipped by a model with the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> or <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> keywords</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "cherubin",
+      "name": "Cherubin",
+      "pointsCost": 5,
+      "costNote": "model",
+      "category": null,
+      "effects": [
+        "Units eligible to be equipped with Cherubin will state how many the unit can be equipped with. Each time a unit uses the Shoot Action, you can declare that the unit is using a Cherubin as part of that Action. When you do so, select 1 model in the unit making a Ranged attack. That model increases the Attacks characteristic of the Ranged weapon they are using by 2. Once those attacks are completed, remove the Cherubin model from the battlefield. A unit can use any number of Cherubin you choose as part of the Shoot Action, but models in the unit can only benefit from 1 Cherubin ability at a time. In other words, 2 Cherubin cannot be used on 1 model to increase that model's Ranged attacks characteristic by 4."
+      ],
+      "effectsHtml": "<p>Units eligible to be equipped with Cherubin will state how many the unit can be equipped with. Each time a unit uses the <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action, you can declare that the unit is using a Cherubin as part of that Action. When you do so, select 1 model in the unit making a Ranged attack. That model increases the Attacks characteristic of the Ranged weapon they are using by 2. Once those attacks are completed, remove the Cherubin model from the battlefield. A unit can use any number of Cherubin you choose as part of the <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action, but models in the unit can only benefit from 1 Cherubin ability at a time. In other words, 2 Cherubin cannot be used on 1 model to increase that model's Ranged attacks characteristic by 4.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "relic-weapon",
+      "name": "Relic Weapon",
+      "pointsCost": 10,
+      "costNote": "weapon",
+      "category": null,
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponClass",
+                "values": [
+                  "Ranged",
+                  "Melee"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "jump-pack",
+      "name": "Jump Pack",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Movement characteristic to 12\"",
+        "Add the Deep Strike ability",
+        "Add the Jump Pack keyword.",
+        "Models equipped with a Jump Pack cannot be deployed in or embark in a Transport",
+        "Models equipped with a Jump Pack cannot be equipped with Ranged weapons that have the Heavy keyword."
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic to 12\"</li>\n<li>Add the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Add the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> keyword.</li>\n<li>Models equipped with a Jump Pack cannot be deployed in or embark in a <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span></li>\n<li>Models equipped with a Jump Pack cannot be equipped with Ranged weapons that have the <span class=\"keyword\" data-term=\"heavy\" data-type=\"keyword\">Heavy</span> keyword.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Deep Strike",
+                "Jump Pack"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "wargear-mount",
+          "cap": null
+        }
+      }
+    },
+    {
+      "itemId": "paragon-warsuit",
+      "name": "Paragon Warsuit",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Paragon Warsuit:",
+        "Gain the Walker keyword",
+        "Increase their Movement characteristic to 8\"",
+        "Increase their Strength characteristic by 3",
+        "Increase their Toughness characteristic by 3",
+        "Increase their Wounds characteristic by 3",
+        "Increase their Armour Save characteristic to 2+",
+        "Gain the Invulnerable Save 5+ ability",
+        "Models equipped with a Paragon Warsuit do not select Ranged and Melee weapon options detailed under their unit's Wargear Options, and must make selections as detailed below.",
+        "Each model must be equipped with 1 of the following Primary Ranged Weapons:",
+        "Heavy Bolter",
+        "Heavy Flamer",
+        "Multi-melta",
+        "Each model must be equipped with 1 of the following Secondary Ranged Weapons:",
+        "1x Twin-linked Storm Bolter",
+        "1x Twin-linked Grenade Launcher",
+        "1x Twin-linked Flamer",
+        "1x Twin-linked Meltagun",
+        "Each model must be equipped with 1 of the following Primary Melee Weapons:",
+        "Paragon War Blade",
+        "Paragon War Mace",
+        "Paragon War Spear",
+        "Any model can replace its Bolt Pistol with 1 of the following:",
+        "Hand Flamer",
+        "Melta Pistol",
+        "Each model can be equipped with any of the following:",
+        "Frag Grenades",
+        "Krak Grenades",
+        "Any eligible weapon equipped by a Leader model equipped with a Paragon Warsuit can be upgraded to a Relic Weapon.",
+        "Leader models equipped with a Paragon Warsuit can only Lead units that are also equipped with Paragon Warsuits."
+      ],
+      "effectsHtml": "<p>Models equipped with a <span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span>:</p>\n<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> keyword</li>\n<li>Increase their Movement characteristic to 8\"</li>\n<li>Increase their Strength characteristic by 3</li>\n<li>Increase their Toughness characteristic by 3</li>\n<li>Increase their Wounds characteristic by 3</li>\n<li>Increase their Armour Save characteristic to 2+</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n</ul>\n<p>Models equipped with a <span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span> do not select Ranged and Melee weapon options detailed under their unit's Wargear Options, and must make selections as detailed below.</p>\n<p>Each model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p>Heavy Bolter</p>\n<p>Heavy Flamer</p>\n<p>Multi-melta</p>\n<p>Each model must be equipped with 1 of the following Secondary Ranged Weapons:</p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>Each model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p>Paragon War Blade</p>\n<p>Paragon War Mace</p>\n<p>Paragon War Spear</p>\n<p>Any model can replace its <span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span> with 1 of the following:</p>\n<p>Hand Flamer</p>\n<p>Melta Pistol</p>\n<p>Each model can be equipped with any of the following:</p>\n<p>Frag Grenades</p>\n<p>Krak Grenades</p>\n<p>Any eligible weapon equipped by a <span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> model equipped with a <span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span> can be upgraded to a <span class=\"wargear-ref\" data-wargear=\"relic-weapon\">Relic Weapon</span>.</p>\n<p><span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> models equipped with a <span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span> can only Lead units that are also equipped with Paragon Warsuits.</p>",
+      "subSelections": [
+        {
+          "id": "primary-ranged-weapons",
+          "label": "Primary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:heavy-bolter",
+              "name": "Heavy Bolter",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-bolter",
+                  "name": "Heavy Bolter",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-flamer",
+              "name": "Heavy Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 15,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-flamer",
+                  "name": "Heavy Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:multi-melta",
+              "name": "Multi-melta",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 22,
+              "parts": [
+                {
+                  "ref": "weapon:multi-melta",
+                  "name": "Multi-melta",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "secondary-ranged-weapons",
+          "label": "Secondary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:storm-bolter#m-twin-linked",
+              "name": "Storm Bolter",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:storm-bolter",
+                  "name": "Storm Bolter",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:grenade-launcher#m-twin-linked",
+              "name": "Grenade Launcher",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 16,
+              "parts": [
+                {
+                  "ref": "weapon:grenade-launcher",
+                  "name": "Grenade Launcher",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:flamer#m-twin-linked",
+              "name": "Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 16,
+              "parts": [
+                {
+                  "ref": "weapon:flamer",
+                  "name": "Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:meltagun#m-twin-linked",
+              "name": "Meltagun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:meltagun",
+                  "name": "Meltagun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "primary-melee-weapons",
+          "label": "Primary Melee Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:paragon-war-blade",
+              "name": "Paragon War Blade",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 15,
+              "parts": [
+                {
+                  "ref": "weapon:paragon-war-blade",
+                  "name": "Paragon War Blade",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:paragon-war-mace",
+              "name": "Paragon War Mace",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:paragon-war-mace",
+                  "name": "Paragon War Mace",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:paragon-war-spear",
+              "name": "Paragon War Spear",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:paragon-war-spear",
+                  "name": "Paragon War Spear",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "group-4",
+          "label": "",
+          "pick": {
+            "min": 0,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:hand-flamer",
+              "name": "Hand Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 4,
+              "parts": [
+                {
+                  "ref": "weapon:hand-flamer",
+                  "name": "Hand Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:melta-pistol",
+              "name": "Melta Pistol",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:melta-pistol",
+                  "name": "Melta Pistol",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ],
+          "replaces": "Bolt Pistol"
+        },
+        {
+          "id": "group-5",
+          "label": "",
+          "pick": {
+            "min": 0,
+            "max": null
+          },
+          "options": [
+            {
+              "ref": "weapon:frag-grenades",
+              "name": "Frag Grenades",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 1,
+              "parts": [
+                {
+                  "ref": "weapon:frag-grenades",
+                  "name": "Frag Grenades",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:krak-grenades",
+              "name": "Krak Grenades",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 2,
+              "parts": [
+                {
+                  "ref": "weapon:krak-grenades",
+                  "name": "Krak Grenades",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "suppressesWeaponOptions": true,
+      "relicUpgrade": {
+        "modifier": "Relic Weapon",
+        "modifierRef": "wargear:relic-weapon",
+        "pointsPerWeapon": 10,
+        "excludeKeyword": "Grenade",
+        "requiresLeader": true
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "8\""
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Walker",
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "wargear-mount",
+          "cap": null
+        }
+      }
+    },
+    {
+      "itemId": "rod-of-office",
+      "name": "Rod of Office",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Attacks made by the bearer and the unit they are leading gain the Precision ability."
+      ],
+      "effectsHtml": "<p>Attacks made by the bearer and the unit they are leading gain the <span class=\"keyword\" data-term=\"precision\" data-type=\"keyword\">Precision</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "artificer-armour",
+      "name": "Artificer Armour",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Armour Save characteristic to 2+",
+        "Gain the Feel No Pain 5+ ability.",
+        "Gain the Feel No Pain 4+ ability against Psychic attacks and [Psychic] abilities.",
+        "Cannot be equipped by a model with the Jump Pack, Mounted, or Walker keywords"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Armour Save characteristic to 2+</li>\n<li>Gain the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability.</li>\n<li>Gain the <span class=\"keyword\" data-term=\"feel-no-pain-4\" data-type=\"keyword\">Feel No Pain 4+</span> ability against Psychic attacks and [Psychic] abilities.</li>\n<li>Cannot be equipped by a model with the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span>, <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span>, or <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> keywords</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Feel No Pain 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "wargear-mount",
+          "cap": null
+        }
+      }
+    },
+    {
+      "itemId": "iron-halo",
+      "name": "Iron Halo",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer increases its Toughness characteristic by 2 against Ranged attacks.",
+        "Gain the Invulnerable Save 4+ ability"
+      ],
+      "effectsHtml": "<ul>\n<li>The bearer increases its Toughness characteristic by 2 against Ranged attacks.</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 4+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "iron-surplice",
+      "name": "Iron Surplice",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Add 1 to Toughness characteristic",
+        "Add 2 to Wounds characteristic",
+        "Cannot be equipped by a model with the Jump Pack, Mounted, or Walker keywords"
+      ],
+      "effectsHtml": "<ul>\n<li>Add 1 to Toughness characteristic</li>\n<li>Add 2 to Wounds characteristic</li>\n<li>Cannot be equipped by a model with the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span>, <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span>, or <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> keywords</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "wargear-mount",
+          "cap": null
+        }
+      }
+    },
+    {
+      "itemId": "rosarius",
+      "name": "Rosarius",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Rosarius:",
+        "Increase their Toughness characteristic by 2 against Ranged attacks",
+        "Gain the Invulnerable Save 4+ ability."
+      ],
+      "effectsHtml": "<p>Models equipped with a Rosarius:</p>\n<ul>\n<li>Increase their Toughness characteristic by 2 against Ranged attacks</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability.</li>\n</ul>"
+    },
+    {
+      "itemId": "medi-kit",
+      "name": "Medi-kit",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "While a model equipped with a Medi-kit is on the battlefield it is eligible to use one of the following abilities during your Command Phase:",
+        "Roll a D3 and return the number of lost wounds equal to the resulting value.",
+        "Roll a D6. On a roll of a 4 or higher, return a destroyed Character to the unit with 2 Wounds remaining. This ability can only be used when a Character from this unit has been destroyed in the previous Battle Round."
+      ],
+      "effectsHtml": "<p>While a model equipped with a Medi-kit is on the battlefield it is eligible to use one of the following abilities during your Command Phase:</p>\n<ul>\n<li>Roll a D3 and return the number of lost wounds equal to the resulting value.</li>\n<li>Roll a D6. On a roll of a 4 or higher, return a destroyed <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> to the unit with 2 Wounds remaining. This ability can only be used when a <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> from this unit has been destroyed in the previous Battle Round.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "sororitas-sarcophagus",
+      "name": "Sororitas Sarcophagus",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer gains the Adepta Sororitas keyword."
+      ],
+      "effectsHtml": "<p>The bearer gains the <span class=\"keyword\" data-term=\"adepta-sororitas\" data-type=\"keyword\">Adepta Sororitas</span> keyword.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Adepta Sororitas"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "sacred-tome",
+      "name": "Sacred Tome",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Add 1 to this unit's Hymns of Battle roll."
+      ],
+      "effectsHtml": "<p>Add 1 to this unit's Hymns of Battle roll.</p>"
+    },
+    {
+      "itemId": "storm-shield",
+      "name": "Storm Shield",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Storm Shield:",
+        "Increase their Wounds characteristic by 2",
+        "Reduce the Armour Piercing characteristic of attacks against the bearer by 1 (to a minimum of 0)",
+        "Reduce the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)",
+        "Cannot be equipped by a model with the Jump Pack, Mounted, or Walker keywords"
+      ],
+      "effectsHtml": "<p>Models equipped with a Storm Shield:</p>\n<ul>\n<li>Increase their Wounds characteristic by 2</li>\n<li>Reduce the Armour Piercing characteristic of attacks against the bearer by 1 (to a minimum of 0)</li>\n<li>Reduce the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)</li>\n<li>Cannot be equipped by a model with the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span>, <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span>, or <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> keywords</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "wargear-mount",
+          "cap": null
+        }
+      }
+    },
+    {
+      "itemId": "combi-bolter",
+      "name": "Combi-Bolter",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer is equipped with a Boltgun",
+        "The bearer must be equipped with 1 of the following:",
+        "Flamer",
+        "Meltagun",
+        "Plasma Gun"
+      ],
+      "effectsHtml": "<p>The bearer is equipped with a <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p>The bearer must be equipped with 1 of the following:</p>\n<p>Flamer</p>\n<p>Meltagun</p>\n<p>Plasma Gun</p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:flamer",
+              "name": "Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:flamer",
+                  "name": "Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:meltagun",
+              "name": "Meltagun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:meltagun",
+                  "name": "Meltagun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:plasma-gun",
+              "name": "Plasma Gun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:plasma-gun",
+                  "name": "Plasma Gun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "includedWeapons": [
+        {
+          "ref": "weapon:boltgun",
+          "name": "Boltgun",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 4,
+          "parts": [
+            {
+              "ref": "weapon:boltgun",
+              "name": "Boltgun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dozer-blade-mount",
+      "name": "Dozer Blade Mount",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Dozer Blade Mount:",
+        "Are equipped with a Dozer Blade",
+        "Improve their Breach Test roll by 1",
+        "Do not reduce their Movement characteristic by 2\" when moving through Difficult Ground"
+      ],
+      "effectsHtml": "<p>Models equipped with a Dozer Blade Mount:</p>\n<ul>\n<li><span class=\"keyword\" data-term=\"are-equipped-with-a\" data-type=\"keyword\">Are equipped with a </span><span class=\"weapon-ref\" data-weapon=\"dozer-blade\">Dozer Blade</span></li>\n<li>Improve their Breach Test roll by 1</li>\n<li>Do not reduce their Movement characteristic by 2\" when moving through <span class=\"keyword\" data-term=\"difficult-ground\" data-type=\"keyword\">Difficult Ground</span></li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:dozer-blade",
+          "name": "Dozer Blade",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": null,
+          "parts": [
+            {
+              "ref": "weapon:dozer-blade",
+              "name": "Dozer Blade",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer can make 2 Smoke Grenades attacks as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> attacks as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

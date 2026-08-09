@@ -1,0 +1,247 @@
+{
+  "faction": "Tyranids",
+  "slug": "tyranids",
+  "detachmentPoints": 1,
+  "introText": "Your Tyranid army can select 1 of the following Detachment Traits.",
+  "detachmentTraits": [
+    {
+      "traitId": "endless-swarm",
+      "name": "Endless Swarm",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Each time a Tyranid Battleline Beast model from your army is destroyed, roll 1 D6. On a 5+ place that model into a group off of the table. This is your next Endless Swarm Wave. At the start of the next Battle Round, organize the models in your Endless Swarm Wave into units of matching models - 1 unit per model type (ie, 1 unit of Termagaunts, 1 unit of Hormagaunts, etc.), which are then considered to be in Strategic Reserves. These units must then be Activated (following the standard rules for activating units in Strategic Reserves) and must be placed anywhere on the battlefield so that it is wholly within 6” of any Battlefield Edge in your Deployment Zone."
+      ],
+      "effectsHtml": "<p>Each time a <span class=\"keyword\" data-term=\"tyranid-battleline-beast\" data-type=\"keyword\">Tyranid Battleline Beast</span> model from your army is destroyed, roll 1 D6. On a 5+ place that model into a group off of the table. This is your next Endless Swarm Wave. At the start of the next Battle Round, organize the models in your Endless Swarm Wave into units of matching models - 1 unit per model type (ie, 1 unit of Termagaunts, 1 unit of Hormagaunts, etc.), which are then considered to be in Strategic Reserves. These units must then be Activated (following the standard rules for activating units in Strategic Reserves) and must be placed anywhere on the battlefield so that it is wholly within 6\" of any Battlefield Edge in your Deployment Zone.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "vanguard-invaders",
+      "name": "Vanguard Invaders",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "The following units gain the Battleline keyword: Genestealers, Von Ryans Leapers, Lictor",
+        "The following units lose the Battleline keyword: Termagaunts, Hormagaunts, Warriors"
+      ],
+      "effectsHtml": "<p>The following units gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword: Genestealers, Von Ryans Leapers, Lictor</p>\n<p>The following units lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword: Termagaunts, Hormagaunts, Warriors</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Termagaunts"
+                ],
+                [
+                  "Hormagaunts"
+                ],
+                [
+                  "Warriors"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Genestealers"
+                ],
+                [
+                  "Von Ryans Leapers"
+                ],
+                [
+                  "Lictor"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "crusher-stampede",
+      "name": "Crusher Stampede",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "The following units gain the Battleline keyword: Carnifexes, Maleceptor",
+        "The following units lose the Battleline keyword: Termagaunts, Hormagaunts, Warriors"
+      ],
+      "effectsHtml": "<p>The following units gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword: Carnifexes, Maleceptor</p>\n<p>The following units lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword: Termagaunts, Hormagaunts, Warriors</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Termagaunts"
+                ],
+                [
+                  "Hormagaunts"
+                ],
+                [
+                  "Warriors"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Carnifexes"
+                ],
+                [
+                  "Maleceptor"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "aerial-scourge",
+      "name": "Aerial Scourge",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "The following units gain the Battleline keyword: Gargoyles, Harpy",
+        "The following units lose the Battleline keyword: Termagaunts, Hormagaunts, Warriors"
+      ],
+      "effectsHtml": "<p>The following units gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword: Gargoyles, Harpy</p>\n<p>The following units lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword: Termagaunts, Hormagaunts, Warriors</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Termagaunts"
+                ],
+                [
+                  "Hormagaunts"
+                ],
+                [
+                  "Warriors"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Gargoyles"
+                ],
+                [
+                  "Harpy"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    }
+  ]
+}

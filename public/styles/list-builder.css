@@ -1,0 +1,1848 @@
+/* ==========================================================================
+   Alt-Hammer 40,000 — List Builder
+   Three-panel interactive army builder.
+   Extends global.css design tokens; does not introduce new colour variables.
+   ========================================================================== */
+
+/* ── Override main-content constraints when the list builder is present ───── */
+/* :has() has broad modern support (Chrome 105+, Firefox 121+, Safari 15.4+)  */
+.main-content:has(.lb-root) {
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: calc(100vh - var(--header-height));
+}
+
+.lb-root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ── Three-panel grid ─────────────────────────────────────────────────────── */
+
+.lb-app {
+  display: grid;
+  grid-template-columns: 280px 1fr 360px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ── Panel shell ──────────────────────────────────────────────────────────── */
+
+.lb-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid var(--color-border);
+}
+
+.lb-panel:last-child {
+  border-right: none;
+}
+
+.lb-panel-header {
+  flex-shrink: 0;
+  background: var(--color-surface-2);
+  border-bottom: 2px solid var(--color-border-mid);
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.lb-panel-title {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-top: var(--sp-2);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.lb-panel-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ── Browser panel (left) ─────────────────────────────────────────────────── */
+
+.lb-panel--browser {
+  background: var(--color-surface-1);
+}
+
+.lb-faction-select {
+  width: 100%;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: var(--sp-2) var(--sp-3);
+  margin-bottom: var(--sp-2);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  /* Caret arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a6030'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.lb-faction-select option {
+  background: var(--color-surface-3);
+  color: var(--color-text-primary);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Battle size controls */
+.lb-battle-sizes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+/* ±10 points adjuster */
+.lb-pts-adjuster {
+  display: flex;
+  align-items: stretch;
+  gap: var(--sp-1);
+}
+
+.lb-pts-adj-btn {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-secondary);
+  padding: var(--sp-1) var(--sp-3);
+  cursor: pointer;
+  transition: all 0.12s ease;
+  flex-shrink: 0;
+}
+
+.lb-pts-adj-btn:hover {
+  border-color: var(--color-gold-dim);
+  color: var(--color-gold);
+}
+
+.lb-pts-current {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  padding: var(--sp-1) var(--sp-2);
+}
+
+.lb-pts-value {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.lb-pts-label-sm {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Named battle size preset buttons */
+.lb-size-presets {
+  display: flex;
+  gap: var(--sp-1);
+}
+
+.lb-size-btn {
+  flex: 1;
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: var(--sp-1) 2px;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.lb-size-btn:hover {
+  border-color: var(--color-gold-dim);
+  color: var(--color-text-secondary);
+}
+
+.lb-size-btn--active {
+  background: rgba(201, 168, 76, 0.1);
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+/* Category header in browser */
+.lb-cat-group {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-cat-header {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Unit card in browser */
+.lb-unit-card {
+  padding: var(--sp-3) var(--sp-4);
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.1s ease;
+}
+
+.lb-unit-card:last-child {
+  border-bottom: none;
+}
+
+.lb-unit-card:hover {
+  background: var(--color-surface-2);
+}
+
+.lb-unit-card--disabled {
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.lb-unit-card-name {
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin-bottom: var(--sp-1);
+}
+
+.lb-unit-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.lb-unit-pts {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-gold);
+}
+
+.lb-pts-label {
+  font-size: 0.58rem;
+  color: var(--color-text-muted);
+  margin-left: 2px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+
+.lb-add-btn {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--color-gold-dim);
+  color: var(--color-gold);
+  padding: 2px var(--sp-3);
+  cursor: pointer;
+  transition: all 0.12s ease;
+  flex-shrink: 0;
+}
+
+.lb-add-btn:hover:not(:disabled) {
+  background: rgba(201, 168, 76, 0.1);
+  border-color: var(--color-gold);
+}
+
+.lb-add-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* ── Army list panel (centre) ─────────────────────────────────────────────── */
+
+.lb-panel--list {
+  background: var(--color-base);
+}
+
+/* Total / points display */
+.lb-total-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-1);
+  margin-bottom: var(--sp-2);
+}
+
+.lb-total-pts {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.lb-total-pts--over {
+  color: var(--color-red-bright);
+}
+
+.lb-total-sep {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-border-mid);
+  padding: 0 2px;
+}
+
+.lb-total-target {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Force org status */
+.lb-forceorg-status {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 0;
+}
+
+.lb-status-ok {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: #50c878;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lb-status-violation {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--color-red-bright);
+  letter-spacing: 0.04em;
+}
+
+.lb-status-warning {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--color-gold);
+  letter-spacing: 0.04em;
+}
+
+/* Army list category headers */
+.lb-list-cat {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-list-cat-header {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: var(--sp-2) var(--sp-4);
+  background: var(--color-surface-1);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Army list unit row */
+.lb-list-unit {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-3) var(--sp-3) var(--sp-4);
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background 0.1s ease;
+  border-left: 2px solid transparent;
+}
+
+.lb-list-unit:hover {
+  background: var(--color-surface-1);
+}
+
+.lb-list-unit--selected {
+  background: rgba(201, 168, 76, 0.06);
+  border-left-color: var(--color-gold);
+}
+
+.lb-list-unit-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.lb-list-unit-name {
+  font-family: var(--font-display);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lb-warlord-badge {
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  margin-right: 4px;
+}
+
+.lb-list-unit-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-top: 2px;
+}
+
+.lb-model-count {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.lb-remove-btn {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s ease;
+  padding: 0;
+}
+
+.lb-remove-btn:hover {
+  border-color: var(--color-red-bright);
+  color: var(--color-red-bright);
+  background: rgba(155, 32, 32, 0.12);
+}
+
+/* Detachment traits in list panel */
+.lb-dt-section {
+  padding: var(--sp-4);
+  border-top: 2px solid var(--color-border-mid);
+  background: var(--color-surface-1);
+}
+
+.lb-dt-header {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--sp-3);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lb-dt-pool {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.lb-dt-trait {
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-dt-trait:last-child {
+  border-bottom: none;
+}
+
+.lb-dt-trait--disabled {
+  opacity: 0.38;
+}
+
+.lb-dt-trait--selected .lb-dt-trait-name {
+  color: var(--color-gold);
+}
+
+.lb-dt-trait-label {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  cursor: pointer;
+}
+
+.lb-dt-checkbox {
+  margin: 0;
+  accent-color: var(--color-gold);
+  flex-shrink: 0;
+  position: relative;
+  top: 1px;
+}
+
+.lb-dt-trait-name {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  flex: 1;
+}
+
+.lb-dt-cost {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-gold-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lb-dt-note {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: 2px;
+  padding-left: 20px;
+}
+
+.lb-dt-subheader {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: var(--sp-3) 0 var(--sp-1);
+  padding-bottom: var(--sp-1);
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.lb-dt-effects {
+  margin-top: var(--sp-1);
+  padding-left: 20px;
+}
+
+.lb-dt-effects-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.lb-dt-effects-toggle::-webkit-details-marker { display: none; }
+
+.lb-dt-effects-toggle::before {
+  content: '▶ ';
+  font-size: 0.5rem;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+details[open] .lb-dt-effects-toggle::before {
+  content: '▼ ';
+}
+
+.lb-dt-effects-toggle:hover {
+  color: var(--color-gold-dim);
+}
+
+.lb-dt-effects-body {
+  margin-top: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--color-surface-2);
+  border-left: 2px solid var(--color-border-mid);
+}
+
+/* Trait rules are authored prose: paragraphs, bullet lists and the site's
+   keyword/weapon/wargear spans, same as the faction pages. */
+.lb-dt-effects-body p,
+.lb-dt-effects-body li {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.lb-dt-effects-body > * + * { margin-top: var(--sp-2); }
+
+.lb-dt-effects-body ul {
+  list-style: none;
+  padding-left: var(--sp-3);
+}
+
+.lb-dt-effects-body li { position: relative; }
+
+.lb-dt-effects-body li + li { margin-top: var(--sp-1); }
+
+.lb-dt-effects-body li::before {
+  content: '•';
+  position: absolute;
+  left: calc(var(--sp-3) * -1);
+  color: var(--color-gold-dim);
+}
+
+/* ── Trait sub-selections (Aspect Host: which unit gains Battleline) ───────── */
+
+.lb-dt-choices {
+  margin-top: var(--sp-2);
+  padding-left: 20px;
+}
+
+.lb-dt-choice {
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--color-surface-2);
+  border-left: 2px solid var(--color-gold-dim);
+}
+
+/* Unmade decision — the list is not finished until this is answered. */
+.lb-dt-choice--owed { border-left-color: var(--color-red-bright); }
+
+.lb-dt-choice-prompt {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: var(--sp-2);
+}
+
+.lb-dt-choice .lb-opt-row { font-size: 0.75rem; }
+
+/* ── Unit options panel (right) ───────────────────────────────────────────── */
+
+.lb-panel--options {
+  background: var(--color-surface-1);
+}
+
+/* Two-zone layout: fixed (stat block etc.) + scrollable (profile accordions) */
+.lb-panel--options .lb-panel-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+.lb-options-fixed {
+  flex-shrink: 0;
+}
+
+.lb-options-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 0;
+}
+
+/* ── Profile section accordions ───────────────────────────────────────────── */
+
+.lb-profile-section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-profile-section:last-child {
+  border-bottom: none;
+}
+
+.lb-profile-section-summary {
+  display: flex;
+  align-items: center;
+  padding: var(--sp-2) var(--sp-4);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  background: var(--color-surface-2);
+  transition: background 0.1s ease, color 0.1s ease;
+  gap: var(--sp-2);
+}
+
+.lb-profile-section-summary::-webkit-details-marker { display: none; }
+
+.lb-profile-section-summary::before {
+  content: '▶';
+  font-size: 0.44rem;
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  transition: transform 0.15s ease;
+}
+
+details[open] .lb-profile-section-summary::before {
+  transform: rotate(90deg);
+}
+
+.lb-profile-section-summary:hover {
+  background: var(--color-surface-3);
+  color: var(--color-gold);
+}
+
+.lb-profile-section-body {
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--color-base);
+}
+
+/* ── Profile prose (HTML from MDX unit profile sections) ──────────────────── */
+
+.lb-profile-prose {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.lb-profile-prose p {
+  margin: 0 0 var(--sp-2);
+}
+
+.lb-profile-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.lb-profile-prose strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.lb-profile-prose ul {
+  margin: var(--sp-1) 0 var(--sp-2) var(--sp-4);
+  padding: 0;
+  list-style: disc;
+}
+
+.lb-profile-prose li {
+  margin-bottom: 2px;
+}
+
+.lb-profile-prose span.weapon-ref,
+.lb-profile-prose span.wargear-ref {
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+/* ── Wargear controls separator (interactive controls below prose) ─────────── */
+
+.lb-wargear-controls {
+  /* default: no visual separator (used in fallback sections with no prose) */
+}
+
+.lb-wargear-controls--below-prose {
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--color-border-mid);
+}
+
+/* Stat block */
+.lb-statblock {
+  background: var(--color-surface-2);
+  border-bottom: 2px solid var(--color-border-mid);
+}
+
+.lb-statblock-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-2) var(--sp-4);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--sp-3);
+}
+
+.lb-statblock-pts {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  white-space: nowrap;
+}
+
+.lb-statblock-cat {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.lb-statblock-row {
+  display: grid;
+  /* Activation Points leads, and its "Act.Pts." heading is far wider than the
+     single-letter ones, so that column gets the extra room. */
+  grid-template-columns: 1.5fr repeat(10, 1fr);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-stat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--sp-2) 2px;
+  border-right: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.lb-stat-cell:last-child {
+  border-right: none;
+}
+
+.lb-stat-label {
+  font-family: var(--font-display);
+  font-size: 0.48rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: block;
+  line-height: 1;
+  white-space: nowrap;   /* "Act.Pts." must not wrap mid-heading */
+  margin-bottom: 2px;
+}
+
+.lb-stat-value {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  display: block;
+  line-height: 1;
+}
+
+/* R1: characteristic changed by the selected armour/equipment */
+.lb-stat-cell--mod { background: var(--color-surface-3); }
+.lb-stat-cell--mod .lb-stat-value { color: var(--color-gold); }
+.lb-stat-cell--mod .lb-stat-label { color: var(--color-gold-dim); }
+
+/* Wargear only some models carry. The row above resolves the whole model type, so the
+   models that diverge from it are footnoted rather than folded into the statline. */
+.lb-partial-notes {
+  padding: var(--sp-1) var(--sp-3) 0;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  letter-spacing: .02em;
+  color: var(--color-text-secondary);
+}
+
+.lb-partial-note { position: relative; padding-left: var(--sp-4); }
+.lb-partial-note::before { content: "\2192"; position: absolute; left: 0; color: var(--color-gold-dim); }
+.lb-partial-delta { font-family: var(--font-mono); color: var(--color-gold); }
+.lb-partial-src { color: var(--color-text-muted); }
+
+/* Multi-statline model groups */
+.lb-statblock--multi {
+  border-bottom: none;
+}
+
+.lb-model-group {
+  border-bottom: 2px solid var(--color-border-mid);
+  background: var(--color-surface-2);
+}
+
+.lb-model-group:last-child {
+  border-bottom: none;
+}
+
+.lb-model-group-label {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  padding: var(--sp-2) var(--sp-4) 0;
+}
+
+.lb-squad-size--model-type {
+  padding: var(--sp-2) var(--sp-4);
+}
+
+.lb-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: var(--sp-2) var(--sp-4);
+}
+
+.lb-keyword {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  padding: 1px var(--sp-2);
+}
+
+/* Section groups in options */
+.lb-section {
+  padding: var(--sp-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-section:last-child {
+  border-bottom: none;
+}
+
+.lb-section-label {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--sp-3);
+}
+
+.lb-section-note {
+  font-weight: 400;
+  color: var(--color-text-disabled);
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
+  margin-left: var(--sp-2);
+}
+
+/* Squad size stepper */
+.lb-squad-size {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.lb-squad-btn {
+  width: 28px;
+  height: 28px;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease;
+  flex-shrink: 0;
+}
+
+.lb-squad-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.lb-squad-count {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  min-width: 28px;
+  text-align: center;
+}
+
+.lb-squad-range {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+}
+
+/* R5: variant composition (Sternguard ⊻ Vanguard) */
+.lb-squad-btn:disabled { opacity: .3; cursor: not-allowed; }
+.lb-squad-btn:disabled:hover { border-color: var(--color-border-mid); color: var(--color-text-secondary); }
+.lb-squad-size--locked { opacity: .5; }
+/* transform: a model type whose count is derived (Special Weapons Guardsman = 6 − 2×HWT) */
+.lb-squad-size--derived .lb-squad-range { color: var(--color-text-muted); }
+.lb-variant-note { margin: 2px 0 var(--sp-2); padding: 0 var(--sp-3); font-size: 0.7rem; letter-spacing: .02em;
+  color: var(--color-gold-dim); }
+
+/* Warlord toggle */
+.lb-warlord-section {
+  background: rgba(201, 168, 76, 0.03);
+}
+
+.lb-warlord-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  cursor: pointer;
+}
+
+.lb-warlord-label input[type="checkbox"] {
+  accent-color: var(--color-gold);
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.lb-warlord-text {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+/* Squadron Commander host toggle */
+.lb-host-section {
+  background: rgba(90, 140, 200, 0.05);
+}
+
+.lb-host-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  cursor: pointer;
+}
+
+.lb-host-label input[type="checkbox"] {
+  accent-color: #5a8cc8;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.lb-host-text {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7fa8d8;
+}
+
+/* Standard wargear items */
+.lb-wargear-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--sp-1) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-wargear-item:last-child {
+  border-bottom: none;
+}
+
+.lb-wargear-item--standard .lb-wargear-name {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.lb-wargear-item--replaced .lb-wargear-name {
+  color: var(--color-text-disabled);
+  text-decoration: line-through;
+}
+
+.lb-wargear-pts {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: var(--sp-2);
+}
+
+/* Wargear option groups */
+.lb-option-group {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  margin-bottom: var(--sp-3);
+}
+
+.lb-option-group:last-child {
+  margin-bottom: 0;
+}
+
+.lb-option-group-desc {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  line-height: 1.4;
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-3);
+}
+
+.lb-option-group-limit {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--color-text-disabled);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: var(--sp-1) var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-3);
+}
+
+.lb-option-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background 0.1s ease;
+  line-height: 1;
+}
+
+.lb-option-item:last-child {
+  border-bottom: none;
+}
+
+.lb-option-item:hover {
+  background: rgba(201, 168, 76, 0.05);
+}
+
+.lb-option-item--selected {
+  background: rgba(201, 168, 76, 0.09);
+}
+
+.lb-option-item--dimmed {
+  opacity: 0.35;
+}
+
+.lb-option-item input {
+  flex-shrink: 0;
+  accent-color: var(--color-gold);
+  cursor: pointer;
+}
+
+.lb-opt-name {
+  flex: 1;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.lb-opt-pts {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-gold-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Ratio wargear counter rows */
+.lb-ratio-cap-note {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--color-text-disabled);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: var(--sp-1) var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-3);
+}
+
+.lb-ratio-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-ratio-row:last-child {
+  border-bottom: none;
+}
+
+.lb-ratio-name {
+  flex: 1;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.lb-ratio-pts {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-gold-dim);
+  white-space: nowrap;
+}
+
+.lb-ratio-counter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.lb-ratio-btn {
+  width: 22px;
+  height: 22px;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease;
+  line-height: 1;
+}
+
+.lb-ratio-btn:hover:not(:disabled) {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.lb-ratio-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.lb-ratio-count {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Combi-weapon nested sub-panel */
+.lb-nested-panel {
+  margin: 2px 0 var(--sp-2) var(--sp-5);
+  border-left: 2px solid var(--color-gold-dim);
+  background: var(--color-surface-3);
+}
+
+.lb-nested-panel-label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--color-gold-dim);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: var(--sp-1) var(--sp-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-nested-panel .lb-option-item {
+  padding: var(--sp-1) var(--sp-3);
+  font-size: 0.78rem;
+}
+
+/* Weapon modifier counter */
+.lb-modifier {
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.lb-modifier:last-child {
+  border-bottom: none;
+}
+
+.lb-modifier-name {
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+
+.lb-modifier-desc {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: var(--sp-2);
+}
+
+.lb-modifier-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.lb-modifier-cost {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-gold-dim);
+}
+
+.lb-modifier-counter {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.lb-mod-btn {
+  width: 24px;
+  height: 24px;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.lb-mod-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.lb-mod-count {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  min-width: 20px;
+  text-align: center;
+}
+
+.lb-modifier-total {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-gold);
+  margin-top: var(--sp-2);
+}
+
+/* ── Empty state ──────────────────────────────────────────────────────────── */
+
+.lb-empty {
+  padding: var(--sp-10) var(--sp-6);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.lb-empty small {
+  display: block;
+  margin-top: var(--sp-3);
+  font-size: 0.76rem;
+  opacity: 0.7;
+}
+
+/* ── Responsive breakpoints ───────────────────────────────────────────────── */
+
+@media (max-width: 1100px) {
+  .lb-app {
+    grid-template-columns: 240px 1fr 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Stack panels vertically on small screens */
+  .main-content:has(.lb-root) {
+    height: auto;
+    overflow: auto;
+  }
+
+  .lb-root {
+    height: auto;
+    overflow: visible;
+  }
+
+  .lb-app {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lb-panel {
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid var(--color-border-mid);
+  }
+
+  .lb-panel-body {
+    max-height: 55vh;
+  }
+
+  .lb-panel--browser .lb-panel-body {
+    max-height: 45vh;
+  }
+}
+
+/* ── v5 merged prose-with-controls options panel ─────────────────────────── */
+.lb-clause { margin: 0 0 var(--sp-4); padding: 0 0 var(--sp-3); border-bottom: 1px solid var(--color-border); }
+.lb-clause:last-child { border-bottom: none; }
+/* compound category replacement: head + continuation render as one seamless option list */
+.lb-clause--cmp-head { margin-bottom: 4px; padding-bottom: 0; border-bottom: none; }
+.lb-clause--cmp-cont { margin-top: 0; padding-top: 0; }
+.lb-clause-prose { font-size: 0.86rem; line-height: 1.4; color: var(--color-text-secondary); margin-bottom: var(--sp-2); }
+.lb-clause-prose p { margin: 0; }
+.lb-clause-meta { margin-bottom: var(--sp-2); }
+.lb-clause-cap { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--color-gold-dim); border: 1px solid var(--color-border-mid); border-radius: 3px; padding: 1px 6px; }
+
+.lb-opt-list { display: flex; flex-direction: column; gap: 4px; }
+.lb-opt-row { display: flex; align-items: center; gap: var(--sp-2); padding: 5px 8px; border: 1px solid var(--color-border);
+  border-radius: 4px; background: var(--color-surface-2); font-size: 0.85rem; }
+.lb-opt-row .lb-opt-name { flex: 1 1 auto; color: var(--color-text-primary); }
+.lb-opt-row .lb-opt-pts { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-text-muted); }
+.lb-opt-row--sel { border-color: var(--color-gold); background: var(--color-surface-3); }
+.lb-opt-row--radio, .lb-opt-row--check { cursor: pointer; }
+.lb-opt-row--radio input, .lb-opt-row--check input { accent-color: var(--color-gold); margin: 0; }
+.lb-opt-row--dim { opacity: .45; }
+/* R2: weapon excluded by the model's current armour/mount profile */
+.lb-opt-row--unavail { opacity: .5; }
+.lb-opt-row--unavail .lb-opt-name { color: var(--color-text-muted); }
+.lb-opt-row--unavail input, .lb-opt-row--unavail .lb-step-btn { cursor: not-allowed; }
+.lb-opt-req--avail { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: .02em;
+  text-transform: uppercase; color: var(--color-gold-dim); white-space: nowrap; }
+.lb-opt-req--avail:empty { display: none; }
+.lb-opt-row--fixed { background: transparent; border-style: dashed; }
+.lb-opt-incl { flex: 0 0 auto; font-size: 0.7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--color-text-muted); }
+
+.lb-stepper { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px; }
+.lb-step-btn { width: 24px; height: 24px; line-height: 1; border: 1px solid var(--color-border-mid); background: var(--color-surface-1);
+  color: var(--color-gold); border-radius: 4px; cursor: pointer; font-size: 0.95rem; }
+.lb-step-btn:hover:not(:disabled) { border-color: var(--color-gold); }
+.lb-step-btn:disabled { opacity: .3; cursor: default; }
+.lb-step-count { min-width: 18px; text-align: center; font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-primary); }
+.lb-clause-fixed { display: flex; flex-direction: column; gap: 3px; }
+
+.lb-tier-list { display: flex; flex-direction: column; gap: 4px; }
+.lb-tier-opt { display: flex; align-items: center; gap: var(--sp-2); padding: 5px 8px; border: 1px solid var(--color-border);
+  border-radius: 4px; cursor: pointer; font-size: 0.84rem; }
+.lb-tier-opt--sel { border-color: var(--color-gold); background: var(--color-surface-3); }
+.lb-mg-pts { font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-text-muted); font-weight: 400; }
+.lb-list-unit-issue { font-size: 0.72rem; color: var(--color-gold-dim); margin-top: 2px; }
+
+/* ── Increment B: model-count padding + wargear tooltip effects ──────────── */
+.lb-model-group { padding: var(--sp-2) var(--sp-3); }
+.lb-model-group .lb-squad-size { padding: 2px 2px 0; }
+.ah-ref-tooltip__fx { margin: 6px 0 0; padding-left: 16px; }
+.ah-ref-tooltip__fx li { margin: 2px 0; font-size: 0.78rem; line-height: 1.35; }
+
+/* ── Increment B: conditional (requires) gating ─────────────────────────── */
+.lb-clause-req { font-size: 0.7rem; letter-spacing: .03em; text-transform: uppercase; color: var(--color-text-muted);
+  border: 1px solid var(--color-border-mid); border-radius: 3px; padding: 1px 6px; }
+.lb-clause-req--unmet { color: var(--color-gold-dim); border-color: var(--color-gold-dim); }
+.lb-opt-list--gated { opacity: .5; }
+.lb-opt-list--gated .lb-step-btn, .lb-opt-list--gated input { pointer-events: none; }
+
+/* ── Increment B: detachment traits (grouped, per-line, accordion) ───────── */
+.lb-dt-section { margin-top: var(--sp-4); border-top: 1px solid var(--color-border); padding-top: var(--sp-3); }
+.lb-dt-header { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2);
+  font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--color-gold); margin-bottom: var(--sp-2); }
+.lb-dt-dp { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; letter-spacing: .02em;
+  color: var(--color-gold-dim); border: 1px solid var(--color-border-mid); border-radius: 3px; padding: 1px 7px; }
+.lb-dt-dp--over { color: var(--color-red-bright); border-color: var(--color-red-bright); }
+.lb-dt-trait--disabled { opacity: .5; }
+.lb-dt-trait--disabled .lb-dt-trait-label { cursor: not-allowed; }
+.lb-dt-subheader { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--color-text-muted); margin: var(--sp-3) 0 4px; }
+.lb-dt-trait { display: block; border: 1px solid var(--color-border); border-radius: 4px; background: var(--color-surface-2);
+  margin-bottom: 4px; padding: 0; }
+.lb-dt-trait--selected { border-color: var(--color-gold); background: var(--color-surface-3); }
+.lb-dt-trait-label { display: flex; align-items: center; gap: var(--sp-2); padding: 6px 8px; cursor: pointer; }
+.lb-dt-trait-label input { accent-color: var(--color-gold); margin: 0; }
+.lb-dt-trait-name { flex: 1 1 auto; font-size: 0.84rem; color: var(--color-text-primary); }
+.lb-dt-cost { flex: 0 0 auto; font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-gold-dim); }
+.lb-dt-effects { border-top: 1px solid var(--color-border); }
+.lb-dt-effects-toggle { cursor: pointer; font-size: 0.7rem; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--color-text-muted); padding: 4px 8px; list-style: none; }
+.lb-dt-effects-toggle::-webkit-details-marker { display: none; }
+.lb-dt-effects-body { padding: 0 8px 8px; }
+.lb-dt-effects-body p, .lb-dt-effects-body li {
+  font-size: 0.78rem; line-height: 1.4; color: var(--color-text-secondary); margin: 0; }
+.lb-dt-effects-body > * + * { margin-top: 4px; }
+.lb-dt-choices { padding: 0 8px 8px; }
+.lb-dt-choice-prompt { font-size: 0.78rem; line-height: 1.4; }
+
+/* ── Increment C: keyword tooltips in options-panel header (smaller) ─────── */
+.lb-keywords--tt { display: flex; flex-wrap: wrap; gap: 3px 8px; margin-top: var(--sp-2); }
+.lb-keywords--tt .keyword { font-size: 0.66rem; letter-spacing: .02em; }
+
+/* ── Increment C: combi-weapon nested sub-selector ──────────────────────── */
+.lb-nested { margin: 2px 0 6px var(--sp-4); padding: 6px 8px; border-left: 2px solid var(--color-gold-dim);
+  background: var(--color-surface-1); border-radius: 0 4px 4px 0; }
+.lb-nested-label { font-size: 0.7rem; letter-spacing: .03em; text-transform: uppercase;
+  color: var(--color-gold-dim); margin-bottom: 4px; }
+.lb-nested .lb-opt-row { background: var(--color-surface-2); }
+
+/* ── Sub-selections: multi-group + per-model + instance-count panels ─────── */
+.lb-sub { display: flex; flex-direction: column; gap: 6px; }
+.lb-sub-group { display: flex; flex-direction: column; gap: 3px; }
+.lb-sub-group-label { font-size: 0.68rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--color-gold-dim); margin-top: 2px; }
+.lb-sub-tag { font-size: 0.6rem; letter-spacing: .02em; color: var(--color-text-muted);
+  text-transform: none; font-style: italic; }
+.lb-sub-model-label { font-family: var(--font-display); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--color-text-secondary);
+  border-top: 1px dashed var(--color-border); padding-top: 5px; margin-top: 3px; }
+.lb-sub-model-label:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+.lb-sub-instances { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.lb-sub-instances-label { font-size: 0.68rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--color-gold-dim); }
+.lb-inst-opt { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px;
+  border: 1px solid var(--color-border); border-radius: 4px; cursor: pointer;
+  background: var(--color-surface-2); font-family: var(--font-mono); font-size: 0.8rem; }
+.lb-inst-opt input { accent-color: var(--color-gold); margin: 0; }
+.lb-inst-opt--sel { border-color: var(--color-gold); background: var(--color-surface-3); }
+.lb-sub-note { font-size: 0.68rem; color: var(--color-text-muted); font-style: italic; }
+.lb-subrelic { margin-left: var(--sp-3); }
+/* auto-included weapons (no choice), e.g. Wings → Wing Barbs */
+.lb-included { border-left-color: var(--color-border-mid); }
+.lb-included .lb-opt-row--fixed { border-style: dashed; }
+/* a standard weapon replaced by a sub-selection ("…replace its Bolt Pistol with…") */
+.lb-opt-row--replaced .lb-opt-name { text-decoration: line-through; color: var(--color-text-muted); }
+.lb-opt-replaced-note { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--color-gold-dim); }
+.lb-clause-suppressed { font-size: 0.72rem; color: var(--color-gold-dim); font-style: italic;
+  padding: 3px 0 5px; }
+
+/* ── Increment D: fully block interaction on gated (ineligible) clauses ──── */
+.lb-opt-list--gated .lb-opt-row { pointer-events: none; cursor: not-allowed; }
+
+/* ── Duplicate-unit button (mirrors the × remove button; gold hover) ─────── */
+.lb-dup-btn {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s ease;
+  padding: 0;
+}
+.lb-dup-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  background: rgba(201, 168, 76, 0.12);
+}
+
+/* ── Relic Weapon: per-weapon upgrade sub-control + info note ────────────── */
+.lb-relic { border-left-color: var(--color-gold); }
+.lb-relic .lb-opt-row { background: var(--color-surface-1); }
+.lb-relic-note { font-size: 0.8rem; line-height: 1.4; color: var(--color-text-secondary); }
+.lb-relic-note p { margin: 0; }
+
+/* ── Selectable upgrade catalog (Gifts of Chaos) ─────────────────────────── */
+.lb-gifts-zone { border-top: 2px solid var(--color-gold-dim); }
+.lb-gift-group { margin-bottom: var(--sp-3); }
+.lb-gift-group:last-child { margin-bottom: 0; }
+.lb-gift-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--sp-2);
+}
+.lb-gift-note { color: var(--color-text-disabled); text-transform: none; letter-spacing: 0; }
+.lb-gift-opts { display: flex; flex-direction: column; gap: 4px; }
+.lb-gift-opt {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 5px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm, 4px);
+  cursor: pointer;
+}
+.lb-gift-opt input { accent-color: var(--color-gold); margin: 0; flex: none; }
+.lb-gift-opt--sel { border-color: var(--color-gold); background: var(--color-surface-3); }
+.lb-gift-opt--dis { opacity: 0.45; cursor: not-allowed; }
+.lb-gift-name { font-weight: 600; font-size: 0.8rem; }
+.lb-gift-meta {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  text-align: right;
+}
+/* Per-model (Chosen) sub-blocks + champion/per-model resolved statline preview */
+.lb-gift-model { margin: var(--sp-2) 0 var(--sp-2) var(--sp-3); padding-left: var(--sp-3); border-left: 2px solid var(--color-border); }
+.lb-gift-model-label { font-family: var(--font-mono); font-size: 0.62rem; color: var(--color-text-disabled); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+.lb-gift-preview { margin-top: var(--sp-2); opacity: 0.95; }
+
+/* ── Key unit characteristics ───────────────────────────────────────────────
+   The in-unit selector (Path of Study, Harnessed God, Shaper's Path, Paths of the
+   Aspect Shrines). Sits directly under the statline because the profile chosen here
+   determines the wargear rendered below it. Shares the visual language of the
+   composition-tier list — it is the same kind of control. */
+.lb-kc-section .lb-profile-section-summary { color: var(--color-gold); }
+.lb-kc-req {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--color-gold-dim, var(--color-border));
+  color: var(--color-gold-dim, var(--color-text-muted));
+}
+.lb-kc-req--ok { opacity: 0.35; }
+
+.lb-kc-opts { display: flex; flex-direction: column; gap: 6px; }
+.lb-kc-opt { border: 1px solid var(--color-border); border-radius: var(--radius-sm, 4px); overflow: hidden; }
+.lb-kc-opt--sel { border-color: var(--color-gold); }
+.lb-kc-opt-head {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px 8px;
+  cursor: pointer;
+}
+.lb-kc-opt--sel .lb-kc-opt-head { background: var(--color-surface-3); }
+.lb-kc-opt-head input { accent-color: var(--color-gold); margin: 0; flex: none; }
+.lb-kc-name { font-weight: 600; font-size: 0.84rem; }
+.lb-kc-meta {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  text-align: right;
+}
+.lb-kc-body { padding: var(--sp-2) var(--sp-3) var(--sp-3); border-top: 1px solid var(--color-border); }
+.lb-kc-sublabel {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: var(--sp-2) 0 4px;
+}
+.lb-kc-body > .lb-kc-sublabel:first-child { margin-top: 0; }
+.lb-kc-fx-wrap { padding: 2px 8px 6px 26px; }
+/* Authored prose (effectsHtml) arrives as bare <p>/<ul>, so it needs the panel's own
+   body-text style — matching .lb-clause-prose, the intro line above wargear options. */
+.lb-kc-fx-wrap p,
+.lb-kc-fx-wrap li,
+.lb-kc-fx li {
+  font-size: 0.86rem;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+.lb-kc-fx-wrap > * + * { margin-top: var(--sp-2); }
+.lb-kc-fx-wrap > :first-child { margin-top: 0; }
+.lb-kc-fx-wrap ul,
+.lb-kc-fx { margin: 0; padding-left: 1.1em; list-style: disc; }
+.lb-kc-fx-wrap li + li { margin-top: 2px; }
+
+/* ── List name, share/export actions, saved-list drawer (Phase 3) ─────────── */
+
+.lb-list-name {
+  width: 100%;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: var(--sp-2) var(--sp-3);
+  margin-top: var(--sp-2);
+}
+
+.lb-list-name::placeholder {
+  color: var(--color-text-disabled);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.lb-list-name:focus {
+  outline: none;
+  border-color: var(--color-gold-dim);
+}
+
+.lb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  margin-top: var(--sp-3);
+}
+
+.lb-action {
+  flex: 1 1 auto;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-mid);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: var(--sp-2) var(--sp-2);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.lb-action:hover,
+.lb-action:focus-visible {
+  background: var(--color-surface-raised);
+  border-color: var(--color-gold-dim);
+  color: var(--color-gold-bright);
+}
+
+.lb-action--danger:hover,
+.lb-action--danger:focus-visible {
+  border-color: var(--color-red);
+  color: var(--color-red-bright);
+}
+
+.lb-action-note {
+  margin-top: var(--sp-2);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--color-text-secondary);
+}
+
+.lb-action-note--ok { color: var(--color-green); }
+.lb-action-note--warn { color: var(--color-gold-bright); }
+
+/* Saved lists live in localStorage and are shared by every tab; the list a tab is
+   editing stays in sessionStorage, so loading one only affects the current tab. */
+.lb-library {
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--color-border-mid);
+  background: var(--color-surface-2);
+  max-height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lb-library-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+}
+
+.lb-library-head .lb-action { flex: 0 0 auto; }
+
+.lb-library-body {
+  overflow-y: auto;
+  padding: var(--sp-2);
+}
+
+.lb-lib-row {
+  display: flex;
+  align-items: stretch;
+  gap: var(--sp-1);
+  border: 1px solid transparent;
+  margin-bottom: var(--sp-1);
+}
+
+.lb-lib-row--current {
+  border-color: var(--color-gold-dim);
+  background: var(--color-surface-3);
+}
+
+.lb-lib-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: var(--sp-2);
+  cursor: pointer;
+}
+
+.lb-lib-main:hover .lb-lib-name { color: var(--color-gold-bright); }
+
+.lb-lib-name {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.lb-lib-meta {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--color-text-muted);
+}
+
+.lb-lib-btn {
+  flex: 0 0 auto;
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 var(--sp-2);
+  cursor: pointer;
+}
+
+.lb-lib-btn:hover { color: var(--color-gold-bright); border-color: var(--color-gold-dim); }
+.lb-lib-btn--danger:hover { color: var(--color-red-bright); border-color: var(--color-red); }

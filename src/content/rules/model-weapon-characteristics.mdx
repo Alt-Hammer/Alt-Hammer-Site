@@ -96,16 +96,37 @@ Points are a numerical value that represent the 'cost' of an individual model fo
 
 
 
+<h6 id="weapon-category">Weapon Category</h6>
+
+
+Weapons in Alt-Hammer belong to 1 of 4 Categories:
+1. **Ranged:** Generally guns, artillery and other long-ranged weaponry who can make attacks across distances in inches up to the value of their Range characteristic.
+2. **Melee:** Hand-to-hand combat weaponry used for making attacks against enemy models in Base-to-Base Contact with the bearer. Melee weapons always possess a Range characteristic of "-".
+3. **Psychic Attacks:** A form of Ranged attack used exclusively by <span class="keyword" data-term="psyker" data-type="keyword">Psyker</span> models.
+4. **Grenades:** Short-ranged explosives and demolitions typically thrown by hand by Infantry-type models, and subject to the rules of the <span class="keyword" data-term="grenade" data-type="keyword">Grenade</span> keyword. Grenades have a Range characteristic that can vary based on the attacking model's Strength plus an additional value measured in Inches - ie "S+3". In that example, if the attacking model has a Strength characteristic of 2, the effective strength of that Ranged weapon would be 5" (2"+3"). 
+
+<h6 id="weapon-name">Weapon Name</h6>
+
+
+The name of the weapon itself. The weapon's name is used to identify it in Unit Profiles, where it is listed as Standard Wargear, or as a selection among Wargear Options available to that unit. 
+
+
+<h6 id="attack-mode">Attack Mode</h6>
+
+
+Some weapons have more than 1 Attack Mode that can be chosen for the purpose of making attacks. Attack Modes are available to any kind of weapon from any Weapon Category. Further, some weapons may have both Ranged and Melee Attack Modes, allowing players to use the weapon in both <span class="keyword" data-term="shoot" data-type="action">Shoot</span> and <span class="keyword" data-term="fight" data-type="action">Fight</span> Actions. Weapons have have both Ranged and Melee Attack Modes are always categorized as Ranged weapons.
+
+
 <h6 id="points-pts">Points (Pts)</h6>
 
 
-Points are a numerical value that represent the 'cost' of an individual weapon for the purposes of army list building and game size determination. Remember that all points in Alt-Hammer are additive, so any points for weapons that your units must select (or can select as options) represent additional costs over the Pts. characteristics of the models themselves.
+Points are a numerical value that represent the 'cost' of an individual weapon for the purposes of army list building and game size determination. Remember that all points in Alt-Hammer are additive, so any points for weapons that your units must select (or can select as optional upgrades) represent an **additional points cost** over the Pts. characteristics of the models themselves.
 
 
 <h6 id="range-rng">Range (Rng.)</h6>
 
 
-Range is the distance in inches within which a weapon's attacks can be allocated to eligible target enemy units. Ranged weapons typically only have values, while Melee weapons typically have a value of "-" which represents 0" of Range, typically indicating that the weapon is a Melee weapon. Some weapons such as Grenades have a Range characteristic that can vary based on the attacking model's Strength plus an additional value measured in Inches - ie "S+3". In that example, if the attacking model has a Strength characteristic of 2, the effective strength of that Ranged weapon would be 5" (2"+3"). 
+Range is the distance in inches within which a weapon's attacks can be allocated to eligible target enemy units. Ranged weapons typically only have values, while Melee weapons typically have a value of "-" which represents 0" of Range, typically indicating that the weapon is a Melee weapon. Some weapons such as 
 
 
 <h6 id="attacks-a">Attacks (A)</h6>
@@ -130,3 +151,12 @@ A weapon's Damage characteristic is a numerical value that represents how many W
 
 
 Some factions - most notably factions with the Astartes keyword - possess various armour and wargear that limit (or expand) the weapons and wargear options available to models per that unit's Unit Profile. Armour and wargear keywords listed in this section of a weapon's data profile mean that the weapon is eligible to be selected by models that possess any of those armour and/or wargear keywords. Units that do not possess those armour and/or wargear keywords can still select that weapon if the weapon is identified as Standard Wargear or a Wargear Option for that unit.
+
+
+### Adding Duplicate Weapons to Models
+
+
+Some models may allow players to select more than 1x of the same weapon for that model. In these instances, players add the points cost for each weapon, but treat all attacks made by those weapons as a single weapon. Further, models who are equipped with duplicate weapons in this manner modify those attacks as follows:
+1. For every 2x of the same weapon, increase the Attacks characteristic of the bearer by 1 and gain the <span class="keyword" data-term="sustained-hits-1" data-type="keyword">Sustained Hits 1</span> ability, or increase an existing <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability by 1.
+2. For every 4x of the same weapon, increase the Attacks characteristic of the bearer by 2 and gain the <span class="keyword" data-term="sustained-hits-2" data-type="keyword">Sustained Hits 2</span> ability, or increase an existing <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability by 2.
+3. For every 6x of the same weapon, increase the Attacks characteristic of the bearer by 3 and gain the <span class="keyword" data-term="sustained-hits-3" data-type="keyword">Sustained Hits 3</span> ability, or increase an existing <span class="keyword" data-term="sustained-hits-x" data-type="keyword">Sustained Hits [X]</span> ability by 3.

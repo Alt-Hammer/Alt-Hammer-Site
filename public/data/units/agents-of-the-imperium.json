@@ -1,0 +1,876 @@
+{
+  "faction": "Agents of the Imperium",
+  "slug": "agents-of-the-imperium",
+  "units": [
+    {
+      "name": "Inquisitor",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 6,
+        "S": 2,
+        "T": 2,
+        "W": 6,
+        "SV": "5+",
+        "LD": "2+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Inquisition",
+        "Infantry",
+        "Character",
+        "Leader"
+      ],
+      "models": null
+    },
+    {
+      "name": "Navigator",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 2,
+        "A": 6,
+        "S": 2,
+        "T": 2,
+        "W": 3,
+        "SV": "5+",
+        "LD": "6+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Navis Imperialis",
+        "Infantry",
+        "Character",
+        "Leader"
+      ],
+      "models": null
+    },
+    {
+      "name": "Adjudicator",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 6,
+        "S": 2,
+        "T": 2,
+        "W": 4,
+        "SV": "4+",
+        "LD": "6+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Arbites",
+        "Infantry",
+        "Character",
+        "Leader"
+      ],
+      "models": null
+    },
+    {
+      "name": "Watchmaster",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 7,
+        "BS": 7,
+        "I": 6,
+        "A": 6,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Deathwatch",
+        "Infantry",
+        "Character",
+        "Leader"
+      ],
+      "models": null
+    },
+    {
+      "name": "Grandmaster",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 7,
+        "BS": 7,
+        "I": 6,
+        "A": 6,
+        "S": 4,
+        "T": 4,
+        "W": 6,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Grey Knights",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Psyker",
+        "Deep Strike"
+      ],
+      "models": null
+    },
+    {
+      "name": "Shield Captain",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "7\"",
+        "WS": 8,
+        "BS": 8,
+        "I": 7,
+        "A": 6,
+        "S": 6,
+        "T": 6,
+        "W": 8,
+        "SV": "2+",
+        "LD": "2+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Custodes",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Invulnerable Save 5+"
+      ],
+      "models": null
+    },
+    {
+      "name": "Blade Champion",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "7\"",
+        "WS": 8,
+        "BS": 7,
+        "I": 7,
+        "A": 7,
+        "S": 6,
+        "T": 6,
+        "W": 8,
+        "SV": "2+",
+        "LD": "2+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Custodes",
+        "Infantry",
+        "Character",
+        "Relentless",
+        "Unyielding",
+        "Invulnerable Save 5+"
+      ],
+      "models": null
+    },
+    {
+      "name": "Centura",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 6,
+        "A": 5,
+        "S": 3,
+        "T": 3,
+        "W": 5,
+        "SV": "3+",
+        "LD": "4+",
+        "basePoints": null,
+        "squadSizes": ""
+      },
+      "keywords": [
+        "Imperium",
+        "Sisters of Silence",
+        "Infantry",
+        "Character",
+        "Leader",
+        "Invulnerable Save 6+"
+      ],
+      "models": null
+    },
+    {
+      "name": "Seneschal",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 4,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 5,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Questor Imperialis",
+        "Character",
+        "Infantry"
+      ],
+      "models": null
+    },
+    {
+      "name": "Freeblade",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 5,
+        "SV": "4+",
+        "LD": "4+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Questor Imperialis",
+        "Character",
+        "Infantry"
+      ],
+      "models": null
+    },
+    {
+      "name": "Assassin",
+      "category": "Character",
+      "stats": {
+        "AP": "",
+        "M": "7\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 4,
+        "S": 2,
+        "T": 2,
+        "W": 4,
+        "SV": "5+",
+        "LD": "2+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Infantry",
+        "Character",
+        "Invulnerable Save 4+",
+        "Stealth",
+        "Infiltrator",
+        "Deep Strike",
+        "Scout 7\""
+      ],
+      "models": null
+    },
+    {
+      "name": "Penal Legion Squad",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "6+",
+        "LD": "10+",
+        "basePoints": 2,
+        "squadSizes": "10 to 30"
+      },
+      "keywords": [
+        "Imperium",
+        "Infantry"
+      ],
+      "models": null
+    },
+    {
+      "name": "Inquisitor's Henchmen",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "6+",
+        "LD": "7+",
+        "basePoints": null,
+        "squadSizes": ""
+      },
+      "keywords": [
+        "Imperium",
+        "Inquisition",
+        "Infantry",
+        "Bodyguard"
+      ],
+      "models": null
+    },
+    {
+      "name": "Inquisitorial Veteran Guardsmen",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 3,
+        "A": 2,
+        "S": 2,
+        "T": 2,
+        "W": 2,
+        "SV": "5+",
+        "LD": "7+",
+        "basePoints": 6,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Imperium",
+        "Inquisition",
+        "Infantry"
+      ],
+      "models": null
+    },
+    {
+      "name": "Adeptus Arbites Squad",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 3,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "8+",
+        "basePoints": 5,
+        "squadSizes": "5 to 10"
+      },
+      "keywords": [
+        "Imperium"
+      ],
+      "models": null
+    },
+    {
+      "name": "Voidsmen-at-Arms Squad",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 3,
+        "BS": 3,
+        "I": 2,
+        "A": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1,
+        "SV": "5+",
+        "LD": "8+",
+        "basePoints": 3,
+        "squadSizes": "10 to 20"
+      },
+      "keywords": [],
+      "models": null
+    },
+    {
+      "name": "Deathwatch Kill Team",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 20,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium"
+      ],
+      "models": null
+    },
+    {
+      "name": "Grey Knights Strike Team",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 4,
+        "A": 3,
+        "S": 4,
+        "T": 4,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 25,
+        "squadSizes": "3 to 5"
+      },
+      "keywords": [
+        "Imperium",
+        "Grey Knights",
+        "Infantry",
+        "Psyker",
+        "Deep Strike"
+      ],
+      "models": null
+    },
+    {
+      "name": "Custodians",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "7\"",
+        "WS": 7,
+        "BS": 7,
+        "I": 5,
+        "A": 5,
+        "S": 6,
+        "T": 6,
+        "W": 6,
+        "SV": "2+",
+        "LD": "3+",
+        "basePoints": 70,
+        "squadSizes": "1 to 4"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Custodes",
+        "Infantry",
+        "Invulnerable Save 5+"
+      ],
+      "models": null
+    },
+    {
+      "name": "Sisters of Silence",
+      "category": "Infantry",
+      "stats": {
+        "AP": "",
+        "M": "6\"",
+        "WS": 5,
+        "BS": 4,
+        "I": 5,
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "W": 3,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 15,
+        "squadSizes": "3 to 10"
+      },
+      "keywords": [
+        "Imperium",
+        "Sisters of Silence",
+        "Infantry",
+        "Scouts 6\"",
+        "Invulnerable Save 6+"
+      ],
+      "models": null
+    },
+    {
+      "name": "Contemptor Deadnought",
+      "category": "Walkers",
+      "stats": {
+        "AP": "",
+        "M": "8\"",
+        "WS": 6,
+        "BS": 6,
+        "I": 4,
+        "A": 3,
+        "S": 7,
+        "T": 9,
+        "W": 10,
+        "SV": "3+",
+        "LD": "3+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Adeptus Custodes",
+        "Vehicle",
+        "Walker",
+        "Invulnerable Save 5+"
+      ],
+      "models": null
+    },
+    {
+      "name": "Nemesis Dreadknight",
+      "category": "Walkers",
+      "stats": {
+        "AP": "",
+        "M": "8\"",
+        "WS": 5,
+        "BS": 5,
+        "I": 5,
+        "A": 4,
+        "S": 7,
+        "T": 9,
+        "W": 13,
+        "SV": "2+",
+        "LD": "3+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Grey Knights",
+        "Vehicle",
+        "Walker",
+        "Deep Strike"
+      ],
+      "models": null
+    },
+    {
+      "name": "Armigers",
+      "category": "Walkers",
+      "stats": {
+        "AP": "",
+        "M": "12\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 7,
+        "T": 9,
+        "W": 10,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 120,
+        "squadSizes": "1 to 2"
+      },
+      "keywords": [
+        "Imperium",
+        "Questor Imperialis",
+        "Vehicle",
+        "Walker"
+      ],
+      "models": null
+    },
+    {
+      "name": "Knight Cerastus",
+      "category": "Walkers",
+      "stats": {
+        "AP": "",
+        "M": "14\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 4,
+        "A": 4,
+        "S": 9,
+        "T": 10,
+        "W": 14,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 200,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Questor Imperialis",
+        "Vehicle",
+        "Walker",
+        "Titanic"
+      ],
+      "models": null
+    },
+    {
+      "name": "Knight Questoris",
+      "category": "Walkers",
+      "stats": {
+        "AP": "",
+        "M": "12\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 3,
+        "A": 4,
+        "S": 9,
+        "T": 11,
+        "W": 18,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 200,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Questor Imperialis",
+        "Vehicle",
+        "Walker",
+        "Titanic"
+      ],
+      "models": null
+    },
+    {
+      "name": "Knight Castellan",
+      "category": "Walkers",
+      "stats": {
+        "AP": "",
+        "M": "10\"",
+        "WS": 4,
+        "BS": 4,
+        "I": 2,
+        "A": 2,
+        "S": 12,
+        "T": 12,
+        "W": 20,
+        "SV": "2+",
+        "LD": "4+",
+        "basePoints": 300,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Questor Imperialis",
+        "Vehicle",
+        "Walker",
+        "Titanic"
+      ],
+      "models": null
+    },
+    {
+      "name": "Rhino",
+      "category": "Dedicated Transports",
+      "stats": {
+        "AP": "",
+        "M": "12\"",
+        "WS": 3,
+        "BS": 4,
+        "I": 1,
+        "A": 4,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": null,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Vehicle",
+        "Transport 10",
+        "Firing Deck 4"
+      ],
+      "models": null
+    },
+    {
+      "name": "Razorback",
+      "category": "Dedicated Transports",
+      "stats": {
+        "AP": "",
+        "M": "12\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 1,
+        "A": 3,
+        "S": 6,
+        "T": 10,
+        "W": 10,
+        "SV": "3+",
+        "LD": "5+",
+        "basePoints": 70,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Vehicle",
+        "Transport 4"
+      ],
+      "models": null
+    },
+    {
+      "name": "Chimera",
+      "category": "Dedicated Transports",
+      "stats": {
+        "AP": "",
+        "M": "10\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 1,
+        "A": 3,
+        "S": 6,
+        "T": 10,
+        "W": 11,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Vehicle",
+        "Transport 12",
+        "Firing Deck 2"
+      ],
+      "models": null
+    },
+    {
+      "name": "Taurox",
+      "category": "Dedicated Transports",
+      "stats": {
+        "AP": "",
+        "M": "12\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 1,
+        "A": 3,
+        "S": 5,
+        "T": 8,
+        "W": 10,
+        "SV": "3+",
+        "LD": "7+",
+        "basePoints": 85,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Vehicle",
+        "Transport 12"
+      ],
+      "models": null
+    },
+    {
+      "name": "Valkyrie",
+      "category": "Dedicated Transports",
+      "stats": {
+        "AP": "",
+        "M": "12\" - 30\"",
+        "WS": 2,
+        "BS": 3,
+        "I": 1,
+        "A": 3,
+        "S": 5,
+        "T": 9,
+        "W": 14,
+        "SV": "3+",
+        "LD": "6+",
+        "basePoints": 150,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Aircraft",
+        "Hover",
+        "Transport 12",
+        "Firing Deck 4"
+      ],
+      "models": null
+    },
+    {
+      "name": "Corvus Blackstar",
+      "category": "Dedicated Transports",
+      "stats": {
+        "AP": "",
+        "M": "12\" - 30\"",
+        "WS": 2,
+        "BS": 5,
+        "I": 1,
+        "A": 3,
+        "S": 7,
+        "T": 11,
+        "W": 14,
+        "SV": "2+",
+        "LD": "5+",
+        "basePoints": 180,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Deatchwatch",
+        "Aircraft",
+        "Hover",
+        "Transport 12",
+        "Firing Deck 4"
+      ],
+      "models": null
+    },
+    {
+      "name": "Land Raider",
+      "category": "Vehicles",
+      "stats": {
+        "AP": "",
+        "M": "12\"",
+        "WS": 3,
+        "BS": 5,
+        "I": 1,
+        "A": 6,
+        "S": 9,
+        "T": 12,
+        "W": 18,
+        "SV": "2+",
+        "LD": "3+",
+        "basePoints": 250,
+        "squadSizes": "1"
+      },
+      "keywords": [
+        "Imperium",
+        "Vehicle",
+        "Transport 12"
+      ],
+      "models": null
+    }
+  ],
+  "weapons": []
+}

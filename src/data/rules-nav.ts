@@ -18,6 +18,12 @@
 // ─────────────
 // Re-run scripts/convert_rules.py after editing the Word document.
 // Then update the items[] arrays here to match any new/changed Heading 2s.
+//
+// Anchors must match the ids rehype-slug generates from the heading text, which is
+// not always what you would type by hand — "A & B" becomes "a--b", because the
+// ampersand is dropped but the space on each side of it still becomes a hyphen.
+// After building, `node _t-rules-anchors.cjs` checks every anchor here against the
+// ids actually present in dist/ and names the ones that no longer resolve.
 // The href and slug values must match the slugified Heading 1 text exactly.
 
 export interface RulesNavItem {
@@ -34,12 +40,14 @@ export interface RulesSection {
 
 export const RULES_SECTIONS: RulesSection[] = [
   {
-    label: 'Preparing Your Game',
-    href: '/rules/preparing-your-game',
-    slug: 'preparing-your-game',
+    label: 'General Gameplay Rules',
+    href: '/rules/general-gameplay-rules',
+    slug: 'general-gameplay-rules',
     items: [
+      { label: 'Faction Rules',      anchor: '#faction-rules' },
       { label: 'Force Organization', anchor: '#force-organization' },
-      { label: 'Pregame Setup',      anchor: '#pregame-setup' },
+      { label: 'Unit Coherency',     anchor: '#unit-coherency' },
+      { label: 'Unit Rules',         anchor: '#unit-rules' },
     ],
   },
   {
@@ -49,7 +57,7 @@ export const RULES_SECTIONS: RulesSection[] = [
     items: [
       { label: 'Command Phase',      anchor: '#phase-1-command-phase' },
       { label: 'Activation Phase',   anchor: '#phase-2-activation-phase' },
-      { label: 'Victory Points & Initiative', anchor: '#phase-3-victory-points-and-initiative' },
+      { label: 'Victory Points & Initiative', anchor: '#phase-3-tally-victory-points-and-determine-initiative-for-the-next-battle-round' },
     ],
   },
   {
@@ -78,7 +86,9 @@ export const RULES_SECTIONS: RulesSection[] = [
       { label: 'Model Characteristics',    anchor: '#model-characteristics' },
       { label: 'Armour Save Abilities',    anchor: '#armour-save-abilities' },
       { label: 'Wargear Abilities',        anchor: '#wargear-abilities' },
-      { label: 'Terrain Attributes & Types', anchor: '#terrain-attributes-types' },
+      // Two hyphens: the heading is "Terrain Attributes & Types", and the slugger drops
+      // the ampersand while keeping a hyphen for each space around it.
+      { label: 'Terrain Attributes & Types', anchor: '#terrain-attributes--types' },
     ],
   },
   {
@@ -120,7 +130,7 @@ export const RULES_SECTIONS: RulesSection[] = [
     href: '/rules/generating-a-battle',
     slug: 'generating-a-battle',
     items: [
-      { label: 'Board Size & Deployment Zones', anchor: '#determine-board-size-deployment-zones' },
+      { label: 'Board Size & Deployment Zones', anchor: '#determine-board-size' },
       { label: 'Attacker, Defender & Zones',    anchor: '#determine-attacker-defender-and-deployment-zones' },
       { label: 'Deploying Units',               anchor: '#deploying-units' },
       { label: 'Primary Mission Objectives',    anchor: '#primary-mission-objectives' },

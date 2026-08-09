@@ -1,0 +1,1110 @@
+{
+  "faction": "Chaos Undivided",
+  "slug": "chaos-undivided",
+  "wargearItems": [
+    {
+      "itemId": "tacticus-armour",
+      "name": "Tacticus Armour",
+      "pointsCost": 0,
+      "costNote": null,
+      "category": "Heretic Astartes Armour",
+      "effects": [
+        "Many Heretic Astartes Infantry models are equipped with Tacticus Armour by default and possess the Tacticus keyword."
+      ],
+      "effectsHtml": "<p>Many <span class=\"keyword\" data-term=\"heretic-astartes-infantry\" data-type=\"keyword\">Heretic Astartes Infantry</span> models are equipped with Tacticus Armour by default and possess the <span class=\"keyword\" data-term=\"tacticus\" data-type=\"keyword\">Tacticus</span> keyword.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "raptor-armour",
+      "name": "Raptor Armour",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": "Heretic Astartes Armour",
+      "effects": [
+        "Remove the Tacticus keyword",
+        "Gain the Raptor keyword",
+        "Gain the Jump Pack keyword",
+        "Increase Movement characteristic to 12\"",
+        "Increase Initiative characteristic by 1",
+        "Increase Attacks characteristic by 1",
+        "Reduce Wounds characteristic by 1",
+        "Gain the Deep Strike ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Remove the <span class=\"keyword\" data-term=\"tacticus\" data-type=\"keyword\">Tacticus</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"raptor\" data-type=\"keyword\">Raptor</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> keyword</li>\n<li>Increase Movement characteristic to 12\"</li>\n<li>Increase Initiative characteristic by 1</li>\n<li>Increase Attacks characteristic by 1</li>\n<li>Reduce Wounds characteristic by 1</li>\n<li>Gain the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "dec",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Raptor",
+                "Jump Pack",
+                "Deep Strike"
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "havoc-armour",
+      "name": "Havoc Armour",
+      "pointsCost": 12,
+      "costNote": null,
+      "category": "Heretic Astartes Armour",
+      "effects": [
+        "Remove the Tacticus keyword",
+        "Gain the Havoc keyword",
+        "Reduce Movement characteristic by 1\"",
+        "Reduce Initiative characteristic by 1",
+        "Increase Toughness characteristic by 1",
+        "Increase Wounds Characteristic by 1",
+        "Gain the Implacable ability",
+        "Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less",
+        "Model must be on a 40mm base"
+      ],
+      "effectsHtml": "<ul>\n<li>Remove the <span class=\"keyword\" data-term=\"tacticus\" data-type=\"keyword\">Tacticus</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"havoc\" data-type=\"keyword\">Havoc</span> keyword</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Reduce Initiative characteristic by 1</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Increase Wounds Characteristic by 1</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less</li>\n<li>Model must be on a 40mm base</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Havoc",
+                "Implacable"
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "terminator-armour",
+      "name": "Terminator Armour",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Heretic Astartes Armour",
+      "effects": [
+        "Remove the Tacticus keyword",
+        "Gain the Terminator keyword",
+        "Reduce Movement characteristic by 1\"",
+        "Reduce Initiative characteristic by 1",
+        "Increase Strength characteristic by 1",
+        "Increase Toughness characteristic by 1",
+        "Increase Wounds Characteristic by 1",
+        "Increase Armour Save characteristic to 2+",
+        "Gain the Invulnerable Save 5+ ability",
+        "Gain the Implacable ability",
+        "Model must be on a 40mm to 60mm base",
+        "Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less"
+      ],
+      "effectsHtml": "<ul>\n<li>Remove the <span class=\"keyword\" data-term=\"tacticus\" data-type=\"keyword\">Tacticus</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"terminator\" data-type=\"keyword\">Terminator</span> keyword</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Reduce Initiative characteristic by 1</li>\n<li>Increase Strength characteristic by 1</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Increase Wounds Characteristic by 1</li>\n<li>Increase Armour Save characteristic to 2+</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Model must be on a 40mm to 60mm base</li>\n<li>Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Terminator",
+                "Implacable",
+                "Deep Strike",
+                "Invulnerable Save 5+"
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "accursed",
+      "name": "Accursed",
+      "pointsCost": 10,
+      "costNote": "weapon",
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1",
+        "Upgrade cannot be taken for Grenade type weapons"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n<li>Upgrade cannot be taken for <span class=\"keyword\" data-term=\"grenade\" data-type=\"keyword\">Grenade</span> type weapons</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dark-blessing",
+      "name": "Dark Blessing",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Models equipped with a Dark Blessing:",
+        "Increase their Toughness characteristic by 2 against Ranged attacks",
+        "Gain the Invulnerable Save 4+ ability."
+      ],
+      "effectsHtml": "<p>Models equipped with a Dark Blessing:</p>\n<ul>\n<li>Increase their Toughness characteristic by 2 against Ranged attacks</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 4+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "chaos-icon",
+      "name": "Chaos Icon",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Add 20 to the Objective Control value of the bearer whilst positioned wholly within range of a Primary Objective Marker",
+        "Once per battle, during your Command Phase, select 1 Gift of Chaos not equipped by the unit. The effects of that Gift of Chaos are in effect until the end of the Battle Round."
+      ],
+      "effectsHtml": "<ul>\n<li>Add 20 to the Objective Control value of the bearer whilst positioned wholly within range of a Primary Objective Marker</li>\n<li>Once per battle, during your Command Phase, select 1 Gift of Chaos not equipped by the unit. The effects of that Gift of Chaos are in effect until the end of the Battle Round.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "wings",
+      "name": "Wings",
+      "pointsCost": 12,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Models equipped with Wings:",
+        "Increase their Movement characteristic to 12\"",
+        "Gain the Fly keyword",
+        "Gain the Deep Strike ability",
+        "Are equipped with Wing Barbs"
+      ],
+      "effectsHtml": "<p>Models equipped with Wings:</p>\n<ul>\n<li>Increase their Movement characteristic to 12\"</li>\n<li>Gain the <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Are equipped with <span class=\"weapon-ref\" data-weapon=\"wing-barbs\">Wing Barbs</span></li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:wing-barbs",
+          "name": "Wing Barbs",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 3,
+          "parts": [
+            {
+              "ref": "weapon:wing-barbs",
+              "name": "Wing Barbs",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Fly",
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "bike",
+      "name": "Bike",
+      "pointsCost": 16,
+      "costNote": "model",
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 12\"",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 1",
+        "Gains the Mounted keyword",
+        "Must be on a 90mm x 52mm oval base or similar",
+        "Is only eligible to be equipped with a Bike if they possess the Tacticus keyword",
+        "Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information.",
+        "Each model must be equipped with 1 of the following:",
+        "1x Twin-linked Boltgun",
+        "1x Combi-bolter"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 12\"</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Must be on a 90mm x 52mm oval base or similar</li>\n<li>Is only eligible to be equipped with a Bike if they possess the <span class=\"wargear-ref\" data-wargear=\"tacticus\">Tacticus</span> keyword</li>\n<li>Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information.</li>\n</ul>\n<p>Each model must be equipped with 1 of the following:</p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-bolter</span></p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:boltgun#m-twin-linked",
+              "name": "Boltgun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:boltgun",
+                  "name": "Boltgun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "twin-linked"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "wargear:combi-bolter",
+              "name": "Combi-Bolter",
+              "kind": "wargear",
+              "qty": 1,
+              "modifiers": [],
+              "points": null,
+              "parts": [
+                {
+                  "ref": "wargear:combi-bolter",
+                  "name": "Combi-Bolter",
+                  "kind": "wargear",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "helstalker",
+      "name": "Helstalker",
+      "pointsCost": 45,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Model equipped with Tacticus Armour only. A model equipped with a Helstalker:",
+        "Gains the Mounted keyword",
+        "Increases its Movement characteristic to 10\"",
+        "Increases its Strength characteristic by 2",
+        "Increases its Toughness characteristic by 3",
+        "Increases its Wounds characteristic by 3",
+        "Each model must be equipped with 1 of the following Primary Melee Weapons:",
+        "Scything Talons",
+        "Each model must be equipped with 1 of the following Primary Ranged Weapons:",
+        "Magma Cutter",
+        "Toxinjector",
+        "Each model must be equipped with 1 of the following Secondary Ranged Weapons:",
+        "1x Accursed Autocannon",
+        "1x Accursed Heavy Flamer"
+      ],
+      "effectsHtml": "<p>Model equipped with <span class=\"wargear-ref\" data-wargear=\"tacticus-armour\">Tacticus Armour</span> only. A model equipped with a Helstalker:</p>\n<ul>\n<li>Gains the Mounted keyword</li>\n<li>Increases its Movement characteristic to 10\"</li>\n<li>Increases its Strength characteristic by 2</li>\n<li>Increases its Toughness characteristic by 3</li>\n<li>Increases its Wounds characteristic by 3</li>\n</ul>\n<p>Each model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p>Scything Talons</p>\n<p>Each model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p>Magma Cutter</p>\n<p>Toxinjector</p>\n<p>Each model must be equipped with 1 of the following Secondary Ranged Weapons:</p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"accursed\">Accursed</span> <span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"accursed\">Accursed</span> <span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>",
+      "subSelections": [
+        {
+          "id": "primary-melee-weapons",
+          "label": "Primary Melee Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:scything-talons",
+              "name": "Scything Talons",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:scything-talons",
+                  "name": "Scything Talons",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "primary-ranged-weapons",
+          "label": "Primary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:magma-cutter",
+              "name": "Magma Cutter",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:magma-cutter",
+                  "name": "Magma Cutter",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:toxinjector",
+              "name": "Toxinjector",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:toxinjector",
+                  "name": "Toxinjector",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "secondary-ranged-weapons",
+          "label": "Secondary Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:autocannon#m-accursed",
+              "name": "Autocannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "accursed"
+              ],
+              "points": 22,
+              "parts": [
+                {
+                  "ref": "weapon:autocannon",
+                  "name": "Autocannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "accursed"
+                  ]
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-flamer#m-accursed",
+              "name": "Heavy Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "accursed"
+              ],
+              "points": 25,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-flamer",
+                  "name": "Heavy Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": [
+                    "accursed"
+                  ]
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "10\""
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Monster",
+                "Daemon Engine",
+                "Feel No Pain 5+"
+              ],
+              "remove": [
+                "Infantry"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 45
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "combi-bolter",
+      "name": "Combi-Bolter",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "The bearer is equipped with a Boltgun",
+        "The bearer must be equipped with 1 of the following:",
+        "Flamer",
+        "Meltagun",
+        "Plasma Gun"
+      ],
+      "effectsHtml": "<p>The bearer is equipped with a <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p>The bearer must be equipped with 1 of the following:</p>\n<p>Flamer</p>\n<p>Meltagun</p>\n<p>Plasma Gun</p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:flamer",
+              "name": "Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:flamer",
+                  "name": "Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:meltagun",
+              "name": "Meltagun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:meltagun",
+                  "name": "Meltagun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:plasma-gun",
+              "name": "Plasma Gun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:plasma-gun",
+                  "name": "Plasma Gun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "includedWeapons": [
+        {
+          "ref": "weapon:boltgun",
+          "name": "Boltgun",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 5,
+          "parts": [
+            {
+              "ref": "weapon:boltgun",
+              "name": "Boltgun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ]
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dozer-blade-mount",
+      "name": "Dozer Blade Mount",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "Models equipped with a Dozer Blade Mount:",
+        "Are equipped with a Dozer Blade",
+        "Improve their Breach Test roll by 1",
+        "Do not reduce their Movement characteristic by 2\" when moving through Difficult Ground"
+      ],
+      "effectsHtml": "<p>Models equipped with a Dozer Blade Mount:</p>\n<ul>\n<li><span class=\"keyword\" data-term=\"are-equipped-with-a\" data-type=\"keyword\">Are equipped with a </span><span class=\"weapon-ref\" data-weapon=\"dozer-blade\">Dozer Blade</span></li>\n<li>Improve their Breach Test roll by 1</li>\n<li>Do not reduce their Movement characteristic by 2\" when moving through <span class=\"keyword\" data-term=\"difficult-ground\" data-type=\"keyword\">Difficult Ground</span></li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:dozer-blade",
+          "name": "Dozer Blade",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": null,
+          "parts": [
+            {
+              "ref": "weapon:dozer-blade",
+              "name": "Dozer Blade",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "The bearer can make 2 Smoke Grenades attacks as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> attacks as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "ion-shield",
+      "name": "Ion Shield",
+      "pointsCost": 55,
+      "costNote": null,
+      "category": "Chaos Undivided Upgrades",
+      "effects": [
+        "The bearer gains the Invulnerable Save 5+ against Ranged attacks.",
+        "Ranged attacks made against a model equipped with an Ion Shield reduce their:",
+        "Strength characteristic by 3",
+        "Armour Piercing characteristic by 2",
+        "Damage Characteristic by half (rounding up)",
+        "The Ion Shield has no effect against attacks (Ranged or Melee) made against the bearer by models in Base-to-Base Contact with the bearer."
+      ],
+      "effectsHtml": "<p>The bearer gains the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> against Ranged attacks.</p>\n<p>Ranged attacks made against a model equipped with an Ion Shield reduce their:</p>\n<ul>\n<li>Strength characteristic by 3</li>\n<li>Armour Piercing characteristic by 2</li>\n<li>Damage Characteristic by half (rounding up)</li>\n</ul>\n<p>The Ion Shield has no effect against attacks (Ranged or Melee) made against the bearer by models in Base-to-Base Contact with the bearer.</p>"
+    }
+  ],
+  "catalogItems": [
+    {
+      "itemId": "mark-of-khorne",
+      "name": "Mark of Khorne",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Gain the Khorne keyword",
+        "Gain the Relentless ability",
+        "Add 1 to Attacks characteristic"
+      ],
+      "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"khorne\" data-type=\"keyword\">Khorne</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless </span>ability</li>\n<li>Add 1 to Attacks characteristic</li>\n</ul>",
+      "catalogCategory": "Gifts of Chaos"
+    },
+    {
+      "itemId": "mark-of-nurgle",
+      "name": "Mark of Nurgle",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Gain the Nurgle keyword",
+        "Add 1 to Toughness characteristic",
+        "Gain the Feel No Pain 6+ ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"nurgle\" data-type=\"keyword\">Nurgle</span> keyword</li>\n<li>Add 1 to Toughness characteristic</li>\n<li>Gain the <span class=\"keyword\" data-term=\"feel-no-pain-6\" data-type=\"keyword\">Feel No Pain 6+</span> ability</li>\n</ul>",
+      "catalogCategory": "Gifts of Chaos"
+    },
+    {
+      "itemId": "mark-of-tzeentch",
+      "name": "Mark of Tzeentch",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Gain the Tzeentch keyword",
+        "Gain the Infiltrators ability",
+        "Gain the Unyielding ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"tzeentch\" data-type=\"keyword\">Tzeentch</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"infiltrators\" data-type=\"keyword\">Infiltrators</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding</span> ability</li>\n</ul>",
+      "catalogCategory": "Gifts of Chaos"
+    },
+    {
+      "itemId": "mark-of-slaanesh",
+      "name": "Mark of Slaanesh",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Gain the Slaanesh keyword",
+        "Add 1 to Weapons Skill characteristic",
+        "Add 1 to Initiative characteristic"
+      ],
+      "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"slaanesh\" data-type=\"keyword\">Slaanesh</span> keyword</li>\n<li>Add 1 to Weapons Skill characteristic</li>\n<li>Add 1 to Initiative characteristic</li>\n</ul>",
+      "catalogCategory": "Gifts of Chaos"
+    }
+  ]
+}

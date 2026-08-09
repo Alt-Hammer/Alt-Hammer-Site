@@ -1,0 +1,488 @@
+{
+  "faction": "Tyranids",
+  "slug": "tyranids",
+  "wargearItems": [
+    {
+      "itemId": "adrenal-glands",
+      "name": "Adrenal Glands",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer increases its Initiative characteristic by 2.",
+        "The points cost for this upgrade is as follows:",
+        "5 points per model for models with a Toughness characteristic of 3 or lower",
+        "15 points per model for models with a Toughness characteristic of 4 or higher"
+      ],
+      "effectsHtml": "<p>The bearer increases its Initiative characteristic by 2.</p>\n<p>The points cost for this upgrade is as follows:</p>\n<ul>\n<li>5 points per model for models with a Toughness characteristic of 3 or lower</li>\n<li>15 points per model for models with a Toughness characteristic of 4 or higher</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": {
+                "kind": "modelBand",
+                "band": {
+                  "char": "T",
+                  "min": null,
+                  "max": 3
+                }
+              }
+            },
+            "modelStats": [
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": {
+                "kind": "modelBand",
+                "band": {
+                  "char": "T",
+                  "min": 4,
+                  "max": null
+                }
+              }
+            },
+            "modelStats": [
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "hardened-carapace",
+      "name": "Hardened Carapace",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer increases its Wounds characteristic by 3.",
+        "The points cost for this upgrade is as follows:",
+        "10 points per model for models with a Toughness characteristic of 6 or lower",
+        "20 points per model for models with a Toughness characteristic of 7 or higher"
+      ],
+      "effectsHtml": "<p>The bearer increases its Wounds characteristic by 3.</p>\n<p>The points cost for this upgrade is as follows:</p>\n<ul>\n<li>10 points per model for models with a Toughness characteristic of 6 or lower</li>\n<li>20 points per model for models with a Toughness characteristic of 7 or higher</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": {
+                "kind": "modelBand",
+                "band": {
+                  "char": "T",
+                  "min": null,
+                  "max": 6
+                }
+              }
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": {
+                "kind": "modelBand",
+                "band": {
+                  "char": "T",
+                  "min": 7,
+                  "max": null
+                }
+              }
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "wings",
+      "name": "Wings",
+      "pointsCost": 17,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with Wings:",
+        "Increase their Movement characteristic to 12\"",
+        "Gain the Fly keyword",
+        "Gain the Deep Strike ability",
+        "Are equipped with Wing Barbs"
+      ],
+      "effectsHtml": "<p>Models equipped with Wings:</p>\n<ul>\n<li>Increase their Movement characteristic to 12\"</li>\n<li>Gain the <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Are equipped with <span class=\"weapon-ref\" data-weapon=\"wing-barbs\">Wing Barbs</span></li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:wing-barbs",
+          "name": "Wing Barbs",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 3,
+          "parts": [
+            {
+              "ref": "weapon:wing-barbs",
+              "name": "Wing Barbs",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Fly",
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 17
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "bioform",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "serpentine-bioform",
+      "name": "Serpentine Bioform",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 9\"",
+        "Gains the Deep Strike ability",
+        "Cannot be equipped with Wings"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 9\"</li>\n<li>Gains the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Cannot be equipped with <span class=\"wargear-ref\" data-wargear=\"wings\">Wings</span></li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "9\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ],
+        "unitCap": {
+          "group": "bioform",
+          "cap": 1
+        }
+      }
+    },
+    {
+      "itemId": "neuroloids",
+      "name": "Neuroloids",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "For each Neuroloid included with this unit, extend the Synapse Range of this unit by 6\"."
+      ],
+      "effectsHtml": "<p>For each Neuroloid included with this unit, extend the Synapse Range of this unit by 6\".</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "feeder-tendrils",
+      "name": "Feeder Tendrils",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Each time this model destroys an enemy Infantry Character model with a Melee attack, increase its current number of Wounds by D3."
+      ],
+      "effectsHtml": "<p>Each time this model destroys an enemy <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> model with a Melee attack, increase its current number of Wounds by D3.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "warp-field",
+      "name": "Warp Field",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Warp Field gain the Invulnerable Save 5+ ability. Additionally, once per Battle, models equipped with a Warp Field can attempt to enhance their Warp Field. To do so, take a Psychic Test. If the test is passed, the bearer gains the Invulnerable Save 4+ ability until the end of the Battle Round."
+      ],
+      "effectsHtml": "<p>Models equipped with a Warp Field gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability. Additionally, once per Battle, models equipped with a Warp Field can attempt to enhance their Warp Field. To do so, take a Psychic Test. If the test is passed, the bearer gains the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability until the end of the Battle Round.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "spore-launcher",
+      "name": "Spore Launcher",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "When equipped with a Spore Launcher, this model can make a Ranged attack with that weapon by placing D3 Spore models at least 12\" and up to 90\" away from this model. Those Spore models then becomes their own Spores unit(s) that can be activated as described under the Spores unit profile. If you choose to place any of these Spore models within 6\" horizontally and/or diagonally of each other, those Spore models become a single Spores unit."
+      ],
+      "effectsHtml": "<p>When equipped with a Spore Launcher, this model can make a Ranged attack with that weapon by placing D3 <span class=\"weapon-ref\" data-weapon=\"spore\">Spore</span> models at least 12\" and up to 90\" away from this model. Those <span class=\"weapon-ref\" data-weapon=\"spore\">Spore</span> models then becomes their own Spores unit(s) that can be activated as described under the Spores unit profile. If you choose to place any of these <span class=\"weapon-ref\" data-weapon=\"spore\">Spore</span> models within 6\" horizontally and/or diagonally of each other, those Spore models become a single Spores unit.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

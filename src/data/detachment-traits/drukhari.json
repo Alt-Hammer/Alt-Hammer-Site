@@ -1,0 +1,119 @@
+{
+  "faction": "Drukhari",
+  "slug": "drukhari",
+  "detachmentPoints": 1,
+  "introText": "Unlike many factions, the Drukhari are not driven by territorial conquest or the need to defend their realm from outside invaders. Drukhari forces muster for battle most often simply for the sinister joy of practicing the art of death, torture, fleshcraft, or other such dark motives that can be realized against a target of opportunity. To represent this on the battlefield, Drukhari armies can select 1 of the following Detachment Abilities to function as a thematic, objectives-based gameplay imperative that lasts for the entire Battle.",
+  "detachmentTraits": [
+    {
+      "traitId": "realspace-raiding-party",
+      "name": "Realspace Raiding Party",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Realspace Raiding Parties earn Victory Points by capturing enemy models so that they can be brought back to Cormorragh for any variety of macabre enjoyment. This is achieved by successfully hitting enemy units with Harpoon attacks and then dragging enemy models hit by those attacks off of the battlefield with your Drukhari units by Moving those units towards any battlefield edge until the whole unit can be moved off of that battlefield edge. The victory points for completing this raiding activity are described here.",
+        "For every enemy Infantry or Beast model that is dragged off of the battlefield by a Drukhari Infantry unit that made an attack with a Harpoon weapon, gain 3 Victory Points and 1 Pain Token.",
+        "For every enemy Monster or Vehicle model that is dragged off of the battlefield by a Drukhari unit that made an attack with a Harpoon weapon, gain 8 Victory Points and 3 Pain Tokens.",
+        "For every enemy Character that is dragged off of the battlefield by a Drukhari unit that made an attack with a Harpoon weapon, gain an additional 5 Victory Points and 3 Pain Tokens.",
+        "Gain 2 Victory points and 1 Pain Token for each Drukhari unit that is removed from the battlefield while dragging an enemy unit.",
+        "Victory Points and Pain Token values identified above are doubled if the enemy models are dragged from the tabletop within their own Deployment Zone.",
+        "Enemy models are successfully dragged off the tabletop after a Drukhari unit Moves off of the tabletop with that enemy model (or models) whilst they are subject to the conditions of a Harpoon attack."
+      ],
+      "effectsHtml": "<p>Realspace Raiding Parties earn Victory Points by capturing enemy models so that they can be brought back to Cormorragh for any variety of macabre enjoyment. This is achieved by successfully hitting enemy units with Harpoon attacks and then dragging enemy models hit by those attacks off of the battlefield with your Drukhari units by Moving those units towards any battlefield edge until the whole unit can be moved off of that battlefield edge. The victory points for completing this raiding activity are described here.</p>\n<ul>\n<li>For every enemy <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> or <span class=\"keyword\" data-term=\"beast\" data-type=\"keyword\">Beast</span> model that is dragged off of the battlefield by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> unit that made an attack with a <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> weapon, gain 3 Victory Points and 1 Pain Token.</li>\n<li>For every enemy <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span> or <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> model that is dragged off of the battlefield by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> unit that made an attack with a <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> weapon, gain 8 Victory Points and 3 Pain Tokens.</li>\n<li>For every enemy <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> that is dragged off of the battlefield by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> unit that made an attack with a <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> weapon, gain an additional 5 Victory Points and 3 Pain Tokens.</li>\n<li>Gain 2 Victory points and 1 Pain Token for each <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> unit that is removed from the battlefield while dragging an enemy unit.</li>\n</ul>\n<p>Victory Points and Pain Token values identified above are doubled if the enemy models are dragged from the tabletop within their own Deployment Zone.</p>\n<p>Enemy models are successfully dragged off the tabletop after a Drukhari unit Moves off of the tabletop with that enemy model (or models) whilst they are subject to the conditions of a Harpoon attack.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "the-sublime-slaughtering",
+      "name": "The Sublime Slaughtering",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "For every 5 enemy Infantry or Beast models destroyed by a Drukhari Infantry Melee attack, gain 2 Victory Points and 1 additional Pain Token.",
+        "For every enemy Monster or Vehicle model destroyed by a Drukhari Melee attack, gain 5 Victory Points and 3 Pain Tokens.",
+        "For every enemy Character that is destroyed by a Drukhari Melee attack, gain an additional 5 Victory Points and 3 Pain Tokens."
+      ],
+      "effectsHtml": "<ul>\n<li>For every 5 enemy <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> or <span class=\"keyword\" data-term=\"beast\" data-type=\"keyword\">Beast</span> models destroyed by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> Melee attack, gain 2 Victory Points and 1 additional Pain Token.</li>\n<li>For every enemy <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span> or <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> model destroyed by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> Melee attack, gain 5 Victory Points and 3 Pain Tokens.</li>\n<li>For every enemy <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> that is destroyed by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> Melee attack, gain an additional 5 Victory Points and 3 Pain Tokens.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "my-laboratory-of-fleshcraft",
+      "name": "My Laboratory of Fleshcraft",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "This detachment ability can only be selected if a Haemonculus is your Warlord.",
+        "Attacks with the Poison [X] ability increase [X] by 1, but gain the Hazardous 1 ability. If such attacks already possess the Hazardous [X] ability, increase [X] by 1.",
+        "For every enemy model destroyed by a Drukhari attack with the Poison [X] ability, gain 1 Victory Point and 1 Pain Token. If the destroyed model is a Monster, gain an additional 2 Victory Points and 1 Pain Token. If the destroyed model is a Character, gain an additional 2 Victory Points and 1 Pain Token.",
+        "Haemonculus Covens units can use the Mission Task action to complete the following:",
+        "Torturous Experiment: To be eligible to complete this Action, the unit must not have used - and cannot subsequently use - the Charge and Fight, or Fall Back Actions as part of this Activation. To complete this Action, roll a D6:",
+        "On a 4+, or a 2+ if the Action is being completed by a Haemonculus, the enemy unit suffers D3+1 Mortal Wounds and you gain 3 Victory Points and 2 Pain Tokens.",
+        "If the enemy unit is Battle Shocked, or becomes Battle Shocked during the course of your Activation, you gain 6 Victory Points and 3 Pain Tokens instead.",
+        "Each enemy unit can only be the subject a Torturous Experiment Action once per Battle Round."
+      ],
+      "effectsHtml": "<p>This detachment ability can only be selected if a Haemonculus is your Warlord.</p>\n<ul>\n<li>Attacks with the <span class=\"keyword\" data-term=\"poison-x\" data-type=\"keyword\">Poison [X]</span> ability increase [X] by 1, but gain the <span class=\"keyword\" data-term=\"hazardous-1\" data-type=\"keyword\">Hazardous 1</span> ability. If such attacks already possess the <span class=\"keyword\" data-term=\"hazardous-x\" data-type=\"keyword\">Hazardous [X]</span> ability, increase [X] by 1.</li>\n<li>For every enemy model destroyed by a <span class=\"keyword\" data-term=\"drukhari\" data-type=\"keyword\">Drukhari</span> attack with the <span class=\"keyword\" data-term=\"poison-x\" data-type=\"keyword\">Poison [X]</span> ability, gain 1 Victory Point and 1 Pain Token. If the destroyed model is a <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span>, gain an additional 2 Victory Points and 1 Pain Token. If the destroyed model is a <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span>, gain an additional 2 Victory Points and 1 Pain Token.</li>\n</ul>\n<p><span class=\"keyword\" data-term=\"haemonculus-covens\" data-type=\"keyword\">Haemonculus Covens</span> units can use the <span class=\"keyword\" data-term=\"mission-task\" data-type=\"action\">Mission Task</span> action to complete the following:</p>\n<p><strong>Torturous Experiment:</strong> To be eligible to complete this Action, the unit must not have used - and cannot subsequently use - the <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span>, or <span class=\"keyword\" data-term=\"fall-back\" data-type=\"action\">Fall Back</span> Actions as part of this Activation. To complete this Action, roll a D6:</p>\n<ul>\n<li>On a 4+, or a 2+ if the Action is being completed by a Haemonculus, the enemy unit suffers D3+1 Mortal Wounds and you gain 3 Victory Points and 2 Pain Tokens.</li>\n<li>If the enemy unit is Battle Shocked, or becomes Battle Shocked during the course of your Activation, you gain 6 Victory Points and 3 Pain Tokens instead.</li>\n<li>Each enemy unit can only be the subject a Torturous Experiment Action once per Battle Round.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    }
+  ]
+}

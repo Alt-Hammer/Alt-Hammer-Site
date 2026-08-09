@@ -45,6 +45,17 @@ const pageDescription = faction.description || `${faction.title} faction rules a
 const unitMapJson = JSON.stringify(unitMap);
 const weapons = Array.isArray(unitData?.weapons) ? unitData.weapons : [];
 const weaponMapJson = JSON.stringify(weapons);
+
+// Faction wargear mechanics, so weapon tooltips can resolve the statline after a
+// modifier (Twin-linked, Accursed, Relic Weapon …) is applied — see weapon-mods.js.
+const allWargearFiles = import.meta.glob('../../data/faction-wargear/*.json', { eager: true });
+const wargearFileKey = Object.keys(allWargearFiles).find((key) => key.endsWith(`${slug}.json`));
+const wargearData = wargearFileKey
+  ? (allWargearFiles[wargearFileKey] as any)?.default ?? allWargearFiles[wargearFileKey]
+  : null;
+const wargearMapJson = JSON.stringify(
+  Array.isArray(wargearData?.wargearItems) ? wargearData.wargearItems : []
+);
 ---
 
 <DocsLayout
@@ -76,7 +87,9 @@ const weaponMapJson = JSON.stringify(weapons);
 
   <FactionContent />
 
-  <script is:inline define:vars={{ unitMapJson, weaponMapJson }}>
+  <script is:inline src="/js/weapon-mods.js"></script>
+  <script is:inline src="/js/ref-tooltips.js"></script>
+  <script is:inline define:vars={{ unitMapJson, weaponMapJson, wargearMapJson }}>
   (function () {
     const STATS = ['Act.Pts.','M','WS','BS','I','A','S','T','W','SV','LD'];
     const STAT_KEY_MAP = {
@@ -533,163 +546,14 @@ const weaponMapJson = JSON.stringify(weapons);
     }
 
     // ── Weapon reference tooltips ──────────────────────────────────────────
-
-    function buildWeaponTooltip(weapon) {
-      const tip = document.createElement('div');
-      tip.className = 'ah-ref-tooltip ah-ref-tooltip--weapon';
-
-      const header = document.createElement('div');
-      header.className = 'ah-ref-tooltip__header';
-      header.innerHTML = `
-        <span class="ah-ref-tooltip__type">WEAPON</span>
-        <span class="ah-ref-tooltip__name">${weapon.name}</span>
-      `;
-      tip.appendChild(header);
-
-      if (weapon.profiles && weapon.profiles.length > 0) {
-        for (const profile of weapon.profiles) {
-          const block = document.createElement('div');
-          block.className = 'ah-ref-tooltip__profile-block';
-
-          const profileLabel = document.createElement('div');
-          profileLabel.className = 'ah-ref-tooltip__profile-name';
-          profileLabel.textContent = profile.profileName;
-          block.appendChild(profileLabel);
-
-          const row = document.createElement('div');
-          row.className = 'ah-ref-tooltip__stat-row';
-          const vals = [profile.range, profile.attacks, profile.strength, profile.ap, profile.damage];
-          ['Range','A','S','AP','D'].forEach((k, i) => {
-            const cell = document.createElement('div');
-            cell.className = 'ah-ref-tooltip__stat-cell';
-            cell.innerHTML = `<span class="ah-ref-tooltip__stat-label">${k}</span><span class="ah-ref-tooltip__stat-value">${vals[i] ?? '—'}</span>`;
-            row.appendChild(cell);
-          });
-          block.appendChild(row);
-
-          if (profile.keywords && profile.keywords.length > 0) {
-            const kw = document.createElement('div');
-            kw.className = 'ah-ref-tooltip__keywords';
-            kw.textContent = profile.keywords.join(', ');
-            block.appendChild(kw);
-          }
-          tip.appendChild(block);
-        }
-      } else {
-        const row = document.createElement('div');
-        row.className = 'ah-ref-tooltip__stat-row';
-        const vals = [weapon.range, weapon.attacks, weapon.strength, weapon.ap, weapon.damage];
-        ['Range','A','S','AP','D'].forEach((k, i) => {
-          const cell = document.createElement('div');
-          cell.className = 'ah-ref-tooltip__stat-cell';
-          cell.innerHTML = `<span class="ah-ref-tooltip__stat-label">${k}</span><span class="ah-ref-tooltip__stat-value">${vals[i] ?? '—'}</span>`;
-          row.appendChild(cell);
-        });
-        tip.appendChild(row);
-
-        if (weapon.keywords && weapon.keywords.length > 0) {
-          const kw = document.createElement('div');
-          kw.className = 'ah-ref-tooltip__keywords';
-          kw.textContent = weapon.keywords.join(', ');
-          tip.appendChild(kw);
-        }
-      }
-
-      if (weapon.availability) {
-        const avail = document.createElement('div');
-        avail.className = 'ah-ref-tooltip__availability';
-        avail.innerHTML = `<span class="ah-ref-tooltip__avail-label">Available To</span> ${weapon.availability}`;
-        tip.appendChild(avail);
-      }
-
-      if (weapon.points != null) {
-        const pts = document.createElement('div');
-        pts.className = 'ah-ref-tooltip__points';
-        pts.innerHTML = `${weapon.points} <span>pts</span>`;
-        tip.appendChild(pts);
-      }
-
-      return tip;
-    }
-
-    function buildWargearTooltip(name, points, bodyHtml) {
-      const tip = document.createElement('div');
-      tip.className = 'ah-ref-tooltip ah-ref-tooltip--wargear';
-
-      const header = document.createElement('div');
-      header.className = 'ah-ref-tooltip__header';
-      header.innerHTML = `
-        <span class="ah-ref-tooltip__type">WARGEAR</span>
-        <span class="ah-ref-tooltip__name">${name}</span>
-        ${points ? `<span class="ah-ref-tooltip__points-inline">${points}</span>` : ''}
-      `;
-      tip.appendChild(header);
-
-      const body = document.createElement('div');
-      body.className = 'ah-ref-tooltip__body';
-      body.innerHTML = bodyHtml;
-      tip.appendChild(body);
-
-      return tip;
-    }
-
-    function positionRefTooltip(tipEl, clientX, clientY) {
-      const pad  = 14;
-      const vpW  = window.innerWidth;
-      const vpH  = window.innerHeight;
-      const tipW = tipEl.offsetWidth  || 340;
-      const tipH = tipEl.offsetHeight || 120;
-
-      let x = clientX + pad;
-      let y = clientY - tipH - pad;
-      if (x + tipW > vpW - 8) x = clientX - tipW - pad;
-      if (y < 8) y = clientY + pad;
-      x = Math.max(8, Math.min(x, vpW - tipW - 8));
-      y = Math.max(8, Math.min(y, vpH - tipH - 8));
-
-      tipEl.style.left = x + 'px';
-      tipEl.style.top  = y + 'px';
-    }
-
-    function attachRefTooltip(el, buildFn) {
-      let tipEl = null;
-
-      el.addEventListener('mouseenter', function (e) {
-        tipEl = buildFn();
-        tipEl.style.position = 'fixed';
-        tipEl.style.zIndex   = '10000';
-        tipEl.style.opacity  = '0';
-        tipEl.style.transition = 'opacity 0.1s ease';
-        document.body.appendChild(tipEl);
-        // Position after append so offsetWidth is available
-        positionRefTooltip(tipEl, e.clientX, e.clientY);
-        tipEl.style.opacity = '1';
-      });
-
-      el.addEventListener('mousemove', function (e) {
-        if (tipEl) positionRefTooltip(tipEl, e.clientX, e.clientY);
-      });
-
-      el.addEventListener('mouseleave', function () {
-        if (tipEl) { tipEl.remove(); tipEl = null; }
-      });
-    }
+    // Shared with the List Builder via /js/ref-tooltips.js, so weapon statlines
+    // resolve modifiers (Twin-linked, Accursed …) identically on both surfaces.
 
     function initWeaponRefs() {
       const weapons = JSON.parse(weaponMapJson);
-      if (!weapons || weapons.length === 0) return;
-
-      // Build lookup by slug
-      const weaponLookup = {};
-      for (const w of weapons) {
-        weaponLookup[slugify(w.name)] = w;
-      }
-
-      document.querySelectorAll('span.weapon-ref[data-weapon]').forEach(function (el) {
-        const weapon = weaponLookup[el.dataset.weapon];
-        if (!weapon) return;
-        attachRefTooltip(el, () => buildWeaponTooltip(weapon));
-      });
+      const wargearItems = JSON.parse(wargearMapJson);
+      if (!window.AH_REF || !weapons || weapons.length === 0) return;
+      window.AH_REF.initWeaponRefs(document, weapons, wargearItems);
     }
 
     // ── Wargear reference tooltips ─────────────────────────────────────────
@@ -742,10 +606,30 @@ const weaponMapJson = JSON.stringify(weapons);
         wargearLookup[slug] = { name, points, bodyHtml: bodyParts.join('') };
       });
 
+      // Selectable-upgrade catalogs (Gifts of Chaos, Paths of the Aspect Shrines) are
+      // authored under their OWN heading, outside the Wargear Upgrades section, but are
+      // referenced by wargear-ref spans just the same. Pick up any further H6 that
+      // carries a points value — that is what distinguishes a definition heading from a
+      // unit-profile section heading ("Standard Wargear", "Leader", …), which has none.
+      Array.from(document.querySelectorAll('.rules-content h6')).forEach(function (h6) {
+        const valSpan = h6.querySelector('.heading-value');
+        if (!valSpan) return;
+        const clone = h6.cloneNode(true);
+        clone.querySelector('.heading-value').remove();
+        const name = clone.textContent.trim();
+        const slug = slugify(name);
+        if (wargearLookup[slug]) return;                 // the wargear section wins
+        const bodyParts = [];
+        let el = h6.nextElementSibling;
+        while (el && !/^H[1-6]$/.test(el.tagName)) { bodyParts.push(el.outerHTML); el = el.nextElementSibling; }
+        wargearLookup[slug] = { name, points: valSpan.textContent.trim(), bodyHtml: bodyParts.join('') };
+      });
+
       document.querySelectorAll('span.wargear-ref[data-wargear]').forEach(function (el) {
         const entry = wargearLookup[el.dataset.wargear];
         if (!entry) return;
-        attachRefTooltip(el, () => buildWargearTooltip(entry.name, entry.points, entry.bodyHtml));
+        window.AH_REF.attachRefTooltip(el,
+          () => window.AH_REF.buildWargearTooltip(entry.name, entry.points, entry.bodyHtml));
       });
     }
 

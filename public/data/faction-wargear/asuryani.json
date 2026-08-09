@@ -1,0 +1,521 @@
+{
+  "faction": "Asuryani",
+  "slug": "asuryani",
+  "wargearItems": [
+    {
+      "itemId": "shimmershield",
+      "name": "Shimmershield",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer's unit gains the following abilities while the bearer is on the battlefield:",
+        "Increase Toughness characteristic by 3 against Ranged attacks.",
+        "Increase Wounds characteristic of models in the unit by 1",
+        "Gain the Invulnerable Save 5+ ability"
+      ],
+      "effectsHtml": "<p>The bearer's unit gains the following abilities while the bearer is on the battlefield:</p>\n<ul>\n<li>Increase Toughness characteristic by 3 against Ranged attacks.</li>\n<li>Increase Wounds characteristic of models in the unit by 1</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "scattershield",
+      "name": "Scattershield",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer increases its Wounds characteristic by 3 and gains the Invulnerable Save 5+ ability."
+      ],
+      "effectsHtml": "<p>The bearer increases its Wounds characteristic by 3 and gains the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "jetbike",
+      "name": "Jetbike",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase Movement characteristic to 14\"",
+        "Increase Toughness characteristic by 2",
+        "Increase Wounds characteristic by 2",
+        "Gain the Mounted, Fly, Hover and Deep Strike abilities"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic to 14\"</li>\n<li>Increase Toughness characteristic by 2</li>\n<li>Increase Wounds characteristic by 2</li>\n<li>Gain the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span>, <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span>, <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover </span>and <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike </span>abilities</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "14\""
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted",
+                "Fly",
+                "Hover",
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "banshee-mask",
+      "name": "Banshee Mask",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Enemy units with models in Base-to-Base Contact with the bearer reduce their Leadership characteristic by 1."
+      ],
+      "effectsHtml": "<p>Enemy units with models in Base-to-Base Contact with the bearer reduce their Leadership characteristic by 1.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "warp-jump-generator",
+      "name": "Warp Jump Generator",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 10\"",
+        "Gains the Phase Shift, Deep Strike and Invulnerable Save 5+ abilities."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 10\"</li>\n<li>Gains the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift</span>, <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike </span>and <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> abilities.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "10\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Phase Shift",
+                "Deep Strike",
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "swooping-hawks-wings",
+      "name": "Swooping Hawk's Wings",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 14\"",
+        "Gains the Jump Pack and Deep Strike abilities."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 14\"</li>\n<li>Gains the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack </span>and <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> abilities.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "14\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Jump Pack",
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "force-shield",
+      "name": "Force Shield",
+      "pointsCost": 12,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 1",
+        "Gains the Invulnerable Save 5+ ability"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 12
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "catalogItems": [
+    {
+      "itemId": "path-of-asurmen",
+      "name": "Path of Asurmen",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Asurmen's Hand: This model (and the unit it is leading) gains the Unyielding ability. Additionally, while this model is leading a unit, models in the unit making Ranged attacks score Critical Hits and Critical Wounds on a 5+.",
+        "Leader:",
+        "This model can lead the following additional unit: Dire Avengers"
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Asurmen's Hand:</strong> This model (and the unit it is leading) gains the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding </span>ability. Additionally, while this model is leading a unit, models in the unit making Ranged attacks score Critical Hits and Critical Wounds on a 5+.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Dire Avengers</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-jain-zar",
+      "name": "Path of Jain Zar",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Jain Zar's Grace: This model (and the unit it is leading) gains the Relentless ability. Additionally, while this model is leading a unit, models in the unit making Melee attacks gain the Sustained Hits 1 ability, or increase [X] by 1 if they already possess the Sustained Hits [X] ability.",
+        "Leader:",
+        "This model can lead the following additional unit: Howling Banshees."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Jain Zar's Grace:</strong> This model (and the unit it is leading) gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless </span>ability. Additionally, while this model is leading a unit, models in the unit making Melee attacks gain the <span class=\"keyword\" data-term=\"sustained-hits-1\" data-type=\"keyword\">Sustained Hits 1</span> ability, or increase [X] by 1 if they already possess the <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Howling Banshees.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-karandras",
+      "name": "Path of Karandras",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Karandras' Audacity: This model (and the unit it is leading) gains the Infiltrators and Scout 7\" abilities. Further, while this model is leading a unit, models in the unit increase their Strength characteristic by 1 when making Melee attacks as part of a Charge and Fight action.",
+        "Leader:",
+        "This model can lead the following additional unit: Striking Scorpions."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Karandras' Audacity:</strong> This model (and the unit it is leading) gains the <span class=\"keyword\" data-term=\"infiltrators\" data-type=\"keyword\">Infiltrators</span> and <span class=\"keyword\" data-term=\"scout-7\" data-type=\"keyword\">Scout 7\"</span> abilities. Further, while this model is leading a unit, models in the unit increase their Strength characteristic by 1 when making Melee attacks as part of a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Striking Scorpions.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-fuegan",
+      "name": "Path of Fuegan",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Feugan's Ire: While this model is leading a unit, models in the unit making attacks with Melta or Torrent weapons add 1 to their Wound rolls.",
+        "Leader:",
+        "This model can lead the following additional unit: Fire Dragons."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Feugan's Ire:</strong> While this model is leading a unit, models in the unit making attacks with <span class=\"keyword\" data-term=\"melta\" data-type=\"keyword\">Melta</span> or <span class=\"keyword\" data-term=\"torrent\" data-type=\"keyword\">Torrent</span> weapons add 1 to their Wound rolls.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Fire Dragons.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-maugan-ra",
+      "name": "Path of Maugan Ra",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Shadow of Maugan Ra: While this model is leading a unit, the unit gains the Stealth and Implacable abilities.",
+        "Leader:",
+        "This model can lead the following additional unit: Dark Reapers."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Shadow of Maugan Ra:</strong> While this model is leading a unit, the unit gains the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> and <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> abilities.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Dark Reapers.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-lhykis",
+      "name": "Path of Lhykis",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Lhykis' Guidance: While this model is leading a unit, models in that unit add 6\" to their Movement characteristic when benefitting from the Phase Shift ability.",
+        "Leader:",
+        "This model can lead the following additional unit: Warp Spiders."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Lhykis' Guidance:</strong> While this model is leading a unit, models in that unit add 6\" to their Movement characteristic when benefitting from the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift</span> ability.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Warp Spiders.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-baharoth",
+      "name": "Path of Baharoth",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Baharoth's Descent: While this model is leading a unit with the Jump Pack ability, models in that unit may Enter the Battlefield from Strategic Reserves during the first Battle Round. Additionally, if this model and a unit it is leading uses the Enter the Battlefield from Strategic Reserves Action during the second Battle Round onwards, they can be placed 6\" away from enemy models, instead of the typical 9\".",
+        "Leader:",
+        "This model can lead the following additional unit: Swooping Hawks."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Baharoth's Descent:</strong> While this model is leading a unit with the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> ability, models in that unit may <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> during the first Battle Round. Additionally, if this model and a unit it is leading uses the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action during the second Battle Round onwards, they can be placed 6\" away from enemy models, instead of the typical 9\".</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Swooping Hawks.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    },
+    {
+      "itemId": "path-of-drastanta",
+      "name": "Path of Drastanta",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Abilities:",
+        "Drastanta's Cunning: While this model is Mounted and is leading a Mounted unit, models in that unit increase their Initiative by 3 (instead of 1) when making Melee attacks as part of a Charge and Fight action. Further, this model and the unit it is leading can use the Fall Back Action immediately after using a Charge and Fight action.",
+        "Leader:",
+        "This model can only lead the following units: Shining Spears, Windriders."
+      ],
+      "effectsHtml": "<p>Abilities:</p>\n<p><strong>Drastanta's Cunning:</strong> While this model is <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> and is leading a <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> unit, models in that unit increase their Initiative by 3 (instead of 1) when making Melee attacks as part of a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action. Further, this model and the unit it is leading can use the <span class=\"keyword\" data-term=\"fall-back\" data-type=\"action\">Fall Back</span> Action immediately after using a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action.</p>\n<p>Leader:</p>\n<p>This model can only lead the following units: Shining Spears, Windriders.</p>",
+      "catalogCategory": "Paths of the Aspect Shrines"
+    }
+  ]
+}

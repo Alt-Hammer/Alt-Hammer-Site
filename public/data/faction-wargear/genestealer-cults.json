@@ -1,0 +1,665 @@
+{
+  "faction": "Genestealer Cults",
+  "slug": "genestealer-cults",
+  "wargearItems": [
+    {
+      "itemId": "master-crafted",
+      "name": "Master-crafted",
+      "pointsCost": 8,
+      "costNote": "weapon",
+      "category": null,
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponClass",
+                "values": [
+                  "Ranged",
+                  "Melee"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "psychic-familiar",
+      "name": "Psychic Familiar",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "During your Command Phase, the bearer can use a Psychic Familiar. If it does, until the end of the Battle Round, add 6\" to the range of 1 of its [Psychic] abilities, or 1 of its Psychic attacks. When you choose to use a Psychic Familiar for this ability, roll a D6. On a 3+, destroy 1 Psychic Familiar model."
+      ],
+      "effectsHtml": "<p>During your Command Phase, the bearer can use a Psychic Familiar. If it does, until the end of the Battle Round, add 6\" to the range of 1 of its <strong>[Psychic]</strong> abilities, or 1 of its Psychic attacks. When you choose to use a Psychic Familiar for this ability, roll a D6. On a 3+, destroy 1 Psychic Familiar model.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "cult-icon",
+      "name": "Cult Icon",
+      "pointsCost": 30,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Friendly Genestealer Cults Infantry units that can draw line of sight to the bearer, and who have at least 1 model within 12\" of the bearer, increase their Leadership characteristic by 1.",
+        "While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker in No Man's Land, it is considered to have an Objective Control value of 20.",
+        "While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker in No Man's Land, friendly Genestealer Cults Infantry units currently in Strategic Reserves reduce the required minimum distance they must maintain from enemy units as detailed under the Cult Ambush rule when they use the Enter the Battlefield from Strategic Reserves Action within 12\" of the bearer."
+      ],
+      "effectsHtml": "<ul>\n<li>Friendly <span class=\"keyword\" data-term=\"genestealer-cults-infantry\" data-type=\"keyword\">Genestealer Cults Infantry</span> units that can draw line of sight to the bearer, and who have at least 1 model within 12\" of the bearer, increase their Leadership characteristic by 1.</li>\n<li>While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker in No Man's Land, it is considered to have an Objective Control value of 20.</li>\n<li>While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker in No Man's Land, friendly <span class=\"keyword\" data-term=\"genestealer-cults-infantry\" data-type=\"keyword\">Genestealer Cults Infantry</span> units currently in Strategic Reserves reduce the required minimum distance they must maintain from enemy units as detailed under the Cult Ambush rule when they use the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action within 12\" of the bearer.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "spotter",
+      "name": "Spotter",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "When the bearer begins its Activation with the Remain Stationary Action, it increases its Ballistic Skill by 1 until the end of the Battle Round."
+      ],
+      "effectsHtml": "<p>When the bearer begins its Activation with the <span class=\"keyword\" data-term=\"remain-stationary\" data-type=\"action\">Remain Stationary</span> Action, it increases its Ballistic Skill by 1 until the end of the Battle Round.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer can make 2 Smoke Grenades attacks as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> attacks as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "survey-augur",
+      "name": "Survey Augur",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer ignores the effects of the Stealth ability when selecting enemy units as the target of a Ranged attack."
+      ],
+      "effectsHtml": "<p>The bearer ignores the effects of the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability when selecting enemy units as the target of a Ranged attack.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dozer-grinder-mount",
+      "name": "Dozer-Grinder Mount",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Is equipped with a Dozer-Grinder",
+        "Improve their Breach Test roll by 1",
+        "Do not reduce their Movement characteristic by 2\" when moving through Difficult Ground."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Is equipped with a <span class=\"weapon-ref\" data-weapon=\"dozer-grinder\">Dozer-Grinder</span></li>\n<li>Improve their Breach Test roll by 1</li>\n<li>Do not reduce their Movement characteristic by 2\" when moving through <span class=\"keyword\" data-term=\"difficult-ground\" data-type=\"keyword\">Difficult Ground</span>.</li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:dozer-grinder",
+          "name": "Dozer-Grinder",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": null,
+          "parts": [
+            {
+              "ref": "weapon:dozer-grinder",
+              "name": "Dozer-Grinder",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ]
+    },
+    {
+      "itemId": "rigged-to-blow",
+      "name": "Rigged to Blow",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer replaces its Deadly Demise [X] ability with Deadly Demise D6+1. Additionally, the Deadly Demise [X] ability is triggered on a 3+."
+      ],
+      "effectsHtml": "<p>The bearer replaces its <span class=\"keyword\" data-term=\"deadly-demise-x\" data-type=\"keyword\">Deadly Demise [X]</span> ability with <span class=\"keyword\" data-term=\"deadly-demise-d61\" data-type=\"keyword\">Deadly Demise D6+1</span>. Additionally, the <span class=\"keyword\" data-term=\"deadly-demise-x\" data-type=\"keyword\">Deadly Demise [X]</span> ability is triggered on a 3+.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Deadly Demise D6+1"
+              ],
+              "remove": [
+                "Deadly Demis [X]"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "goliath-heavy-gear-mount",
+      "name": "Goliath Heavy Gear Mount",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer changes its Transport 12 and Firing Deck 12 abilities to Transport 6 and Firing Deck 6.",
+        "The bearer must be equipped with 1 of the following:",
+        "Heavy Mining Laser",
+        "Heavy Seismic Cannon",
+        "Inferno Cannon"
+      ],
+      "effectsHtml": "<p>The bearer changes its <span class=\"keyword\" data-term=\"transport-12\" data-type=\"keyword\">Transport 12</span> and <span class=\"keyword\" data-term=\"firing-deck-12\" data-type=\"keyword\">Firing Deck 12</span> abilities to <span class=\"keyword\" data-term=\"transport-6\" data-type=\"keyword\">Transport 6</span> and <span class=\"keyword\" data-term=\"firing-deck-6\" data-type=\"keyword\">Firing Deck 6</span>.</p>\n<p>The bearer must be equipped with 1 of the following:</p>\n<p><span class=\"weapon-ref\" data-weapon=\"heavy-mining-laser\">Heavy Mining Laser</span></p>\n<p><span class=\"weapon-ref\" data-weapon=\"heavy-seismic-cannon\">Heavy Seismic Cannon</span></p>\n<p><span class=\"weapon-ref\" data-weapon=\"inferno-cannon\">Inferno Cannon</span></p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:heavy-mining-laser",
+              "name": "Heavy Mining Laser",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 35,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-mining-laser",
+                  "name": "Heavy Mining Laser",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:heavy-seismic-cannon",
+              "name": "Heavy Seismic Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 35,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-seismic-cannon",
+                  "name": "Heavy Seismic Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:inferno-cannon",
+              "name": "Inferno Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:inferno-cannon",
+                  "name": "Inferno Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Transport 6",
+                "Firing Deck 6"
+              ],
+              "remove": [
+                "Transport 12",
+                "Firing Deck 12"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "ridgehauler-heavy-gear-mount",
+      "name": "Ridgehauler Heavy Gear Mount",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "The bearer loses the Transport and Firing Deck abilities.",
+        "The bearer must be equipped with 1 of the following:",
+        "Hydra Flak Autocannon",
+        "Boring Laser"
+      ],
+      "effectsHtml": "<p>The bearer loses the <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span> and <span class=\"keyword\" data-term=\"firing-deck\" data-type=\"keyword\">Firing Deck</span> abilities.</p>\n<p>The bearer must be equipped with 1 of the following:</p>\n<p><span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon\">Hydra Flak Autocannon</span></p>\n<p><span class=\"weapon-ref\" data-weapon=\"boring-laser\">Boring Laser</span></p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:hydra-flak-autocannon",
+              "name": "Hydra Flak Autocannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 70,
+              "parts": [
+                {
+                  "ref": "weapon:hydra-flak-autocannon",
+                  "name": "Hydra Flak Autocannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:boring-laser",
+              "name": "Boring Laser",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 70,
+              "parts": [
+                {
+                  "ref": "weapon:boring-laser",
+                  "name": "Boring Laser",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Transport 20",
+                "Firing Deck 20"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "armoured-container",
+      "name": "Armoured Container",
+      "pointsCost": 8,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer:",
+        "Increases its Wounds characteristic by 2",
+        "Reduces its Firing Deck 20 ability to Firing Deck 10.",
+        "The bearer can be equipped with up to 2 of the following:",
+        "Heavy Autogun",
+        "Grenade Launcher"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Wounds characteristic by 2</li>\n<li>Reduces its <span class=\"keyword\" data-term=\"firing-deck-20\" data-type=\"keyword\">Firing Deck 20</span> ability to <span class=\"keyword\" data-term=\"firing-deck-10\" data-type=\"keyword\">Firing Deck 10</span>.</li>\n</ul>\n<p>The bearer can be equipped with up to 2 of the following:</p>\n<p>Heavy Autogun</p>\n<p>Grenade Launcher</p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 0,
+            "max": 2
+          },
+          "options": [
+            {
+              "ref": "weapon:heavy-autogun",
+              "name": "Heavy Autogun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 4,
+              "parts": [
+                {
+                  "ref": "weapon:heavy-autogun",
+                  "name": "Heavy Autogun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:grenade-launcher",
+              "name": "Grenade Launcher",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:grenade-launcher",
+                  "name": "Grenade Launcher",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Firing Deck 10"
+              ],
+              "remove": [
+                "Firing Deck 20"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

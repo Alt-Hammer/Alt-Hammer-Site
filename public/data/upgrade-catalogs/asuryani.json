@@ -1,0 +1,214 @@
+{
+  "faction": "Asuryani",
+  "slug": "asuryani",
+  "catalogs": [
+    {
+      "category": "Paths of the Aspect Shrines",
+      "catalogId": "paths-of-the-aspect-shrines",
+      "items": [
+        {
+          "id": "path-of-asurmen",
+          "name": "Path of Asurmen",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Unyielding"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Asurmen's Hand: This model (and the unit it is leading) gains the Unyielding ability. Additionally, while this model is leading a unit, models in the unit making Ranged attacks score Critical Hits and Critical Wounds on a 5+.",
+            "Leader:",
+            "This model can lead the following additional unit: Dire Avengers"
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Asurmen's Hand:</strong> This model (and the unit it is leading) gains the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding </span>ability. Additionally, while this model is leading a unit, models in the unit making Ranged attacks score Critical Hits and Critical Wounds on a 5+.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Dire Avengers</p>"
+        },
+        {
+          "id": "path-of-jain-zar",
+          "name": "Path of Jain Zar",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Relentless"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Jain Zar's Grace: This model (and the unit it is leading) gains the Relentless ability. Additionally, while this model is leading a unit, models in the unit making Melee attacks gain the Sustained Hits 1 ability, or increase [X] by 1 if they already possess the Sustained Hits [X] ability.",
+            "Leader:",
+            "This model can lead the following additional unit: Howling Banshees."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Jain Zar's Grace:</strong> This model (and the unit it is leading) gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless </span>ability. Additionally, while this model is leading a unit, models in the unit making Melee attacks gain the <span class=\"keyword\" data-term=\"sustained-hits-1\" data-type=\"keyword\">Sustained Hits 1</span> ability, or increase [X] by 1 if they already possess the <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Howling Banshees.</p>"
+        },
+        {
+          "id": "path-of-karandras",
+          "name": "Path of Karandras",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Infiltrators",
+                  "Scout 7\""
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Karandras' Audacity: This model (and the unit it is leading) gains the Infiltrators and Scout 7\" abilities. Further, while this model is leading a unit, models in the unit increase their Strength characteristic by 1 when making Melee attacks as part of a Charge and Fight action.",
+            "Leader:",
+            "This model can lead the following additional unit: Striking Scorpions."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Karandras' Audacity:</strong> This model (and the unit it is leading) gains the <span class=\"keyword\" data-term=\"infiltrators\" data-type=\"keyword\">Infiltrators</span> and <span class=\"keyword\" data-term=\"scout-7\" data-type=\"keyword\">Scout 7\"</span> abilities. Further, while this model is leading a unit, models in the unit increase their Strength characteristic by 1 when making Melee attacks as part of a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Striking Scorpions.</p>"
+        },
+        {
+          "id": "path-of-fuegan",
+          "name": "Path of Fuegan",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Feugan's Ire: While this model is leading a unit, models in the unit making attacks with Melta or Torrent weapons add 1 to their Wound rolls.",
+            "Leader:",
+            "This model can lead the following additional unit: Fire Dragons."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Feugan's Ire:</strong> While this model is leading a unit, models in the unit making attacks with <span class=\"keyword\" data-term=\"melta\" data-type=\"keyword\">Melta</span> or <span class=\"keyword\" data-term=\"torrent\" data-type=\"keyword\">Torrent</span> weapons add 1 to their Wound rolls.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Fire Dragons.</p>"
+        },
+        {
+          "id": "path-of-maugan-ra",
+          "name": "Path of Maugan Ra",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Stealth",
+                  "Implacable"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Shadow of Maugan Ra: While this model is leading a unit, the unit gains the Stealth and Implacable abilities.",
+            "Leader:",
+            "This model can lead the following additional unit: Dark Reapers."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Shadow of Maugan Ra:</strong> While this model is leading a unit, the unit gains the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> and <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> abilities.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Dark Reapers.</p>"
+        },
+        {
+          "id": "path-of-lhykis",
+          "name": "Path of Lhykis",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Lhykis' Guidance: While this model is leading a unit, models in that unit add 6\" to their Movement characteristic when benefitting from the Phase Shift ability.",
+            "Leader:",
+            "This model can lead the following additional unit: Warp Spiders."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Lhykis' Guidance:</strong> While this model is leading a unit, models in that unit add 6\" to their Movement characteristic when benefitting from the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift</span> ability.</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Warp Spiders.</p>"
+        },
+        {
+          "id": "path-of-baharoth",
+          "name": "Path of Baharoth",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Baharoth's Descent: While this model is leading a unit with the Jump Pack ability, models in that unit may Enter the Battlefield from Strategic Reserves during the first Battle Round. Additionally, if this model and a unit it is leading uses the Enter the Battlefield from Strategic Reserves Action during the second Battle Round onwards, they can be placed 6\" away from enemy models, instead of the typical 9\".",
+            "Leader:",
+            "This model can lead the following additional unit: Swooping Hawks."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Baharoth's Descent:</strong> While this model is leading a unit with the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> ability, models in that unit may <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> during the first Battle Round. Additionally, if this model and a unit it is leading uses the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action during the second Battle Round onwards, they can be placed 6\" away from enemy models, instead of the typical 9\".</p>\n<p>Leader:</p>\n<p>This model can lead the following additional unit: Swooping Hawks.</p>"
+        },
+        {
+          "id": "path-of-drastanta",
+          "name": "Path of Drastanta",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": null,
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Abilities:",
+            "Drastanta's Cunning: While this model is Mounted and is leading a Mounted unit, models in that unit increase their Initiative by 3 (instead of 1) when making Melee attacks as part of a Charge and Fight action. Further, this model and the unit it is leading can use the Fall Back Action immediately after using a Charge and Fight action.",
+            "Leader:",
+            "This model can only lead the following units: Shining Spears, Windriders."
+          ],
+          "effectsHtml": "<p>Abilities:</p>\n<p><strong>Drastanta's Cunning:</strong> While this model is <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> and is leading a <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> unit, models in that unit increase their Initiative by 3 (instead of 1) when making Melee attacks as part of a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action. Further, this model and the unit it is leading can use the <span class=\"keyword\" data-term=\"fall-back\" data-type=\"action\">Fall Back</span> Action immediately after using a <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action.</p>\n<p>Leader:</p>\n<p>This model can only lead the following units: Shining Spears, Windriders.</p>"
+        }
+      ]
+    }
+  ]
+}

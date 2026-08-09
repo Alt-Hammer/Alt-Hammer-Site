@@ -1,0 +1,167 @@
+{
+  "faction": "Orks",
+  "slug": "orks",
+  "detachmentPoints": 1,
+  "introText": "Your Ork army can select 1 of the following Detachment Traits. These detachment traits offer Force Organization and army structure changes to represent various infamous Ork formations and their warfare styles on the tabletop.",
+  "detachmentTraits": [
+    {
+      "traitId": "green-tide",
+      "name": "Green Tide",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Each time a Battleline unit from your army is destroyed, roll a D6. On a roll of a 4 or 5, up to half of the models in the unit can be placed into Strategic Reserves and may be Activated in the next Battle Round. On a roll of a 6, the whole unit can be placed into Strategic Reserves and may be Activated in the next Battle Round."
+      ],
+      "effectsHtml": "<p>Each time a <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> unit from your army is destroyed, roll a D6. On a roll of a 4 or 5, up to half of the models in the unit can be placed into Strategic Reserves and may be Activated in the next Battle Round. On a roll of a 6, the whole unit can be placed into Strategic Reserves and may be Activated in the next Battle Round.</p>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": null,
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "speed-freeks",
+      "name": "Speed Freeks",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "Bikerz gain the Battleline keyword",
+        "Boyz lose the Battleline keyword",
+        "Any Orks Infantry units in your army that do not have the Mounted or Jump Pack keywords must start the battle embarked in a Transport.",
+        "Your army cannot include any Beast Snaggas units"
+      ],
+      "effectsHtml": "<ul>\n<li>Bikerz gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Boyz lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Any <span class=\"keyword\" data-term=\"orks-infantry\" data-type=\"keyword\">Orks Infantry</span> units in your army that do not have the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> or <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> keywords must start the battle embarked in a Transport.</li>\n<li>Your army cannot include any <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas </span>units</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Boyz"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Bikerz"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    },
+    {
+      "traitId": "snaggin-raid",
+      "name": "Snaggin’ Raid",
+      "detachmentPointsCost": 1,
+      "category": null,
+      "effects": [
+        "The following Force Organization changes must be adhered to:",
+        "Beast Snaggas Boyz gain the Battleline keyword",
+        "Boyz lose the Battleline keyword",
+        "Only units with the Beast Snaggas keyword can be included in your army",
+        "Snaggin’ Raid can earn Victory Points by capturing enemy models so that they can be brought back to their camps to be used in bloodsports and, eventually, as trophies. This is achieved by successfully hitting enemy units with Harpoon attacks and then dragging enemy models hit by those attacks off of the battlefield with your Beast Snaggas units by Moving those units towards any battlefield edge until the whole unit can be moved off of that battlefield edge. The victory points for completing this raiding activity are described here.",
+        "For every enemy Beast model that is dragged off of the battlefield by a Beast Snaggas unit that made an attack with a Harpoon weapon, gain 3 Victory Points.",
+        "For every enemy Monster or Vehicle model that is dragged off of the battlefield by a Beast Snaggas unit that made an attack with a Harpoon weapon, gain 8 Victory Points.",
+        "For every enemy Character that is dragged off of the battlefield by a Beast Snaggas unit that made an attack with a Harpoon weapon, gain an additional 5 Victory Points.",
+        "Gain 2 Victory points for each Beast Snaggas unit that is removed from the battlefield while dragging an enemy unit."
+      ],
+      "effectsHtml": "<p>The following Force Organization changes must be adhered to:</p>\n<ul>\n<li>Beast Snaggas Boyz gain the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Boyz lose the <span class=\"keyword\" data-term=\"battleline\" data-type=\"keyword\">Battleline</span> keyword</li>\n<li>Only units with the <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> keyword can be included in your army</li>\n</ul>\n<p>Snaggin' Raid can earn Victory Points by capturing enemy models so that they can be brought back to their camps to be used in bloodsports and, eventually, as trophies. This is achieved by successfully hitting enemy units with <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> attacks and then dragging enemy models hit by those attacks off of the battlefield with your Beast Snaggas units by Moving those units towards any battlefield edge until the whole unit can be moved off of that battlefield edge. The victory points for completing this raiding activity are described here.</p>\n<ul>\n<li>For every enemy <span class=\"keyword\" data-term=\"beast\" data-type=\"keyword\">Beast</span> model that is dragged off of the battlefield by a <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> unit that made an attack with a <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> weapon, gain 3 Victory Points.</li>\n<li>For every enemy <span class=\"keyword\" data-term=\"monster\" data-type=\"keyword\">Monster</span> or <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> model that is dragged off of the battlefield by a <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> unit that made an attack with a <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> weapon, gain 8 Victory Points.</li>\n<li>For every enemy <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> that is dragged off of the battlefield by a <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> unit that made an attack with a <span class=\"keyword\" data-term=\"harpoon\" data-type=\"keyword\">Harpoon</span> weapon, gain an additional 5 Victory Points.</li>\n<li>Gain 2 Victory points for each <span class=\"keyword\" data-term=\"beast-snaggas\" data-type=\"keyword\">Beast Snaggas</span> unit that is removed from the battlefield while dragging an enemy unit.</li>\n</ul>",
+      "selection": {
+        "subcategoryCap": null,
+        "exclusivityGroup": null
+      },
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Boyz"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": [
+                "Battleline"
+              ]
+            },
+            "points": null
+          },
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Beast Snaggas Boyz"
+                ]
+              ],
+              "domain": "unit",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Battleline"
+              ],
+              "remove": []
+            },
+            "points": null
+          }
+        ]
+      }
+    }
+  ]
+}

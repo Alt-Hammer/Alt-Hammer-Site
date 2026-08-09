@@ -5,7 +5,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
-[[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
+# Short share links (/r/<id>) are served by a real Astro route, src/pages/r/[id].astro —
+# not by a rewrite. Netlify resolves redirects and static files ahead of framework
+# routing, so a `/r/* -> /list-export` rewrite never reached the page.
+#
+# There is deliberately no catch-all `/* -> /404` rule here either.
+#
+# The Astro adapter registers its SSR function at path "/*" with preferStatic, so any
+# path without a matching static file reaches Astro, which renders the site's own 404
+# page. Netlify evaluates redirect rules BEFORE function routing, so a catch-all here
+# would be matched first and would swallow every SSR route — including /api/list — and
+# answer 404 before the function ever ran.

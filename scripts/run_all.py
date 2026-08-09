@@ -90,6 +90,10 @@ def main():
     from extract_roll_tables import extract_roll_tables, ROLL_TABLES_XLSX
     from extract_stratagems  import extract_stratagems
     from extract_objectives  import extract_objectives
+    from convert_faction_wargear   import convert_faction_wargear,   FACTION_INDEX_DOCX as FWG_DOCX, OUTPUT_DIR as FACTION_WG_OUT
+    from convert_detachment_traits import convert_detachment_traits, FACTION_INDEX_DOCX as DT_DOCX,  OUTPUT_DIR as DETACH_OUT
+    from convert_upgrades         import convert_upgrades,         WORKBOOK as UPGRADES_XLSX
+    import convert_options
 
     results = []
 
@@ -374,12 +378,86 @@ def main():
         WEAPONS_OUT,
     ))
 
+    # ── Step 5: Faction Wargear Upgrades ──────────────────────────────────────
+    # Parses faction-level wargear items (armour, equipment, weapon modifiers)
+    # from the H3: Wargear Upgrades section in the Faction Rules Index. This
+    # REWRITES each faction-wargear file fresh from the docx (no mechanics), so
+    # the workbook merge (Step 6b) must run afterwards, and Unit Options (Step 6c)
+    # after that — otherwise modifiers are priced before their mechanics exist.
+    results.append(run_step(
+        "Faction Wargear Upgrades → src/data/faction-wargear/",
+        convert_faction_wargear,
+        FWG_DOCX,
+        FACTION_WG_OUT,
+    ))
+
+    # ── Step 6: Detachment Traits ─────────────────────────────────────────────
+    # Parses faction Detachment Traits from the H3: Detachment Traits section
+    # in the Faction Rules Index. Runs before the workbook merge (Step 6b), which
+    # enriches this file in place.
+    results.append(run_step(
+        "Detachment Traits → src/data/detachment-traits/",
+        convert_detachment_traits,
+        DT_DOCX,
+        DETACH_OUT,
+    ))
+
+    # ── Step 6b: Wargear/Trait mechanical effects (workbook merge) ────────────
+    # Ingests the tabulated Wargear Upgrades & Detachment Traits workbook and
+    # merges structured `mechanics` + `selection` blocks onto the faction-wargear
+    # and detachment-trait JSON. Must run AFTER Steps 5 & 6 (it enriches their
+    # output in place) and BEFORE Step 6c — Unit Options prices weapon modifiers
+    # (Twin-linked / Accursed / Relic Weapon / Master-crafted) against the
+    # mechanics merged here, so the effective-Strength tiering is correct.
+    results.append(run_step(
+        "Wargear/Trait Mechanics → faction-wargear/ + detachment-traits/",
+        convert_upgrades,
+        UPGRADES_XLSX,
+    ))
+
+    # ── Step 6c: Unit Options (grammar parser) ────────────────────────────────
+    # Parses per-unit Standard Wargear / Armour Options / Wargear Options /
+    # Force Organization into the canonical `options` object merged into
+    # src/data/units/{slug}.json (and mirrored to public/data/units/). This is
+    # the single source of truth for the List Builder. Requires Steps 3-6b (it
+    # resolves + prices modifier refs against the merged faction-wargear).
+    results.append(run_step(
+        "Unit Options → src/data/units/ (options)",
+        convert_options.run,
+    ))
+
+    # ── Step 8: Copy JSON data to public/data/ ────────────────────────────────
+    # src/data/ is build-time only (Astro/Vite doesn't serve it at runtime).
+    # The list builder fetches JSON client-side from /data/…, which requires
+    # the files to live under public/data/. This step keeps them in sync.
+    def _copy_data_to_public():
+        import shutil
+        subdirs = ['units', 'faction-wargear', 'detachment-traits', 'upgrade-catalogs']
+        total = 0
+        for subdir in subdirs:
+            src_dir = os.path.join('src', 'data', subdir)
+            dst_dir = os.path.join('public', 'data', subdir)
+            if not os.path.isdir(src_dir):
+                print(f"  ⚠  {src_dir} not found — skipping")
+                continue
+            os.makedirs(dst_dir, exist_ok=True)
+            for fname in os.listdir(src_dir):
+                if fname.endswith('.json'):
+                    shutil.copy2(os.path.join(src_dir, fname), os.path.join(dst_dir, fname))
+                    total += 1
+        print(f"  ✓  Copied {total} JSON files to public/data/")
+
+    results.append(run_step(
+        "Copy JSON data → public/data/ (list builder runtime access)",
+        _copy_data_to_public,
+    ))
+
     # ── Summary ───────────────────────────────────────────────────────────────
     print(f"\n{'='*60}")
     print(f"  PIPELINE COMPLETE")
     print(f"{'='*60}")
 
-    steps = ["Definitions", "Core Rules", "Inject RollTable", "Roll Tables", "Stratagems", "Objectives", "Inject ObjectiveGrid", "Inject Deployment Accordions", "Faction Index", "Unit Data Tables", "Weapon Data Tables"]
+    steps = ["Definitions", "Core Rules", "Inject RollTable", "Roll Tables", "Stratagems", "Objectives", "Inject ObjectiveGrid", "Inject Deployment Accordions", "Faction Index", "Unit Data Tables", "Weapon Data Tables", "Faction Wargear Upgrades", "Detachment Traits", "Wargear/Trait Mechanics", "Unit Options", "Copy JSON to public/data"]
     all_ok = True
     for step, result in zip(steps, results):
         icon = "✓" if result else "✗"

@@ -1,0 +1,814 @@
+{
+  "faction": "The T'au Empire",
+  "slug": "the-tau-empire",
+  "wargearItems": [
+    {
+      "itemId": "markerlight",
+      "name": "Markerlight",
+      "pointsCost": 5,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "A Markerlight is a Ranged weapon that generates zero damage but confers the following ability when fired:",
+        "Target Acquisition: Markerlights that successfully Hit an enemy unit provide stacking, cumulative abilities for other friendly T'au units that make Ranged attacks against that enemy unit, as follows:",
+        "1 to 5 Markerlight Hits: friendly T'au units add 1 to their Hit roll",
+        "6 to 10 Markerlight Hits: The above applies, and friendly T'au units increase their Ballistic Skill by 1",
+        "11 or more Markerlight Hits: The above applies, and friendly T'au ranged attacks (excluding attacks made by Ordnance or One Shot weapons) increase their Attacks characteristic by 1.",
+        "If an Infantry model chooses to make a Ranged attack with a Markerlight, and that attack successfully Hits, it can only make that Ranged attack as part of its Activation; no other Ranged attacks can be made by that model.",
+        "A Markerlight's effect lasts until the end of the Battle Round, or until the bearer of the Markerlight is destroyed."
+      ],
+      "effectsHtml": "<p>A <span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span> is a Ranged weapon that generates zero damage but confers the following ability when fired:</p>\n<p><strong>Target Acquisition:</strong> Markerlights that successfully Hit an enemy unit provide stacking, cumulative abilities for other friendly T'au units that make Ranged attacks against that enemy unit, as follows:</p>\n<ul>\n<li>1 to 5 Markerlight Hits: friendly T'au units add 1 to their Hit roll</li>\n<li>6 to 10 Markerlight Hits: The above applies, and friendly T'au units increase their Ballistic Skill by 1</li>\n<li>11 or more Markerlight Hits: The above applies, and friendly T'au ranged attacks (excluding attacks made by <span class=\"keyword\" data-term=\"ordnance\" data-type=\"keyword\">Ordnance</span> or <span class=\"keyword\" data-term=\"one-shot\" data-type=\"keyword\">One Shot</span> weapons) increase their Attacks characteristic by 1.</li>\n</ul>\n<p>If an <span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> model chooses to make a Ranged attack with a Markerlight, and that attack successfully Hits, it can only make that Ranged attack as part of its Activation; no other Ranged attacks can be made by that model.</p>\n<p>A Markerlight's effect lasts until the end of the Battle Round, or until the bearer of the Markerlight is destroyed.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "shield-generator",
+      "name": "Shield Generator",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer increases its Toughness characteristic by 3 against Ranged attacks, and gains the Invulnerable Save 5+ and Bodyguard abilities."
+      ],
+      "effectsHtml": "<p>The bearer increases its Toughness characteristic by 3 against Ranged attacks, and gains the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> and <span class=\"keyword\" data-term=\"bodyguard\" data-type=\"keyword\">Bodyguard</span> abilities.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "pulse-accelerator",
+      "name": "Pulse Accelerator",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Increase the Range characteristic by 6\" and Armour Piercing characteristic by 1 when all models in the unit equipped with the following Pulse weapons target the same enemy unit: Pulse Pistol, Pulse Carbine, Pulse Rifle, Long-shot Pulse Rifle, Pulse Cannon, Heavy Pulse Cannon."
+      ],
+      "effectsHtml": "<p>Increase the Range characteristic by 6\" and Armour Piercing characteristic by 1 when all models in the unit equipped with the following Pulse weapons target the same enemy unit: <span class=\"weapon-ref\" data-weapon=\"pulse-pistol\">Pulse Pistol</span>, <span class=\"weapon-ref\" data-weapon=\"pulse-carbine\">Pulse Carbine</span>, <span class=\"weapon-ref\" data-weapon=\"pulse-rifle\">Pulse Rifle</span>, <span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span>, <span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span>, <span class=\"weapon-ref\" data-weapon=\"heavy\">Heavy</span> <span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span>.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "early-warning-override",
+      "name": "Early Warning Override",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer increases its Ballistic Skill by 1 when targeting enemy units that used the Enter the Battlefield from Strategic Reserves Action within 12\" of the bearer during the current Battle Round."
+      ],
+      "effectsHtml": "<p>The bearer increases its Ballistic Skill by 1 when targeting enemy units that used the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action within 12\" of the bearer during the current Battle Round.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "counterfire-defence-system",
+      "name": "Counterfire Defence System",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Reduce the Attacks characteristic of incoming Ranged attacks against the bearer's unit by D3 (to a minimum of 1). This wargear has no effect against Ranged attacks with the Torrent keyword."
+      ],
+      "effectsHtml": "<p>Reduce the Attacks characteristic of incoming Ranged attacks against the bearer's unit by D3 (to a minimum of 1). This wargear has no effect against Ranged attacks with the <span class=\"keyword\" data-term=\"torrent\" data-type=\"keyword\">Torrent</span> keyword.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "velocity-tracker",
+      "name": "Velocity Tracker",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer's Ranged weapons gain the Anti Air ability."
+      ],
+      "effectsHtml": "<p>The bearer's Ranged weapons gain the <span class=\"keyword\" data-term=\"anti-air\" data-type=\"keyword\">Anti Air</span> ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "multi-tracker",
+      "name": "Multi-Tracker",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer scores Critical Hits on a 5+ when making a Ranged attack in the same activation that began with using the Enter the Battlefield from Strategic Reserves or Move Actions."
+      ],
+      "effectsHtml": "<p>The bearer scores Critical Hits on a 5+ when making a Ranged attack in the same activation that began with using the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> or <span class=\"keyword\" data-term=\"move\" data-type=\"action\">Move</span> Actions.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Anti-Air"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "stim-injectors",
+      "name": "Stim Injectors",
+      "pointsCost": 25,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer gains the Feel No Pain 5+ ability. Once per battle when the unit is the target of an enemy attack, you can choose to have the bearer drain its Stims. When it does do, the Damage characteristic of enemy attacks is reduced by 1 (to a minimum of 1), and, if the bearer is still on the battlefield in your next Command Phase, it can regain up to D3 lost Wounds. After choosing to drain its Stims, this wargear upgrade confers no further abilities to its bearer."
+      ],
+      "effectsHtml": "<p>The bearer gains the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability. Once per battle when the unit is the target of an enemy attack, you can choose to have the bearer drain its Stims. When it does do, the Damage characteristic of enemy attacks is reduced by 1 (to a minimum of 1), and, if the bearer is still on the battlefield in your next Command Phase, it can regain up to D3 lost Wounds. After choosing to drain its Stims, this wargear upgrade confers no further abilities to its bearer.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Feel No Pain 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 25
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "stealth-field-projector",
+      "name": "Stealth Field Projector",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The unit gains the Stealth ability, or decreases the range of an existing Stealth ability from 12\" to 6\"."
+      ],
+      "effectsHtml": "<p>The unit gains the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability, or decreases the range of an existing <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability from 12\" to 6\".</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Stealth"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "target-lock",
+      "name": "Target Lock",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer's weapons gain the Assault ability. This wargear has no effect on weapons that already possess the Assault ability, or which possess the Ordnance keyword."
+      ],
+      "effectsHtml": "<p>The bearer's weapons gain the <span class=\"keyword\" data-term=\"assault\" data-type=\"keyword\">Assault</span> ability. This wargear has no effect on weapons that already possess the <span class=\"keyword\" data-term=\"assault\" data-type=\"keyword\">Assault</span> ability, or which possess the <span class=\"keyword\" data-term=\"ordnance\" data-type=\"keyword\">Ordnance</span> keyword.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Assault"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "advanced-targeting-system",
+      "name": "Advanced Targeting System",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "The bearer scores Critical Wounds on a 5+ when making Ranged attacks."
+      ],
+      "effectsHtml": "<p>The bearer scores Critical Wounds on a 5+ when making Ranged attacks.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "iridium-armour",
+      "name": "Iridium Armour",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Infantry Walker model only. The bearer:",
+        "Reduces the Damage characteristic of enemy attacks by half (to a minimum of 1)",
+        "Increases its Armour Save characteristic to 2+"
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> model only. The bearer:</p>\n<ul>\n<li>Reduces the Damage characteristic of enemy attacks by half (to a minimum of 1)</li>\n<li>Increases its Armour Save characteristic to 2+</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "xv85-coldstar-battlesuit",
+      "name": "XV85 Coldstar Battlesuit",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Infantry Walker model equipped with a Crisis Battlesuit only. The bearer:",
+        "Increases its Movement characteristic by 4\",",
+        "Reduces its Toughness characteristic by 1."
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> model equipped with a Crisis Battlesuit only. The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic by 4\",</li>\n<li>Reduces its Toughness characteristic by 1.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 4
+              },
+              {
+                "char": "T",
+                "op": "dec",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "xv86-enforcer-battlesuit",
+      "name": "XV86 Enforcer Battlesuit",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Infantry Walker model equipped with a Crisis Battlesuit only. The bearer:",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 3",
+        "Reduces its Movement characteristic by 2\""
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> model equipped with a Crisis Battlesuit only. The bearer:</p>\n<ul>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 3</li>\n<li>Reduces its Movement characteristic by 2\"</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "xv26-stealth-suit",
+      "name": "XV26 Stealth Suit",
+      "pointsCost": -50,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Infantry Walker model equipped with a Crisis Battlesuit only. The bearer:",
+        "Gains the Stealth keyword",
+        "Reduces its Movement characteristic by 2\"",
+        "Reduces its Toughness characteristic by 2",
+        "Reduces its Wounds characteristic by 1",
+        "Reduces total available Battlesuit Hardpoints to 2, which can be equipped with a maximum of 1 Ranged Weapon.",
+        "Can only Lead the Stealth Team unit"
+      ],
+      "effectsHtml": "<p><span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> model equipped with a Crisis Battlesuit only. The bearer:</p>\n<ul>\n<li>Gains the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> keyword</li>\n<li>Reduces its Movement characteristic by 2\"</li>\n<li>Reduces its Toughness characteristic by 2</li>\n<li>Reduces its Wounds characteristic by 1</li>\n<li>Reduces total available Battlesuit Hardpoints to 2, which can be equipped with a maximum of 1 Ranged Weapon.</li>\n<li>Can only Lead the Stealth Team unit</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "dec",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "dec",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Stealth"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": -50
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "kalamandras-mount",
+      "name": "Kalamandras Mount",
+      "pointsCost": 35,
+      "costNote": null,
+      "category": null,
+      "effects": [
+        "Models equipped with a Kalamandras Mount:",
+        "Gain the Mounted keyword",
+        "Increase their Movement characteristic to 12\"",
+        "Increase their Initiative characteristic by 2",
+        "Increase their Toughness characteristic by 2",
+        "Increase their Wounds characteristic by 3",
+        "Increase their Armour Save characteristic to 5+",
+        "The Kalamandras Mount is equipped with Rending Claws."
+      ],
+      "effectsHtml": "<p>Models equipped with a Kalamandras Mount:</p>\n<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Increase their Movement characteristic to 12\"</li>\n<li>Increase their Initiative characteristic by 2</li>\n<li>Increase their Toughness characteristic by 2</li>\n<li>Increase their Wounds characteristic by 3</li>\n<li>Increase their Armour Save characteristic to 5+</li>\n</ul>\n<p>The Kalamandras Mount is equipped with <span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span>.</p>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:rending-claws",
+          "name": "Rending Claws",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 8,
+          "parts": [
+            {
+              "ref": "weapon:rending-claws",
+              "name": "Rending Claws",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "5+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "experimental-weapons-system",
+      "name": "Experimental Weapons System",
+      "pointsCost": 10,
+      "costNote": "weapons",
+      "category": null,
+      "effects": [
+        "Ranged weapons increase their Armour Piercing and Damage characteristics by 1, but gain the Hazardous D3 ability.",
+        "Ranged Torrent weapons instead increase their Strength and Attacks characteristic by 2 and gain the Poison 1 ability, but gain the Heavy ability reduce their Range characteristic by 3\"."
+      ],
+      "effectsHtml": "<ul>\n<li>Ranged weapons increase their Armour Piercing and Damage characteristics by 1, but gain the <span class=\"keyword\" data-term=\"hazardous-d3\" data-type=\"keyword\">Hazardous D3</span> ability.</li>\n<li>Ranged <span class=\"keyword\" data-term=\"torrent\" data-type=\"keyword\">Torrent</span> weapons instead increase their Strength and Attacks characteristic by 2 and gain the <span class=\"keyword\" data-term=\"poison-1\" data-type=\"keyword\">Poison 1</span> ability, but gain the <span class=\"keyword\" data-term=\"heavy\" data-type=\"keyword\">Heavy</span> ability reduce their Range characteristic by 3\".</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "AP",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [
+                "Hazardous D3"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponKeyword",
+                "values": [
+                  "Torrent"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "Rng",
+                "op": "dec",
+                "value": 3
+              },
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 2
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "keywords": {
+              "add": [
+                "Poison 1"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": null,
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

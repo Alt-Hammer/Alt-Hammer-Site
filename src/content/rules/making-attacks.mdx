@@ -25,11 +25,9 @@ Your units and models can make attacks against enemy units and models both at Ra
 
 ### General Conditions Applicable to Making Attacks
 
-- Models cannot select enemy units or models as the target of an attack if that model is incapable of successfully hitting that target (because the attacking model's Weapons Skill or Ballistic Skill is too low relative to the target model/unit). Check the Hit Roll Table to confirm that your attacking model is able to Hit, and remember to account for any applicable modifiers. If it's not able to Hit, choose another target, or, if none are available, the model is not eligible to make those attacks.
-- Models cannot select enemy units or models as the target of an attack if that model is incapable of successfully Wounding that target for any reason; ie, the attack's Strength characteristic would be too low to Wound the model. The Wound Rolls subsection includes a Wound Table that displays the dice roll values needed to successfully Wound.
+- Hit Rolls are made using a model's Ballistic Skill for Ranged attacks, and their Weapon Skill for Melee attacks. Hit rolls of 1 always fail, and rolls of 6 always count as a Critical Hit and trigger the Lucky Hits rule. Be sure to account for any abilities that may alter Hit rolls, such as abilities that enable Critical Hits to be scored on a 5 instead of a 6. However, if a model is not able to Hit a target per the Hit Roll Table, then that model is not able to score a Critical Hit on that target (but can still attempt to score Lucky Hits).
 - Attacks that have a Strength characteristic that is more than three times the value of the target's toughness characteristic automatically destroy that target upon a successful Hit roll. The target model or unit cannot use any saving throws of any kind, and one model is destroyed for each attack that meets these conditions.
-- Hit Rolls are made using a model's Ballistic Skill for Ranged attacks, and their Weapon Skill for Melee attacks. Hit rolls of 1 always fail, and rolls of 6 always count as a Critical Hit. Be sure to account for any abilities that may alter Hit rolls, such as abilities that enable Critical Hits to be scored on a 5 instead of a 6. However, if a model is not able to Hit a target per the Hit Roll Table, then that model is not able to score a Critical Hit on that target.
-- Wound Rolls of 1 always fail, and rolls of 6 always count as a Critical Wound. Be sure to account for any abilities that may alter Wound rolls, such as abilities that enable Critical Wounds to be scored on a 5 instead of a 6. However, if a model is not able to Wound a target per the Wound Roll Table, then that model is not able to score a Critical Wound.
+- Wound Rolls of 1 always fail, and rolls of 6 always count as a Critical Wound (and may be subject to the Lucky Hits rule). Be sure to account for any abilities that may alter Wound rolls, such as abilities that enable Critical Wounds to be scored on a 5 instead of a 6. However, if a model is not able to Wound a target per the Wound Roll Table, then that model is not able to score a Critical Wound (unless benefitting from the Lucky Hits rule).
 - Hit rolls and Wound rolls can be subject to negative and positive modifiers attributed to abilities or special rules applicable to that attack. The cumulative effect of these modifiers cannot exceed a total change of +/- 1 to that dice roll. 
 
 ### Armour Saves
@@ -55,14 +53,22 @@ Successful Hit rolls are determined by comparing the attacking model's Weapons o
 
 
 <RollTable data={hitData} />
-Hit rolls are often subject to positive or negative modifiers caused by attacking model abilities or target model abilities, however, those roll modifiers cannot supersede the limitations set forth by auto and x values. For example, if a model with a Weapons Skill of 2 is attempting to Hit a model with a Weapons Skill of 7 and is benefitting from a rule that gives them +1 to their Hit roll, their attack will still fail because they have insufficient Weapons Skill to attack the target effectively. However, if that same model was instead benefitting from an ability that increased its Weapons Skill characteristic by 1 (bringing it to a Weapons Skill 3), the model would then be able to Hit the target on a 6+.
+Hit rolls are often subject to positive or negative modifiers caused by attacking model abilities or target model abilities, however, those roll modifiers cannot supersede the limitations set forth by auto and x values. For example, if a model with a Weapons Skill of 2 is attempting to Hit a model with a Weapons Skill of 7 and is benefitting from a rule that gives them +1 to their Hit roll, their attack will still fail because they have insufficient Weapons Skill to attack the target effectively. However, if that same model was instead benefitting from an ability that increased its Weapons Skill characteristic by 1 (bringing it to a Weapons Skill 3), the model would then be able to Hit the target on a 6+, which would then trigger the Lucky Hits rule as detailed below.
 
 
 ### Wound Roll Table
 
 
-Successful Wound rolls are determined using the table below. Values of **auto** mean that target units or models are automatically wounded on a successful Hit roll, and the target model or unit is immediately destroyed - with no Armour Save roles of any kind able to be made. Values of x mean that the Strength characteristic is too low to Wound the target model or unit, and thus those attacks have no effect against that target unit or model. Wound rolls may be subject to positive or negative modifiers caused by attacking model abilities or target model abilities, however, those roll modifiers cannot supersede the limitations set forth by **auto** and x values.
+Successful Wound rolls are determined using the table below. Values of **auto** mean that target units or models are automatically wounded on a successful Hit roll, and the target model or unit is immediately destroyed - with no Armour Save roles of any kind able to be made. Values of x mean that the Strength characteristic is too low to Wound the target model or unit, and thus those attacks have no effect against that target unit or model. Wound rolls may be subject to positive or negative modifiers caused by attacking model abilities or target model abilities, however, those roll modifiers cannot supersede the limitations set forth by **auto** and x values unless the effects of the Lucky Hits rule are in effect.
 
+
+### Lucky Hits
+
+
+Each time a Hit roll results in an unmodified 6, that Hit roll is considered a Lucky Hit, which confers the following abilities to that attack: 
+- **The effective Strength characteristic of the attack is doubled.** For attacks whose effective Strength relies on a formula (such as model's Strength + a fixed value - a common feature of Melee attacks), the final value of that formula is doubled.
+- Other abilities triggered by Critical Hits (ie, Lethal Hits, or Sustained Hits [X]) are triggered as normal, if applicable. However, benefits from those rules (such as additional successful hits from Sustained Hits [X]) are not considered Lucky Hits.
+- **The attack is always eligible to successfully Wound a target on a Wound roll that results in an unmodified 6.** Since the Strength characteristic of the attack was doubled, players should review the Wound Roll Table to see what D6 roll is required in order to successfully Wound. In instances where the Strength of the Lucky Hit still cannot Wound (because the doubled Strength is still too low), that limitation is disregarded, and the condition detailed here (always being able to Wound on an unmodified 6) applies instead.
 
 
 <RollTable data={woundData} />

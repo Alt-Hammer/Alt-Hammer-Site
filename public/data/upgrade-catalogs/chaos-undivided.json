@@ -1,0 +1,428 @@
+{
+  "faction": "Chaos Undivided",
+  "slug": "chaos-undivided",
+  "catalogs": [
+    {
+      "category": "Gifts of Chaos",
+      "catalogId": "gifts-of-chaos",
+      "items": [
+        {
+          "id": "mark-of-khorne",
+          "name": "Mark of Khorne",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": {
+                "char": "T",
+                "min": null,
+                "max": 3
+              },
+              "points": 2,
+              "modelStats": [
+                {
+                  "char": "A",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Khorne",
+                  "Relentless"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 4,
+                "max": 6
+              },
+              "points": 5,
+              "modelStats": [
+                {
+                  "char": "A",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Khorne",
+                  "Relentless"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 7,
+                "max": 9
+              },
+              "points": 12,
+              "modelStats": [
+                {
+                  "char": "A",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Khorne",
+                  "Relentless"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 10,
+                "max": null
+              },
+              "points": 25,
+              "modelStats": [
+                {
+                  "char": "A",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Khorne",
+                  "Relentless"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Gain the Khorne keyword",
+            "Gain the Relentless ability",
+            "Add 1 to Attacks characteristic"
+          ],
+          "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"khorne\" data-type=\"keyword\">Khorne</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless </span>ability</li>\n<li>Add 1 to Attacks characteristic</li>\n</ul>"
+        },
+        {
+          "id": "mark-of-nurgle",
+          "name": "Mark of Nurgle",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": {
+                "char": "T",
+                "min": null,
+                "max": 3
+              },
+              "points": 2,
+              "modelStats": [
+                {
+                  "char": "T",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Nurgle",
+                  "Feel No Pain 6+"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 4,
+                "max": 6
+              },
+              "points": 5,
+              "modelStats": [
+                {
+                  "char": "T",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Nurgle",
+                  "Feel No Pain 6+"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 7,
+                "max": 9
+              },
+              "points": 15,
+              "modelStats": [
+                {
+                  "char": "T",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Nurgle",
+                  "Feel No Pain 6+"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 10,
+                "max": null
+              },
+              "points": 25,
+              "modelStats": [
+                {
+                  "char": "T",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Nurgle",
+                  "Feel No Pain 6+"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Gain the Nurgle keyword",
+            "Add 1 to Toughness characteristic",
+            "Gain the Feel No Pain 6+ ability"
+          ],
+          "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"nurgle\" data-type=\"keyword\">Nurgle</span> keyword</li>\n<li>Add 1 to Toughness characteristic</li>\n<li>Gain the <span class=\"keyword\" data-term=\"feel-no-pain-6\" data-type=\"keyword\">Feel No Pain 6+</span> ability</li>\n</ul>"
+        },
+        {
+          "id": "mark-of-tzeentch",
+          "name": "Mark of Tzeentch",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": {
+                "char": "T",
+                "min": null,
+                "max": 3
+              },
+              "points": 2,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Tzeentch",
+                  "Infiltrators",
+                  "Unyielding"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 4,
+                "max": 6
+              },
+              "points": 5,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Tzeentch",
+                  "Infiltrators",
+                  "Unyielding"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 7,
+                "max": 9
+              },
+              "points": 10,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Tzeentch",
+                  "Infiltrators",
+                  "Unyielding"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 10,
+                "max": null
+              },
+              "points": 20,
+              "modelStats": [],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Tzeentch",
+                  "Infiltrators",
+                  "Unyielding"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Gain the Tzeentch keyword",
+            "Gain the Infiltrators ability",
+            "Gain the Unyielding ability"
+          ],
+          "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"tzeentch\" data-type=\"keyword\">Tzeentch</span> keyword</li>\n<li>Gain the <span class=\"keyword\" data-term=\"infiltrators\" data-type=\"keyword\">Infiltrators</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding</span> ability</li>\n</ul>"
+        },
+        {
+          "id": "mark-of-slaanesh",
+          "name": "Mark of Slaanesh",
+          "subcategory": null,
+          "tiers": [
+            {
+              "band": {
+                "char": "T",
+                "min": null,
+                "max": 3
+              },
+              "points": 2,
+              "modelStats": [
+                {
+                  "char": "WS",
+                  "op": "inc",
+                  "value": 1
+                },
+                {
+                  "char": "I",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Slaanesh"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 4,
+                "max": 6
+              },
+              "points": 6,
+              "modelStats": [
+                {
+                  "char": "WS",
+                  "op": "inc",
+                  "value": 1
+                },
+                {
+                  "char": "I",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Slaanesh"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 7,
+                "max": 9
+              },
+              "points": 15,
+              "modelStats": [
+                {
+                  "char": "WS",
+                  "op": "inc",
+                  "value": 1
+                },
+                {
+                  "char": "I",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Slaanesh"
+                ],
+                "remove": []
+              }
+            },
+            {
+              "band": {
+                "char": "T",
+                "min": 10,
+                "max": null
+              },
+              "points": 25,
+              "modelStats": [
+                {
+                  "char": "WS",
+                  "op": "inc",
+                  "value": 1
+                },
+                {
+                  "char": "I",
+                  "op": "inc",
+                  "value": 1
+                }
+              ],
+              "weaponStats": [],
+              "keywords": {
+                "add": [
+                  "Slaanesh"
+                ],
+                "remove": []
+              }
+            }
+          ],
+          "effects": [
+            "Gain the Slaanesh keyword",
+            "Add 1 to Weapons Skill characteristic",
+            "Add 1 to Initiative characteristic"
+          ],
+          "effectsHtml": "<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"slaanesh\" data-type=\"keyword\">Slaanesh</span> keyword</li>\n<li>Add 1 to Weapons Skill characteristic</li>\n<li>Add 1 to Initiative characteristic</li>\n</ul>"
+        }
+      ]
+    }
+  ]
+}

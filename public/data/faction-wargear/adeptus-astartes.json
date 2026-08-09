@@ -1,0 +1,1497 @@
+{
+  "faction": "Adeptus Astartes",
+  "slug": "adeptus-astartes",
+  "wargearItems": [
+    {
+      "itemId": "tacticus-armour",
+      "name": "Tacticus Armour",
+      "pointsCost": 0,
+      "costNote": "model",
+      "category": "Astartes Armour Upgrades",
+      "effects": [
+        "With the exclusion of the Scouts and Centurions units, all Adeptus Astartes Infantry models are equipped with Tacticus Armour by default and possess the Tacticus keyword."
+      ],
+      "effectsHtml": "<p>With the exclusion of the Scouts and Centurions units, all <span class=\"keyword\" data-term=\"adeptus-astartes-infantry\" data-type=\"keyword\">Adeptus Astartes Infantry</span> models are equipped with Tacticus Armour by default and possess the <span class=\"keyword\" data-term=\"tacticus\" data-type=\"keyword\">Tacticus</span> keyword.</p>"
+    },
+    {
+      "itemId": "phobos-armour",
+      "name": "Phobos Armour",
+      "pointsCost": 3,
+      "costNote": "model",
+      "category": "Astartes Armour Upgrades",
+      "effects": [
+        "Increase Movement characteristic by 1\"",
+        "Increase Initiative characteristic by 1",
+        "Reduce Wounds characteristic by 1",
+        "Add the Scout 7\" ability",
+        "Add the Infiltrator ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic by 1\"</li>\n<li>Increase Initiative characteristic by 1</li>\n<li>Reduce Wounds characteristic by 1</li>\n<li>Add the <span class=\"keyword\" data-term=\"scout-7\" data-type=\"keyword\">Scout 7\"</span> ability</li>\n<li>Add the <span class=\"keyword\" data-term=\"infiltrator\" data-type=\"keyword\">Infiltrator</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "dec",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Phobos",
+                "Infiltrators",
+                "Scout 7\""
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "gravis-armour",
+      "name": "Gravis Armour",
+      "pointsCost": 8,
+      "costNote": "model",
+      "category": "Astartes Armour Upgrades",
+      "effects": [
+        "Increase Toughness characteristic by 1",
+        "Reduce Initiative characteristic by 1",
+        "Reduce Movement characteristic by 1\"",
+        "Gain the Implacable ability",
+        "Models equipped with Gravis armour must be on a 40mm base",
+        "Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Toughness characteristic by 1</li>\n<li>Reduce Initiative characteristic by 1</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Models equipped with Gravis armour must be on a 40mm base</li>\n<li>Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Gravis",
+                "Implacable"
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "terminator-armour",
+      "name": "Terminator Armour",
+      "pointsCost": 20,
+      "costNote": "model",
+      "category": "Astartes Armour Upgrades",
+      "effects": [
+        "Increase Strength characteristic by 1",
+        "Increase Toughness characteristic by 1",
+        "Reduce Movement characteristic by 1\"",
+        "Increase Wounds characteristic by 1",
+        "Reduce Initiative characteristic by 1",
+        "Increase Armour Save characteristic to 2+",
+        "Gain the Implacable ability",
+        "Gain the Invulnerable Save 5+ ability",
+        "Gain the Deep Strike ability",
+        "Models must be on a 40mm to 60mm base",
+        "Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Strength characteristic by 1</li>\n<li>Increase Toughness characteristic by 1</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Increase Wounds characteristic by 1</li>\n<li>Reduce Initiative characteristic by 1</li>\n<li>Increase Armour Save characteristic to 2+</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Models must be on a 40mm to 60mm base</li>\n<li>Cannot be Embarked in a Transport with a Toughness characteristic of 11 or less</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Terminator",
+                "Deep Strike",
+                "Implacable",
+                "Invulnerable Save 5+"
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "saturnine-terminator-armour",
+      "name": "Saturnine Terminator Armour",
+      "pointsCost": 45,
+      "costNote": "model",
+      "category": "Astartes Armour Upgrades",
+      "effects": [
+        "Increase Strength characteristic by 2",
+        "Increase Toughness characteristic by 3",
+        "Increase Wounds characteristic by 3",
+        "Reduce Movement characteristic by 1\"",
+        "Reduce Initiative characteristic by 2",
+        "Increase Armour Save characteristic to 2+",
+        "Gain the Implacable ability",
+        "Gain the Invulnerable Save 5+ ability",
+        "Gain the Deep Strike ability",
+        "Models equipped with Saturnine Terminator armour must be on a 50mm to 60mm base",
+        "Models cannot be Embarked in a Transport"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Strength characteristic by 2</li>\n<li>Increase Toughness characteristic by 3</li>\n<li>Increase Wounds characteristic by 3</li>\n<li>Reduce Movement characteristic by 1\"</li>\n<li>Reduce Initiative characteristic by 2</li>\n<li>Increase Armour Save characteristic to 2+</li>\n<li>Gain the <span class=\"keyword\" data-term=\"implacable\" data-type=\"keyword\">Implacable</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Models equipped with Saturnine Terminator armour must be on a 50mm to 60mm base</li>\n<li>Models cannot be Embarked in a Transport</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "I",
+                "op": "dec",
+                "value": 2
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 3
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Saturnine",
+                "Deep Strike",
+                "Implacable",
+                "Invulnerable Save 5+"
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 45
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "scout-armour",
+      "name": "Scout Armour",
+      "pointsCost": -10,
+      "costNote": "model",
+      "category": "Astartes Armour Upgrades",
+      "effects": [
+        "Increase Movement characteristic by 1\"",
+        "Reduce Strength characteristic by 1",
+        "Reduce Toughness characteristic by 1",
+        "Reduce Wounds characteristic by 1",
+        "Reduce Armour Save characteristic to 4+",
+        "Add the Scout 7\" ability",
+        "Add the Infiltrator ability"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase Movement characteristic by 1\"</li>\n<li>Reduce Strength characteristic by 1</li>\n<li>Reduce Toughness characteristic by 1</li>\n<li>Reduce Wounds characteristic by 1</li>\n<li>Reduce Armour Save characteristic to 4+</li>\n<li>Add the <span class=\"keyword\" data-term=\"scout-7\" data-type=\"keyword\">Scout 7\"</span> ability</li>\n<li>Add the <span class=\"keyword\" data-term=\"infiltrator\" data-type=\"keyword\">Infiltrator</span> ability</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "T",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "dec",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "4+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Infiltrators",
+                "Scout 7\""
+              ],
+              "remove": [
+                "Tacticus"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": -10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "grav-inhibitors",
+      "name": "Grav Inhibitors",
+      "pointsCost": 8,
+      "costNote": "model",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increase its Movement characteristic to 10\"",
+        "Gains the Deep Strike ability",
+        "Gains the Hover ability.",
+        "Cannot be deployed in or embark in a Transport",
+        "Can only be selected by models equipped with Tacticus Armour or Gravis Armour"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increase its Movement characteristic to 10\"</li>\n<li>Gains the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Gains the <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover</span> ability.</li>\n<li>Cannot be deployed in or embark in a <span class=\"keyword\" data-term=\"transport\" data-type=\"keyword\">Transport</span></li>\n<li>Can only be selected by models equipped with <span class=\"wargear-ref\" data-wargear=\"tacticus-armour\">Tacticus Armour</span> or <span class=\"wargear-ref\" data-wargear=\"gravis-armour\">Gravis Armour</span></li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ],
+                [
+                  "Gravis"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "10\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Deep Strike",
+                "Hover"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "jump-pack",
+      "name": "Jump Pack",
+      "pointsCost": 10,
+      "costNote": "model",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increase its Movement characteristic to 12\"",
+        "Gains the Deep Strike ability",
+        "Gains the Jump Pack keyword.",
+        "Cannot be deployed in or embark in a Transport",
+        "Can only be equipped with weapons that include Jump Pack under its \"Weapon Availability for Armour and Wargear\" information.",
+        "Can only be selected by models equipped with Tacticus Armour or Gravis Armour"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increase its Movement characteristic to 12\"</li>\n<li>Gains the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Gains the <span class=\"keyword\" data-term=\"jump-pack\" data-type=\"keyword\">Jump Pack</span> keyword.</li>\n<li>Cannot be deployed in or embark in a Transport</li>\n<li>Can only be equipped with weapons that include Jump Pack under its \"Weapon Availability for Armour and Wargear\" information.</li>\n<li>Can only be selected by models equipped with <span class=\"wargear-ref\" data-wargear=\"tacticus-armour\">Tacticus Armour</span> or <span class=\"wargear-ref\" data-wargear=\"gravis-armour\">Gravis Armour</span></li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ],
+                [
+                  "Gravis"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Deep Strike",
+                "Jump Pack"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "bike",
+      "name": "Bike",
+      "pointsCost": 16,
+      "costNote": "model",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increases its Movement characteristic to 12\"",
+        "Increases its Toughness characteristic by 1",
+        "Increases its Wounds characteristic by 1",
+        "Gains the Mounted keyword",
+        "Is equipped with a Twin-linked Boltgun",
+        "Must be on a 90mm x 52mm oval base or similar",
+        "Is only eligible to be equipped with a Bike if they possess the Tacticus keyword",
+        "Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 12\"</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Is equipped with a <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></li>\n<li>Must be on a 90mm x 52mm oval base or similar</li>\n<li>Is only eligible to be equipped with a Bike if they possess the <span class=\"wargear-ref\" data-wargear=\"tacticus\">Tacticus</span> keyword</li>\n<li>Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information.</li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:boltgun#m-twin-linked",
+          "name": "Boltgun",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [
+            "twin-linked"
+          ],
+          "points": 10,
+          "parts": [
+            {
+              "ref": "weapon:boltgun",
+              "name": "Boltgun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ]
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "M",
+                "op": "set",
+                "value": "12\""
+              },
+              {
+                "char": "T",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Mounted"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "artificer-armour",
+      "name": "Artificer Armour",
+      "pointsCost": 15,
+      "costNote": "model",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increases its Wounds characteristic by 1",
+        "Increases its Armour Save characteristic to 2+",
+        "Gains the Feel No Pain 5+ ability.",
+        "Gains the Feel No Pain 4+ ability against Psychic attacks and [Psychic] abilities.",
+        "Can only be equipped by a model equipped with Tacticus Armour or Gravis Armour"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Increases its Armour Save characteristic to 2+</li>\n<li>Gains the <span class=\"keyword\" data-term=\"feel-no-pain-5\" data-type=\"keyword\">Feel No Pain 5+</span> ability.</li>\n<li>Gains the <span class=\"keyword\" data-term=\"feel-no-pain-4\" data-type=\"keyword\">Feel No Pain 4+</span> ability against Psychic attacks and [Psychic] abilities.</li>\n<li>Can only be equipped by a model equipped with <span class=\"wargear-ref\" data-wargear=\"tacticus-armour\">Tacticus Armour</span> or <span class=\"wargear-ref\" data-wargear=\"gravis-armour\">Gravis Armour</span></li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Tacticus"
+                ],
+                [
+                  "Gravis"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "SV",
+                "op": "set",
+                "value": "2+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Feel No Pain 5+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "riever-gear",
+      "name": "Riever Gear",
+      "pointsCost": 10,
+      "costNote": "model",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "A unit equipped with Phobos Armour or Scout Armour can be equipped with Riever Gear, which adds the following abilities:",
+        "Grapnel Launcher: Each time the bearer completes a Move, Fall Back or Charge and Fight action, ignore any vertical distance when determining the total distance the bearer can be moved.",
+        "Riever Grav-chute: Gain the Deep Strike ability.",
+        "Terror Troops (Aura): While an enemy unit (excluding Monsters and Vehicles) is within 3\" of one or more models with this ability, subtract 1 from the Leadership characteristic of models in that enemy unit."
+      ],
+      "effectsHtml": "<p>A unit equipped with <span class=\"wargear-ref\" data-wargear=\"phobos-armour\">Phobos Armour</span> or <span class=\"wargear-ref\" data-wargear=\"scout-armour\">Scout Armour</span> can be equipped with Riever Gear, which adds the following abilities:</p>\n<ul>\n<li><strong>Grapnel Launcher:</strong> Each time the bearer completes a <span class=\"keyword\" data-term=\"move\" data-type=\"action\">Move</span>, <span class=\"keyword\" data-term=\"fall-back\" data-type=\"action\">Fall Back</span> or <span class=\"keyword\" data-term=\"charge-and-fight\" data-type=\"action\">Charge and Fight</span> action, ignore any vertical distance when determining the total distance the bearer can be moved.</li>\n<li><strong>Riever Grav-chute:</strong> Gain the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability.</li>\n<li><strong>Terror Troops (Aura):</strong> While an enemy unit (excluding <span class=\"keyword\" data-term=\"monsters\" data-type=\"keyword\">Monsters</span> and <span class=\"keyword\" data-term=\"vehicles\" data-type=\"keyword\">Vehicles</span>) is within 3\" of one or more models with this ability, subtract 1 from the Leadership characteristic of models in that enemy unit.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Scout"
+                ],
+                [
+                  "Phobos"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Deep Strike"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "occulus",
+      "name": "Occulus",
+      "pointsCost": 3,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Model equipped with a Boltgun or Bolt Rifle only. The bearer's weapon gains the Precision keyword."
+      ],
+      "effectsHtml": "<p>Model equipped with a <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span> or <span class=\"weapon-ref\" data-weapon=\"bolt-rifle\">Bolt Rifle</span> only. The bearer's weapon gains the <span class=\"keyword\" data-term=\"precision\" data-type=\"keyword\">Precision</span> keyword.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponName",
+                "values": [
+                  "Boltgun",
+                  "Bolt Rifle"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Precision"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "camo-cloak",
+      "name": "Camo Cloak",
+      "pointsCost": 5,
+      "costNote": "model",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Models equipped with Scout Armour or Phobos Armour can be equipped with a Camo Cloak. Enemy models making Ranged attacks against a model equipped with a Camo Cloak reduce their Ballistic Skill by 1 whilst the model equipped with a Camo Cloak is wholly positioned within a Terrain Feature."
+      ],
+      "effectsHtml": "<p>Models equipped with <span class=\"wargear-ref\" data-wargear=\"scout-armour\">Scout Armour</span> or <span class=\"wargear-ref\" data-wargear=\"phobos-armour\">Phobos Armour</span> can be equipped with a Camo Cloak. Enemy models making Ranged attacks against a model equipped with a Camo Cloak reduce their Ballistic Skill by 1 whilst the model equipped with a Camo Cloak is wholly positioned within a Terrain Feature.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [
+                [
+                  "Scout"
+                ],
+                [
+                  "Phobos"
+                ]
+              ],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Stealth"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "iron-halo",
+      "name": "Iron Halo",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increases its Toughness characteristic by 2 against Ranged attacks",
+        "Gains the Invulnerable Save 4+ ability."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Toughness characteristic by 2 against Ranged attacks</li>\n<li>Gains the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 4+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "rosarius",
+      "name": "Rosarius",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increase its Toughness characteristic by 2 against Ranged attacks",
+        "Gains the Invulnerable Save 4+ ability."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increase its Toughness characteristic by 2 against Ranged attacks</li>\n<li>Gains the <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+</span> ability.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Invulnerable Save 4+"
+              ],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "storm-shield",
+      "name": "Storm Shield",
+      "pointsCost": 15,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increases its Wounds characteristic by 2",
+        "Reduces the Armour Piercing characteristic of attacks against the bearer by 1 (to a minimum of 0)",
+        "Reduces the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)",
+        "Cannot possess the Mounted keyword.",
+        "Cannot possess the Phobos keyword."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Wounds characteristic by 2</li>\n<li>Reduces the Armour Piercing characteristic of attacks against the bearer by 1 (to a minimum of 0)</li>\n<li>Reduces the Damage characteristic of attacks against the bearer by 1 (to a minimum of 1)</li>\n<li>Cannot possess the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword.</li>\n<li>Cannot possess the <span class=\"keyword\" data-term=\"phobos\" data-type=\"keyword\">Phobos</span> keyword.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "W",
+                "op": "inc",
+                "value": 2
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 15
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "relic-weapon",
+      "name": "Relic Weapon",
+      "pointsCost": 10,
+      "costNote": "weapon",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Increase weapon's Attacks characteristic by 1",
+        "Increase weapon's Strength characteristic by 1",
+        "Increase weapon's Damage characteristic by 1",
+        "Grenade weapons cannot select this upgrade"
+      ],
+      "effectsHtml": "<ul>\n<li>Increase weapon's Attacks characteristic by 1</li>\n<li>Increase weapon's Strength characteristic by 1</li>\n<li>Increase weapon's Damage characteristic by 1</li>\n<li><span class=\"keyword\" data-term=\"grenade\" data-type=\"keyword\">Grenade</span> weapons cannot select this upgrade</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponClass",
+                "values": [
+                  "Ranged",
+                  "Melee"
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "S",
+                "op": "inc",
+                "value": 1
+              },
+              {
+                "char": "D",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "combi-bolter",
+      "name": "Combi-Bolter",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer is equipped with a Boltgun",
+        "The bearer must be equipped with 1 of the following:",
+        "Flamer",
+        "Meltagun",
+        "Plasma Gun"
+      ],
+      "effectsHtml": "<p>The bearer is equipped with a <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p>The bearer must be equipped with 1 of the following:</p>\n<p>Flamer</p>\n<p>Meltagun</p>\n<p>Plasma Gun</p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:flamer",
+              "name": "Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 8,
+              "parts": [
+                {
+                  "ref": "weapon:flamer",
+                  "name": "Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:meltagun",
+              "name": "Meltagun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:meltagun",
+                  "name": "Meltagun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:plasma-gun",
+              "name": "Plasma Gun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 12,
+              "parts": [
+                {
+                  "ref": "weapon:plasma-gun",
+                  "name": "Plasma Gun",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "includedWeapons": [
+        {
+          "ref": "weapon:boltgun",
+          "name": "Boltgun",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": 5,
+          "parts": [
+            {
+              "ref": "weapon:boltgun",
+              "name": "Boltgun",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ]
+    },
+    {
+      "itemId": "chapter-banner",
+      "name": "Chapter Banner",
+      "pointsCost": 60,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Friendly Adeptus Astartes units that can draw line of sight to the bearer, and who have at least 1 model within 18\" of that model, change their Leadership characteristic to 2+.",
+        "While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, it is considered to have an Objective Control value of 30.",
+        "Models equipped with Phobos Armour cannot be equipped with a Chapter Banner."
+      ],
+      "effectsHtml": "<ul>\n<li>Friendly <span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> units that can draw line of sight to the bearer, and who have at least 1 model within 18\" of that model, change their Leadership characteristic to 2+.</li>\n<li>While the bearer is on the battlefield and positioned wholly within range of a Primary Objective Marker, it is considered to have an Objective Control value of 30.</li>\n<li>Models equipped with <span class=\"wargear-ref\" data-wargear=\"phobos-armour\">Phobos Armour</span> cannot be equipped with a Chapter Banner.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 60
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "heros-heraldry-banner",
+      "name": "Hero's Heraldry Banner",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Increases its Leadership characteristic to 3+",
+        "Increases the Leadership characteristic of any other units with models wholly within 6\" of this model to 3+."
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Leadership characteristic to 3+</li>\n<li>Increases the Leadership characteristic of any other units with models wholly within 6\" of this model to 3+.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [
+              {
+                "char": "LD",
+                "op": "set",
+                "value": "3+"
+              }
+            ],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "auspex-scanner",
+      "name": "Auspex Scanner",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Units equipped with an Auspex Scanner:",
+        "Ignore the effects of the Stealth ability when making Ranged attacks against units with at least 1 model within 18\" that possess that ability.",
+        "Cannot have enemy models placed within 12\" of a model in this unit when that enemy unit uses the Enter the Battlefield from Strategic Reserves Action using the Deep Strike ability."
+      ],
+      "effectsHtml": "<p>Units equipped with an Auspex Scanner:</p>\n<ul>\n<li>Ignore the effects of the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability when making Ranged attacks against units with at least 1 model within 18\" that possess that ability.</li>\n<li>Cannot have enemy models placed within 12\" of a model in this unit when that enemy unit uses the <span class=\"keyword\" data-term=\"enter-the-battlefield-from-strategic-reserves\" data-type=\"action\">Enter the Battlefield from Strategic Reserves</span> Action using the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability.</li>\n</ul>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "twin-linked",
+      "name": "Twin-linked",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Weapon gains the Twin-linked ability:",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3",
+        "For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1",
+        "The Twin-Linked upgrade doubles the points cost of the weapon being upgraded."
+      ],
+      "effectsHtml": "<p>Weapon gains the <span class=\"keyword\" data-term=\"twin-linked\" data-type=\"keyword\">Twin-linked</span> ability:</p>\n<ul>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 7 or less, increase the Attacks characteristic by 3</li>\n<li>For weapons or Weapon Attack Profiles with a Strength characteristic of 8 or more, increase the Attacks characteristic by 1</li>\n</ul>\n<p>The Twin-Linked upgrade doubles the points cost of the weapon being upgraded.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": "<",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 3
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          },
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "weapon",
+              "filter": {
+                "kind": "weaponStat",
+                "values": [
+                  {
+                    "char": "S",
+                    "cmp": ">=",
+                    "value": 8
+                  }
+                ]
+              }
+            },
+            "modelStats": [],
+            "weaponStats": [
+              {
+                "char": "A",
+                "op": "inc",
+                "value": 1
+              }
+            ],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "mult",
+              "value": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "dozer-blade-mount",
+      "name": "Dozer Blade Mount",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer:",
+        "Is equipped with a Dozer Blade",
+        "Improves their Breach Test roll by 1",
+        "Does not reduce their Movement characteristic by 2\" when moving through Difficult Ground"
+      ],
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li><span class=\"keyword\" data-term=\"is-equipped-with-a\" data-type=\"keyword\">Is equipped with a </span><span class=\"weapon-ref\" data-weapon=\"dozer-blade\">Dozer Blade</span></li>\n<li>Improves their Breach Test roll by 1</li>\n<li>Does not reduce their Movement characteristic by 2\" when moving through <span class=\"keyword\" data-term=\"difficult-ground\" data-type=\"keyword\">Difficult Ground</span></li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:dozer-blade",
+          "name": "Dozer Blade",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [],
+          "points": null,
+          "parts": [
+            {
+              "ref": "weapon:dozer-blade",
+              "name": "Dozer Blade",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": []
+            }
+          ],
+          "and": []
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "smoke-launchers",
+      "name": "Smoke Launchers",
+      "pointsCost": 10,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "The bearer can make 2 Smoke Grenades attacks as part of a Shoot action."
+      ],
+      "effectsHtml": "<p>The bearer can make 2 <span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span> attacks as part of a <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> action.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "shield-dome",
+      "name": "Shield Dome",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Models equipped with a Shield Dome increase their Toughness characteristic by 2 and gain the Invulnerable Save 5+ ability against Ranged Attacks."
+      ],
+      "effectsHtml": "<p>Models equipped with a Shield Dome increase their Toughness characteristic by 2 and gain the <span class=\"keyword\" data-term=\"invulnerable-save-5\" data-type=\"keyword\">Invulnerable Save 5+</span><em> </em>ability against Ranged Attacks.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "orbital-comms-array",
+      "name": "Orbital Comms Array",
+      "pointsCost": 20,
+      "costNote": null,
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Models equipped with an Orbital Comms Array allow friendly Adeptus Astartes units within 6\" of this model to ignore the effects of the Stealth ability when making Ranged attacks against units that possess that ability."
+      ],
+      "effectsHtml": "<p>Models equipped with an Orbital Comms Array allow friendly <span class=\"keyword\" data-term=\"adeptus-astartes\" data-type=\"keyword\">Adeptus Astartes</span> units within 6\" of this model to ignore the effects of the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> ability when making Ranged attacks against units that possess that ability.</p>",
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [],
+              "remove": []
+            },
+            "points": {
+              "op": "delta",
+              "value": 20
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "executioner-turret",
+      "name": "Executioner Turret",
+      "pointsCost": null,
+      "costNote": "varies",
+      "category": "Astartes Equipment Upgrades",
+      "effects": [
+        "Models equipped with an Executioner Turret change the model's Transport 12 ability to Transport 6.",
+        "Models equipped with an Executioner Turret must be equipped with 1 of the following:",
+        "1x Macro Plasma Cannon and Onslaught Cannon",
+        "1x Laser Destroyer and Onslaught Cannon"
+      ],
+      "effectsHtml": "<p>Models equipped with an Executioner Turret change the model's <span class=\"keyword\" data-term=\"transport-12\" data-type=\"keyword\">Transport 12</span> ability to <span class=\"keyword\" data-term=\"transport-6\" data-type=\"keyword\">Transport 6</span>.</p>\n<p>Models equipped with an Executioner Turret must be equipped with 1 of the following:</p>\n<p>1x <span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon\">Macro Plasma Cannon</span> and <span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p>1x <span class=\"weapon-ref\" data-weapon=\"laser-destroyer\">Laser Destroyer</span> and <span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>",
+      "subSelections": [
+        {
+          "id": "group-1",
+          "label": "",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:macro-plasma-cannon#c-1x-macro-plasma-cannon-and-onslaught-cannon",
+              "name": "1x Macro Plasma Cannon and Onslaught Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 100,
+              "parts": [
+                {
+                  "ref": "weapon:macro-plasma-cannon",
+                  "name": "Macro Plasma Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                },
+                {
+                  "text": " and "
+                },
+                {
+                  "ref": "weapon:onslaught-cannon",
+                  "name": "Onslaught Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": [
+                {
+                  "ref": "weapon:onslaught-cannon",
+                  "name": "Onslaught Cannon",
+                  "kind": "weapon",
+                  "points": 30
+                }
+              ]
+            },
+            {
+              "ref": "weapon:laser-destroyer#c-1x-laser-destroyer-and-onslaught-cannon",
+              "name": "1x Laser Destroyer and Onslaught Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 130,
+              "parts": [
+                {
+                  "ref": "weapon:laser-destroyer",
+                  "name": "Laser Destroyer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                },
+                {
+                  "text": " and "
+                },
+                {
+                  "ref": "weapon:onslaught-cannon",
+                  "name": "Onslaught Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": [
+                {
+                  "ref": "weapon:onslaught-cannon",
+                  "name": "Onslaught Cannon",
+                  "kind": "weapon",
+                  "points": 30
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mechanics": {
+        "rows": [
+          {
+            "target": {
+              "eligibility": [],
+              "domain": "model",
+              "filter": null
+            },
+            "modelStats": [],
+            "weaponStats": [],
+            "keywords": {
+              "add": [
+                "Transport 6"
+              ],
+              "remove": [
+                "Transport 12"
+              ]
+            },
+            "points": {
+              "op": "delta",
+              "value": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
