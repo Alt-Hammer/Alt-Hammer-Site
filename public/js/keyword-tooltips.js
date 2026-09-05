@@ -1,7 +1,7 @@
 /**
  * keyword-tooltips.js
  * ───────────────────
- * Hover tooltip system for Alt-Hammer 40,000.
+ * Hover tooltip system for Countermarch 40,000.
  *
  * How it works:
  *   1. Reads window.AH_DEFINITIONS, which is embedded as an inline <script>
@@ -75,7 +75,7 @@
     Object.assign(tooltip.style, {
       position:       'fixed',
       zIndex:         '9999',
-      maxWidth:       '320px',
+      maxWidth:       'min(480px, calc(100vw - 24px))',
       minWidth:       '180px',
       padding:        '0',
       background:     'var(--color-surface-2, #161d26)',

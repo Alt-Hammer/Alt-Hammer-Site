@@ -102,12 +102,6 @@ export const RULES_SECTIONS: RulesSection[] = [
     ],
   },
   {
-    label: 'Psychic Attacks & Psykers',
-    href: '/rules/psychic-attacks-abilities-psykers',
-    slug: 'psychic-attacks-abilities-psykers',
-    items: [],
-  },
-  {
     label: 'Battle Shock',
     href: '/rules/battle-shock',
     slug: 'battle-shock',

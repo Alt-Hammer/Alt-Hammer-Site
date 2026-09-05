@@ -2,6 +2,7 @@
 // src/pages/factions/index.astro
 import DocsLayout from '../../layouts/DocsLayout.astro';
 import { ALLIANCES } from '../../data/alliances.ts';
+import { listedFactions } from '../../data/faction-index.ts';
 
 interface FactionFrontmatter {
   title: string;
@@ -12,10 +13,11 @@ interface FactionFrontmatter {
 }
 
 const factionPages = await Astro.glob('../../content/factions/*.mdx');
-const FACTIONS = factionPages
-  .map((entry) => entry.frontmatter as FactionFrontmatter)
-  .filter((frontmatter) => frontmatter?.slug)
-  .sort((a, b) => a.title.localeCompare(b.title));
+const FACTIONS = listedFactions(
+  factionPages
+    .map((entry) => entry.frontmatter as FactionFrontmatter)
+    .filter((frontmatter) => frontmatter?.slug)
+).sort((a, b) => a.title.localeCompare(b.title));
 
 const factionsByAlliance = ALLIANCES.map((alliance) => ({
   alliance,
@@ -33,12 +35,12 @@ const allianceColors: Record<string, string> = {
 
 <DocsLayout
   title="Factions"
-  description="All Alt-Hammer 40,000 factions — Army Rules, Detachment Traits, Wargear Upgrades, and Unit Profiles."
+  description="All Countermarch 40,000 factions — Army Rules, Detachment Traits, Wargear Upgrades, and Unit Profiles."
   activePage="factions"
   sidebarType="factions"
 >
   <div class="page-header">
-    <p class="breadcrumb">Alt-Hammer 40,000</p>
+    <p class="breadcrumb">Countermarch 40,000</p>
     <h1>Factions</h1>
     <p class="subtitle">
       Select a faction to view its Army Rules, Detachment Traits, Wargear Upgrades,

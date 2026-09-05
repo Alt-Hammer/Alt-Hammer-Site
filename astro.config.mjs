@@ -6,7 +6,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 export default defineConfig({
-  site: 'https://alt-hammer.netlify.app',
+  site: 'https://countermarch.netlify.app',
   integrations: [
     mdx({
       // Use rehype plugins to add stable id slugs and autolink headings

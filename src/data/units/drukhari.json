@@ -1211,7 +1211,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:dark-lance",
@@ -2826,7 +2826,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:dark-lance",
@@ -3723,7 +3723,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:dark-lance",
@@ -3877,12 +3877,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each model is equipped with 1 Splinter Cannon and 1 Twin-linked Splinter Carbine</p>",
+            "prose": "<p>Each model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"splinter-cannon\">Splinter Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"khaidespear\">Khaidespear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dark-lance\">Dark Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heat-lance\">Heat Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"disintegrator\">Disintegrator</span></p>\n<p>Each model is equipped with 1 Splinter Cannon and 1 Twin-linked Splinter Carbine</p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -3891,6 +3889,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Each model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:splinter-cannon",
@@ -3908,67 +3908,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:splinter-carbine#m-twin-linked",
-                    "name": "Splinter Carbine",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 8,
-                    "parts": [
-                      {
-                        "ref": "weapon:splinter-carbine",
-                        "name": "Splinter Carbine",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Each model can replace its Splinter Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"khaidespear\">Khaidespear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dark-lance\">Dark Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heat-lance\">Heat Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"disintegrator\">Disintegrator</span></p>\n<p>Each model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-bladevanes\">Scything Bladevanes</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"grim-trophies\">Grim Trophies</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"voidshield\">Voidshield</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "unit"
-                },
-                "replaces": {
-                  "weapon": "Splinter Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Each model can replace its Splinter Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:khaidespear",
                     "name": "Khaidespear",
@@ -3992,7 +3932,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:dark-lance",
@@ -4040,6 +3980,81 @@
                 ]
               },
               {
+                "id": "standardWargear-fixed-2",
+                "op": "fixed",
+                "prose": "",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "options": [
+                  {
+                    "ref": "weapon:splinter-cannon",
+                    "name": "Splinter Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:splinter-cannon",
+                        "name": "Splinter Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "standardWargear-fixed-3",
+                "op": "fixed",
+                "prose": "",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "options": [
+                  {
+                    "ref": "weapon:splinter-carbine#m-twin-linked",
+                    "name": "Splinter Carbine",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:splinter-carbine",
+                        "name": "Splinter Carbine",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Each model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-bladevanes\">Scything Bladevanes</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"grim-trophies\">Grim Trophies</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"voidshield\">Voidshield</span></p>",
+            "clauses": [
+              {
                 "op": "add",
                 "scope": {
                   "who": "unit"
@@ -4049,7 +4064,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>Each model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -4193,7 +4208,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dark-lance\">Dark Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"khaidespear\">Khaidespear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"splinter-cannon\">Splinter Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heat-lance\">Heat Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"disintegrator\">Disintegrator</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dark-lance\">Dark Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"khaidespear\">Khaidespear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"splinter-cannon\">Splinter Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heat-lance\">Heat Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"disintegrator\">Disintegrator</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -4206,7 +4221,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:dark-lance",
@@ -4214,7 +4229,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:dark-lance",
@@ -4469,12 +4484,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with 1x Twin-linked Splinter Cannon and 1x Twin-linked Macro-Scalpel.</p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Tail Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"splinter-cannon#m-twin-linked\">Splinter Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heat-lance#m-twin-linked\">Heat Lance</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"stinger#m-twin-linked\">Stinger</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"haywire-blaster#m-twin-linked\">Haywire Blaster</span></p>\n<p>Every model must be equipped with 2 of the following Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chain-flails\">Chain Flails</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-scalpel\">Macro-Scalpel</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ichor-injectors\">Ichor Injectors</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"liquifier#m-twin-linked\">Liquifier</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -4483,6 +4496,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Tail Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:splinter-cannon#m-twin-linked",
@@ -4504,67 +4519,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:macro-scalpel#m-twin-linked",
-                    "name": "Macro-Scalpel",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:macro-scalpel",
-                        "name": "Macro-Scalpel",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Twin-linked Splinter Cannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heat-lance#m-twin-linked\">Heat Lance</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"stinger#m-twin-linked\">Stinger</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"haywire-blaster#m-twin-linked\">Haywire Blaster</span></p>\n<p>Any model can replace its Twin-linked Macro-Scalpel with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"chain-flails#m-twin-linked\">Chain Flails</span></p>\n<p>Any model can replace its Twin-linked Macro-Scalpel with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chain-flails\">Chain Flails</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-scalpel\">Macro-Scalpel</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ichor-injectors\">Ichor Injectors</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"liquifier#m-twin-linked\">Liquifier</span></p>\n<p>Any model can be equipped with Grim Trophies</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Splinter Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace its Twin-linked Splinter Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:heat-lance#m-twin-linked",
                     "name": "Heat Lance",
@@ -4631,58 +4586,17 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Macro-Scalpel"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
-                  "max": 1
+                  "min": 2,
+                  "max": 2
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>Any model can replace its Twin-linked Macro-Scalpel with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:chain-flails#m-twin-linked",
-                    "name": "Chain Flails",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 16,
-                    "parts": [
-                      {
-                        "ref": "weapon:chain-flails",
-                        "name": "Chain Flails",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Macro-Scalpel"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 2,
-                  "distinct": true
-                },
-                "id": "wargearOptions-replace-3",
-                "prose": "<p>Any model can replace its Twin-linked Macro-Scalpel with 2 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every model must be equipped with 2 of the following Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:chain-flails",
@@ -4757,7 +4671,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any model can be equipped with Grim Trophies</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -4768,7 +4689,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>Any model can be equipped with Grim Trophies</p>",
                 "options": [
                   {
@@ -4872,7 +4793,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dark-lance\">Dark Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"khaidespear\">Khaidespear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"splinter-cannon\">Splinter Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heat-lance\">Heat Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"disintegrator\">Disintegrator</span></p>",
+            "prose": "<p>This model must be equipped with 3 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dark-lance\">Dark Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"khaidespear\">Khaidespear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"splinter-cannon\">Splinter Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heat-lance\">Heat Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"disintegrator\">Disintegrator</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -4885,7 +4806,7 @@
                   "max": 3
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 3 of the following:</p>",
+                "prose": "<p>This model must be equipped with 3 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:dark-lance",
@@ -4893,7 +4814,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:dark-lance",
@@ -5334,7 +5255,7 @@
     {
       "name": "Dark Lance",
       "section": "Ranged Weapons",
-      "points": 20,
+      "points": 25,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",

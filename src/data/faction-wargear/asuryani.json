@@ -93,16 +93,42 @@
     {
       "itemId": "jetbike",
       "name": "Jetbike",
-      "pointsCost": 20,
+      "pointsCost": 17,
       "costNote": null,
       "category": null,
       "effects": [
-        "Increase Movement characteristic to 14\"",
-        "Increase Toughness characteristic by 2",
-        "Increase Wounds characteristic by 2",
-        "Gain the Mounted, Fly, Hover and Deep Strike abilities"
+        "The bearer:",
+        "Increases its Movement characteristic to 14\"",
+        "Increases its Toughness characteristic by 2",
+        "Increases its Wounds characteristic by 2",
+        "Is equipped with a Twin-linked Shuriken Catapult",
+        "Gain the Mounted, Fly, Hover and Deep Strike keywords"
       ],
-      "effectsHtml": "<ul>\n<li>Increase Movement characteristic to 14\"</li>\n<li>Increase Toughness characteristic by 2</li>\n<li>Increase Wounds characteristic by 2</li>\n<li>Gain the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span>, <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span>, <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover </span>and <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike </span>abilities</li>\n</ul>",
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 14\"</li>\n<li>Increases its Toughness characteristic by 2</li>\n<li>Increases its Wounds characteristic by 2</li>\n<li>Is equipped with a <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"shuriken-catapult\">Shuriken Catapult</span></li>\n<li>Gain the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span>, <span class=\"keyword\" data-term=\"fly\" data-type=\"keyword\">Fly</span>, <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover </span>and <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike </span>keywords</li>\n</ul>",
+      "includedWeapons": [
+        {
+          "ref": "weapon:shuriken-catapult#m-twin-linked",
+          "name": "Shuriken Catapult",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [
+            "twin-linked"
+          ],
+          "points": 8,
+          "parts": [
+            {
+              "ref": "weapon:shuriken-catapult",
+              "name": "Shuriken Catapult",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [
+                "twin-linked"
+              ]
+            }
+          ],
+          "and": []
+        }
+      ],
       "mechanics": {
         "rows": [
           {
@@ -140,7 +166,7 @@
             },
             "points": {
               "op": "delta",
-              "value": 20
+              "value": 17
             }
           }
         ]

@@ -506,15 +506,238 @@
       "costNote": null,
       "category": null,
       "effects": [
-        "Infantry Walker model equipped with a Crisis Battlesuit only. The bearer:",
+        "The bearer:",
         "Gains the Stealth keyword",
         "Reduces its Movement characteristic by 2\"",
         "Reduces its Toughness characteristic by 2",
         "Reduces its Wounds characteristic by 1",
-        "Reduces total available Battlesuit Hardpoints to 2, which can be equipped with a maximum of 1 Ranged Weapon.",
-        "Can only Lead the Stealth Team unit"
+        "Models equipped with a XV26 Stealth Suit do not select Ranged and Melee weapon options detailed under their unit's Wargear Options, and must make selections as detailed below.",
+        "Each model must be equipped with 1 of the following Battlesuit Hardpoint Wargear:",
+        "Flamer",
+        "Pulse Cannon",
+        "Plasma Rifle",
+        "Fusion Blaster",
+        "Each model must be equipped with 1 of the following Battlesuit Hardpoint Wargear:",
+        "Markerlight",
+        "Shield Generator",
+        "Velocity Tracker",
+        "Multi-Tracker",
+        "Target Lock",
+        "Advanced Targeting System",
+        "Any eligible weapon equipped by a Leader model equipped with a XV26 Stealth Suit can be upgraded to an Experimental Weapons System.",
+        "Leader models equipped with a XV26 Stealth Suit can only Lead the following units: Stealth Team."
       ],
-      "effectsHtml": "<p><span class=\"keyword\" data-term=\"infantry\" data-type=\"keyword\">Infantry</span> <span class=\"keyword\" data-term=\"walker\" data-type=\"keyword\">Walker</span> model equipped with a Crisis Battlesuit only. The bearer:</p>\n<ul>\n<li>Gains the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> keyword</li>\n<li>Reduces its Movement characteristic by 2\"</li>\n<li>Reduces its Toughness characteristic by 2</li>\n<li>Reduces its Wounds characteristic by 1</li>\n<li>Reduces total available Battlesuit Hardpoints to 2, which can be equipped with a maximum of 1 Ranged Weapon.</li>\n<li>Can only Lead the Stealth Team unit</li>\n</ul>",
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Gains the <span class=\"keyword\" data-term=\"stealth\" data-type=\"keyword\">Stealth</span> keyword</li>\n<li>Reduces its Movement characteristic by 2\"</li>\n<li>Reduces its Toughness characteristic by 2</li>\n<li>Reduces its Wounds characteristic by 1</li>\n</ul>\n<p>Models equipped with a <span class=\"wargear-ref\" data-wargear=\"xv26-stealth-suit\">XV26 Stealth Suit</span> do not select Ranged and Melee weapon options detailed under their unit's Wargear Options, and must make selections as detailed below.</p>\n<p>Each model must be equipped with 1 of the following Battlesuit Hardpoint Wargear:</p>\n<p>Flamer</p>\n<p>Pulse Cannon</p>\n<p>Plasma Rifle</p>\n<p>Fusion Blaster</p>\n<p>Each model must be equipped with 1 of the following Battlesuit Hardpoint Wargear:</p>\n<p><span class=\"wargear-ref\" data-wargear=\"markerlight\">Markerlight</span></p>\n<p><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Any eligible weapon equipped by a <span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> model equipped with a <span class=\"wargear-ref\" data-wargear=\"xv26-stealth-suit\">XV26 Stealth Suit</span> can be upgraded to an <span class=\"wargear-ref\" data-wargear=\"experimental-weapons-system\">Experimental Weapons System</span>.</p>\n<p><span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> models equipped with a <span class=\"wargear-ref\" data-wargear=\"xv26-stealth-suit\">XV26 Stealth Suit</span> can only Lead the following units: Stealth Team.</p>",
+      "subSelections": [
+        {
+          "id": "battlesuit-hardpoint-wargear",
+          "label": "Battlesuit Hardpoint Wargear",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:flamer",
+              "name": "Flamer",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:flamer",
+                  "name": "Flamer",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:pulse-cannon",
+              "name": "Pulse Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "weapon:pulse-cannon",
+                  "name": "Pulse Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:plasma-rifle",
+              "name": "Plasma Rifle",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:plasma-rifle",
+                  "name": "Plasma Rifle",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:fusion-blaster",
+              "name": "Fusion Blaster",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:fusion-blaster",
+                  "name": "Fusion Blaster",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        },
+        {
+          "id": "battlesuit-hardpoint-wargear-2",
+          "label": "Battlesuit Hardpoint Wargear",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:markerlight",
+              "name": "Markerlight",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 5,
+              "parts": [
+                {
+                  "ref": "weapon:markerlight",
+                  "name": "Markerlight",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "wargear:shield-generator",
+              "name": "Shield Generator",
+              "kind": "wargear",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "wargear:shield-generator",
+                  "name": "Shield Generator",
+                  "kind": "wargear",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "wargear:velocity-tracker",
+              "name": "Velocity Tracker",
+              "kind": "wargear",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "wargear:velocity-tracker",
+                  "name": "Velocity Tracker",
+                  "kind": "wargear",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "wargear:multi-tracker",
+              "name": "Multi-Tracker",
+              "kind": "wargear",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "wargear:multi-tracker",
+                  "name": "Multi-Tracker",
+                  "kind": "wargear",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "wargear:target-lock",
+              "name": "Target Lock",
+              "kind": "wargear",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "wargear:target-lock",
+                  "name": "Target Lock",
+                  "kind": "wargear",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "wargear:advanced-targeting-system",
+              "name": "Advanced Targeting System",
+              "kind": "wargear",
+              "qty": 1,
+              "modifiers": [],
+              "points": 10,
+              "parts": [
+                {
+                  "ref": "wargear:advanced-targeting-system",
+                  "name": "Advanced Targeting System",
+                  "kind": "wargear",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
+      "suppressesWeaponOptions": true,
+      "relicUpgrade": {
+        "modifier": "Experimental Weapons System",
+        "modifierRef": "wargear:experimental-weapons-system",
+        "pointsPerWeapon": 10,
+        "excludeKeyword": "Grenade",
+        "requiresLeader": true
+      },
       "mechanics": {
         "rows": [
           {

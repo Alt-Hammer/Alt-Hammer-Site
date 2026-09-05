@@ -1,5 +1,5 @@
 /**
- * list-builder.js — Alt-Hammer List Builder engine (v5, per-model loadout model)
+ * list-builder.js — Countermarch List Builder engine (v5, per-model loadout model)
  *
  * Consumes the canonical unit record produced by scripts/convert_options.py:
  *   unit.options = { forceOrg, composition, slots, sections:[{key,prose,clauses[]}] }
@@ -1432,6 +1432,10 @@
     parts.forEach(function (p, i) {
       var e = { ref: p.ref, modRefs: (p.modifiers || []).slice() };
       if (extra) Object.keys(extra).forEach(function (k) { e[k] = extra[k]; });
+      // R6: how many of THIS part one model can hold from this clause — the ceiling the
+      // duplicate-weapon bounds are computed against (see _dupBounds). Carried per part
+      // because a composite option prices its components separately.
+      if (e.perModelPicks) { e.perModelCap = (p.qty || 1) * e.perModelPicks; delete e.perModelPicks; }
       emit(_rec(g, p.name || p.ref, (p.qty || 1) * mult, p.kind,
                 (p.modifiers || []).map(_modDisplayName), i === 0 ? points : 0, e));
     });
@@ -1463,7 +1467,7 @@
         var fN = _fixedN(entry, cl);
         (cl.options || []).forEach(function (o) {
           _emitOption(emit, 'standard', o, fN, _optCost(entry, u, cl, o, fN),
-                      { src: cl.id + '::' + o.ref });
+                      { src: cl.id + '::' + o.ref, clauseId: cl.id, perModelPicks: _perModelPicks(cl) });
         });
         return;
       }
@@ -1487,7 +1491,7 @@
         var o = findOpt(cl, ref); if (!o) return;
         var mult = (cl.scope && cl.scope.who === 'unit') ? N : cnt;
         _emitOption(emit, 'wargear', o, mult, _optCost(entry, u, cl, o, mult),
-                    { src: cl.id + '::' + o.ref });
+                    { src: cl.id + '::' + o.ref, clauseId: cl.id, perModelPicks: _perModelPicks(cl) });
         clauseSel += mult;
         // sub-selection cost (combi sub-weapon, warsuit/turret/sponson weapons).
         // Already per-instance/×count internally — not multiplied by `mult` again.
@@ -1709,7 +1713,11 @@
       out.push(_rec(base.g, base.name, n, base.kind,
                     (base.mods || []).concat([up.modName || up.name]), 0,
                     { ref: base.ref,
-                      modRefs: (base.modRefs || []).concat(up.modRef ? [up.modRef] : []) }));
+                      modRefs: (base.modRefs || []).concat(up.modRef ? [up.modRef] : []),
+                      // R6: the split line is still that clause's selection, so it reaches
+                      // the duplicate bounds with its sources intact — which is what lets
+                      // two Relic-marked copies pair with each other.
+                      clauseId: base.clauseId, perModelCap: base.perModelCap }));
       up.g = 'adjust';                    // now represented by the decorated line
     });
     return out;
@@ -1731,6 +1739,265 @@
       }
     });
     return out;
+  }
+
+  // ── Duplicate melee weapons (R6) ─────────────────────────────────────────────
+  // Core Rules → Making Attacks → Melee Attacks → "Adding Duplicate Melee Weapons to
+  // Models". A model equipped with more than one of the same MELEE weapon pays for every
+  // copy but treats them as a single weapon, and that merged weapon gains +1 Attacks and
+  // +1 Sustained Hits for every 2 copies: k = floor(n / 2). Three copies confer what two
+  // confer, five what four confer — the rule steps, it does not accumulate remainders.
+  //
+  // The effect lands on the WEAPON, never on the model statline. The rule says "modify
+  // attacks made with those weapons", and the Fight sequence has a model pour its whole
+  // Attacks characteristic into 1 chosen melee weapon — so moving the model's A would
+  // buff whichever weapon the player picked rather than the duplicated one. A Hive Tyrant
+  // with 2x Scything Talons and a Bone Reaper must not swing the Bone Reaper harder.
+  //
+  // Points are untouched by all of this: each copy is already its own priced record.
+  //
+  // Counting reads the SAME walk that prices the unit, so the duplicate count can never
+  // become a third, divergent reading of the selections. It runs on the post-_splitUpgrades
+  // records, which is what makes a Relic-marked copy stop pairing with a plain one while
+  // two Relic-marked copies pair with each other.
+  function _isMeleeWeapon(name) {
+    var w = _weaponByName(name);
+    return !!w && /melee/i.test(w.section || '');
+  }
+
+  // How many selections from one clause a single model can hold. A fixed clause grants
+  // each of its options once; a unit-scope clause toggles once for the whole unit (every
+  // model gets one); otherwise a model takes up to pick.max — and 1 when the picks must
+  // be distinct, since it cannot then take the same option twice.
+  function _perModelPicks(cl) {
+    if (!cl || cl.op === 'fixed') return 1;
+    if (cl.scope && cl.scope.who === 'unit') return 1;
+    if (cl.pick && cl.pick.distinct) return 1;
+    var pm = cl.pick && cl.pick.max;
+    return (pm != null && pm > 1) ? pm : 1;
+  }
+
+  // Bearer-relative melee Attacks take the bump inside the expression, so the merged
+  // weapon reads the way the rule states it — the bearer's A, plus k:
+  //   "A" → "A+1"        "A +2" → "A +3"     "A-2" → "A-1"
+  //   "A x2" → "(A+1) x2"                    "1" → "2"      (fixed melee Attacks)
+  //   "D6" → "D6+1"      "D3+1" → "D3+2"
+  // Source spacing is preserved, the way _applyDelta in weapon-mods.js preserves "S +3".
+  // Returns null for a form it does not recognise, so the caller keeps the printed value
+  // and says so rather than printing a mangled one.
+  function _dupAttacks(val, k) {
+    var raw = String(val == null ? '' : val).trim();
+    if (!raw || !(k > 0)) return val;
+    var m = raw.match(/^A(\s*)(x\s*\d+)$/i);          // "A x2" — the whole total doubles
+    if (m) return '(A+' + k + ')' + (m[1] || '') + m[2];
+    m = raw.match(/^A(?:(\s*)([+-])(\s*)(\d+))?$/i);  // "A", "A +2", "A-2"
+    if (m) {
+      var n = m[2] ? (m[2] === '-' ? -parseInt(m[4], 10) : parseInt(m[4], 10)) : 0;
+      n += k;
+      if (n === 0) return 'A';
+      return 'A' + (m[1] || '') + (n > 0 ? '+' : '-') + (m[3] || '') + Math.abs(n);
+    }
+    m = raw.match(/^(\d+)$/);                         // a melee weapon with fixed Attacks
+    if (m) return String(parseInt(m[1], 10) + k);
+    m = raw.match(/^(\d*[Dd]\d+)(?:(\s*)([+-])(\s*)(\d+))?$/);   // "D6", "D3+1"
+    if (m) {
+      var d = m[3] ? (m[3] === '-' ? -parseInt(m[5], 10) : parseInt(m[5], 10)) : 0;
+      d += k;
+      if (d === 0) return m[1];
+      return m[1] + (m[2] || '') + (d > 0 ? '+' : '-') + (m[4] || '') + Math.abs(d);
+    }
+    return null;
+  }
+
+  function _shValue(kws) {
+    for (var i = 0; i < (kws || []).length; i++) {
+      var m = String(kws[i]).match(/^\s*sustained\s+hits\s*(.*)$/i);
+      if (m) return m[1].trim();
+    }
+    return null;
+  }
+  // Gain Sustained Hits k, or raise an existing [X] by k. [X] can be a dice expression
+  // (Metamorph Mutations carries Sustained Hits D3), which takes the k as an offset.
+  function _dupSustained(keywords, k) {
+    var kw = (keywords || []).slice();
+    for (var i = 0; i < kw.length; i++) {
+      var m = String(kw[i]).match(/^\s*sustained\s+hits\s*(.*)$/i);
+      if (!m) continue;
+      var val = m[1].trim(), num = val.match(/^(\d+)$/);
+      if (num) { kw[i] = 'Sustained Hits ' + (parseInt(num[1], 10) + k); return kw; }
+      var dice = val.match(/^(\d*[Dd]\d+)(?:\s*([+-])\s*(\d+))?$/);
+      if (dice) {
+        var off = dice[2] ? (dice[2] === '-' ? -parseInt(dice[3], 10) : parseInt(dice[3], 10)) : 0;
+        off += k;
+        kw[i] = 'Sustained Hits ' + dice[1] + (off === 0 ? '' : (off > 0 ? '+' : '-') + Math.abs(off));
+        return kw;
+      }
+      kw[i] = 'Sustained Hits ' + val + '+' + k;      // unparsed [X] — state the addition
+      return kw;
+    }
+    kw.push('Sustained Hits ' + k);
+    return kw;
+  }
+  function _applyDuplicate(profiles, k) {
+    return (profiles || []).map(function (p) {
+      var next = Object.assign({}, p);
+      var a = _dupAttacks(p.attacks, k);
+      next.attacks = (a == null) ? p.attacks : a;
+      next.dupAttacksUnresolved = (a == null);
+      next.keywords = _dupSustained(p.keywords, k);
+      next.changed = Object.assign({}, p.changed || {});
+      if (a != null) next.changed.A = true;
+      return next;
+    });
+  }
+
+  // How many models can be holding 2+ copies, given what each clause supplied.
+  //   lo — pigeonhole. M models each hold 1 before anyone doubles up, so the I − M
+  //        surplus has to pile onto duplicating models, C − 1 extra copies at a time.
+  //   hi — a Hall-type feasibility test. t models can each be handed 2 copies only if
+  //        the clauses can supply 2t between them, and no clause can give a single model
+  //        more than its own cap. The margin is concave in t, so the first t that fails
+  //        is the ceiling and the scan can stop there.
+  // A squad that simply spreads one melee weapon across its models — every copy from one
+  // clause with a cap of 1 — yields hi = 0, so no duplicate is claimed and nothing shows.
+  function _dupBounds(sources, I, M) {
+    var C = 0;
+    sources.forEach(function (s) { C += s.cap; });
+    if (C < 2 || I < 2) return { lo: 0, hi: 0, C: C };
+    if (M <= 1) return { lo: 1, hi: 1, C: C };        // one model holds every copy
+    var hi = 0;
+    for (var t = 1; t <= M; t++) {
+      var sum = 0;
+      sources.forEach(function (s) { sum += Math.min(s.a, t * s.cap); });
+      if (sum < 2 * t) break;
+      hi = t;
+    }
+    var lo = Math.max(0, Math.ceil((I - M) / (C - 1)));
+    return { lo: Math.min(lo, hi), hi: hi, C: C };
+  }
+
+  // One group per distinct melee weapon identity (name + resolved modifiers) that could
+  // sit on a model more than once. `models` is how many models are treated as holding the
+  // duplicate: exact on a single-model unit, and otherwise `lo` — the minimum the
+  // arrangement forces. Where lo < hi the pairing is the player's to assign and the
+  // builder claims nothing, so those groups carry models = 0 and render nothing.
+  function _dupGroupsFromRecords(entry, u, recs) {
+    var Mall = totalModels(entry);
+    if (Mall <= 0) return [];
+    var byId = {};
+    clauses(u, entry).forEach(function (cl) { byId[cl.id] = cl; });
+    var groups = {}, order = [];
+    recs.forEach(function (r) {
+      if (r.kind !== 'weapon' || !r.ref || !(r.qty > 0)) return;
+      if (!_isMeleeWeapon(r.name)) return;
+      var key = String(r.name).toLowerCase() + '|' + (r.mods || []).join('+');
+      var g = groups[key];
+      if (!g) {
+        g = groups[key] = { key: key, name: r.name, ref: r.ref, mods: (r.mods || []).slice(),
+                            modRefs: (r.modRefs || []).slice(), I: 0, sources: [] };
+        order.push(key);
+      }
+      g.I += r.qty;
+      // Clauses that share a slot pool fill one slot between them, so a model can hold
+      // only one of the weapon across the lot of them: they count as a single source.
+      var cl = byId[r.clauseId];
+      var slot = (cl && isSlotPooled(cl)) ? slotOf(cl) : null;
+      var named = cl ? _namedModelType(u, cl) : null;
+      var sk = slot ? ('slot:' + slot) : ('cl:' + r.clauseId);
+      var cap = r.perModelCap || 1, s = null;
+      for (var i = 0; i < g.sources.length; i++) if (g.sources[i].k === sk) { s = g.sources[i]; break; }
+      if (!s) g.sources.push({ k: sk, clauseId: r.clauseId || null, slot: slot, a: r.qty, cap: cap,
+                              type: named ? named.name : null });
+      else {
+        s.a += r.qty; s.cap = slot ? Math.max(s.cap, cap) : s.cap + cap;
+        if (!named || (s.type && s.type !== named.name)) s.type = s.type && named ? s.type : null;
+      }
+    });
+    var out = [];
+    order.forEach(function (key) {
+      var g = groups[key];
+      // When every clause feeding this weapon names the same model type, the pairing can
+      // only happen among that type's models — a Sentry Turret is a model in a Scion
+      // squad, but not one that can hold a Combat Knife. Otherwise the whole unit is the
+      // pool, which is the looser (and safer) reading.
+      var typed = null, allNamed = g.sources.length > 0;
+      g.sources.forEach(function (s) {
+        if (!s.type) { allNamed = false; return; }
+        if (typed == null) typed = s.type; else if (typed !== s.type) allNamed = false;
+      });
+      var M = (allNamed && typed) ? (entry.modelCounts[typed] || 0) : Mall;
+      var b = _dupBounds(g.sources, g.I, M);
+      if (b.hi <= 0) return;
+      // The player's assignment where the arrangement leaves a choice, otherwise the
+      // minimum it forces. lo is the default (O4): the builder claims nothing unasked.
+      var picked = (entry.dup || {})[key];
+      var models = (M <= 1) ? 1
+        : (picked != null ? Math.max(b.lo, Math.min(b.hi, picked | 0)) : b.lo);
+      // Copies on a duplicating model: all of them when there is only one model, and
+      // otherwise the 2 the bounds actually guarantee. A richer distribution is the
+      // player's to assign, so claiming more here would assert what the list never said.
+      var copies = (M <= 1) ? g.I : 2;
+      var k = Math.floor(copies / 2);
+      if (k < 1) return;
+      var before = weaponProfiles(g.ref, g.modRefs);
+      var after = weaponProfiles(g.ref, g.modRefs, copies);
+      var profiles = (after && after.profiles) || [];
+      var vBefore = _shValue((before && before.profiles && before.profiles[0] || {}).keywords);
+      var vAfter = _shValue((profiles[0] || {}).keywords);
+      var unresolved = profiles.some(function (p) { return p.dupAttacksUnresolved; });
+      out.push({
+        key: key, name: g.name, ref: g.ref, mods: g.mods, modRefs: g.modRefs,
+        instances: g.I, copies: copies, k: k, models: models, of: M,
+        modelType: (allNamed && typed) ? typed : null,
+        lo: b.lo, hi: b.hi, maxCopies: b.C, assignable: b.lo < b.hi,
+        profiles: profiles,
+        // Both renderers read these, so the builder and the roster can never word the
+        // same effect differently.
+        attacksText: 'A +' + k + (unresolved ? ' (apply manually)' : ''),
+        sustainedText: (vBefore != null && vAfter != null)
+          ? 'Sustained Hits ' + vBefore + ' → ' + vAfter
+          : 'gain Sustained Hits ' + (vAfter != null ? vAfter : k),
+      });
+    });
+    return out;
+  }
+
+  /** Duplicate-melee-weapon groups for a unit. A group with models === 0 is one the squad
+   *  COULD pair but the player has not assigned — the builder offers it, the roster omits it. */
+  function duplicateGroups(entry) {
+    var recs = [], u = _walkUnit(entry, function (r) { recs.push(r); });
+    return u ? _dupGroupsFromRecords(entry, u, _splitUpgrades(recs)) : [];
+  }
+
+  /** How many models of a squad are carrying a duplicated melee weapon. Clamped to the
+   *  range the selections make possible; storing only a non-default keeps share links
+   *  the size they were before this feature existed. */
+  function setDuplicateAssignment(id, key, n) {
+    var e = _entry(id); if (!e) return;
+    var g = null, groups = duplicateGroups(e);
+    for (var i = 0; i < groups.length; i++) if (groups[i].key === key) { g = groups[i]; break; }
+    if (!g || !g.assignable) return;
+    var v = Math.max(g.lo, Math.min(g.hi, parseInt(n, 10) || 0));
+    if (!e.dup) e.dup = {};
+    if (v === g.lo) delete e.dup[key]; else e.dup[key] = v;
+    if (!Object.keys(e.dup).length) delete e.dup;
+    saveState();
+  }
+
+  // Selections move, so a stored assignment can fall outside its range or stop naming a
+  // live group at all. Runs last in the clamp cascade: every earlier clamp can change the
+  // selections these bounds are derived from.
+  function _clampDup(e) {
+    if (!e.dup) return;
+    var live = {};
+    duplicateGroups(e).forEach(function (g) { live[g.key] = g; });
+    Object.keys(e.dup).forEach(function (k) {
+      var g = live[k];
+      if (!g || !g.assignable) { delete e.dup[k]; return; }
+      var v = Math.max(g.lo, Math.min(g.hi, e.dup[k] | 0));
+      if (v === g.lo) delete e.dup[k]; else e.dup[k] = v;
+    });
+    if (!Object.keys(e.dup).length) delete e.dup;
   }
 
   var ITEM_GROUP_ORDER = { characteristics: 0, standard: 1, wargear: 2, upgrades: 3 };
@@ -1830,7 +2097,13 @@
     var recs = [];
     var u = _walkUnit(entry, function (r) { recs.push(r); });
     var recordTotal = recs.reduce(function (s, r) { return s + (r.points || 0); }, 0);
-    var merged = _mergeRecords(_splitUpgrades(recs));
+    // The split records are kept: they still carry the clause each selection came from,
+    // which is what the duplicate-weapon bounds are computed against (R6).
+    var split = _splitUpgrades(recs);
+    var merged = _mergeRecords(split);
+    var dupes = u ? _dupGroupsFromRecords(entry, u, split) : [];
+    var dupByKey = {};
+    dupes.forEach(function (d) { if (d.models > 0) dupByKey[d.key] = d; });
 
     var models = [], flat = [], characteristics = [];
     merged.forEach(function (r) {
@@ -1838,8 +2111,12 @@
       if (r.g === 'models') { if (r.qty > 0) models.push({ name: r.name, qty: r.qty, points: r.points }); return; }
       if (r.qty <= 0) return;             // fully replaced / given up
       if (r.g === 'characteristics') characteristics.push({ section: r.section || '', name: r.name });
+      // R6: `dup` is how many copies the merged weapon represents; `dupAll` says every
+      // instance on this line is inside a pair, so the un-merged profile is never used.
+      var d = dupByKey[String(r.name).toLowerCase() + '|' + (r.mods || []).join('+')];
       flat.push({ name: r.name, qty: r.qty, kind: r.kind, mods: r.mods || [], group: r.g,
                   ref: r.ref || null, modRefs: r.modRefs || [], parent: r.parent || null,
+                  dup: d ? d.copies : 0, dupAll: !!d && d.models * d.copies >= r.qty,
                   key: _recKey(r), children: [] });
     });
     flat.sort(function (a, b) { return (ITEM_GROUP_ORDER[a.group] || 9) - (ITEM_GROUP_ORDER[b.group] || 9); });
@@ -1876,6 +2153,7 @@
       totalModels: totalModels(entry),
       modelCounts: entry.modelCounts || {},
       models: models,
+      duplicates: dupes.filter(function (d) { return d.models > 0; }),   // R6
       items: items,          // tree: top-level lines, each with .children
       flatItems: flat,       // every line, ignoring nesting (Markdown, tests)
       characteristics: characteristics,
@@ -1974,7 +2252,11 @@
   // needs the profiles somewhere. One deduplicated table per army is enough: a weapon
   // carried by four units is still one weapon. Modifiers are part of the identity —
   // a Twin-linked Boltgun is a different profile from a Boltgun.
-  function weaponProfiles(ref, modRefs) {
+  //
+  // `dup` is the number of copies of this weapon a single model carries (R6). The merge
+  // is applied AFTER the wargear modifiers resolve, so Twin-linked and Relic surcharges
+  // still tier against the un-merged weapon and pricing cannot move.
+  function weaponProfiles(ref, modRefs, dup) {
     var w = _weaponByRef(ref); if (!w) return null;
     var mods = (modRefs || []).concat(_modsFromRef(ref));
     var reg = _modRegistry();
@@ -1983,27 +2265,38 @@
       profileName: null, range: w.range, attacks: w.attacks, strength: w.strength,
       ap: w.ap, damage: w.damage, keywords: (w.keywords || []).slice(),
     }];
-    return { section: w.section || '', profiles: profiles };
+    var k = Math.floor((dup || 0) / 2);
+    if (k > 0) profiles = _applyDuplicate(profiles, k);
+    return { section: w.section || '', profiles: profiles, duplicate: k > 0 ? (dup || 0) : 0 };
   }
 
   // Every distinct weapon in the list, deduplicated across units and ordered by the
   // section the source document groups them under (Ranged before Melee), then by name.
+  // A duplicated melee weapon is a distinct profile too: 2x Dreadnought Power Fist prints
+  // its merged statline as its own row. The un-merged row still prints whenever some copy
+  // in the army is not inside a pair — a second unit's single Power Fist, or the models in
+  // a squad that did not double up.
   function weaponAppendix(loadouts) {
     var seen = {}, out = [];
+    var add = function (i, dup) {
+      var key = String(i.ref).toLowerCase() + '|' + (i.mods || []).join('+') + '|' + (dup || 0);
+      if (seen[key]) return;
+      var wp = weaponProfiles(i.ref, i.modRefs, dup); if (!wp) return;
+      seen[key] = 1;
+      out.push({ name: i.name, mods: (i.mods || []).slice(), ref: i.ref, duplicate: dup || 0,
+                 section: wp.section, profiles: wp.profiles });
+    };
     loadouts.forEach(function (l) {
       (l.flatItems || []).forEach(function (i) {
         if (i.kind !== 'weapon' || !i.ref) return;
-        var key = String(i.ref).toLowerCase() + '|' + (i.mods || []).join('+');
-        if (seen[key]) return;
-        var wp = weaponProfiles(i.ref, i.modRefs); if (!wp) return;
-        seen[key] = 1;
-        out.push({ name: i.name, mods: (i.mods || []).slice(), ref: i.ref,
-                   section: wp.section, profiles: wp.profiles });
+        if (!i.dupAll) add(i, 0);
+        if (i.dup) add(i, i.dup);
       });
     });
     var rank = function (s) { return /melee/i.test(s || '') ? 1 : 0; };
     return out.sort(function (a, b) {
-      return rank(a.section) - rank(b.section) || a.name.localeCompare(b.name);
+      return rank(a.section) - rank(b.section) || a.name.localeCompare(b.name) ||
+             (a.duplicate || 0) - (b.duplicate || 0);   // merged row sits under its own weapon
     });
   }
 
@@ -2616,6 +2909,7 @@
     _clampSubRelic(e, u);
     _clampGifts(e, u);
     _clampKeyChar(e, u);
+    _clampDup(e);            // R6 — derived from every selection above, so it runs last
   }
 
   // After composition shrinks, clamp all selections to new caps.
@@ -3035,7 +3329,7 @@
         if (e.tier != null) o.tier = e.tier;
         if (e.isWarlord) o.isWarlord = 1;
         if (e.squadronHost) o.squadronHost = 1;
-        ['sel', 'keyChar', 'gifts', 'relic', 'nested', 'instanceCount', 'subRelic'].forEach(function (k) {
+        ['sel', 'keyChar', 'gifts', 'relic', 'nested', 'instanceCount', 'subRelic', 'dup'].forEach(function (k) {
           if (e[k] && Object.keys(e[k]).length) o[k] = e[k];
         });
         return o;
@@ -3114,6 +3408,8 @@
     keyCharProfileHasPicks: keyCharProfileHasPicks,
     resolvedStats: resolvedStats, resolvedKeywords: resolvedKeywords,
     partialModelEffects: partialModelEffects,
+    // duplicate melee weapons (R6)
+    duplicateGroups: duplicateGroups, setDuplicateAssignment: setDuplicateAssignment,
     saveState: saveState, loadState: loadState,
     // share / library round-tripping
     exportState: exportState, hydrate: hydrate, clampAll: clampAll,

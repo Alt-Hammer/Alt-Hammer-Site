@@ -2196,7 +2196,9 @@
           ],
           "prose": "2 to 5 Lychguard"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -2205,12 +2207,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model in the unit is equipped with 1 Warscythe.</p>",
+            "prose": "<p>Every model in the unit must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"warscythe\">Warscythe</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hyperphase-sword\">Hyperphase Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"voidblade\">Voidblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"particle-caster\">Particle Caster</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -2219,6 +2219,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model in the unit must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:warscythe",
@@ -2236,32 +2238,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model in the unit can replace its Warscythe with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hyperphase-sword\">Hyperphase Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"voidblade\">Voidblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"particle-caster\">Particle Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dispersion-shield\">Dispersion Shield</span></p>\n<p>Every model in the unit can be equipped with a Phase Shifter.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Warscythe"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 2,
-                  "distinct": true
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model in the unit can replace its Warscythe with 2 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hyperphase-sword",
                     "name": "Hyperphase Sword",
@@ -2307,6 +2284,46 @@
                       {
                         "ref": "weapon:particle-caster",
                         "name": "Particle Caster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any model in the unit can be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"voidblade\">Voidblade</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dispersion-shield\">Dispersion Shield</span></p>\n<p>Every model in the unit can be equipped with a Phase Shifter.</p>",
+            "clauses": [
+              {
+                "op": "add",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 1
+                },
+                "slot": "secondary",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any model in the unit can be equipped with 1 of the following Secondary Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:voidblade",
+                    "name": "Voidblade",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:voidblade",
+                        "name": "Voidblade",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -2386,13 +2403,14 @@
         "W": 3,
         "SV": "3+",
         "LD": "4+",
-        "basePoints": 18,
+        "basePoints": 20,
         "squadSizes": "5 to 10"
       },
       "keywords": [
         "Necron",
         "Infantry",
         "Jump Pack",
+        "Deep Strike",
         "Phase Shift"
       ],
       "models": null,
@@ -2419,21 +2437,24 @@
                 "W": 3,
                 "SV": "3+",
                 "LD": "4+",
-                "basePoints": 18,
+                "basePoints": 20,
                 "squadSizes": "5 to 10"
               },
-              "basePoints": 18,
+              "basePoints": 20,
               "keywords": [
                 "Necron",
                 "Infantry",
                 "Jump Pack",
+                "Deep Strike",
                 "Phase Shift"
               ]
             }
           ],
           "prose": "5 to 10 Triarch Praetorians"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -2442,12 +2463,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model in the unit is equipped with a Rod of Covenant.</p>",
+            "prose": "<p>Every model in the unit must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rod-of-covenant\">Rod of Covenant</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hyperphase-sword\">Hyperphase Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"voidblade\">Voidblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"particle-caster\">Particle Caster</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -2456,6 +2475,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model in the unit must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:rod-of-covenant",
@@ -2473,6 +2494,57 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:hyperphase-sword",
+                    "name": "Hyperphase Sword",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:hyperphase-sword",
+                        "name": "Hyperphase Sword",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:voidblade",
+                    "name": "Voidblade",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:voidblade",
+                        "name": "Voidblade",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:particle-caster",
+                    "name": "Particle Caster",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:particle-caster",
+                        "name": "Particle Caster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
               }
@@ -2481,23 +2553,21 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any model in the unit can replace its Rod of Covenant with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hyperphase-sword\">Hyperphase Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"voidblade\">Voidblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"particle-caster\">Particle Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dispersion-shield\">Dispersion Shield</span></p>",
+            "prose": "<p>Any model in the unit can be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hyperphase-sword\">Hyperphase Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"voidblade\">Voidblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"particle-caster\">Particle Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dispersion-shield\">Dispersion Shield</span></p>",
             "clauses": [
               {
-                "op": "replace",
+                "op": "add",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Rod of Covenant"
-                },
+                "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 2,
-                  "distinct": true
+                  "max": 1
                 },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model in the unit can replace its Rod of Covenant with 2 of the following:</p>",
+                "slot": "secondary",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any model in the unit can be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:hyperphase-sword",
@@ -2591,7 +2661,7 @@
         "W": 4,
         "SV": "4+",
         "LD": "4+",
-        "basePoints": 30,
+        "basePoints": 35,
         "squadSizes": "1 to 6"
       },
       "keywords": [
@@ -2600,6 +2670,7 @@
         "Stealth",
         "Hover",
         "Relentless",
+        "Deep Strike",
         "Phase Shift",
         "Deadly Demise D3"
       ],
@@ -2627,16 +2698,17 @@
                 "W": 4,
                 "SV": "4+",
                 "LD": "4+",
-                "basePoints": 30,
+                "basePoints": 35,
                 "squadSizes": "1 to 6"
               },
-              "basePoints": 30,
+              "basePoints": 35,
               "keywords": [
                 "Necron",
                 "Infantry",
                 "Stealth",
                 "Hover",
                 "Relentless",
+                "Deep Strike",
                 "Phase Shift",
                 "Deadly Demise D3"
               ]
@@ -2718,45 +2790,6 @@
                         "modifiers": [
                           "twin-linked"
                         ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Every model in the unit can be equipped with a Phase Shifter.</p>",
-            "clauses": [
-              {
-                "op": "add",
-                "scope": {
-                  "who": "unit"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-1",
-                "prose": "<p>Every model in the unit can be equipped with a Phase Shifter.</p>",
-                "options": [
-                  {
-                    "ref": "wargear:phase-shifter",
-                    "name": "Phase Shifter",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:phase-shifter",
-                        "name": "Phase Shifter",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
                       }
                     ]
                   }
@@ -6429,7 +6462,6 @@
       "ap": "-1",
       "damage": "1",
       "keywords": [
-        "Twin-linked",
         "Poison 1"
       ],
       "availability": ""

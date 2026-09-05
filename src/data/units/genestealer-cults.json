@@ -2433,7 +2433,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model must select 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wheelgun\">Wheelgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p>Every model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cult-blade\">Cult Blade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bone-reaper\">Bone Reaper</span></p>\n<p>Every model must be equipped with 1 of the following Secondary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lash-whips\">Lash Whips</span></p>",
+            "prose": "<p>Every model must select 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wheelgun\">Wheelgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p>Every model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cult-blade\">Cult Blade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bone-reaper\">Bone Reaper</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"metamorph-mutations\">Metamorph Mutations</span></p>\n<p>Every model must be equipped with 1 of the following Secondary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lash-whips\">Lash Whips</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"metamorph-mutations\">Metamorph Mutations</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -2549,6 +2549,23 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:metamorph-mutations",
+                    "name": "Metamorph Mutations",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:metamorph-mutations",
+                        "name": "Metamorph Mutations",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -2598,34 +2615,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Primary Melee Weapon and Secondary Melee Weapon with Metamorph Mutations.</p>\n<p>For every 5 models, 1 Acolyte can replace their Primary Melee Weapon and Secondary Melee Weapon with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"demolition-charge#q2\">Demolition Charge</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rock-grinder\">Rock Grinder</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rock-cutter\">Rock Cutter</span></p>\n<p>1 Acolyte can replace its Primary Melee Weapon with a Cult Icon.</p>\n<p>Every model in the unit can be equipped with Mining Explosives.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapons": [
-                    "Primary Melee Weapon",
-                    "Secondary Melee Weapon"
-                  ]
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace its Primary Melee Weapon and Secondary Melee Weapon with Metamorph Mutations.</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:metamorph-mutations",
                     "name": "Metamorph Mutations",
@@ -2644,7 +2634,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>For every 5 models, 1 Acolyte can replace their Primary Melee Weapon and Secondary Melee Weapon with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"demolition-charge#q2\">Demolition Charge</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rock-grinder\">Rock Grinder</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rock-cutter\">Rock Cutter</span></p>\n<p>1 Acolyte can replace its Primary Melee Weapon with a Cult Icon.</p>\n<p>Every model in the unit can be equipped with Mining Explosives.</p>",
+            "clauses": [
               {
                 "op": "replace",
                 "scope": {
@@ -2665,7 +2662,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
+                "id": "wargearOptions-replace-1",
                 "prose": "<p>For every 5 models, 1 Acolyte can replace their Primary Melee Weapon and Secondary Melee Weapon with 1 of the following:</p>",
                 "options": [
                   {
@@ -2735,7 +2732,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-3",
+                "id": "wargearOptions-replace-2",
                 "prose": "<p>1 Acolyte can replace its Primary Melee Weapon with a Cult Icon.</p>",
                 "options": [
                   {
@@ -2767,7 +2764,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>Every model in the unit can be equipped with Mining Explosives.</p>",
                 "options": [
                   {
@@ -3355,7 +3352,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>0 to 9 Jackals</li>\n<li>0 to 3 Wolfquad</li>\n<li>0 to 1 Alphus</li>\n</ul>",
+            "prose": "<p>0 to 9 Jackals</p>\n<p>0 to 3 Wolfquad</p>\n<p>0 to 1 Alphus</p>",
             "clauses": []
           },
           {
@@ -3728,12 +3725,12 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Every Ridgerunner is equipped with 1 Twin-linked Heavy Autogun and 1 of the following:</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-mining-laser\">Heavy Mining Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"gryphon-heavy-mortar\">Gryphon Heavy Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
+            "prose": "<p>Every model is equipped with 1 Twin-linked Heavy Autogun</p>\n<p>Every model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-mining-laser\">Heavy Mining Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"gryphon-heavy-mortar\">Gryphon Heavy Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
             "clauses": [
               {
                 "id": "standardWargear-fixed-1",
                 "op": "fixed",
-                "prose": "<p>Every Ridgerunner is equipped with 1 Twin-linked Heavy Autogun and 1 of the following:</p>",
+                "prose": "",
                 "scope": {
                   "who": "each"
                 },
@@ -3745,7 +3742,7 @@
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#m-twin-linked",
-                    "name": "Every Ridgerunner is equipped with 1 Twin-linked Heavy Autogun and 1 of the following:",
+                    "name": "Heavy Autogun",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [
@@ -3754,12 +3751,6 @@
                     "points": 8,
                     "parts": [
                       {
-                        "text": "Every Ridgerunner is equipped"
-                      },
-                      {
-                        "text": " with "
-                      },
-                      {
                         "ref": "weapon:heavy-autogun",
                         "name": "Heavy Autogun",
                         "kind": "weapon",
@@ -3767,21 +3758,13 @@
                         "modifiers": [
                           "twin-linked"
                         ]
-                      },
-                      {
-                        "text": " and "
-                      },
-                      {
-                        "text": "1 of the following:"
                       }
                     ]
                   }
                 ]
               },
               {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Heavy Mining Laser</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -3790,6 +3773,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-mining-laser",
@@ -3807,22 +3792,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-3",
-                "op": "fixed",
-                "prose": "<p>Gryphon Heavy Mortar</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
+                  },
                   {
                     "ref": "weapon:gryphon-heavy-mortar",
                     "name": "Gryphon Heavy Mortar",
@@ -3839,22 +3809,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-4",
-                "op": "fixed",
-                "prose": "<p>Missile Launcher</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
+                  },
                   {
                     "ref": "weapon:missile-launcher",
                     "name": "Missile Launcher",
@@ -3879,13 +3834,12 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any Ridgerunner can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"spotter\">Spotter</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"survey-augur\">Survey Augur</span></p>",
+            "prose": "<p>Any model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"spotter\">Spotter</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"survey-augur\">Survey Augur</span></p>",
             "clauses": [
               {
                 "op": "add",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Ridgerunner"
+                  "who": "each"
                 },
                 "replaces": null,
                 "pick": {
@@ -3893,7 +3847,7 @@
                   "max": null
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>Any Ridgerunner can be equipped with any of the following:</p>",
+                "prose": "<p>Any model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "wargear:smoke-launchers",
@@ -4131,12 +4085,12 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Ridgehauler or 1 Ironcrawler</li>\n<li>0 to 4 Ridgehauler Trailers</li>\n</ul>",
+            "prose": "<p>1 Ridgehauler or 1 Ironcrawler</p>\n<p>0 to 4 Ridgehauler Trailers</p>",
             "clauses": []
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>The Ridgehauler can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>The Ridgehauler can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"armoured-container\">Armoured Container</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"ridgehauler-heavy-gear-mount\">Ridgehauler Heavy Gear Mount</span></p>\n<p>The Ridgehauler can be equipped with Rigged to Blow.</p>\n<p>The Ironcrawler can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>Any Ridgehauler Trailer can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"armoured-container\">Armoured Container</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"ridgehauler-heavy-gear-mount\">Ridgehauler Heavy Gear Mount</span></p>\n<p>Any Ridgehauler Trailer can be equipped with Rigged to Blow.</p>",
+            "prose": "<p>The Ridgehauler can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>The Ridgehauler can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"armoured-container\">Armoured Container</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"ridgehauler-heavy-gear-mount\">Ridgehauler Heavy Gear Mount</span></p>\n<p>The Ridgehauler can be equipped with Rigged to Blow.</p>\n<p>The Ironcrawler can be equipped with up to 2 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>Any Ridgehauler Trailer can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"armoured-container\">Armoured Container</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"ridgehauler-heavy-gear-mount\">Ridgehauler Heavy Gear Mount</span></p>\n<p>Any Ridgehauler Trailer can be equipped with Rigged to Blow.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -4151,7 +4105,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>The Ridgehauler can be equipped with 1 of the following:</p>",
+                "prose": "<p>The Ridgehauler can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -4287,7 +4241,7 @@
                   "max": 2
                 },
                 "id": "wargearOptions-add-4",
-                "prose": "<p>The Ironcrawler can be equipped with up to 2 of the following:</p>",
+                "prose": "<p>The Ironcrawler can be equipped with up to 2 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -4415,7 +4369,7 @@
             "key": "additionalRules",
             "id": "ridgehauler-trailers",
             "label": "Ridgehauler Trailers",
-            "prose": "<p>Each Ridgehauler Trailer in this unit must start the battle being Towed. The first Ridgehauler Trailer added to the unit must always be physically connected to the Ridgehauler (or Ironcrawler) model towing it by a trailer hitch, and second Ridgehauler Trailer must be connected to the first Ridgehauler Trailer via a similar trailer hitch.</p>\n<p>Each Ridgehauler Trailer model's characteristics are separate from the model towing it and can always be targeted separately from the Ridgehauler (or Ironcrawler) as if it was its own unit.</p>\n<p>When the Ridgehauler (or Ironcrawler) model is itself destroyed, any Ridgehauler Trailers being towed by that model can only use the <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action in subsequent Activations. Should the first Ridgehauler Trailer be destroyed before the second, the second then becomes detached from the Ridgehauler (or Ironcrawler) model and counts as a separate unit. However, a player can choose to re-connect the remaining Ridgehauler Trailer by completing a <span class=\"keyword\" data-term=\"move\" data-type=\"action\">Move</span> Action with the Ridgehauler (or Ironcrawler) that ends with the rear quadrant of the model within 1\" of the Ridgehauler Trailer. At the start of the next Battle Round, the Ridgehauler Trailer is considered re-attached, and the units are considered 1 unit once more.</p>",
+            "prose": "<p>Each Ridgehauler Trailer in this unit must start the battle being Towed. The first Ridgehauler Trailer added to the unit must always be physically connected to the Ridgehauler (or Ironcrawler) model towing it by a trailer hitch, and second Ridgehauler Trailer must be connected to the first Ridgehauler Trailer via a similar trailer hitch.</p>\n<p>Each Ridgehauler Trailer model's characteristics are separate from the model towing it and can always be targeted separately from the Ridgehauler (or Ironcrawler) as if it was its own unit.</p>\n<p>When the Ridgehauler (or Ironcrawler) model is itself destroyed, any Ridgehauler Trailers being towed by that model can only use the <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action in subsequent Activations. Should the first Ridgehauler Trailer be destroyed before the second, the second then becomes Detached from the Ridgehauler (or Ironcrawler) model that was previously Towing it, and counts as a separate unit. However, a player can choose to re-connect the remaining Ridgehauler Trailer by completing a <span class=\"keyword\" data-term=\"move\" data-type=\"action\">Move</span> Action with the Ridgehauler (or Ironcrawler) that ends with the rear quadrant of the model within 1\" of the Ridgehauler Trailer. At the start of the next Battle Round, the Ridgehauler Trailer is considered to be Towed again, and the units are considered 1 unit once more.</p>",
             "clauses": []
           }
         ]
@@ -5230,6 +5184,7 @@
       "ap": "-2",
       "damage": "2",
       "keywords": [
+        "Extra Attacks",
         "Sustained Hits 1",
         "Devastating Wounds"
       ],

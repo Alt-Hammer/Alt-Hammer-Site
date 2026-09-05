@@ -223,7 +223,7 @@
         ],
         "unitCap": {
           "group": "bioform",
-          "cap": 1
+          "cap": null
         }
       }
     },
@@ -236,10 +236,11 @@
       "effects": [
         "The bearer:",
         "Increases its Movement characteristic to 9\"",
+        "Increases its Initiative characteristic by 1",
         "Gains the Deep Strike ability",
         "Cannot be equipped with Wings"
       ],
-      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 9\"</li>\n<li>Gains the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Cannot be equipped with <span class=\"wargear-ref\" data-wargear=\"wings\">Wings</span></li>\n</ul>",
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 9\"</li>\n<li>Increases its Initiative characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"deep-strike\" data-type=\"keyword\">Deep Strike</span> ability</li>\n<li>Cannot be equipped with <span class=\"wargear-ref\" data-wargear=\"wings\">Wings</span></li>\n</ul>",
       "mechanics": {
         "rows": [
           {
@@ -253,6 +254,11 @@
                 "char": "M",
                 "op": "set",
                 "value": "9\""
+              },
+              {
+                "char": "I",
+                "op": "inc",
+                "value": 1
               }
             ],
             "weaponStats": [],
@@ -270,7 +276,7 @@
         ],
         "unitCap": {
           "group": "bioform",
-          "cap": 1
+          "cap": null
         }
       }
     },

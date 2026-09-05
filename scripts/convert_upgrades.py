@@ -13,7 +13,7 @@ and HARD-ERRORS on anything ambiguous rather than silently guessing.
 
 SOURCE
 ------
-  ../../Alt-Hammer 40,000 1st Edition - Wargear Upgrades and Detachment Traits by Faction.xlsx
+  ../../Countermarch 40,000 1st Edition - Wargear Upgrades and Detachment Traits by Faction.xlsx
   One sheet per faction. Layout (rows 1-based):
     row 1  : title
     row 2  : B2 = "Detachment Points Budget" value (faction-level)
@@ -49,10 +49,9 @@ from ah_converter_utils import slugify, ensure_dir
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WORKBOOK = os.path.normpath(os.path.join(
-    _REPO, "..", "..",
-    "Alt-Hammer 40,000 1st Edition - Wargear Upgrades and Detachment Traits by Faction.xlsx"))
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import UPGRADES_XLSX as WORKBOOK
 
 UNITS_DIR          = os.path.join("src", "data", "units")
 FACTION_WG_DIR     = os.path.join("src", "data", "faction-wargear")
@@ -896,7 +895,7 @@ def write_catalog(faction_slug, faction_name, catalog_items, sheet):
 def convert_upgrades(workbook_path=WORKBOOK, faction_filter=None):
     print("")
     print("=" * 60)
-    print("  Alt-Hammer -- Converting Wargear Upgrades & Detachment Traits")
+    print("  Countermarch -- Converting Wargear Upgrades & Detachment Traits")
     print("=" * 60)
     print(f"  Source:  {workbook_path}")
     if faction_filter:

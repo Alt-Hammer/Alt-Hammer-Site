@@ -105,7 +105,7 @@
   "character": {
     "name": "Character",
     "type": "keyword",
-    "body": "Up to 1 of each unit with the Character keyword can be taken in your army for every 1,000 points.\nModels with the Character keyword can only be selected as the subject of an attack under the following conditions:\n• The model is the closest model to the attacking unit when making a Ranged attack, and is not within 3\" of any other friendly Units.\n• The model is in base-to-base contact with the attacking model when making a Melee attack.\n• The attacking model has the Precision ability.\nThe conditions above do not apply to Character units that also possess any of the following model type keywords: Vehicle, Monster.\nModels with the Character keyword multiply their Objective Control (OC) value by 2."
+    "body": "Up to 1 of each Character unit can be taken in your army for every 1,000 points.\nInfantry Character models can only be selected as the subject of an attack under the following conditions:\n• The model is the closest model to the attacking unit when making a Ranged attack, and is not within 3\" of any other friendly Units.\n• The model is in base-to-base contact with the attacking model when making a Melee attack.\n• The attacking model has the Precision ability.\nCharacter models multiply their Objective Control (OC) value by 2."
   },
   "leader": {
     "name": "Leader",
@@ -120,7 +120,7 @@
   "epic-hero": {
     "name": "Epic Hero",
     "type": "keyword",
-    "body": "Your army can only ever include 1x of each unit with the Epic Hero keyword.\nModels with the Epic Hero keyword increase their Objective Control (OC) value by 3."
+    "body": "Your army can only ever include 1x of each unit with the Epic Hero keyword.\nEpic Hero models increase their Objective Control (OC) value by 3."
   },
   "walker": {
     "name": "Walker",
@@ -135,12 +135,12 @@
   "psyker": {
     "name": "Psyker",
     "type": "keyword",
-    "body": "Many units in Alt-Hammer have psychic abilities drawn from the powers of the Warp. These units always possess the Psyker keyword, typically possess Special Abilities marked as [Psychic], and can typically access Psychic-type Ranged attacks.\nUsing any Psychic abilities or Psychic weapons requires first taking a Psychic Test, which follows these steps:\n• Each time a unit uses its [Psychic] ability or makes a Psychic weapon, the controlling player first rolls 2D6.\n• The specific [Psychic] ability will describe when that ability is used (i.e., during your Command Phase, or when the unit is Activated)\n• If the result of the roll is higher than the model's Leadership characteristic, the Psychic Test is passed, and the [Psychic] ability or Psychic attack can proceed as normal.\n• If the result of the roll is lower than the model's Leadership characteristic, the Psychic Test is failed, and the [Psychic] ability or Psychic attack cannot be used.\n• If the result of the roll is either two 1s or two 6s (i.e., a total value of 2 or 12), the unit suffers Perils of the Warp and immediately takes 2D3 Mortal Wounds.\n• If the roll was a 2, the [Psychic] ability or Psychic attack cannot be used.\n• If the roll was a 12, the [Psychic] ability or Psychic attack can be used, but must target the closest unit - friendly or enemy.\n• If the unit suffering Perils of the Warp is destroyed as a result of the Mortal Wounds inflicted, that unit is considered to have the Deadly Demise D3+1 ability.\nNote that some faction rules or unit special abilities may impact the results of Psychic Tests, or create requirements for a Psyker to take additional Psychic Tests even when not making Psychic attacks or using [Psychic] abilities."
+    "body": "Many units in Countermarch have psychic abilities drawn from the powers of the Warp. These units always possess the Psyker keyword, typically possess Special Abilities marked as [Psychic], and can typically access Psychic-type Ranged attacks.\nUsing any Psychic abilities or Psychic attacks requires first taking a Psychic Test, which follows these steps:\n• Each time a unit uses its [Psychic] ability or makes a Psychic weapon, the controlling player first rolls 2D6.\n• The specific [Psychic] ability will describe when that ability is used (i.e., during your Command Phase, or when the unit is Activated)\n• If the result of the roll is higher than the model's Leadership characteristic, the Psychic Test is passed, and the [Psychic] ability or Psychic attack can proceed as normal.\n• If the result of the roll is lower than the model's Leadership characteristic, the Psychic Test is failed, and the [Psychic] ability or Psychic attack cannot be used.\n• If the result of the roll is either two 1s or two 6s (i.e., a total value of 2 or 12), the unit suffers Perils of the Warp and immediately takes 2D3 Mortal Wounds.\n• If the roll was a 2, the [Psychic] ability or Psychic attack cannot be used.\n• If the roll was a 12, the [Psychic] ability or Psychic attack can be used, but must target the closest unit - friendly or enemy.\n• If the unit suffering Perils of the Warp is destroyed as a result of the Mortal Wounds inflicted, that unit is considered to have the Deadly Demise D3+1 ability.\nNote that some faction rules or unit special abilities may impact the results of Psychic Tests, or create requirements for a Psyker to take additional Psychic Tests even when not making Psychic attacks or using [Psychic] abilities."
   },
   "implacable": {
     "name": "Implacable",
     "type": "keyword",
-    "body": "Infantry Models with this ability:\n• Always use their full Ballistic Skill characteristic if the model possesses the Infantry keyword\n• Ignore all effects of the Heavy keyword\nNote that models with any of the following keywords are always considered to have the Implacable ability: Vehicle, Monster and Walker."
+    "body": "Infantry models with this ability:\n• Always use their full Ballistic Skill characteristic if the model possesses the Infantry keyword\n• Ignore all effects of the Heavy keyword\nNote that models with any of the following keywords are always considered to have the Implacable ability: Vehicle, Monster, Walker."
   },
   "small-profile": {
     "name": "Small Profile",
@@ -150,7 +150,7 @@
   "phase-shift": {
     "name": "Phase Shift",
     "type": "keyword",
-    "body": "Models with this ability can move horizontally through any model or Terrain Feature as if it was not there."
+    "body": "Models with this ability:\n• Can move horizontally through any model or Terrain Feature as if it was not there.\n• Gain access to the Return to the Shadows Action."
   },
   "hover": {
     "name": "Hover",
@@ -391,80 +391,5 @@
     "name": "Combi Weapons",
     "type": "keyword",
     "body": "Combi-weapons combine 2 or more typical weapon profiles into a single piece of wargear. When making attacks, core model type keywords of the bearer (i.e. Infantry, Monster, Vehicle, etc.) must be observed."
-  },
-  "light-cover": {
-    "name": "Light Cover",
-    "type": "keyword",
-    "body": "• Models making Ranged attacks against units with models wholly positioned in this terrain feature reduce their Hit roll by 1. This applies when both the attacking and targeted models are wholly positioned in the same terrain feature as well.\n• Reduce the Armour Piercing characteristic of Ranged attacks by 1 against models wholly positioned in Light Cover.\n• Multi-model units where more than half of their models (rounding up, if needed) are not wholly positioned within a terrain feature with this keyword do not benefit from this ability.\n• The benefits of Light Cover only apply to attacks that draw true line of sight to a target model (or unit) across a defined physical element of the terrain feature that has this ability. Bases or other similar flat features that mark the footprint of a terrain feature do not provide the benefits of Light Cover.\n• When models making ranged attacks draw their line of sight through more than 1 terrain feature with Light Cover, the target model (or unit) instead is considered to have the benefit of Heavy Cover."
-  },
-  "heavy-cover": {
-    "name": "Heavy Cover",
-    "type": "keyword",
-    "body": "• Models making Ranged attacks against units with models wholly positioned in Heavy Cover - or against models wholly positioned behind Heavy Cover - reduce their Hit roll by 1.\n• Reduce the Armour Piercing characteristic of Ranged attacks by 2 against models wholly positioned in Heavy Cover.\n• Multi-model units where more than half of their models (rounding up, if needed) are not wholly positioned within a terrain feature with this keyword do not benefit from this ability.\n• The benefits of Heavy Cover only apply to attacks that draw true line of sight to a target model (or unit) across a defined physical element of the terrain feature that has this ability. Bases or other similar flat features that mark the footprint of a terrain feature do not provide the benefits of Heavy Cover."
-  },
-  "vantage-points": {
-    "name": "Vantage Points",
-    "type": "keyword",
-    "body": "• Vantage Points must be applied to any terrain feature where models can be positioned more than 5\" vertically above the ground level of the battlefield.\n• Infantry models making Ranged attacks from a terrain feature with Vantage Points add 1 to their Hit rolls when they are positioned more than 5\" vertically above the ground level of the battlefield and are attacking a unit that is positioned at the ground level of the battlefield."
-  },
-  "difficult-ground": {
-    "name": "Difficult Ground",
-    "type": "keyword",
-    "body": "• Models that move in to, out of, or through Difficult Ground reduce their Movement characteristic by 1\".\n• Difficult Ground has no effect for models with the Fly, Jump Pack, Hover, Phase Shift or Aircraft keywords."
-  },
-  "impassable": {
-    "name": "Impassable",
-    "type": "keyword",
-    "body": "• Impassable terrain cannot be moved over or through by any model. This does not apply to models with the Phase Shift or Aircraft keywords\n• The vertical height of the terrain feature should be factored in when moving models that possess keywords that allow them to ignore certain terrain feature vertical heights (i.e., Fly, Hover)."
-  },
-  "obscuring": {
-    "name": "Obscuring",
-    "type": "keyword",
-    "body": "Any terrain feature that is at least 12\" in vertical height relative to the ground level of the battlefield are considered to be Obscuring.\nModels cannot be the subject of a Ranged attack if the following criteria are met:\n• The target model is wholly positioned behind Obscuring terrain relative to the attacking model.\n• The attacking model cannot draw true line of sight to the target model without that line of sight passing through Obscuring terrain."
-  },
-  "exposed-position": {
-    "name": "Exposed Position",
-    "type": "keyword",
-    "body": "• Terrain features - or parts of terrain features - that can reasonably be considered as having little or no protective features (like walls, pipes, trees, etc.), and which are at more than 5\" tall relative to the ground level of the battlefield should be considered Exposed Positions.\n• Models making Ranged attacks against models in Exposed Positions add 1 to their Hit rolls."
-  },
-  "defensible-position": {
-    "name": "Defensible Position",
-    "type": "keyword",
-    "body": "• Models positioned within a Defensible Position treat models within 2\" as being in Base-to-Base contact\n• Models that Charge and Fight models wholly within a terrain feature that has the Defensible Position keyword reduce their Initiative value by 1."
-  },
-  "hill": {
-    "name": "Hill",
-    "type": "keyword",
-    "body": "• Hills are considered part of the battlefield's ground level. Other terrain features (such as Buildings) can be placed on Hills if the footprint of that terrain feature can be wholly within the flat surfaces of the Hill feature.\n• Plain hills that are at least 5\" high relative to the ground level of the battlefield, which have discernable obscuring elements (or other Terrain Features on top of the Hill, for example) should possess the Exposed Position keyword."
-  },
-  "building": {
-    "name": "Building",
-    "type": "keyword",
-    "body": "• Many Core Model Type keywords specify how that model can interact with Building terrain features.\n• Buildings always possess the Heavy Cover keyword, and do not feature the Light Cover keyword.\n• Buildings can possess the Defensible Position keyword, although it is not recommended. Players choosing to incorporate this keyword into the Building should specify areas on the Building considered to be a Defensible Position.\n• Taller Buildings should have the Obscuring and Vantage Points keywords.\n• Buildings with flat exposed roofs offering little or no cover (such as walls, parapets, etc.) should have the Exposed Position keyword."
-  },
-  "ruins": {
-    "name": "Ruins",
-    "type": "keyword",
-    "body": "• Buildings that have visibly suffered damage should always possess the Ruins keyword.\n• Ruins always possess the Difficult Ground keyword.\n• Taller Ruins should have the Obscuring and Vantage Points keywords."
-  },
-  "forest": {
-    "name": "Forest",
-    "type": "keyword",
-    "body": "• Forests always possess the Light Cover keyword and can never possess the Heavy Cover keyword.\n• Forests should include the Difficult Ground keyword."
-  },
-  "craters": {
-    "name": "Craters",
-    "type": "keyword",
-    "body": "• Craters always include the Difficult Ground keyword.\n• Craters can possess the Light Cover keyword, but can never possess the Heavy Cover keyword."
-  },
-  "linear-low-lying-terrain-features": {
-    "name": "Linear, Low-lying Terrain Features",
-    "type": "keyword",
-    "body": "• Smaller linear, low-lying terrain features like barricades, fortified lines, pipes, fences etc. possess the Light Cover and Defensible Position keywords.\n• These terrain features should not exceed 2\" in height, or 3\" in width/depth. Terrain features that exceed those dimensions should be considered a different type of terrain feature."
-  },
-  "wreckage": {
-    "name": "Wreckage",
-    "type": "keyword",
-    "body": "Wreckage is a terrain feature that is typically added to the battlefield in the place of where a Vehicle that did not suffer a Deadly Demise [X] explosion is destroyed. However, players are free to add Wreckage terrain features to their battlefield before the start of the Battle as well.\n• Wreckage always possesses the Impassable keyword\n• Wreckage confers the benefit of Light Cover for models wholly within 2\" of the terrain feature."
   }
 }

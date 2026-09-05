@@ -98,11 +98,61 @@
         "Increases its Wounds characteristic by 5",
         "Gains the Vehicle keyword",
         "Gains the Hover keyword",
-        "Must select 1 of the following: 1 Gauss Cannon, 1 Tesla Cannon",
+        "Models equipped with a Command Barge must be equipped with 1 of the following Command Barge Ranged Weapons:",
+        "Gauss Cannon",
+        "Tesla Cannon",
         "When equipped with a Command Barge, a Necron Lord cannot Lead any other Necron units. However, a Necron Lord equipped with a Command Barge increases the number of friendly and enemy units eligible to be selected as part of the My Will Be Done ability from 3 to 5.",
         "Cannot be equipped by a model equipped any of the following: Form of Supreme Nobility, Noble of the Skorpek Destroyer Cult, Noble of the Ophydian Destroyer Cult, Noble of the Ophydian Destroyer Cult, Mantle of Living Metal."
       ],
-      "effectsHtml": "<p>This upgrade can only be taken by your Warlord. This model:</p>\n<ul>\n<li>Reduces its Activation Points characteristic by 1</li>\n<li>Increases its Movement characteristic to 10\"</li>\n<li>Increases its Strength characteristic by 1</li>\n<li>Increases its Toughness characteristic by 3</li>\n<li>Increases its Wounds characteristic by 5</li>\n<li>Gains the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> keyword</li>\n<li>Gains the <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover</span> keyword</li>\n<li>Must select 1 of the following: 1 <span class=\"weapon-ref\" data-weapon=\"gauss-cannon\">Gauss Cannon</span>, 1 <span class=\"weapon-ref\" data-weapon=\"tesla-cannon\">Tesla Cannon</span></li>\n</ul>\n<p>When equipped with a Command Barge, a Necron Lord cannot Lead any other Necron units. However, a Necron Lord equipped with a Command Barge increases the number of friendly and enemy units eligible to be selected as part of the <strong>My Will Be Done</strong> ability from 3 to 5.</p>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"form-of-supreme-nobility\">Form of Supreme Nobility</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-skorpek-destroyer-cult\">Noble of the Skorpek Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"mantle-of-living-metal\">Mantle of Living Metal</span>.</p>",
+      "effectsHtml": "<p>This upgrade can only be taken by your Warlord. This model:</p>\n<ul>\n<li>Reduces its Activation Points characteristic by 1</li>\n<li>Increases its Movement characteristic to 10\"</li>\n<li>Increases its Strength characteristic by 1</li>\n<li>Increases its Toughness characteristic by 3</li>\n<li>Increases its Wounds characteristic by 5</li>\n<li>Gains the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> keyword</li>\n<li>Gains the <span class=\"keyword\" data-term=\"hover\" data-type=\"keyword\">Hover</span> keyword</li>\n</ul>\n<p>Models equipped with a Command Barge must be equipped with 1 of the following Command Barge Ranged Weapons:</p>\n<ul>\n<li><span class=\"weapon-ref\" data-weapon=\"gauss-cannon\">Gauss Cannon</span></li>\n</ul>\n<p><span class=\"weapon-ref\" data-weapon=\"tesla-cannon\">Tesla Cannon</span></p>\n<p>When equipped with a Command Barge, a Necron Lord cannot Lead any other Necron units. However, a Necron Lord equipped with a Command Barge increases the number of friendly and enemy units eligible to be selected as part of the <strong>My Will Be Done</strong> ability from 3 to 5.</p>\n<p>Cannot be equipped by a model equipped any of the following: <span class=\"wargear-ref\" data-wargear=\"form-of-supreme-nobility\">Form of Supreme Nobility</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-skorpek-destroyer-cult\">Noble of the Skorpek Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"noble-of-the-ophydian-destroyer-cult\">Noble of the Ophydian Destroyer Cult</span>, <span class=\"wargear-ref\" data-wargear=\"mantle-of-living-metal\">Mantle of Living Metal</span>.</p>",
+      "subSelections": [
+        {
+          "id": "command-barge-ranged-weapons",
+          "label": "Command Barge Ranged Weapons",
+          "pick": {
+            "min": 1,
+            "max": 1
+          },
+          "options": [
+            {
+              "ref": "weapon:gauss-cannon",
+              "name": "Gauss Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 20,
+              "parts": [
+                {
+                  "ref": "weapon:gauss-cannon",
+                  "name": "Gauss Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            },
+            {
+              "ref": "weapon:tesla-cannon",
+              "name": "Tesla Cannon",
+              "kind": "weapon",
+              "qty": 1,
+              "modifiers": [],
+              "points": 30,
+              "parts": [
+                {
+                  "ref": "weapon:tesla-cannon",
+                  "name": "Tesla Cannon",
+                  "kind": "weapon",
+                  "qty": 1,
+                  "modifiers": []
+                }
+              ],
+              "and": []
+            }
+          ]
+        }
+      ],
       "mechanics": {
         "rows": [
           {

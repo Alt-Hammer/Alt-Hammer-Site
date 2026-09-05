@@ -1,7 +1,7 @@
 """
 convert_factions.py
 ───────────────────
-Converts the Alt-Hammer Faction Rules Index Word document (.docx)
+Converts the Countermarch Faction Rules Index Word document (.docx)
 into one Markdown (.mdx) file per faction for the website.
 
 WHAT IT DOES
@@ -51,7 +51,9 @@ from ah_converter_utils import (
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-FACTION_INDEX_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Faction Rules Index.docx"
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import FACTION_INDEX_DOCX
 
 OUTPUT_DIR = "src/content/factions"
 
@@ -114,7 +116,7 @@ def is_alliance_header(text: str) -> bool:
 
 def convert_factions(docx_path: str, output_dir: str):
     print(f"\n{'='*60}")
-    print(f"  Alt-Hammer — Converting Faction Rules Index")
+    print(f"  Countermarch — Converting Faction Rules Index")
     print(f"{'='*60}")
     print(f"  Source:  {docx_path}")
     print(f"  Output:  {output_dir}")

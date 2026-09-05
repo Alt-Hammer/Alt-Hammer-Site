@@ -1,5 +1,5 @@
 /**
- * list-share.js — encodes an Alt-Hammer army list into a shareable link.
+ * list-share.js — encodes a Countermarch army list into a shareable link.
  *
  * No server and no storage: the whole list travels in the URL fragment. The payload
  * is only what the player CHOSE (see LB.exportState) — never resolved points, stats
@@ -30,7 +30,7 @@
               selectedUnits: 'u' };
   var UNIT = { unitName: 'N', modelCounts: 'c', tier: 't', isWarlord: 'w', squadronHost: 'h',
                sel: 's', keyChar: 'k', gifts: 'g', relic: 'r', nested: 'e',
-               instanceCount: 'i', subRelic: 'b' };
+               instanceCount: 'i', subRelic: 'b', dup: 'x' };
   var TOP_R = _invert(TOP), UNIT_R = _invert(UNIT);
   function _invert(m) { var o = {}; Object.keys(m).forEach(function (k) { o[m[k]] = k; }); return o; }
   function _rename(obj, map) {

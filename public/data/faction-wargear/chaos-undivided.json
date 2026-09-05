@@ -442,7 +442,7 @@
             },
             "points": {
               "op": "delta",
-              "value": 30
+              "value": 12
             }
           }
         ]
@@ -451,7 +451,7 @@
     {
       "itemId": "bike",
       "name": "Bike",
-      "pointsCost": 16,
+      "pointsCost": 15,
       "costNote": "model",
       "category": "Chaos Undivided Upgrades",
       "effects": [
@@ -460,64 +460,34 @@
         "Increases its Toughness characteristic by 1",
         "Increases its Wounds characteristic by 1",
         "Gains the Mounted keyword",
+        "Is equipped with a Twin-linked Boltgun",
         "Must be on a 90mm x 52mm oval base or similar",
         "Is only eligible to be equipped with a Bike if they possess the Tacticus keyword",
-        "Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information.",
-        "Each model must be equipped with 1 of the following:",
-        "1x Twin-linked Boltgun",
-        "1x Combi-bolter"
+        "Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information."
       ],
-      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 12\"</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Must be on a 90mm x 52mm oval base or similar</li>\n<li>Is only eligible to be equipped with a Bike if they possess the <span class=\"wargear-ref\" data-wargear=\"tacticus\">Tacticus</span> keyword</li>\n<li>Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information.</li>\n</ul>\n<p>Each model must be equipped with 1 of the following:</p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p>1x <span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-bolter</span></p>",
-      "subSelections": [
+      "effectsHtml": "<p>The bearer:</p>\n<ul>\n<li>Increases its Movement characteristic to 12\"</li>\n<li>Increases its Toughness characteristic by 1</li>\n<li>Increases its Wounds characteristic by 1</li>\n<li>Gains the <span class=\"keyword\" data-term=\"mounted\" data-type=\"keyword\">Mounted</span> keyword</li>\n<li>Is equipped with a <span class=\"wargear-ref\" data-wargear=\"twin-linked\">Twin-linked</span> <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></li>\n<li>Must be on a 90mm x 52mm oval base or similar</li>\n<li>Is only eligible to be equipped with a Bike if they possess the <span class=\"wargear-ref\" data-wargear=\"tacticus\">Tacticus</span> keyword</li>\n<li>Can only be equipped with weapons that include Bike under its \"Weapon Availability for Armour and Wargear\" information.</li>\n</ul>",
+      "includedWeapons": [
         {
-          "id": "group-1",
-          "label": "",
-          "pick": {
-            "min": 1,
-            "max": 1
-          },
-          "options": [
+          "ref": "weapon:boltgun#m-twin-linked",
+          "name": "Boltgun",
+          "kind": "weapon",
+          "qty": 1,
+          "modifiers": [
+            "twin-linked"
+          ],
+          "points": 10,
+          "parts": [
             {
-              "ref": "weapon:boltgun#m-twin-linked",
+              "ref": "weapon:boltgun",
               "name": "Boltgun",
               "kind": "weapon",
               "qty": 1,
               "modifiers": [
                 "twin-linked"
-              ],
-              "points": 10,
-              "parts": [
-                {
-                  "ref": "weapon:boltgun",
-                  "name": "Boltgun",
-                  "kind": "weapon",
-                  "qty": 1,
-                  "modifiers": [
-                    "twin-linked"
-                  ]
-                }
-              ],
-              "and": []
-            },
-            {
-              "ref": "wargear:combi-bolter",
-              "name": "Combi-Bolter",
-              "kind": "wargear",
-              "qty": 1,
-              "modifiers": [],
-              "points": null,
-              "parts": [
-                {
-                  "ref": "wargear:combi-bolter",
-                  "name": "Combi-Bolter",
-                  "kind": "wargear",
-                  "qty": 1,
-                  "modifiers": []
-                }
-              ],
-              "and": []
+              ]
             }
-          ]
+          ],
+          "and": []
         }
       ],
       "mechanics": {
@@ -554,7 +524,7 @@
             },
             "points": {
               "op": "delta",
-              "value": 16
+              "value": 15
             }
           }
         ]

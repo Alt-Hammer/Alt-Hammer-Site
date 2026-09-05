@@ -1,7 +1,7 @@
 """
 run_all.py
 ──────────
-Master script for the Alt-Hammer document conversion pipeline.
+Master script for the Countermarch document conversion pipeline.
 Double-click this file (or run it from the terminal) to convert
 all three source documents in one go.
 
@@ -14,7 +14,7 @@ WHAT IT CONVERTS
 USAGE
 ─────
 Option A — Double-click this file in Windows Explorer
-Option B — From the VS Code terminal (in the alt-hammer-site folder):
+Option B — From the VS Code terminal (in the countermarch-site folder):
            python scripts/run_all.py
 
 AFTER RUNNING
@@ -35,7 +35,7 @@ sys.path.insert(0, script_dir)
 
 def print_banner():
     print("\n" + "=" * 60)
-    print("  ALT-HAMMER 40,000 — CONTENT CONVERSION PIPELINE")
+    print("  COUNTERMARCH 40,000 — CONTENT CONVERSION PIPELINE")
     print("=" * 60)
     print(f"  Running from: {os.getcwd()}")
     print("=" * 60 + "\n")
@@ -43,15 +43,17 @@ def print_banner():
 
 def check_working_directory():
     """
-    Ensure the script is being run from inside the alt-hammer-site folder.
+    Ensure the script is being run from inside the countermarch-site folder.
     We check for the presence of astro.config.mjs as confirmation.
     """
     if not os.path.exists('astro.config.mjs'):
         print("  ✗  ERROR: This script must be run from inside the")
-        print("     alt-hammer-site folder.")
+        print("     countermarch-site folder.")
         print()
         print("  In VS Code terminal, make sure you are in:")
-        print(r"  C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer Website\alt-hammer-site")
+        # Derived from this file's own location, so it stays correct if the
+        # repo folder is renamed or moved.
+        print(f"  {os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}")
         print()
         print("  Then run:  python scripts/run_all.py")
         sys.exit(1)

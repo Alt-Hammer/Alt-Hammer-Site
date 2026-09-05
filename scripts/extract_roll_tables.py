@@ -34,7 +34,7 @@ Each JSON file has this shape:
 
 HOW TO RUN
 ──────────
-From the alt-hammer-site project folder:
+From the countermarch-site project folder:
   python scripts/extract_roll_tables.py
 
 Or use run_all.py to run it as part of the full pipeline.
@@ -57,11 +57,9 @@ except ImportError:
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-# Absolute path to the Hit/Wound Roll Tables Excel file
-ROLL_TABLES_XLSX = (
-    r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone"
-    r"\Alt-Hammer 40,000 1st Edition - Hit and Wound Roll Tables.xlsx"
-)
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import ROLL_TABLES_XLSX
 
 # Output paths — relative to where you run the script from
 HIT_OUTPUT_PATH   = os.path.join("src", "data", "hit-roll-table.json")
@@ -150,7 +148,7 @@ def extract_roll_tables(xlsx_path: str) -> None:
     Main entry point. Reads the Excel file and writes both JSON output files.
     """
     print(f"\n{'='*60}")
-    print(f"  Alt-Hammer — Extracting Roll Tables")
+    print(f"  Countermarch — Extracting Roll Tables")
     print(f"{'='*60}")
     print(f"  Source:  {xlsx_path}")
     print(f"{'='*60}\n")

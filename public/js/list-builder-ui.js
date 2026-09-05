@@ -1,5 +1,5 @@
 /**
- * list-builder-ui.js — DOM rendering for the Alt-Hammer List Builder (v5).
+ * list-builder-ui.js — DOM rendering for the Countermarch List Builder (v5).
  * Depends on window.LB (list-builder.js). Renders the merged prose-with-controls
  * options panel: each unit profile section is shown as on the faction pages, with
  * interactive controls attached inline to the clauses that carry selections.
@@ -377,6 +377,52 @@
     }).join('') + '</div>';
   }
 
+  // Wrap "Sustained Hits N" in the site's keyword span, so a duplicate-weapon note carries
+  // the same tooltip the rules pages do. keyword-tooltips.js strips the trailing segment
+  // until it finds a match, so sustained-hits-4 and sustained-hits-d31 both land on the
+  // base definition.
+  function sustainedHtml(text) {
+    return esc(text).replace(/Sustained Hits ([^,\s]+)/g, function (m, v) {
+      return '<span class="keyword" data-term="sustained-hits-' + esc(slug(v)) +
+             '" data-type="keyword">' + m + '</span>';
+    });
+  }
+  // Duplicate melee weapons (R6). A model carrying more than one of the same melee weapon
+  // treats them as a single weapon, +1 Attacks and +1 Sustained Hits per pair. It reads as
+  // a note rather than a statline change because the bonus belongs to that weapon: the
+  // model's other melee weapons must not inherit it.
+  // Where the arrangement forces the answer the builder just states it. Where it leaves a
+  // choice — the list records how many models took an option, never which — the player
+  // assigns it, and the row is shown even at zero: an invisible control on a squad that
+  // could pair its weapons would leave the rule undiscoverable for exactly the units it
+  // exists to serve. At zero the effect is phrased as what it *would* give.
+  function duplicateNotesHtml(entry) {
+    var groups = (LB.duplicateGroups ? LB.duplicateGroups(entry) : [])
+      .filter(function (g) { return g.models > 0 || g.assignable; });
+    if (!groups.length) return '';
+    return '<div class="lb-dup-notes">' + groups.map(function (g) {
+      var weapon = '<span class="lb-dup-weapon">' + g.copies + '&times; ' + esc(g.name) + '</span>';
+      var effect = '<span class="lb-dup-delta">' + esc(g.attacksText) + ', ' +
+                   sustainedHtml(g.sustainedText) + '</span>';
+      var unit = (g.modelType && g.of !== LB.totalModels(entry)) ? ' ' + esc(g.modelType) : ' model';
+      if (!g.assignable) {
+        var who = g.of > 1 ? (g.models + ' of ' + g.of + unit + 's') : ('1' + unit);
+        return '<div class="lb-dup-note">' + who + ': ' + weapon + ' merged &mdash; ' + effect + '</div>';
+      }
+      var idle = g.models <= 0;
+      return '<div class="lb-dup-note lb-dup-note--assign' + (idle ? ' lb-dup-note--idle' : '') + '">' +
+        '<span class="lb-dup-assign">' +
+          '<button class="lb-squad-btn" data-dup-key="' + esc(g.key) + '" data-dup-n="' + (g.models - 1) + '"' +
+            (g.models <= g.lo ? ' disabled' : '') + '>&#8722;</button>' +
+          '<span class="lb-dup-count">' + g.models + '</span>' +
+          '<button class="lb-squad-btn" data-dup-key="' + esc(g.key) + '" data-dup-n="' + (g.models + 1) + '"' +
+            (g.models >= g.hi ? ' disabled' : '') + '>&#43;</button>' +
+        '</span>' +
+        '<span class="lb-dup-body">of up to ' + g.hi + unit + (g.hi === 1 ? ' carries ' : 's carry ') +
+        weapon + ' &mdash; ' + (idle ? 'would give ' : '') + effect + '</span></div>';
+    }).join('') + '</div>';
+  }
+
   function renderFixedZone(entry, u) {
     var opts = LB.unitOptions(u), comp = opts.composition || {};
     var mts = LB.modelTypes(u), N = LB.totalModels(entry);
@@ -432,6 +478,7 @@
       html += '</div>';
     });
     if (variant) html += '<div class="lb-variant-note">Choose one: ' + esc(mts.map(function (m) { return m.name; }).join(' or ')) + ' — not both.</div>';
+    html += duplicateNotesHtml(entry);   // R6: same melee weapon carried more than once
 
     if ((u.keywords || []).some(function (k) { return k.toLowerCase() === 'leader'; })) {
       html += '<div class="lb-section lb-warlord-section"><label class="lb-warlord-label">' +
@@ -1203,6 +1250,9 @@
     if (mdec) { var en = cur(id); LB.setModelTypeCount(id, mdec.dataset.mdec, (en.modelCounts[mdec.dataset.mdec] || 0) - 1); refreshInUnit(id); return; }
     var minc = e.target.closest('[data-minc]');
     if (minc) { var en2 = cur(id); LB.setModelTypeCount(id, minc.dataset.minc, (en2.modelCounts[minc.dataset.minc] || 0) + 1); refreshInUnit(id); return; }
+    // R6 — how many models of a squad pair up their duplicate melee weapon
+    var dup = e.target.closest('[data-dup-key]');
+    if (dup) { LB.setDuplicateAssignment(id, dup.dataset.dupKey, parseInt(dup.dataset.dupN, 10)); refreshInUnit(id); return; }
     // toggle-off radios (clicking the already-selected radio clears it)
     var radio = e.target.closest('input[type="radio"][data-radio]');
     if (radio) {

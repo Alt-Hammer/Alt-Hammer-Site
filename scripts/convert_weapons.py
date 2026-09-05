@@ -1,12 +1,12 @@
 """
 convert_weapons.py
 ──────────────────
-Converts the Alt-Hammer Weapon Data Tables Excel file (.xlsx) into JSON
+Converts the Countermarch Weapon Data Tables Excel file (.xlsx) into JSON
 and merges the result into the per-faction JSON files written by convert_units.py.
 
 SOURCE FILE
 ───────────
-Alt-Hammer 40,000 1st Edition - Weapon Data Tables by Faction.xlsx
+Countermarch 40,000 1st Edition - Weapon Data Tables by Faction.xlsx
   One sheet per faction, starting at row 6 (row 4 = headers, row 5 = blank).
   Column layout (0-based indices):
     1  Weapon Category   (Ranged Weapons / Melee Weapons / Psychic Attacks / Grenades)
@@ -60,7 +60,9 @@ from ah_converter_utils import slugify, ensure_dir
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-WEAPON_DATATABLES_XLSX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Weapon Data Tables by Faction.xlsx"
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import WEAPON_DATATABLES_XLSX
 
 OUTPUT_DIR = "src/data/units"
 
@@ -136,7 +138,7 @@ def clean_points(val):
 
 def convert_weapons(xlsx_path: str, output_dir: str):
     print(f"\n{'='*60}")
-    print(f"  Alt-Hammer — Converting Weapon Data Tables")
+    print(f"  Countermarch — Converting Weapon Data Tables")
     print(f"{'='*60}")
     print(f"  Source:  {xlsx_path}")
     print(f"  Output:  {output_dir}")

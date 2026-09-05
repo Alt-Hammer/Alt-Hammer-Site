@@ -161,7 +161,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>The Shas-O must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>",
+            "prose": "<p>The Shas-O must be equipped with 1 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -176,7 +176,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>The Shas-O must be equipped with 1 of the following:</p>",
+                "prose": "<p>The Shas-O must be equipped with 1 of the following Battlesuit Hardpoint Wargear:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -297,7 +297,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>The Shas-O can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>The Shas-O can be equipped with Stim Injectors.</p>\n<p>Any Ranged weapon equipped by the Shas-O can be upgraded to an Experimental Weapons System.</p>\n<p>The Shas-O can be equipped with Iridium Armour.</p>\n<p>The Shas-O can replace its Crisis Battlesuit with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"xv85-coldstar-battlesuit\">XV85 Coldstar Battlesuit</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"xv86-enforcer-battlesuit\">XV86 Enforcer Battlesuit</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"xv26-stealth-suit\">XV26 Stealth Suit</span></p>",
+            "prose": "<p>The Shas-O can be equipped with up to 3 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>The Shas-O can be equipped with Stim Injectors.</p>\n<p>Any Ranged weapon equipped by the Shas-O can be upgraded to an Experimental Weapons System.</p>\n<p>The Shas-O can be equipped with Iridium Armour.</p>\n<p>The Shas-O can replace its Crisis Battlesuit with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"xv85-coldstar-battlesuit\">XV85 Coldstar Battlesuit</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"xv86-enforcer-battlesuit\">XV86 Enforcer Battlesuit</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"xv26-stealth-suit\">XV26 Stealth Suit</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -312,7 +312,7 @@
                   "max": 3
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>The Shas-O can be equipped with up to 3 of the following:</p>",
+                "prose": "<p>The Shas-O can be equipped with up to 3 of the following Battlesuit Hardpoint Wargear:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -2500,7 +2500,10 @@
           ],
           "prose": "1 Kroot Shaper"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -2584,8 +2587,9 @@
                       "min": 1,
                       "max": 1
                     },
+                    "slot": "primary-ranged",
                     "id": "shapers-path-war-shaper-choose-1",
-                    "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                    "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                     "options": [
                       {
                         "ref": "weapon:pulse-carbine",
@@ -2684,8 +2688,9 @@
                       "min": 1,
                       "max": 1
                     },
+                    "slot": "primary-melee",
                     "id": "shapers-path-war-shaper-choose-2",
-                    "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                    "prose": "<p>This model must be equipped with 1 of the following Primary Melee Weapons:</p>",
                     "options": [
                       {
                         "ref": "weapon:kroot-blade",
@@ -2776,8 +2781,9 @@
                       "min": 1,
                       "max": 1
                     },
+                    "slot": "primary-ranged",
                     "id": "shapers-path-way-shaper-choose-1",
-                    "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                    "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                     "options": [
                       {
                         "ref": "weapon:kroot-long-rifle",
@@ -2825,8 +2831,9 @@
                       "min": 1,
                       "max": 1
                     },
+                    "slot": "primary-melee",
                     "id": "shapers-path-way-shaper-choose-2",
-                    "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                    "prose": "<p>This model must be equipped with 1 of the following Primary Melee Weapons:</p>",
                     "options": [
                       {
                         "ref": "weapon:kroot-blade",
@@ -3085,17 +3092,15 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Fire Warrior Shas-ui</li>\n<li>4 to 9 Fire Warrior Shas-la</li>\n<li>0 to 2 Drones</li>\n</ul>",
+            "prose": "<p>1 Fire Warrior Shas-ui</p>\n<p>4 to 9 Fire Warrior Shas-la</p>\n<p>0 to 2 Drones</p>",
             "clauses": []
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-rifle\">The Shas-ui is quipped with 1 Pulse Rifle</span></p>\n<p>Every Shas-la is equipped with 1 Pulse Rifle.</p>",
+            "prose": "<p>Every model in the unit must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-rifle\">Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-carbine\">Pulse Carbine</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>The Shas-ui is quipped with 1 Pulse Rifle.</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -3104,45 +3109,8 @@
                   "min": 1,
                   "max": 1
                 },
-                "options": [
-                  {
-                    "ref": "weapon:pulse-rifle",
-                    "name": "The Shas-ui is quipped with 1 Pulse Rifle",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 3,
-                    "parts": [
-                      {
-                        "text": "The Shas-ui is quipped"
-                      },
-                      {
-                        "text": " with "
-                      },
-                      {
-                        "ref": "weapon:pulse-rifle",
-                        "name": "Pulse Rifle",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Shas-la"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model in the unit must be equipped with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:pulse-rifle",
@@ -3160,31 +3128,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Every model in the unit can replace its Pulse Rifle with a Pulse Carbine.</p>\n<p>The Shas-ui can be equipped with a Pulse Pistol.</p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fire-caste-dagger\">Fire Caste Dagger</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"photon-grenades\">Photon Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grav-inhibitor-grenades\">Grav-Inhibitor Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"emp-grenade\">EMP Grenade</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "unit"
-                },
-                "replaces": {
-                  "weapon": "Pulse Rifle"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Every model in the unit can replace its Pulse Rifle with a Pulse Carbine.</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:pulse-carbine",
                     "name": "Pulse Carbine",
@@ -3203,7 +3147,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>The Shas-ui can be equipped with a Pulse Pistol.</p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fire-caste-dagger\">Fire Caste Dagger</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"photon-grenades\">Photon Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grav-inhibitor-grenades\">Grav-Inhibitor Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"emp-grenade\">EMP Grenade</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -3216,7 +3167,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>The Shas-ui can be equipped with a Pulse Pistol.</p>",
                 "options": [
                   {
@@ -3248,7 +3199,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>Every model in the unit can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -3332,7 +3283,7 @@
                   "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-choose-4",
+                "id": "wargearOptions-choose-3",
                 "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -3674,58 +3625,19 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Pathfinder Shas-ui</li>\n<li>2 to 9 Pathfinder Shas-la</li>\n<li>0 to 2 Drones</li>\n</ul>",
+            "prose": "<p>1 Pathfinder Shas-ui</p>\n<p>2 to 9 Pathfinder Shas-la</p>\n<p>0 to 2 Drones</p>",
             "clauses": []
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-carbine\">The Shas-ui is quipped with 1 Pulse Carbine</span></p>\n<p>Every Shas-la is equipped with 1 Pulse Carbine.</p>",
+            "prose": "<p>Every model is equipped with 1 Pulse Carbine.</p>",
             "clauses": [
               {
                 "id": "standardWargear-fixed-1",
                 "op": "fixed",
-                "prose": "<p>The Shas-ui is quipped with 1 Pulse Carbine.</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:pulse-carbine",
-                    "name": "The Shas-ui is quipped with 1 Pulse Carbine",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 3,
-                    "parts": [
-                      {
-                        "text": "The Shas-ui is quipped"
-                      },
-                      {
-                        "text": " with "
-                      },
-                      {
-                        "ref": "weapon:pulse-carbine",
-                        "name": "Pulse Carbine",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
                 "prose": "",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Shas-la"
+                  "who": "each"
                 },
                 "replaces": null,
                 "pick": {
@@ -4272,7 +4184,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Firesight Marksman</li>\n<li>1 to 3 Sniper Drones</li>\n</ul>",
+            "prose": "<p>1 Firesight Marksman</p>\n<p>1 to 3 Sniper Drones</p>",
             "clauses": []
           },
           {
@@ -4451,7 +4363,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>5 to 10 Kroot Carnivores</li>\n<li>0 to 3 Kroot Hounds</li>\n</ul>",
+            "prose": "<p>5 to 10 Kroot Carnivores</p>\n<p>0 to 3 Kroot Hounds</p>",
             "clauses": []
           },
           {
@@ -5897,7 +5809,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each Shas-ui must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>",
+            "prose": "<p>Each Shas-ui must be equipped with 1 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -5911,7 +5823,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Each Shas-ui must be equipped with 1 of the following:</p>",
+                "prose": "<p>Each Shas-ui must be equipped with 1 of the following Battlesuit Hardpoint Wargear:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -6022,7 +5934,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any Shas-ui can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "prose": "<p>Each Shas-ui can be equipped with up to 3 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -6036,7 +5948,7 @@
                   "max": 3
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>Any Shas-ui can be equipped with up to 3 of the following:</p>",
+                "prose": "<p>Each Shas-ui can be equipped with up to 3 of the following Battlesuit Hardpoint Wargear:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -6600,7 +6512,9 @@
           ],
           "prose": "1 to 2 Shas-ui"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -6609,12 +6523,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each Shas-ui is equipped with 1 Rail Gun</p>",
+            "prose": "<p>Each Shas-ui must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rail-gun\">Rail Gun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"smart-missile-launcher#m-twin-linked\">Smart Missile Launcher</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each",
                   "modelType": "Shas-ui"
@@ -6624,6 +6536,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Each Shas-ui must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:rail-gun",
@@ -6641,32 +6556,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any Shas-ui can replace its Rail Gun with 1x Twin-linked Smart Missile Launcher</p>\n<p>Any Shas-ui can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>Any Shas-ui can be equipped with 1 Seeker Missile.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Shas-ui"
-                },
-                "replaces": {
-                  "weapon": "Rail Gun"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any Shas-ui can replace its Rail Gun with 1x Twin-linked Smart Missile Launcher</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:smart-missile-launcher#m-twin-linked",
                     "name": "Smart Missile Launcher",
@@ -6689,7 +6579,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any Shas-ui can be equipped with up to 2 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Any Shas-ui can be equipped with 1 Seeker Missile.</p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -6701,8 +6598,8 @@
                   "min": 0,
                   "max": 2
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>Any Shas-ui can be equipped with up to 2 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any Shas-ui can be equipped with up to 2 of the following Battlesuit Hardpoint Wargear:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -6945,6 +6842,39 @@
                 ]
               },
               {
+                "op": "add",
+                "scope": {
+                  "who": "each",
+                  "modelType": "Shas-ui"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 1
+                },
+                "id": "wargearOptions-add-2",
+                "prose": "<p>Any Shas-ui can be equipped with 1 Seeker Missile.</p>",
+                "options": [
+                  {
+                    "ref": "weapon:seeker-missile",
+                    "name": "Seeker Missile",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:seeker-missile",
+                        "name": "Seeker Missile",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
                 "op": "choose",
                 "scope": {
                   "who": "each",
@@ -7116,39 +7046,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Shas-ui"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>Any Shas-ui can be equipped with 1 Seeker Missile.</p>",
-                "options": [
-                  {
-                    "ref": "weapon:seeker-missile",
-                    "name": "Seeker Missile",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:seeker-missile",
-                        "name": "Seeker Missile",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
               }
             ],
             "notes": []
@@ -7284,7 +7181,9 @@
           ],
           "prose": "1 Ghostkeel Battlesuit 0 to 2 Drones"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -7293,20 +7192,23 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>The Ghostkeel Battlesuit is equipped with 1 Ion Cannon.</p>",
+            "prose": "<p>The Ghostkeel Battlesuit must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ion-cannon\">Ion Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-collider\">Fusion Collider</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
-                  "who": "each"
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Ghostkeel Battlesuit"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>The Ghostkeel Battlesuit must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:ion-cannon",
@@ -7324,33 +7226,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>The Ghostkeel Battlesuit can replace its Ion Cannon with 1x Fusion Collider.</p>\n<p>The Ghostkeel Battlesuit can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Ghostkeel Battlesuit"
-                },
-                "replaces": {
-                  "weapon": "Ion Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>The Ghostkeel Battlesuit can replace its Ion Cannon with 1x Fusion Collider.</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:fusion-collider",
                     "name": "Fusion Collider",
@@ -7369,7 +7245,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>The Ghostkeel Battlesuit can be equipped with up to 2 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -7382,8 +7265,8 @@
                   "min": 0,
                   "max": 2
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>The Ghostkeel Battlesuit can be equipped with up to 2 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>The Ghostkeel Battlesuit can be equipped with up to 2 of the following Battlesuit Hardpoint Wargear:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -7516,6 +7399,691 @@
                         "ref": "wargear:shield-generator",
                         "name": "Shield Generator",
                         "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:pulse-accelerator",
+                    "name": "Pulse Accelerator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:pulse-accelerator",
+                        "name": "Pulse Accelerator",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:early-warning-override",
+                    "name": "Early Warning Override",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:early-warning-override",
+                        "name": "Early Warning Override",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:counterfire-defence-system",
+                    "name": "Counterfire Defence System",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:counterfire-defence-system",
+                        "name": "Counterfire Defence System",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:velocity-tracker",
+                    "name": "Velocity Tracker",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:velocity-tracker",
+                        "name": "Velocity Tracker",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:multi-tracker",
+                    "name": "Multi-Tracker",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:multi-tracker",
+                        "name": "Multi-Tracker",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:target-lock",
+                    "name": "Target Lock",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:target-lock",
+                        "name": "Target Lock",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:advanced-targeting-system",
+                    "name": "Advanced Targeting System",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:advanced-targeting-system",
+                        "name": "Advanced Targeting System",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "choose",
+                "scope": {
+                  "who": "each",
+                  "modelType": "Drone"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "wargearOptions-choose-2",
+                "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:pulse-carbine#m-twin-linked",
+                    "name": "Pulse Carbine",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:pulse-carbine",
+                        "name": "Pulse Carbine",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:long-shot-pulse-rifle",
+                    "name": "Long-shot Pulse Rifle",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:long-shot-pulse-rifle",
+                        "name": "Long-shot Pulse Rifle",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:pulse-cannon",
+                    "name": "Pulse Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:pulse-cannon",
+                        "name": "Pulse Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:smart-missile-pod",
+                    "name": "Smart Missile Pod",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:smart-missile-pod",
+                        "name": "Smart Missile Pod",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:shield-generator",
+                    "name": "Shield Generator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "wargear:shield-generator",
+                        "name": "Shield Generator",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:pulse-accelerator",
+                    "name": "Pulse Accelerator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:pulse-accelerator",
+                        "name": "Pulse Accelerator",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:early-warning-override",
+                    "name": "Early Warning Override",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:early-warning-override",
+                        "name": "Early Warning Override",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:counterfire-defence-system",
+                    "name": "Counterfire Defence System",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:counterfire-defence-system",
+                        "name": "Counterfire Defence System",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:stealth-field-projector",
+                    "name": "Stealth Field Projector",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:stealth-field-projector",
+                        "name": "Stealth Field Projector",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          }
+        ]
+      },
+      "epicHero": false
+    },
+    {
+      "name": "Riptide Battlesuit",
+      "category": "Walkers",
+      "stats": null,
+      "keywords": [
+        "T'au",
+        "Vehicle",
+        "Walker",
+        "Hover",
+        "Jump Pack",
+        "Deep Strike"
+      ],
+      "models": [
+        {
+          "modelName": "Shas-ui",
+          "stats": {
+            "AP": "3",
+            "M": "14\"",
+            "WS": 3,
+            "BS": 4,
+            "I": 3,
+            "A": 4,
+            "S": 7,
+            "T": 9,
+            "W": 14,
+            "SV": "2+",
+            "LD": "7+",
+            "basePoints": 100,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "T'au",
+            "Vehicle",
+            "Walker",
+            "Hover",
+            "Jump Pack",
+            "Deep Strike"
+          ]
+        },
+        {
+          "modelName": "Drone",
+          "stats": {
+            "AP": "2",
+            "M": "10\"",
+            "WS": 1,
+            "BS": 3,
+            "I": 1,
+            "A": 1,
+            "S": 1,
+            "T": 2,
+            "W": 3,
+            "SV": "4+",
+            "LD": "4+",
+            "basePoints": 6,
+            "squadSizes": "0 to 2"
+          },
+          "keywords": [
+            "T'au",
+            "Infantry",
+            "Hover",
+            "Fearless"
+          ]
+        }
+      ],
+      "options": {
+        "forceOrg": null,
+        "composition": {
+          "mode": "multi",
+          "modelTypes": [
+            {
+              "name": "Shas-ui",
+              "stats": {
+                "AP": "3",
+                "M": "14\"",
+                "WS": 3,
+                "BS": 4,
+                "I": 3,
+                "A": 4,
+                "S": 7,
+                "T": 9,
+                "W": 14,
+                "SV": "2+",
+                "LD": "7+",
+                "basePoints": 100,
+                "squadSizes": "1"
+              },
+              "basePoints": 100,
+              "keywords": [
+                "T'au",
+                "Vehicle",
+                "Walker",
+                "Hover",
+                "Jump Pack",
+                "Deep Strike"
+              ]
+            },
+            {
+              "name": "Drone",
+              "stats": {
+                "AP": "2",
+                "M": "10\"",
+                "WS": 1,
+                "BS": 3,
+                "I": 1,
+                "A": 1,
+                "S": 1,
+                "T": 2,
+                "W": 3,
+                "SV": "4+",
+                "LD": "4+",
+                "basePoints": 6,
+                "squadSizes": "0 to 2"
+              },
+              "basePoints": 6,
+              "keywords": [
+                "T'au",
+                "Infantry",
+                "Hover",
+                "Fearless"
+              ]
+            }
+          ],
+          "prose": "1 Riptide Battlesuit 0 to 2 Drones"
+        },
+        "slots": [
+          "primary-ranged"
+        ],
+        "sections": [
+          {
+            "key": "unitComposition",
+            "prose": "<p>1 Riptide Battlesuit</p>\n<p>0 to 2 Drones</p>",
+            "clauses": []
+          },
+          {
+            "key": "standardWargear",
+            "prose": "<p>The Riptide Battlesuit must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-pulse-cannon\">Heavy Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ion-accelerator\">Ion Accelerator</span></p>\n<p>The Riptide Battlesuit is equipped with 1x Shield Generator.</p>",
+            "clauses": [
+              {
+                "op": "choose",
+                "scope": {
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Riptide Battlesuit"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>The Riptide Battlesuit must be equipped with 1 of the following Primary Ranged Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:heavy-pulse-cannon",
+                    "name": "Heavy Pulse Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 35,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-pulse-cannon",
+                        "name": "Heavy Pulse Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:ion-accelerator",
+                    "name": "Ion Accelerator",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 70,
+                    "parts": [
+                      {
+                        "ref": "weapon:ion-accelerator",
+                        "name": "Ion Accelerator",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "standardWargear-fixed-2",
+                "op": "fixed",
+                "prose": "",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "options": [
+                  {
+                    "ref": "wargear:shield-generator",
+                    "name": "Shield Generator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "wargear:shield-generator",
+                        "name": "Shield Generator",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "specialAbilities",
+            "prose": "<p><strong>Nova Reactor Overcharge Protocols:</strong> Once per battle round, this model can choose to use this ability when it is Activated. To do so, select 1 of the following Nova Reactor Overcharge Protocols to be in effect:</p>\n<ul>\n<li>Weapons equipped by this model increase their Strength, Armour Piercing and Damage characteristics by 1, but gain the <span class=\"keyword\" data-term=\"hazardous-d3\" data-type=\"keyword\">Hazardous D3</span> ability, until the end of its Activation.</li>\n<li>Increase this model's Movement characteristic by 4\" and Initiative characteristic by 3 until the end of its Activation.</li>\n<li>Increase the <span class=\"keyword\" data-term=\"invulnerable-save-x\" data-type=\"keyword\">Invulnerable Save [x]</span> ability of its Shield Generator to <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+ </span>until the start of its next Activation.</li>\n</ul>",
+            "clauses": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>The Riptide Battlesuit can be equipped with up to 2 of the following Battlesuit Hardpoint Wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p>The Riptide Battlesuit can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "clauses": [
+              {
+                "op": "add",
+                "scope": {
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Riptide Battlesuit"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 2
+                },
+                "id": "wargearOptions-add-1",
+                "prose": "<p>The Riptide Battlesuit can be equipped with up to 2 of the following Battlesuit Hardpoint Wargear:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:flamer",
+                    "name": "Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:flamer",
+                        "name": "Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:pulse-cannon",
+                    "name": "Pulse Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:pulse-cannon",
+                        "name": "Pulse Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:plasma-rifle",
+                    "name": "Plasma Rifle",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:plasma-rifle",
+                        "name": "Plasma Rifle",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:fusion-blaster",
+                    "name": "Fusion Blaster",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:fusion-blaster",
+                        "name": "Fusion Blaster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:smart-missile-pod",
+                    "name": "Smart Missile Pod",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:smart-missile-pod",
+                        "name": "Smart Missile Pod",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:airburst-fragmentation-launchers",
+                    "name": "Airburst Fragmentation Launchers",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:airburst-fragmentation-launchers",
+                        "name": "Airburst Fragmentation Launchers",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Riptide Battlesuit"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 3
+                },
+                "id": "wargearOptions-add-2",
+                "prose": "<p>The Riptide Battlesuit can be equipped with up to 3 of the following:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:markerlight",
+                    "name": "Markerlight",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:markerlight",
+                        "name": "Markerlight",
+                        "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
                       }
@@ -7823,164 +8391,124 @@
       "epicHero": false
     },
     {
-      "name": "Riptide Battlesuit",
+      "name": "Stormsurge Battlesuit",
       "category": "Walkers",
-      "stats": null,
+      "stats": {
+        "AP": "2",
+        "M": "8\"",
+        "WS": 2,
+        "BS": 4,
+        "I": 2,
+        "A": 4,
+        "S": 9,
+        "T": 12,
+        "W": 22,
+        "SV": "2+",
+        "LD": "7+",
+        "basePoints": 240,
+        "squadSizes": "1"
+      },
       "keywords": [
         "T'au",
         "Vehicle",
         "Walker",
-        "Hover",
-        "Jump Pack",
-        "Deep Strike"
+        "Titanic"
       ],
-      "models": [
-        {
-          "modelName": "Shas-ui",
-          "stats": {
-            "AP": "3",
-            "M": "14\"",
-            "WS": 3,
-            "BS": 4,
-            "I": 3,
-            "A": 4,
-            "S": 7,
-            "T": 9,
-            "W": 14,
-            "SV": "2+",
-            "LD": "7+",
-            "basePoints": 100,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "T'au",
-            "Vehicle",
-            "Walker",
-            "Hover",
-            "Jump Pack",
-            "Deep Strike"
-          ]
-        },
-        {
-          "modelName": "Drone",
-          "stats": {
-            "AP": "2",
-            "M": "10\"",
-            "WS": 1,
-            "BS": 3,
-            "I": 1,
-            "A": 1,
-            "S": 1,
-            "T": 2,
-            "W": 3,
-            "SV": "4+",
-            "LD": "4+",
-            "basePoints": 6,
-            "squadSizes": "0 to 2"
-          },
-          "keywords": [
-            "T'au",
-            "Infantry",
-            "Hover",
-            "Fearless"
-          ]
-        }
-      ],
+      "models": null,
       "options": {
         "forceOrg": null,
         "composition": {
-          "mode": "multi",
+          "mode": "single",
+          "range": {
+            "min": 1,
+            "max": 1
+          },
           "modelTypes": [
             {
-              "name": "Shas-ui",
+              "name": "Stormsurge Battlesuit",
               "stats": {
-                "AP": "3",
-                "M": "14\"",
-                "WS": 3,
+                "AP": "2",
+                "M": "8\"",
+                "WS": 2,
                 "BS": 4,
-                "I": 3,
+                "I": 2,
                 "A": 4,
-                "S": 7,
-                "T": 9,
-                "W": 14,
+                "S": 9,
+                "T": 12,
+                "W": 22,
                 "SV": "2+",
                 "LD": "7+",
-                "basePoints": 100,
+                "basePoints": 240,
                 "squadSizes": "1"
               },
-              "basePoints": 100,
+              "basePoints": 240,
               "keywords": [
                 "T'au",
                 "Vehicle",
                 "Walker",
-                "Hover",
-                "Jump Pack",
-                "Deep Strike"
-              ]
-            },
-            {
-              "name": "Drone",
-              "stats": {
-                "AP": "2",
-                "M": "10\"",
-                "WS": 1,
-                "BS": 3,
-                "I": 1,
-                "A": 1,
-                "S": 1,
-                "T": 2,
-                "W": 3,
-                "SV": "4+",
-                "LD": "4+",
-                "basePoints": 6,
-                "squadSizes": "0 to 2"
-              },
-              "basePoints": 6,
-              "keywords": [
-                "T'au",
-                "Infantry",
-                "Hover",
-                "Fearless"
+                "Titanic"
               ]
             }
           ],
-          "prose": "1 Riptide Battlesuit 0 to 2 Drones"
+          "prose": "1 Stormsurge Battlesuit 0 to 2 Drones"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<p>1 Riptide Battlesuit</p>\n<p>0 to 2 Drones</p>",
+            "prose": "<p>1 Stormsurge Battlesuit</p>\n<p>0 to 2 Drones</p>",
             "clauses": []
           },
           {
             "key": "standardWargear",
-            "prose": "<p>The Riptide Battlesuit is equipped with 1x Heavy Pulse Cannon and 1x Shield Generator.</p>",
+            "prose": "<p>The Stormsurge Battlesuit must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-blaster\">Pulse Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-driver\">Pulse Driver</span></p>\n<p>The Stormsurge Battlesuit is equipped with 1x Twin-linked Smart Missile Launcher.</p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
-                  "who": "each"
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Stormsurge Battlesuit"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>The Stormsurge Battlesuit must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
-                    "ref": "weapon:heavy-pulse-cannon",
-                    "name": "Heavy Pulse Cannon",
+                    "ref": "weapon:pulse-blaster",
+                    "name": "Pulse Blaster",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 35,
+                    "points": 90,
                     "parts": [
                       {
-                        "ref": "weapon:heavy-pulse-cannon",
-                        "name": "Heavy Pulse Cannon",
+                        "ref": "weapon:pulse-blaster",
+                        "name": "Pulse Blaster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:pulse-driver",
+                    "name": "Pulse Driver",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 80,
+                    "parts": [
+                      {
+                        "ref": "weapon:pulse-driver",
+                        "name": "Pulse Driver",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -8003,19 +8531,23 @@
                 },
                 "options": [
                   {
-                    "ref": "wargear:shield-generator",
-                    "name": "Shield Generator",
-                    "kind": "wargear",
+                    "ref": "weapon:smart-missile-launcher#m-twin-linked",
+                    "name": "Smart Missile Launcher",
+                    "kind": "weapon",
                     "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 80,
                     "parts": [
                       {
-                        "ref": "wargear:shield-generator",
-                        "name": "Shield Generator",
-                        "kind": "wargear",
+                        "ref": "weapon:smart-missile-launcher",
+                        "name": "Smart Missile Launcher",
+                        "kind": "weapon",
                         "qty": 1,
-                        "modifiers": []
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   }
@@ -8025,45 +8557,42 @@
             "notes": []
           },
           {
-            "key": "specialAbilities",
-            "prose": "<p><strong>Nova Reactor Overcharge Protocols:</strong> Once per battle round, this model can choose to use this ability when it is Activated. To do so, select 1 of the following Nova Reactor Overcharge Protocols to be in effect:</p>\n<ul>\n<li>Weapons equipped by this model increase their Strength, Armour Piercing and Damage characteristics by 1, but gain the <span class=\"keyword\" data-term=\"hazardous-d3\" data-type=\"keyword\">Hazardous D3</span> ability, until the end of its Activation.</li>\n<li>Increase this model's Movement characteristic by 4\" and Initiative characteristic by 3 until the end of its Activation.</li>\n<li>Increase the <span class=\"keyword\" data-term=\"invulnerable-save-x\" data-type=\"keyword\">Invulnerable Save [x]</span> ability of its Shield Generator to <span class=\"keyword\" data-term=\"invulnerable-save-4\" data-type=\"keyword\">Invulnerable Save 4+ </span>until the start of its next Activation.</li>\n</ul>",
-            "clauses": []
-          },
-          {
             "key": "wargearOptions",
-            "prose": "<p>The Riptide Battlesuit can replace its Heavy Pulse Cannon with 1x Ion Accelerator.</p>\n<p>The Riptide Battlesuit can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers\">Airburst Fragmentation Launchers</span></p>\n<p>The Riptide Battlesuit can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "prose": "<p>The Stormsurge Battlesuit can be equipped with 2x Twin-linked Smart Missile Pod.</p>\n<p>The Stormsurge Battlesuit can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"flamer#m-twin-linked\">Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-cannon#m-twin-linked\">Pulse Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"plasma-rifle#m-twin-linked\">Plasma Rifle</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers#m-twin-linked\">Airburst Fragmentation Launchers</span></p>\n<p>The Stormsurge Battlesuit can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
             "clauses": [
               {
-                "op": "replace",
+                "op": "add",
                 "scope": {
                   "who": "count",
                   "count": 1,
-                  "modelType": "Riptide Battlesuit"
+                  "modelType": "Stormsurge Battlesuit"
                 },
-                "replaces": {
-                  "weapon": "Heavy Pulse Cannon"
-                },
+                "replaces": null,
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>The Riptide Battlesuit can replace its Heavy Pulse Cannon with 1x Ion Accelerator.</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>The Stormsurge Battlesuit can be equipped with 2x Twin-linked Smart Missile Pod.</p>",
                 "options": [
                   {
-                    "ref": "weapon:ion-accelerator",
-                    "name": "Ion Accelerator",
+                    "ref": "weapon:smart-missile-pod#q2#m-twin-linked",
+                    "name": "Smart Missile Pod",
                     "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 70,
+                    "qty": 2,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 60,
                     "parts": [
                       {
-                        "ref": "weapon:ion-accelerator",
-                        "name": "Ion Accelerator",
+                        "ref": "weapon:smart-missile-pod",
+                        "name": "Smart Missile Pod",
                         "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
+                        "qty": 2,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   }
@@ -8074,115 +8603,97 @@
                 "scope": {
                   "who": "count",
                   "count": 1,
-                  "modelType": "Riptide Battlesuit"
+                  "modelType": "Stormsurge Battlesuit"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 2
+                  "max": 1
                 },
                 "id": "wargearOptions-add-2",
-                "prose": "<p>The Riptide Battlesuit can be equipped with up to 2 of the following:</p>",
+                "prose": "<p>The Stormsurge Battlesuit can be equipped with 1 of the following:</p>",
                 "options": [
                   {
-                    "ref": "weapon:flamer",
+                    "ref": "weapon:flamer#m-twin-linked",
                     "name": "Flamer",
                     "kind": "weapon",
                     "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 10,
                     "parts": [
                       {
                         "ref": "weapon:flamer",
                         "name": "Flamer",
                         "kind": "weapon",
                         "qty": 1,
-                        "modifiers": []
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   },
                   {
-                    "ref": "weapon:pulse-cannon",
+                    "ref": "weapon:pulse-cannon#m-twin-linked",
                     "name": "Pulse Cannon",
                     "kind": "weapon",
                     "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:pulse-cannon",
                         "name": "Pulse Cannon",
                         "kind": "weapon",
                         "qty": 1,
-                        "modifiers": []
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   },
                   {
-                    "ref": "weapon:plasma-rifle",
+                    "ref": "weapon:plasma-rifle#m-twin-linked",
                     "name": "Plasma Rifle",
                     "kind": "weapon",
                     "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 40,
                     "parts": [
                       {
                         "ref": "weapon:plasma-rifle",
                         "name": "Plasma Rifle",
                         "kind": "weapon",
                         "qty": 1,
-                        "modifiers": []
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   },
                   {
-                    "ref": "weapon:fusion-blaster",
-                    "name": "Fusion Blaster",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:fusion-blaster",
-                        "name": "Fusion Blaster",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:smart-missile-pod",
-                    "name": "Smart Missile Pod",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "weapon:smart-missile-pod",
-                        "name": "Smart Missile Pod",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:airburst-fragmentation-launchers",
+                    "ref": "weapon:airburst-fragmentation-launchers#m-twin-linked",
                     "name": "Airburst Fragmentation Launchers",
                     "kind": "weapon",
                     "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
                     "parts": [
                       {
                         "ref": "weapon:airburst-fragmentation-launchers",
                         "name": "Airburst Fragmentation Launchers",
                         "kind": "weapon",
                         "qty": 1,
-                        "modifiers": []
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   }
@@ -8193,7 +8704,7 @@
                 "scope": {
                   "who": "count",
                   "count": 1,
-                  "modelType": "Riptide Battlesuit"
+                  "modelType": "Stormsurge Battlesuit"
                 },
                 "replaces": null,
                 "pick": {
@@ -8201,7 +8712,7 @@
                   "max": 3
                 },
                 "id": "wargearOptions-add-3",
-                "prose": "<p>The Riptide Battlesuit can be equipped with up to 3 of the following:</p>",
+                "prose": "<p>The Stormsurge Battlesuit can be equipped with up to 3 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:markerlight",
@@ -8215,6 +8726,23 @@
                         "ref": "weapon:markerlight",
                         "name": "Markerlight",
                         "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:shield-generator",
+                    "name": "Shield Generator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "wargear:shield-generator",
+                        "name": "Shield Generator",
+                        "kind": "wargear",
                         "qty": 1,
                         "modifiers": []
                       }
@@ -8522,679 +9050,6 @@
       "epicHero": false
     },
     {
-      "name": "Stormsurge Battlesuit",
-      "category": "Walkers",
-      "stats": {
-        "AP": "2",
-        "M": "8\"",
-        "WS": 2,
-        "BS": 4,
-        "I": 2,
-        "A": 4,
-        "S": 9,
-        "T": 12,
-        "W": 22,
-        "SV": "2+",
-        "LD": "7+",
-        "basePoints": 240,
-        "squadSizes": "1"
-      },
-      "keywords": [
-        "T'au",
-        "Vehicle",
-        "Walker",
-        "Titanic"
-      ],
-      "models": null,
-      "options": {
-        "forceOrg": null,
-        "composition": {
-          "mode": "single",
-          "range": {
-            "min": 1,
-            "max": 1
-          },
-          "modelTypes": [
-            {
-              "name": "Stormsurge Battlesuit",
-              "stats": {
-                "AP": "2",
-                "M": "8\"",
-                "WS": 2,
-                "BS": 4,
-                "I": 2,
-                "A": 4,
-                "S": 9,
-                "T": 12,
-                "W": 22,
-                "SV": "2+",
-                "LD": "7+",
-                "basePoints": 240,
-                "squadSizes": "1"
-              },
-              "basePoints": 240,
-              "keywords": [
-                "T'au",
-                "Vehicle",
-                "Walker",
-                "Titanic"
-              ]
-            }
-          ],
-          "prose": "1 Stormsurge Battlesuit 0 to 2 Drones"
-        },
-        "slots": [],
-        "sections": [
-          {
-            "key": "unitComposition",
-            "prose": "<p>1 Stormsurge Battlesuit</p>\n<p>0 to 2 Drones</p>",
-            "clauses": []
-          },
-          {
-            "key": "standardWargear",
-            "prose": "<p>The Stormsurge Battlesuit is equipped with 1x Pulse Blaster and 1x Twin-linked Smart Missile Launcher.</p>",
-            "clauses": [
-              {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:pulse-blaster",
-                    "name": "Pulse Blaster",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 90,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-blaster",
-                        "name": "Pulse Blaster",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:smart-missile-launcher#m-twin-linked",
-                    "name": "Smart Missile Launcher",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 80,
-                    "parts": [
-                      {
-                        "ref": "weapon:smart-missile-launcher",
-                        "name": "Smart Missile Launcher",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>The Stormsurge Battlesuit can replace its Pulse Blaster with a Pulse Driver.</p>\n<p>The Stormsurge Battlesuit can be equipped with 2x Twin-linked Smart Missile Pod.</p>\n<p>The Stormsurge Battlesuit can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"flamer#m-twin-linked\">Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-cannon#m-twin-linked\">Pulse Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"plasma-rifle#m-twin-linked\">Plasma Rifle</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"airburst-fragmentation-launchers#m-twin-linked\">Airburst Fragmentation Launchers</span></p>\n<p>The Stormsurge Battlesuit can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Stormsurge Battlesuit"
-                },
-                "replaces": {
-                  "weapon": "Pulse Blaster"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>The Stormsurge Battlesuit can replace its Pulse Blaster with a Pulse Driver.</p>",
-                "options": [
-                  {
-                    "ref": "weapon:pulse-driver",
-                    "name": "Pulse Driver",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 80,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-driver",
-                        "name": "Pulse Driver",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Stormsurge Battlesuit"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>The Stormsurge Battlesuit can be equipped with 2x Twin-linked Smart Missile Pod.</p>",
-                "options": [
-                  {
-                    "ref": "weapon:smart-missile-pod#q2#m-twin-linked",
-                    "name": "Smart Missile Pod",
-                    "kind": "weapon",
-                    "qty": 2,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 60,
-                    "parts": [
-                      {
-                        "ref": "weapon:smart-missile-pod",
-                        "name": "Smart Missile Pod",
-                        "kind": "weapon",
-                        "qty": 2,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Stormsurge Battlesuit"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>The Stormsurge Battlesuit can be equipped with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:flamer#m-twin-linked",
-                    "name": "Flamer",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:flamer",
-                        "name": "Flamer",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:pulse-cannon#m-twin-linked",
-                    "name": "Pulse Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-cannon",
-                        "name": "Pulse Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:plasma-rifle#m-twin-linked",
-                    "name": "Plasma Rifle",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 40,
-                    "parts": [
-                      {
-                        "ref": "weapon:plasma-rifle",
-                        "name": "Plasma Rifle",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:airburst-fragmentation-launchers#m-twin-linked",
-                    "name": "Airburst Fragmentation Launchers",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:airburst-fragmentation-launchers",
-                        "name": "Airburst Fragmentation Launchers",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Stormsurge Battlesuit"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 3
-                },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>The Stormsurge Battlesuit can be equipped with up to 3 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:markerlight",
-                    "name": "Markerlight",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
-                    "parts": [
-                      {
-                        "ref": "weapon:markerlight",
-                        "name": "Markerlight",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:shield-generator",
-                    "name": "Shield Generator",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "wargear:shield-generator",
-                        "name": "Shield Generator",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:pulse-accelerator",
-                    "name": "Pulse Accelerator",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:pulse-accelerator",
-                        "name": "Pulse Accelerator",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:early-warning-override",
-                    "name": "Early Warning Override",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:early-warning-override",
-                        "name": "Early Warning Override",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:counterfire-defence-system",
-                    "name": "Counterfire Defence System",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:counterfire-defence-system",
-                        "name": "Counterfire Defence System",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:velocity-tracker",
-                    "name": "Velocity Tracker",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:velocity-tracker",
-                        "name": "Velocity Tracker",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:multi-tracker",
-                    "name": "Multi-Tracker",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:multi-tracker",
-                        "name": "Multi-Tracker",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:target-lock",
-                    "name": "Target Lock",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:target-lock",
-                        "name": "Target Lock",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:advanced-targeting-system",
-                    "name": "Advanced Targeting System",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:advanced-targeting-system",
-                        "name": "Advanced Targeting System",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "choose",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Drone"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "id": "wargearOptions-choose-5",
-                "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:pulse-carbine#m-twin-linked",
-                    "name": "Pulse Carbine",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 6,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-carbine",
-                        "name": "Pulse Carbine",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:long-shot-pulse-rifle",
-                    "name": "Long-shot Pulse Rifle",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 8,
-                    "parts": [
-                      {
-                        "ref": "weapon:long-shot-pulse-rifle",
-                        "name": "Long-shot Pulse Rifle",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:pulse-cannon",
-                    "name": "Pulse Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-cannon",
-                        "name": "Pulse Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:smart-missile-pod",
-                    "name": "Smart Missile Pod",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "weapon:smart-missile-pod",
-                        "name": "Smart Missile Pod",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:shield-generator",
-                    "name": "Shield Generator",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "wargear:shield-generator",
-                        "name": "Shield Generator",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:pulse-accelerator",
-                    "name": "Pulse Accelerator",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:pulse-accelerator",
-                        "name": "Pulse Accelerator",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:early-warning-override",
-                    "name": "Early Warning Override",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:early-warning-override",
-                        "name": "Early Warning Override",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:counterfire-defence-system",
-                    "name": "Counterfire Defence System",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:counterfire-defence-system",
-                        "name": "Counterfire Defence System",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:stealth-field-projector",
-                    "name": "Stealth Field Projector",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:stealth-field-projector",
-                        "name": "Stealth Field Projector",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          }
-        ]
-      },
-      "epicHero": false
-    },
-    {
       "name": "Piranhas",
       "category": "Vehicles",
       "stats": null,
@@ -9325,7 +9180,9 @@
           ],
           "prose": "1 to 3 Piranhas 2 to 6 Drones"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -9334,100 +9191,23 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every Piranha is equipped with 1x Pulse Cannon</p>",
-            "clauses": [
-              {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Piranha"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:pulse-cannon",
-                    "name": "Pulse Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-cannon",
-                        "name": "Pulse Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>Any Piranha can replace its Pulse Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p>Any Piranha can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Any Piranha can be equipped with 1 Seeker Missile.</p>",
+            "prose": "<p>Every Piranha must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>",
             "clauses": [
               {
                 "op": "choose",
                 "scope": {
                   "who": "each",
-                  "modelType": "Drone"
+                  "modelType": "Piranha"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-choose-1",
-                "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every Piranha must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
-                  {
-                    "ref": "weapon:pulse-carbine#m-twin-linked",
-                    "name": "Pulse Carbine",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 6,
-                    "parts": [
-                      {
-                        "ref": "weapon:pulse-carbine",
-                        "name": "Pulse Carbine",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:long-shot-pulse-rifle",
-                    "name": "Long-shot Pulse Rifle",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 8,
-                    "parts": [
-                      {
-                        "ref": "weapon:long-shot-pulse-rifle",
-                        "name": "Long-shot Pulse Rifle",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
                   {
                     "ref": "weapon:pulse-cannon",
                     "name": "Pulse Cannon",
@@ -9445,126 +9225,6 @@
                       }
                     ]
                   },
-                  {
-                    "ref": "weapon:smart-missile-pod",
-                    "name": "Smart Missile Pod",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "weapon:smart-missile-pod",
-                        "name": "Smart Missile Pod",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:shield-generator",
-                    "name": "Shield Generator",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "wargear:shield-generator",
-                        "name": "Shield Generator",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:pulse-accelerator",
-                    "name": "Pulse Accelerator",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:pulse-accelerator",
-                        "name": "Pulse Accelerator",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:early-warning-override",
-                    "name": "Early Warning Override",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:early-warning-override",
-                        "name": "Early Warning Override",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:counterfire-defence-system",
-                    "name": "Counterfire Defence System",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:counterfire-defence-system",
-                        "name": "Counterfire Defence System",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:stealth-field-projector",
-                    "name": "Stealth Field Projector",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "wargear:stealth-field-projector",
-                        "name": "Stealth Field Projector",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Piranha"
-                },
-                "replaces": {
-                  "weapon": "Pulse Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>Any Piranha can replace its Pulse Cannon with 1 of the following:</p>",
-                "options": [
                   {
                     "ref": "weapon:fusion-blaster",
                     "name": "Fusion Blaster",
@@ -9600,7 +9260,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any Piranha can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>Any Piranha can be equipped with 1 Seeker Missile.</p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -9610,10 +9277,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 3
+                  "max": 2
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>Any Piranha can be equipped with up to 3 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any Piranha can be equipped with up to 2 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:markerlight",
@@ -9781,7 +9448,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>Any Piranha can be equipped with 1 Seeker Missile.</p>",
                 "options": [
                   {
@@ -9802,184 +9469,7 @@
                     ]
                   }
                 ]
-              }
-            ],
-            "notes": []
-          }
-        ]
-      },
-      "epicHero": false
-    },
-    {
-      "name": "Hammerhead Gunship",
-      "category": "Vehicles",
-      "stats": null,
-      "keywords": [
-        "T'au",
-        "Vehicle",
-        "Hover"
-      ],
-      "models": [
-        {
-          "modelName": "Hammerhead Gunship",
-          "stats": {
-            "AP": "2",
-            "M": "12\"",
-            "WS": 2,
-            "BS": 3,
-            "I": 3,
-            "A": 4,
-            "S": 6,
-            "T": 10,
-            "W": 12,
-            "SV": "3+",
-            "LD": "8+",
-            "basePoints": 65,
-            "squadSizes": "1"
-          },
-          "keywords": [
-            "T'au",
-            "Vehicle",
-            "Hover"
-          ]
-        },
-        {
-          "modelName": "Drone",
-          "stats": {
-            "AP": "2",
-            "M": "10\"",
-            "WS": 1,
-            "BS": 3,
-            "I": 1,
-            "A": 1,
-            "S": 1,
-            "T": 2,
-            "W": 3,
-            "SV": "4+",
-            "LD": "4+",
-            "basePoints": 6,
-            "squadSizes": "2"
-          },
-          "keywords": [
-            "T'au",
-            "Infantry",
-            "Hover",
-            "Fearless"
-          ]
-        }
-      ],
-      "options": {
-        "forceOrg": null,
-        "composition": {
-          "mode": "multi",
-          "modelTypes": [
-            {
-              "name": "Hammerhead Gunship",
-              "stats": {
-                "AP": "2",
-                "M": "12\"",
-                "WS": 2,
-                "BS": 3,
-                "I": 3,
-                "A": 4,
-                "S": 6,
-                "T": 10,
-                "W": 12,
-                "SV": "3+",
-                "LD": "8+",
-                "basePoints": 65,
-                "squadSizes": "1"
               },
-              "basePoints": 65,
-              "keywords": [
-                "T'au",
-                "Vehicle",
-                "Hover"
-              ]
-            },
-            {
-              "name": "Drone",
-              "stats": {
-                "AP": "2",
-                "M": "10\"",
-                "WS": 1,
-                "BS": 3,
-                "I": 1,
-                "A": 1,
-                "S": 1,
-                "T": 2,
-                "W": 3,
-                "SV": "4+",
-                "LD": "4+",
-                "basePoints": 6,
-                "squadSizes": "2"
-              },
-              "basePoints": 6,
-              "keywords": [
-                "T'au",
-                "Infantry",
-                "Hover",
-                "Fearless"
-              ]
-            }
-          ],
-          "prose": "1 Hammerhead Gunship 2 Drones"
-        },
-        "slots": [],
-        "sections": [
-          {
-            "key": "unitComposition",
-            "prose": "<p>1 Hammerhead Gunship</p>\n<p>2 Drones</p>",
-            "clauses": []
-          },
-          {
-            "key": "standardWargear",
-            "prose": "<p>The Hammerhead Gunship is equipped with 1x Rail Gun.</p>",
-            "clauses": [
-              {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:rail-gun",
-                    "name": "Rail Gun",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 90,
-                    "parts": [
-                      {
-                        "ref": "weapon:rail-gun",
-                        "name": "Rail Gun",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "specialAbilities",
-            "prose": "<p><strong>Skyray Salvo:</strong> When this model is activated, you can choose to use this ability. When it does so, this model must <span class=\"keyword\" data-term=\"remain-stationary\" data-type=\"action\">Remain Stationary</span>, but can then disregard the <span class=\"keyword\" data-term=\"one-shot\" data-type=\"keyword\">One Shot</span> keyword limitation and make up to 3x <span class=\"weapon-ref\" data-weapon=\"seeker-missile\">Seeker Missile</span> attacks as part of a single <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action.</p>",
-            "clauses": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>The Hammerhead Gunship can replace its Rail Gun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ion-accelerator\">Ion Accelerator</span></p>\n<p class=\"lb-opt\">6x <span class=\"weapon-ref\" data-weapon=\"seeker-missile#q6#c-6x-seeker-missile-and-2x-markerlight\">6x Seeker Missile and 2x Markerlight</span> and <span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p>The Hammerhead Gunship can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>The Hammerhead Gunship can be equipped with up to 2x Seeker Missile.</p>",
-            "clauses": [
               {
                 "op": "choose",
                 "scope": {
@@ -9991,7 +9481,7 @@
                   "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-choose-1",
+                "id": "wargearOptions-choose-3",
                 "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -10152,24 +9642,175 @@
                     ]
                   }
                 ]
+              }
+            ],
+            "notes": []
+          }
+        ]
+      },
+      "epicHero": false
+    },
+    {
+      "name": "Hammerhead Gunship",
+      "category": "Vehicles",
+      "stats": null,
+      "keywords": [
+        "T'au",
+        "Vehicle",
+        "Hover"
+      ],
+      "models": [
+        {
+          "modelName": "Hammerhead Gunship",
+          "stats": {
+            "AP": "2",
+            "M": "12\"",
+            "WS": 2,
+            "BS": 3,
+            "I": 3,
+            "A": 4,
+            "S": 6,
+            "T": 10,
+            "W": 12,
+            "SV": "3+",
+            "LD": "8+",
+            "basePoints": 65,
+            "squadSizes": "1"
+          },
+          "keywords": [
+            "T'au",
+            "Vehicle",
+            "Hover"
+          ]
+        },
+        {
+          "modelName": "Drone",
+          "stats": {
+            "AP": "2",
+            "M": "10\"",
+            "WS": 1,
+            "BS": 3,
+            "I": 1,
+            "A": 1,
+            "S": 1,
+            "T": 2,
+            "W": 3,
+            "SV": "4+",
+            "LD": "4+",
+            "basePoints": 6,
+            "squadSizes": "2"
+          },
+          "keywords": [
+            "T'au",
+            "Infantry",
+            "Hover",
+            "Fearless"
+          ]
+        }
+      ],
+      "options": {
+        "forceOrg": null,
+        "composition": {
+          "mode": "multi",
+          "modelTypes": [
+            {
+              "name": "Hammerhead Gunship",
+              "stats": {
+                "AP": "2",
+                "M": "12\"",
+                "WS": 2,
+                "BS": 3,
+                "I": 3,
+                "A": 4,
+                "S": 6,
+                "T": 10,
+                "W": 12,
+                "SV": "3+",
+                "LD": "8+",
+                "basePoints": 65,
+                "squadSizes": "1"
               },
+              "basePoints": 65,
+              "keywords": [
+                "T'au",
+                "Vehicle",
+                "Hover"
+              ]
+            },
+            {
+              "name": "Drone",
+              "stats": {
+                "AP": "2",
+                "M": "10\"",
+                "WS": 1,
+                "BS": 3,
+                "I": 1,
+                "A": 1,
+                "S": 1,
+                "T": 2,
+                "W": 3,
+                "SV": "4+",
+                "LD": "4+",
+                "basePoints": 6,
+                "squadSizes": "2"
+              },
+              "basePoints": 6,
+              "keywords": [
+                "T'au",
+                "Infantry",
+                "Hover",
+                "Fearless"
+              ]
+            }
+          ],
+          "prose": "1 Hammerhead Gunship 2 Drones"
+        },
+        "slots": [
+          "primary-ranged"
+        ],
+        "sections": [
+          {
+            "key": "unitComposition",
+            "prose": "<p>1 Hammerhead Gunship</p>\n<p>2 Drones</p>",
+            "clauses": []
+          },
+          {
+            "key": "standardWargear",
+            "prose": "<p>The Hammerhead Gunship must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rail-gun\">Rail Gun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ion-accelerator\">Ion Accelerator</span></p>\n<p class=\"lb-opt\">6x <span class=\"weapon-ref\" data-weapon=\"seeker-missile#q6#c-6x-seeker-missile-and-2x-markerlight\">6x Seeker Missile and 2x Markerlight</span> and <span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
+            "clauses": [
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "count",
                   "count": 1,
                   "modelType": "Hammerhead Gunship"
                 },
-                "replaces": {
-                  "weapon": "Rail Gun"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>The Hammerhead Gunship can replace its Rail Gun with 1 of the following:</p>",
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>The Hammerhead Gunship must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:rail-gun",
+                    "name": "Rail Gun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 90,
+                    "parts": [
+                      {
+                        "ref": "weapon:rail-gun",
+                        "name": "Rail Gun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:ion-accelerator",
                     "name": "Ion Accelerator",
@@ -10225,6 +9866,191 @@
                 ]
               },
               {
+                "op": "choose",
+                "scope": {
+                  "who": "each",
+                  "modelType": "Drone"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:pulse-carbine#m-twin-linked",
+                    "name": "Pulse Carbine",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:pulse-carbine",
+                        "name": "Pulse Carbine",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:long-shot-pulse-rifle",
+                    "name": "Long-shot Pulse Rifle",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:long-shot-pulse-rifle",
+                        "name": "Long-shot Pulse Rifle",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:pulse-cannon",
+                    "name": "Pulse Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:pulse-cannon",
+                        "name": "Pulse Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:smart-missile-pod",
+                    "name": "Smart Missile Pod",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:smart-missile-pod",
+                        "name": "Smart Missile Pod",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:shield-generator",
+                    "name": "Shield Generator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "wargear:shield-generator",
+                        "name": "Shield Generator",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:pulse-accelerator",
+                    "name": "Pulse Accelerator",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:pulse-accelerator",
+                        "name": "Pulse Accelerator",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:early-warning-override",
+                    "name": "Early Warning Override",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "wargear:early-warning-override",
+                        "name": "Early Warning Override",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:counterfire-defence-system",
+                    "name": "Counterfire Defence System",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:counterfire-defence-system",
+                        "name": "Counterfire Defence System",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:stealth-field-projector",
+                    "name": "Stealth Field Projector",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "wargear:stealth-field-projector",
+                        "name": "Stealth Field Projector",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "specialAbilities",
+            "prose": "<p><strong>Skyray Salvo:</strong> When this model is activated, you can choose to use this ability. When it does so, this model must <span class=\"keyword\" data-term=\"remain-stationary\" data-type=\"action\">Remain Stationary</span>, but can then disregard the <span class=\"keyword\" data-term=\"one-shot\" data-type=\"keyword\">One Shot</span> keyword limitation and make up to 3x <span class=\"weapon-ref\" data-weapon=\"seeker-missile\">Seeker Missile</span> attacks as part of a single <span class=\"keyword\" data-term=\"shoot\" data-type=\"action\">Shoot</span> Action.</p>",
+            "clauses": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>The Hammerhead Gunship can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"advanced-targeting-system\">Advanced Targeting System</span></p>\n<p>The Hammerhead Gunship can be equipped with up to 2x Seeker Missile.</p>",
+            "clauses": [
+              {
                 "op": "add",
                 "scope": {
                   "who": "count",
@@ -10234,10 +10060,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 3
+                  "max": 2
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>The Hammerhead Gunship can be equipped with up to 3 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>The Hammerhead Gunship can be equipped with up to 2 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:markerlight",
@@ -10406,7 +10232,7 @@
                   "min": 0,
                   "max": 2
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>The Hammerhead Gunship can be equipped with up to 2x Seeker Missile.</p>",
                 "options": [
                   {
@@ -10553,7 +10379,9 @@
           ],
           "prose": "1 Devilfish 2 Drones"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -10562,20 +10390,23 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>The Devilfish is equipped with 1x Pulse Cannon.</p>",
+            "prose": "<p>The Devilfish must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
-                  "who": "each"
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Devilfish"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>The Devilfish must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:pulse-cannon",
@@ -10593,16 +10424,43 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:fusion-blaster",
+                    "name": "Fusion Blaster",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:fusion-blaster",
+                        "name": "Fusion Blaster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:plasma-rifle",
+                    "name": "Plasma Rifle",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:plasma-rifle",
+                        "name": "Plasma Rifle",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Every Drone must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"pulse-carbine#m-twin-linked\">Pulse Carbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"long-shot-pulse-rifle\">Long-shot Pulse Rifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulse-cannon\">Pulse Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smart-missile-pod\">Smart Missile Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"stealth-field-projector\">Stealth Field Projector</span></p>\n<p>The Devilfish can replace its Pulse Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"fusion-blaster\">Fusion Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-rifle\">Plasma Rifle</span></p>\n<p>The Devilfish can be equipped with up to 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p>The Devilfish can be equipped with up to 2x Seeker Missile.</p>",
-            "clauses": [
+              },
               {
                 "op": "choose",
                 "scope": {
@@ -10614,7 +10472,7 @@
                   "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-choose-1",
+                "id": "standardWargear-choose-2",
                 "prose": "<p>Every Drone must be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -10775,60 +10633,14 @@
                     ]
                   }
                 ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Devilfish"
-                },
-                "replaces": {
-                  "weapon": "Pulse Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>The Devilfish can replace its Pulse Cannon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:fusion-blaster",
-                    "name": "Fusion Blaster",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:fusion-blaster",
-                        "name": "Fusion Blaster",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:plasma-rifle",
-                    "name": "Plasma Rifle",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:plasma-rifle",
-                        "name": "Plasma Rifle",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>The Devilfish can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"markerlight\">Markerlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-generator\">Shield Generator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"pulse-accelerator\">Pulse Accelerator</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"early-warning-override\">Early Warning Override</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"counterfire-defence-system\">Counterfire Defence System</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"velocity-tracker\">Velocity Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"multi-tracker\">Multi-Tracker</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"target-lock\">Target Lock</span></p>\n<p>The Devilfish can be equipped with up to 2x Seeker Missile.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -10839,10 +10651,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 3
+                  "max": 2
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>The Devilfish can be equipped with up to 3 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>The Devilfish can be equipped with up to 2 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:markerlight",
@@ -10994,7 +10806,7 @@
                   "min": 0,
                   "max": 2
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>The Devilfish can be equipped with up to 2x Seeker Missile.</p>",
                 "options": [
                   {

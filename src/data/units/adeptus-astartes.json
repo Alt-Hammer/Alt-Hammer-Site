@@ -805,7 +805,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -1758,7 +1758,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -2601,7 +2601,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -3227,7 +3227,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -3867,7 +3867,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -4662,7 +4662,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -4755,7 +4755,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Intercessor Sergeant</li>\n<li>2 to 4 Intercessors</li>\n</ul>",
+            "prose": "<p>1 Intercessor Sergeant</p>\n<p>2 to 4 Intercessors</p>",
             "clauses": []
           },
           {
@@ -5620,7 +5620,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -5822,7 +5822,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Sternguard Veteran Sergeant or 1 Vanguard Veteran Sergeant</li>\n<li>2 to 4 Sternguard Veterans or 2 to 4 Vanguard Veterans</li>\n</ul>",
+            "prose": "<p>1 Sternguard Veteran Sergeant or 1 Vanguard Veteran Sergeant</p>\n<p>2 to 4 Sternguard Veterans or 2 to 4 Vanguard Veterans</p>",
             "clauses": []
           },
           {
@@ -7077,7 +7077,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -8490,7 +8490,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -8679,7 +8679,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Devastator Sergeant</li>\n<li>2 to 4 Devastators</li>\n</ul>",
+            "prose": "<p>1 Devastator Sergeant</p>\n<p>2 to 4 Devastators</p>",
             "clauses": []
           },
           {
@@ -10691,7 +10691,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -10704,7 +10704,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -10871,12 +10871,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon#c-1x-lascannon-and-1x-twin-linked-plasma-gun\">1x Lascannon and 1x Twin-linked Plasma Gun</span> and <span class=\"weapon-ref\" data-weapon=\"plasma-gun\">Plasma Gun</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolter</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -10885,6 +10883,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-bolter#m-twin-linked",
@@ -10906,31 +10906,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Twin-linked Heavy Bolter with a Twin-linked Lascannon</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolter"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolter with a Twin-linked Lascannon</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:lascannon#m-twin-linked",
                     "name": "Lascannon",
@@ -10951,9 +10927,95 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:assault-cannon#m-twin-linked",
+                    "name": "Assault Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:assault-cannon",
+                        "name": "Assault Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-flamer#m-twin-linked",
+                    "name": "Heavy Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-flamer",
+                        "name": "Heavy Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:lascannon#c-1x-lascannon-and-1x-twin-linked-plasma-gun",
+                    "name": "1x Lascannon and 1x Twin-linked Plasma Gun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 59,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:plasma-gun",
+                        "name": "Plasma Gun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:plasma-gun",
+                        "name": "Plasma Gun",
+                        "kind": "weapon",
+                        "points": 24
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -10964,7 +11026,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -11013,7 +11075,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -11175,7 +11237,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"icarus-missile-launcher\">Icarus Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-dome\">Shield Dome</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"orbital-comms-array\">Orbital Comms Array</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
+            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"icarus-missile-launcher\">Icarus Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"shield-dome\">Shield Dome</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"orbital-comms-array\">Orbital Comms Array</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -11275,7 +11337,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -11867,12 +11929,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Right Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cyclone-missile-launcher\">Cyclone Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>This model must be equipped with 1 of the following Left Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cyclone-missile-launcher\">Cyclone Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Onslaught Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -11881,6 +11941,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Right Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:onslaught-cannon",
@@ -11898,22 +11960,100 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Dreadnought Power Fist</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
+                  },
+                  {
+                    "ref": "weapon:plasma-cannon",
+                    "name": "Plasma Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:plasma-cannon",
+                        "name": "Plasma Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:lascannon#m-twin-linked",
+                    "name": "Lascannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 70,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multi-melta",
+                    "name": "Multi-melta",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:multi-melta",
+                        "name": "Multi-melta",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:autocannon#m-twin-linked",
+                    "name": "Autocannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:cyclone-missile-launcher",
+                    "name": "Cyclone Missile Launcher",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:cyclone-missile-launcher",
+                        "name": "Cyclone Missile Launcher",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:dreadnought-power-fist",
                     "name": "Dreadnought Power Fist",
@@ -11925,6 +12065,182 @@
                       {
                         "ref": "weapon:dreadnought-power-fist",
                         "name": "Dreadnought Power Fist",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:dreadnought-power-talons",
+                    "name": "Dreadnought Power Talons",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:dreadnought-power-talons",
+                        "name": "Dreadnought Power Talons",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "choose",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Left Arm Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:onslaught-cannon",
+                    "name": "Onslaught Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:onslaught-cannon",
+                        "name": "Onslaught Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:plasma-cannon",
+                    "name": "Plasma Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:plasma-cannon",
+                        "name": "Plasma Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:lascannon#m-twin-linked",
+                    "name": "Lascannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 70,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multi-melta",
+                    "name": "Multi-melta",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:multi-melta",
+                        "name": "Multi-melta",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:autocannon#m-twin-linked",
+                    "name": "Autocannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:cyclone-missile-launcher",
+                    "name": "Cyclone Missile Launcher",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:cyclone-missile-launcher",
+                        "name": "Cyclone Missile Launcher",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:dreadnought-power-fist",
+                    "name": "Dreadnought Power Fist",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:dreadnought-power-fist",
+                        "name": "Dreadnought Power Fist",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:dreadnought-power-talons",
+                    "name": "Dreadnought Power Talons",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:dreadnought-power-talons",
+                        "name": "Dreadnought Power Talons",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -11938,298 +12254,10 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can replace its Onslaught Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cyclone-missile-launcher\">Cyclone Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>This model can replace its Dreadnought Power Fist with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cyclone-missile-launcher\">Cyclone Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rocket-pod\">Rocket Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"heros-heraldry-banner\">Hero's Heraldry Banner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
+            "prose": "<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-launcher\">Frag Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rocket-pod\">Rocket Pod</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"heros-heraldry-banner\">Hero's Heraldry Banner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
             "clauses": [
               {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Onslaught Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Onslaught Cannon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:plasma-cannon",
-                    "name": "Plasma Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:plasma-cannon",
-                        "name": "Plasma Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:lascannon#m-twin-linked",
-                    "name": "Lascannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 70,
-                    "parts": [
-                      {
-                        "ref": "weapon:lascannon",
-                        "name": "Lascannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:multi-melta",
-                    "name": "Multi-melta",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:multi-melta",
-                        "name": "Multi-melta",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:autocannon#m-twin-linked",
-                    "name": "Autocannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:autocannon",
-                        "name": "Autocannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:cyclone-missile-launcher",
-                    "name": "Cyclone Missile Launcher",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:cyclone-missile-launcher",
-                        "name": "Cyclone Missile Launcher",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:dreadnought-power-fist",
-                    "name": "Dreadnought Power Fist",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:dreadnought-power-fist",
-                        "name": "Dreadnought Power Fist",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:dreadnought-power-talons",
-                    "name": "Dreadnought Power Talons",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:dreadnought-power-talons",
-                        "name": "Dreadnought Power Talons",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Dreadnought Power Fist"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Dreadnought Power Fist with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:onslaught-cannon",
-                    "name": "Onslaught Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:onslaught-cannon",
-                        "name": "Onslaught Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:plasma-cannon",
-                    "name": "Plasma Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:plasma-cannon",
-                        "name": "Plasma Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:lascannon#m-twin-linked",
-                    "name": "Lascannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 70,
-                    "parts": [
-                      {
-                        "ref": "weapon:lascannon",
-                        "name": "Lascannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:multi-melta",
-                    "name": "Multi-melta",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:multi-melta",
-                        "name": "Multi-melta",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:autocannon#m-twin-linked",
-                    "name": "Autocannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:autocannon",
-                        "name": "Autocannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:cyclone-missile-launcher",
-                    "name": "Cyclone Missile Launcher",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:cyclone-missile-launcher",
-                        "name": "Cyclone Missile Launcher",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:dreadnought-power-talons",
-                    "name": "Dreadnought Power Talons",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:dreadnought-power-talons",
-                        "name": "Dreadnought Power Talons",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "wargearOptions-modifier-each-3",
+                "id": "wargearOptions-modifier-each-1",
                 "op": "modifier",
                 "prose": "<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following:</p>",
                 "appliesTo": {
@@ -12323,9 +12351,26 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:frag-launcher",
+                    "name": "Frag Launcher",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:frag-launcher",
+                        "name": "Frag Launcher",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:rocket-pod",
                     "name": "Rocket Pod",
@@ -12459,12 +12504,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"storm-bolter#m-twin-linked\">Storm Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Right Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon\">Macro Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"inferno-cannon\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-lascannon#m-twin-linked\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hurricane-bolter-array\">Hurricane Bolter Array</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>This model must be equipped with 1 of the following Left Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cyclone-missile-launcher\">Cyclone Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"storm-bolter#m-twin-linked\">Storm Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"grenade-launcher#m-twin-linked\">Grenade Launcher</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Punisher Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -12473,6 +12516,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Right Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:punisher-cannon",
@@ -12490,99 +12535,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Dreadnought Power Fist</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:dreadnought-power-fist",
-                    "name": "Dreadnought Power Fist",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:dreadnought-power-fist",
-                        "name": "Dreadnought Power Fist",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-3",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Storm Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:storm-bolter#m-twin-linked",
-                    "name": "Storm Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 16,
-                    "parts": [
-                      {
-                        "ref": "weapon:storm-bolter",
-                        "name": "Storm Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Punisher Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon\">Macro Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"inferno-cannon\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-lascannon#m-twin-linked\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hurricane-bolter-array\">Hurricane Bolter Array</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-fist\">Dreadnought Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>This model can replace its Dreadnought Power Fist with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"cyclone-missile-launcher\">Cyclone Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-talons\">Dreadnought Power Talons</span></p>\n<p>This model can replace its Twin-linked Storm Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"grenade-launcher#m-twin-linked\">Grenade Launcher</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rocket-pod\">Rocket Pod</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"heros-heraldry-banner\">Hero's Heraldry Banner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Punisher Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Punisher Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:macro-plasma-cannon",
                     "name": "Macro Plasma Cannon",
@@ -12625,7 +12578,7 @@
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 110,
+                    "points": 120,
                     "parts": [
                       {
                         "ref": "weapon:heavy-lascannon",
@@ -12713,20 +12666,35 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Dreadnought Power Fist"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Dreadnought Power Fist with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Left Arm Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:dreadnought-power-fist",
+                    "name": "Dreadnought Power Fist",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:dreadnought-power-fist",
+                        "name": "Dreadnought Power Fist",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:cyclone-missile-launcher",
                     "name": "Cyclone Missile Launcher",
@@ -12764,20 +12732,39 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Storm Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-3",
-                "prose": "<p>This model can replace its Twin-linked Storm Bolter with 1 of the following:</p>",
+                "id": "standardWargear-choose-3",
+                "prose": "<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:storm-bolter#m-twin-linked",
+                    "name": "Storm Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 16,
+                    "parts": [
+                      {
+                        "ref": "weapon:storm-bolter",
+                        "name": "Storm Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:grenade-launcher#m-twin-linked",
                     "name": "Grenade Launcher",
@@ -12842,11 +12829,18 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following Wrist Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-launcher\">Frag Launcher</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"heros-heraldry-banner\">Hero's Heraldry Banner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
+            "clauses": [
               {
-                "id": "wargearOptions-modifier-each-4",
+                "id": "wargearOptions-modifier-each-1",
                 "op": "modifier",
-                "prose": "<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following:</p>",
+                "prose": "<p>Each Dreadnought Power Fist equipped by this model can be upgraded to include 1 of the following Wrist Weapons:</p>",
                 "appliesTo": {
                   "weapon": "Dreadnought Power Fist"
                 },
@@ -12938,20 +12932,20 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
-                    "ref": "weapon:rocket-pod",
-                    "name": "Rocket Pod",
+                    "ref": "weapon:frag-launcher",
+                    "name": "Frag Launcher",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 35,
+                    "points": 6,
                     "parts": [
                       {
-                        "ref": "weapon:rocket-pod",
-                        "name": "Rocket Pod",
+                        "ref": "weapon:frag-launcher",
+                        "name": "Frag Launcher",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -13189,7 +13183,7 @@
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 110,
+                    "points": 120,
                     "parts": [
                       {
                         "ref": "weapon:heavy-lascannon",
@@ -13282,12 +13276,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"boltgun#m-twin-linked\">Boltgun</span></p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>Every model is equipped with 1x Twin-linked Boltgun.</p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Every model is equipped with:</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -13296,6 +13288,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:onslaught-cannon",
@@ -13315,6 +13309,38 @@
                     ]
                   },
                   {
+                    "ref": "weapon:multi-melta",
+                    "name": "Multi-melta",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:multi-melta",
+                        "name": "Multi-melta",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "standardWargear-fixed-2",
+                "op": "fixed",
+                "prose": "",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "options": [
+                  {
                     "ref": "weapon:boltgun#m-twin-linked",
                     "name": "Boltgun",
                     "kind": "weapon",
@@ -13332,47 +13358,6 @@
                         "modifiers": [
                           "twin-linked"
                         ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Onslaught Cannon with 1 Multi-melta.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Onslaught Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Onslaught Cannon with 1 Multi-melta.</p>",
-                "options": [
-                  {
-                    "ref": "weapon:multi-melta",
-                    "name": "Multi-melta",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:multi-melta",
-                        "name": "Multi-melta",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
                       }
                     ]
                   }
@@ -13455,7 +13440,9 @@
           ],
           "prose": "1 to 2 Land Speeders"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -13464,12 +13451,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with 1x Heavy Bolter</p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -13478,6 +13463,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-bolter",
@@ -13495,31 +13482,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p>Any model can be equipped with 1 Missile Launcher</p>\n<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"orbital-comms-array\">Orbital Comms Array</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Heavy Bolter"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace its Heavy Bolter with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:heavy-flamer",
                     "name": "Heavy Flamer",
@@ -13555,7 +13518,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any model can be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p>Any model can be equipped with 1 Missile Launcher</p>\n<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"orbital-comms-array\">Orbital Comms Array</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -13566,8 +13536,9 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
+                "slot": "secondary",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any model can be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:onslaught-cannon",
@@ -13632,7 +13603,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>Any model can be equipped with 1 Missile Launcher</p>",
                 "options": [
                   {
@@ -13664,7 +13635,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>Any model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -13785,12 +13756,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2#m-twin-linked\">Storm Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>This model must be equipped with 1 of the following Turret Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"rocket-pod#m-twin-linked\">Rocket Pod</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-twin-linked\">Missile Launcher</span></p>\n<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>\n<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2#m-twin-linked\">Storm Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"grenade-launcher#q2\">Grenade Launcher</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Onslaught Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -13799,6 +13768,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:onslaught-cannon",
@@ -13816,103 +13787,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Autogun</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-autogun#m-twin-linked",
-                    "name": "Heavy Autogun",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-autogun",
-                        "name": "Heavy Autogun",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-3",
-                "op": "fixed",
-                "prose": "<p>2x Twin-linked Storm Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:storm-bolter#q2#m-twin-linked",
-                    "name": "Storm Bolter",
-                    "kind": "weapon",
-                    "qty": 2,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 32,
-                    "parts": [
-                      {
-                        "ref": "weapon:storm-bolter",
-                        "name": "Storm Bolter",
-                        "kind": "weapon",
-                        "qty": 2,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Onslaught Cannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>This model can replace its Twin-linked Heavy Autogun with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"rocket-pod#m-twin-linked\">Rocket Pod</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-twin-linked\">Missile Launcher</span></p>\n<p>This model can replace its 2x Twin-linked Storm Bolter with 2x Grenade Launcher.</p>\n<p>This model can be equipped with up to 2x Hunter-Killer Missile.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"orbital-comms-array\">Orbital Comms Array</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Onslaught Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Onslaught Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:multi-melta#m-twin-linked",
                     "name": "Multi-melta",
@@ -13954,20 +13829,39 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Autogun"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Autogun with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Turret Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:heavy-autogun#m-twin-linked",
+                    "name": "Heavy Autogun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-autogun",
+                        "name": "Heavy Autogun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:rocket-pod#m-twin-linked",
                     "name": "Rocket Pod",
@@ -14013,20 +13907,39 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "2x Twin-linked Storm Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-3",
-                "prose": "<p>This model can replace its 2x Twin-linked Storm Bolter with 2x Grenade Launcher.</p>",
+                "id": "standardWargear-choose-3",
+                "prose": "<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:storm-bolter#q2#m-twin-linked",
+                    "name": "Storm Bolter",
+                    "kind": "weapon",
+                    "qty": 2,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 32,
+                    "parts": [
+                      {
+                        "ref": "weapon:storm-bolter",
+                        "name": "Storm Bolter",
+                        "kind": "weapon",
+                        "qty": 2,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:grenade-launcher#q2",
                     "name": "Grenade Launcher",
@@ -14045,7 +13958,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with up to 2x Hunter-Killer Missile.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"orbital-comms-array\">Orbital Comms Array</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -14056,7 +13976,7 @@
                   "min": 0,
                   "max": 2
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with up to 2x Hunter-Killer Missile.</p>",
                 "options": [
                   {
@@ -14088,7 +14008,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -14205,12 +14125,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"onslaught-cannon#m-twin-linked\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Exterminator Autocannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -14219,6 +14137,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:exterminator-autocannon",
@@ -14236,51 +14156,6 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Exterminator Autocannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"onslaught-cannon#m-twin-linked\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Exterminator Autocannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Exterminator Autocannon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:lascannon#m-twin-linked",
-                    "name": "Lascannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 70,
-                    "parts": [
-                      {
-                        "ref": "weapon:lascannon",
-                        "name": "Lascannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
                   },
                   {
                     "ref": "weapon:heavy-lascannon",
@@ -14288,7 +14163,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 55,
+                    "points": 60,
                     "parts": [
                       {
                         "ref": "weapon:heavy-lascannon",
@@ -14378,9 +14253,58 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:lascannon#m-twin-linked",
+                    "name": "Lascannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 70,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:lascannon#m-twin-linked",
+                    "name": "Lascannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 70,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Side Sponson Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -14391,8 +14315,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Side Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-bolter#q2",
@@ -14474,8 +14398,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -14540,7 +14464,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with 1 Hunter-killer Missile.</p>",
                 "options": [
                   {
@@ -14572,7 +14496,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-4",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -14691,12 +14615,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"onslaught-cannon#m-twin-linked\">Onslaught Cannon</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"onslaught-cannon#m-twin-linked\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laser-destroyer\">Laser Destroyer</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Onslaught Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -14705,6 +14627,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:onslaught-cannon#m-twin-linked",
@@ -14726,31 +14650,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Twin-linked Onslaught Cannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laser-destroyer\">Laser Destroyer</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2\">Storm Bolter</span></p>\n<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2#m-twin-linked\">Storm Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with Smoke Launchers.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Onslaught Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Twin-linked Onslaught Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:lascannon#m-twin-linked",
                     "name": "Lascannon",
@@ -14790,7 +14690,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Side Sponson Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2\">Storm Bolter</span></p>\n<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2#m-twin-linked\">Storm Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -14801,8 +14708,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Side Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter#q2",
@@ -14871,8 +14778,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -14937,7 +14844,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
                 "options": [
                   {
@@ -15041,12 +14948,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#q2#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>\n<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#q2#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#q2\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"hurricane-bolter-array#q2\">Hurricane Bolter Array</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>2x Twin-linked Lascannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -15055,6 +14960,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:lascannon#q2#m-twin-linked",
@@ -15076,67 +14983,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter#m-twin-linked",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its 2x Twin-linked Lascannon with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#q2\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"hurricane-bolter-array#q2\">Hurricane Bolter Array</span></p>\n<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "2x Twin-linked Lascannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its 2x Twin-linked Lascannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:inferno-cannon#q2",
                     "name": "Inferno Cannon",
@@ -15174,20 +15021,39 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:heavy-bolter#m-twin-linked",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:assault-cannon#m-twin-linked",
                     "name": "Assault Cannon",
@@ -15273,7 +15139,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -15284,8 +15157,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -15350,7 +15223,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with 1 Hunter-killer Missile</p>",
                 "options": [
                   {
@@ -15382,7 +15255,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
                 "options": [
                   {
@@ -15486,12 +15359,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon#c-1x-lascannon-and-heavy-autogun\">1x Lascannon and Heavy Autogun</span> and <span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon#c-1x-lascannon-and-heavy-autogun\">1x Lascannon and Heavy Autogun</span> and <span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon#c-1x-onslaught-cannon-and-heavy-autogun\">1x Onslaught Cannon and Heavy Autogun</span> and <span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"executioner-turret\">Executioner Turret</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Lascannon and Heavy Autogun</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -15500,6 +15371,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:lascannon#c-1x-lascannon-and-heavy-autogun",
@@ -15535,70 +15408,7 @@
                         "points": 5
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolters</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter#m-twin-linked",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Lascannon and Heavy Autogun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon#c-1x-onslaught-cannon-and-heavy-autogun\">1x Onslaught Cannon and Heavy Autogun</span> and <span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"executioner-turret\">Executioner Turret</span></p>\n<p>This model can replace its Twin-linked Heavy Bolters with 1 Twin-linked Lascannon.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rocket-pod\">Rocket Pod</span></p>\n<p>This model can be equipped with Smoke Launchers.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapons": [
-                    "Lascannon",
-                    "Heavy Autogun"
-                  ]
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Lascannon and Heavy Autogun with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:onslaught-cannon#c-1x-onslaught-cannon-and-heavy-autogun",
                     "name": "1x Onslaught Cannon and Heavy Autogun",
@@ -15654,20 +15464,39 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolters"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolters with 1 Twin-linked Lascannon.</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:heavy-bolter#m-twin-linked",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:lascannon#m-twin-linked",
                     "name": "Lascannon",
@@ -15690,7 +15519,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Rear Defensive Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-launcher\">Frag Launcher</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with any of the following Defensive Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"frag-launcher#q2\">Frag Launcher</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-bolter#q2\">Storm Bolter</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -15701,8 +15537,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Rear Defensive Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#m-twin-linked",
@@ -15726,16 +15562,16 @@
                     ]
                   },
                   {
-                    "ref": "weapon:rocket-pod",
-                    "name": "Rocket Pod",
+                    "ref": "weapon:frag-launcher",
+                    "name": "Frag Launcher",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 35,
+                    "points": 6,
                     "parts": [
                       {
-                        "ref": "weapon:rocket-pod",
-                        "name": "Rocket Pod",
+                        "ref": "weapon:frag-launcher",
+                        "name": "Frag Launcher",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -15754,22 +15590,122 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
-                    "ref": "wargear:smoke-launchers",
-                    "name": "Smoke Launchers",
-                    "kind": "wargear",
+                    "ref": "weapon:storm-bolter",
+                    "name": "Storm Bolter",
+                    "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 10,
+                    "points": 8,
                     "parts": [
                       {
-                        "ref": "wargear:smoke-launchers",
-                        "name": "Smoke Launchers",
-                        "kind": "wargear",
+                        "ref": "weapon:storm-bolter",
+                        "name": "Storm Bolter",
+                        "kind": "weapon",
                         "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-autogun",
+                    "name": "Heavy Autogun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-autogun",
+                        "name": "Heavy Autogun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:assault-cannon",
+                    "name": "Assault Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:assault-cannon",
+                        "name": "Assault Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multi-melta",
+                    "name": "Multi-melta",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:multi-melta",
+                        "name": "Multi-melta",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": null
+                },
+                "id": "wargearOptions-add-3",
+                "prose": "<p>This model can be equipped with any of the following Defensive Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:frag-launcher#q2",
+                    "name": "Frag Launcher",
+                    "kind": "weapon",
+                    "qty": 2,
+                    "modifiers": [],
+                    "points": 12,
+                    "parts": [
+                      {
+                        "ref": "weapon:frag-launcher",
+                        "name": "Frag Launcher",
+                        "kind": "weapon",
+                        "qty": 2,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:storm-bolter#q2",
+                    "name": "Storm Bolter",
+                    "kind": "weapon",
+                    "qty": 2,
+                    "modifiers": [],
+                    "points": 16,
+                    "parts": [
+                      {
+                        "ref": "weapon:storm-bolter",
+                        "name": "Storm Bolter",
+                        "kind": "weapon",
+                        "qty": 2,
                         "modifiers": []
                       }
                     ]
@@ -15925,7 +15861,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-Killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-Killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -15938,7 +15874,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -16174,7 +16110,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-Killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-Killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -16187,7 +16123,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -16802,7 +16738,7 @@
       "keywords": [
         "Heavy"
       ],
-      "availability": "Tacticus"
+      "availability": "Tacticus, Gravis"
     },
     {
       "name": "Exterminator Autocannon",
@@ -17408,7 +17344,7 @@
     {
       "name": "Heavy Lascannon",
       "section": "Ranged Weapons",
-      "points": 55,
+      "points": 60,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",
@@ -17620,6 +17556,23 @@
         "Indirect Fire",
         "Heavy",
         "Anti-Air",
+        "Ignores Cover"
+      ],
+      "availability": "Vehicles only"
+    },
+    {
+      "name": "Frag Launcher",
+      "section": "Ranged Weapons",
+      "points": 6,
+      "profiles": null,
+      "range": "12\"",
+      "attacks": "D6",
+      "strength": "3",
+      "ap": "0",
+      "damage": "1",
+      "keywords": [
+        "Assault",
+        "Blast 1\"",
         "Ignores Cover"
       ],
       "availability": "Vehicles only"

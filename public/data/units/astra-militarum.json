@@ -3517,7 +3517,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -4288,7 +4288,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -4917,7 +4917,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -6084,7 +6084,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -8948,12 +8948,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Multilas</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -8962,79 +8960,8 @@
                   "min": 1,
                   "max": 1
                 },
-                "options": [
-                  {
-                    "ref": "weapon:multilas",
-                    "name": "Multilas",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:multilas",
-                        "name": "Multilas",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 12,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Multilas with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>This model can replace its Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Multilas"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Multilas with 1 of the following:</p>",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -9081,6 +9008,23 @@
                       {
                         "ref": "weapon:heavy-flamer",
                         "name": "Heavy Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multilas",
+                    "name": "Multilas",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:multilas",
+                        "name": "Multilas",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -9110,7 +9054,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -9124,19 +9068,17 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Heavy Bolter with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -9171,9 +9113,33 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:heavy-bolter",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 12,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -9184,8 +9150,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -9231,10 +9197,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 Hunter-killer Missile.</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:hunter-killer-missile",
@@ -9252,22 +9218,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": null
-                },
-                "id": "wargearOptions-add-5",
-                "prose": "<p>This model can be equipped with any of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:dozer-blade-mount",
                     "name": "Dozer Blade Mount",
@@ -9411,7 +9362,9 @@
           ],
           "prose": "1 Taurox"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -9420,7 +9373,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with a Taurox Prime Weapon System.</p>\n<p>This model can be equipped with a Vox Caster.</p>",
+            "prose": "<p>This model can be equipped with a Taurox Prime Weapon System.</p>\n<p>This model can be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with a Vox Caster.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -9433,7 +9386,40 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with a Taurox Prime Weapon System.</p>",
+                "options": [
+                  {
+                    "ref": "wargear:taurox-prime-weapon-system",
+                    "name": "Taurox Prime Weapon System",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": null,
+                    "parts": [
+                      {
+                        "ref": "wargear:taurox-prime-weapon-system",
+                        "name": "Taurox Prime Weapon System",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 1
+                },
+                "slot": "secondary",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#m-twin-linked",
@@ -9552,8 +9538,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-3",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -9584,38 +9570,6 @@
                         "ref": "weapon:heavy-autogun",
                         "name": "Heavy Autogun",
                         "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with a Taurox Prime Weapon System.</p>",
-                "options": [
-                  {
-                    "ref": "wargear:taurox-prime-weapon-system",
-                    "name": "Taurox Prime Weapon System",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": null,
-                    "parts": [
-                      {
-                        "ref": "wargear:taurox-prime-weapon-system",
-                        "name": "Taurox Prime Weapon System",
-                        "kind": "wargear",
                         "qty": 1,
                         "modifiers": []
                       }
@@ -9765,7 +9719,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"hot-shot-volleygun#m-twin-linked\">Hot-shot Volleygun</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with a Taurox Prime Weapon System.</p>\n<p>This model can be equipped with a Vox Caster.</p>",
+            "prose": "<p>This model can be equipped with a Taurox Prime Weapon System.</p>\n<p>This model can be equipped with 1 of the following Secondary Weapons:</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"hot-shot-volleygun#m-twin-linked\">Hot-shot Volleygun</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with a Vox Caster.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -9778,6 +9732,38 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with a Taurox Prime Weapon System.</p>",
+                "options": [
+                  {
+                    "ref": "wargear:taurox-prime-weapon-system",
+                    "name": "Taurox Prime Weapon System",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": null,
+                    "parts": [
+                      {
+                        "ref": "wargear:taurox-prime-weapon-system",
+                        "name": "Taurox Prime Weapon System",
+                        "kind": "wargear",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 1
+                },
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -9918,8 +9904,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-4",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -9967,39 +9953,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with a Taurox Prime Weapon System.</p>",
-                "options": [
-                  {
-                    "ref": "wargear:taurox-prime-weapon-system",
-                    "name": "Taurox Prime Weapon System",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": null,
-                    "parts": [
-                      {
-                        "ref": "wargear:taurox-prime-weapon-system",
-                        "name": "Taurox Prime Weapon System",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-5",
                 "prose": "<p>This model can be equipped with a Vox Caster.</p>",
                 "options": [
                   {
@@ -10105,12 +10059,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Multilas</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -10119,6 +10071,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:multilas",
@@ -10136,31 +10090,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Multilas with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"rocket-pod#q2\">Rocket Pod</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile#q2\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Multilas"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Multilas with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:heavy-bolter",
                     "name": "Heavy Bolter",
@@ -10218,7 +10148,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -10230,7 +10160,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"rocket-pod#q2\">Rocket Pod</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile#q2\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -10241,7 +10178,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -10466,7 +10403,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -10479,7 +10416,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Every model must be equipped with 1 of the following:</p>",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:multilas",
@@ -10623,7 +10560,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -10641,7 +10578,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any model can be equipped with a Sentinel Chainsaw.</p>\n<p>Any model can be equipped with 1 Hunter-killer Missile.</p>\n<p>Any model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>",
+            "prose": "<p>Any model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"sentinel-chainsaw\">Sentinel Chainsaw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p>Any model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -10651,10 +10588,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>Any model can be equipped with a Sentinel Chainsaw.</p>",
+                "prose": "<p>Any model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:sentinel-chainsaw",
@@ -10672,22 +10609,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>Any model can be equipped with 1 Hunter-killer Missile.</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hunter-killer-missile",
                     "name": "Hunter-killer Missile",
@@ -10717,7 +10639,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>Any model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -10868,7 +10790,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-twin-linked\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"sunderer-cannon\">Sunderer Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulverizer-siege-cannon\">Pulverizer Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bombast-cannon\">Bombast Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"orthrus-quad-mortar\">Orthrus Quad Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"gryphon-heavy-mortar\">Gryphon Heavy Mortar</span></p>\n<p>Each model must be equipped with 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lasrifle\">Lasrifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascarbine\">Lascarbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laspistol\">Laspistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>",
+            "prose": "<p>Each model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-twin-linked\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"sunderer-cannon\">Sunderer Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulverizer-siege-cannon\">Pulverizer Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bombast-cannon\">Bombast Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"orthrus-quad-mortar\">Orthrus Quad Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"gryphon-heavy-mortar\">Gryphon Heavy Mortar</span></p>\n<p>Each model must be equipped with 3 of the following Crew Member Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lasrifle\">Lasrifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascarbine\">Lascarbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laspistol\">Laspistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -10881,7 +10803,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Each model must be equipped with 1 of the following:</p>",
+                "prose": "<p>Each model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:multilas#m-twin-linked",
@@ -10975,7 +10897,7 @@
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 50,
+                    "points": 40,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -11100,7 +11022,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 50,
+                    "points": 45,
                     "parts": [
                       {
                         "ref": "weapon:heavy-lascannon",
@@ -11158,7 +11080,7 @@
                   "max": 3
                 },
                 "id": "standardWargear-choose-2",
-                "prose": "<p>Each model must be equipped with 3 of the following:</p>",
+                "prose": "<p>Each model must be equipped with 3 of the following Crew Member Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:lasrifle",
@@ -11364,7 +11286,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon\">Oppressor Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vanquisher-cannon\">Vanquisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"earthshaker-cannon\">Earthshaker Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon#m-twin-linked\">Hydra Flak Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wyvern-quad-heavy-mortar\">Wyvern Quad Heavy Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"medusa-siege-mortar\">Medusa Siege Mortar</span></p>\n<p class=\"lb-opt\">4x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q4\">Storm Eagle Rocket</span></p>\n<p>This model must be equipped with 3 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lasrifle\">Lasrifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascarbine\">Lascarbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laspistol\">Laspistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon\">Oppressor Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vanquisher-cannon\">Vanquisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"earthshaker-cannon\">Earthshaker Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon#m-twin-linked\">Hydra Flak Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wyvern-quad-heavy-mortar\">Wyvern Quad Heavy Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"medusa-siege-mortar\">Medusa Siege Mortar</span></p>\n<p class=\"lb-opt\">4x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q4\">Storm Eagle Rocket</span></p>\n<p>Each model must be equipped with 3 of the following Crew Member Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lasrifle\">Lasrifle</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascarbine\">Lascarbine</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laspistol\">Laspistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -11377,7 +11299,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:oppressor-cannon",
@@ -11532,7 +11454,7 @@
                   "max": 3
                 },
                 "id": "standardWargear-choose-2",
-                "prose": "<p>This model must be equipped with 3 of the following:</p>",
+                "prose": "<p>Each model must be equipped with 3 of the following Crew Member Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:lasrifle",
@@ -11742,12 +11664,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-cannon\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Skirmisher Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -11756,99 +11676,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
-                  {
-                    "ref": "weapon:skirmisher-cannon",
-                    "name": "Skirmisher Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:skirmisher-cannon",
-                        "name": "Skirmisher Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Skirmisher Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-cannon\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>Any model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Skirmisher Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace its Skirmisher Cannon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:melta-cannon",
-                    "name": "Melta Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 45,
-                    "parts": [
-                      {
-                        "ref": "weapon:melta-cannon",
-                        "name": "Melta Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:lascannon",
-                    "name": "Lascannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:lascannon",
-                        "name": "Lascannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:onslaught-cannon",
-                    "name": "Onslaught Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:onslaught-cannon",
-                        "name": "Onslaught Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
                   {
                     "ref": "weapon:multilas",
                     "name": "Multilas",
@@ -11882,9 +11712,84 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:lascannon",
+                    "name": "Lascannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:skirmisher-cannon",
+                    "name": "Skirmisher Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:skirmisher-cannon",
+                        "name": "Skirmisher Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:melta-cannon",
+                    "name": "Melta Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 45,
+                    "parts": [
+                      {
+                        "ref": "weapon:melta-cannon",
+                        "name": "Melta Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:onslaught-cannon",
+                    "name": "Onslaught Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:onslaught-cannon",
+                        "name": "Onslaught Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any model can be equipped with 1 of the following Coaxial Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p>Any model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"auspex-scanner\">Auspex Scanner</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -11895,8 +11800,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any model can be equipped with 1 of the following Coaxial Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -11961,7 +11866,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>Any model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -12114,12 +12019,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"sunderer-cannon\">Sunderer Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulverizer-siege-cannon\">Pulverizer Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bombast-cannon\">Bombast Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"orthrus-quad-mortar\">Orthrus Quad Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"gryphon-heavy-mortar\">Gryphon Heavy Mortar</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Skirmisher Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -12128,6 +12031,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:skirmisher-cannon",
@@ -12145,31 +12050,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Skirmisher Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"sunderer-cannon\">Sunderer Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulverizer-siege-cannon\">Pulverizer Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bombast-cannon\">Bombast Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"orthrus-quad-mortar\">Orthrus Quad Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"gryphon-heavy-mortar\">Gryphon Heavy Mortar</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Skirmisher Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Skirmisher Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:sunderer-cannon",
                     "name": "Sunderer Cannon",
@@ -12261,7 +12142,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 50,
+                    "points": 45,
                     "parts": [
                       {
                         "ref": "weapon:heavy-lascannon",
@@ -12307,7 +12188,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -12318,7 +12206,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -12471,12 +12359,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"earthshaker-cannon\">Earthshaker Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"earthshaker-cannon\">Earthshaker Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon#m-twin-linked\">Hydra Flak Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wyvern-quad-heavy-mortar\">Wyvern Quad Heavy Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"medusa-siege-mortar\">Medusa Siege Mortar</span></p>\n<p class=\"lb-opt\">4x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q4\">Storm Eagle Rocket</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"deathstrike-missile\">Deathstrike Missile</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Earthshaker Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -12485,6 +12371,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:earthshaker-cannon",
@@ -12502,63 +12390,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 12,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Earthshaker Cannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon#m-twin-linked\">Hydra Flak Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wyvern-quad-heavy-mortar\">Wyvern Quad Heavy Mortar</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"medusa-siege-mortar\">Medusa Siege Mortar</span></p>\n<p class=\"lb-opt\">4x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q4\">Storm Eagle Rocket</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"deathstrike-missile\">Deathstrike Missile</span></p>\n<p>This model can replace its Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Earthshaker Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Earthshaker Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hydra-flak-autocannon#m-twin-linked",
                     "name": "Hydra Flak Autocannon",
@@ -12651,19 +12483,17 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Heavy Bolter with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -12698,9 +12528,33 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:heavy-bolter",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 12,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -12711,8 +12565,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -12760,9 +12614,26 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:hunter-killer-missile",
+                    "name": "Hunter-killer Missile",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:hunter-killer-missile",
+                        "name": "Hunter-killer Missile",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "wargear:dozer-blade-mount",
                     "name": "Dozer Blade Mount",
@@ -12913,12 +12784,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"inferno-cannon\">Inferno Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"inferno-cannon\">Inferno Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chem-cannon\">Chem Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-cannon\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Inferno Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -12927,6 +12796,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:inferno-cannon",
@@ -12944,63 +12815,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Heavy Flamer</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-flamer",
-                    "name": "Heavy Flamer",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-flamer",
-                        "name": "Heavy Flamer",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Inferno Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chem-cannon\">Chem Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-cannon\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon\">Skirmisher Cannon</span></p>\n<p>This model can replace its Heavy Flamer with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Inferno Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Inferno Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:chem-cannon",
                     "name": "Chem Cannon",
@@ -13055,19 +12870,17 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Heavy Flamer"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Heavy Flamer with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -13104,6 +12917,23 @@
                     ]
                   },
                   {
+                    "ref": "weapon:heavy-flamer",
+                    "name": "Heavy Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-flamer",
+                        "name": "Heavy Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
                     "ref": "weapon:multi-melta",
                     "name": "Multi-melta",
                     "kind": "weapon",
@@ -13121,7 +12951,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -13132,8 +12969,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -13181,9 +13018,26 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:hunter-killer-missile",
+                    "name": "Hunter-killer Missile",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:hunter-killer-missile",
+                        "name": "Hunter-killer Missile",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "wargear:dozer-blade-mount",
                     "name": "Dozer Blade Mount",
@@ -13334,12 +13188,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"battle-cannon\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"battle-cannon\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon#m-twin-linked\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vanquisher-cannon\">Vanquisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"eradicator-nova-cannon\">Eradicator Nova Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon\">Macro Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Battle Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -13348,6 +13200,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:battle-cannon",
@@ -13365,63 +13219,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 12,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Battle Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-lascannon\">Heavy Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon#m-twin-linked\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vanquisher-cannon\">Vanquisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"eradicator-nova-cannon\">Eradicator Nova Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon\">Macro Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p>This model can replace its Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multilas\">Multilas</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multilas#q2\">Multilas</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"autocannon#q2\">Autocannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"plasma-cannon#q2\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Battle Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Battle Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:exterminator-autocannon",
                     "name": "Exterminator Autocannon",
@@ -13445,7 +13243,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 50,
+                    "points": 45,
                     "parts": [
                       {
                         "ref": "weapon:heavy-lascannon",
@@ -13464,7 +13262,7 @@
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 50,
+                    "points": 40,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -13586,19 +13384,17 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Heavy Bolter with 1 of the following:</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun",
@@ -13618,16 +13414,16 @@
                     ]
                   },
                   {
-                    "ref": "weapon:multilas",
-                    "name": "Multilas",
+                    "ref": "weapon:heavy-bolter",
+                    "name": "Heavy Bolter",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 10,
+                    "points": 12,
                     "parts": [
                       {
-                        "ref": "weapon:multilas",
-                        "name": "Multilas",
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -13645,6 +13441,23 @@
                       {
                         "ref": "weapon:heavy-flamer",
                         "name": "Heavy Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multilas",
+                    "name": "Multilas",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:multilas",
+                        "name": "Multilas",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -13708,7 +13521,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 25,
+                    "points": 20,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -13720,7 +13533,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multilas#q2\">Multilas</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"autocannon#q2\">Autocannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"plasma-cannon#q2\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -13731,8 +13551,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#q2",
@@ -13859,7 +13679,7 @@
                     "kind": "weapon",
                     "qty": 2,
                     "modifiers": [],
-                    "points": 50,
+                    "points": 40,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -13882,8 +13702,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -13929,10 +13749,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
-                "id": "wargearOptions-add-5",
-                "prose": "<p>This model can be equipped with 1 Hunter-killer Missile.</p>",
+                "id": "wargearOptions-add-3",
+                "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:hunter-killer-missile",
@@ -13950,22 +13770,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": null
-                },
-                "id": "wargearOptions-add-6",
-                "prose": "<p>This model can be equipped with any of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:dozer-blade-mount",
                     "name": "Dozer Blade Mount",
@@ -14107,7 +13912,9 @@
           ],
           "prose": "1 Rogal Dorn Battle Tank"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -14116,12 +13923,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"battle-cannon#m-twin-linked\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"battle-cannon#m-twin-linked\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon#c-1x-oppressor-cannon-and-1x-autocannon\">1x Oppressor Cannon and 1x Autocannon</span> and <span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"onslaught-cannon\">Onslaught Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pulverizer-siege-cannon\">Pulverizer Siege Cannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Battle Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -14130,6 +13935,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:battle-cannon#m-twin-linked",
@@ -14151,63 +13958,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Onslaught Cannon</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:onslaught-cannon",
-                    "name": "Onslaught Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:onslaught-cannon",
-                        "name": "Onslaught Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Twin-linked Battle Cannon with 1x Oppressor Cannon and 1x Autocannon</p>\n<p>This model can replace its Onslaught Cannon with 1x Pulverizer Siege Cannon</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"meltagun#q2\">Meltagun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"flamer#q2\">Flamer</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multilas#q2\">Multilas</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"autocannon#q2\">Autocannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"plasma-cannon#q2\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Battle Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Twin-linked Battle Cannon with 1x Oppressor Cannon and 1x Autocannon</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:oppressor-cannon#c-1x-oppressor-cannon-and-1x-autocannon",
                     "name": "1x Oppressor Cannon and 1x Autocannon",
@@ -14246,20 +13997,35 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Onslaught Cannon"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Onslaught Cannon with 1x Pulverizer Siege Cannon</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:onslaught-cannon",
+                    "name": "Onslaught Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:onslaught-cannon",
+                        "name": "Onslaught Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:pulverizer-siege-cannon",
                     "name": "Pulverizer Siege Cannon",
@@ -14278,7 +14044,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"meltagun#q2\">Meltagun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"flamer#q2\">Flamer</span></p>\n<p>This model can be equipped with 1 of the following Sponson Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multilas#q2\">Multilas</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"autocannon#q2\">Autocannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"plasma-cannon#q2\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -14289,8 +14062,9 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "slot": "secondary",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#q2",
@@ -14355,8 +14129,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#q2",
@@ -14483,7 +14257,7 @@
                     "kind": "weapon",
                     "qty": 2,
                     "modifiers": [],
-                    "points": 50,
+                    "points": 40,
                     "parts": [
                       {
                         "ref": "weapon:lascannon",
@@ -14506,8 +14280,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-3",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -14555,7 +14329,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-6",
+                "id": "wargearOptions-add-4",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -14701,7 +14475,9 @@
           ],
           "prose": "1 Baneblade Super-heavy Battle Tank"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -14710,12 +14486,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon\">Oppressor Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon\">Demolisher Siege Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon#c-1x-oppressor-cannon-and-1x-autocannon\">1x Oppressor Cannon and 1x Autocannon</span> and <span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vanquisher-cannon#c-1x-vanquisher-cannon-and-1x-autocannon\">1x Vanquisher Cannon and 1x Autocannon</span> and <span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hellhammer-nova-cannon#c-1x-hellhammer-nova-cannon-and-1x-autocannon\">1x Hellhammer Nova Cannon and 1x Autocannon</span> and <span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p>This model is equipped with 1x Demolisher Siege Cannon</p>\n<p>This model must be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Oppressor Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -14724,14 +14498,16 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
-                    "ref": "weapon:oppressor-cannon",
-                    "name": "Oppressor Cannon",
+                    "ref": "weapon:oppressor-cannon#c-1x-oppressor-cannon-and-1x-autocannon",
+                    "name": "1x Oppressor Cannon and 1x Autocannon",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 80,
+                    "points": 92,
                     "parts": [
                       {
                         "ref": "weapon:oppressor-cannon",
@@ -14739,6 +14515,94 @@
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "points": 12
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:vanquisher-cannon#c-1x-vanquisher-cannon-and-1x-autocannon",
+                    "name": "1x Vanquisher Cannon and 1x Autocannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 87,
+                    "parts": [
+                      {
+                        "ref": "weapon:vanquisher-cannon",
+                        "name": "Vanquisher Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "points": 12
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:hellhammer-nova-cannon#c-1x-hellhammer-nova-cannon-and-1x-autocannon",
+                    "name": "1x Hellhammer Nova Cannon and 1x Autocannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 132,
+                    "parts": [
+                      {
+                        "ref": "weapon:hellhammer-nova-cannon",
+                        "name": "Hellhammer Nova Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
+                        "kind": "weapon",
+                        "points": 12
                       }
                     ]
                   }
@@ -14747,39 +14611,7 @@
               {
                 "id": "standardWargear-fixed-2",
                 "op": "fixed",
-                "prose": "<p>1x Autocannon</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:autocannon",
-                    "name": "Autocannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 12,
-                    "parts": [
-                      {
-                        "ref": "weapon:autocannon",
-                        "name": "Autocannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-3",
-                "op": "fixed",
-                "prose": "<p>1x Demolisher Siege Cannon</p>",
+                "prose": "",
                 "scope": {
                   "who": "each"
                 },
@@ -14809,9 +14641,7 @@
                 ]
               },
               {
-                "id": "standardWargear-fixed-4",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolter</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -14820,102 +14650,9 @@
                   "min": 1,
                   "max": 1
                 },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter#m-twin-linked",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 24,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Oppressor Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vanquisher-cannon\">Vanquisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hellhammer-nova-cannon\">Hellhammer Nova Cannon</span></p>\n<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p>This model can be equipped with Super-heavy Sponsons.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Oppressor Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Oppressor Cannon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:vanquisher-cannon",
-                    "name": "Vanquisher Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 75,
-                    "parts": [
-                      {
-                        "ref": "weapon:vanquisher-cannon",
-                        "name": "Vanquisher Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:hellhammer-nova-cannon",
-                    "name": "Hellhammer Nova Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 120,
-                    "parts": [
-                      {
-                        "ref": "weapon:hellhammer-nova-cannon",
-                        "name": "Hellhammer Nova Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolter"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>",
+                "slot": "secondary",
+                "id": "standardWargear-choose-3",
+                "prose": "<p>This model must be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#m-twin-linked",
@@ -14951,6 +14688,27 @@
                       {
                         "ref": "weapon:multilas",
                         "name": "Multilas",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-bolter#m-twin-linked",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 24,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": [
@@ -15023,7 +14781,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with Super-heavy Sponsons.</p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -15034,7 +14799,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with Super-heavy Sponsons.</p>",
                 "options": [
                   {
@@ -15066,8 +14831,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -15115,7 +14880,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -15246,7 +15011,9 @@
           ],
           "prose": "1 Stormlord Super-heavy Assault Transport"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -15255,12 +15022,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"vulcan-mega-bolter#m-twin-linked\">Vulcan Mega Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"vulcan-mega-bolter#m-twin-linked\">Vulcan Mega Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"magma-cannon\">Magma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"tremor-cannon\">Tremor Cannon</span></p>\n<p>This model must be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Vulcan Mega Bolter</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -15269,6 +15034,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:vulcan-mega-bolter#m-twin-linked",
@@ -15290,67 +15057,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter#m-twin-linked",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 24,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Twin-linked Vulcan Mega Bolter with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"magma-cannon\">Magma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"tremor-cannon\">Tremor Cannon</span></p>\n<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p>This model can be equipped with Super-heavy Sponsons.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Vulcan Mega Bolter"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Twin-linked Vulcan Mega Bolter with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:magma-cannon",
                     "name": "Magma Cannon",
@@ -15388,19 +15095,18 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>",
+                "slot": "secondary",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-autogun#m-twin-linked",
@@ -15436,6 +15142,27 @@
                       {
                         "ref": "weapon:multilas",
                         "name": "Multilas",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-bolter#m-twin-linked",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 24,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": [
@@ -15508,7 +15235,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with Super-heavy Sponsons.</p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -15519,7 +15253,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with Super-heavy Sponsons.</p>",
                 "options": [
                   {
@@ -15551,8 +15285,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -15600,7 +15334,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -15727,7 +15461,9 @@
           ],
           "prose": "1 Shadowsword Super-heavy Destroyer"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -15736,12 +15472,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"volcano-cannon\">Volcano Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"volcano-cannon\">Volcano Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"quake-cannon\">Quake Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stormsword-siege-cannon\">Stormsword Siege Cannon</span></p>\n<p>This model must be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Volcano Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -15750,6 +15484,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:volcano-cannon",
@@ -15767,67 +15503,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter#m-twin-linked",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 24,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Volcano Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"quake-cannon\">Quake Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stormsword-siege-cannon\">Stormsword Siege Cannon</span></p>\n<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multilas#m-twin-linked\">Multilas</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p>This model can be equipped with Super-heavy Sponsons.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Volcano Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Volcano Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:quake-cannon",
                     "name": "Quake Cannon",
@@ -15865,20 +15541,40 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>",
+                "slot": "secondary",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:heavy-autogun#m-twin-linked",
+                    "name": "Heavy Autogun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-autogun",
+                        "name": "Heavy Autogun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:multilas#m-twin-linked",
                     "name": "Multilas",
@@ -15892,6 +15588,27 @@
                       {
                         "ref": "weapon:multilas",
                         "name": "Multilas",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-bolter#m-twin-linked",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 24,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": [
@@ -15922,18 +15639,18 @@
                     ]
                   },
                   {
-                    "ref": "weapon:assault-cannon#m-twin-linked",
-                    "name": "Assault Cannon",
+                    "ref": "weapon:autocannon#m-twin-linked",
+                    "name": "Autocannon",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 30,
+                    "points": 24,
                     "parts": [
                       {
-                        "ref": "weapon:assault-cannon",
-                        "name": "Assault Cannon",
+                        "ref": "weapon:autocannon",
+                        "name": "Autocannon",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": [
@@ -15964,7 +15681,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with Super-heavy Sponsons.</p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"searchlight\">Searchlight</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"vox-caster\">Vox Caster</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -15975,7 +15699,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with Super-heavy Sponsons.</p>",
                 "options": [
                   {
@@ -16007,8 +15731,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -16056,7 +15780,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -16185,7 +15909,7 @@
     {
       "name": "Lascannon",
       "section": "Ranged Weapons",
-      "points": 25,
+      "points": 20,
       "profiles": null,
       "range": "36\"",
       "attacks": "1",
@@ -16200,7 +15924,7 @@
     {
       "name": "Heavy Lascannon",
       "section": "Ranged Weapons",
-      "points": 50,
+      "points": 45,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",

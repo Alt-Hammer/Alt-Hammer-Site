@@ -1,7 +1,7 @@
 """
 convert_rules.py
 ────────────────
-Converts the Alt-Hammer Core Rules Word document (.docx) into
+Converts the Countermarch Core Rules Word document (.docx) into
 Markdown (.mdx) files for the website.
 
 WHAT IT DOES
@@ -42,7 +42,7 @@ on the homepage (index.astro) above the feature-card grid.
 
 HOW TO RUN
 ──────────
-From the alt-hammer-site project folder, in your terminal:
+From the countermarch-site project folder, in your terminal:
   python scripts/convert_rules.py
 
 Or use run_all.py to convert everything at once.
@@ -57,11 +57,12 @@ import os
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-# Absolute path to your Core Rules Word document
-CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Core Rules.docx"
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import CORE_RULES_DOCX
 
 # Output directory — relative to where you run the script from
-# Run this script from inside the alt-hammer-site folder
+# Run this script from inside the countermarch-site folder
 OUTPUT_DIR = "src/content/rules"
 
 # Sections whose MDX files are maintained manually and must NOT be overwritten
@@ -99,7 +100,7 @@ def convert_rules(docx_path: str, output_dir: str):
     Reads the Core Rules docx and writes one .mdx file per Heading 1 section.
     """
     print(f"\n{'='*60}")
-    print(f"  Alt-Hammer — Converting Core Rules")
+    print(f"  Countermarch — Converting Core Rules")
     print(f"{'='*60}")
     print(f"  Source:  {docx_path}")
     print(f"  Output:  {output_dir}")
@@ -153,7 +154,7 @@ def convert_rules(docx_path: str, output_dir: str):
         frontmatter = {
             'title':       title,
             'slug':        slug,
-            'description': f"Alt-Hammer 40,000 Core Rules — {title}",
+            'description': f"Countermarch 40,000 Core Rules — {title}",
             'section':     slug,
             'subsections': section['subsections'],
         }

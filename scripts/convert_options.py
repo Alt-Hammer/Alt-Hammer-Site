@@ -42,9 +42,9 @@ from ah_converter_utils import (get_heading_level, runs_to_markdown, slugify, en
                                 md_inline, render_prose_html)
 
 # ── Path configuration (source files now live one level above the repo) ────────
-_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FACTION_INDEX_DOCX = os.path.normpath(os.path.join(
-    _REPO, "..", "..", "Alt-Hammer 40,000 1st Edition - Faction Rules Index.docx"))
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import FACTION_INDEX_DOCX
 UNITS_DIR = os.path.join("src", "data", "units")
 FW_DIR    = os.path.join("src", "data", "faction-wargear")
 CATALOG_DIR = os.path.join("src", "data", "upgrade-catalogs")
@@ -1705,7 +1705,7 @@ def main():
     args = ap.parse_args()
 
     print("=" * 64)
-    print("  Alt-Hammer -- convert_options (grammar parser)")
+    print("  Countermarch -- convert_options (grammar parser)")
     print(f"  Source: {args.docx}")
     print("=" * 64)
     if not os.path.exists(args.docx):

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Alt-Hammer 40,000 — Army List Export
+   Countermarch 40,000 — Army List Export
    Read-only roster sheet rendered from a share link (/list-export#d=…).
    Extends global.css design tokens; introduces no new colour variables.
    ========================================================================== */
@@ -285,6 +285,26 @@
 .lx-partial-notes li::before { content: "\2192"; position: absolute; left: 0; color: var(--color-gold-dim); }
 .lx-partial-src { color: var(--color-text-muted); }
 
+/* Duplicate melee weapons (R6) — which models carry the merged weapon whose statline the
+   appendix prints. Same footnote grammar as the partial-cover notes above. */
+.lx-dup-notes {
+  list-style: none;
+  margin: calc(var(--sp-1) * -1) 0 var(--sp-2);
+  padding: 0 0 0 var(--sp-3);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.lx-dup-notes li { position: relative; padding-left: var(--sp-4); }
+.lx-dup-notes li::before { content: "\29C9"; position: absolute; left: 0; color: var(--color-gold-dim); }
+.lx-dup-delta { font-family: var(--font-mono); color: var(--color-gold); }
+.lx-weapon-dup {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--color-gold);
+}
+
 .lx-keywords {
   display: flex;
   flex-wrap: wrap;
@@ -531,6 +551,10 @@
   .lx-partial-notes { color: #333 !important; break-before: avoid; break-inside: avoid; }
   .lx-partial-notes li::before { color: #666 !important; }
   .lx-partial-src { color: #666 !important; }
+
+  .lx-dup-notes { color: #333 !important; break-before: avoid; break-inside: avoid; }
+  .lx-dup-notes li::before { color: #666 !important; }
+  .lx-dup-delta, .lx-weapon-dup { color: #000 !important; }
 
   /* The appendix is a reference table — start it on a fresh page rather than
      splitting the roster awkwardly, and keep its rows together. */

@@ -24,3 +24,7 @@ pnpm-debug.log*
 node_modules
 # Local Netlify folder
 .netlify
+
+# Python bytecode
+__pycache__/
+*.pyc

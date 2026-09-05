@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Alt-Hammer 40,000 — Global Stylesheet
+   Countermarch 40,000 — Global Stylesheet
    Aesthetic: Grimdark tactical ops. Desaturated military with gold-amber
    accents. Heavily textured. Industrial type. No rounded corners.
    ========================================================================== */
@@ -50,10 +50,14 @@
   --font-mono:     'Share Tech Mono', monospace;     /* stats, tables, values */
 
   /* Sizing */
-  --sidebar-width:     280px;
+  /* Widths are the pre-rebrand values scaled by 1.5 — the sidebar/content
+     proportion is unchanged, the whole content area is simply wider. The
+     narrower originals are restored below 1400px (see Responsive). */
+  --sidebar-width:     420px;
   --header-height:     64px;
-  --content-max-width: 860px;
-  --layout-max-width:  1220px; /* sidebar(280) + content(860) + padding(80) */
+  --content-max-width: 1290px;
+  --layout-max-width:  1790px; /* sidebar(420) + content(1290) + padding(80) */
+  --logo-header-height: 54px;  /* header wordmark; keep under --header-height */
   --radius:            0px;   /* ZERO radius — hard industrial corners */
 
   /* Spacing scale */
@@ -394,6 +398,16 @@ code, kbd {
   display: flex;
   align-items: center;
   gap: var(--sp-3);
+  min-width: 0;
+}
+
+/* Brand wordmark. Sized by height so it always clears the fixed header;
+   the intrinsic width/height attributes on the <img> reserve the box. */
+.header-logo-img {
+  display: block;
+  height: var(--logo-header-height);
+  width: auto;
+  flex-shrink: 0;
 }
 
 .header-logo .logo-edition {
@@ -428,15 +442,6 @@ code, kbd {
   color: var(--color-gold);
   border-color: var(--color-gold-dim);
   background: rgba(201, 168, 76, 0.06);
-}
-
-.header-status {
-  margin-left: auto;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--color-text-muted);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 /* Main layout wrapper */
@@ -577,7 +582,7 @@ code, kbd {
 
 .rules-content p {
   color: var(--color-text-secondary);
-  max-width: 72ch;
+  max-width: 90ch;
 }
 
 .rules-content ul,
@@ -1185,6 +1190,16 @@ code, kbd {
   color: var(--color-text-primary);
 }
 
+/* Hero wordmark replaces the old .title-main text. Width-driven so it scales
+   with the hero column; the logo already carries the "40,000", so .title-sub
+   below it now reads "1st Edition" only. */
+.hero-title .hero-logo {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  margin: 0 auto var(--sp-3);
+}
+
 .hero-title .title-sub {
   display: block;
   color: var(--color-gold);
@@ -1493,9 +1508,24 @@ code, kbd {
   color: var(--color-gold-dim);
 }
 
+.site-footer .footer-links {
+  margin-top: var(--sp-2);
+}
+
 /* --------------------------------------------------------------------------
    Responsive — Tablet / Mobile
    -------------------------------------------------------------------------- */
+
+/* The 1.5x-wide sidebar only earns its keep on a genuinely wide screen. Below
+   this, fall back to the original 280px so the reading column keeps its room. */
+@media (max-width: 1400px) {
+  :root {
+    --sidebar-width:     280px;
+    --content-max-width: 860px;
+    --layout-max-width:  1220px;
+  }
+}
+
 @media (max-width: 960px) {
   .sidebar {
     display: none;
@@ -1511,6 +1541,36 @@ code, kbd {
   .card-grid { grid-template-columns: 1fr; }
   .faction-grid { grid-template-columns: 1fr; }
   .stat-row { grid-template-columns: repeat(6, 1fr); }
+
+  /* The footer was ~162px tall on a phone, eating the viewport the List Builder
+     needs. Dropping the uppercase + wide mono tracking does most of the work
+     (the disclaimer reflows from 4 lines to 2); the fine print then shrinks
+     further than the links, because with .header-nav hidden at this width the
+     footer links are the only navigation left on the page. */
+  .site-footer {
+    padding: 5px var(--sp-2);
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  /* The global `p` rule sets its own line-height and a 10px bottom margin;
+     both have to be overridden here or they alone cost ~15px of footer. */
+  .site-footer p {
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .site-footer .footer-legal {
+    font-size: 0.55rem;
+    opacity: 0.85;
+  }
+
+  .site-footer .footer-links {
+    margin-top: 3px;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2220,7 +2280,9 @@ code, kbd {
 /* ── Reference tooltip shared structure ──────────────────────────────────── */
 
 .ah-ref-tooltip {
-  max-width: 380px;
+  /* 380px -> 570px: long keyword/wargear prose was running off the page.
+     Clamped to the viewport so the wider box still fits a phone screen. */
+  max-width: min(570px, calc(100vw - 24px));
   min-width: 220px;
   background: var(--color-surface-2);
   border: 1px solid var(--color-border-mid);

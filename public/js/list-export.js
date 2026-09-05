@@ -107,6 +107,24 @@
     }).join('') + '</div>';
   }
 
+  // Duplicate melee weapons (R6). The merged statline itself is printed in the weapon
+  // appendix; this footnote says how many models are holding it, which the appendix — one
+  // deduplicated table for the whole army — cannot. On paper this is the only record that
+  // e.g. three of six Warriors swing their Talons at A+4.
+  function duplicateNotesHtml(l) {
+    if (!l.duplicates || !l.duplicates.length) return '';
+    return '<ul class="lx-dup-notes">' + l.duplicates.map(function (g) {
+      var who = g.of > 1 ? (g.models + ' of ' + g.of + ' models') : '1 model';
+      var sh = esc(g.sustainedText).replace(/Sustained Hits ([^,\s]+)/g, function (m, v) {
+        return '<span class="keyword" data-term="sustained-hits-' + esc(slugOf(v)) +
+               '" data-type="keyword">' + m + '</span>';
+      });
+      return '<li>' + esc(who) + ': ' + g.copies + '&times; ' + esc(g.name) +
+             ' merged &mdash; <span class="lx-dup-delta">' + esc(g.attacksText) + ', ' + sh +
+             '</span></li>';
+    }).join('') + '</ul>';
+  }
+
   // A catalog item's rules arrive as an array of lines where a short line ending in a
   // colon ("Abilities:", "Leader:") is a heading for the lines beneath it.
   function effectsHtml(effects) {
@@ -183,6 +201,7 @@
     h += '</div>';
 
     h += statTableHtml(l);
+    h += duplicateNotesHtml(l);
     h += keywordsHtml(l.keywords);
 
     l.characteristics.forEach(function (c) {
@@ -210,7 +229,8 @@
             '<th>Weapon</th><th>Range</th><th>A</th><th>S</th><th>AP</th><th>D</th><th>Keywords</th>' +
             '</tr></thead><tbody>';
     weapons.forEach(function (w) {
-      var label = esc(w.name) + (w.mods.length ? ' <span class="lx-item-mod">(' + esc(w.mods.join(', ')) + ')</span>' : '');
+      var label = esc(w.name) + (w.mods.length ? ' <span class="lx-item-mod">(' + esc(w.mods.join(', ')) + ')</span>' : '') +
+        (w.duplicate ? ' <span class="lx-weapon-dup">&times;' + w.duplicate + ' merged</span>' : '');
       w.profiles.forEach(function (p, idx) {
         h += '<tr>';
         h += '<td class="lx-weapon-name">' + (idx === 0 ? label : '') +
@@ -402,7 +422,7 @@
         } else {
           statusEl.hidden = true;
         }
-        document.title = (LB.state.listName || 'Army List') + ' — Alt-Hammer';
+        document.title = (LB.state.listName || 'Army List') + ' — Countermarch';
       })
       .catch(function (err) {
         if (err && err.message === 'no list') {

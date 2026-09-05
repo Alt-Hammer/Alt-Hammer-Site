@@ -1,7 +1,7 @@
 """
 extract_objectives.py
 ─────────────────────
-Reads Secondary Mission Objectives from the Alt-Hammer Core Rules Word document
+Reads Secondary Mission Objectives from the Countermarch Core Rules Word document
 and writes them as a structured TypeScript file consumed by ObjectiveGrid.astro.
 
 WHAT IT DOES
@@ -38,7 +38,7 @@ File structure:
 
 HOW TO RUN
 ──────────
-From the alt-hammer-site project folder:
+From the countermarch-site project folder:
   python scripts/extract_objectives.py
 
 Or use run_all.py to run it as part of the full pipeline.
@@ -55,8 +55,9 @@ import html
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-# Absolute path to your Core Rules Word document
-CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Core Rules.docx"
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import CORE_RULES_DOCX
 
 # Output path
 OUTPUT_PATH = os.path.join("src", "data", "objectives.ts")

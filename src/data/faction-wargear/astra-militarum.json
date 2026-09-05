@@ -1325,7 +1325,7 @@
               "kind": "weapon",
               "qty": 1,
               "modifiers": [],
-              "points": 25,
+              "points": 20,
               "parts": [
                 {
                   "ref": "weapon:lascannon",

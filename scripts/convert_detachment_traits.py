@@ -35,10 +35,9 @@ from ah_converter_utils import get_heading_level, slugify, ensure_dir, render_pr
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-FACTION_INDEX_DOCX = (
-    r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone"
-    r"\Alt-Hammer 40,000 1st Edition - Faction Rules Index.docx"
-)
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import FACTION_INDEX_DOCX
 OUTPUT_DIR = "src/data/detachment-traits"
 
 # ── Heading classification sets ───────────────────────────────────────────────
@@ -93,7 +92,7 @@ def convert_detachment_traits(
 ):
     print("")
     print("=" * 60)
-    print("  Alt-Hammer -- Converting Detachment Traits")
+    print("  Countermarch -- Converting Detachment Traits")
     print("=" * 60)
     print(f"  Source:  {docx_path}")
     print(f"  Output:  {output_dir}")

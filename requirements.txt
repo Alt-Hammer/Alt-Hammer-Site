@@ -1,0 +1,16 @@
+# Python dependencies for the content pipeline (scripts/run_all.py).
+#
+# Setup from the repo root:
+#   py -m venv .venv
+#   .venv/Scripts/pip install -r requirements.txt
+#
+# Note: the virtualenv records the absolute path it was created at, so if this
+# folder is ever renamed or moved, delete .venv and recreate it rather than
+# trying to repair it.
+
+python-docx==1.2.0      # reads the Core Rules / Faction Rules .docx sources
+openpyxl==3.1.5         # reads the unit, weapon, upgrade and roll-table .xlsx sources
+
+# Transitive, pinned for reproducibility:
+lxml==6.1.1             # required by python-docx
+et-xmlfile==2.0.0       # required by openpyxl

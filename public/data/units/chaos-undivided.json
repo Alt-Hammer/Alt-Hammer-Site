@@ -930,7 +930,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -1731,7 +1731,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -2447,7 +2447,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -3187,7 +3187,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -4835,12 +4835,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every Cultist is equipped with:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol\">Autopistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon\">Improvised Melee Weapon</span></p>\n<p>Every Torment is equipped with:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon#m-twin-linked+accursed\">Improvised Melee Weapon</span></p>",
+            "prose": "<p>Every Cultist must be equipped with 1 of the following Weapon Sets:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol#c-1x-autopistol-and-1x-improvised-melee-weapon\">1x Autopistol and 1x Improvised Melee Weapon</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon\">Improvised Melee Weapon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol#c-1x-bolt-pistol-and-1x-improvised-melee-weapon\">1x Bolt Pistol and 1x Improvised Melee Weapon</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon\">Improvised Melee Weapon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer#c-1x-hand-flamer-and-1x-improvised-melee-weapon\">1x Hand Flamer and 1x Improvised Melee Weapon</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon\">Improvised Melee Weapon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"chainblade#m-twin-linked\">Chainblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon#m-twin-linked+accursed\">Improvised Melee Weapon</span></p>\n<p>Every Torment must be equipped with 1 of the following Torment Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon#m-twin-linked+accursed\">Improvised Melee Weapon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Every Cultist is equipped with:</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each",
                   "modelType": "Cultist"
@@ -4850,18 +4848,20 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every Cultist must be equipped with 1 of the following Weapon Sets:</p>",
                 "options": [
                   {
-                    "ref": "weapon:autopistol",
-                    "name": "Autopistol",
+                    "ref": "weapon:autogun",
+                    "name": "Autogun",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 1,
+                    "points": 2,
                     "parts": [
                       {
-                        "ref": "weapon:autopistol",
-                        "name": "Autopistol",
+                        "ref": "weapon:autogun",
+                        "name": "Autogun",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -4869,13 +4869,23 @@
                     ]
                   },
                   {
-                    "ref": "weapon:improvised-melee-weapon",
-                    "name": "Improvised Melee Weapon",
+                    "ref": "weapon:autopistol#c-1x-autopistol-and-1x-improvised-melee-weapon",
+                    "name": "1x Autopistol and 1x Improvised Melee Weapon",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 1,
+                    "points": 2,
                     "parts": [
+                      {
+                        "ref": "weapon:autopistol",
+                        "name": "Autopistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
                       {
                         "ref": "weapon:improvised-melee-weapon",
                         "name": "Improvised Melee Weapon",
@@ -4883,14 +4893,151 @@
                         "qty": 1,
                         "modifiers": []
                       }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:improvised-melee-weapon",
+                        "name": "Improvised Melee Weapon",
+                        "kind": "weapon",
+                        "points": 1
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:bolt-pistol#c-1x-bolt-pistol-and-1x-improvised-melee-weapon",
+                    "name": "1x Bolt Pistol and 1x Improvised Melee Weapon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 3,
+                    "parts": [
+                      {
+                        "ref": "weapon:bolt-pistol",
+                        "name": "Bolt Pistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:improvised-melee-weapon",
+                        "name": "Improvised Melee Weapon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:improvised-melee-weapon",
+                        "name": "Improvised Melee Weapon",
+                        "kind": "weapon",
+                        "points": 1
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:hand-flamer#c-1x-hand-flamer-and-1x-improvised-melee-weapon",
+                    "name": "1x Hand Flamer and 1x Improvised Melee Weapon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:hand-flamer",
+                        "name": "Hand Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:improvised-melee-weapon",
+                        "name": "Improvised Melee Weapon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:improvised-melee-weapon",
+                        "name": "Improvised Melee Weapon",
+                        "kind": "weapon",
+                        "points": 1
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:chainblade#m-twin-linked",
+                    "name": "Chainblade",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:chainblade",
+                        "name": "Chainblade",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:rending-claws",
+                    "name": "Rending Claws",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:rending-claws",
+                        "name": "Rending Claws",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:improvised-melee-weapon#m-twin-linked+accursed",
+                    "name": "Improvised Melee Weapon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked",
+                      "accursed"
+                    ],
+                    "points": 22,
+                    "parts": [
+                      {
+                        "ref": "weapon:improvised-melee-weapon",
+                        "name": "Improvised Melee Weapon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked",
+                          "accursed"
+                        ]
+                      }
                     ]
                   }
                 ]
               },
               {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Every Torment is equipped with:</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each",
                   "modelType": "Torment"
@@ -4900,7 +5047,26 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every Torment must be equipped with 1 of the following Torment Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:rending-claws",
+                    "name": "Rending Claws",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:rending-claws",
+                        "name": "Rending Claws",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:improvised-melee-weapon#m-twin-linked+accursed",
                     "name": "Improvised Melee Weapon",
@@ -4931,121 +5097,8 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any Cultist can replace its Autopistol with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p>Any Cultist can replace its Autopistol and Improvised Melee Weapon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"improvised-melee-weapon#m-twin-linked+accursed\">Improvised Melee Weapon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p>For every 5 models, 1 Cultist can replace its Autopistol and Improvised Melee Weapon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>1 Cultist in the unit can replace its Improvised Melee Weapon or Autopistol with a Chaos Icon.</p>",
+            "prose": "<p>For every 5 models, 1 Cultist can replace its Weapon Set with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p>1 Cultist in the unit equipped with Standard Wargear can be equipped with a Chaos Icon.</p>",
             "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Cultist"
-                },
-                "replaces": {
-                  "weapon": "Autopistol"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any Cultist can replace its Autopistol with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:bolt-pistol",
-                    "name": "Bolt Pistol",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 2,
-                    "parts": [
-                      {
-                        "ref": "weapon:bolt-pistol",
-                        "name": "Bolt Pistol",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:hand-flamer",
-                    "name": "Hand Flamer",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
-                    "parts": [
-                      {
-                        "ref": "weapon:hand-flamer",
-                        "name": "Hand Flamer",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Cultist"
-                },
-                "replaces": {
-                  "weapons": [
-                    "Autopistol",
-                    "Improvised Melee Weapon"
-                  ]
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>Any Cultist can replace its Autopistol and Improvised Melee Weapon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:improvised-melee-weapon#m-twin-linked+accursed",
-                    "name": "Improvised Melee Weapon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked",
-                      "accursed"
-                    ],
-                    "points": 22,
-                    "parts": [
-                      {
-                        "ref": "weapon:improvised-melee-weapon",
-                        "name": "Improvised Melee Weapon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked",
-                          "accursed"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:autogun",
-                    "name": "Autogun",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 2,
-                    "parts": [
-                      {
-                        "ref": "weapon:autogun",
-                        "name": "Autogun",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
               {
                 "op": "replace",
                 "scope": {
@@ -5057,17 +5110,14 @@
                   }
                 },
                 "replaces": {
-                  "weapons": [
-                    "Autopistol",
-                    "Improvised Melee Weapon"
-                  ]
+                  "weapon": "Weapon Set"
                 },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-3",
-                "prose": "<p>For every 5 models, 1 Cultist can replace its Autopistol and Improvised Melee Weapon with 1 of the following:</p>",
+                "id": "wargearOptions-replace-1",
+                "prose": "<p>For every 5 models, 1 Cultist can replace its Weapon Set with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -5106,21 +5156,19 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "add",
                 "scope": {
                   "who": "count",
                   "count": 1,
-                  "modelType": "Cultist"
+                  "modelType": "Cultist in the unit equipped with Standard Wargear"
                 },
-                "replaces": {
-                  "weapon": "Improvised Melee Weapon or Autopistol"
-                },
+                "replaces": null,
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-4",
-                "prose": "<p>1 Cultist in the unit can replace its Improvised Melee Weapon or Autopistol with a Chaos Icon.</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>1 Cultist in the unit equipped with Standard Wargear can be equipped with a Chaos Icon.</p>",
                 "options": [
                   {
                     "ref": "wargear:chaos-icon",
@@ -6015,7 +6063,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -6129,8 +6177,7 @@
         "slots": [
           "armour",
           "primary-melee",
-          "primary-ranged",
-          "secondary"
+          "primary-ranged"
         ],
         "sections": [
           {
@@ -6140,7 +6187,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model must select 1 of the following Primary Ranged weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p>Every model is equipped with Tacticus Armour.</p>",
+            "prose": "<p>Every model must select 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-gauntlet\">Grenade Gauntlet</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"boltgun#m-twin-linked\">Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p>Every model is equipped with Tacticus Armour.</p>",
             "clauses": [
               {
                 "op": "choose",
@@ -6154,7 +6201,7 @@
                 },
                 "slot": "primary-ranged",
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Every model must select 1 of the following Primary Ranged weapons:</p>",
+                "prose": "<p>Every model must select 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:bolt-pistol",
@@ -6174,6 +6221,74 @@
                     ]
                   },
                   {
+                    "ref": "weapon:hand-flamer",
+                    "name": "Hand Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:hand-flamer",
+                        "name": "Hand Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:plasma-pistol",
+                    "name": "Plasma Pistol",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:plasma-pistol",
+                        "name": "Plasma Pistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:melta-pistol",
+                    "name": "Melta Pistol",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:melta-pistol",
+                        "name": "Melta Pistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:grenade-gauntlet",
+                    "name": "Grenade Gauntlet",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:grenade-gauntlet",
+                        "name": "Grenade Gauntlet",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
                     "ref": "weapon:boltgun",
                     "name": "Boltgun",
                     "kind": "weapon",
@@ -6185,6 +6300,44 @@
                         "ref": "weapon:boltgun",
                         "name": "Boltgun",
                         "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:boltgun#m-twin-linked",
+                    "name": "Boltgun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 10,
+                    "parts": [
+                      {
+                        "ref": "weapon:boltgun",
+                        "name": "Boltgun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "wargear:combi-bolter",
+                    "name": "Combi-Bolter",
+                    "kind": "wargear",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": null,
+                    "parts": [
+                      {
+                        "ref": "wargear:combi-bolter",
+                        "name": "Combi-Bolter",
+                        "kind": "wargear",
                         "qty": 1,
                         "modifiers": []
                       }
@@ -6305,114 +6458,8 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Primary Ranged Weapon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-gauntlet\">Grenade Gauntlet</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"boltgun#m-twin-linked\">Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p>Any model can be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainblade\">Chainblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainglaive\">Chainglaive</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-maul\">Power Maul</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-fist\">Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lightning-claw\">Lightning Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"daemonhammer\">Daemonhammer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ruinblade\">Ruinblade</span></p>\n<p>Up to 2 models can replace their Primary Ranged Weapon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-gun\">Plasma Gun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>Instead of selecting a Primary Ranged Weapon and a Primary Melee Weapon, any model can instead be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"chainblade#m-twin-linked\">Chainblade</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"chainglaive#m-twin-linked\">Chainglaive</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lightning-claw#m-twin-linked\">Lightning Claw</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"bolt-pistol#m-twin-linked\">Bolt Pistol</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"plasma-pistol#m-twin-linked\">Plasma Pistol</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-pistol#m-twin-linked\">Melta Pistol</span></p>\n<p>1 Chosen in the unit can be equipped with a Chaos Icon.</p>\n<p>Every model in the unit can be equipped with any of the following Secondary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"combat-knife\">Combat Knife</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-bombs\">Melta Bombs</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"carrion-bombs\">Carrion Bombs</span></p>\n<p>Every model in the unit can be equipped with a Bike.</p>",
+            "prose": "<p>Any model can be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainblade\">Chainblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainglaive\">Chainglaive</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-maul\">Power Maul</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-fist\">Power Fist</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lightning-claw\">Lightning Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"daemonhammer\">Daemonhammer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"ruinblade\">Ruinblade</span></p>\n<p>Up to 2 models can replace their Primary Ranged Weapon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-gun\">Plasma Gun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"assault-cannon\">Assault Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autocannon\">Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon\">Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"lascannon\">Lascannon</span></p>\n<p>Any model can replace their Primary Ranged Weapon and Primary Melee Weapon with 1x Twin-linked Lightning Claw.</p>\n<p>1 Chosen in the unit can be equipped with a Chaos Icon.</p>\n<p>Every model in the unit can be equipped with 1 of the following Sidearms:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p>Every model in the unit can be equipped with any of the following Grenades:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"combat-knife\">Combat Knife</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-bombs\">Melta Bombs</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"carrion-bombs\">Carrion Bombs</span></p>\n<p>Every model in the unit can be equipped with a Bike.</p>",
             "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "slot": "primary-ranged"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace its Primary Ranged Weapon with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:plasma-pistol",
-                    "name": "Plasma Pistol",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 8,
-                    "parts": [
-                      {
-                        "ref": "weapon:plasma-pistol",
-                        "name": "Plasma Pistol",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:melta-pistol",
-                    "name": "Melta Pistol",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
-                    "parts": [
-                      {
-                        "ref": "weapon:melta-pistol",
-                        "name": "Melta Pistol",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:grenade-gauntlet",
-                    "name": "Grenade Gauntlet",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 8,
-                    "parts": [
-                      {
-                        "ref": "weapon:grenade-gauntlet",
-                        "name": "Grenade Gauntlet",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:boltgun#m-twin-linked",
-                    "name": "Boltgun",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:boltgun",
-                        "name": "Boltgun",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:combi-bolter",
-                    "name": "Combi-Bolter",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": null,
-                    "parts": [
-                      {
-                        "ref": "wargear:combi-bolter",
-                        "name": "Combi-Bolter",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
               {
                 "op": "add",
                 "scope": {
@@ -6424,7 +6471,7 @@
                   "max": 1
                 },
                 "slot": "primary-melee",
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>Any model can be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
                   {
@@ -6579,7 +6626,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-3",
+                "id": "wargearOptions-replace-2",
                 "prose": "<p>Up to 2 models can replace their Primary Ranged Weapon with 1 of the following:</p>",
                 "options": [
                   {
@@ -6755,61 +6802,23 @@
                 ]
               },
               {
-                "op": "add",
+                "op": "replace",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": null,
+                "replaces": {
+                  "weapons": [
+                    "Primary Ranged Weapon",
+                    "Primary Melee Weapon"
+                  ]
+                },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>Instead of selecting a Primary Ranged Weapon and a Primary Melee Weapon, any model can instead be equipped with 1 of the following:</p>",
-                "altGroup": "wargearOptions-replace-3",
+                "id": "wargearOptions-replace-3",
+                "prose": "<p>Any model can replace their Primary Ranged Weapon and Primary Melee Weapon with 1x Twin-linked Lightning Claw.</p>",
                 "options": [
-                  {
-                    "ref": "weapon:chainblade#m-twin-linked",
-                    "name": "Chainblade",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:chainblade",
-                        "name": "Chainblade",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:chainglaive#m-twin-linked",
-                    "name": "Chainglaive",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 16,
-                    "parts": [
-                      {
-                        "ref": "weapon:chainglaive",
-                        "name": "Chainglaive",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
                   {
                     "ref": "weapon:lightning-claw#m-twin-linked",
                     "name": "Lightning Claw",
@@ -6823,69 +6832,6 @@
                       {
                         "ref": "weapon:lightning-claw",
                         "name": "Lightning Claw",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:bolt-pistol#m-twin-linked",
-                    "name": "Bolt Pistol",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 4,
-                    "parts": [
-                      {
-                        "ref": "weapon:bolt-pistol",
-                        "name": "Bolt Pistol",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:plasma-pistol#m-twin-linked",
-                    "name": "Plasma Pistol",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 16,
-                    "parts": [
-                      {
-                        "ref": "weapon:plasma-pistol",
-                        "name": "Plasma Pistol",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:melta-pistol#m-twin-linked",
-                    "name": "Melta Pistol",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:melta-pistol",
-                        "name": "Melta Pistol",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": [
@@ -6908,7 +6854,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-4",
                 "prose": "<p>1 Chosen in the unit can be equipped with a Chaos Icon.</p>",
                 "options": [
                   {
@@ -6938,11 +6884,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": null
+                  "max": 1
                 },
-                "slot": "secondary",
-                "id": "wargearOptions-add-6",
-                "prose": "<p>Every model in the unit can be equipped with any of the following Secondary Weapons:</p>",
+                "id": "wargearOptions-add-5",
+                "prose": "<p>Every model in the unit can be equipped with 1 of the following Sidearms:</p>",
                 "options": [
                   {
                     "ref": "weapon:bolt-pistol",
@@ -6961,6 +6906,72 @@
                       }
                     ]
                   },
+                  {
+                    "ref": "weapon:hand-flamer",
+                    "name": "Hand Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:hand-flamer",
+                        "name": "Hand Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:plasma-pistol",
+                    "name": "Plasma Pistol",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 8,
+                    "parts": [
+                      {
+                        "ref": "weapon:plasma-pistol",
+                        "name": "Plasma Pistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:melta-pistol",
+                    "name": "Melta Pistol",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:melta-pistol",
+                        "name": "Melta Pistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
+                  "who": "unit"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": null
+                },
+                "id": "wargearOptions-add-6",
+                "prose": "<p>Every model in the unit can be equipped with any of the following Grenades:</p>",
+                "options": [
                   {
                     "ref": "weapon:combat-knife",
                     "name": "Combat Knife",
@@ -7084,7 +7095,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 16,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "wargear:bike",
@@ -7197,7 +7208,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Aspiring Champion</li>\n<li>2 to 4 Havocs</li>\n</ul>",
+            "prose": "<p>1 Aspiring Champion</p>\n<p>2 to 4 Havocs</p>",
             "clauses": []
           },
           {
@@ -7924,7 +7935,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Aspiring Champion</li>\n<li>2 to 4 Raptors</li>\n</ul>",
+            "prose": "<p>1 Aspiring Champion</p>\n<p>2 to 4 Raptors</p>",
             "clauses": []
           },
           {
@@ -9573,7 +9584,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"crusher-claws\">Crusher Claws</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2#m-accursed\">Heavy Autogun</span></p>\n<p>This model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"battle-cannon#m-accursed\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon#m-accursed\">Macro Plasma Cannon</span></p>\n<p>This model must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked+accursed\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked+accursed\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked+accursed\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked+accursed\">Inferno Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-accursed\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-scourge\">Power Scourge</span></p>",
+            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"crusher-claws\">Crusher Claws</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#q2#m-accursed\">Heavy Autogun</span></p>\n<p>This model must be equipped with 1 of the following Torse Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"macro-plasma-cannon#m-accursed\">Macro Plasma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"demolisher-siege-cannon#m-accursed\">Demolisher Siege Cannon</span></p>\n<p>This model must be equipped with 2 of the following Arm Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked+accursed\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked+accursed\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked+accursed\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked+accursed\">Inferno Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-accursed\">Missile Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-scourge\">Power Scourge</span></p>",
             "clauses": [
               {
                 "id": "standardWargear-fixed-1",
@@ -9654,29 +9665,8 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-3",
-                "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Torse Weapons:</p>",
                 "options": [
-                  {
-                    "ref": "weapon:battle-cannon#m-accursed",
-                    "name": "Battle Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "accursed"
-                    ],
-                    "points": 60,
-                    "parts": [
-                      {
-                        "ref": "weapon:battle-cannon",
-                        "name": "Battle Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "accursed"
-                        ]
-                      }
-                    ]
-                  },
                   {
                     "ref": "weapon:macro-plasma-cannon#m-accursed",
                     "name": "Macro Plasma Cannon",
@@ -9690,6 +9680,27 @@
                       {
                         "ref": "weapon:macro-plasma-cannon",
                         "name": "Macro Plasma Cannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "accursed"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:demolisher-siege-cannon#m-accursed",
+                    "name": "Demolisher Siege Cannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "accursed"
+                    ],
+                    "points": 85,
+                    "parts": [
+                      {
+                        "ref": "weapon:demolisher-siege-cannon",
+                        "name": "Demolisher Siege Cannon",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": [
@@ -9711,7 +9722,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-4",
-                "prose": "<p>This model must be equipped with 2 of the following:</p>",
+                "prose": "<p>This model must be equipped with 2 of the following Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:autocannon#m-twin-linked+accursed",
@@ -9944,7 +9955,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each model must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-cannon\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-chainblade\">Dreadnought Chainblade</span></p>",
+            "prose": "<p>Each model must be equipped with 2 of the following Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-cannon\">Melta Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"punisher-cannon\">Punisher Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-chainblade\">Dreadnought Chainblade</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -9957,7 +9968,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Each model must be equipped with 2 of the following:</p>",
+                "prose": "<p>Each model must be equipped with 2 of the following Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:melta-cannon",
@@ -10051,7 +10062,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>",
+            "prose": "<p>Any model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -10064,7 +10075,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
+                "prose": "<p>Any model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:meltagun",
@@ -10203,12 +10214,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon#m-accursed\">Plasma Cannon</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Right Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-cannon#m-accursed\">Plasma Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked+accursed\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta#m-accursed\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-accursed\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked+accursed\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked+accursed\">Heavy Bolter</span></p>\n<p>This model must be equipped with 1 of the following Left Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-scourge\">Power Scourge</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"daemonhammer\">Daemonhammer</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>1x Dreadnought Power Claw</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -10217,6 +10226,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Right Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:dreadnought-power-claw",
@@ -10234,22 +10245,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Accursed Plasma Cannon</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
+                  },
                   {
                     "ref": "weapon:plasma-cannon#m-accursed",
                     "name": "Plasma Cannon",
@@ -10270,31 +10266,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Accursed Plasma Cannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked+accursed\">Lascannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta#m-accursed\">Multi-melta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-accursed\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"autocannon#m-twin-linked+accursed\">Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked+accursed\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p>This model can replace its Dreadnought Power Claw with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-scourge\">Power Scourge</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"daemonhammer\">Daemonhammer</span></p>\n<p>Each Dreadnought Power Claw equipped by this model can be upgraded to include 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Accursed Plasma Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Accursed Plasma Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:lascannon#m-twin-linked+accursed",
                     "name": "Lascannon",
@@ -10405,7 +10377,22 @@
                         ]
                       }
                     ]
-                  },
+                  }
+                ]
+              },
+              {
+                "op": "choose",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Left Arm Weapons:</p>",
+                "options": [
                   {
                     "ref": "weapon:dreadnought-power-claw",
                     "name": "Dreadnought Power Claw",
@@ -10422,24 +10409,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Dreadnought Power Claw"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Dreadnought Power Claw with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:power-scourge",
                     "name": "Power Scourge",
@@ -10475,9 +10445,16 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Each Dreadnought Power Claw equipped by this model can be upgraded to include 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>",
+            "clauses": [
               {
-                "id": "wargearOptions-modifier-each-3",
+                "id": "wargearOptions-modifier-each-1",
                 "op": "modifier",
                 "prose": "<p>Each Dreadnought Power Claw equipped by this model can be upgraded to include 1 of the following:</p>",
                 "appliesTo": {
@@ -10624,7 +10601,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-chainblade\">Dreadnought Chainblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-crusher-drill\">Dreadnought Crusher Drill</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-scourge\">Power Scourge</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon\">Oppressor Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pyre-cannon\">Pyre Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"magma-cannon\">Magma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laser-destroyer\">Laser Destroyer</span></p>",
+            "prose": "<p>This model must be equipped with 2 of the following Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-power-claw\">Dreadnought Power Claw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-chainblade\">Dreadnought Chainblade</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dreadnought-crusher-drill\">Dreadnought Crusher Drill</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-scourge\">Power Scourge</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"oppressor-cannon\">Oppressor Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"pyre-cannon\">Pyre Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"magma-cannon\">Magma Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"laser-destroyer\">Laser Destroyer</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -10637,7 +10614,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 2 of the following:</p>",
+                "prose": "<p>This model must be equipped with 2 of the following Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:dreadnought-power-claw",
@@ -10782,7 +10759,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-bastion\">Missile Bastion</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon\">Hydra Flak Autocannon</span></p>\n<p>This model can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p>This model can be equipped with an Ion Shield.</p>",
+            "prose": "<p>This model can be equipped with up to 2 of the following Chest Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p>This model can be equipped with 1 of the following Dorsal Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-bastion\">Missile Bastion</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hydra-flak-autocannon\">Hydra Flak Autocannon</span></p>\n<p>Each Ranged Arm Weapon equipped by this model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p>This model can be equipped with an Ion Shield.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -10795,7 +10772,7 @@
                   "max": 2
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with up to 2 of the following:</p>",
+                "prose": "<p>This model can be equipped with up to 2 of the following Chest Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:meltagun",
@@ -10878,7 +10855,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Dorsal Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:missile-bastion",
@@ -10919,15 +10896,16 @@
               {
                 "op": "add",
                 "scope": {
-                  "who": "each"
+                  "who": "each",
+                  "modelType": "Ranged Arm Weapon equipped by this model"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 2
+                  "max": 1
                 },
                 "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with up to 2 of the following:</p>",
+                "prose": "<p>Each Ranged Arm Weapon equipped by this model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:meltagun",
@@ -11096,7 +11074,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"thundercoil-harpoon\">Thundercoil Harpoon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"conflagration-cannon\">Conflagration Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"volcano-cannon\">Volcano Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-decimator\">Plasma Decimator</span></p>",
+            "prose": "<p>This model must be equipped with 2 of the following Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"thundercoil-harpoon\">Thundercoil Harpoon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"conflagration-cannon\">Conflagration Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"volcano-cannon\">Volcano Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-decimator\">Plasma Decimator</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -11109,7 +11087,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 2 of the following:</p>",
+                "prose": "<p>This model must be equipped with 2 of the following Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:thundercoil-harpoon",
@@ -11186,7 +11164,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with up to 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon#m-twin-linked\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q2\">Storm Eagle Rocket</span></p>\n<p>This model can be equipped with 2 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon#m-twin-linked\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q2\">Storm Eagle Rocket</span></p>\n<p>This model can be equipped with an Ion Shield.</p>",
+            "prose": "<p>This model can be equipped with up to 2 of the following Chest Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-autogun#m-twin-linked\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p>This model can be equipped with 1 of the following Dorsal Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon#m-twin-linked\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q2\">Storm Eagle Rocket</span></p>\n<p>This model can be equipped with 2 of the following Shoulder Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"skirmisher-cannon#m-twin-linked\">Skirmisher Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"storm-eagle-rocket#q2\">Storm Eagle Rocket</span></p>\n<p>This model can be equipped with an Ion Shield.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -11199,7 +11177,7 @@
                   "max": 2
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with up to 2 of the following:</p>",
+                "prose": "<p>This model can be equipped with up to 2 of the following Chest Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:multi-melta",
@@ -11286,7 +11264,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Dorsal Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:skirmisher-cannon#m-twin-linked",
@@ -11339,7 +11317,7 @@
                   "max": 2
                 },
                 "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 2 of the following:</p>",
+                "prose": "<p>This model can be equipped with 2 of the following Shoulder Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:skirmisher-cannon#m-twin-linked",
@@ -11493,12 +11471,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"punisher-cannon#m-twin-linked\">Punisher Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Exterminator Autocannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -11507,6 +11483,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:exterminator-autocannon",
@@ -11524,31 +11502,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Exterminator Autocannon with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"punisher-cannon#m-twin-linked\">Punisher Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with 1 Havoc Launcher.</p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Exterminator Autocannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Exterminator Autocannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:lascannon#m-twin-linked",
                     "name": "Lascannon",
@@ -11634,7 +11588,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"lascannon#q2\">Lascannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -11645,8 +11606,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-bolter#q2",
@@ -11728,8 +11689,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "wargear:combi-bolter",
@@ -11775,10 +11736,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 Havoc Launcher.</p>",
+                "id": "wargearOptions-add-3",
+                "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:havoc-launcher",
@@ -11796,22 +11757,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": null
-                },
-                "id": "wargearOptions-add-5",
-                "prose": "<p>This model can be equipped with any of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:dozer-blade-mount",
                     "name": "Dozer Blade Mount",
@@ -11999,7 +11945,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Havoc Launcher.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Havoc Launcher.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -12012,7 +11958,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "wargear:combi-bolter",
@@ -12250,7 +12196,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Havoc Launcher.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Havoc Launcher.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
             "clauses": [
               {
                 "op": "add",
@@ -12263,7 +12209,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "wargear:combi-bolter",
@@ -12464,12 +12410,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#q2#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>\n<p class=\"lb-opt\">2x Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#q2#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#q2\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"hurricane-bolter-array#q2\">Hurricane Bolter Array</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#m-twin-linked\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"assault-cannon#m-twin-linked\">Assault Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"lascannon#m-twin-linked\">Lascannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"multi-melta#m-twin-linked\">Multi-melta</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#m-twin-linked\">Heavy Flamer</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>2x Twin-linked Lascannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -12478,6 +12422,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Side Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:lascannon#q2#m-twin-linked",
@@ -12499,67 +12445,7 @@
                         ]
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>1x Twin-linked Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter#m-twin-linked",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its 2x Twin-linked Lascannon with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#q2\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"hurricane-bolter-array#q2\">Hurricane Bolter Array</span></p>\n<p>This model can replace its Twin-linked Heavy Bolter with 1 Twin-linked Assault Cannon.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Havoc Launcher.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "2x Twin-linked Lascannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its 2x Twin-linked Lascannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:inferno-cannon#q2",
                     "name": "Inferno Cannon",
@@ -12597,20 +12483,39 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Bolter"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 Twin-linked Assault Cannon.</p>",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:heavy-bolter#m-twin-linked",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:assault-cannon#m-twin-linked",
                     "name": "Assault Cannon",
@@ -12631,9 +12536,79 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:lascannon#m-twin-linked",
+                    "name": "Lascannon",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 70,
+                    "parts": [
+                      {
+                        "ref": "weapon:lascannon",
+                        "name": "Lascannon",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multi-melta#m-twin-linked",
+                    "name": "Multi-melta",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 50,
+                    "parts": [
+                      {
+                        "ref": "weapon:multi-melta",
+                        "name": "Multi-melta",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-flamer#m-twin-linked",
+                    "name": "Heavy Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 30,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-flamer",
+                        "name": "Heavy Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-autogun\">Heavy Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Havoc Launcher</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -12644,8 +12619,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "wargear:combi-bolter",
@@ -12710,8 +12685,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 Havoc Launcher.</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with 1 Havoc Launcher</p>",
                 "options": [
                   {
                     "ref": "weapon:havoc-launcher",
@@ -12742,7 +12717,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
                 "options": [
                   {
@@ -12887,7 +12862,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>",
+            "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"havoc-launcher\">Havoc Launcher</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"dozer-blade-mount\">Dozer Blade Mount</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -12900,7 +12875,7 @@
                   "max": 1
                 },
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "wargear:combi-bolter",
@@ -14606,6 +14581,7 @@
       "ap": "-2",
       "damage": "2",
       "keywords": [
+        "Extra Attacks",
         "Sustained Hits 1",
         "Devastating Wounds"
       ],

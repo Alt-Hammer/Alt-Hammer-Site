@@ -29,7 +29,7 @@ automatically resolves to the "feel-no-pain" definition.
 
 HOW TO RUN
 ──────────
-From inside the alt-hammer-site folder:
+From inside the countermarch-site folder:
   python scripts/extract_definitions.py
 
 Or it is called automatically by run_all.py.
@@ -47,7 +47,9 @@ import json
 # ── Path configuration ────────────────────────────────────────────────────────
 
 
-CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Core Rules.docx"
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import CORE_RULES_DOCX
 OUTPUT_PATH = "src/data/definitions.json"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -228,7 +230,7 @@ def main():
     out_path  = sys.argv[2] if len(sys.argv) > 2 else OUTPUT_PATH
 
     print(f"\n{'='*60}")
-    print(f"  Alt-Hammer — Extracting Keyword & Action Definitions")
+    print(f"  Countermarch — Extracting Keyword & Action Definitions")
     print(f"{'='*60}")
     print(f"  Source:  {docx_path}")
     print(f"  Output:  {out_path}")

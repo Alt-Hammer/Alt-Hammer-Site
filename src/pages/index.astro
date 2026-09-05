@@ -2,6 +2,7 @@
 // src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ALLIANCES } from '../data/alliances.ts';
+import { listedFactions } from '../data/faction-index.ts';
 import { RULES_SECTIONS } from '../data/rules-nav.ts';
 import { getCollection } from 'astro:content';
 
@@ -14,10 +15,11 @@ interface FactionFrontmatter {
 }
 
 const factionPages = await Astro.glob('../content/factions/*.mdx');
-const FACTIONS = factionPages
-  .map((entry) => entry.frontmatter as FactionFrontmatter)
-  .filter((frontmatter) => frontmatter?.slug)
-  .sort((a, b) => a.title.localeCompare(b.title));
+const FACTIONS = listedFactions(
+  factionPages
+    .map((entry) => entry.frontmatter as FactionFrontmatter)
+    .filter((frontmatter) => frontmatter?.slug)
+).sort((a, b) => a.title.localeCompare(b.title));
 
 const factionsByAlliance = ALLIANCES.map((alliance) => ({
   alliance,
@@ -62,23 +64,25 @@ const tileIcons = [
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="hero-inner">
-      <p class="hero-eyebrow animate-in">Community Rules Reference</p>
       <h1 class="hero-title animate-in animate-in-delay-1">
-        <span class="title-main">Alt-Hammer</span>
-        <span class="title-sub">40,000 · 1st Edition</span>
+        <img
+          src="/images/countermarch-logo.png"
+          alt="Countermarch 40,000"
+          class="hero-logo"
+          width="2500"
+          height="1255"
+          fetchpriority="high"
+        />
+        <span class="title-sub">1st Edition</span>
       </h1>
       <p class="hero-tagline animate-in animate-in-delay-2">
-        An alternating-activations game system built on the bones of
-        Warhammer 40,000. Faster. More tactical. Fully community-driven.
+        An alternating activations game system inspired by the
+        Warhammer 40,000 Universe.
       </p>
       <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;"
            class="animate-in animate-in-delay-3">
         <a href="/rules/general-gameplay-rules" class="btn btn-primary">Read Core Rules</a>
         <a href="/factions" class="btn btn-ghost">Browse Factions</a>
-      </div>
-
-      <div class="divider-tactical animate-in animate-in-delay-4">
-        Field Manual · 1st Edition · Community Build
       </div>
     </div>
   </section>
@@ -116,13 +120,10 @@ const tileIcons = [
     ))}
 
     <a href="/list-builder" class="feature-card animate-in"
-       style="--card-accent: #3a7bd5; opacity: 0.7;">
+       style="--card-accent: #3a7bd5;">
       <span class="feature-card-icon">☰</span>
       <div class="feature-card-title">
         List Builder
-        <span class="badge badge-wip" style="margin-left:8px; vertical-align:middle;">
-          Soon
-        </span>
       </div>
       <p class="feature-card-desc">
         Build and validate army lists with automatic force organization
@@ -172,8 +173,13 @@ const tileIcons = [
 </BaseLayout>
 
 <style>
-  /* Homepage-specific overrides */
-  .main-content {
+  /* Homepage-specific overrides.
+     .main-content lives in BaseLayout, so it needs :global() to be reachable
+     from this page's scoped styles. Dropping the content-column cap lets the
+     homepage fill the centred .layout-wrapper, so every band inside it (hero,
+     intro, card grid, faction grid) centres on the browser window rather than
+     sitting against the left edge of an uncapped row. */
+  :global(.main-content) {
     padding: 0;
     max-width: 100%;
   }
@@ -192,7 +198,11 @@ const tileIcons = [
     color: var(--color-text-secondary);
   }
 
-  .home-intro-inner h3 {
+  /* The intro prose is rendered by the <IntroContent /> MDX component, so its
+     elements carry no scope attribute from this page — reach them with :global().
+     The padding-left is what pulls the bullet markers inside the left edge of the
+     surrounding paragraphs instead of letting them hang outside it. */
+  .home-intro-inner :global(h3) {
     font-size: 1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -201,13 +211,13 @@ const tileIcons = [
     margin-bottom: 0.5rem;
   }
 
-  .home-intro-inner ol,
-  .home-intro-inner ul {
-    padding-left: 1.4rem;
+  .home-intro-inner :global(ol),
+  .home-intro-inner :global(ul) {
+    padding-left: 1.6rem;
     margin: 0.75rem 0;
   }
 
-  .home-intro-inner li {
+  .home-intro-inner :global(li) {
     margin-bottom: 0.4rem;
   }
 

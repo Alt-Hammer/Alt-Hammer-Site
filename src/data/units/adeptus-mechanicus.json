@@ -3295,7 +3295,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Galvanic Carbine with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"galvanic-pistol#m-twin-linked\">Galvanic Pistol</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"radium-pistol#m-twin-linked\">Radium Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-blast-carbine\">Phosphor Blast Carbine</span></p>\n<p>Alternatively, any model can replace its Galvanic Carbine with 1 Pistol and 1 Melee weapon from the following list:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"galvanic-pistol\">Galvanic Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"radium-pistol\">Radium Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-blast-pistol\">Phosphor Blast Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-serpenta\">Phosphor Serpenta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"arc-pistol\">Arc Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"taser-goad\">Taser Goad</span></p>\n<p>Any model can be equipped with a Phosphor Torch.</p>",
+            "prose": "<p>Any model can replace its Galvanic Carbine with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"galvanic-pistol#m-twin-linked\">Galvanic Pistol</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"radium-pistol#m-twin-linked\">Radium Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-blast-carbine\">Phosphor Blast Carbine</span></p>\n<p>Any model can replace its Galvanic Carbine with 1 Pistol and 1 Melee weapon from the following list:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"galvanic-pistol\">Galvanic Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"radium-pistol\">Radium Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-blast-pistol\">Phosphor Blast Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-serpenta\">Phosphor Serpenta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"arc-pistol\">Arc Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"taser-goad\">Taser Goad</span></p>\n<p>Any model can be equipped with a Phosphor Torch.</p>",
             "clauses": [
               {
                 "op": "replace",
@@ -3376,7 +3376,7 @@
               {
                 "id": "wargearOptions-replace-4",
                 "op": "replace",
-                "prose": "<p>Alternatively, any model can replace its Galvanic Carbine with 1 Pistol and 1 Melee weapon from the following list:</p>",
+                "prose": "<p>Any model can replace its Galvanic Carbine with 1 Pistol and 1 Melee weapon from the following list:</p>",
                 "scope": {
                   "who": "count",
                   "count": 1
@@ -3890,12 +3890,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with Twin-linked Heavy Phosphor Blaster.</p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Right Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-phosphor-blaster\">Heavy Phosphor Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-fist\">Power Fist</span></p>\n<p>Every model must be equipped with 1 of the following Lef Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-phosphor-blaster\">Heavy Phosphor Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-fist\">Power Fist</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -3904,122 +3902,8 @@
                   "min": 1,
                   "max": 1
                 },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-phosphor-blaster#m-twin-linked",
-                    "name": "Heavy Phosphor Blaster",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 40,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-phosphor-blaster",
-                        "name": "Heavy Phosphor Blaster",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can replace its Twin-linked Heavy Phosphor Blaster with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-phosphor-blaster#c-1x-heavy-phosphor-blaster-and-1x-power-fist\">1x Heavy Phosphor Blaster and 1x Power Fist</span> and <span class=\"weapon-ref\" data-weapon=\"power-fist\">Power Fist</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"power-fist#m-twin-linked\">Power Fist</span></p>\n<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-phosphor-blaster\">Heavy Phosphor Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-torch\">Phosphor Torch</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Twin-linked Heavy Phosphor Blaster"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace its Twin-linked Heavy Phosphor Blaster with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:heavy-phosphor-blaster#c-1x-heavy-phosphor-blaster-and-1x-power-fist",
-                    "name": "1x Heavy Phosphor Blaster and 1x Power Fist",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 35,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-phosphor-blaster",
-                        "name": "Heavy Phosphor Blaster",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      },
-                      {
-                        "text": " and "
-                      },
-                      {
-                        "ref": "weapon:power-fist",
-                        "name": "Power Fist",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ],
-                    "and": [
-                      {
-                        "ref": "weapon:power-fist",
-                        "name": "Power Fist",
-                        "kind": "weapon",
-                        "points": 15
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:power-fist#m-twin-linked",
-                    "name": "Power Fist",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:power-fist",
-                        "name": "Power Fist",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Right Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-phosphor-blaster",
@@ -4032,6 +3916,111 @@
                       {
                         "ref": "weapon:heavy-phosphor-blaster",
                         "name": "Heavy Phosphor Blaster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:power-fist",
+                    "name": "Power Fist",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:power-fist",
+                        "name": "Power Fist",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "choose",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every model must be equipped with 1 of the following Lef Arm Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:heavy-phosphor-blaster",
+                    "name": "Heavy Phosphor Blaster",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 20,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-phosphor-blaster",
+                        "name": "Heavy Phosphor Blaster",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:power-fist",
+                    "name": "Power Fist",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:power-fist",
+                        "name": "Power Fist",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-blaster\">Phosphor Blaster</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"phosphor-torch\">Phosphor Torch</span></p>",
+            "clauses": [
+              {
+                "op": "add",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 1
+                },
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:phosphor-blaster",
+                    "name": "Phosphor Blaster",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:phosphor-blaster",
+                        "name": "Phosphor Blaster",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -4137,7 +4126,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"phosphor-cannon#m-twin-linked\">Phosphor Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"cognis-autocannon#m-twin-linked\">1x Twin-linked Cognis Autocannon and Icarus Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"eradication-beamer\">Eradication Beamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"neutron-laser#c-1x-neutron-laser-and-cognis-heavy-autogun\">1x Neutron Laser and Cognis Heavy Autogun</span> and <span class=\"weapon-ref\" data-weapon=\"cognis-heavy-autogun\">Cognis Heavy Autogun</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"phosphor-cannon#m-twin-linked\">Phosphor Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"cognis-autocannon#m-twin-linked\">1x Twin-linked Cognis Autocannon and Icarus Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"eradication-beamer\">Eradication Beamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"neutron-laser#c-1x-neutron-laser-and-cognis-heavy-autogun\">1x Neutron Laser and Cognis Heavy Autogun</span> and <span class=\"weapon-ref\" data-weapon=\"cognis-heavy-autogun\">Cognis Heavy Autogun</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -4150,7 +4139,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:phosphor-cannon#m-twin-linked",

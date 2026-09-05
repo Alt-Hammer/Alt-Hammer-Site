@@ -9,6 +9,7 @@
 //   sidebarType   — 'rules' | 'factions' (selects which nav to show)
 
 import { ALLIANCES } from '../data/alliances.ts';
+import { listedFactions } from '../data/faction-index.ts';
 import { RULES_SECTIONS } from '../data/rules-nav.ts';
 
 // Read definitions at build time for embedding into the page as a JSON script tag.
@@ -44,7 +45,7 @@ interface FactionFrontmatter {
 
 const {
   title = '',
-  description = 'Alt-Hammer 40,000 — Community rules reference for the alternating-activations Warhammer 40,000 game system.',
+  description = 'Countermarch 40,000 — Community rules reference for the alternating-activations Warhammer 40,000 game system.',
   activePage = 'home',
   showSidebar = false,
   sidebarType = 'factions',
@@ -52,9 +53,11 @@ const {
 } = Astro.props;
 
 const factionPages = await Astro.glob('../content/factions/*.mdx');
-const FACTIONS = factionPages
-  .map((entry) => entry.frontmatter as FactionFrontmatter)
-  .filter((frontmatter) => frontmatter?.slug);
+const FACTIONS = listedFactions(
+  factionPages
+    .map((entry) => entry.frontmatter as FactionFrontmatter)
+    .filter((frontmatter) => frontmatter?.slug)
+);
 
 function getFactionsByAlliance() {
   return ALLIANCES.map((alliance) => ({
@@ -64,7 +67,7 @@ function getFactionsByAlliance() {
 }
 
 const factionsByAlliance = getFactionsByAlliance();
-const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000';
+const pageTitle = title ? `${title} — Countermarch 40,000` : 'Countermarch 40,000';
 ---
 
 <!DOCTYPE html>
@@ -85,9 +88,16 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
   <!-- ── Top Header ──────────────────────────────────────────────────── -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="/" class="header-logo">
-        <span>Alt-Hammer</span>
-        <span class="logo-edition">40,000<br/>1st Edition</span>
+      <a href="/" class="header-logo" aria-label="Countermarch 40,000 — home">
+        <img
+          src="/images/countermarch-logo.png"
+          alt="Countermarch 40,000"
+          class="header-logo-img"
+          width="2500"
+          height="1255"
+          decoding="async"
+        />
+        <span class="logo-edition">1st Edition</span>
       </a>
 
       <nav class="header-nav">
@@ -101,8 +111,6 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
           List Builder
         </a>
       </nav>
-
-      <span class="header-status">v1.0 · 1st Ed.</span>
     </div>
   </header>
 
@@ -202,14 +210,14 @@ const pageTitle = title ? `${title} — Alt-Hammer 40,000` : 'Alt-Hammer 40,000'
 
   <!-- ── Footer ──────────────────────────────────────────────────────── -->
   <footer class="site-footer">
-    <p>
-      Alt-Hammer 40,000 is a fan-made, community rules system and is not affiliated with or endorsed by Games Workshop.
+    <p class="footer-legal">
+      Countermarch 40,000 is a fan-made, community rules system and is not affiliated with or endorsed by Games Workshop.
       Warhammer 40,000 is a trademark of Games Workshop Ltd.
     </p>
-    <p style="margin-top: 8px;">
+    <p class="footer-links">
       <a href="/rules/general-gameplay-rules">Core Rules</a> ·
       <a href="/factions">Factions</a> ·
-      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/Countermarch-40000/countermarch-site" target="_blank" rel="noopener">GitHub</a>
     </p>
   </footer>
   <!-- ── Keyword & Action tooltip definitions (auto-generated from source docs) ── -->

@@ -88,7 +88,10 @@
           ],
           "prose": "1 Warboss"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -97,12 +100,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"slugga\">Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-choppa\">Big Choppa</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"slugga\">Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"snazzy-shoota\">Snazzy Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"kombi-shoota\">Kombi-Shoota</span></p>\n<p>This model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-choppa\">Big Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"uge-choppa\">Uge Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smasha-hammer\">Smasha Hammer</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Slugga</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -111,6 +112,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:slugga",
@@ -128,73 +132,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Big Choppa</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:big-choppa",
-                    "name": "Big Choppa",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
-                    "parts": [
-                      {
-                        "ref": "weapon:big-choppa",
-                        "name": "Big Choppa",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "specialAbilities",
-            "prose": "<p><strong>'Ere We Go!:</strong> While this model is leading a unit, that unit gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability, and its Ranged weapons gain the <span class=\"keyword\" data-term=\"assault\" data-type=\"keyword\">Assault</span> ability.</p>\n<p><strong>Da Boss Is Watchin'</strong>: While a friendly Orks Infantry unit has at least 1 model within 6\" of this model, when that unit fails a Battle Shock Test and becomes Battle Shocked, destroy 1 model from that unit. When you do so, that unit is no longer Battle Shocked.</p>",
-            "clauses": []
-          },
-          {
-            "key": "forceOrganization",
-            "prose": "<p>Your army can only include 1 Warboss for every 2,000 points. If you have 1 or more Warboss units in your army, 1 of those units must be your Warlord, unless your army also includes an <span class=\"keyword\" data-term=\"epic-hero\" data-type=\"keyword\">Epic Hero</span> unit with the <span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> ability.</p>",
-            "clauses": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Slugga with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"snazzy-shoota\">Snazzy Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"kombi-shoota\">Kombi-Shoota</span></p>\n<p>This model can replace its Big Choppa with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"uge-choppa\">Uge Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smasha-hammer\">Smasha Hammer</span></p>\n<p>This model can be equipped with Bigga, Stronga, Tuffa.</p>\n<p>This model can be equipped with Beast Snaggas Klan.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"eavy-armour\">'Eavy Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"mega-armour\">Mega Armour</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"grot-gunna\">Grot Gunna</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"attack-squig\">Attack Squig</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"boss-totem\">Boss Totem</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"wartrike\">Wartrike</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"squigosaur\">Squigosaur</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Slugga"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Slugga with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:shoota",
                     "name": "Shoota",
@@ -283,20 +221,36 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Big Choppa"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Big Choppa with 1 of the following:</p>",
+                "slot": "primary-melee",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:big-choppa",
+                    "name": "Big Choppa",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:big-choppa",
+                        "name": "Big Choppa",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:uge-choppa",
                     "name": "Uge Choppa",
@@ -349,7 +303,24 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "specialAbilities",
+            "prose": "<p><strong>'Ere We Go!:</strong> While this model is leading a unit, that unit gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability, and its Ranged weapons gain the <span class=\"keyword\" data-term=\"assault\" data-type=\"keyword\">Assault</span> ability.</p>\n<p><strong>Da Boss Is Watchin'</strong>: While a friendly Orks Infantry unit has at least 1 model within 6\" of this model, when that unit fails a Battle Shock Test and becomes Battle Shocked, destroy 1 model from that unit. When you do so, that unit is no longer Battle Shocked.</p>",
+            "clauses": []
+          },
+          {
+            "key": "forceOrganization",
+            "prose": "<p>Your army can only include 1 Warboss for every 2,000 points. If you have 1 or more Warboss units in your army, 1 of those units must be your Warlord, unless your army also includes an <span class=\"keyword\" data-term=\"epic-hero\" data-type=\"keyword\">Epic Hero</span> unit with the <span class=\"keyword\" data-term=\"leader\" data-type=\"keyword\">Leader</span> ability.</p>",
+            "clauses": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with Bigga, Stronga, Tuffa.</p>\n<p>This model can be equipped with Beast Snaggas Klan.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"eavy-armour\">'Eavy Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"mega-armour\">Mega Armour</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"grot-gunna\">Grot Gunna</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"attack-squig\">Attack Squig</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"boss-totem\">Boss Totem</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"wartrike\">Wartrike</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"squigosaur\">Squigosaur</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -360,7 +331,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with Bigga, Stronga, Tuffa.</p>",
                 "options": [
                   {
@@ -392,7 +363,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with Beast Snaggas Klan.</p>",
                 "options": [
                   {
@@ -424,7 +395,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -473,7 +444,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-6",
+                "id": "wargearOptions-add-4",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -539,7 +510,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-7",
+                "id": "wargearOptions-add-5",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -652,7 +623,10 @@
           ],
           "prose": "1 Mekboy"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -661,12 +635,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"slugga\">Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-choppa\">Big Choppa</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"slugga\">Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-slugga\">Rokkit Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna-slugga\">Burna Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shokk-shoota\">Shokk Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"kombi-shoota\">Kombi-Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kustom-mega-blasta\">Kustom Mega-blasta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"trakta-blasta\">Trakta Blasta</span></p>\n<p>This model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-choppa\">Big Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"uge-choppa\">Uge Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Slugga</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -675,6 +647,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:slugga",
@@ -692,68 +667,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Big Choppa</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:big-choppa",
-                    "name": "Big Choppa",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
-                    "parts": [
-                      {
-                        "ref": "weapon:big-choppa",
-                        "name": "Big Choppa",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "specialAbilities",
-            "prose": "<p><strong>Shokk Jumpa:</strong> While this model is leading a unit, that unit gains the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift </span>ability. Additionally, when the unit Moves, roll a D6. On a 4+, the unit increases its Movement characteristic to 12\".</p>\n<p><strong>Fixin' It</strong>: Once per Battle Round, during your Command Phase, you can use this ability. To do so, select 1 friendly <span class=\"keyword\" data-term=\"ork-vehicle\" data-type=\"keyword\">Ork Vehicle</span> within 3\" of this model and roll a D6. On a 1, the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> suffers D3+1 Mortal Wounds. On a 2-4, the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> regains up to D3+1 lost Wounds. On a 5-6, the model regains up to D6+1 lost wounds, and, until the end of the Battle Round, increases its Movement characteristic by 3\" and gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability, but all of its weapons gain the <span class=\"keyword\" data-term=\"hazardous-d31\" data-type=\"keyword\">Hazardous D3+1</span> ability.</p>\n<p><strong>With Da Boss and Da Boyz:</strong> Instead of Leading a unit, this model can join a Boyz unit being led by a Warboss.</p>",
-            "clauses": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Slugga with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-slugga\">Rokkit Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna-slugga\">Burna Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shokk-shoota\">Shokk Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"kombi-shoota\">Kombi-Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kustom-mega-blasta\">Kustom Mega-blasta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"trakta-blasta\">Trakta Blasta</span></p>\n<p>This model can replace its Big Choppa with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"uge-choppa\">Uge Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>\n<p>This model can be equipped with up to 4x Bombsquig.</p>\n<p>This model can be equipped with Bigga, Stronga, Tuffa.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"eavy-armour\">'Eavy Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"mega-armour\">Mega Armour</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Slugga"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Slugga with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:shoota",
                     "name": "Shoota",
@@ -876,20 +790,36 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Big Choppa"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>This model can replace its Big Choppa with 1 of the following:</p>",
+                "slot": "primary-melee",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:big-choppa",
+                    "name": "Big Choppa",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:big-choppa",
+                        "name": "Big Choppa",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:uge-choppa",
                     "name": "Uge Choppa",
@@ -925,7 +855,19 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "specialAbilities",
+            "prose": "<p><strong>Shokk Jumpa:</strong> While this model is leading a unit, that unit gains the <span class=\"keyword\" data-term=\"phase-shift\" data-type=\"keyword\">Phase Shift </span>ability. Additionally, when the unit Moves, roll a D6. On a 4+, the unit increases its Movement characteristic to 12\".</p>\n<p><strong>Fixin' It</strong>: Once per Battle Round, during your Command Phase, you can use this ability. To do so, select 1 friendly <span class=\"keyword\" data-term=\"ork-vehicle\" data-type=\"keyword\">Ork Vehicle</span> within 3\" of this model and roll a D6. On a 1, the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> suffers D3+1 Mortal Wounds. On a 2-4, the <span class=\"keyword\" data-term=\"vehicle\" data-type=\"keyword\">Vehicle</span> regains up to D3+1 lost Wounds. On a 5-6, the model regains up to D6+1 lost wounds, and, until the end of the Battle Round, increases its Movement characteristic by 3\" and gains the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability, but all of its weapons gain the <span class=\"keyword\" data-term=\"hazardous-d31\" data-type=\"keyword\">Hazardous D3+1</span> ability.</p>\n<p><strong>With Da Boss and Da Boyz:</strong> Instead of Leading a unit, this model can join a Boyz unit being led by a Warboss.</p>",
+            "clauses": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with up to 4x Bombsquig.</p>\n<p>This model can be equipped with Bigga, Stronga, Tuffa.</p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"eavy-armour\">'Eavy Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"mega-armour\">Mega Armour</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -936,7 +878,7 @@
                   "min": 0,
                   "max": 4
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with up to 4x Bombsquig.</p>",
                 "options": [
                   {
@@ -968,7 +910,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with Bigga, Stronga, Tuffa.</p>",
                 "options": [
                   {
@@ -1000,7 +942,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -1044,7 +986,7 @@
           },
           {
             "key": "leader",
-            "prose": "<p>This model can lead the following units:</p>\n<ul>\n<li>Nobz</li>\n<li>Boyz</li>\n<li>Smasha Guns</li>\n</ul>",
+            "prose": "<p>This model can lead the following units:</p>\n<ul>\n<li>Nobz</li>\n<li>Boyz</li>\n<li>Mek Gunz</li>\n</ul>",
             "clauses": []
           }
         ]
@@ -1703,7 +1645,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>5 to 30 Boyz</li>\n<li>0 to 1 Nob</li>\n</ul>",
+            "prose": "<p>5 to 30 Boyz</p>\n<p>0 to 1 Nob</p>",
             "clauses": []
           },
           {
@@ -2317,7 +2259,10 @@
           ],
           "prose": "1 to 5 Nobz"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -2326,21 +2271,21 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each Nob is equipped with 1 Slugga and 1 Big Choppa.</p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"slugga\">Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"snazzy-shoota\">Snazzy Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"kombi-shoota\">Kombi-Shoota</span></p>\n<p>Every model must be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-choppa\">Big Choppa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Nob"
+                  "who": "each"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:slugga",
@@ -2358,65 +2303,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Nob"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:big-choppa",
-                    "name": "Big Choppa",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 5,
-                    "parts": [
-                      {
-                        "ref": "weapon:big-choppa",
-                        "name": "Big Choppa",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any Nob can replace its Slugga with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shoota\">Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"snazzy-shoota\">Snazzy Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"kombi-shoota\">Kombi-Shoota</span></p>\n<p>Any Nob can replace its Big Choppa with a Killa Klaw.</p>\n<p>Every model in the unit can be equipped with Beast Snaggas Klan.</p>\n<p>Every model in the unit can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"bike\">Bike</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"eavy-armour\">'Eavy Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"mega-armour\">Mega Armour</span></p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stikbombz\">Stikbombz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"tankbustaz\">Tankbustaz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-stikz\">Smoke Stikz</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Nob"
-                },
-                "replaces": {
-                  "weapon": "Slugga"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any Nob can replace its Slugga with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:shoota",
                     "name": "Shoota",
@@ -2505,21 +2392,36 @@
                 ]
               },
               {
-                "op": "replace",
+                "op": "choose",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Nob"
+                  "who": "each"
                 },
-                "replaces": {
-                  "weapon": "Big Choppa"
-                },
+                "replaces": null,
                 "pick": {
-                  "min": 0,
+                  "min": 1,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>Any Nob can replace its Big Choppa with a Killa Klaw.</p>",
+                "slot": "primary-melee",
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:big-choppa",
+                    "name": "Big Choppa",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:big-choppa",
+                        "name": "Big Choppa",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:killa-klaw",
                     "name": "Killa Klaw",
@@ -2538,7 +2440,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Every model in the unit can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"beast-snaggas-klan\">Beast Snaggas Klan</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"bike\">Bike</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"eavy-armour\">'Eavy Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"mega-armour\">Mega Armour</span></p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stikbombz\">Stikbombz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"tankbustaz\">Tankbustaz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-stikz\">Smoke Stikz</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -2549,8 +2458,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>Every model in the unit can be equipped with Beast Snaggas Klan.</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Every model in the unit can be equipped with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "wargear:beast-snaggas-klan",
@@ -2568,22 +2477,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "unit"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>Every model in the unit can be equipped with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:bike",
                     "name": "Bike",
@@ -2647,7 +2541,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>Every model in the unit can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -2832,7 +2726,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>5 to 20 Boyz</li>\n<li>0 to 1 Nob</li>\n</ul>",
+            "prose": "<p>5 to 20 Boyz</p>\n<p>0 to 1 Nob</p>",
             "clauses": []
           },
           {
@@ -3429,92 +3323,7 @@
         "Orks",
         "Infantry"
       ],
-      "models": null,
-      "options": {
-        "forceOrg": null,
-        "composition": {
-          "mode": "range",
-          "range": {
-            "min": 5,
-            "max": 10
-          },
-          "modelTypes": [
-            {
-              "name": "Flash Gits",
-              "stats": {
-                "AP": "2",
-                "M": "5\"",
-                "WS": 4,
-                "BS": 3,
-                "I": 3,
-                "A": 3,
-                "S": 3,
-                "T": 4,
-                "W": 2,
-                "SV": "6+",
-                "LD": "8+",
-                "basePoints": 8,
-                "squadSizes": "5 to 10"
-              },
-              "basePoints": 8,
-              "keywords": [
-                "Orks",
-                "Infantry"
-              ]
-            }
-          ],
-          "prose": "5 to 10 Flash Gitz"
-        },
-        "slots": [],
-        "sections": [
-          {
-            "key": "unitComposition",
-            "prose": "<ul>\n<li>5 to 10 Flash Gitz</li>\n</ul>",
-            "clauses": []
-          },
-          {
-            "key": "standardWargear",
-            "prose": "<p>Each Flash Git is equipped with 1 Kombi-Shoota.</p>",
-            "clauses": [
-              {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Flash Git"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "wargear:kombi-shoota",
-                    "name": "Kombi-Shoota",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": null,
-                    "parts": [
-                      {
-                        "ref": "wargear:kombi-shoota",
-                        "name": "Kombi-Shoota",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          }
-        ]
-      },
-      "epicHero": false
+      "models": null
     },
     {
       "name": "Kommandos",
@@ -3638,7 +3447,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>5 to 10 Kommandos</li>\n<li>0 to 1 Kommando Nob</li>\n</ul>",
+            "prose": "<p>5 to 10 Kommandos</p>\n<p>0 to 1 Kommando Nob</p>",
             "clauses": []
           },
           {
@@ -3780,7 +3589,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>Any Kommando can replace its Slugga and Choppa with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"choppa#m-twin-linked\">Choppa</span></p>\n<p>Up to 3 Kommandos in the unit can replace their Slugga and Choppa with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna\">Burna</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-launcha\">Rokkit Launcha</span></p>\n<p>The Nob can replace its Slugga with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna-slugga\">Burna Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-slugga\">Rokkit Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stikbombz\">Stikbombz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"tankbustaz\">Tankbustaz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-stikz\">Smoke Stikz</span></p>\n<p class=\"lb-opt\">3x <span class=\"weapon-ref\" data-weapon=\"bombsquig#q3\">Bombsquig</span></p>",
+            "prose": "<p>Any Kommando can replace its Slugga and Choppa with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"choppa#q2\">Choppa</span></p>\n<p>Up to 3 Kommandos in the unit can replace their Slugga and Choppa with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna\">Burna</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-launcha\">Rokkit Launcha</span></p>\n<p>The Nob can replace its Slugga with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna-slugga\">Burna Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-slugga\">Rokkit Slugga</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kommando-shoota\">Kommando Shoota</span></p>\n<p>The unit can be equipped with up to 3x Bombsquig.</p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stikbombz\">Stikbombz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"tankbustaz\">Tankbustaz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-stikz\">Smoke Stikz</span></p>",
             "clauses": [
               {
                 "op": "replace",
@@ -3819,23 +3628,19 @@
                     ]
                   },
                   {
-                    "ref": "weapon:choppa#m-twin-linked",
+                    "ref": "weapon:choppa#q2",
                     "name": "Choppa",
                     "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [
-                      "twin-linked"
-                    ],
+                    "qty": 2,
+                    "modifiers": [],
                     "points": 4,
                     "parts": [
                       {
                         "ref": "weapon:choppa",
                         "name": "Choppa",
                         "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": [
-                          "twin-linked"
-                        ]
+                        "qty": 2,
+                        "modifiers": []
                       }
                     ]
                   }
@@ -3970,6 +3775,38 @@
               {
                 "op": "add",
                 "scope": {
+                  "who": "unitPool"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 3
+                },
+                "id": "wargearOptions-add-4",
+                "prose": "<p>The unit can be equipped with up to 3x Bombsquig.</p>",
+                "options": [
+                  {
+                    "ref": "weapon:bombsquig",
+                    "name": "Bombsquig",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 5,
+                    "parts": [
+                      {
+                        "ref": "weapon:bombsquig",
+                        "name": "Bombsquig",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
                   "who": "unit"
                 },
                 "replaces": null,
@@ -3977,7 +3814,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-5",
                 "prose": "<p>Every model in the unit can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -4027,23 +3864,6 @@
                         "name": "Smoke Stikz",
                         "kind": "weapon",
                         "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:bombsquig#q3",
-                    "name": "Bombsquig",
-                    "kind": "weapon",
-                    "qty": 3,
-                    "modifiers": [],
-                    "points": 15,
-                    "parts": [
-                      {
-                        "ref": "weapon:bombsquig",
-                        "name": "Bombsquig",
-                        "kind": "weapon",
-                        "qty": 3,
                         "modifiers": []
                       }
                     ]
@@ -4179,7 +3999,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>5 to 10 Stormboyz</li>\n<li>0 to 1 Nob</li>\n</ul>",
+            "prose": "<p>5 to 10 Stormboyz</p>\n<p>0 to 1 Nob</p>",
             "clauses": []
           },
           {
@@ -4650,7 +4470,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>2 to 6 Squighog Riderz</li>\n<li>0 to 1 Nob on Smashasquig</li>\n</ul>",
+            "prose": "<p>2 to 6 Squighog Riderz</p>\n<p>0 to 1 Nob on Smashasquig</p>",
             "clauses": []
           },
           {
@@ -4980,21 +4800,21 @@
           ],
           "prose": "2 to 6 Bikerz 0 to 1 Nob"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>2 to 6 Bikerz</li>\n<li>0 to 1 Nob</li>\n</ul>",
+            "prose": "<p>2 to 6 Bikerz</p>\n<p>0 to 1 Nob</p>",
             "clauses": []
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with 1 Big Shoota</p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"shoota#m-twin-linked\">Shoota</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -5003,6 +4823,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:big-shoota",
@@ -5018,6 +4841,27 @@
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:shoota#m-twin-linked",
+                    "name": "Shoota",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [
+                      "twin-linked"
+                    ],
+                    "points": 4,
+                    "parts": [
+                      {
+                        "ref": "weapon:shoota",
+                        "name": "Shoota",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": [
+                          "twin-linked"
+                        ]
                       }
                     ]
                   }
@@ -5265,7 +5109,9 @@
           ],
           "prose": "1 Trukk"
         },
-        "slots": [],
+        "slots": [
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -5274,12 +5120,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-launcha\">Rokkit Launcha</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna\">Burna</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Big Shoota</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -5288,6 +5132,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:big-shoota",
@@ -5305,31 +5152,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Big Shoota with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-launcha\">Rokkit Launcha</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"burna\">Burna</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wrekkin-ball\">Wrekkin Ball</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stikbombz\">Stikbombz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-stikz\">Smoke Stikz</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"ard-case\">'Ard Case</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"droppin-ramp\">Droppin' Ramp</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"grot-fixa\">Grot Fixa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"spikey-bitz\">Spikey Bitz</span></p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Big Shoota"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Big Shoota with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:rokkit-launcha",
                     "name": "Rokkit Launcha",
@@ -5365,7 +5188,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wrekkin-ball\">Wrekkin Ball</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"stikbombz\">Stikbombz</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-stikz\">Smoke Stikz</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"ard-case\">'Ard Case</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"droppin-ramp\">Droppin' Ramp</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"grot-fixa\">Grot Fixa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"spikey-bitz\">Spikey Bitz</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -5376,7 +5206,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-2",
+                "id": "wargearOptions-add-1",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -5782,7 +5612,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 4 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skorcha\">Skorcha</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-launcha\">Rokkit Launcha</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kustom-mega-blasta\">Kustom Mega-blasta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>",
+            "prose": "<p>This model must be equipped with 4 of the following Arm Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-shoota\">Big Shoota</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"skorcha\">Skorcha</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rokkit-launcha\">Rokkit Launcha</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kustom-mega-blasta\">Kustom Mega-blasta</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"killa-klaw\">Killa Klaw</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -5795,7 +5625,7 @@
                   "max": 4
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 4 of the following:</p>",
+                "prose": "<p>This model must be equipped with 4 of the following Arm Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:big-shoota",
@@ -6909,7 +6739,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with 6x Grot Blasta</p>\n<p>Every model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kannon\">Kannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"zzappa\">Zzappa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kustom-mega-kannon\">Kustom Mega-kannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-lobba\">Big Lobba</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smasha-gun\">Smasha Gun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"trakta-kannon\">Trakta Kannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bubblechukka\">Bubblechukka</span></p>",
+            "prose": "<p>Every model is equipped with 6x Grot Blasta</p>\n<p>Every model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kannon\">Kannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"zzappa\">Zzappa</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"kustom-mega-kannon\">Kustom Mega-kannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"big-lobba\">Big Lobba</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smasha-gun\">Smasha Gun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"trakta-kannon\">Trakta Kannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bubblechukka\">Bubblechukka</span></p>",
             "clauses": [
               {
                 "id": "standardWargear-fixed-1",
@@ -6954,7 +6784,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-2",
-                "prose": "<p>Every model must be equipped with 1 of the following:</p>",
+                "prose": "<p>Every model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:kannon",

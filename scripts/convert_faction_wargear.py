@@ -38,9 +38,9 @@ from convert_options import Catalog, resolve_option
 
 # ── Path configuration ────────────────────────────────────────────────────────
 
-_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FACTION_INDEX_DOCX = os.path.normpath(os.path.join(
-    _REPO, "..", "..", "Alt-Hammer 40,000 1st Edition - Faction Rules Index.docx"))
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import FACTION_INDEX_DOCX
 OUTPUT_DIR = "src/data/faction-wargear"
 PUBLIC_DIR = os.path.join("public", "data", "faction-wargear")  # client-fetched copy
 
@@ -419,7 +419,7 @@ def convert_faction_wargear(
 ):
     print("")
     print("=" * 60)
-    print("  Alt-Hammer -- Converting Faction Wargear Upgrades")
+    print("  Countermarch -- Converting Faction Wargear Upgrades")
     print("=" * 60)
     print(f"  Source:  {docx_path}")
     print(f"  Output:  {output_dir}")

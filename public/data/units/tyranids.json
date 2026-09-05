@@ -1906,7 +1906,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model must be equipped with 1 of the following Upper Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-talons\">Scything Talons</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"wings\">Wings</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bone-reaper#c-bone-reaper-and-lash-whips\">Bone Reaper and Lash Whips</span> and <span class=\"weapon-ref\" data-weapon=\"lash-whips\">Lash Whips</span></p>\n<p>This model must be equipped with 1 of the following Lower Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-talons\">Scything Talons</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bone-reaper#c-bone-reaper-and-lash-whips\">Bone Reaper and Lash Whips</span> and <span class=\"weapon-ref\" data-weapon=\"lash-whips\">Lash Whips</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"spinefists\">Spinefists</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"devourer\">Devourer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"deathspitter\">Deathspitter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"barbed-strangler\">Barbed Strangler</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"venom-cannon\">Venom Cannon</span></p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Upper Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-talons\">Scything Talons</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"wings\">Wings</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bone-reaper#c-bone-reaper-and-lash-whips\">Bone Reaper and Lash Whips</span> and <span class=\"weapon-ref\" data-weapon=\"lash-whips\">Lash Whips</span></p>\n<p>Every model must be equipped with 1 of the following Lower Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-talons\">Scything Talons</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"rending-claws\">Rending Claws</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bone-reaper#c-bone-reaper-and-lash-whips\">Bone Reaper and Lash Whips</span> and <span class=\"weapon-ref\" data-weapon=\"lash-whips\">Lash Whips</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"spinefists\">Spinefists</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"devourer\">Devourer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"deathspitter\">Deathspitter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"barbed-strangler\">Barbed Strangler</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"venom-cannon\">Venom Cannon</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -2020,7 +2020,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-2",
-                "prose": "<p>This model must be equipped with 1 of the following Lower Arm Bioweapons:</p>",
+                "prose": "<p>Every model must be equipped with 1 of the following Lower Arm Bioweapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:scything-talons",
@@ -4945,7 +4945,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 1 of the following Upper Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-talons\">Scything Talons</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"crusher-claws\">Crusher Claws</span></p>\n<p>This model must be equipped with 1 of the following Lower Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bio-plasmic-cannon\">Bio-plasmic Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"haruspex-maw\">Haruspex Maw</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bio-plasmic-cannon\">Bio-plasmic Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"haruspex-maw\">Haruspex Maw</span></p>\n<p>This model must be equipped with 1 of the following Arm Bioweapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scything-talons\">Scything Talons</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"crusher-claws\">Crusher Claws</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -4958,56 +4958,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 1 of the following Upper Arm Bioweapons:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:scything-talons",
-                    "name": "Scything Talons",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 6,
-                    "parts": [
-                      {
-                        "ref": "weapon:scything-talons",
-                        "name": "Scything Talons",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:crusher-claws",
-                    "name": "Crusher Claws",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 25,
-                    "parts": [
-                      {
-                        "ref": "weapon:crusher-claws",
-                        "name": "Crusher Claws",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "choose",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "id": "standardWargear-choose-2",
-                "prose": "<p>This model must be equipped with 1 of the following Lower Arm Bioweapons:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Bioweapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:bio-plasmic-cannon",
@@ -5037,6 +4988,55 @@
                       {
                         "ref": "weapon:haruspex-maw",
                         "name": "Haruspex Maw",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "choose",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Arm Bioweapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:scything-talons",
+                    "name": "Scything Talons",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:scything-talons",
+                        "name": "Scything Talons",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:crusher-claws",
+                    "name": "Crusher Claws",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 25,
+                    "parts": [
+                      {
+                        "ref": "weapon:crusher-claws",
+                        "name": "Crusher Claws",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -7283,6 +7283,7 @@
       "ap": "-2",
       "damage": "2",
       "keywords": [
+        "Extra Attacks",
         "Sustained Hits 1",
         "Devastating Wounds"
       ],

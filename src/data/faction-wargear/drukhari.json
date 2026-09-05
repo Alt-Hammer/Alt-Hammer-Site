@@ -155,7 +155,7 @@
             },
             "points": {
               "op": "delta",
-              "value": 15
+              "value": 12
             }
           }
         ]
@@ -240,7 +240,7 @@
             },
             "points": {
               "op": "delta",
-              "value": 20
+              "value": 15
             }
           }
         ]

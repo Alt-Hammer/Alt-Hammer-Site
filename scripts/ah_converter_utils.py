@@ -1,7 +1,7 @@
 """
 ah_converter_utils.py
 ─────────────────────
-Shared utilities for the Alt-Hammer document conversion pipeline.
+Shared utilities for the Countermarch document conversion pipeline.
 
 This module handles the core logic that all three conversion scripts share:
   - Detecting 'Keyword' and 'Action' character styles in python-docx runs

@@ -92,7 +92,10 @@
           ],
           "prose": "1 Canoness"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -101,12 +104,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"condemnor-boltgun\">Condemnor Boltgun</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Bolt Pistol</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -115,6 +116,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:bolt-pistol",
@@ -132,41 +136,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "specialAbilities",
-            "prose": "<p><strong>Faith through Deeds:</strong> While this model is on the battlefield, add 3 to your roll when generating Miracle Dice using the Acts of Faith Army Rule.</p>\n<p><strong>Leader of the Righteous:</strong> While this model is leading a unit, Critical Hits are scored on a 5+ for all models in that unit.</p>\n<p><strong>The Emperor's Grace:</strong> Once per battle, at any point during the Activation Phase, this model can use this ability. If it does, this model gains the <span class=\"keyword\" data-term=\"invulnerable-save-2\" data-type=\"keyword\">Invulnerable Save 2+</span> ability until the end of the Battle Round.</p>\n<p><strong>Retinue:</strong> A unit this model is leading can include 1 additional <span class=\"keyword\" data-term=\"adeptus-ministorum-character\" data-type=\"keyword\">Adeptus Ministorum Character</span> unit (excluding a Palatine) if that <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> unit is also able to Lead the unit being led by the Canoness.</p>",
-            "clauses": []
-          },
-          {
-            "key": "forceOrganization",
-            "prose": "<p>Your army can only include 1 Canoness for every 2,000 points.</p>",
-            "clauses": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Bolt Pistol with 1 of the following Ranged weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"condemnor-boltgun\">Condemnor Boltgun</span></p>\n<p>This model can be equipped with 1 of the following Melee weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-spear\">Power Spear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-halberd\">Power Halberd</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"artificer-armour\">Artificer Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-halo\">Iron Halo</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-surplice\">Iron Surplice</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"rod-of-office\">Rod of Office</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"jump-pack\">Jump Pack</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span></p>\n<p>Any weapon equipped by this model can be upgraded to Relic Weapon.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Bolt Pistol"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Bolt Pistol with 1 of the following Ranged weapons:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hand-flamer",
                     "name": "Hand Flamer",
@@ -253,7 +223,24 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "specialAbilities",
+            "prose": "<p><strong>Faith through Deeds:</strong> While this model is on the battlefield, add 3 to your roll when generating Miracle Dice using the Acts of Faith Army Rule.</p>\n<p><strong>Leader of the Righteous:</strong> While this model is leading a unit, Critical Hits are scored on a 5+ for all models in that unit.</p>\n<p><strong>The Emperor's Grace:</strong> Once per battle, at any point during the Activation Phase, this model can use this ability. When it does so, this model gains the <span class=\"keyword\" data-term=\"invulnerable-save-2\" data-type=\"keyword\">Invulnerable Save 2+</span> ability until the end of the Battle Round.</p>\n<p><strong>Retinue:</strong> A unit this model is leading can include 1 additional <span class=\"keyword\" data-term=\"adeptus-ministorum-character\" data-type=\"keyword\">Adeptus Ministorum Character</span> unit (excluding a Palatine) if that <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> unit is also able to Lead the unit being led by this model.</p>",
+            "clauses": []
+          },
+          {
+            "key": "forceOrganization",
+            "prose": "<p>Your army can only include 1 Canoness for every 2,000 points.</p>",
+            "clauses": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-spear\">Power Spear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-halberd\">Power Halberd</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"artificer-armour\">Artificer Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-halo\">Iron Halo</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-surplice\">Iron Surplice</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"rod-of-office\">Rod of Office</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"jump-pack\">Jump Pack</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span></p>\n<p>Any weapon equipped by this model can be upgraded to Relic Weapon.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -264,8 +251,9 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following Melee weapons:</p>",
+                "slot": "primary-melee",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:chainsword",
@@ -364,7 +352,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -468,6 +456,23 @@
                         "modifiers": []
                       }
                     ]
+                  },
+                  {
+                    "ref": "weapon:bolt-pistol",
+                    "name": "Bolt Pistol",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 2,
+                    "parts": [
+                      {
+                        "ref": "weapon:bolt-pistol",
+                        "name": "Bolt Pistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -481,7 +486,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -521,7 +526,7 @@
                 ]
               },
               {
-                "id": "wargearOptions-modifier-5",
+                "id": "wargearOptions-modifier-4",
                 "op": "modifier",
                 "prose": "<p>Any weapon equipped by this model can be upgraded to Relic Weapon.</p>",
                 "modifier": "Relic Weapon",
@@ -610,7 +615,10 @@
           ],
           "prose": "1 Palatine"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -619,12 +627,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"condemnor-boltgun\">Condemnor Boltgun</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Bolt Pistol</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -633,6 +639,9 @@
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:bolt-pistol",
@@ -650,36 +659,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "specialAbilities",
-            "prose": "<p><strong>Warrior Discipline</strong>: While this model is leading a unit, during you Command Phase, select 1 of the following to be in effect for this model and the unit it is leading until the end of the Battle Round:</p>\n<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"precision\" data-type=\"keyword\">Precision</span> ability when making either Ranged or Melee attacks (select 1)</li>\n<li>Add 1 to Attacks characteristics</li>\n<li>Add 1 to Weapons Skill characteristics</li>\n<li>Add 1 to Ballistics Skill characteristics</li>\n</ul>\n<p>Alternatively, you can attempt to make this ability Miraculous. To do so, roll a D6. On a 4+ this ability is considered Miraculous. When it is Miraculous, discard up to 3 Miracle Dice and select 1 of ability from the list above to be in effect for each Miracle Dice you discard.</p>\n<p><strong>Fury of the Righteous:</strong> Once per battle, this model can use this ability when it and a unit it is leading are Activated. When it does so, select either Ranged or Melee attacks as the subject of this ability and discard any number of available Miracle Dice. Those attacks then gain the <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability, where [X] is determined by the number of Miracle Dice discarded. For example, if you discard 2 Miracle Dice for this ability, then these attacks will gain <span class=\"keyword\" data-term=\"sustained-hits-2\" data-type=\"keyword\">Sustained Hits 2</span>. Torrent weapons instead add [X] to the number of attacks they make. Weapons that already have the <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability instead increase [X] by the number of Miracle Dice discarded.</p>\n<p><strong>Retinue:</strong> A unit this model is leading can include 1 additional <span class=\"keyword\" data-term=\"adeptus-ministorum-character\" data-type=\"keyword\">Adeptus Ministorum Character</span> unit (excluding a Canoness) if that <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> unit is also able to Lead the unit being led by the Palatine.</p>",
-            "clauses": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Bolt Pistol with 1 of the following Ranged weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"condemnor-boltgun\">Condemnor Boltgun</span></p>\n<p>This model can be equipped with 1 of the following Melee weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-spear\">Power Spear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-halberd\">Power Halberd</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"artificer-armour\">Artificer Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-halo\">Iron Halo</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-surplice\">Iron Surplice</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"rod-of-office\">Rod of Office</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"jump-pack\">Jump Pack</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span></p>\n<p>Any weapon equipped by this model can be upgraded to Relic Weapon.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Bolt Pistol"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Bolt Pistol with 1 of the following Ranged weapons:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hand-flamer",
                     "name": "Hand Flamer",
@@ -766,7 +746,19 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "specialAbilities",
+            "prose": "<p><strong>Warrior Discipline</strong>: While this model is leading a unit, during you Command Phase, select 1 of the following to be in effect for this model and the unit it is leading until the end of the Battle Round:</p>\n<ul>\n<li>Gain the <span class=\"keyword\" data-term=\"relentless\" data-type=\"keyword\">Relentless</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"unyielding\" data-type=\"keyword\">Unyielding</span> ability</li>\n<li>Gain the <span class=\"keyword\" data-term=\"precision\" data-type=\"keyword\">Precision</span> ability when making either Ranged or Melee attacks (select 1)</li>\n<li>Add 1 to Attacks characteristics</li>\n<li>Add 1 to Weapons Skill characteristics</li>\n<li>Add 1 to Ballistics Skill characteristics</li>\n</ul>\n<p>Alternatively, you can attempt to make this ability Miraculous. To do so, roll a D6. On a 4+ this ability is considered Miraculous. When it is Miraculous, discard up to 3 Miracle Dice and select 1 of ability from the list above to be in effect for each Miracle Dice you discard.</p>\n<p><strong>Fury of the Righteous:</strong> Once per battle, this model can use this ability when it and a unit it is leading are Activated. When it does so, select either Ranged or Melee attacks as the subject of this ability and discard any number of available Miracle Dice. Those attacks then gain the <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability, where [X] is determined by the number of Miracle Dice discarded. For example, if you discard 2 Miracle Dice for this ability, then these attacks will gain <span class=\"keyword\" data-term=\"sustained-hits-2\" data-type=\"keyword\">Sustained Hits 2</span>. Torrent weapons instead add [X] to the number of attacks they make. Weapons that already have the <span class=\"keyword\" data-term=\"sustained-hits-x\" data-type=\"keyword\">Sustained Hits [X]</span> ability instead increase [X] by the number of Miracle Dice discarded.</p>\n<p><strong>Retinue:</strong> A unit this model is leading can include 1 additional <span class=\"keyword\" data-term=\"adeptus-ministorum-character\" data-type=\"keyword\">Adeptus Ministorum Character</span> unit (excluding a Canoness) if that <span class=\"keyword\" data-term=\"character\" data-type=\"keyword\">Character</span> unit is also able to Lead the unit being led by this model.</p>",
+            "clauses": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-spear\">Power Spear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-halberd\">Power Halberd</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"artificer-armour\">Artificer Armour</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"iron-halo\">Iron Halo</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"jump-pack\">Jump Pack</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span></p>\n<p>Any weapon equipped by this model can be upgraded to Relic Weapon.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -777,8 +769,9 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following Melee weapons:</p>",
+                "slot": "primary-melee",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:chainsword",
@@ -877,7 +870,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -908,40 +901,6 @@
                       {
                         "ref": "wargear:iron-halo",
                         "name": "Iron Halo",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:iron-surplice",
-                    "name": "Iron Surplice",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:iron-surplice",
-                        "name": "Iron Surplice",
-                        "kind": "wargear",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "wargear:rod-of-office",
-                    "name": "Rod of Office",
-                    "kind": "wargear",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "wargear:rod-of-office",
-                        "name": "Rod of Office",
                         "kind": "wargear",
                         "qty": 1,
                         "modifiers": []
@@ -994,7 +953,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>This model can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -1034,7 +993,7 @@
                 ]
               },
               {
-                "id": "wargearOptions-modifier-5",
+                "id": "wargearOptions-modifier-4",
                 "op": "modifier",
                 "prose": "<p>Any weapon equipped by this model can be upgraded to Relic Weapon.</p>",
                 "modifier": "Relic Weapon",
@@ -2588,7 +2547,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Sister Superior</li>\n<li>4 to 14 Battle Sisters</li>\n</ul>",
+            "prose": "<p>1 Sister Superior</p>\n<p>4 to 14 Battle Sisters</p>",
             "clauses": []
           },
           {
@@ -2632,7 +2591,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>The Sister Superior can replace its Boltgun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"condemnor-boltgun\">Condemnor Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p>The Sister Superior can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p>For every 5 models, 1 Battle Sister can replace its Boltgun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>Every model in the unit can be equipped with any of the following additional wargear:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p>1 Battle Sister equipped with Standard Wargear can be equipped with a Simulacrum Imperialis.</p>\n<p>The unit can be equipped with up to 2 Cherubin.</p>",
+            "prose": "<p>The Sister Superior can replace its Boltgun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"condemnor-boltgun\">Condemnor Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p>The Sister Superior can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p>For every 5 models, 1 Battle Sister can replace its Boltgun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p>1 Battle Sister equipped with Standard Wargear can be equipped with a Simulacrum Imperialis.</p>\n<p>The unit can be equipped with up to 2 Cherubin.</p>",
             "clauses": [
               {
                 "op": "replace",
@@ -2941,7 +2900,7 @@
                   "max": null
                 },
                 "id": "wargearOptions-add-4",
-                "prose": "<p>Every model in the unit can be equipped with any of the following additional wargear:</p>",
+                "prose": "<p>Every model in the unit can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:bolt-pistol",
@@ -3192,29 +3151,35 @@
           ],
           "prose": "1 Sister Superior 4 to 19 Novitiates"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee",
+          "primary-ranged"
+        ],
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Sister Superior</li>\n<li>4 to 19 Novitiates</li>\n</ul>",
+            "prose": "<p>1 Sister Superior</p>\n<p>4 to 19 Novitiates</p>",
             "clauses": []
           },
           {
             "key": "standardWargear",
-            "prose": "<p>The Sister Superior is equipped with 1 Boltgun.</p>\n<p>Every Novitiate is equipped with 1 Autogun.</p>",
+            "prose": "<p>The Sister Superior must be equipped with 1 of the following Primary Ranged Weapons</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p>Every Novitiate must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol#c-1x-autopistol-and-1x-improvised-melee-relic\">1x Autopistol and 1x Improvised Melee Relic</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic\">Improvised Melee Relic</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
-                  "who": "each"
+                  "who": "count",
+                  "count": 1,
+                  "modelType": "Sister Superior"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 1,
                   "max": 1
                 },
+                "slot": "primary-ranged",
+                "id": "standardWargear-choose-1",
+                "prose": "<p>The Sister Superior must be equipped with 1 of the following Primary Ranged Weapons</p>",
                 "options": [
                   {
                     "ref": "weapon:boltgun",
@@ -3232,66 +3197,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Novitiate"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:autogun",
-                    "name": "Autogun",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 2,
-                    "parts": [
-                      {
-                        "ref": "weapon:autogun",
-                        "name": "Autogun",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>The Sister Superior can replace its Boltgun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p>The Sister Superior can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p>Every Novitiate can replace its Autogun with 1 Autopistol and 1 Improvised Melee Relic.</p>\n<p>For every 5 models, 1 Novitiate can replace its Autogun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"neural-whips\">Neural Whips</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"penitent-eviscerator\">Penitent Eviscerator</span></p>\n<p>Every model in the unit can be equipped with Frag Grenades.</p>\n<p>1 Novitiate can replace its Autogun with 1 Autopistol and a Simulacrum Imperialis.</p>\n<p>1 Novitiate can replace its Autogun with 1 Autopistol, 1 Chirurgeons Tools, and 1 Medi-kit.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "count",
-                  "count": 1,
-                  "modelType": "Sister Superior"
-                },
-                "replaces": {
-                  "weapon": "Boltgun"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>The Sister Superior can replace its Boltgun with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:bolt-pistol",
                     "name": "Bolt Pistol",
@@ -3380,6 +3286,81 @@
                 ]
               },
               {
+                "op": "choose",
+                "scope": {
+                  "who": "each",
+                  "modelType": "Novitiate"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Every Novitiate must be equipped with 1 of the following Primary Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:autogun",
+                    "name": "Autogun",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 2,
+                    "parts": [
+                      {
+                        "ref": "weapon:autogun",
+                        "name": "Autogun",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:autopistol#c-1x-autopistol-and-1x-improvised-melee-relic",
+                    "name": "1x Autopistol and 1x Improvised Melee Relic",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 2,
+                    "parts": [
+                      {
+                        "ref": "weapon:autopistol",
+                        "name": "Autopistol",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      },
+                      {
+                        "text": " and "
+                      },
+                      {
+                        "ref": "weapon:improvised-melee-relic",
+                        "name": "Improvised Melee Relic",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ],
+                    "and": [
+                      {
+                        "ref": "weapon:improvised-melee-relic",
+                        "name": "Improvised Melee Relic",
+                        "kind": "weapon",
+                        "points": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>The Sister Superior can be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p>For every 5 models, 1 Novitiate can replace its Primary Weapon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"neural-whips\">Neural Whips</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"penitent-eviscerator\">Penitent Eviscerator</span></p>\n<p>1 Novitiate can replace its Primary Weapon with 1 Autopistol and a Simulacrum Imperialis.</p>\n<p>1 Novitiate can replace its Primary Weapon with 1 Autopistol, 1 Chirurgeons Tools, and 1 Medi-kit.</p>\n<p>Every model in the unit can be equipped with Frag Grenades.</p>",
+            "clauses": [
+              {
                 "op": "add",
                 "scope": {
                   "who": "count",
@@ -3391,8 +3372,9 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>The Sister Superior can be equipped with 1 of the following:</p>",
+                "slot": "primary-melee",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>The Sister Superior can be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:chainsword",
@@ -3450,59 +3432,6 @@
               {
                 "op": "replace",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Novitiate"
-                },
-                "replaces": {
-                  "weapon": "Autogun"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-3",
-                "prose": "<p>Every Novitiate can replace its Autogun with 1 Autopistol and 1 Improvised Melee Relic.</p>",
-                "options": [
-                  {
-                    "ref": "weapon:autopistol#c-1-autopistol-and-1-improvised-melee-relic",
-                    "name": "1 Autopistol and 1 Improvised Melee Relic",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 2,
-                    "parts": [
-                      {
-                        "ref": "weapon:autopistol",
-                        "name": "Autopistol",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      },
-                      {
-                        "text": " and "
-                      },
-                      {
-                        "ref": "weapon:improvised-melee-relic",
-                        "name": "Improvised Melee Relic",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ],
-                    "and": [
-                      {
-                        "ref": "weapon:improvised-melee-relic",
-                        "name": "Improvised Melee Relic",
-                        "kind": "weapon",
-                        "points": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "op": "replace",
-                "scope": {
                   "who": "ratio",
                   "modelType": "Novitiate",
                   "ratio": {
@@ -3511,14 +3440,14 @@
                   }
                 },
                 "replaces": {
-                  "weapon": "Autogun"
+                  "weapon": "Primary Weapon"
                 },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-4",
-                "prose": "<p>For every 5 models, 1 Novitiate can replace its Autogun with 1 of the following:</p>",
+                "id": "wargearOptions-replace-2",
+                "prose": "<p>For every 5 models, 1 Novitiate can replace its Primary Weapon with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -3574,38 +3503,6 @@
                 ]
               },
               {
-                "op": "add",
-                "scope": {
-                  "who": "unit"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-5",
-                "prose": "<p>Every model in the unit can be equipped with Frag Grenades.</p>",
-                "options": [
-                  {
-                    "ref": "weapon:frag-grenades",
-                    "name": "Frag Grenades",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 1,
-                    "parts": [
-                      {
-                        "ref": "weapon:frag-grenades",
-                        "name": "Frag Grenades",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
                 "op": "replace",
                 "scope": {
                   "who": "count",
@@ -3613,14 +3510,14 @@
                   "modelType": "Novitiate"
                 },
                 "replaces": {
-                  "weapon": "Autogun"
+                  "weapon": "Primary Weapon"
                 },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-6",
-                "prose": "<p>1 Novitiate can replace its Autogun with 1 Autopistol and a Simulacrum Imperialis.</p>",
+                "id": "wargearOptions-replace-3",
+                "prose": "<p>1 Novitiate can replace its Primary Weapon with 1 Autopistol and a Simulacrum Imperialis.</p>",
                 "options": [
                   {
                     "ref": "weapon:autopistol#c-1-autopistol-and-a-simulacrum-imperialis",
@@ -3667,14 +3564,14 @@
                   "modelType": "Novitiate"
                 },
                 "replaces": {
-                  "weapon": "Autogun"
+                  "weapon": "Primary Weapon"
                 },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-7",
-                "prose": "<p>1 Novitiate can replace its Autogun with 1 Autopistol, 1 Chirurgeons Tools, and 1 Medi-kit.</p>",
+                "id": "wargearOptions-replace-4",
+                "prose": "<p>1 Novitiate can replace its Primary Weapon with 1 Autopistol, 1 Chirurgeons Tools, and 1 Medi-kit.</p>",
                 "options": [
                   {
                     "ref": "weapon:autopistol#c-1-autopistol-1-chirurgeons-tools-and-1-medi-kit",
@@ -3724,6 +3621,38 @@
                         "name": "Medi-kit",
                         "kind": "wargear",
                         "points": 25
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "scope": {
+                  "who": "unit"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 0,
+                  "max": 1
+                },
+                "id": "wargearOptions-add-5",
+                "prose": "<p>Every model in the unit can be equipped with Frag Grenades.</p>",
+                "options": [
+                  {
+                    "ref": "weapon:frag-grenades",
+                    "name": "Frag Grenades",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 1,
+                    "parts": [
+                      {
+                        "ref": "weapon:frag-grenades",
+                        "name": "Frag Grenades",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
                       }
                     ]
                   }
@@ -3805,12 +3734,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every Frateris Militiaman is equipped with 1 Autogun.</p>",
+            "prose": "<p>Every Frateris Militiaman must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autogun\">Autogun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shotgun\">Shotgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol#c-1x-autopistol-and-1x-improvised-melee-relic\">1x Autopistol and 1x Improvised Melee Relic</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic\">Improvised Melee Relic</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer#c-1x-hand-flamer-and-1x-improvised-melee-relic\">1x Hand Flamer and 1x Improvised Melee Relic</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic\">Improvised Melee Relic</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic#m-twin-linked\">Improvised Melee Relic</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each",
                   "modelType": "Frateris Militiaman"
@@ -3820,6 +3747,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every Frateris Militiaman must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:autogun",
@@ -3837,32 +3766,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any Frateris Militiaman can replace its Autogun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shotgun\">Shotgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"autopistol#c-1x-autopistol-and-1x-improvised-melee-relic\">1x Autopistol and 1x Improvised Melee Relic</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic\">Improvised Melee Relic</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer#c-1x-hand-flamer-and-1x-improvised-melee-relic\">1x Hand Flamer and 1x Improvised Melee Relic</span> and <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic\">Improvised Melee Relic</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"improvised-melee-relic#m-twin-linked\">Improvised Melee Relic</span></p>\n<p>For every 5 models, 1 Frateris Militiaman can replace its Autogun with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"penitent-eviscerator\">Penitent Eviscerator</span></p>\n<p>1 Frateris Militiaman can replace its Autogun with 1x Autopistol and a Simulacrum Imperialis.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each",
-                  "modelType": "Frateris Militiaman"
-                },
-                "replaces": {
-                  "weapon": "Autogun"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any Frateris Militiaman can replace its Autogun with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:shotgun",
                     "name": "Shotgun",
@@ -3972,7 +3876,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>For every 5 models, 1 Frateris Militiaman can replace its Primary Weapon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"grenade-launcher\">Grenade Launcher</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"penitent-eviscerator\">Penitent Eviscerator</span></p>\n<p>1 Frateris Militiaman can replace its Primary Weapon with 1x Autopistol and a Simulacrum Imperialis.</p>",
+            "clauses": [
               {
                 "op": "replace",
                 "scope": {
@@ -3984,14 +3895,14 @@
                   }
                 },
                 "replaces": {
-                  "weapon": "Autogun"
+                  "weapon": "Primary Weapon"
                 },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-2",
-                "prose": "<p>For every 5 models, 1 Frateris Militiaman can replace its Autogun with 1 of the following:</p>",
+                "id": "wargearOptions-replace-1",
+                "prose": "<p>For every 5 models, 1 Frateris Militiaman can replace its Primary Weapon with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:flamer",
@@ -4054,14 +3965,14 @@
                   "modelType": "Frateris Militiaman"
                 },
                 "replaces": {
-                  "weapon": "Autogun"
+                  "weapon": "Primary Weapon"
                 },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-replace-3",
-                "prose": "<p>1 Frateris Militiaman can replace its Autogun with 1x Autopistol and a Simulacrum Imperialis.</p>",
+                "id": "wargearOptions-replace-2",
+                "prose": "<p>1 Frateris Militiaman can replace its Primary Weapon with 1x Autopistol and a Simulacrum Imperialis.</p>",
                 "options": [
                   {
                     "ref": "weapon:autopistol#c-1x-autopistol-and-a-simulacrum-imperialis",
@@ -4203,7 +4114,7 @@
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 Sister Superior</li>\n<li>4 to 9 Dominions</li>\n</ul>",
+            "prose": "<p>1 Sister Superior</p>\n<p>4 to 9 Dominions</p>",
             "clauses": []
           },
           {
@@ -4745,7 +4656,9 @@
           ],
           "prose": "2 to 5 Celestians"
         },
-        "slots": [],
+        "slots": [
+          "secondary"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -4754,12 +4667,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model is equipped with 1 Bolt Pistol.</p>",
+            "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bolt-pistol\">Bolt Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -4768,6 +4679,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>Every model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:bolt-pistol",
@@ -4785,31 +4698,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can replace their Bolt Pistol with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hand-flamer\">Hand Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"melta-pistol\">Melta Pistol</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"plasma-pistol\">Plasma Pistol</span></p>\n<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-spear\">Power Spear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-halberd\">Power Halberd</span></p>\n<p>Up to 2 models can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>Any model whose only Ranged weapon includes the Pistol keyword can be equipped with a Storm Shield.</p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span></p>\n<p>Every model in the unit can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"jump-pack\">Jump Pack</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span></p>\n<p>1 Celestian equipped with a Bolt Pistol can be equipped with a Simulacrum Imperialis.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Bolt Pistol"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>Any model can replace their Bolt Pistol with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hand-flamer",
                     "name": "Hand Flamer",
@@ -4862,7 +4751,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>Any model can be equipped with 1 of the following Secondary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"chainsword\">Chainsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-sword\">Power Sword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-mace\">Power Mace</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-spear\">Power Spear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"power-halberd\">Power Halberd</span></p>\n<p>Up to 2 models can replace their Primary Weapons with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"flamer\">Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"meltagun\">Meltagun</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"combi-bolter\">Combi-Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>Any model whose only Ranged weapon includes the Pistol keyword can be equipped with a Storm Shield.</p>\n<p>Every model in the unit can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"frag-grenades\">Frag Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"krak-grenades\">Krak Grenades</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"smoke-grenades\">Smoke Grenades</span></p>\n<p>Every model in the unit can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"jump-pack\">Jump Pack</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"paragon-warsuit\">Paragon Warsuit</span></p>\n<p>1 Celestian equipped with Standard Wargear can be equipped with a Simulacrum Imperialis.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -4873,8 +4769,9 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
+                "slot": "secondary",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>Any model can be equipped with 1 of the following Secondary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:boltgun",
@@ -4981,19 +4878,21 @@
                 ]
               },
               {
-                "op": "add",
+                "op": "replace",
                 "scope": {
                   "who": "count",
                   "count": 2,
                   "modelType": "models"
                 },
-                "replaces": null,
+                "replaces": {
+                  "weapon": "Primary Weapons"
+                },
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>Up to 2 models can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-replace-2",
+                "prose": "<p>Up to 2 models can replace their Primary Weapons with 1 of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -5127,7 +5026,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-4",
+                "id": "wargearOptions-add-3",
                 "prose": "<p>Any model whose only Ranged weapon includes the Pistol keyword can be equipped with a Storm Shield.</p>",
                 "options": [
                   {
@@ -5159,7 +5058,7 @@
                   "min": 0,
                   "max": null
                 },
-                "id": "wargearOptions-add-5",
+                "id": "wargearOptions-add-4",
                 "prose": "<p>Every model in the unit can be equipped with any of the following:</p>",
                 "options": [
                   {
@@ -5225,7 +5124,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-6",
+                "id": "wargearOptions-add-5",
                 "prose": "<p>Every model in the unit can be equipped with 1 of the following:</p>",
                 "options": [
                   {
@@ -5269,15 +5168,15 @@
                 "scope": {
                   "who": "count",
                   "count": 1,
-                  "modelType": "Celestian equipped with a Bolt Pistol"
+                  "modelType": "Celestian equipped with Standard Wargear"
                 },
                 "replaces": null,
                 "pick": {
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-7",
-                "prose": "<p>1 Celestian equipped with a Bolt Pistol can be equipped with a Simulacrum Imperialis.</p>",
+                "id": "wargearOptions-add-6",
+                "prose": "<p>1 Celestian equipped with Standard Wargear can be equipped with a Simulacrum Imperialis.</p>",
                 "options": [
                   {
                     "ref": "wargear:simulacrum-imperialis",
@@ -6029,7 +5928,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Every model must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p>Every model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"penitent-flail#m-twin-linked\">Penitent Flail</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"penitent-buzz-saw#m-twin-linked\">Penitent Buzz Saw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"penitent-flail#c-1x-penitent-flail-and-1x-penitent-buzz-saw\">1x Penitent Flail and 1x Penitent Buzz Saw</span> and <span class=\"weapon-ref\" data-weapon=\"penitent-buzz-saw\">Penitent Buzz Saw</span></p>",
+            "prose": "<p>Every model must be equipped with 2 of the following Ranged Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p>Every model must be equipped with 1 of the following Melee Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"penitent-flail#m-twin-linked\">Penitent Flail</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"penitent-buzz-saw#m-twin-linked\">Penitent Buzz Saw</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"penitent-flail#c-1x-penitent-flail-and-1x-penitent-buzz-saw\">1x Penitent Flail and 1x Penitent Buzz Saw</span> and <span class=\"weapon-ref\" data-weapon=\"penitent-buzz-saw\">Penitent Buzz Saw</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -6042,7 +5941,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Every model must be equipped with 2 of the following:</p>",
+                "prose": "<p>Every model must be equipped with 2 of the following Ranged Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-flamer",
@@ -6091,7 +5990,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-2",
-                "prose": "<p>Every model must be equipped with 1 of the following:</p>",
+                "prose": "<p>Every model must be equipped with 1 of the following Melee Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:penitent-flail#m-twin-linked",
@@ -6291,12 +6190,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"battle-cannon\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"battle-cannon\">Battle Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p>This model must be equipped with 1 of the following Hull Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-bolter\">Heavy Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Battle Cannon</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -6305,6 +6202,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:battle-cannon",
@@ -6322,63 +6221,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "<p>Heavy Bolter</p>",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 1,
-                  "max": 1
-                },
-                "options": [
-                  {
-                    "ref": "weapon:heavy-bolter",
-                    "name": "Heavy Bolter",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 12,
-                    "parts": [
-                      {
-                        "ref": "weapon:heavy-bolter",
-                        "name": "Heavy Bolter",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Battle Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"exterminator-autocannon\">Exterminator Autocannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Storm Bolter.</p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Battle Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Battle Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:exterminator-autocannon",
                     "name": "Exterminator Autocannon",
@@ -6441,6 +6284,79 @@
                 ]
               },
               {
+                "op": "choose",
+                "scope": {
+                  "who": "each"
+                },
+                "replaces": null,
+                "pick": {
+                  "min": 1,
+                  "max": 1
+                },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>This model must be equipped with 1 of the following Hull Weapons:</p>",
+                "options": [
+                  {
+                    "ref": "weapon:heavy-bolter",
+                    "name": "Heavy Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 12,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-bolter",
+                        "name": "Heavy Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:heavy-flamer",
+                    "name": "Heavy Flamer",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 15,
+                    "parts": [
+                      {
+                        "ref": "weapon:heavy-flamer",
+                        "name": "Heavy Flamer",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:multi-melta",
+                    "name": "Multi-melta",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 22,
+                    "parts": [
+                      {
+                        "ref": "weapon:multi-melta",
+                        "name": "Multi-melta",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-bolter#q2\">Heavy Bolter</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"heavy-flamer#q2\">Heavy Flamer</span></p>\n<p class=\"lb-opt\">2x <span class=\"weapon-ref\" data-weapon=\"multi-melta#q2\">Multi-melta</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
+            "clauses": [
+              {
                 "op": "add",
                 "scope": {
                   "who": "each"
@@ -6450,8 +6366,8 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 1 of the following Sponson Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:heavy-bolter#q2",
@@ -6514,10 +6430,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with 1 Storm Bolter.</p>",
+                "id": "wargearOptions-add-2",
+                "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -6535,22 +6451,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-4",
-                "prose": "<p>This model can be equipped with 1 Hunter-killer Missile.</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:hunter-killer-missile",
                     "name": "Hunter-killer Missile",
@@ -6567,22 +6468,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-5",
-                "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:smoke-launchers",
                     "name": "Smoke Launchers",
@@ -7298,12 +7184,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>",
+            "prose": "<p>This model must be equipped with 1 of the following Pintle Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "<p>Storm Bolter</p>",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -7312,6 +7196,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Pintle Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:storm-bolter",
@@ -7329,31 +7215,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Storm Bolter with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-flamer\">Heavy Flamer</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"multi-melta\">Multi-melta</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Storm Bolter"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Storm Bolter with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:heavy-flamer",
                     "name": "Heavy Flamer",
@@ -7389,7 +7251,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"storm-bolter\">Storm Bolter</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -7398,11 +7267,28 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 Hunter-killer Missile.</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
+                  {
+                    "ref": "weapon:storm-bolter",
+                    "name": "Storm Bolter",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 6,
+                    "parts": [
+                      {
+                        "ref": "weapon:storm-bolter",
+                        "name": "Storm Bolter",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
                   {
                     "ref": "weapon:hunter-killer-missile",
                     "name": "Hunter-killer Missile",
@@ -7419,22 +7305,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:smoke-launchers",
                     "name": "Smoke Launchers",
@@ -7611,7 +7482,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p>This model can be equipped with 1 Hunter-killer Missile.</p>\n<p>This model can be equipped with Smoke Launchers.</p>",
+            "prose": "<p>This model can replace its Twin-linked Heavy Bolter with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"inferno-cannon#m-twin-linked\">Inferno Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"melta-cannon#m-twin-linked\">Melta Cannon</span></p>\n<p>This model can be equipped with any of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"hunter-killer-missile\">Hunter-killer Missile</span></p>\n<p class=\"lb-opt\"><span class=\"wargear-ref\" data-wargear=\"smoke-launchers\">Smoke Launchers</span></p>",
             "clauses": [
               {
                 "op": "replace",
@@ -7680,10 +7551,10 @@
                 "replaces": null,
                 "pick": {
                   "min": 0,
-                  "max": 1
+                  "max": null
                 },
                 "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 1 Hunter-killer Missile.</p>",
+                "prose": "<p>This model can be equipped with any of the following:</p>",
                 "options": [
                   {
                     "ref": "weapon:hunter-killer-missile",
@@ -7701,22 +7572,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-3",
-                "prose": "<p>This model can be equipped with Smoke Launchers.</p>",
-                "options": [
+                  },
                   {
                     "ref": "wargear:smoke-launchers",
                     "name": "Smoke Launchers",

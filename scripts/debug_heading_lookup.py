@@ -6,7 +6,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from extract_objectives import paragraph_heading_level, find_section_by_heading
 from extract_stratagems import find_section_by_heading as find_section_by_heading_strat
 
-doc_path = Path(r'C:/Users/alexc/OneDrive/04 Documents/Warhammer 40k/Alt-Hammer Standalone/Alt-Hammer 40,000 1st Edition - Core Rules.docx')
+from source_paths import CORE_RULES_DOCX
+
+doc_path = Path(CORE_RULES_DOCX)
 doc = Document(doc_path)
 
 parent = find_section_by_heading(doc, 'Generating a Battle')

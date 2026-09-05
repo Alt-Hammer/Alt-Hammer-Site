@@ -40,7 +40,7 @@ const allianceMeta = ALLIANCES.find((item) => item.id === faction.alliance) ?? {
 };
 
 const pageTitle = faction.title;
-const pageDescription = faction.description || `${faction.title} faction rules and unit profiles for Alt-Hammer 40,000.`;
+const pageDescription = faction.description || `${faction.title} faction rules and unit profiles for Countermarch 40,000.`;
 
 const unitMapJson = JSON.stringify(unitMap);
 const weapons = Array.isArray(unitData?.weapons) ? unitData.weapons : [];
@@ -72,9 +72,9 @@ const wargearMapJson = JSON.stringify(
         </p>
         <h1 class="faction-sticky-title">{pageTitle}</h1>
       </div>
-      <span class={`badge ${faction.status === 'coming-soon' ? 'badge-wip' : 'badge-complete'}`}>
-        {faction.status === 'coming-soon' ? 'Coming Soon' : 'Active'}
-      </span>
+      {faction.status === 'coming-soon' && (
+        <span class="badge badge-wip">Coming Soon</span>
+      )}
     </div>
     <nav class="faction-section-buttons" aria-label="Faction sections">
       <a href="#army-rules" class="faction-section-btn">Army Rules</a>

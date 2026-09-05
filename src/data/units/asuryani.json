@@ -228,7 +228,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -545,7 +545,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 17,
                     "parts": [
                       {
                         "ref": "wargear:jetbike",
@@ -942,7 +942,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -1259,7 +1259,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 17,
                     "parts": [
                       {
                         "ref": "wargear:jetbike",
@@ -1753,7 +1753,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 17,
                     "parts": [
                       {
                         "ref": "wargear:jetbike",
@@ -2183,7 +2183,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 30,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -3112,7 +3112,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -5133,7 +5133,7 @@
                     "kind": "wargear",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 17,
                     "parts": [
                       {
                         "ref": "wargear:jetbike",
@@ -5641,7 +5641,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -5993,7 +5993,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -6105,7 +6105,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"scatter-laser#m-twin-linked\">Scatter Laser</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"shuriken-cannon#m-twin-linked\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"star-cannon#m-twin-linked\">Star Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"bright-lance#m-twin-linked\">Bright Lance</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-twin-linked\">Missile Launcher</span></p>\n<p>This model is equipped with 1x Twin-linked Shuriken Catapult</p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"scatter-laser#m-twin-linked\">Scatter Laser</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"shuriken-cannon#m-twin-linked\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"star-cannon#m-twin-linked\">Star Cannon</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"bright-lance#m-twin-linked\">Bright Lance</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"missile-launcher#m-twin-linked\">Missile Launcher</span></p>\n<p>This model is equipped with 1x Twin-linked Shuriken Catapult</p>",
             "clauses": [
               {
                 "op": "choose",
@@ -6118,7 +6118,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:scatter-laser#m-twin-linked",
@@ -6149,7 +6149,7 @@
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 40,
+                    "points": 30,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -6191,7 +6191,7 @@
                     "modifiers": [
                       "twin-linked"
                     ],
-                    "points": 60,
+                    "points": 50,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -6291,7 +6291,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -6384,20 +6384,20 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
+            "prose": "<p>Each model can be equipped with up to 2 of the following Shoulder Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
             "clauses": [
               {
-                "op": "choose",
+                "op": "add",
                 "scope": {
-                  "who": "each"
+                  "who": "unit"
                 },
                 "replaces": null,
                 "pick": {
-                  "min": 1,
-                  "max": 1
+                  "min": 0,
+                  "max": 2
                 },
-                "id": "standardWargear-choose-1",
-                "prose": "<p>Each model must be equipped with 1 of the following:</p>",
+                "id": "standardWargear-add-1",
+                "prose": "<p>Each model can be equipped with up to 2 of the following Shoulder Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:scatter-laser",
@@ -6419,119 +6419,12 @@
                   {
                     "ref": "weapon:shuriken-cannon",
                     "name": "Shuriken Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
-                        "ref": "weapon:shuriken-cannon",
-                        "name": "Shuriken Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:star-cannon",
-                    "name": "Star Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 35,
-                    "parts": [
-                      {
-                        "ref": "weapon:star-cannon",
-                        "name": "Star Cannon",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:bright-lance",
-                    "name": "Bright Lance",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 30,
-                    "parts": [
-                      {
-                        "ref": "weapon:bright-lance",
-                        "name": "Bright Lance",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:missile-launcher",
-                    "name": "Missile Launcher",
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
                     "points": 15,
                     "parts": [
                       {
-                        "ref": "weapon:missile-launcher",
-                        "name": "Missile Launcher",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>Any model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
-            "clauses": [
-              {
-                "op": "add",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": null,
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-add-1",
-                "prose": "<p>Any model can be equipped with 1 of the following:</p>",
-                "options": [
-                  {
-                    "ref": "weapon:scatter-laser",
-                    "name": "Scatter Laser",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 10,
-                    "parts": [
-                      {
-                        "ref": "weapon:scatter-laser",
-                        "name": "Scatter Laser",
-                        "kind": "weapon",
-                        "qty": 1,
-                        "modifiers": []
-                      }
-                    ]
-                  },
-                  {
-                    "ref": "weapon:shuriken-cannon",
-                    "name": "Shuriken Cannon",
-                    "kind": "weapon",
-                    "qty": 1,
-                    "modifiers": [],
-                    "points": 20,
-                    "parts": [
-                      {
                         "ref": "weapon:shuriken-cannon",
                         "name": "Shuriken Cannon",
                         "kind": "weapon",
@@ -6563,7 +6456,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 30,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -6664,7 +6557,9 @@
           ],
           "prose": "1 Wraithlord"
         },
-        "slots": [],
+        "slots": [
+          "primary-melee"
+        ],
         "sections": [
           {
             "key": "unitComposition",
@@ -6673,7 +6568,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-catapult\">Shuriken Catapult</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dragons-breath\">Dragon's Breath</span></p>",
+            "prose": "<p>This model must be equipped with 2 of the following Wrist Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-catapult\">Shuriken Catapult</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"dragons-breath\">Dragon's Breath</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -6686,7 +6581,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 2 of the following:</p>",
+                "prose": "<p>This model must be equipped with 2 of the following Wrist Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:shuriken-catapult",
@@ -6729,7 +6624,7 @@
           },
           {
             "key": "wargearOptions",
-            "prose": "<p>This model can be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithsword\">Wraithsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithglaive\">Wraithglaive</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithspear\">Wraithspear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithaxe\">Wraithaxe</span></p>\n<p>This model can be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
+            "prose": "<p>This model can be equipped with 1 of the following Primary Melee Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithsword\">Wraithsword</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithglaive\">Wraithglaive</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithspear\">Wraithspear</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithaxe\">Wraithaxe</span></p>\n<p>This model can be equipped with 2 of the following Shoulder Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
             "clauses": [
               {
                 "op": "add",
@@ -6741,8 +6636,9 @@
                   "min": 0,
                   "max": 1
                 },
+                "slot": "primary-melee",
                 "id": "wargearOptions-add-1",
-                "prose": "<p>This model can be equipped with 1 of the following:</p>",
+                "prose": "<p>This model can be equipped with 1 of the following Primary Melee Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:wraithsword",
@@ -6825,7 +6721,7 @@
                   "max": 2
                 },
                 "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 2 of the following:</p>",
+                "prose": "<p>This model can be equipped with 2 of the following Shoulder Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:scatter-laser",
@@ -6850,7 +6746,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -6884,7 +6780,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 30,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -6996,12 +6892,10 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model is equipped with 1 Sun Cannon.</p>",
+            "prose": "<p>This model must be equipped with 1 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"sun-cannon\">Sun Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-wraithcannon\">Heavy Wraithcannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithglaive\">Wraithglaive</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-wraithcannon#m-twin-linked\">Heavy Wraithcannon</span></p>",
             "clauses": [
               {
-                "id": "standardWargear-fixed-1",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
                   "who": "each"
                 },
@@ -7010,6 +6904,8 @@
                   "min": 1,
                   "max": 1
                 },
+                "id": "standardWargear-choose-1",
+                "prose": "<p>This model must be equipped with 1 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:sun-cannon",
@@ -7027,31 +6923,7 @@
                         "modifiers": []
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "notes": []
-          },
-          {
-            "key": "wargearOptions",
-            "prose": "<p>This model can replace its Sun Cannon with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"heavy-wraithcannon\">Heavy Wraithcannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"wraithglaive\">Wraithglaive</span></p>\n<p class=\"lb-opt\">Twin-linked <span class=\"weapon-ref\" data-weapon=\"heavy-wraithcannon#m-twin-linked\">Heavy Wraithcannon</span></p>\n<p>This model can be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>\n<p>This model can be equipped with a Scattershield.</p>",
-            "clauses": [
-              {
-                "op": "replace",
-                "scope": {
-                  "who": "each"
-                },
-                "replaces": {
-                  "weapon": "Sun Cannon"
-                },
-                "pick": {
-                  "min": 0,
-                  "max": 1
-                },
-                "id": "wargearOptions-replace-1",
-                "prose": "<p>This model can replace its Sun Cannon with 1 of the following:</p>",
-                "options": [
+                  },
                   {
                     "ref": "weapon:heavy-wraithcannon",
                     "name": "Heavy Wraithcannon",
@@ -7108,7 +6980,14 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "notes": []
+          },
+          {
+            "key": "wargearOptions",
+            "prose": "<p>This model can be equipped with 2 of the following Shoulder Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>\n<p>This model can be equipped with a Scattershield.</p>",
+            "clauses": [
               {
                 "op": "add",
                 "scope": {
@@ -7119,8 +6998,8 @@
                   "min": 0,
                   "max": 2
                 },
-                "id": "wargearOptions-add-2",
-                "prose": "<p>This model can be equipped with 2 of the following:</p>",
+                "id": "wargearOptions-add-1",
+                "prose": "<p>This model can be equipped with 2 of the following Shoulder Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:scatter-laser",
@@ -7145,7 +7024,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -7179,7 +7058,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 30,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -7219,7 +7098,7 @@
                   "min": 0,
                   "max": 1
                 },
-                "id": "wargearOptions-add-3",
+                "id": "wargearOptions-add-2",
                 "prose": "<p>This model can be equipped with a Scattershield.</p>",
                 "options": [
                   {
@@ -7308,24 +7187,23 @@
               ]
             }
           ],
-          "prose": "1 to 2 Artillery Platforms 2 Guardians per Artillery Platform"
+          "prose": "1 to 2 Artillery Platforms"
         },
         "slots": [],
         "sections": [
           {
             "key": "unitComposition",
-            "prose": "<ul>\n<li>1 to 2 Artillery Platforms</li>\n<li>2 Guardians per Artillery Platform</li>\n</ul>",
+            "prose": "<p>1 to 2 Artillery Platforms</p>",
             "clauses": []
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each Artillery Platform must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"d-cannon\">D-Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vibro-cannon\">Vibro Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"doomweaver\">Doomweaver</span></p>\n<p>Each Guardian is equipped with 1 Shuriken Catapult.</p>",
+            "prose": "<p>Each model must be equipped with 1 of the following Main Guns:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"d-cannon\">D-Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"vibro-cannon\">Vibro Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"doomweaver\">Doomweaver</span></p>\n<p>Each model must be equipped with 2 of the following Crew Member Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-catapult\">Shuriken Catapult</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-pistol\">Shuriken Pistol</span></p>",
             "clauses": [
               {
                 "op": "choose",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Artillery Platform"
+                  "who": "each"
                 },
                 "replaces": null,
                 "pick": {
@@ -7333,7 +7211,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Each Artillery Platform must be equipped with 1 of the following:</p>",
+                "prose": "<p>Each model must be equipped with 1 of the following Main Guns:</p>",
                 "options": [
                   {
                     "ref": "weapon:d-cannon",
@@ -7389,18 +7267,17 @@
                 ]
               },
               {
-                "id": "standardWargear-fixed-2",
-                "op": "fixed",
-                "prose": "",
+                "op": "choose",
                 "scope": {
-                  "who": "each",
-                  "modelType": "Guardian"
+                  "who": "each"
                 },
                 "replaces": null,
                 "pick": {
-                  "min": 1,
-                  "max": 1
+                  "min": 2,
+                  "max": 2
                 },
+                "id": "standardWargear-choose-2",
+                "prose": "<p>Each model must be equipped with 2 of the following Crew Member Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:shuriken-catapult",
@@ -7413,6 +7290,23 @@
                       {
                         "ref": "weapon:shuriken-catapult",
                         "name": "Shuriken Catapult",
+                        "kind": "weapon",
+                        "qty": 1,
+                        "modifiers": []
+                      }
+                    ]
+                  },
+                  {
+                    "ref": "weapon:shuriken-pistol",
+                    "name": "Shuriken Pistol",
+                    "kind": "weapon",
+                    "qty": 1,
+                    "modifiers": [],
+                    "points": 2,
+                    "parts": [
+                      {
+                        "ref": "weapon:shuriken-pistol",
+                        "name": "Shuriken Pistol",
                         "kind": "weapon",
                         "qty": 1,
                         "modifiers": []
@@ -7501,7 +7395,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>Each Vyper must be equipped with 2 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
+            "prose": "<p>Each Vyper must be equipped with 2 of the following Primary Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"scatter-laser\">Scatter Laser</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"shuriken-cannon\">Shuriken Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"star-cannon\">Star Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"bright-lance\">Bright Lance</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"missile-launcher\">Missile Launcher</span></p>",
             "clauses": [
               {
                 "op": "choose",
@@ -7515,7 +7409,7 @@
                   "max": 2
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>Each Vyper must be equipped with 2 of the following:</p>",
+                "prose": "<p>Each Vyper must be equipped with 2 of the following Primary Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:scatter-laser",
@@ -7540,7 +7434,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -7574,7 +7468,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 30,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -7816,7 +7710,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -7850,7 +7744,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 30,
+                    "points": 25,
                     "parts": [
                       {
                         "ref": "weapon:bright-lance",
@@ -7901,7 +7795,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -7994,7 +7888,7 @@
           },
           {
             "key": "standardWargear",
-            "prose": "<p>This model must be equipped with 1 of the following:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"prism-cannon\">Prism Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"doomweaver\">Doomweaver</span></p>\n<p>This model is equipped with 1x Twin-linked Shuriken Catapult</p>",
+            "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"prism-cannon\">Prism Cannon</span></p>\n<p class=\"lb-opt\"><span class=\"weapon-ref\" data-weapon=\"doomweaver\">Doomweaver</span></p>\n<p>This model is equipped with 1x Twin-linked Shuriken Catapult</p>",
             "clauses": [
               {
                 "op": "choose",
@@ -8007,7 +7901,7 @@
                   "max": 1
                 },
                 "id": "standardWargear-choose-1",
-                "prose": "<p>This model must be equipped with 1 of the following:</p>",
+                "prose": "<p>This model must be equipped with 1 of the following Main Turret Weapons:</p>",
                 "options": [
                   {
                     "ref": "weapon:prism-cannon",
@@ -8109,7 +8003,7 @@
                     "kind": "weapon",
                     "qty": 1,
                     "modifiers": [],
-                    "points": 20,
+                    "points": 15,
                     "parts": [
                       {
                         "ref": "weapon:shuriken-cannon",
@@ -8184,7 +8078,7 @@
     {
       "name": "Shuriken Cannon",
       "section": "Ranged Weapons",
-      "points": 20,
+      "points": 15,
       "profiles": null,
       "range": "36\"",
       "attacks": "4",
@@ -8201,7 +8095,7 @@
     {
       "name": "Bright Lance",
       "section": "Ranged Weapons",
-      "points": 30,
+      "points": 25,
       "profiles": null,
       "range": "48\"",
       "attacks": "1",

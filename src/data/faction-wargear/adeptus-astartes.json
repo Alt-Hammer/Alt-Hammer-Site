@@ -493,7 +493,7 @@
     {
       "itemId": "bike",
       "name": "Bike",
-      "pointsCost": 16,
+      "pointsCost": 15,
       "costNote": "model",
       "category": "Astartes Equipment Upgrades",
       "effects": [
@@ -570,7 +570,7 @@
             },
             "points": {
               "op": "delta",
-              "value": 16
+              "value": 15
             }
           }
         ]
@@ -684,9 +684,9 @@
       "costNote": null,
       "category": "Astartes Equipment Upgrades",
       "effects": [
-        "Model equipped with a Boltgun or Bolt Rifle only. The bearer's weapon gains the Precision keyword."
+        "Model equipped with a Boltgun, Bolt Rifle or Heavy Bolt Rifle only. The bearer's weapon gains the Precision keyword."
       ],
-      "effectsHtml": "<p>Model equipped with a <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span> or <span class=\"weapon-ref\" data-weapon=\"bolt-rifle\">Bolt Rifle</span> only. The bearer's weapon gains the <span class=\"keyword\" data-term=\"precision\" data-type=\"keyword\">Precision</span> keyword.</p>",
+      "effectsHtml": "<p>Model equipped with a <span class=\"weapon-ref\" data-weapon=\"boltgun\">Boltgun</span>, <span class=\"weapon-ref\" data-weapon=\"bolt-rifle\">Bolt Rifle</span> or <span class=\"weapon-ref\" data-weapon=\"heavy-bolt-rifle\">Heavy Bolt Rifle</span> only. The bearer's weapon gains the <span class=\"keyword\" data-term=\"precision\" data-type=\"keyword\">Precision</span> keyword.</p>",
       "mechanics": {
         "rows": [
           {
@@ -697,7 +697,8 @@
                 "kind": "weaponName",
                 "values": [
                   "Boltgun",
-                  "Bolt Rifle"
+                  "Bolt Rifle",
+                  "Heavy Bolt Rifle"
                 ]
               }
             },

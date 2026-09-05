@@ -15,7 +15,9 @@ import html
 from docx import Document
 
 # Configuration
-CORE_RULES_DOCX = r"C:\Users\alexc\OneDrive\04 Documents\Warhammer 40k\Alt-Hammer Standalone\Alt-Hammer 40,000 1st Edition - Core Rules.docx"
+# Source document paths are centralised in source_paths.py — see that file
+# to change where the documents live or what they are called.
+from source_paths import CORE_RULES_DOCX
 OUTPUT_PATH = os.path.join("src", "data", "stratagems.ts")
 
 
